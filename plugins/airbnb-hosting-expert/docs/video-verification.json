@@ -1,0 +1,43 @@
+{
+  "verifiedAt": "2026-10-24T15:45:32.704Z",
+  "checks": {
+    "fullDecode": true,
+    "resolution": true,
+    "duration": true,
+    "frameRate": true,
+    "allFrames": true,
+    "silent": true
+  },
+  "scopeChecks": {
+    "onlyParticleFunctionChanged": true,
+    "particleShapesColorsCountPreserved": true,
+    "nonParticleScenesPreserved": true
+  },
+  "motionChecks": {
+    "encodedSpeedMatchesSeries": true,
+    "encodedVerticalFlutter": true,
+    "noVisibleCoordinateJumps": true,
+    "recyclesOnlyOffscreen": true,
+    "existingLoopPasses": true,
+    "cloudSpeedPreserved": true
+  },
+  "seconds": 28,
+  "frames": 840,
+  "width": 1920,
+  "height": 1080,
+  "bytes": 4177781,
+  "sha256": "a95458706ea6ec4fce414cde515a7d3bc3525447344b2282afa6c189a8ee3697",
+  "clouds": {
+    "pixelsPerSecond": 280,
+    "correlation": 0.9983069823592194
+  },
+  "petals": {
+    "stableTracks": 2,
+    "medianDx": 193.82857142857142,
+    "medianDy": -18.40000000000009,
+    "medianSpin": 1.1382962640839307,
+    "minEncodedVerticalSpeed": -31.692307692307622,
+    "maxEncodedVerticalSpeed": 20
+  },
+  "detail": "leaf-motion-verification.json"
+}

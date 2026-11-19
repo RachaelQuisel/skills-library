@@ -1,0 +1,22 @@
+{
+  "name": "zite-prompt",
+  "displayName": "Zite Prompt",
+  "description": "Write short, paste-ready Zite prompts. Resolve facts outside Zite, use known IDs, and focus each prompt on the next build step.",
+  "version": "1.0.5",
+  "author": {
+    "name": "Rachael Quisel"
+  },
+  "homepage": "https://github.com/RachaelQuisel/Skills/tree/main/plugins/zite-prompt",
+  "repository": "https://github.com/RachaelQuisel/Skills",
+  "license": "UNLICENSED",
+  "keywords": [
+    "zite",
+    "prompts",
+    "low-code",
+    "interfaces",
+    "airtable"
+  ],
+  "documentationUrl": "https://github.com/RachaelQuisel/Skills/tree/main/plugins/zite-prompt#readme",
+  "supportUrl": "https://github.com/RachaelQuisel/Skills/issues",
+  "privacyPolicyUrl": "https://github.com/RachaelQuisel/Skills/blob/main/plugins/zite-prompt/PRIVACY.md"
+}

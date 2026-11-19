@@ -1,0 +1,26 @@
+{
+  "skill_name": "gmail-triage",
+  "evals": [
+    {
+      "id": 0,
+      "eval_name": "full-inbox-24h",
+      "prompt": "dry-run: triage my Gmail inbox from the last 24 hours. tell me what needs me today, what you'd draft replies to, and what you'd archive. do not create any labels or drafts — just show me the plan. use the mcp__claude_ai_Gmail__* tools that are loaded in this session.",
+      "expected_output": "A Phase-8-shaped report: needs-you list with senders/subjects/reasons/links, draft-ready list, archive summary counted by category, sponsorship count, inbox start→end delta, and no side effects on Gmail.",
+      "files": []
+    },
+    {
+      "id": 1,
+      "eval_name": "client-focused-drafts",
+      "prompt": "dry-run: what's sitting in my inbox from Janine (Coding Clarified) — anything from the last 5 days? show me the drafts you'd write for the ones that are safely draftable, and flag the ones that would commit me to something (a call, a deadline, a decision) so I handle those myself. no writes.",
+      "expected_output": "Client-scoped triage: uses client/cc alias routing, produces safe drafts in Rachael's voice (first person, no em-dashes, sign-off All best Rachael), refuses to draft any commitment-bearing reply and lists those under needs-you with a reason.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "eval_name": "weekly-aging-pass",
+      "prompt": "dry-run: weekly triage — 7-day window. tell me what needs me today, what you'd archive as noise, and specifically what's been sitting in triage/needs-you from prior runs that i haven't handled. no writes, just the plan.",
+      "expected_output": "Weekly-scope report that (a) uses newer_than:7d, (b) checks ~/.claude/data/gmail-triage/actions.jsonl for prior needs-you items still open, (c) proposes one resolution per stale item, (d) reports gracefully if actions.jsonl is empty or has no prior runs.",
+      "files": []
+    }
+  ]
+}

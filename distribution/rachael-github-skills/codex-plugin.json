@@ -1,0 +1,6 @@
+{
+  "name": "rachael-github-skills",
+  "version": "1.0.15",
+  "description": "A private GitHub skill collection built from canonical sources, with synchronized skill versions, plain-English guides, and links to existing specialist plugins.",
+  "skills": "./skills/"
+}

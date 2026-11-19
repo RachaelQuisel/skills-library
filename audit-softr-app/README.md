@@ -1,0 +1,5 @@
+# audit-softr-app
+
+Audit a Softr app — every page, every block, every Airtable field touched — and map the read/write dependencies between Softr and Airtable. Use this skill whenever the user asks to document, audit, review, map, or understand a Softr portal or app, including questions like "what fields does the portal display?", "which pages write to table X?", "show me every form and what it writes to Airtable", "what views does Softr use?", "what data restrictions are applied per block?", "draw me the dependency map between Softr and Airtable", "where is field Y exposed in the portal?", or "what does this Softr app actually do?". The skill produces a single markdown audit document with: a page index, a field-level audit grouped by Airtable table (reads, writes, search/sort/restrict per field), and a per-page breakdown covering data sources, views, displayed fields, button writes, form fields, and form branching logic. Requires Chrome DevTools MCP, with the Softr studio open and the user signed in.
+
+The working instructions are in `SKILL.md`.

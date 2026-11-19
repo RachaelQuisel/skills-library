@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "repository": "RachaelQuisel/Skills",
+  "workflow_path": ".github/workflows/release-consistency.yml",
+  "branch": "main",
+  "test_schedule_utc": "30 15 * * 1",
+  "notification_destination": "La Maison Santa Barbara Slack #automations (C0C7XQK3TTR); ChatGPT fallback if Slack delivery fails",
+  "alert_task_id": "6acb8fa863208191a83b74bb78b40133",
+  "alert_check_frequency": "hourly",
+  "successful_run_max_age_days": 8,
+  "unfinished_run_max_age_minutes": 60,
+  "failure_conclusions": [
+    "failure",
+    "timed_out",
+    "cancelled",
+    "action_required",
+    "startup_failure",
+    "stale"
+  ],
+  "deduplication": "One opening event per stable problem and episode, and one verified recovery. No daily reminders or alerts for another run with the same unresolved problem.",
+  "coverage": "Registered regression and release checks, plus current GitHub source, saved build, and deployed artifact evidence for the 28 catalog plugins. Unrecorded live skill behavior is not observable.",
+  "delivery_status": "Existing task updated in place as Skill Check Alerts. Saved prompt matched, Hourly schedule and active state read back on 2026-11-02. Scheduled Slack event delivery remains unverified.",
+  "upstream_changes": "Official-system release-note review and live compatibility tests remain separate maintenance work.",
+  "repair_preparation": {
+    "authorized_on": "2026-10-11",
+    "repository": "RachaelQuisel/Skills",
+    "mode": "Prepare fixes on separate branches and open draft pull requests for Rachael's review.",
+    "max_attempts_per_unresolved_problem": 3,
+    "attempt_tracking": "Save and read back a repair record on the candidate branch. Reuse the same issue key and budget across scheduled runs. Stop if the record is unavailable.",
+    "validation": "Confirm the current problem, use synthetic regression tests, and run the registered offline suite. Report unavailable validation explicitly.",
+    "adoption": "Rachael must approve merging. No auto-merge, direct main fixes, installed-copy updates, or production changes.",
+    "status": "Task instructions updated. No scheduled repair has yet been verified.",
+    "notifications": "Save repair progress in GitHub. No additional repair-ready or stopped-attempt notification; only the opening problem and verified recovery notify."
+  },
+  "slack_delivery": {
+    "workspace_id": "T0AT819U2UQ",
+    "channel_id": "C0C7XQK3TTR",
+    "channel_name": "automations",
+    "setup_message": "https://lamaisonsanta-8tm8179.slack.com/archives/C0C7XQK3TTR/p1791738615563109",
+    "max_failed_attempts_per_event": 3,
+    "content": "Short status and GitHub evidence links; no client records or raw logs.",
+    "deduplication": "Use SKILL-CHECK:<event_id> from the durable event record. Reconcile a prior claim or uncertain send; never resend solely because a new run exists."
+  },
+  "workflow_name": "Skill checks",
+  "canonical_task_instructions": "maintenance/ALERT-TASK.md",
+  "state": {
+    "branch": "skill-alert-state",
+    "path": "alert-state.json",
+    "write_policy": "Conditional revision update, claim before delivery, verified receipt after delivery. Missing state must not be reset."
+  },
+  "notification_events": [
+    "problem-opened",
+    "problem-fixed"
+  ],
+  "github_account_email_settings": "unchanged by user request on 2026-11-02",
+  "require_plugin_sync": true,
+  "plugin_sync": {
+    "contract": "maintenance/plugin-sync.json",
+    "observer": "maintenance/observe_plugin_sync.py",
+    "validator": "maintenance/plugin_sync.py",
+    "observation_branch": "skill-alert-state",
+    "observation_path": "plugin-sync-observation.json",
+    "maximum_age_hours": 3,
+    "coverage": "28 existing saved private plugins and their full GitHub sources and deployed artifact records. Access loss is not recovery.",
+    "anthropic": "Do not submit, publish, or change Anthropic listings."
+  }
+}

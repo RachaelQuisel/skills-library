@@ -1,0 +1,23 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "author": {
+    "name": "Rachael Quisel"
+  },
+  "description": "Check for missing automation catalog reports. Send known failures and blockers to an approved channel.",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "capabilities": [],
+        "category": "Productivity",
+        "composerIcon": "./icon.png",
+        "developerName": "Rachael Quisel",
+        "displayName": "Check Catalog Reports",
+        "logo": "./icon.png",
+        "longDescription": "Check for missing automation catalog reports. Send known failures and blockers to an approved channel.",
+        "shortDescription": "Check missing catalog reports"
+      }
+    }
+  },
+  "name": "automation-catalog-failure-check",
+  "version": "1.0.5"
+}

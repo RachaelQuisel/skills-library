@@ -1,0 +1,4 @@
+interface:
+  display_name: "Rubric"
+  short_description: "Self-graded planning and revision workflow"
+  default_prompt: "Use $rubric to build, grade, and revise a plan before presenting the final version."

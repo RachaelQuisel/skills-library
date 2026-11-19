@@ -1,0 +1,50 @@
+CONTEXT
+Slack DM to XRAY teammates Aris and Doc, asking whether they think a new offering (XRAY Tech Talk, open office hours for prospects) is worth launching. Locked 2026-08-05. Rachael sent this verbatim after editing Claude's prose-heavy draft.
+
+THE FOUR THINGS THIS EXAMPLE IS TEACHING
+
+1. Concise without being redundant. Each sentence carries one idea. If a benefit is named once, don't name it again below.
+2. Not pedantic. No trailing clauses explaining what the reader already understands.
+3. Ask real questions, don't announce preferences. "Hosting every other week?" not "I was thinking bi-weekly."
+4. Short out of respect for their time. Fits on one Slack screen without scrolling.
+
+THE MESSAGE
+
+Hi, Aris and Doc, Tom and I were kicking around XRAY Tech Talk (open office hours where prospects can drop in and ask technical questions), and, since y'all are talking to leads, would you be up for sharing your thoughts, opinions, insights?
+
+
+Do you think this would be helpful?
+What day and time would work for prospects?
+Hosting every other week?
+What are prospects asking about most
+
+
+Some benefits:
+Feeding Doc material for the newsletter and, since I stalk all the frontier AI companies, wowing prospects with the most up-to-date info :joy: Most weeks I'll likely be hanging out by myself, and that's fine; that we offer open hours is another signal of credibility, even when no one shows.
+
+
+
+Topic ideas:
+The prescient question I'm hearing right now is: if anyone can build, what do consultants still offer?
+1. Schema and data design (I haven't had a client who could pull this off on their own); 2. Judgment on scope, i.e. what goes into the MVP vs. saved for later (so much of my job is pruning a client's ideas until what's left is streamlined and focused);
+3. Identifying and developing the user journey (I've mapped these enough that I've got an intuitive sense for spotting quick wins and weak points)
+
+WHAT TO COPY
+
+Ask lives in the opener; benefits and topics come after.
+Questions stack as separate lines, one per line.
+Colloquial ("y'all"), three-word combos ("thoughts, opinions, insights").
+Section labels ("Some benefits:", "Topic ideas:") do the structural work; no headers or bold.
+Active verbs ("identifying and developing"), not passive ("reading").
+Positive paired with negative ("quick wins and weak points").
+Expressive phrases stay in ("since I stalk all the frontier AI companies").
+No sign-off on Slack.
+
+WHAT TO STRIP
+
+"I want your read" / "I'd appreciate your read before I move on it".
+"Where I need you:" (client-email framing).
+Prose paragraphs listing questions inside sentences.
+Any sentence that explains a sentence already written.
+Any "I was thinking X" that turns a real question into a stated preference.
+"All best, Rachael" on chat-style comms.

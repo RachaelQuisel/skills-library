@@ -1,0 +1,3 @@
+interface:
+  display_name: "Pick It Back Up"
+  short_description: "Resume interrupted work from actual context"

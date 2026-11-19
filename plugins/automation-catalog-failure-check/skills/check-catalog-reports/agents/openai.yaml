@@ -1,0 +1,5 @@
+interface:
+  display_name: "Check Catalog Reports"
+  short_description: "Find missing catalog reports and explain blockers"
+  default_prompt: "Use $check-catalog-reports to check the latest catalog run and report missing results."
+  icon_large: "../../icon.png"

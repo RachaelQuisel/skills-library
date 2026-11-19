@@ -1,0 +1,20 @@
+{
+  "name": "plain-english-editor",
+  "displayName": "Plain English Editor",
+  "description": "Rewrite or review content in concise, plain English, including automation and process explanations.",
+  "version": "4.1.4",
+  "author": {
+    "name": "Rachael Quisel"
+  },
+  "license": "MIT",
+  "keywords": [
+    "writing",
+    "plain-english",
+    "editing"
+  ],
+  "icon": "./icon.png",
+  "homepage": "https://github.com/RachaelQuisel/plain-english-editor",
+  "repository": "https://github.com/RachaelQuisel/plain-english-editor",
+  "documentationUrl": "https://github.com/RachaelQuisel/plain-english-editor#readme",
+  "supportUrl": "https://github.com/RachaelQuisel/plain-english-editor/issues"
+}

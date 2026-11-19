@@ -1,0 +1,75 @@
+# Git Ignore for agent-skills repository
+
+# Sensitive information
+*.key
+*.pem
+*.env
+.env.*
+secrets/
+credentials/
+
+# API keys and tokens
+*_token.txt
+*_key.txt
+api_keys/
+
+# Personal information
+personal/
+private/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Temporary files
+*.tmp
+*.temp
+.temp/
+tmp/
+
+# Logs
+*.log
+logs/
+
+# Local pilot audit events (append-only JSONL)
+execute/.audit/
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# Keep these patterns - add your own below this line
+# ---------------------------------------------------
+
+# Local maintenance environment and run artifacts
+.maintenance-venv/
+maintenance-results/
+skill-check-results/
+
+
+# local test runs for the training-video skill
+training-video-workspace/

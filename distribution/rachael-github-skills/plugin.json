@@ -1,0 +1,26 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "author": {
+    "name": "Rachael Quisel"
+  },
+  "description": "A private GitHub skill collection built from canonical sources, with synchronized skill versions, plain-English guides, and links to existing specialist plugins.",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "capabilities": [
+          "Interactive"
+        ],
+        "category": "Productivity",
+        "composerIcon": "./assets/icon.svg",
+        "defaultPrompt": "Find the best skill in my GitHub repertoire for this task.",
+        "developerName": "Rachael Quisel",
+        "displayName": "Rachael GitHub Skills",
+        "logo": "./assets/icon.svg",
+        "longDescription": "Use 199 bundled GitHub skills for Airtable, automation, client operations, writing, research, design, and development. Links route shared skills to existing specialist plugins. Preserves distinct variants, resources, attribution, and source commits. Some workflows require existing app connections or a local runtime.",
+        "shortDescription": "Your GitHub skill repertoire"
+      }
+    }
+  },
+  "name": "rachael-github-skills",
+  "version": "1.0.15"
+}

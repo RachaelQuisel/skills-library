@@ -1,0 +1,74 @@
+<title>CLIENT_NAME Workflow Map</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap">
+<style>
+/* Layout: header, one-sentence summary, diagram in a scrolling panel, deliverables table, questions, footer */
+:root{
+  --bg:#fffaf0; --fg:#0e1c2d; --body:#686f76; --muted:#868b8e; --rule:#e1ded8; --accent:#1566b9; --panel:#ffffff;
+  --font:"Source Sans 3",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#0e1c2d;--fg:#fffaf0;--body:#c9ccce;--muted:#9aa0a4;--rule:#2b3a4c;--accent:#6aa6e6;--panel:#fffaf0;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0e1c2d;--fg:#fffaf0;--body:#c9ccce;--muted:#9aa0a4;--rule:#2b3a4c;--accent:#6aa6e6;--panel:#fffaf0;color-scheme:dark}
+body{background:var(--bg);color:var(--body);font-family:var(--font);font-size:16px;line-height:1.5}
+.wrap{max-width:1100px;margin:0 auto;padding-block:32px 48px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:28px}
+h1{color:var(--fg);font-size:32px;font-weight:700;margin:0 0 6px;text-wrap:balance}
+h2{color:var(--fg);font-size:20px;font-weight:600;margin:0 0 10px}
+.lede{margin:0;max-width:65ch}
+/* The diagram panel stays light in both themes so the brand colors in the Mermaid styling read correctly */
+.diagram{background:var(--panel);border:1px solid var(--rule);border-radius:8px;padding:16px;overflow-x:auto}
+.diagram pre.mermaid{margin:0;min-width:640px;background:transparent;color:#0e1c2d}
+.legend{display:flex;flex-wrap:wrap;gap:10px 18px;font-size:14px;margin-top:10px}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.sw{width:14px;height:14px;border-radius:3px;border:1px solid #0e1c2d;display:inline-block}
+.table-wrap{overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:15px}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--rule);vertical-align:top}
+th{color:var(--fg);font-weight:600}
+.status{font-weight:600;color:var(--fg)}
+ol{margin:0;padding-left:22px;max-width:65ch}
+footer{font-size:13px;color:var(--muted);border-top:1px solid var(--rule);padding-top:12px}
+</style>
+<div class="wrap">
+  <header>
+    <h1>CLIENT_NAME Workflow Map</h1>
+    <p class="lede">ONE_SENTENCE_SUMMARY</p>
+  </header>
+
+  <section>
+    <h2>How each deliverable gets made</h2>
+    <div class="diagram">
+<pre class="mermaid">
+MERMAID_SOURCE
+</pre>
+    </div>
+    <div class="legend" aria-label="Legend">
+      <span><i class="sw" style="background:#1566b9"></i>What starts it</span>
+      <span><i class="sw" style="background:#e1ded8"></i>A person does this</span>
+      <span><i class="sw" style="background:#fffaf0"></i>A system does this</span>
+      <span><i class="sw" style="background:#0e1c2d"></i>What someone receives</span>
+      <span><i class="sw" style="background:#fffaf0;border-style:dashed"></i>Planned, not live yet</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Deliverables</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Deliverable</th><th>Who receives it</th><th>How often</th><th>Produced by</th><th>Status</th></tr></thead>
+        <tbody>
+          <!-- One row per lane -->
+          <tr><td>DELIVERABLE</td><td>RECIPIENT</td><td>FREQUENCY</td><td>SYSTEM</td><td class="status">Live</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>Questions for CLIENT_NAME</h2>
+    <ol>
+      <li>QUESTION</li>
+    </ol>
+  </section>
+
+  <footer>BUILD_NAME · Updated YYYY-MM-DD · Prepared by XRAY</footer>
+</div>

@@ -1,0 +1,17 @@
+# Write a check for the intended behavior before implementing the corresponding code change
+
+This skill helps you write a check for the intended behavior before implementing the corresponding code change.
+
+## What to share
+
+Identify the project and the behavior you want checked, then share the relevant files, observed problem, or proposed change.
+
+## How to start
+
+Select this skill and describe your request. The assistant uses the information and tools available in that conversation.
+
+## Detailed guidance
+
+The [working instructions](SKILL.md) describe the skill's steps, required tools, and limits.
+
+The [technical guide and examples](TECHNICAL-GUIDE.md) retain the earlier detailed documentation.

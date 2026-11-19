@@ -1,0 +1,34 @@
+{
+  "interface": {
+    "capabilities": [
+      "Interactive"
+    ],
+    "category": "Productivity",
+    "composerIcon": "./assets/adhd-task-helper.png",
+    "defaultPrompt": [
+      "I am stuck starting a task. Help me find a manageable first action.",
+      "Help me sort this brain dump and choose what to do first.",
+      "Help me pick up interrupted work using this checkpoint."
+    ],
+    "developerName": "Rachael Quisel",
+    "displayName": "ADHD Task Helper",
+    "logo": "./assets/adhd-task-helper.png",
+    "longDescription": "Bring a task you cannot start, a brain dump, or a checkpoint from interrupted work. ADHD Task Helper helps you choose a practical next action and keeps the response easy to follow.\n\n- Adapt replies to your preferred level of detail.\n- Get a manageable starting action and practical help.\n- Sort a brain dump while preserving deferred items.\n- Resume from available conversation context or a checkpoint you provide.\n\nHow it works:\n1. Share what you are trying to do or where you got stuck.\n2. Receive a starting action, an organized list, or a restart note.\n3. Continue, ask for more detail, or request one step at a time.",
+    "shortDescription": "Start, sort, and resume tasks"
+  },
+  "name": "adhd-task-helper",
+  "version": "1.0.5",
+  "description": "ADHD-friendly support for clearer replies, starting a task, sorting a brain dump, and resuming interrupted work.",
+  "author": {
+    "name": "Rachael Quisel"
+  },
+  "keywords": [
+    "adhd",
+    "tasks",
+    "planning",
+    "accessibility",
+    "productivity"
+  ],
+  "license": "LicenseRef-Proprietary",
+  "skills": "./skills"
+}

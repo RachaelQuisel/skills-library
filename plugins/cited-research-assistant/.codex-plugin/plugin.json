@@ -1,0 +1,27 @@
+{
+  "interface": {
+    "capabilities": [],
+    "category": "Productivity",
+    "composerIcon": "./icon.png",
+    "developerName": "Rachael Quisel",
+    "displayName": "Cited Research Assistant",
+    "logo": "./icon.png",
+    "longDescription": "Research questions and check drafts with retrieved evidence. Cite each supported claim. Identify evidence gaps. Check the final reply against the cited brief.",
+    "shortDescription": "Research with source evidence",
+    "defaultPrompt": null
+  },
+  "name": "cited-research-assistant",
+  "version": "1.0.4",
+  "description": "Research questions and check drafts with retrieved evidence. Cite each supported claim. Identify evidence gaps. Check the final reply against the cited brief.",
+  "author": {
+    "name": "Rachael Quisel"
+  },
+  "keywords": [
+    "research",
+    "citations",
+    "papers",
+    "verification"
+  ],
+  "license": "MIT",
+  "skills": "./skills"
+}

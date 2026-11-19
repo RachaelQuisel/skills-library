@@ -1,0 +1,31 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "author": {
+    "name": "Rachael Quisel"
+  },
+  "description": "Write short, paste-ready Zite prompts. Resolve facts outside Zite, use known IDs, and focus each prompt on the next build step.",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "capabilities": [],
+        "category": "Productivity",
+        "developerName": "Rachael Quisel",
+        "displayName": "Zite Prompt",
+        "longDescription": "Write short, paste-ready Zite prompts. Resolve facts outside Zite, use known IDs, and focus each prompt on the next build step.",
+        "shortDescription": "Write focused Zite prompts"
+      }
+    }
+  },
+  "homepage": "https://github.com/RachaelQuisel/Skills/tree/main/plugins/zite-prompt",
+  "keywords": [
+    "zite",
+    "prompts",
+    "low-code",
+    "interfaces",
+    "airtable"
+  ],
+  "license": "UNLICENSED",
+  "name": "zite-prompt",
+  "repository": "https://github.com/RachaelQuisel/Skills",
+  "version": "1.0.5"
+}

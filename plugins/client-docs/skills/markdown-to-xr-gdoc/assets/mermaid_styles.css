@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700&family=Figtree:wght@400;700&display=swap');
+
+/* Global Font Settings - Slightly reduced to fit boxes */
+text,
+.label,
+.nodeText,
+div.mermaid svg {
+    font-family: 'Figtree', sans-serif !important;
+    font-size: 14px !important;
+    dominant-baseline: central;
+}
+
+/* Header Styles */
+.root text,
+h1,
+h2,
+h3,
+.section-title,
+.title {
+    font-family: 'Urbanist', sans-serif !important;
+    font-weight: 700 !important;
+    font-size: 16px !important;
+}
+
+/* Node Specifics */
+.node rect,
+.node circle,
+.node ellipse,
+.node polygon,
+.node path {
+    stroke-width: 1.5px !important;
+    /* Attempt to add visual padding if SVG supports it */
+    padding: 10px !important;
+}
+
+/* Branch Text */
+.branch-label {
+    font-family: 'Urbanist', sans-serif !important;
+    font-weight: 600 !important;
+    font-size: 12px !important;
+}
+
+/* Ensure text doesn't overflow */
+tspan {
+    dy: 0.3em;
+    /* Vertical adjustment */
+}

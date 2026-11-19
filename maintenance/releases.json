@@ -1,0 +1,6 @@
+{
+  "schema_version": 1,
+  "policy": "No skill release is approved by an inventory or offline-test pass alone. Record exact revisions and environment evidence before offering an update.",
+  "required_fields_per_release": ["skill_id", "commit", "previous_commit", "reason", "regression_ids", "environment", "evidence", "limitations", "approved_by", "approved_at"],
+  "releases": []
+}

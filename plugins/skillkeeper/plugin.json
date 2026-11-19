@@ -1,0 +1,34 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "author": {
+    "name": "Rachael Quisel"
+  },
+  "description": "Maintain your agent skills with named owners, repeatable tests, compatibility evidence, update and rollback records, and verified failure alerts.",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "capabilities": [],
+        "category": "Productivity",
+        "composerIcon": "./icon.png",
+        "developerName": "Rachael Quisel",
+        "displayName": "Skillkeeper: Skill Maintenance",
+        "logo": "./icon.png",
+        "longDescription": "Maintain your agent skills with named owners, repeatable tests, compatibility evidence, update and rollback records, and verified failure alerts.",
+        "shortDescription": "Maintain and verify skills"
+      }
+    }
+  },
+  "homepage": "https://github.com/RachaelQuisel/Skills/tree/main/plugins/skillkeeper",
+  "keywords": [
+    "agent-skills",
+    "maintenance",
+    "regression-testing",
+    "freshness",
+    "rollback",
+    "audit"
+  ],
+  "license": "UNLICENSED",
+  "name": "skillkeeper",
+  "repository": "https://github.com/RachaelQuisel/Skills",
+  "version": "1.0.6"
+}

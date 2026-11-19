@@ -1,0 +1,30 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "author": {
+    "name": "Rachael Quisel"
+  },
+  "description": "Research questions and check drafts with retrieved evidence. Cite each supported claim. Identify evidence gaps. Check the final reply against the cited brief.",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "capabilities": [],
+        "category": "Productivity",
+        "composerIcon": "./icon.png",
+        "developerName": "Rachael Quisel",
+        "displayName": "Cited Research Assistant",
+        "logo": "./icon.png",
+        "longDescription": "Research questions and check drafts with retrieved evidence. Cite each supported claim. Identify evidence gaps. Check the final reply against the cited brief.",
+        "shortDescription": "Research with source evidence"
+      }
+    }
+  },
+  "keywords": [
+    "research",
+    "citations",
+    "papers",
+    "verification"
+  ],
+  "license": "MIT",
+  "name": "cited-research-assistant",
+  "version": "1.0.4"
+}

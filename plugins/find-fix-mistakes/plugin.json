@@ -1,0 +1,39 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "find-fix-mistakes",
+  "version": "1.0.4",
+  "description": "Find and fix mistakes in the assistant’s work, then check the corrections.",
+  "author": {
+    "name": "Rachael Quisel"
+  },
+  "keywords": [
+    "self-review",
+    "mistakes",
+    "repair",
+    "verification"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Find & Fix Mistakes",
+        "shortDescription": "Find and fix mistakes",
+        "longDescription": "Review the assistant’s work against your request and the evidence. Mistakes passes confirmed errors to Fix Mistakes. Fix Mistakes makes corrections within your original request and permissions. It then checks each correction. You can ask for a review without changes. Correct work stays intact.",
+        "developerName": "Rachael Quisel",
+        "category": "Productivity",
+        "capabilities": [
+          "Audit prior work",
+          "Repair authorized mistakes",
+          "Verify corrections"
+        ],
+        "defaultPrompt": [
+          "Review your last work for mistakes, fix substantiated errors, and verify the corrections.",
+          "Review your last work for mistakes only; do not change anything.",
+          "Fix the substantiated mistakes from the latest audit and verify each correction."
+        ],
+        "brandColor": "#B47468",
+        "composerIcon": "./assets/find-fix-mistakes.png",
+        "logo": "./assets/find-fix-mistakes.png"
+      }
+    }
+  }
+}

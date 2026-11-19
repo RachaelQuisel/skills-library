@@ -1,0 +1,17 @@
+{
+  "name": "cited-research-assistant",
+  "version": "1.0.4",
+  "description": "Research questions and check drafts with retrieved evidence. Cite each supported claim. Identify evidence gaps. Check the final reply against the cited brief.",
+  "author": {
+    "name": "Rachael Quisel"
+  },
+  "license": "MIT",
+  "keywords": [
+    "research",
+    "citations",
+    "papers",
+    "verification"
+  ],
+  "displayName": "Cited Research Assistant",
+  "icon": "./icon.png"
+}

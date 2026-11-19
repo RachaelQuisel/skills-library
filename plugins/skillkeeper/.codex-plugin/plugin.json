@@ -1,0 +1,31 @@
+{
+  "interface": {
+    "capabilities": [],
+    "category": "Productivity",
+    "composerIcon": "./icon.png",
+    "developerName": "Rachael Quisel",
+    "displayName": "Skillkeeper: Skill Maintenance",
+    "logo": "./icon.png",
+    "longDescription": "Maintain your agent skills with named owners, repeatable tests, compatibility evidence, update and rollback records, and verified failure alerts.",
+    "shortDescription": "Maintain and verify skills",
+    "defaultPrompt": null
+  },
+  "name": "skillkeeper",
+  "version": "1.0.6",
+  "description": "Maintain your agent skills with named owners, repeatable tests, compatibility evidence, update and rollback records, and verified failure alerts.",
+  "author": {
+    "name": "Rachael Quisel"
+  },
+  "keywords": [
+    "agent-skills",
+    "maintenance",
+    "regression-testing",
+    "freshness",
+    "rollback",
+    "audit"
+  ],
+  "homepage": "https://github.com/RachaelQuisel/Skills/tree/main/plugins/skillkeeper",
+  "repository": "https://github.com/RachaelQuisel/Skills",
+  "license": "UNLICENSED",
+  "skills": "./skills"
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Product Manager"
+  short_description: "Give engineers a judicious product read"
+  default_prompt: "Use $product-manager to tell me what is good, what needs to change, what is unnecessary, and the top five things I need to know before I build."

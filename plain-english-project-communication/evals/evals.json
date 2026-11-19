@@ -1,0 +1,26 @@
+{
+  "skill_name": "plain-english-project-communication",
+  "evals": [
+    {
+      "id": 0,
+      "eval_name": "wioa-region-explanation",
+      "prompt": "Janine asked me what the WIOA region numbers on her dashboard mean. Right now in the Coding Clarified base, 543 of 679 WIOA regions are linked to at least one candidate. Back in January the base only had a handful of regions loaded because the WIOA region tracking table barely existed yet. Write me the short paragraph I can paste into a Slack DM to Janine explaining what those two numbers mean and how much has changed since January 2026. She's a non-technical adult-ed program director.",
+      "expected_output": "A short plain-English paragraph, complete sentences, no arrows, no field names or IDs, no invented internal terms. The prompt describes the January baseline as 'a handful' (small but exact count unknown), so the response should NOT fabricate a percentage change against a made-up denominator; either 'grew from a handful to 543', 'went from a stub to nearly full coverage', or the absolute count of regions now covered is acceptable. Should preserve Rachael's terminology (WIOA regions, candidates), define WIOA once, and end with one sentence explaining what the number practically means.",
+      "files": []
+    },
+    {
+      "id": 1,
+      "eval_name": "canvas-prompt-cc-dashboard",
+      "prompt": "Write me an Airtable Canvas prompt to build Janine a one-page WIOA region coverage dashboard for Coding Clarified. It should show: total WIOA regions in the table, how many are currently linked to at least one candidate, how many candidates have no WIOA region linked yet, and a since-January-2026 change block. Non-technical audience — Janine. Don't include a task board, a work queue, or anything about what her team should do next.",
+      "expected_output": "A Canvas prompt whose USER-FACING content follows the plain-english standard: complete descriptive labels ('WIOA regions currently connected to at least one candidate' not 'Region coverage'), fully labeled numbers with context, no invented internal names ('status engine', 'coverage engine'), no exposed field names / IDs / automation names, no task board / work queue / recommendations section, no arrows, no truncated headings. The comparison block should follow the standard's structure (January 2026 / Today / Change since January 2026 / Current coverage / What this means).",
+      "files": []
+    },
+    {
+      "id": 2,
+      "eval_name": "kpi-report-sprint-summary",
+      "prompt": "Write me the KPI section of this Friday's Coding Clarified sprint summary Slack post. The main win this sprint: the WIOA region backfill — 686 proposal records touched, 61 new region rows added, 138 zip codes linked, 414 proposals + 12 students connected to a region for the first time. Before this sprint, most candidates weren't linked to a region at all. Audience: Janine and her small team in the #huddle_coding_clarified channel. Non-technical.",
+      "expected_output": "KPI section as tight bullets (sprint-summary format), one bullet per headline number, each bullet's noun phrase carrying what the number counts and its state. No paragraph subsections per number. No jargon, no arrows, no em dashes, no exposed field/table names, no invented internal terms, no unrequested recommendations. Numbers carry full context ('414 proposals connected to a WIOA region for the first time'). Preserves Rachael's terminology and spells out WIOA at first use.",
+      "files": []
+    }
+  ]
+}

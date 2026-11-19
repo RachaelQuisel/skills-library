@@ -1,0 +1,91 @@
+Locked 2026-07-18 by Rachael as the canonical shape for a "here's what landed" email to a monthly-retainer client (CC, THFH, GoL). Bucketed by project, concrete counts, decision points with verbatim examples, client team to-do.
+
+Structure this exemplifies:
+
+1. Salutation — "Hi <Name>," (never "Hi team")
+2. Project frame — one line naming which project buckets the updates fall under (anchors the client to the roadmap, not just tasks)
+3. Per-bucket sections — one section per work bucket. Section header on its own line. Then:
+   - What landed (concrete counts — ~1,000 records, 155 regions, 35 certs, not "several" or "many")
+   - Attached csv/pdf referenced by filename ("See attached csv, proposal-updated-records.")
+   - Follow-on state ("There are now no WIOA regions that are marked as approved but not linked to candidates in those regions.")
+   - New helper fields as a → bullet list, one per line
+   - "More to follow" line if the work isn't complete
+4. Client team to-do section — heading "<Client> Team to-do", then one bullet per action, "Please" prefix, actions the client team owns not you
+5. Decision points — when a to-do requires a client choice, frame as "Please decide if you want the instructions to be 1. <option A> or 2. <option B>." and give your recommendation on its own line
+6. Verbatim example when the ask is a choice — paste the actual current-state artifact so the client can see what they're deciding about. Makes the ask concrete rather than abstract.
+7. Sign-off — "All best," then "Rachael" on the next line
+
+Voice rules that apply on top of the eight moves:
+- No throat-clearing before the first fact. Lead with "Below are updates for…".
+- Concrete counts everywhere (~1,000, 155, 35).
+- Never use metaphor/analogy words (locked 2026-07-17 in CLAUDE.md): no "clean", "heal", "drift", "smoke test/check", "main" for anything but git. Say the literal action.
+- Plain English throughout — "would the client understand this without opening Airtable?" is the test.
+- No record IDs, no fldXXX, no jargon.
+- Skip bold headers.
+- Dots (.) for unordered lists, → for annotated bullets.
+- End with an invitation or ask, not a summary of what you just said.
+
+The frozen exemplar (verbatim, do not edit):
+
+---
+
+Hi Janine,
+
+Below are updates for project increase candidate → student conversion, project increase student graduation rate,  & project system maintenance and updating.
+
+Proposals
+I updated ~1,000 candidate records on the Proposal table by assigning them WIOA region, linking record to student record (if one exists). See attached csv, proposal-updated-records. There are now no WIOA regions that are marked as approved but not linked to candidates in those regions.
+New helper fields I created
+→ Proposal Status
+→ Student Link Status
+→ Assigned Caseworker Start
+→ Caseworker Link Needs Review
+
+WIOA Regions
+I created 155 new WIOA region records; however, their approval status is unknown.
+
+Completion
+I replaced or created the completion certificates on 35 student records as they had the incorrect date or didn't exist but should. More to follow.
+
+Coding Clarified Team to-do
+Please update candidate records proposal status with their current status
+Please update new WIOA region records with their current approval status as well as instructions. Please toggle if candidate has received next steps instruction email
+The below example is how many WIOA region instructions read while others only have the steps. This means that emails candidates currently receive have duplicate greetings and closings, etc. so please:
+→ Decide if you want the instructions to be 1. Only the steps the student takes or 2. The entire email (such as the below example)
+I recommend just swapping out the steps for each instruction email, so we can keep the email opening and closing the same.
+
+"Hi there,
+
+Thank you so much for your interest in the Medical Coding Training Program with Coding Clarified.
+
+I wanted to personally follow up with you regarding the WIOA funding process. After reviewing your region in Oswego County, New York, I do want to let you know that unfortunately WIOA funding is not currently available/approved for our program in your area at this time.
+
+I know this may not be the news you were hoping for, but I truly don't want this to slow down your momentum or your goal of starting a new career in medical coding. We would still absolutely love to support you and help you move forward with Coding Clarified if you're ready to explore other options.
+
+The great news is that we do have a flexible financing pathway available that allows students to begin the program right away:
+
+Here's how enrollment works:
+
+Step 1: Down Payment
+A $1,000 down payment is made securely via credit card. We will provide you with a secure payment link to complete this step.
+
+Step 2: Financing the Remaining Balance
+The remaining balance of $4,999, plus a one-time $49 setup fee, is financed through IGW, our trusted third-party financing partner.
+Payment Plan: 48 monthly payments of $140.23
+Total Program Cost: $5,999
+No credit check required — financing is guaranteed
+
+Step 3: What we'll need from you to get started:
+Full Name
+Last 4 digits of your Social Security Number
+Email Address
+Phone Number
+State of Residence
+
+Once we receive your details, we will send your secure payment link and enrollment agreement for review and signature. From there, we'll guide you step-by-step through everything so the process feels smooth, simple, and stress-free!
+
+If you're ready to move forward, just reply to this email and we'll get everything started for you right away! We would truly love to welcome you into Coding Clarified and support you as you begin this exciting new chapter!
+
+And of course, if you have any questions at all or want to talk things through, I'm always here and happy to help however I can!
+
+Warmly,"

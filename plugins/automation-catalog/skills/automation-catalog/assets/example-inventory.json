@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "workflows": [{
+    "business_id": "example-business",
+    "provider": "example-scheduler",
+    "source_id": "workflow-001",
+    "title": "Weekly stock reminder",
+    "category": "Inventory",
+    "type": "Notifications",
+    "tools": ["Slack"],
+    "status": "Plan; working setup not verified",
+    "checked_at": "2026-10-11",
+    "run": "planned",
+    "shareable_to_route": false,
+    "sources": [{"label": "Fictional planning document", "url": "https://example.com/workflow-plan"}],
+    "sections": {
+      "Trigger": ["The plan calls for a weekly reminder. The day and time are unknown."],
+      "Inputs": ["The plan needs the stock list and an approved recipient."],
+      "What happens": ["Read the stock list.", "Send a reminder if the approved settings are available. Failure handling is unknown."],
+      "Outputs": ["The plan would produce a stock reminder. No live message was verified."]
+    }
+  }],
+  "coverage": [{
+    "business_id": "example-business",
+    "account": "fictional-account",
+    "resource": "Planning documents",
+    "checked_at": "2026-10-11",
+    "result": "checked",
+    "detail": "One fictional document checked. No claim is made about other services.",
+    "pages_checked": 1,
+    "pagination_complete": true
+  }],
+  "routes": {},
+  "previous_publications": {}
+}

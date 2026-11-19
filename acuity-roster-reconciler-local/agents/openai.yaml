@@ -1,0 +1,4 @@
+interface:
+  display_name: "Add to Acuity"
+  short_description: "Compare applicants and add approved Acuity clients"
+  default_prompt: "Use $addtoacuity to compare my Binti and Airtable applicants with the correct Acuity account, prepare the review list, and add the applicants already approved for addition."

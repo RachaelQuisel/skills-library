@@ -1,0 +1,34 @@
+{
+  "interface": {
+    "capabilities": [],
+    "category": "Productivity",
+    "composerIcon": "./icon.png",
+    "developerName": "Rachael Quisel",
+    "displayName": "Automation Briefing",
+    "logo": "./icon.png",
+    "longDescription": "Get a short, plain-English brief on automation tools and leading AI models. See what changed, why it matters, and what to test, change, or watch.",
+    "shortDescription": "Automation and AI updates",
+    "defaultPrompt": null
+  },
+  "name": "automation-briefing",
+  "version": "1.0.5",
+  "description": "Get a short, plain-English brief on automation tools and leading AI models. See what changed, why it matters, and what to test, change, or watch.",
+  "author": {
+    "name": "Rachael Quisel"
+  },
+  "keywords": [
+    "automation",
+    "no-code",
+    "AI",
+    "Airtable",
+    "Zapier",
+    "Make",
+    "n8n",
+    "Pipedream",
+    "Fillout"
+  ],
+  "homepage": "https://github.com/RachaelQuisel/Skills/tree/main/plugins/automation-briefing",
+  "repository": "https://github.com/RachaelQuisel/Skills",
+  "license": "MIT",
+  "skills": "./skills"
+}

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Update Coding Clarified Grades"
+  short_description: "Safely refresh Blackboard grades in Airtable"
+  default_prompt: "Use $update-grades to refresh Coding Clarified grades safely and keep me updated throughout the run."
+policy:
+  allow_implicit_invocation: false

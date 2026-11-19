@@ -1,0 +1,24 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "author": {
+    "name": "Rachael Quisel"
+  },
+  "description": "Surface high-leverage questions missed in client conversations.",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "capabilities": [],
+        "category": "Productivity",
+        "composerIcon": "./assets/worth-asking.png",
+        "defaultPrompt": "Use $worth-asking to find the highest-leverage questions I missed asking.",
+        "developerName": "Rachael Quisel",
+        "displayName": "Worth Asking",
+        "logo": "./assets/worth-asking.png",
+        "longDescription": "Worth Asking reviews complete meeting transcripts and surfaces evidence-backed questions that could change the next decision.",
+        "shortDescription": "Find missed client questions"
+      }
+    }
+  },
+  "name": "worth-asking",
+  "version": "1.0.4"
+}

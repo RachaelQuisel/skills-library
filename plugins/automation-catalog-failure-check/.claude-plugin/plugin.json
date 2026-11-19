@@ -1,0 +1,23 @@
+{
+  "name": "automation-catalog-failure-check",
+  "version": "1.0.5",
+  "description": "Check for missing automation catalog reports. Send known failures and blockers to an approved channel.",
+  "displayName": "Check Catalog Reports",
+  "author": {
+    "name": "Rachael Quisel"
+  },
+  "homepage": "https://github.com/RachaelQuisel/Skills/tree/feat/automation-catalog-plugin/plugins/automation-catalog-failure-check",
+  "repository": "https://github.com/RachaelQuisel/Skills",
+  "license": "UNLICENSED",
+  "keywords": [
+    "automation",
+    "documentation",
+    "slack",
+    "catalog",
+    "monitoring"
+  ],
+  "icon": "./icon.png",
+  "documentationUrl": "https://github.com/RachaelQuisel/Skills/blob/feat/automation-catalog-plugin/plugins/automation-catalog-failure-check/README.md",
+  "supportUrl": "https://github.com/RachaelQuisel/Skills/issues",
+  "privacyPolicyUrl": "https://github.com/RachaelQuisel/Skills/blob/feat/automation-catalog-plugin/plugins/automation-catalog-failure-check/PRIVACY.md"
+}

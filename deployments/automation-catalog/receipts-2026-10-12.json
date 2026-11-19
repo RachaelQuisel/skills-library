@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "occurrence": "ACATALOG:2026-10-12",
+  "attempts_used": 2,
+  "project": "Automation Catalog",
+  "workflows": [
+    {
+      "identity": "automation-catalog|chatgpt|6acb928d16bc8191ae1716cfe40da199",
+      "path": "deployments/automation-catalog/UpdateCatalog-HowItWorks-2026-10-12.md",
+      "git_blob_sha": "e01d21d49aa68fefb6d822005123b8119875033b",
+      "verified": true,
+      "slack_guide_posted": false
+    },
+    {
+      "identity": "automation-catalog|chatgpt|6acb92a719dc8191b372b3bd3368cb6f",
+      "path": "deployments/automation-catalog/CheckReports-HowItWorks-2026-10-12.md",
+      "git_blob_sha": "cb3bc508efbecd9eb3c4b00af78fbcd2f2f26c99",
+      "verified": true,
+      "slack_guide_posted": false
+    }
+  ],
+  "coverage_summary": {
+    "native_definition_candidates": 236,
+    "airtable_definitions_returned": 229,
+    "airtable_base_lists_verified": 38,
+    "airtable_bases_listed": 246,
+    "airtable_known_timeouts": 2,
+    "airtable_other_bases_unverified": 206,
+    "chatgpt_tasks": 7,
+    "chatgpt_enabled": 5,
+    "chatgpt_disabled": 2,
+    "repositories_listed": 100,
+    "repository_list_pages": 2,
+    "repository_review_complete": false,
+    "drive_metadata_matches": 32,
+    "drive_result_pages": 1,
+    "drive_content_review_complete": false,
+    "other_slack_workspaces_checked": false
+  },
+  "errors": [
+    "Two Airtable list_automations calls returned MCP request timed out.",
+    "The tool host reported: code-mode host closed its stdout. Its cause is unknown. In-memory results were lost.",
+    "The first Drive query returned INVALID_ARGUMENT. A corrected query succeeded on attempt 2."
+  ],
+  "held": "Remaining definitions need source review and matching to existing guides. Other businesses' document homes and Slack audiences have not been verified. No private cross-client workflow details are included.",
+  "status_thread": "https://lamaisonsanta-8tm8179.slack.com/archives/C0C7XQK3TTR/p1791806593148719"
+}

@@ -1,0 +1,27 @@
+{
+  "interface": {
+    "capabilities": [],
+    "category": "Productivity",
+    "composerIcon": "./icon.png",
+    "developerName": "Rachael Quisel",
+    "displayName": "Humanize Output",
+    "logo": "./icon.png",
+    "longDescription": "Improve existing copy through a short conversation. Choose the reader, tone, and editing depth. Review suggestions before applying changes.",
+    "shortDescription": "Revise copy in your voice",
+    "defaultPrompt": null
+  },
+  "name": "humanize-output",
+  "version": "1.0.4",
+  "description": "Improve existing copy through a short conversation. Choose the reader, tone, and editing depth. Review suggestions before applying changes.",
+  "author": {
+    "name": "Rachael Quisel"
+  },
+  "keywords": [
+    "writing",
+    "editing",
+    "voice",
+    "clarity"
+  ],
+  "license": "MIT",
+  "skills": "./skills"
+}

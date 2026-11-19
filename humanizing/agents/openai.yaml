@@ -1,0 +1,4 @@
+interface:
+  display_name: "Humanizing"
+  short_description: "Write in Rachael Quisel’s personal voice"
+  default_prompt: "Use $humanizing to rewrite this in Rachael’s personal voice."

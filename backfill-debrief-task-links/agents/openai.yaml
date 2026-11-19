@@ -1,0 +1,12 @@
+interface:
+  display_name: "Backfill Debrief Task Links"
+  short_description: "Reconnect debrief tasks to meeting pages"
+  default_prompt: "Use $backfill-debrief-task-links to safely reconnect meeting-created tasks for a named XRAY client."
+
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "airtable"
+      description: "Read Airtable schema and records, update approved task links, and verify interface pages."
+      transport: "streamable_http"
+      url: "https://mcp.airtable.com/mcp"

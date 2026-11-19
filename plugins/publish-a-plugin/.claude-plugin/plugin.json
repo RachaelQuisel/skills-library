@@ -1,0 +1,23 @@
+{
+  "name": "publish-a-plugin",
+  "displayName": "Publish a Plugin",
+  "description": "Prepare a Claude Code plugin for directory review. Check its package, investigate validation findings, and apply requested fixes.",
+  "version": "1.1.4",
+  "author": {
+    "name": "Rachael Quisel"
+  },
+  "homepage": "https://github.com/RachaelQuisel/publish-a-plugin",
+  "repository": "https://github.com/RachaelQuisel/publish-a-plugin",
+  "license": "MIT",
+  "keywords": [
+    "plugin",
+    "directory",
+    "submission",
+    "validation",
+    "packaging"
+  ],
+  "icon": "./icon.png",
+  "documentationUrl": "https://github.com/RachaelQuisel/publish-a-plugin#readme",
+  "supportUrl": "https://github.com/RachaelQuisel/publish-a-plugin/issues",
+  "privacyPolicyUrl": "https://github.com/RachaelQuisel/publish-a-plugin/blob/main/PRIVACY.md"
+}

@@ -1,0 +1,5 @@
+interface:
+  display_name: "Automation Metadata Maker"
+  short_description: "Create automation names, guides, run locations, and tags"
+  default_prompt: "Use $automation-catalog to find accessible automations and update their guides and approved Slack messages."
+  icon_large: "../../icon.png"

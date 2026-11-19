@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-02",
+  "replacement": {
+    "name": "Skill checks",
+    "workflow_id": 405013972,
+    "path": ".github/workflows/release-consistency.yml",
+    "verified_commit": "9d0edcba82b6c961c3d8e1b3a0dd22c04a400b73",
+    "first_pass_url": "https://github.com/RachaelQuisel/Skills/actions/runs/41545657832",
+    "release_consistency": "passed",
+    "registered_skill_paths": 161,
+    "inventory_errors": [],
+    "offline_tests_passed": 69
+  },
+  "retired": {
+    "name": "Maintained skills",
+    "workflow_id": 381284219,
+    "verified_state": "disabled_manually",
+    "configuration_removed_after_replacement_pass": true,
+    "history_preserved": true
+  },
+  "alert_task": {
+    "id": "6acb8fa863208191a83b74bb78b40133",
+    "name": "Skill Check Alerts",
+    "schedule": "Hourly",
+    "verified_active": true,
+    "verified_saved_prompt_matches": true,
+    "canonical_instructions": "maintenance/ALERT-TASK.md",
+    "state_branch": "skill-alert-state",
+    "state_path": "alert-state.json",
+    "events": [
+      "problem-opened",
+      "problem-fixed"
+    ],
+    "github_account_email_settings": "unchanged",
+    "scheduled_delivery": "unverified until an actual event is sent and read back"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "worth-asking",
+  "version": "1.0.4",
+  "description": "Surface high-leverage questions missed in client conversations.",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Worth Asking",
+    "shortDescription": "Surface missed questions from client conversations",
+    "longDescription": "Worth Asking reviews complete meeting transcripts and surfaces evidence-backed questions that could change the next decision.",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": "Use $worth-asking to find the highest-leverage questions I missed asking.",
+    "developerName": "Rachael Quisel",
+    "logo": "./assets/worth-asking.png",
+    "composerIcon": "./assets/worth-asking.png"
+  },
+  "author": {
+    "name": "Rachael Quisel"
+  }
+}

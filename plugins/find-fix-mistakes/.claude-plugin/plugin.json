@@ -1,0 +1,14 @@
+{
+  "name": "find-fix-mistakes",
+  "version": "1.0.4",
+  "description": "Find and fix mistakes in the assistant’s work, then check the corrections.",
+  "author": {
+    "name": "Rachael Quisel"
+  },
+  "keywords": [
+    "self-review",
+    "mistakes",
+    "repair",
+    "verification"
+  ]
+}

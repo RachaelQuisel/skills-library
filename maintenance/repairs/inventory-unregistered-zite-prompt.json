@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "issue_key": "inventory-unregistered-zite-prompt",
+  "repository": "RachaelQuisel/Skills",
+  "branch": "repair/inventory-unregistered-zite-prompt",
+  "status": "local_validation_passed",
+  "max_attempts": 3,
+  "attempts_used": 2,
+  "latest_main_sha": "32233c28c0bd47ec0efaa676a0c3f9fa230ea2ab",
+  "evidence": {
+    "failed_run_ids": [
+      38192846470,
+      38192851069,
+      38196044579,
+      38196057972
+    ],
+    "latest_run_url": "https://github.com/RachaelQuisel/Skills/actions/runs/38196057972",
+    "observed": "The offline-regressions job installed dependencies successfully, then maintenance/check.py failed its inventory check with: Unregistered skill: zite-prompt.",
+    "confirmed_cause": "zite-prompt/SKILL.md exists on current main, but zite-prompt is absent from maintenance/collection.json."
+  },
+  "attempts": [
+    {
+      "number": 1,
+      "started_at": "2026-10-12T02:58:00Z",
+      "plan": "Add a maintenance README for zite-prompt, register the skill with the resulting tree SHA, add an inventory regression for this exact case if not already covered, and run the full registered suite.",
+      "result": "Draft PR #20 opened. Exact-tree inventory validation and the full registered GitHub Actions suite passed on the fix commit.",
+      "completed_at": "2026-10-12T02:59:00Z"
+    },
+    {
+      "number": 2,
+      "started_at": "2026-10-12T06:31:53.294340+00:00",
+      "plan": "Refresh existing PR #20 against current main; register the packaged zite-prompt using a unique plugin:skill inventory ID with strict namespace validation; refresh the root tree baseline; preserve duplicate/path controls and add required synthetic regression cases; run all registered checks and exact-head CI before the user-authorized merge.",
+      "result": "Refreshed PR branch against main without conflicts. Added root/plugin namespace regression and observed its expected failure on the previous validator; all four new controls passed after the fix. Full registered suite passed: 61 tests, zero failures or skips; 126 registrations; no inventory errors; both zite-prompt trees match recorded baselines. Awaiting exact-head GitHub Actions before the approved merge.",
+      "local_validation_completed_at": "2026-10-12T06:33:52.718295+00:00"
+    }
+  ],
+  "pull_request": "https://github.com/RachaelQuisel/Skills/pull/20",
+  "validation": {
+    "inventory_tree_check": {
+      "candidate_commit": "1b918ba86fca114c7a6cdc220c44913d977230b4",
+      "result": "passed",
+      "evidence": "Exact recursive Git tree: 125 skill directories, 125 registrations, no missing registration, skill, README, maintainer, or zite-prompt baseline mismatch."
+    },
+    "full_registered_suite": {
+      "candidate_commit": "1b918ba86fca114c7a6cdc220c44913d977230b4",
+      "result": "passed",
+      "run_id": 38197897589,
+      "run_url": "https://github.com/RachaelQuisel/Skills/actions/runs/38197897589"
+    },
+    "live_compatibility": "unverified"
+  },
+  "approval": {
+    "owner": "RachaelQuisel",
+    "merge_approved_at": "2026-10-12T06:25:00Z",
+    "expanded_inventory_repair_approved_at": "2026-10-12T06:26:00Z",
+    "scope": "Update and merge existing PR #20 for this inventory repair only."
+  },
+  "refresh_validation": {
+    "base_main_commit": "32233c28c0bd47ec0efaa676a0c3f9fa230ea2ab",
+    "previous_pr_head": "b5b17849c34690f80e94ba81d0e1b5b6806679fe",
+    "local_python": "3.14.6",
+    "inventory": {
+      "skills": 126,
+      "errors": [],
+      "root_baseline_tree_sha": "05a9b19e845d2c98c1ccc1560c8f394af1a6a901",
+      "plugin_baseline_tree_sha": "86f35c5035e898429b059ded0a13ffaef14fcebc"
+    },
+    "full_registered_suite": {
+      "tests": 61,
+      "failures": 0,
+      "skipped": 0,
+      "audit_offline": 22,
+      "acuity_export_offline": 9,
+      "maintenance_controls": 30
+    },
+    "regression_red": "test_root_and_namespaced_plugin_skill_coexist failed on the previous validator with Invalid skill path: example:example; other three new controls passed.",
+    "regression_green": "All 15 inventory/control tests passed after the namespaced-ID validator change.",
+    "platform_layout_validation": "Claude CLI plugin and marketplace validation passed with zero errors or warnings.",
+    "live_compatibility": "unverified"
+  }
+}

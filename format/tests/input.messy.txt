@@ -1,0 +1,16 @@
+⏺ Spent most of the week deep in AYMG's database cleanup. Here's where it landed:
+
+ - Split line items out from contracts so each one is its own record
+ - Stood up two new tables: Agencies and Advertisers, both linked to Contacts
+ - Linked contacts to contracts (and through that, to the right agency/advertiser)
+ - Blew up the "production + billing" combo chip into separate contact types — production, billing, and the 4-5 other types I found
+ hiding in there once I actually looked
+
+ The old setup had every contact dumped in one table, which was killing any automation that wanted to pull "send this to billing" or
+ "send this to the advertiser." Now those routes actually exist.
+
+ Numbers: 15,000+ contacts, 14,000 linked to the correct contact via script. Pretty hyped about that hit rate tbh.
+
+ Next mountain is linking contracts to products. This one's gnarly — product depends on a bunch of overlapping categories, and I've
+ already done several Python passes without a clean answer. Historical contracts are not product-linked yet. Happy to walk through the
+  logic

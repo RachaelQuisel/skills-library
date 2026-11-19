@@ -1,0 +1,26 @@
+{
+  "skill_name": "zip-to-spa",
+  "evals": [
+    {
+      "id": 0,
+      "name": "single-zip-casual-ask",
+      "prompt": "jessica just forwarded me a referral for a family at an address in 90815 and she's asking which spa team should pick it up. what service planning area is that zip in?",
+      "expected_output": "Answer: SPA 8 (South Bay). The skill should run and return structured output (JSON or similar) showing zip=90815, spa=8, spa_name='South Bay'. Should NOT guess from memory.",
+      "files": []
+    },
+    {
+      "id": 1,
+      "name": "batch-list-mixed-la-and-outside",
+      "prompt": "i have five new families and need to assign them to spa teams. the zip codes are 90001, 90044, 90265, 90620, and 93534. can you tell me which spa each one is in?",
+      "expected_output": "Should return SPAs for all 5: 90001=SPA 6, 90044=SPA 6, 90265=SPA 5, 90620=unresolved (Orange County), 93534=SPA 1. The skill should run as a batch lookup. The 90620 result should correctly flag as unresolved rather than guessing.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "name": "near-miss-rhetorical",
+      "prompt": "the applicant table in our airtable base has 2800 rows that have an address zip but no SPA. is there a way to tell what spa each one is in without doing it manually?",
+      "expected_output": "Should either (a) invoke the skill to demonstrate the lookup pattern on 1-3 example zips, OR (b) explain that the skill exists and how to call it against the full set. Should NOT propose building a brand-new lookup from scratch when the skill is right there.",
+      "files": []
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+# Design the visible parts of an application with a clear layout and an intentional visual style
+
+This skill helps you design the visible parts of an application with a clear layout and an intentional visual style.
+
+## What to share
+
+Describe the intended result, where it will appear, and any existing design examples or brand requirements.
+
+## How to start
+
+Select this skill and describe your request. The assistant uses the information and tools available in that conversation.
+
+## Detailed guidance
+
+The [working instructions](SKILL.md) describe the skill's steps, required tools, and limits.
+
+The [technical guide and examples](TECHNICAL-GUIDE.md) retain the earlier detailed documentation.

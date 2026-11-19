@@ -1,0 +1,4 @@
+interface:
+  display_name: "GoL Acuity to Airtable Sync"
+  short_description: "Audit, preview, and operate the GoL training sync"
+  default_prompt: "Use $sync-gol-acuity-airtable to audit the GoL training sync and report unresolved links and writer evidence."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Dissonance Radar"
+  short_description: "Surface missed questions from client conversations"
+  default_prompt: "Use $dissonance-radar to find the highest-leverage questions I missed asking."

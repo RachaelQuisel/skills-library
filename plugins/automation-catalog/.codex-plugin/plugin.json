@@ -1,0 +1,6 @@
+{
+  "name": "automation-catalog",
+  "version": "1.0.5",
+  "description": "Creates a name, guide, run location, and tags for each automation.",
+  "skills": "./skills/"
+}

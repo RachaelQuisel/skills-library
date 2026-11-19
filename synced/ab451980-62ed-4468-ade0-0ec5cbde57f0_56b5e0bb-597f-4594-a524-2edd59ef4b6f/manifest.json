@@ -1,0 +1,544 @@
+{
+  "lastUpdated": 1794698566034,
+  "skills": [
+    {
+      "skillId": "skill_013xFwfHVoi5FvrxFibKPAHG",
+      "name": "project-instructions-writer",
+      "description": "Write or fix the project instructions for a Project in Claude (coordinator plus threads at claude.ai/code, the desktop Code tab or the mobile app). Use when someone sets up a Claude Project, asks what to put in project instructions, or says their project threads keep guessing or going off track.",
+      "source": "plugin",
+      "updatedAt": "2026-10-30T21:14:21.581803Z",
+      "backingPluginId": "plugin_01KxeMbn3vZX7baTwLYEKugs"
+    },
+    {
+      "skillId": "skill_01EYZe9weD6Aw7hTAygrUbfe",
+      "name": "voice-align",
+      "description": "Rewrite or review content for clarity, concision, and plain English. Use when the user invokes /voice-align or says \"make this make sense,\" \"make this more concise,\" \"use normal plain English,\" \"write this for my team,\" or \"tell me what is useful or unnecessary.\" Also use for automation and process explanations that need triggers, inputs, complete steps, and outputs. Do not use this skill by itself to imitate Rachael's personal voice.",
+      "source": "plugin",
+      "updatedAt": "2026-10-02T22:02:55.398853Z",
+      "backingPluginId": "plugin_01MgRRawcefHreHCvyLfnfr4"
+    },
+    {
+      "skillId": "skill_016gzuhtktRnQGEhKe2HmuoK",
+      "name": "airtable-workflow-scout",
+      "description": "Understand an Airtable business workflow, identify work to remove, and recommend up to three useful interfaces. Use for consulting discovery or deciding which interface to build; ordinary record lookups do not require this process.",
+      "source": "plugin",
+      "updatedAt": "2026-09-28T07:02:20.857250Z",
+      "backingPluginId": "plugin_01ACdy2Se3GziK2w69yMhPpi"
+    },
+    {
+      "skillId": "skill_014kyADRnraqv63HCbPd5aZT",
+      "name": "training-video",
+      "description": "Make a narrated how-to video of a web app from real screenshots: plain-language script, red highlights, captions, ElevenLabs voice synced to each slide. Use when Rachael types /training-video or asks for a training or walkthrough video.",
+      "source": "plugin",
+      "updatedAt": "2026-10-28T23:53:22.704688Z",
+      "backingPluginId": "plugin_019GaMRBaA8NTFYMQawyw8jg"
+    },
+    {
+      "skillId": "skill_01QVCLaWf64YHmMX4YkdsPTC",
+      "name": "airtable-momentum-studio",
+      "description": "Design engaging Airtable custom interfaces for individual daily work and produce copy-ready Omni prompts. Use for task focus, meaningful progress, and interactive completion flows; team capacity belongs in Capacity Studio, and existing source-code changes belong in Omni Refiner.",
+      "source": "plugin",
+      "updatedAt": "2026-09-28T18:41:47.215695Z",
+      "backingPluginId": "plugin_016Up8jZFL27LfMPdHGuMQ53"
+    },
+    {
+      "skillId": "skill_011Sc4WvAfn8LZZ8oK55AtGF",
+      "name": "post-plugin-reel",
+      "description": "Build and post a 6-second Instagram reel announcing a new plugin on @agentic_ai_sb. Use when Rachael says \"post [plugin] to IG\" with a repo link and tagline.",
+      "source": "plugin",
+      "updatedAt": "2026-10-04T21:34:52.478593Z",
+      "backingPluginId": "plugin_01FpfM3e8oiMLsiwV38872bm"
+    },
+    {
+      "skillId": "skill_01B7fKLwwnvDA1NcsTY3rR6L",
+      "name": "gol-confirm-received-date",
+      "description": "Sync GOL and DIUP families from Binti into the GoL Base Application table: received dates for Applying families, RFA Approval (Initial Approval) dates for In Renewal families, new Application + Applicant + Team Assignment records for anything Binti has that Airtable doesn't, and a review flag plus note for anything the two systems disagree on. Use whenever Rachael asks to confirm, check, fill, or update received dates or approval dates, says Binti is the source of truth, asks whether new families landed, says run it again, or signs in to Binti as Jessica Peoples or Dangerfield. Writes without asking, and writes only what differs.",
+      "source": "plugin",
+      "updatedAt": "2026-11-05T01:12:07.598955Z",
+      "backingPluginId": "plugin_01J64t84JXmUENASKLGV4Ps6"
+    },
+    {
+      "skillId": "skill_01NGVGguqdZdiKoZJcLyKbdZ",
+      "name": "airtable-capacity-studio",
+      "description": "Design interactive Airtable team workload and assignment interfaces and write copy-ready Omni prompts. Use for balancing work, previewing reassignment, and managing capacity; individual task motivation belongs in Momentum Studio and code refinement in Omni Refiner.",
+      "source": "plugin",
+      "updatedAt": "2026-09-28T18:42:18.847310Z",
+      "backingPluginId": "plugin_01JpvVYrFh6KYYj4rL24rfoq"
+    },
+    {
+      "skillId": "skill_012rV8nFpGJvPuNAKg1HzUCH",
+      "name": "airtable-experience-lab",
+      "description": "Review or test an Airtable interface against a real user task, including native/custom/refined comparisons. Use to assess interaction quality and persistence with Pass, Fail, or Not tested evidence; a design critique alone does not establish working behavior.",
+      "source": "plugin",
+      "updatedAt": "2026-09-28T07:00:26.632940Z",
+      "backingPluginId": "plugin_015m5JRgJs8xT84SkCwfEovE"
+    },
+    {
+      "skillId": "skill_015Jum93QJSWEGUBKi7fojvY",
+      "name": "proper-grammar",
+      "description": "Remove the comma before a coordinating conjunction (and, but, or, so, yet) when the second half has no subject of its own, so the sentence is a compound predicate and not a compound sentence. Use when Rachael types \"/proper-grammar\", says \"remove the comma after the conjunction\", \"not a compound sentence\", \"stop adding commas\", \"no subject in the second clause\", or pastes text or points at a draft and complains about comma placement. Also use when she asks to tidy up text so it doesn't read like an AI wrote it and the draft has this comma pattern.",
+      "source": "plugin",
+      "updatedAt": "2026-10-30T07:42:14.071838Z",
+      "backingPluginId": "plugin_0116pbAr2osjFJ7G9rev6FvC"
+    },
+    {
+      "skillId": "skill_01XKHoRN32s8hnKJt3um7FRu",
+      "name": "airtable-base-check",
+      "description": "Audit the schema, data quality, and automation evidence relevant to an Airtable workflow. Use before a consequential build or to diagnose unreliable data; distinguishes observed findings from unavailable run history and does not authorize repairs.",
+      "source": "plugin",
+      "updatedAt": "2026-09-28T18:47:58.003321Z",
+      "backingPluginId": "plugin_017Pbgs68vVPiXprZG3r8Kbu"
+    },
+    {
+      "skillId": "skill_015NbSVGrxPqR7DJ17T82fDk",
+      "name": "i-have-adhd",
+      "description": "Shape every reply so it is easy to act on for a reader with ADHD - lead with the next action, cut filler, number multi-step work, and keep lists short. Stays active for the whole session until the user says \"stop adhd mode.\"",
+      "source": "plugin",
+      "updatedAt": "2026-10-14T05:39:53.169810Z",
+      "backingPluginId": "plugin_015LiYA2xuMPN3gE2kmMCyLB"
+    },
+    {
+      "skillId": "skill_016KnJ1i8M4Wd6WDS9QGwQ4c",
+      "name": "plugin-namer",
+      "description": "Name a Claude plugin and draft its marketplace listing copy: searchable names that say what the plugin does, a personality-driven tagline, and a transformation-led description following the formula used for Rachael's three launch plugins.",
+      "source": "plugin",
+      "updatedAt": "2026-10-04T00:12:28.099451Z",
+      "backingPluginId": "plugin_01Xd9bRCKFxVg7xbA3tJM32G"
+    },
+    {
+      "skillId": "skill_01KbHMyEWRktSRftPSzrePLi",
+      "name": "make-it-sound-human",
+      "description": "Turn a technical report, data check, audit, comparison, or assistant-generated summary into a friendly, client-facing XRAY-branded PDF that reads like Rachael wrote it. The reader dislikes technology and reads at about an 8th-grade level. Use this whenever Rachael pastes a report and wants it \"for the client,\" \"in plain English,\" \"for someone non-technical,\" \"client-facing,\" \"in my voice,\" or \"to sound human.\" Examples include an Instinct check, an Airtable or Acuity comparison, a reconciliation, or a status report. Use it even if she does not say PDF or name this skill.",
+      "source": "plugin",
+      "updatedAt": "2026-10-17T04:40:54.875233Z",
+      "backingPluginId": "plugin_01WpotsPNMTB43B7hbGh613x"
+    },
+    {
+      "skillId": "skill_01DAeZZb2wjBkPA47JJeubfw",
+      "name": "airtable-interface-craft",
+      "description": "Refine or build Airtable custom interfaces that combine a distinctive visual style with reliable staff workflows. Use for connected task, document, training or calendar experiences, and for returning revised source to Airtable. Preserve an existing design where requested; ordinary record cleanup and automation-only changes are outside this workflow.",
+      "source": "plugin",
+      "updatedAt": "2026-10-12T22:29:27.279328Z",
+      "backingPluginId": "plugin_01SsxxAqTC2TNQ5Jr9DyhjCn"
+    },
+    {
+      "skillId": "skill_01NiXEnhrHQxHPD2Q3D4W3zC",
+      "name": "airtable-cli",
+      "description": "Lists bases, reads and writes records, manages tables and fields, filters and searches data in Airtable via the `airtable-mcp` CLI. Use when the task involves Airtable data or the user mentions airtable-mcp, bases, tables, records, or fields.",
+      "source": "plugin",
+      "updatedAt": "2026-09-23T09:59:26.565364Z",
+      "backingPluginId": "plugin_01BjU1mGbLpzi41znFZ3DUwr"
+    },
+    {
+      "skillId": "skill_01YZRzFLhP2FchMRHCqVp2y2",
+      "name": "create-tweet-image",
+      "description": "Create or revise a 1080 by 1080 tweet-style social image using a caption, display name, handle, and profile photo. Ask for images and text, and suggest a caption from the image when text is missing. Use for clean Hormozi-style white-background tweet mockups.",
+      "source": "plugin",
+      "updatedAt": "2026-09-25T22:53:58.211827Z",
+      "backingPluginId": "plugin_01NtKzszQMLqatRv4eHWXPR2"
+    },
+    {
+      "skillId": "skill_01DMs8ooSpNmaGTv19GnVGtT",
+      "name": "airtable-omni-refiner",
+      "description": "Refine, debug, or extend existing Airtable Omni custom-interface source and guide its return to Airtable. Use when generated code or a reproducible interface bug is supplied, including a Studio handoff; use a Studio for initial design and prompting rather than triggering this skill on every mention of Omni.",
+      "source": "plugin",
+      "updatedAt": "2026-09-28T18:43:58.333312Z",
+      "backingPluginId": "plugin_01LYpJ1qgVhmPEEuePjuLGfY"
+    },
+    {
+      "skillId": "skill_01TPNL4Jdnaq6gp1it2z4tDZ",
+      "name": "airtable-backup-and-migrate",
+      "description": "Back up an Airtable base (schema + records + attachment bytes) to a local directory. Use whenever the user asks to back up, snapshot, dump, export, or archive an Airtable base, or wants a rollback point before a risky change. Trigger on casual phrasing too (\"save a copy of the CC base\", \"dump appXXX to disk\", \"I need a snapshot before this migration\"). This is the canonical XRAY backup tool; do not hand-roll a one-off dump script when this exists.",
+      "source": "plugin",
+      "updatedAt": "2026-09-23T09:58:49.309748Z",
+      "backingPluginId": "plugin_01Fz7EjP4U3L94tiTtQHP4sa"
+    },
+    {
+      "skillId": "skill_013be3P3hD1jJgrW24ZqfXqF",
+      "name": "backfill-debrief-task-links",
+      "description": "Reconnect meeting-created tasks to the Workzone meeting pages for a specific XRAY client by backfilling the \"Debrief Tasks\" link field in Airtable. Use when tasks created from a meeting (by the tasks.xray.tech service) don't show up in a meeting page's task tabs, when someone says \"tasks aren't connected to the meeting,\" \"backfill debrief tasks for [client],\" or \"the meeting page shows no tasks.\" Scoped to one or more named clients — never run base-wide without explicit approval.",
+      "source": "plugin",
+      "updatedAt": "2026-08-23T04:57:37.540167Z",
+      "backingPluginId": "plugin_018G8sZmiTRV1Wc9fxYjAEJZ"
+    },
+    {
+      "skillId": "skill_01BuMpB2dTtJr57X6U6NiNhL",
+      "name": "review",
+      "description": "Comprehensive code review.",
+      "source": "plugin",
+      "updatedAt": "2026-05-26T23:52:31.027985Z",
+      "backingPluginId": "plugin_01E1Dv6nWceivch8rvrKbwe5"
+    },
+    {
+      "skillId": "skill_01ChKR9MD3pnh2YqHkXxiPvL",
+      "name": "airtable-overview",
+      "description": "Explains what Airtable is and how data is structured — bases, tables, fields, records, views, automations, and interfaces. Use when you need context about the Airtable data model.",
+      "source": "plugin",
+      "updatedAt": "2026-09-23T09:58:28.174690Z",
+      "backingPluginId": "plugin_017aLJnWXTuAjLsv2s1qb8pW"
+    },
+    {
+      "skillId": "skill_012NgPeEd4s1FP1KcM1nMia9",
+      "name": "explain-automation",
+      "description": "Turn an Airtable automation into a plain-English explainer and share it with the client. Reads the automation's real configuration, writes a no-jargon education doc in bullet points (trigger, inputs, steps in order, outputs, what happens when it fires), and posts it to the client's Slack huddle channel with a threaded reply carrying the direct automation links and a step-by-step breakdown. Use this whenever the user asks to explain an automation, educate the client on an automation, document what an automation does, write an automation explainer, post an automation explainer to Slack, or announce that an automation went live — even if they only say \"tell the team what this does\" or \"write this up for Janine.\"",
+      "source": "plugin",
+      "updatedAt": "2026-08-24T03:53:06.709656Z",
+      "backingPluginId": "plugin_011PfLppk9AdNvuUZ9HfovT1"
+    },
+    {
+      "skillId": "skill_01GYFGUxChSPkVXKnKcafSaA",
+      "name": "humanizing",
+      "description": "Transform Claude's default output into Rachael Quisel's voice. Use when drafting emails, texts, Slack messages, client communications, SOPs, or any writing that should sound human and personal. Trigger phrases are humanize this, make it sound like me, in my voice, rewrite this, make this better, make this sound better.",
+      "source": "plugin",
+      "updatedAt": "2026-03-16T20:12:27.733118Z",
+      "backingPluginId": "plugin_01QYuNGqBgLojnYEZmhy93X1"
+    },
+    {
+      "skillId": "skill_015XHDrJAM5zBdr8Pa7DNmXn",
+      "name": "sprint-summary",
+      "description": "Generate a complete sprint summary from live Airtable data, save it to the Artifacts table, and post it to the client's Slack huddle channel. Use this skill any time the user wants to review, wrap up, or report on a sprint. Trigger on: \"sprint summary\", \"summarize this sprint\", \"end of sprint\", \"last sprint recap\", \"what did we get done\", \"weekly summary\", \"how did the sprint go\", \"wrap up the sprint\", \"what's the velocity\", or any request to review completed vs. in-progress work for a time period. Orchestrates: fetch-tasks → build-sprint-summary → write-artifact → post-to-huddle.",
+      "source": "plugin",
+      "updatedAt": "2026-03-07T04:26:27.264978Z",
+      "backingPluginId": "plugin_01GRXQZpLyreMexff5VcMsvm"
+    },
+    {
+      "skillId": "skill_01VTceg3utQo5CdZwTEyaBKS",
+      "name": "omni-prompt",
+      "description": "Write concise, copy-pasteable Airtable Omni prompts and AI field custom instructions with explicit inputs, numbered output requirements, format rules, and missing-data handling. Use when drafting or revising Omni prompts, AI field prompts, or interface-building prompts.",
+      "source": "plugin",
+      "updatedAt": "2026-11-10T01:54:58.975418Z",
+      "backingPluginId": "plugin_016yF5nzQeMpPs1wbnzouLn4"
+    },
+    {
+      "skillId": "skill_01PBiRMQEJ1etkaDUGBoY8KH",
+      "name": "app-content",
+      "description": "Automate the weekly video content review workflow in Notion. Connects to a Notion video database, identifies unprocessed videos (missing category and date stamp), categorizes them, applies tags, and date-stamps them. Use this skill any time the user wants to review, categorize, or tag videos in their Notion database. Trigger on \"app content\", \"review videos\", \"categorize videos\", \"video review\", \"content review\", \"tag videos\", \"weekly video review\", or any mention of processing new video entries, even if they don't say \"video review\" explicitly. If the user mentions Amy's video database or weekly content tasks, this is likely the right skill.",
+      "source": "plugin",
+      "updatedAt": "2026-04-03T18:23:31.392997Z",
+      "backingPluginId": "plugin_01XK88wsn3sEPa3KjBKnXwKL"
+    },
+    {
+      "skillId": "skill_01NsiXgpHxxJmnkVhtzQkUpZ",
+      "name": "task-hygiene",
+      "description": "Enrich and dedupe tasks in the XRAY Airtable base (Projects & Tasks at XRAY), then deliver a post-run analysis. Enrichment fills Hours Estimated, links Outcomes, and sets Parent Tasks on debrief-extracted task batches; the dedupe sweep cancels redundant duplicate tasks using conservative, non-destructive rules. Use this skill whenever the user asks to estimate hours on tasks, add or fill in outcomes, set parent tasks, organize a task batch, clean up or dedupe tasks, run task hygiene, sweep for duplicates, tidy the backlog, or enrich tasks extracted from a debrief — even if they only mention one of those pieces. Also trigger on \"fill in the task fields\", \"add hours to these tasks\", \"find duplicate tasks\", or \"run the sweep\". Always produces a post-run analysis file.",
+      "source": "plugin",
+      "updatedAt": "2026-08-23T03:49:46.780348Z",
+      "backingPluginId": "plugin_014B8AyxXPjgMne1QNsoNkcY"
+    },
+    {
+      "skillId": "skill_01AGwp4KLQrU8EobfoVqgqdr",
+      "name": "micro-case-study",
+      "description": "Extract micro-case study (MCS) candidates from Zoom call transcripts and supplemental data. Mine client call transcripts for the smallest atomic wins (one automation, one form, one integration, one consulting insight) and produce structured MCS records. Use when asked to create micro-case studies, find client wins, mine transcripts for case studies, identify MCS candidates, or build the MCS library. Triggers on \"micro-case study\", \"MCS\", \"case study\", \"mine transcripts\", \"find wins\", \"client wins from transcripts\".",
+      "source": "plugin",
+      "updatedAt": "2026-04-01T15:41:24.394555Z",
+      "backingPluginId": "plugin_01X3q7BgRwm6mUhyQ9d2Qs2k"
+    },
+    {
+      "skillId": "skill_01DFtKDiSEY69bpNcHm6GxPc",
+      "name": "fetch-tasks",
+      "description": "Fetch and bucket tasks from an XRAY Airtable base scoped to a specific client and date range. Use this skill whenever tasks need to be pulled from Airtable for Coding Clarified or AY Media. Trigger on: \"get tasks\", \"pull tasks\", \"fetch tasks\", \"what tasks exist\", \"show me tasks\", \"look up tasks in Airtable\", or any workflow that needs task data as input before building a summary or report. Always use this skill before build-sprint-summary.",
+      "source": "plugin",
+      "updatedAt": "2026-03-07T04:26:24.171634Z",
+      "backingPluginId": "plugin_01R6PvPz4U1jdmX45VYdyLKH"
+    },
+    {
+      "skillId": "skill_016B2KJkkEWRSAxgFEnShryK",
+      "name": "research",
+      "description": "Conducts thorough research using subagents for API integrations, data processing, debugging, and technical documentation. Use when the user asks to research, investigate, find, look up, compare, or understand technologies, APIs, error messages, or integration approaches. Triggers on phrases like \"research this\", \"find out how\", \"what's the best way to\", \"help me understand\", or \"investigate why\".",
+      "source": "plugin",
+      "updatedAt": "2026-03-06T08:44:37.905011Z",
+      "backingPluginId": "plugin_01LAiBYK9XayNqt3mnGiWMio"
+    },
+    {
+      "skillId": "skill_01WVLBJsduBRStq8xj3JVbCk",
+      "name": "todays-focus",
+      "description": "Build a prioritized, time-blocked daily task list by pulling from Notion and Google Calendar, then output a Notion page in the Today's Focus database. Use this skill whenever the user asks about today's tasks, what to work on, planning their day, daily priorities, quick wins, or deep focus time. Trigger phrases include \"what tasks for today,\" \"plan my day,\" \"today's tasks,\" \"today quick wins,\" \"what should I work on today,\" \"deep focus,\" \"today's focus,\" or any request to create a daily task plan. Also trigger when the user mentions prioritizing tasks, time-blocking, or asks \"what's on my plate.\"",
+      "source": "plugin",
+      "updatedAt": "2026-03-06T21:59:54.743462Z",
+      "backingPluginId": "plugin_01VnjAquEZSAUXcD7FJqEfpP"
+    },
+    {
+      "skillId": "skill_01W2vFi5jLWJErr81PShc5dx",
+      "name": "travel-brief",
+      "description": "Creates a comprehensive travel briefing document including packing list, weather forecast, local tips, and logistics. Use when the user asks for a complete travel guide, trip planning, travel brief, or wants to fully prepare for a trip.",
+      "source": "plugin",
+      "updatedAt": "2026-03-06T08:43:32.167885Z",
+      "backingPluginId": "plugin_012mBsxewp32SxJGfznnSPJ1"
+    },
+    {
+      "skillId": "skill_0158dbhEg5GzuGxVnyA7K7aZ",
+      "name": "build-sprint-summary",
+      "description": "Take bucketed task data and format it into a structured sprint summary. Use this skill whenever task data has been fetched and needs to be turned into a readable sprint summary. Trigger on: \"build the summary\", \"format the summary\", \"write up the sprint\", \"generate the sprint report\", \"turn this into a summary\", or any request to produce a formatted sprint output from task data. Always leads with in-progress and at-risk tasks — not velocity.",
+      "source": "plugin",
+      "updatedAt": "2026-03-07T04:26:24.896615Z",
+      "backingPluginId": "plugin_01UTobvHBySs3BUJDPx5STYp"
+    },
+    {
+      "skillId": "skill_01F7TtdmrANtCBMRksPatTJ3",
+      "name": "travel-packing-list",
+      "description": "Creates personalised packing lists based on destination, duration, and trip purpose. Use when the user asks for help packing, creating a packing list, preparing for a trip, or mentions travel planning.",
+      "source": "plugin",
+      "updatedAt": "2026-03-06T08:43:25.434399Z",
+      "backingPluginId": "plugin_01K9X8ANhG7GNrPuh1YfEEJr"
+    },
+    {
+      "skillId": "skill_01WDD4HGFc7Jn6EuTCfw8FeN",
+      "name": "vibe-safe-errors",
+      "description": "Implements secure error handling patterns that log internally but never leak sensitive information to clients. Use when adding try/catch blocks, error boundaries, creating error responses, or building error handling middleware.",
+      "source": "plugin",
+      "updatedAt": "2026-03-06T08:44:27.168741Z",
+      "backingPluginId": "plugin_01C5WZo9nLdnB35sagodb2R7"
+    },
+    {
+      "skillId": "skill_01ML93JiB4hJpHSm9pCNHSvT",
+      "name": "vibe-safe-auth",
+      "description": "Implements secure authentication patterns including login, signup, sessions, password hashing, CSRF protection, and rate limiting. Use when building auth flows, password reset, session management, or OAuth integration.",
+      "source": "plugin",
+      "updatedAt": "2026-03-06T08:44:17.136708Z",
+      "backingPluginId": "plugin_014tCKdSrFbisqP7oPLgxLnL"
+    },
+    {
+      "skillId": "skill_01GaTuCvdxNATKJmwbD3aRYM",
+      "name": "vibe-safe",
+      "description": "Enforces security-first coding when building APIs and endpoints. Applies RAILGUARD protocol for input validation, authentication checks, rate limiting, and structured error responses. Use when creating REST APIs, route handlers, server actions, or any backend endpoint.",
+      "source": "plugin",
+      "updatedAt": "2026-03-06T08:44:10.104250Z",
+      "backingPluginId": "plugin_01VqjQBcirEH4GstZMFjp1is"
+    },
+    {
+      "skillId": "skill_01VDHeAH9CN3GftPje47xR7d",
+      "name": "workflow-orchestration",
+      "description": "Enforce disciplined development methodology for any non-trivial coding or architecture task. This is about HOW to work — not the plan format. Use this skill whenever the user asks to build, fix, refactor, or implement anything involving 3+ steps, architectural decisions, or multi-file changes. Also trigger when the user mentions \"plan mode,\" references tasks/lessons.md, when a coding task starts going sideways, or when a bug report comes in. This keeps work verified, documented, and self-improving.",
+      "source": "plugin",
+      "updatedAt": "2026-02-16T13:31:03.959407Z",
+      "backingPluginId": "plugin_01RCnb7x1gUUKPk7Et1Yvw2C"
+    },
+    {
+      "skillId": "skill_01S84DFfihPG4SvWc45D3dsQ",
+      "name": "kpi-report",
+      "description": "Generate an internal XRAY KPI reference document from a client discovery meeting transcript. Use this skill whenever a discovery transcript is provided and the goal is to extract or define KPIs for building a client's system — even if the user does not say KPI report explicitly. Trigger phrases include: build a KPI report, what should we track, extract KPIs from this transcript, what metrics matter for this client, summarize what they want to measure, turn this transcript into a KPI plan, or any time a discovery transcript is pasted and the user wants to understand what to build. This skill produces an internal planning doc, not a client-facing deliverable.",
+      "source": "plugin",
+      "updatedAt": "2026-03-06T17:44:41.863304Z",
+      "backingPluginId": "plugin_01NA9qycRjT4vtS3XvVHbVyJ"
+    },
+    {
+      "skillId": "skill_01GoGKwknA654fDqrY8SUYPv",
+      "name": "post-to-huddle",
+      "description": "Post a message to the correct XRAY client huddle channel in Slack. Use this skill any time a summary, report, or update needs to be shared in a client's Slack huddle channel. Trigger on: \"post to Slack\", \"send to the huddle\", \"share this in Slack\", \"post the summary\", \"send to huddle channel\", or any request to deliver content to a client's Slack channel. Always show the message and confirm before posting. No tags.",
+      "source": "plugin",
+      "updatedAt": "2026-03-07T04:26:26.378305Z",
+      "backingPluginId": "plugin_015GNVTF3U4LxCiDtaxgUZr4"
+    },
+    {
+      "skillId": "skill_01Ce7jfx1wvy3z6MJjJsByCo",
+      "name": "write-artifact",
+      "description": "Write a summary, report, or document to the XRAY Artifacts table in Airtable. Use this skill any time a finished piece of content needs to be saved as an Artifact record — sprint summaries, weekly reports, project notes, or any structured output. Trigger on: \"save this to Artifacts\", \"write this to Airtable\", \"log this as an artifact\", \"record this summary\", \"save it\", or any workflow that produces a document and needs it persisted. Always confirm content before writing. Never overwrite existing records.",
+      "source": "plugin",
+      "updatedAt": "2026-03-07T04:26:25.797878Z",
+      "backingPluginId": "plugin_017HvTTway5uNhwMaJn8EMvE"
+    },
+    {
+      "skillId": "skill_01Tr14bPfYsZpLPJXq9rhrxw",
+      "name": "explain-code",
+      "description": "Explains code with visual diagrams and analogies. Use when explaining how code works, teaching about a codebase, or when the user asks \"how does this work?\"",
+      "source": "plugin",
+      "updatedAt": "2026-03-06T08:43:58.284424Z",
+      "backingPluginId": "plugin_01RD16dSgWF8svdvyKLuSkvo"
+    },
+    {
+      "skillId": "skill_01P1KQmBM81y6sV1vnRi6iuo",
+      "name": "pdf-builder",
+      "description": "Build production-quality multi-page PDF documents using ReportLab and pypdf. Use this skill whenever the user asks to create, design, or generate a PDF — especially business documents like agreements, contracts, invoices, forms, reports, or templates. Trigger on: \"create a PDF\", \"make a PDF\", \"build a PDF template\", \"generate a PDF form\", \"design a document\", \"make this into a PDF\", or any request where the output is a polished .pdf file. Also trigger when converting an existing document (Word, image, sketch) into a designed PDF. This skill encodes hard-won lessons about spacing, overlap prevention, typography hierarchy, color systems, and verification — always use it rather than winging a ReportLab build from scratch.",
+      "source": "plugin",
+      "updatedAt": "2026-03-05T08:56:55.650270Z",
+      "backingPluginId": "plugin_01EP2JagLrrEpRmPxSSJ5UFQ"
+    },
+    {
+      "skillId": "skill_01JdCdYeVPGf59R6cMTzvf8p",
+      "name": "peer-review",
+      "description": "Have different models review each other's work. I'll have Codex or Gemini review code that Claude wrote, then bring that feedback back. The dev lead verifies each finding rather than accepting blindly.",
+      "source": "plugin",
+      "updatedAt": "2026-01-22T19:13:18.346860Z",
+      "backingPluginId": "plugin_01JAQD5oGb9ffHpbupXb29aU"
+    },
+    {
+      "skillId": "docs",
+      "name": "docs",
+      "description": "docs (editable docs people share and comment on; the default for any document, named as a doc or not: a document, report, proposal, resume, cover letter, letter, contract, policy, form, template, worksheet, essay, handbook, guide, how-to, cheat sheet, SOP or other writing to keep, share, collaborate on, send, submit, print or sign; a doc exports to Word, PDF, Markdown or Google Docs, so needing a file to send, attach, upload, submit or print is no reason to pick Word, and a file nobody asked for is a doc, not Word; a plan, comparison, summary or notes asked in chat stays in chat; a pasted claude.ai artifact link may be a doc: check with docs tools first; Word or another file format named, tracked changes wanted, or a .docx to change or use as a template → that format's skill): making one → if no docs-connector instructions are in context, call its `guide` (topic.instructions) first; then create the doc (headings only, no body) before any search, file read or plan, even with files attached.",
+      "source": "anthropic-example",
+      "updatedAt": "2026-09-30T00:33:27.599727Z"
+    },
+    {
+      "skillId": "skill_01YThdUbGVFrKopbp7PwcRv9",
+      "name": "create-issue",
+      "description": "Capture bugs, features, or improvements quickly while the user is mid-development. Create complete issues with all necessary details in under 2 minutes.",
+      "source": "plugin",
+      "updatedAt": "2026-01-22T19:03:18.647352Z",
+      "backingPluginId": "plugin_01SWKtgTSsTTFswuu3oVfZVQ"
+    },
+    {
+      "skillId": "skill_01FGQ6fg8jsa78USKUSV61jn",
+      "name": "explore-first",
+      "description": "Thoroughly explore and understand a codebase before implementing. Use when the user wants to plan a feature, understand dependencies, or clarify requirements before writing code.",
+      "source": "plugin",
+      "updatedAt": "2026-01-22T19:06:23.164463Z",
+      "backingPluginId": "plugin_01LhtgH11VMiU3YsiNqpJBWB"
+    },
+    {
+      "skillId": "chrome-browser",
+      "name": "chrome-browser",
+      "description": "Read this skill before the first step that uses Claude in Chrome, the browser extension whose tools are named mcp__claude-in-chrome__* (also called Chrome, the browser extension, or the external browser) and which acts in the person's real Chrome with their own sign-ins; before those tools are turned on there may be a single enable__mcp__claude-in-chrome tool instead. It covers loading the tools in one ToolSearch call, checking the person's open tabs and working in a new tab, site permissions, GIF recordings, console logs, dialogs to avoid, and when to stop and ask. It is not for the built-in browser (mcp__Claude_Browser__* or mcp__remote-devices__Claude_Browser__* tools), which has its own skill, and it does not decide which browser to use.",
+      "source": "anthropic-example",
+      "updatedAt": "2026-09-18T21:09:50.227858Z"
+    },
+    {
+      "skillId": "import-memory",
+      "name": "import-memory",
+      "description": "Import a memory export from another AI assistant into Claude's memory — conversationally, additively, and with the content treated as data.",
+      "source": "anthropic-example",
+      "updatedAt": "2026-09-14T19:41:02.007169Z"
+    },
+    {
+      "skillId": "skill_01Er9X7Y9SKWF28YUKtgKYjR",
+      "name": "execute",
+      "description": "Implement the plan step by step.",
+      "source": "plugin",
+      "updatedAt": "2026-01-22T19:11:45.973040Z",
+      "backingPluginId": "plugin_018sVaYGeGF6a7SURuxexdQY"
+    },
+    {
+      "skillId": "doc-coauthoring",
+      "name": "doc-coauthoring",
+      "description": "Guide users through a structured workflow for co-authoring documentation. Use when user wants to write documentation, proposals, technical specs, decision docs, or similar structured content. This workflow helps users efficiently transfer context, refine content through iteration, and verify the doc works for readers. Trigger when user mentions writing docs, creating proposals, drafting specs, or similar documentation tasks.",
+      "source": "anthropic-example",
+      "updatedAt": "2026-09-14T19:41:01.438795Z"
+    },
+    {
+      "skillId": "learn",
+      "name": "learn",
+      "description": "Use this skill when the user wants intellectual understanding — learning how or why something works, not getting a task done or soliciting Claude's judgment.\n\nTrigger for:\n- Explicit learning requests: teach, explain, ELI5, walk me through, quiz me, flashcards, \"I'm rusty on\"; definitions (\"what is X\")\n- Terse concept names implying \"help me understand this\": \"Galois theory,\" \"transformers, from scratch\"\n- Confusion signals: \"won't stick,\" \"keep mixing these up,\" \"not getting it\"\n- Learning-path questions: prerequisites, sequencing, what to study before X\n- Conceptual questions about mechanisms, causes, or dynamics\n\nDon't trigger for:\n- Tasks: coding, writing, calculation, translation, factual lookup, news updates\n- Personal troubleshooting; resource/textbook recommendations\n- Claude's evaluative verdict: opinion prompts (\"do you think X\", \"settle this\", \"honest take\", \"is X dead / still taken seriously\") and interpretive takes (\"was X really as harsh as people say\")\n",
+      "source": "anthropic-example",
+      "updatedAt": "2026-09-14T19:41:01.663866Z"
+    },
+    {
+      "skillId": "computer-use",
+      "name": "computer-use",
+      "description": "Read this skill before the first step of any request to do something in an app on the person's own computer (Notes, Finder, System Settings, any desktop app), to look at their screen, or for \"computer use\". Computer use (desktop control) lets Claude take screenshots of the person's desktop and control it with clicks, typing and scrolling through the Claude desktop app; its tools are named mcp__computer-use__* when the session runs in the desktop app and mcp__remote-devices__computer_* when a cloud session is linked to the person's computer; before computer use is turned on for a conversation there may be no such tools, only an enable__mcp__remote-devices__computer tool, which turns it on. It covers turning it on, picking the right tool, the access flow, and the safety rules for tiered apps, links and financial actions. It is not for websites, which go through Claude in Chrome or the built-in browser and their own skills.",
+      "source": "anthropic-example",
+      "updatedAt": "2026-10-28T18:00:31.869646Z"
+    },
+    {
+      "skillId": "built-in-browser",
+      "name": "built-in-browser",
+      "description": "Read this skill before the first step that uses the built-in browser, the browser pane inside the Claude desktop app (also called the in-app browser, the browser pane, Claude's browser, or \"your own browser\"), whose tools are named mcp__Claude_Browser__* when the session runs in the desktop app and mcp__remote-devices__Claude_Browser__* when a cloud session is linked to the person's computer; before those tools are turned on there may be a single enable__mcp__remote-devices__Claude_Browser tool instead. It covers the pane's persistent sign-ins, tabs and preview_start, reading pages as text, site approvals, what the pane cannot open, and what to do when it cannot be reached. It is not for Claude in Chrome (mcp__claude-in-chrome__* tools), which has its own skill, and it does not decide which browser to use.",
+      "source": "anthropic-example",
+      "updatedAt": "2026-11-09T20:00:27.310096Z"
+    },
+    {
+      "skillId": "skill_01BAiGZMdtT7iT1dqUf4qHWs",
+      "name": "create-plan",
+      "description": "Generate a structured markdown implementation plan with progress tracking. Use after exploration is complete and before coding begins.",
+      "source": "plugin",
+      "updatedAt": "2026-01-22T19:07:37.362644Z",
+      "backingPluginId": "plugin_01NuySaHscXNXkfkrcDQfAaa"
+    },
+    {
+      "skillId": "morning",
+      "name": "morning",
+      "description": "Render the user's morning brief as a styled HTML artifact, or set it up as a recurring weekday task. Use only when the user explicitly asks to run, see, or set up their morning brief, or if they invoke /morning by name. A question about their day, schedule, or calendar is not by itself a request for the brief; answer it directly instead.",
+      "source": "anthropic-example",
+      "updatedAt": "2026-09-14T19:41:01.990356Z"
+    },
+    {
+      "skillId": "deep-research",
+      "name": "deep-research",
+      "description": "Use this skill when the user's prompt requires (1) researching a topic across multiple sources, comparing options or alternatives, analyzing trends or history, understanding markets or industries, or reviewing literature or studies and (2) synthesizing that research into a comprehensive, narrative report. If you're planning to search the web or internal knowledge bases, consider using this skill. This skill coordinates research subagents, so use it only when you have a tool for spawning subagents (the Agent or Task tool); otherwise, research the question directly.",
+      "source": "anthropic-example",
+      "updatedAt": "2026-09-14T19:41:02.015956Z"
+    },
+    {
+      "skillId": "google-workspace",
+      "name": "google-workspace",
+      "description": "Read this before the first Google Drive, Docs, Sheets or Slides connector call whenever the task creates or changes a Google file. Use this skill whenever the user wants to create or change a Google Doc, Sheet or Slides file in their Google Drive. Triggers include: a request that names Google Docs, Sheets, Slides or Drive and asks to make, edit, format, copy or rename a file; a docs.google.com link with a request to change that file, even a one-line fix or suggested edits; and any follow-up change to a Google file from earlier in the chat, even \"change it\" or \"add a tab\". Includes helper scripts for document positions, cell ranges and slide layout. However, if the user asks for a doc, deck or spreadsheet without naming Google, or gives a Google file only as source material for something new, use Claude's own output type instead. Do NOT use for read-only questions about a Google file, or for Word, Excel, PowerPoint or PDF files.",
+      "source": "anthropic-example",
+      "updatedAt": "2026-11-13T15:00:20.249384Z"
+    },
+    {
+      "skillId": "internal-comms",
+      "name": "internal-comms",
+      "description": "A set of resources to help me write all kinds of internal communications, using the formats that my company likes to use. Claude should use this skill whenever asked to write some sort of internal communications (status reports, leadership updates, 3P updates, company newsletters, FAQs, incident reports, project updates, etc.).",
+      "source": "anthropic-example",
+      "updatedAt": "2026-09-14T19:41:01.586209Z"
+    },
+    {
+      "skillId": "pdf",
+      "name": "pdf",
+      "description": "Use this skill whenever the user wants to do anything with PDF files. This includes reading or extracting text/tables from PDFs, combining or merging multiple PDFs into one, splitting PDFs apart, rotating pages, adding watermarks, creating new PDFs, filling PDF forms, encrypting/decrypting PDFs, extracting images, and OCR on scanned PDFs to make them searchable. If the user mentions a .pdf file or asks to produce one, use this skill.",
+      "source": "anthropic",
+      "updatedAt": "2026-11-06T23:00:36.135606Z"
+    },
+    {
+      "skillId": "slack-gif-creator",
+      "name": "slack-gif-creator",
+      "description": "Knowledge and utilities for creating animated GIFs optimized for Slack. Provides constraints, validation tools, and animation concepts. Use when users request animated GIFs for Slack like \"make me a GIF of X doing Y for Slack.\"",
+      "source": "anthropic-example",
+      "updatedAt": "2026-09-14T19:41:01.634383Z"
+    },
+    {
+      "skillId": "web-artifacts-builder",
+      "name": "web-artifacts-builder",
+      "description": "Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui). Use for complex artifacts requiring state management, routing, or shadcn/ui components - not for simple single-file HTML/JSX artifacts.",
+      "source": "anthropic-example",
+      "updatedAt": "2026-09-14T19:41:01.557439Z"
+    },
+    {
+      "skillId": "mcp-builder",
+      "name": "mcp-builder",
+      "description": "Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. Use when building MCP servers to integrate external APIs or services, whether in Python (FastMCP) or Node/TypeScript (MCP SDK).",
+      "source": "anthropic-example",
+      "updatedAt": "2026-10-28T20:00:28.906874Z"
+    },
+    {
+      "skillId": "xlsx",
+      "name": "xlsx",
+      "description": "Use this skill any time a spreadsheet file is the primary input or output. This means any task where the user wants to: open, read, edit, or fix an existing .xlsx, .xlsm, .xltx, .csv, or .tsv file (e.g., adding columns, computing formulas, formatting, charting, cleaning messy data); create a new spreadsheet from scratch or from other data sources; or convert between tabular file formats. Trigger especially when the user references a spreadsheet file by name or path — even casually (like \"the xlsx in my downloads\") — and wants something done to it or produced from it. Also trigger for cleaning or restructuring messy tabular data files (malformed rows, misplaced headers, junk data) into proper spreadsheets. The deliverable must be a spreadsheet file. Do NOT trigger when the primary deliverable is a Word document, HTML report, standalone Python script, database pipeline, or Google Sheets API integration, even if tabular data is involved.",
+      "source": "anthropic",
+      "updatedAt": "2026-11-14T20:00:21.787853Z"
+    },
+    {
+      "skillId": "skill-creator",
+      "name": "skill-creator",
+      "description": "Create new skills, modify and improve existing skills, and measure skill performance. Use when users want to create a skill from scratch, edit, or optimize an existing skill, run evals to test a skill, benchmark skill performance with variance analysis, or optimize a skill's description for better triggering accuracy.",
+      "source": "anthropic-example",
+      "updatedAt": "2026-10-28T17:00:24.127636Z"
+    },
+    {
+      "skillId": "theme-factory",
+      "name": "theme-factory",
+      "description": "Toolkit for styling artifacts with a theme. These artifacts can be slides, docs, reportings, HTML landing pages, etc. There are 10 pre-set themes with colors/fonts that you can apply to any artifact that has been creating, or can generate a new theme on-the-fly.",
+      "source": "anthropic-example",
+      "updatedAt": "2026-09-14T19:41:01.654356Z"
+    },
+    {
+      "skillId": "docx",
+      "name": "docx",
+      "description": "Use this skill whenever the user wants to create, read, edit, or manipulate Word documents (.docx) or Word templates (.dotx). Triggers include: any mention of Microsoft Word Documents, such as 'Word doc', 'word document', '.docx', '.dotx', 'microsoft doc'. Also use when extracting or reorganizing content from .docx or .dotx files, inserting or replacing images in documents, find-and-replace in Word files, working with tracked changes or comments, or converting content into a polished Word document. If the user asks for a deliverable as a Word or .docx file (to download, email or print), use this skill. However, if they ask for a document, page, report, memo, or notes WITHOUT naming a file format and the session offers Claude's own dedicated document or page skill or connector, use that instead, even if they will email or print it. Do NOT use for PDFs, spreadsheets, Google Docs, or coding unrelated to document generation.",
+      "source": "anthropic",
+      "updatedAt": "2026-11-14T20:00:21.787853Z"
+    },
+    {
+      "skillId": "pptx",
+      "name": "pptx",
+      "description": "Use this skill any time a .pptx or .potx file is involved in any way — as input, output, or both. This includes: creating slide decks, pitch decks, or presentations as PowerPoint (.pptx) files; reading, parsing, or extracting text from any .pptx or .potx file (even if the extracted content will be used elsewhere, like in an email, summary, or creating a different type of slide deck); editing, modifying, or updating existing presentations; combining or splitting slide files; working with templates (.potx), layouts, speaker notes, or comments. Trigger whenever the user asks for a PowerPoint or .pptx file, or references a .pptx or .potx filename, regardless of what they plan to do with the content afterward. However, when the user asks for a deck, slides, a slide deck, or a presentation without naming a file format, default to using a dedicated slide-deck artifact type or a separate slides skill if this session offers one; otherwise, use this skill.",
+      "source": "anthropic",
+      "updatedAt": "2026-11-14T20:00:21.787853Z"
+    },
+    {
+      "skillId": "canvas-design",
+      "name": "canvas-design",
+      "description": "Create beautiful visual art in .png and .pdf documents using design philosophy. You should use this skill when the user asks to create a poster, piece of art, design, or other static piece. Create original visual designs, never copying existing artists' work to avoid copyright violations.",
+      "source": "anthropic-example",
+      "updatedAt": "2026-09-14T19:41:01.576619Z"
+    }
+  ]
+}

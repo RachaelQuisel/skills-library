@@ -1,0 +1,23 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "author": {
+    "name": "Rachael Quisel"
+  },
+  "description": "Creates a name, guide, run location, and tags for each automation.",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "capabilities": [],
+        "category": "Productivity",
+        "composerIcon": "./icon.png",
+        "developerName": "Rachael Quisel",
+        "displayName": "Automation Metadata Maker",
+        "logo": "./icon.png",
+        "longDescription": "Creates a name, guide, run location, and tags for each automation.",
+        "shortDescription": "Name and document automations"
+      }
+    }
+  },
+  "name": "automation-catalog",
+  "version": "1.0.5"
+}

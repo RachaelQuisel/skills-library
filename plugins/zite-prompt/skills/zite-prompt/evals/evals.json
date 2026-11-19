@@ -1,0 +1,23 @@
+{
+  "skill_name": "zite-prompt",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Write the next Zite prompt to build the mobile cleaner scheduling screen. Airtable, GitHub, and Twilio are already connected. Use the field IDs we already verified. I only want the interface built right now, not SMS or new schema.",
+      "expected_output": "One compact paste-ready Zite prompt that uses existing IDs and references, focuses only on the interface, does not re-explain integrations, and does not ask Zite to research or report.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Write the Zite prompt to wire SMS to Green Clean. I haven't given you Green Clean's phone number yet.",
+      "expected_output": "Ask one concise blocking question for Green Clean's phone number instead of drafting a speculative Zite prompt or asking Zite to find it.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Give me the Zite prompt to update the cleaner cascade to the current order. Check GitHub first because there are old versions in the repo.",
+      "expected_output": "Resolve the current implementation from GitHub outside Zite, then return only the implementation prompt. The Zite prompt itself should not ask Zite to compare versions, investigate GitHub history, or produce a report.",
+      "files": []
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "author": {
+    "name": "Rachael Quisel"
+  },
+  "description": "Get a short, plain-English brief on automation tools and leading AI models. See what changed, why it matters, and what to test, change, or watch.",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "capabilities": [],
+        "category": "Productivity",
+        "composerIcon": "./icon.png",
+        "developerName": "Rachael Quisel",
+        "displayName": "Automation Briefing",
+        "logo": "./icon.png",
+        "longDescription": "Get a short, plain-English brief on automation tools and leading AI models. See what changed, why it matters, and what to test, change, or watch.",
+        "shortDescription": "Automation and AI updates"
+      }
+    }
+  },
+  "homepage": "https://github.com/RachaelQuisel/Skills/tree/main/plugins/automation-briefing",
+  "keywords": [
+    "automation",
+    "no-code",
+    "AI",
+    "Airtable",
+    "Zapier",
+    "Make",
+    "n8n",
+    "Pipedream",
+    "Fillout"
+  ],
+  "license": "MIT",
+  "name": "automation-briefing",
+  "repository": "https://github.com/RachaelQuisel/Skills",
+  "version": "1.0.5"
+}

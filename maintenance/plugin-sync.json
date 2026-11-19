@@ -1,0 +1,3280 @@
+{
+  "schema_version": 1,
+  "max_observation_age_hours": 3,
+  "artifact": {
+    "project_id": "appgprj_6ad1a0a79fd08191910e6706cb5e2b67",
+    "url": "https://rachael-skills-and-plugins.rachael-quisel.chatgpt.site",
+    "probe": "/api/plugin-sync"
+  },
+  "plugins": [
+    {
+      "name": "zite-prompt",
+      "plugin_id": "plugins_6ae8c5e509388191af67c74794823067",
+      "repository": "RachaelQuisel/Skills",
+      "package_root": "plugins/zite-prompt",
+      "catalog_id": "RachaelQuisel/Skills:plugins/zite-prompt/.claude-plugin/plugin.json",
+      "files": {
+        ".codex-plugin/plugin.json": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/zite-prompt/.codex-plugin/plugin.json",
+          "mode": "compatibility"
+        },
+        "LICENSE": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/zite-prompt/LICENSE",
+          "mode": "exact"
+        },
+        "PRIVACY.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/zite-prompt/PRIVACY.md",
+          "mode": "exact"
+        },
+        "README.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/zite-prompt/README.md",
+          "mode": "exact"
+        },
+        "plugin.json": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/zite-prompt/plugin.json",
+          "mode": "json"
+        },
+        "skills/zite-prompt/README.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/zite-prompt/skills/zite-prompt/README.md",
+          "mode": "exact"
+        },
+        "skills/zite-prompt/SKILL.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/zite-prompt/skills/zite-prompt/SKILL.md",
+          "mode": "exact"
+        },
+        "skills/zite-prompt/TECHNICAL-GUIDE.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/zite-prompt/skills/zite-prompt/TECHNICAL-GUIDE.md",
+          "mode": "markdown-links"
+        },
+        "skills/zite-prompt/evals/evals.json": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/zite-prompt/skills/zite-prompt/evals/evals.json",
+          "mode": "json"
+        },
+        "skills/zite-prompt/references/examples.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/zite-prompt/skills/zite-prompt/references/examples.md",
+          "mode": "exact"
+        },
+        "source-manifests/claude.json": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/zite-prompt/.claude-plugin/plugin.json",
+          "mode": "json"
+        },
+        "source-manifests/codex.json": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/zite-prompt/.codex-plugin/plugin.json",
+          "mode": "json"
+        }
+      },
+      "generated_files": [
+        "IMPORT-SOURCE.json",
+        "SOURCE-OF-TRUTH.json"
+      ]
+    },
+    {
+      "name": "skillkeeper",
+      "plugin_id": "plugins_6ae8c5e01bf081918c09a8f1d8db9add",
+      "repository": "RachaelQuisel/Skills",
+      "package_root": "plugins/skillkeeper",
+      "catalog_id": "RachaelQuisel/Skills:plugins/skillkeeper/.claude-plugin/plugin.json",
+      "files": {
+        ".codex-plugin/plugin.json": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/skillkeeper/.codex-plugin/plugin.json",
+          "mode": "compatibility"
+        },
+        "LICENSE": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/skillkeeper/LICENSE",
+          "mode": "exact"
+        },
+        "PRIVACY.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/skillkeeper/PRIVACY.md",
+          "mode": "exact"
+        },
+        "README.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/skillkeeper/README.md",
+          "mode": "markdown-links"
+        },
+        "docs/naming.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/skillkeeper/docs/naming.md",
+          "mode": "exact"
+        },
+        "docs/validation.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/skillkeeper/docs/validation.md",
+          "mode": "exact"
+        },
+        "icon.png": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/skillkeeper/icon.png",
+          "mode": "exact"
+        },
+        "plugin.json": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/skillkeeper/plugin.json",
+          "mode": "json"
+        },
+        "skills/skillkeeper/README.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/skillkeeper/skills/skillkeeper/README.md",
+          "mode": "exact"
+        },
+        "skills/skillkeeper/SKILL.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/skillkeeper/skills/skillkeeper/SKILL.md",
+          "mode": "exact"
+        },
+        "skills/skillkeeper/references/alert-policy.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/skillkeeper/skills/skillkeeper/references/alert-policy.md",
+          "mode": "exact"
+        },
+        "skills/skillkeeper/references/maintenance-contract.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/skillkeeper/skills/skillkeeper/references/maintenance-contract.md",
+          "mode": "exact"
+        },
+        "source-manifests/claude.json": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/skillkeeper/.claude-plugin/plugin.json",
+          "mode": "json"
+        },
+        "source-manifests/codex.json": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/skillkeeper/.codex-plugin/plugin.json",
+          "mode": "json"
+        }
+      },
+      "generated_files": [
+        "IMPORT-SOURCE.json",
+        "SOURCE-OF-TRUTH.json"
+      ]
+    },
+    {
+      "name": "automation-message-writer",
+      "plugin_id": "plugins_6ae8c66f1ce081918eafb0e865140c45",
+      "repository": "RachaelQuisel/automation-message-writer",
+      "package_root": ".",
+      "catalog_id": "RachaelQuisel/automation-message-writer:.claude-plugin/plugin.json",
+      "files": {
+        ".codex-plugin/plugin.json": {
+          "repository": "RachaelQuisel/automation-message-writer",
+          "source_path": ".codex-plugin/plugin.json",
+          "mode": "compatibility"
+        },
+        "Automation-Message-Writer-HowItWorks-2026-10-03.md": {
+          "repository": "RachaelQuisel/automation-message-writer",
+          "source_path": "Automation-Message-Writer-HowItWorks-2026-10-03.md",
+          "mode": "exact"
+        },
+        "LICENSE": {
+          "repository": "RachaelQuisel/automation-message-writer",
+          "source_path": "LICENSE",
+          "mode": "exact"
+        },
+        "LISTING.md": {
+          "repository": "RachaelQuisel/automation-message-writer",
+          "source_path": "LISTING.md",
+          "mode": "exact"
+        },
+        "README.md": {
+          "repository": "RachaelQuisel/automation-message-writer",
+          "source_path": "README.md",
+          "mode": "exact"
+        },
+        "assets/automation-message-writer.png": {
+          "repository": "RachaelQuisel/automation-message-writer",
+          "source_path": "assets/automation-message-writer.png",
+          "mode": "exact"
+        },
+        "plugin.json": {
+          "repository": "RachaelQuisel/automation-message-writer",
+          "source_path": "plugin.json",
+          "mode": "json"
+        },
+        "skills/automation-message-writer/README.md": {
+          "repository": "RachaelQuisel/automation-message-writer",
+          "source_path": "skills/automation-message-writer/README.md",
+          "mode": "exact"
+        },
+        "skills/automation-message-writer/SKILL.md": {
+          "repository": "RachaelQuisel/automation-message-writer",
+          "source_path": "skills/automation-message-writer/SKILL.md",
+          "mode": "exact"
+        },
+        "skills/automation-message-writer/agents/openai.yaml": {
+          "repository": "RachaelQuisel/automation-message-writer",
+          "source_path": "skills/automation-message-writer/agents/openai.yaml",
+          "mode": "exact"
+        },
+        "skills/automation-message-writer/assets/automation-message-writer.png": {
+          "repository": "RachaelQuisel/automation-message-writer",
+          "source_path": "skills/automation-message-writer/assets/automation-message-writer.png",
+          "mode": "exact"
+        },
+        "skills/automation-message-writer/references/conversation-and-writing.md": {
+          "repository": "RachaelQuisel/automation-message-writer",
+          "source_path": "skills/automation-message-writer/references/conversation-and-writing.md",
+          "mode": "exact"
+        },
+        "skills/automation-message-writer/references/voice-align-writing.md": {
+          "repository": "RachaelQuisel/automation-message-writer",
+          "source_path": "skills/automation-message-writer/references/voice-align-writing.md",
+          "mode": "exact"
+        },
+        "skills/automation-message-writer/references/zite-prompts-and-examples.md": {
+          "repository": "RachaelQuisel/automation-message-writer",
+          "source_path": "skills/automation-message-writer/references/zite-prompts-and-examples.md",
+          "mode": "exact"
+        },
+        "source-manifests/claude.json": {
+          "repository": "RachaelQuisel/automation-message-writer",
+          "source_path": ".claude-plugin/plugin.json",
+          "mode": "json"
+        },
+        "source-manifests/codex.json": {
+          "repository": "RachaelQuisel/automation-message-writer",
+          "source_path": ".codex-plugin/plugin.json",
+          "mode": "json"
+        }
+      },
+      "generated_files": [
+        "IMPORT-SOURCE.json",
+        "SOURCE-OF-TRUTH.json"
+      ]
+    },
+    {
+      "name": "publish-a-plugin",
+      "plugin_id": "plugins_6acd50867f088191b08e9fa5234b9a55",
+      "repository": "RachaelQuisel/publish-a-plugin",
+      "package_root": ".",
+      "catalog_id": "RachaelQuisel/publish-a-plugin:.claude-plugin/plugin.json",
+      "files": {
+        ".claude-plugin/marketplace.json": {
+          "repository": "RachaelQuisel/publish-a-plugin",
+          "source_path": ".claude-plugin/marketplace.json",
+          "mode": "json"
+        },
+        ".claude-plugin/plugin.json": {
+          "repository": "RachaelQuisel/publish-a-plugin",
+          "source_path": ".claude-plugin/plugin.json",
+          "mode": "json"
+        },
+        ".codex-plugin/plugin.json": {
+          "repository": "RachaelQuisel/publish-a-plugin",
+          "source_path": ".codex-plugin/plugin.json",
+          "mode": "compatibility"
+        },
+        "LICENSE": {
+          "repository": "RachaelQuisel/publish-a-plugin",
+          "source_path": "LICENSE",
+          "mode": "exact"
+        },
+        "PRIVACY.md": {
+          "repository": "RachaelQuisel/publish-a-plugin",
+          "source_path": "PRIVACY.md",
+          "mode": "exact"
+        },
+        "Publish-A-Plugin-HowItWorks-2026-10-03.md": {
+          "repository": "RachaelQuisel/publish-a-plugin",
+          "source_path": "Publish-A-Plugin-HowItWorks-2026-10-03.md",
+          "mode": "exact"
+        },
+        "README.md": {
+          "repository": "RachaelQuisel/publish-a-plugin",
+          "source_path": "README.md",
+          "mode": "exact"
+        },
+        "assets/publish-a-plugin.png": {
+          "repository": "RachaelQuisel/publish-a-plugin",
+          "source_path": "icon.png",
+          "mode": "exact"
+        },
+        "icon.png": {
+          "repository": "RachaelQuisel/publish-a-plugin",
+          "source_path": "icon.png",
+          "mode": "exact"
+        },
+        "plugin.json": {
+          "repository": "RachaelQuisel/publish-a-plugin",
+          "source_path": "plugin.json",
+          "mode": "json"
+        },
+        "skills/publish-a-plugin/README.md": {
+          "repository": "RachaelQuisel/publish-a-plugin",
+          "source_path": "skills/publish-a-plugin/README.md",
+          "mode": "exact"
+        },
+        "skills/publish-a-plugin/SKILL.md": {
+          "repository": "RachaelQuisel/publish-a-plugin",
+          "source_path": "skills/publish-a-plugin/SKILL.md",
+          "mode": "exact"
+        },
+        "skills/publish-a-plugin/agents/openai.yaml": {
+          "repository": "RachaelQuisel/publish-a-plugin",
+          "source_path": "skills/publish-a-plugin/agents/openai.yaml",
+          "mode": "exact"
+        },
+        "skills/publish-a-plugin/evals/evals.json": {
+          "repository": "RachaelQuisel/publish-a-plugin",
+          "source_path": "skills/publish-a-plugin/evals/evals.json",
+          "mode": "json"
+        },
+        "skills/publish-a-plugin/references/conversation-and-writing.md": {
+          "repository": "RachaelQuisel/publish-a-plugin",
+          "source_path": "skills/publish-a-plugin/references/conversation-and-writing.md",
+          "mode": "exact"
+        },
+        "skills/publish-a-plugin/references/icons.md": {
+          "repository": "RachaelQuisel/publish-a-plugin",
+          "source_path": "skills/publish-a-plugin/references/icons.md",
+          "mode": "exact"
+        },
+        "skills/publish-a-plugin/references/manifests.md": {
+          "repository": "RachaelQuisel/publish-a-plugin",
+          "source_path": "skills/publish-a-plugin/references/manifests.md",
+          "mode": "exact"
+        },
+        "skills/publish-a-plugin/references/privacy-notice.md": {
+          "repository": "RachaelQuisel/publish-a-plugin",
+          "source_path": "skills/publish-a-plugin/references/privacy-notice.md",
+          "mode": "exact"
+        },
+        "skills/publish-a-plugin/references/scanner-false-positives.md": {
+          "repository": "RachaelQuisel/publish-a-plugin",
+          "source_path": "skills/publish-a-plugin/references/scanner-false-positives.md",
+          "mode": "exact"
+        },
+        "skills/publish-a-plugin/references/submission-walkthrough.md": {
+          "repository": "RachaelQuisel/publish-a-plugin",
+          "source_path": "skills/publish-a-plugin/references/submission-walkthrough.md",
+          "mode": "exact"
+        },
+        "skills/publish-a-plugin/references/validation-findings.md": {
+          "repository": "RachaelQuisel/publish-a-plugin",
+          "source_path": "skills/publish-a-plugin/references/validation-findings.md",
+          "mode": "exact"
+        },
+        "skills/publish-a-plugin/scripts/preflight.py": {
+          "repository": "RachaelQuisel/publish-a-plugin",
+          "source_path": "skills/publish-a-plugin/scripts/preflight.py",
+          "mode": "exact"
+        },
+        "skills/publish-a-plugin/scripts/shrink_icon.py": {
+          "repository": "RachaelQuisel/publish-a-plugin",
+          "source_path": "skills/publish-a-plugin/scripts/shrink_icon.py",
+          "mode": "exact"
+        },
+        "source-manifests/claude.json": {
+          "repository": "RachaelQuisel/publish-a-plugin",
+          "source_path": ".claude-plugin/plugin.json",
+          "mode": "json"
+        },
+        "source-manifests/codex.json": {
+          "repository": "RachaelQuisel/publish-a-plugin",
+          "source_path": ".codex-plugin/plugin.json",
+          "mode": "json"
+        }
+      },
+      "generated_files": [
+        "IMPORT-SOURCE.json",
+        "SOURCE-OF-TRUTH.json"
+      ]
+    },
+    {
+      "name": "turn-off-ai-data-sharing",
+      "plugin_id": "plugins_6ae8c60db64481919fca233a0977057c",
+      "repository": "RachaelQuisel/turn-off-ai-data-sharing",
+      "package_root": ".",
+      "catalog_id": "RachaelQuisel/turn-off-ai-data-sharing:.claude-plugin/plugin.json",
+      "files": {
+        ".codex-plugin/plugin.json": {
+          "repository": "RachaelQuisel/turn-off-ai-data-sharing",
+          "source_path": ".codex-plugin/plugin.json",
+          "mode": "compatibility"
+        },
+        "LICENSE": {
+          "repository": "RachaelQuisel/turn-off-ai-data-sharing",
+          "source_path": "LICENSE",
+          "mode": "exact"
+        },
+        "PRIVACY.md": {
+          "repository": "RachaelQuisel/turn-off-ai-data-sharing",
+          "source_path": "PRIVACY.md",
+          "mode": "exact"
+        },
+        "README.md": {
+          "repository": "RachaelQuisel/turn-off-ai-data-sharing",
+          "source_path": "README.md",
+          "mode": "exact"
+        },
+        "commands/privacy-audit.md": {
+          "repository": "RachaelQuisel/turn-off-ai-data-sharing",
+          "source_path": "commands/privacy-audit.md",
+          "mode": "exact"
+        },
+        "icon.png": {
+          "repository": "RachaelQuisel/turn-off-ai-data-sharing",
+          "source_path": "icon.png",
+          "mode": "exact"
+        },
+        "plugin.json": {
+          "repository": "RachaelQuisel/turn-off-ai-data-sharing",
+          "source_path": "plugin.json",
+          "mode": "json"
+        },
+        "skills/turn-off-ai-data-sharing/README.md": {
+          "repository": "RachaelQuisel/turn-off-ai-data-sharing",
+          "source_path": "skills/turn-off-ai-data-sharing/README.md",
+          "mode": "exact"
+        },
+        "skills/turn-off-ai-data-sharing/SKILL.md": {
+          "repository": "RachaelQuisel/turn-off-ai-data-sharing",
+          "source_path": "skills/turn-off-ai-data-sharing/SKILL.md",
+          "mode": "exact"
+        },
+        "skills/turn-off-ai-data-sharing/examples/sample-audit.md": {
+          "repository": "RachaelQuisel/turn-off-ai-data-sharing",
+          "source_path": "skills/turn-off-ai-data-sharing/examples/sample-audit.md",
+          "mode": "exact"
+        },
+        "skills/turn-off-ai-data-sharing/references/evidence-base.md": {
+          "repository": "RachaelQuisel/turn-off-ai-data-sharing",
+          "source_path": "skills/turn-off-ai-data-sharing/references/evidence-base.md",
+          "mode": "exact"
+        },
+        "skills/turn-off-ai-data-sharing/references/live-read.md": {
+          "repository": "RachaelQuisel/turn-off-ai-data-sharing",
+          "source_path": "skills/turn-off-ai-data-sharing/references/live-read.md",
+          "mode": "exact"
+        },
+        "skills/turn-off-ai-data-sharing/references/methodology.md": {
+          "repository": "RachaelQuisel/turn-off-ai-data-sharing",
+          "source_path": "skills/turn-off-ai-data-sharing/references/methodology.md",
+          "mode": "exact"
+        },
+        "skills/turn-off-ai-data-sharing/references/open-questions.md": {
+          "repository": "RachaelQuisel/turn-off-ai-data-sharing",
+          "source_path": "skills/turn-off-ai-data-sharing/references/open-questions.md",
+          "mode": "exact"
+        },
+        "skills/turn-off-ai-data-sharing/references/redaction.md": {
+          "repository": "RachaelQuisel/turn-off-ai-data-sharing",
+          "source_path": "skills/turn-off-ai-data-sharing/references/redaction.md",
+          "mode": "exact"
+        },
+        "skills/turn-off-ai-data-sharing/references/report-template.md": {
+          "repository": "RachaelQuisel/turn-off-ai-data-sharing",
+          "source_path": "skills/turn-off-ai-data-sharing/references/report-template.md",
+          "mode": "exact"
+        },
+        "skills/turn-off-ai-data-sharing/references/vendors/chatgpt.md": {
+          "repository": "RachaelQuisel/turn-off-ai-data-sharing",
+          "source_path": "skills/turn-off-ai-data-sharing/references/vendors/chatgpt.md",
+          "mode": "exact"
+        },
+        "skills/turn-off-ai-data-sharing/references/vendors/claude.md": {
+          "repository": "RachaelQuisel/turn-off-ai-data-sharing",
+          "source_path": "skills/turn-off-ai-data-sharing/references/vendors/claude.md",
+          "mode": "exact"
+        },
+        "skills/turn-off-ai-data-sharing/references/vendors/copilot-admin-api-mobile.md": {
+          "repository": "RachaelQuisel/turn-off-ai-data-sharing",
+          "source_path": "skills/turn-off-ai-data-sharing/references/vendors/copilot-admin-api-mobile.md",
+          "mode": "exact"
+        },
+        "skills/turn-off-ai-data-sharing/references/vendors/copilot-second-pass.md": {
+          "repository": "RachaelQuisel/turn-off-ai-data-sharing",
+          "source_path": "skills/turn-off-ai-data-sharing/references/vendors/copilot-second-pass.md",
+          "mode": "exact"
+        },
+        "skills/turn-off-ai-data-sharing/references/vendors/copilot.md": {
+          "repository": "RachaelQuisel/turn-off-ai-data-sharing",
+          "source_path": "skills/turn-off-ai-data-sharing/references/vendors/copilot.md",
+          "mode": "exact"
+        },
+        "skills/turn-off-ai-data-sharing/references/vendors/gemini.md": {
+          "repository": "RachaelQuisel/turn-off-ai-data-sharing",
+          "source_path": "skills/turn-off-ai-data-sharing/references/vendors/gemini.md",
+          "mode": "exact"
+        },
+        "skills/turn-off-ai-data-sharing/references/vendors/grok.md": {
+          "repository": "RachaelQuisel/turn-off-ai-data-sharing",
+          "source_path": "skills/turn-off-ai-data-sharing/references/vendors/grok.md",
+          "mode": "exact"
+        },
+        "skills/turn-off-ai-data-sharing/references/vendors/meta-ai.md": {
+          "repository": "RachaelQuisel/turn-off-ai-data-sharing",
+          "source_path": "skills/turn-off-ai-data-sharing/references/vendors/meta-ai.md",
+          "mode": "exact"
+        },
+        "source-manifests/claude.json": {
+          "repository": "RachaelQuisel/turn-off-ai-data-sharing",
+          "source_path": ".claude-plugin/plugin.json",
+          "mode": "json"
+        },
+        "source-manifests/codex.json": {
+          "repository": "RachaelQuisel/turn-off-ai-data-sharing",
+          "source_path": ".codex-plugin/plugin.json",
+          "mode": "json"
+        }
+      },
+      "generated_files": [
+        "IMPORT-SOURCE.json",
+        "SOURCE-OF-TRUTH.json"
+      ]
+    },
+    {
+      "name": "contact-follow-up-tracker",
+      "plugin_id": "plugins_6ae8c665e4308191be9efa0199e3c117",
+      "repository": "RachaelQuisel/contact-follow-up-tracker",
+      "package_root": ".",
+      "catalog_id": "RachaelQuisel/contact-follow-up-tracker:.claude-plugin/plugin.json",
+      "files": {
+        ".codex-plugin/plugin.json": {
+          "repository": "RachaelQuisel/contact-follow-up-tracker",
+          "source_path": ".codex-plugin/plugin.json",
+          "mode": "compatibility"
+        },
+        "LICENSE": {
+          "repository": "RachaelQuisel/contact-follow-up-tracker",
+          "source_path": "LICENSE",
+          "mode": "exact"
+        },
+        "README.md": {
+          "repository": "RachaelQuisel/contact-follow-up-tracker",
+          "source_path": "README.md",
+          "mode": "exact"
+        },
+        "icon.png": {
+          "repository": "RachaelQuisel/contact-follow-up-tracker",
+          "source_path": "icon.png",
+          "mode": "exact"
+        },
+        "plugin.json": {
+          "repository": "RachaelQuisel/contact-follow-up-tracker",
+          "source_path": "plugin.json",
+          "mode": "json"
+        },
+        "skills/contact-follow-up-tracker/README.md": {
+          "repository": "RachaelQuisel/contact-follow-up-tracker",
+          "source_path": "skills/contact-follow-up-tracker/README.md",
+          "mode": "exact"
+        },
+        "skills/contact-follow-up-tracker/SKILL.md": {
+          "repository": "RachaelQuisel/contact-follow-up-tracker",
+          "source_path": "skills/contact-follow-up-tracker/SKILL.md",
+          "mode": "exact"
+        },
+        "skills/contact-follow-up-tracker/references/drive-storage.md": {
+          "repository": "RachaelQuisel/contact-follow-up-tracker",
+          "source_path": "skills/contact-follow-up-tracker/references/drive-storage.md",
+          "mode": "exact"
+        },
+        "skills/contact-follow-up-tracker/references/reminders.md": {
+          "repository": "RachaelQuisel/contact-follow-up-tracker",
+          "source_path": "skills/contact-follow-up-tracker/references/reminders.md",
+          "mode": "exact"
+        },
+        "skills/contact-follow-up-tracker/scripts/memory.py": {
+          "repository": "RachaelQuisel/contact-follow-up-tracker",
+          "source_path": "skills/contact-follow-up-tracker/scripts/memory.py",
+          "mode": "exact"
+        },
+        "source-manifests/claude.json": {
+          "repository": "RachaelQuisel/contact-follow-up-tracker",
+          "source_path": ".claude-plugin/plugin.json",
+          "mode": "json"
+        },
+        "source-manifests/codex.json": {
+          "repository": "RachaelQuisel/contact-follow-up-tracker",
+          "source_path": ".codex-plugin/plugin.json",
+          "mode": "json"
+        },
+        "tests/test_memory.py": {
+          "repository": "RachaelQuisel/contact-follow-up-tracker",
+          "source_path": "tests/test_memory.py",
+          "mode": "exact"
+        }
+      },
+      "generated_files": [
+        "IMPORT-SOURCE.json",
+        "SOURCE-OF-TRUTH.json"
+      ]
+    },
+    {
+      "name": "airtable-interface-craft",
+      "plugin_id": "plugins_6ae8c625c80c81918b3d64160c3e19a6",
+      "repository": "RachaelQuisel/airtable-interface-builder",
+      "package_root": ".",
+      "catalog_id": "RachaelQuisel/airtable-interface-builder:.claude-plugin/plugin.json",
+      "files": {
+        ".codex-plugin/plugin.json": {
+          "repository": "RachaelQuisel/airtable-interface-builder",
+          "source_path": ".codex-plugin/plugin.json",
+          "mode": "compatibility"
+        },
+        "LICENSE": {
+          "repository": "RachaelQuisel/airtable-interface-builder",
+          "source_path": "LICENSE",
+          "mode": "exact"
+        },
+        "LISTING.md": {
+          "repository": "RachaelQuisel/airtable-interface-builder",
+          "source_path": "LISTING.md",
+          "mode": "exact"
+        },
+        "PRIVACY.md": {
+          "repository": "RachaelQuisel/airtable-interface-builder",
+          "source_path": "PRIVACY.md",
+          "mode": "exact"
+        },
+        "README.md": {
+          "repository": "RachaelQuisel/airtable-interface-builder",
+          "source_path": "README.md",
+          "mode": "exact"
+        },
+        "THIRD_PARTY_NOTICES.md": {
+          "repository": "RachaelQuisel/airtable-interface-builder",
+          "source_path": "THIRD_PARTY_NOTICES.md",
+          "mode": "exact"
+        },
+        "assets/airtable-interface-builder.png": {
+          "repository": "RachaelQuisel/airtable-interface-builder",
+          "source_path": "assets/airtable-interface-builder.png",
+          "mode": "exact"
+        },
+        "icon.png": {
+          "repository": "RachaelQuisel/airtable-interface-builder",
+          "source_path": "icon.png",
+          "mode": "exact"
+        },
+        "plugin.json": {
+          "repository": "RachaelQuisel/airtable-interface-builder",
+          "source_path": "plugin.json",
+          "mode": "json"
+        },
+        "skills/airtable-interface-craft/README.md": {
+          "repository": "RachaelQuisel/airtable-interface-builder",
+          "source_path": "skills/airtable-interface-craft/README.md",
+          "mode": "exact"
+        },
+        "skills/airtable-interface-craft/SKILL.md": {
+          "repository": "RachaelQuisel/airtable-interface-builder",
+          "source_path": "skills/airtable-interface-craft/SKILL.md",
+          "mode": "exact"
+        },
+        "skills/airtable-interface-craft/agents/openai.yaml": {
+          "repository": "RachaelQuisel/airtable-interface-builder",
+          "source_path": "skills/airtable-interface-craft/agents/openai.yaml",
+          "mode": "exact"
+        },
+        "skills/airtable-interface-craft/assets/airtable-interface-builder.png": {
+          "repository": "RachaelQuisel/airtable-interface-builder",
+          "source_path": "skills/airtable-interface-craft/assets/airtable-interface-builder.png",
+          "mode": "exact"
+        },
+        "skills/airtable-interface-craft/references/design-and-data.md": {
+          "repository": "RachaelQuisel/airtable-interface-builder",
+          "source_path": "skills/airtable-interface-craft/references/design-and-data.md",
+          "mode": "exact"
+        },
+        "skills/airtable-interface-craft/references/gol-lessons.md": {
+          "repository": "RachaelQuisel/airtable-interface-builder",
+          "source_path": "skills/airtable-interface-craft/references/gol-lessons.md",
+          "mode": "exact"
+        },
+        "skills/airtable-interface-craft/references/reliable-interactions.md": {
+          "repository": "RachaelQuisel/airtable-interface-builder",
+          "source_path": "skills/airtable-interface-craft/references/reliable-interactions.md",
+          "mode": "exact"
+        },
+        "skills/airtable-interface-craft/references/verification-and-return.md": {
+          "repository": "RachaelQuisel/airtable-interface-builder",
+          "source_path": "skills/airtable-interface-craft/references/verification-and-return.md",
+          "mode": "exact"
+        },
+        "skills/airtable-interface-craft/scripts/source_receipt.py": {
+          "repository": "RachaelQuisel/airtable-interface-builder",
+          "source_path": "skills/airtable-interface-craft/scripts/source_receipt.py",
+          "mode": "exact"
+        },
+        "source-manifests/claude.json": {
+          "repository": "RachaelQuisel/airtable-interface-builder",
+          "source_path": ".claude-plugin/plugin.json",
+          "mode": "json"
+        },
+        "source-manifests/codex.json": {
+          "repository": "RachaelQuisel/airtable-interface-builder",
+          "source_path": ".codex-plugin/plugin.json",
+          "mode": "json"
+        }
+      },
+      "generated_files": [
+        "IMPORT-SOURCE.json",
+        "SOURCE-OF-TRUTH.json"
+      ]
+    },
+    {
+      "name": "github-portfolio-builder",
+      "plugin_id": "plugins_6ae8c5f353dc8191a95b692162ecc0ea",
+      "repository": "RachaelQuisel/github-portfolio-builder",
+      "package_root": "plugins/github-portfolio-builder",
+      "catalog_id": "RachaelQuisel/github-portfolio-builder:plugins/github-portfolio-builder/.claude-plugin/plugin.json",
+      "files": {
+        ".codex-plugin/plugin.json": {
+          "repository": "RachaelQuisel/github-portfolio-builder",
+          "source_path": "plugins/github-portfolio-builder/.codex-plugin/plugin.json",
+          "mode": "compatibility"
+        },
+        "GitHub-Portfolio-Builder-HowItWorks-2026-10-03.md": {
+          "repository": "RachaelQuisel/github-portfolio-builder",
+          "source_path": "plugins/github-portfolio-builder/GitHub-Portfolio-Builder-HowItWorks-2026-10-03.md",
+          "mode": "exact"
+        },
+        "LICENSE": {
+          "repository": "RachaelQuisel/github-portfolio-builder",
+          "source_path": "plugins/github-portfolio-builder/LICENSE",
+          "mode": "exact"
+        },
+        "PRIVACY.md": {
+          "repository": "RachaelQuisel/github-portfolio-builder",
+          "source_path": "plugins/github-portfolio-builder/PRIVACY.md",
+          "mode": "exact"
+        },
+        "README.md": {
+          "repository": "RachaelQuisel/github-portfolio-builder",
+          "source_path": "plugins/github-portfolio-builder/README.md",
+          "mode": "exact"
+        },
+        "icon.png": {
+          "repository": "RachaelQuisel/github-portfolio-builder",
+          "source_path": "plugins/github-portfolio-builder/icon.png",
+          "mode": "exact"
+        },
+        "plugin.json": {
+          "repository": "RachaelQuisel/github-portfolio-builder",
+          "source_path": "plugins/github-portfolio-builder/plugin.json",
+          "mode": "json"
+        },
+        "skills/github-portfolio-builder/README.md": {
+          "repository": "RachaelQuisel/github-portfolio-builder",
+          "source_path": "plugins/github-portfolio-builder/skills/github-portfolio-builder/README.md",
+          "mode": "exact"
+        },
+        "skills/github-portfolio-builder/SKILL.md": {
+          "repository": "RachaelQuisel/github-portfolio-builder",
+          "source_path": "plugins/github-portfolio-builder/skills/github-portfolio-builder/SKILL.md",
+          "mode": "exact"
+        },
+        "skills/github-portfolio-builder/references/conversation-and-writing.md": {
+          "repository": "RachaelQuisel/github-portfolio-builder",
+          "source_path": "plugins/github-portfolio-builder/skills/github-portfolio-builder/references/conversation-and-writing.md",
+          "mode": "exact"
+        },
+        "skills/github-portfolio-builder/references/portfolio-page.md": {
+          "repository": "RachaelQuisel/github-portfolio-builder",
+          "source_path": "plugins/github-portfolio-builder/skills/github-portfolio-builder/references/portfolio-page.md",
+          "mode": "exact"
+        },
+        "skills/github-portfolio-builder/references/review-checks.md": {
+          "repository": "RachaelQuisel/github-portfolio-builder",
+          "source_path": "plugins/github-portfolio-builder/skills/github-portfolio-builder/references/review-checks.md",
+          "mode": "exact"
+        },
+        "skills/github-portfolio-builder/references/source-routing.md": {
+          "repository": "RachaelQuisel/github-portfolio-builder",
+          "source_path": "plugins/github-portfolio-builder/skills/github-portfolio-builder/references/source-routing.md",
+          "mode": "exact"
+        },
+        "source-manifests/claude.json": {
+          "repository": "RachaelQuisel/github-portfolio-builder",
+          "source_path": "plugins/github-portfolio-builder/.claude-plugin/plugin.json",
+          "mode": "json"
+        },
+        "source-manifests/codex.json": {
+          "repository": "RachaelQuisel/github-portfolio-builder",
+          "source_path": "plugins/github-portfolio-builder/.codex-plugin/plugin.json",
+          "mode": "json"
+        }
+      },
+      "generated_files": [
+        "IMPORT-SOURCE.json",
+        "SOURCE-OF-TRUTH.json"
+      ]
+    },
+    {
+      "name": "questions-worth-asking",
+      "plugin_id": "plugins_6ae8c5edb1908191a1d60aaba3b14e96",
+      "repository": "RachaelQuisel/questions-worth-asking",
+      "package_root": ".",
+      "catalog_id": "RachaelQuisel/questions-worth-asking:.claude-plugin/plugin.json",
+      "files": {
+        ".codex-plugin/plugin.json": {
+          "repository": "RachaelQuisel/questions-worth-asking",
+          "source_path": ".codex-plugin/plugin.json",
+          "mode": "compatibility"
+        },
+        "LICENSE": {
+          "repository": "RachaelQuisel/questions-worth-asking",
+          "source_path": "LICENSE",
+          "mode": "exact"
+        },
+        "Questions-Worth-Asking-HowItWorks-2026-10-03.md": {
+          "repository": "RachaelQuisel/questions-worth-asking",
+          "source_path": "Questions-Worth-Asking-HowItWorks-2026-10-03.md",
+          "mode": "exact"
+        },
+        "README.md": {
+          "repository": "RachaelQuisel/questions-worth-asking",
+          "source_path": "README.md",
+          "mode": "exact"
+        },
+        "icon.png": {
+          "repository": "RachaelQuisel/questions-worth-asking",
+          "source_path": "icon.png",
+          "mode": "exact"
+        },
+        "plugin.json": {
+          "repository": "RachaelQuisel/questions-worth-asking",
+          "source_path": "plugin.json",
+          "mode": "json"
+        },
+        "skills/questions-worth-asking/README.md": {
+          "repository": "RachaelQuisel/questions-worth-asking",
+          "source_path": "skills/questions-worth-asking/README.md",
+          "mode": "exact"
+        },
+        "skills/questions-worth-asking/SKILL.md": {
+          "repository": "RachaelQuisel/questions-worth-asking",
+          "source_path": "skills/questions-worth-asking/SKILL.md",
+          "mode": "exact"
+        },
+        "skills/questions-worth-asking/examples/sample-review.md": {
+          "repository": "RachaelQuisel/questions-worth-asking",
+          "source_path": "skills/questions-worth-asking/examples/sample-review.md",
+          "mode": "exact"
+        },
+        "skills/questions-worth-asking/references/conversation-and-writing.md": {
+          "repository": "RachaelQuisel/questions-worth-asking",
+          "source_path": "skills/questions-worth-asking/references/conversation-and-writing.md",
+          "mode": "exact"
+        },
+        "skills/questions-worth-asking/references/follow-through.md": {
+          "repository": "RachaelQuisel/questions-worth-asking",
+          "source_path": "skills/questions-worth-asking/references/follow-through.md",
+          "mode": "exact"
+        },
+        "skills/questions-worth-asking/references/lenses.md": {
+          "repository": "RachaelQuisel/questions-worth-asking",
+          "source_path": "skills/questions-worth-asking/references/lenses.md",
+          "mode": "exact"
+        },
+        "source-manifests/claude.json": {
+          "repository": "RachaelQuisel/questions-worth-asking",
+          "source_path": ".claude-plugin/plugin.json",
+          "mode": "json"
+        },
+        "source-manifests/codex.json": {
+          "repository": "RachaelQuisel/questions-worth-asking",
+          "source_path": ".codex-plugin/plugin.json",
+          "mode": "json"
+        }
+      },
+      "generated_files": [
+        "IMPORT-SOURCE.json",
+        "SOURCE-OF-TRUTH.json"
+      ]
+    },
+    {
+      "name": "ghibli-icon-maker",
+      "plugin_id": "plugins_6ae8c61f37748191aae23bfaffd60fcf",
+      "repository": "RachaelQuisel/ghibli-icon-maker",
+      "package_root": ".",
+      "catalog_id": "RachaelQuisel/ghibli-icon-maker:.claude-plugin/plugin.json",
+      "files": {
+        ".codex-plugin/plugin.json": {
+          "repository": "RachaelQuisel/ghibli-icon-maker",
+          "source_path": ".codex-plugin/plugin.json",
+          "mode": "compatibility"
+        },
+        "LICENSE": {
+          "repository": "RachaelQuisel/ghibli-icon-maker",
+          "source_path": "LICENSE",
+          "mode": "exact"
+        },
+        "README.md": {
+          "repository": "RachaelQuisel/ghibli-icon-maker",
+          "source_path": "README.md",
+          "mode": "exact"
+        },
+        "assets/ghibli-icon-maker.png": {
+          "repository": "RachaelQuisel/ghibli-icon-maker",
+          "source_path": "assets/ghibli-icon-maker.png",
+          "mode": "exact"
+        },
+        "plugin.json": {
+          "repository": "RachaelQuisel/ghibli-icon-maker",
+          "source_path": "plugin.json",
+          "mode": "json"
+        },
+        "skills/ghibli-icon-maker/README.md": {
+          "repository": "RachaelQuisel/ghibli-icon-maker",
+          "source_path": "skills/ghibli-icon-maker/README.md",
+          "mode": "exact"
+        },
+        "skills/ghibli-icon-maker/SKILL.md": {
+          "repository": "RachaelQuisel/ghibli-icon-maker",
+          "source_path": "skills/ghibli-icon-maker/SKILL.md",
+          "mode": "exact"
+        },
+        "skills/ghibli-icon-maker/references/design-philosophy.md": {
+          "repository": "RachaelQuisel/ghibli-icon-maker",
+          "source_path": "skills/ghibli-icon-maker/references/design-philosophy.md",
+          "mode": "exact"
+        },
+        "skills/ghibli-icon-maker/references/examples.md": {
+          "repository": "RachaelQuisel/ghibli-icon-maker",
+          "source_path": "skills/ghibli-icon-maker/references/examples.md",
+          "mode": "exact"
+        },
+        "skills/ghibli-icon-maker/references/images/airtable-interface-builder.png": {
+          "repository": "RachaelQuisel/ghibli-icon-maker",
+          "source_path": "skills/ghibli-icon-maker/references/images/airtable-interface-builder.png",
+          "mode": "exact"
+        },
+        "skills/ghibli-icon-maker/references/images/github-portfolio-creator.png": {
+          "repository": "RachaelQuisel/ghibli-icon-maker",
+          "source_path": "skills/ghibli-icon-maker/references/images/github-portfolio-creator.png",
+          "mode": "exact"
+        },
+        "skills/ghibli-icon-maker/references/images/secure-your-data.png": {
+          "repository": "RachaelQuisel/ghibli-icon-maker",
+          "source_path": "skills/ghibli-icon-maker/references/images/secure-your-data.png",
+          "mode": "exact"
+        },
+        "skills/ghibli-icon-maker/references/images/turn-off-ai-data-sharing.png": {
+          "repository": "RachaelQuisel/ghibli-icon-maker",
+          "source_path": "skills/ghibli-icon-maker/references/images/turn-off-ai-data-sharing.png",
+          "mode": "exact"
+        },
+        "skills/ghibli-icon-maker/references/images/worth-asking.png": {
+          "repository": "RachaelQuisel/ghibli-icon-maker",
+          "source_path": "skills/ghibli-icon-maker/references/images/worth-asking.png",
+          "mode": "exact"
+        },
+        "skills/ghibli-icon-maker/references/render_icons.py": {
+          "repository": "RachaelQuisel/ghibli-icon-maker",
+          "source_path": "skills/ghibli-icon-maker/references/render_icons.py",
+          "mode": "exact"
+        },
+        "source-manifests/claude.json": {
+          "repository": "RachaelQuisel/ghibli-icon-maker",
+          "source_path": ".claude-plugin/plugin.json",
+          "mode": "json"
+        },
+        "source-manifests/codex.json": {
+          "repository": "RachaelQuisel/ghibli-icon-maker",
+          "source_path": ".codex-plugin/plugin.json",
+          "mode": "json"
+        }
+      },
+      "generated_files": [
+        "IMPORT-SOURCE.json",
+        "SOURCE-OF-TRUTH.json"
+      ]
+    },
+    {
+      "name": "humanize-output",
+      "plugin_id": "plugins_6ae8c669fbf4819191e854c657b162b9",
+      "repository": "RachaelQuisel/humanize-output",
+      "package_root": ".",
+      "catalog_id": "RachaelQuisel/humanize-output:.claude-plugin/plugin.json",
+      "files": {
+        ".codex-plugin/plugin.json": {
+          "repository": "RachaelQuisel/humanize-output",
+          "source_path": ".codex-plugin/plugin.json",
+          "mode": "compatibility"
+        },
+        "LICENSE": {
+          "repository": "RachaelQuisel/humanize-output",
+          "source_path": "LICENSE",
+          "mode": "exact"
+        },
+        "README.md": {
+          "repository": "RachaelQuisel/humanize-output",
+          "source_path": "README.md",
+          "mode": "exact"
+        },
+        "icon.png": {
+          "repository": "RachaelQuisel/humanize-output",
+          "source_path": "icon.png",
+          "mode": "exact"
+        },
+        "plugin.json": {
+          "repository": "RachaelQuisel/humanize-output",
+          "source_path": "plugin.json",
+          "mode": "json"
+        },
+        "scripts/2026-10-03-humanize-output-how-it-works.md": {
+          "repository": "RachaelQuisel/humanize-output",
+          "source_path": "scripts/2026-10-03-humanize-output-how-it-works.md",
+          "mode": "exact"
+        },
+        "skills/humanize-output/README.md": {
+          "repository": "RachaelQuisel/humanize-output",
+          "source_path": "skills/humanize-output/README.md",
+          "mode": "exact"
+        },
+        "skills/humanize-output/SKILL.md": {
+          "repository": "RachaelQuisel/humanize-output",
+          "source_path": "skills/humanize-output/SKILL.md",
+          "mode": "exact"
+        },
+        "skills/humanize-output/references/editing-tools.md": {
+          "repository": "RachaelQuisel/humanize-output",
+          "source_path": "skills/humanize-output/references/editing-tools.md",
+          "mode": "exact"
+        },
+        "skills/humanize-output/scripts/deslop.py": {
+          "repository": "RachaelQuisel/humanize-output",
+          "source_path": "skills/humanize-output/scripts/deslop.py",
+          "mode": "exact"
+        },
+        "source-manifests/claude.json": {
+          "repository": "RachaelQuisel/humanize-output",
+          "source_path": ".claude-plugin/plugin.json",
+          "mode": "json"
+        },
+        "source-manifests/codex.json": {
+          "repository": "RachaelQuisel/humanize-output",
+          "source_path": ".codex-plugin/plugin.json",
+          "mode": "json"
+        },
+        "tests/test_deslop.py": {
+          "repository": "RachaelQuisel/humanize-output",
+          "source_path": "tests/test_deslop.py",
+          "mode": "exact"
+        }
+      },
+      "generated_files": [
+        "IMPORT-SOURCE.json",
+        "SOURCE-OF-TRUTH.json"
+      ]
+    },
+    {
+      "name": "generate-financial-dummy-data",
+      "plugin_id": "plugins_6ae8c68891d08191a6f671d394ca7930",
+      "repository": "RachaelQuisel/generate-financial-dummy-data",
+      "package_root": ".",
+      "catalog_id": "RachaelQuisel/generate-financial-dummy-data:.claude-plugin/plugin.json",
+      "files": {
+        ".codex-plugin/plugin.json": {
+          "repository": "RachaelQuisel/generate-financial-dummy-data",
+          "source_path": ".codex-plugin/plugin.json",
+          "mode": "compatibility"
+        },
+        "Generate-Financial-Dummy-Data-HowItWorks-2026-10-03.md": {
+          "repository": "RachaelQuisel/generate-financial-dummy-data",
+          "source_path": "Generate-Financial-Dummy-Data-HowItWorks-2026-10-03.md",
+          "mode": "exact"
+        },
+        "LICENSE": {
+          "repository": "RachaelQuisel/generate-financial-dummy-data",
+          "source_path": "LICENSE",
+          "mode": "exact"
+        },
+        "README.md": {
+          "repository": "RachaelQuisel/generate-financial-dummy-data",
+          "source_path": "README.md",
+          "mode": "exact"
+        },
+        "assets/generate-financial-dummy-data.png": {
+          "repository": "RachaelQuisel/generate-financial-dummy-data",
+          "source_path": "assets/generate-financial-dummy-data.png",
+          "mode": "exact"
+        },
+        "icon.png": {
+          "repository": "RachaelQuisel/generate-financial-dummy-data",
+          "source_path": "icon.png",
+          "mode": "exact"
+        },
+        "plugin.json": {
+          "repository": "RachaelQuisel/generate-financial-dummy-data",
+          "source_path": "plugin.json",
+          "mode": "json"
+        },
+        "scripts/render_icon.py": {
+          "repository": "RachaelQuisel/generate-financial-dummy-data",
+          "source_path": "scripts/render_icon.py",
+          "mode": "exact"
+        },
+        "scripts/soft_index_renderer.py": {
+          "repository": "RachaelQuisel/generate-financial-dummy-data",
+          "source_path": "scripts/soft_index_renderer.py",
+          "mode": "exact"
+        },
+        "skills/generate-financial-dummy-data/README.md": {
+          "repository": "RachaelQuisel/generate-financial-dummy-data",
+          "source_path": "skills/generate-financial-dummy-data/README.md",
+          "mode": "exact"
+        },
+        "skills/generate-financial-dummy-data/SKILL.md": {
+          "repository": "RachaelQuisel/generate-financial-dummy-data",
+          "source_path": "skills/generate-financial-dummy-data/SKILL.md",
+          "mode": "exact"
+        },
+        "skills/generate-financial-dummy-data/references/conversation-and-writing.md": {
+          "repository": "RachaelQuisel/generate-financial-dummy-data",
+          "source_path": "skills/generate-financial-dummy-data/references/conversation-and-writing.md",
+          "mode": "exact"
+        },
+        "skills/generate-financial-dummy-data/references/conversation.md": {
+          "repository": "RachaelQuisel/generate-financial-dummy-data",
+          "source_path": "skills/generate-financial-dummy-data/references/conversation.md",
+          "mode": "exact"
+        },
+        "skills/generate-financial-dummy-data/references/documented-examples.md": {
+          "repository": "RachaelQuisel/generate-financial-dummy-data",
+          "source_path": "skills/generate-financial-dummy-data/references/documented-examples.md",
+          "mode": "exact"
+        },
+        "source-manifests/claude.json": {
+          "repository": "RachaelQuisel/generate-financial-dummy-data",
+          "source_path": ".claude-plugin/plugin.json",
+          "mode": "json"
+        },
+        "source-manifests/codex.json": {
+          "repository": "RachaelQuisel/generate-financial-dummy-data",
+          "source_path": ".codex-plugin/plugin.json",
+          "mode": "json"
+        }
+      },
+      "generated_files": [
+        "IMPORT-SOURCE.json",
+        "SOURCE-OF-TRUTH.json"
+      ]
+    },
+    {
+      "name": "automation-briefing",
+      "plugin_id": "plugins_6ae8c5aeebe48191addb14a3084aae1d",
+      "repository": "RachaelQuisel/Skills",
+      "package_root": "plugins/automation-briefing",
+      "catalog_id": "RachaelQuisel/Skills:plugins/automation-briefing/.claude-plugin/plugin.json",
+      "files": {
+        ".codex-plugin/plugin.json": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/automation-briefing/.codex-plugin/plugin.json",
+          "mode": "compatibility"
+        },
+        "LICENSE": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/automation-briefing/LICENSE",
+          "mode": "exact"
+        },
+        "PRIVACY.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/automation-briefing/PRIVACY.md",
+          "mode": "exact"
+        },
+        "README.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/automation-briefing/README.md",
+          "mode": "exact"
+        },
+        "docs/naming.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/automation-briefing/docs/naming.md",
+          "mode": "exact"
+        },
+        "docs/plain-english-update.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/automation-briefing/docs/plain-english-update.md",
+          "mode": "exact"
+        },
+        "docs/validation.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/automation-briefing/docs/validation.md",
+          "mode": "exact"
+        },
+        "icon.png": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/automation-briefing/icon.png",
+          "mode": "exact"
+        },
+        "plugin.json": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/automation-briefing/plugin.json",
+          "mode": "json"
+        },
+        "skills/automation-briefing/README.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/automation-briefing/skills/automation-briefing/README.md",
+          "mode": "exact"
+        },
+        "skills/automation-briefing/SKILL.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/automation-briefing/skills/automation-briefing/SKILL.md",
+          "mode": "exact"
+        },
+        "skills/automation-briefing/references/setup.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/automation-briefing/skills/automation-briefing/references/setup.md",
+          "mode": "exact"
+        },
+        "source-manifests/claude.json": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/automation-briefing/.claude-plugin/plugin.json",
+          "mode": "json"
+        },
+        "source-manifests/codex.json": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/automation-briefing/.codex-plugin/plugin.json",
+          "mode": "json"
+        }
+      },
+      "generated_files": [
+        "IMPORT-SOURCE.json",
+        "SOURCE-OF-TRUTH.json"
+      ]
+    },
+    {
+      "name": "worth-asking",
+      "plugin_id": "plugins_6ae8c62f5c5881919a6dd4262d2cec4e",
+      "repository": "RachaelQuisel/worth-asking",
+      "package_root": ".",
+      "catalog_id": "RachaelQuisel/worth-asking:.claude-plugin/plugin.json",
+      "files": {
+        ".codex-plugin/plugin.json": {
+          "repository": "RachaelQuisel/worth-asking",
+          "source_path": ".codex-plugin/plugin.json",
+          "mode": "compatibility"
+        },
+        "LICENSE": {
+          "repository": "RachaelQuisel/worth-asking",
+          "source_path": "LICENSE",
+          "mode": "exact"
+        },
+        "README.md": {
+          "repository": "RachaelQuisel/worth-asking",
+          "source_path": "README.md",
+          "mode": "exact"
+        },
+        "assets/worth-asking.png": {
+          "repository": "RachaelQuisel/worth-asking",
+          "source_path": "assets/worth-asking.png",
+          "mode": "exact"
+        },
+        "config.example.yaml": {
+          "repository": "RachaelQuisel/worth-asking",
+          "source_path": "config.example.yaml",
+          "mode": "exact"
+        },
+        "plugin.json": {
+          "repository": "RachaelQuisel/worth-asking",
+          "source_path": "plugin.json",
+          "mode": "json"
+        },
+        "skills/worth-asking/README.md": {
+          "repository": "RachaelQuisel/worth-asking",
+          "source_path": "skills/worth-asking/README.md",
+          "mode": "exact"
+        },
+        "skills/worth-asking/SKILL.md": {
+          "repository": "RachaelQuisel/worth-asking",
+          "source_path": "skills/worth-asking/SKILL.md",
+          "mode": "exact"
+        },
+        "skills/worth-asking/agents/openai.yaml": {
+          "repository": "RachaelQuisel/worth-asking",
+          "source_path": "skills/worth-asking/agents/openai.yaml",
+          "mode": "exact"
+        },
+        "skills/worth-asking/assets/worth-asking.png": {
+          "repository": "RachaelQuisel/worth-asking",
+          "source_path": "skills/worth-asking/assets/worth-asking.png",
+          "mode": "exact"
+        },
+        "skills/worth-asking/references/automation-ops.md": {
+          "repository": "RachaelQuisel/worth-asking",
+          "source_path": "skills/worth-asking/references/automation-ops.md",
+          "mode": "exact"
+        },
+        "skills/worth-asking/references/google-drive-transcripts.md": {
+          "repository": "RachaelQuisel/worth-asking",
+          "source_path": "skills/worth-asking/references/google-drive-transcripts.md",
+          "mode": "exact"
+        },
+        "skills/worth-asking/references/lenses.md": {
+          "repository": "RachaelQuisel/worth-asking",
+          "source_path": "skills/worth-asking/references/lenses.md",
+          "mode": "exact"
+        },
+        "skills/worth-asking/scripts/load_config.py": {
+          "repository": "RachaelQuisel/worth-asking",
+          "source_path": "skills/worth-asking/scripts/load_config.py",
+          "mode": "exact"
+        },
+        "source-manifests/claude.json": {
+          "repository": "RachaelQuisel/worth-asking",
+          "source_path": ".claude-plugin/plugin.json",
+          "mode": "json"
+        },
+        "source-manifests/codex.json": {
+          "repository": "RachaelQuisel/worth-asking",
+          "source_path": ".codex-plugin/plugin.json",
+          "mode": "json"
+        }
+      },
+      "generated_files": [
+        "IMPORT-SOURCE.json",
+        "SOURCE-OF-TRUTH.json"
+      ]
+    },
+    {
+      "name": "find-automatable-workflows",
+      "plugin_id": "plugins_6ae8c639af0c819193ea66bf53c01c0d",
+      "repository": "RachaelQuisel/find-automatable-workflows",
+      "package_root": ".",
+      "catalog_id": "RachaelQuisel/find-automatable-workflows:.claude-plugin/plugin.json",
+      "files": {
+        ".codex-plugin/plugin.json": {
+          "repository": "RachaelQuisel/find-automatable-workflows",
+          "source_path": ".codex-plugin/plugin.json",
+          "mode": "compatibility"
+        },
+        "LICENSE": {
+          "repository": "RachaelQuisel/find-automatable-workflows",
+          "source_path": "LICENSE",
+          "mode": "exact"
+        },
+        "README.md": {
+          "repository": "RachaelQuisel/find-automatable-workflows",
+          "source_path": "README.md",
+          "mode": "markdown-links"
+        },
+        "assets/find-automatable-workflows.png": {
+          "repository": "RachaelQuisel/find-automatable-workflows",
+          "source_path": "assets/find-automatable-workflows.png",
+          "mode": "exact"
+        },
+        "docs/example-handoff.md": {
+          "repository": "RachaelQuisel/find-automatable-workflows",
+          "source_path": "docs/example-handoff.md",
+          "mode": "exact"
+        },
+        "docs/fictional-workflow-case-study.md": {
+          "repository": "RachaelQuisel/find-automatable-workflows",
+          "source_path": "docs/fictional-workflow-case-study.md",
+          "mode": "exact"
+        },
+        "docs/how-it-works.md": {
+          "repository": "RachaelQuisel/find-automatable-workflows",
+          "source_path": "docs/how-it-works.md",
+          "mode": "exact"
+        },
+        "docs/verification.md": {
+          "repository": "RachaelQuisel/find-automatable-workflows",
+          "source_path": "docs/verification.md",
+          "mode": "exact"
+        },
+        "plugin.json": {
+          "repository": "RachaelQuisel/find-automatable-workflows",
+          "source_path": "plugin.json",
+          "mode": "json"
+        },
+        "references/conversation-guide.md": {
+          "repository": "RachaelQuisel/find-automatable-workflows",
+          "source_path": "references/conversation-guide.md",
+          "mode": "exact"
+        },
+        "references/discovery-examples.md": {
+          "repository": "RachaelQuisel/find-automatable-workflows",
+          "source_path": "references/discovery-examples.md",
+          "mode": "exact"
+        },
+        "references/handoff-format.md": {
+          "repository": "RachaelQuisel/find-automatable-workflows",
+          "source_path": "references/handoff-format.md",
+          "mode": "exact"
+        },
+        "references/opportunity-format.md": {
+          "repository": "RachaelQuisel/find-automatable-workflows",
+          "source_path": "references/opportunity-format.md",
+          "mode": "exact"
+        },
+        "references/source-access.md": {
+          "repository": "RachaelQuisel/find-automatable-workflows",
+          "source_path": "references/source-access.md",
+          "mode": "exact"
+        },
+        "references/writing-guide.md": {
+          "repository": "RachaelQuisel/find-automatable-workflows",
+          "source_path": "references/writing-guide.md",
+          "mode": "exact"
+        },
+        "scripts/sync-skill-references.py": {
+          "repository": "RachaelQuisel/find-automatable-workflows",
+          "source_path": "scripts/sync-skill-references.py",
+          "mode": "exact"
+        },
+        "skills/automation-opportunity-scout/README.md": {
+          "repository": "RachaelQuisel/find-automatable-workflows",
+          "source_path": "skills/automation-opportunity-scout/README.md",
+          "mode": "exact"
+        },
+        "skills/automation-opportunity-scout/SKILL.md": {
+          "repository": "RachaelQuisel/find-automatable-workflows",
+          "source_path": "skills/automation-opportunity-scout/SKILL.md",
+          "mode": "exact"
+        },
+        "skills/automation-opportunity-scout/references/conversation-guide.md": {
+          "repository": "RachaelQuisel/find-automatable-workflows",
+          "source_path": "skills/automation-opportunity-scout/references/conversation-guide.md",
+          "mode": "exact"
+        },
+        "skills/automation-opportunity-scout/references/discovery-examples.md": {
+          "repository": "RachaelQuisel/find-automatable-workflows",
+          "source_path": "skills/automation-opportunity-scout/references/discovery-examples.md",
+          "mode": "exact"
+        },
+        "skills/automation-opportunity-scout/references/handoff-format.md": {
+          "repository": "RachaelQuisel/find-automatable-workflows",
+          "source_path": "skills/automation-opportunity-scout/references/handoff-format.md",
+          "mode": "exact"
+        },
+        "skills/automation-opportunity-scout/references/opportunity-format.md": {
+          "repository": "RachaelQuisel/find-automatable-workflows",
+          "source_path": "skills/automation-opportunity-scout/references/opportunity-format.md",
+          "mode": "exact"
+        },
+        "skills/automation-opportunity-scout/references/source-access.md": {
+          "repository": "RachaelQuisel/find-automatable-workflows",
+          "source_path": "skills/automation-opportunity-scout/references/source-access.md",
+          "mode": "exact"
+        },
+        "skills/automation-opportunity-scout/references/writing-guide.md": {
+          "repository": "RachaelQuisel/find-automatable-workflows",
+          "source_path": "skills/automation-opportunity-scout/references/writing-guide.md",
+          "mode": "exact"
+        },
+        "skills/eval-creation/README.md": {
+          "repository": "RachaelQuisel/find-automatable-workflows",
+          "source_path": "skills/eval-creation/README.md",
+          "mode": "exact"
+        },
+        "skills/eval-creation/SKILL.md": {
+          "repository": "RachaelQuisel/find-automatable-workflows",
+          "source_path": "skills/eval-creation/SKILL.md",
+          "mode": "exact"
+        },
+        "skills/eval-creation/references/automation-handoff.md": {
+          "repository": "RachaelQuisel/find-automatable-workflows",
+          "source_path": "skills/eval-creation/references/automation-handoff.md",
+          "mode": "exact"
+        },
+        "skills/eval-creation/references/conversation-guide.md": {
+          "repository": "RachaelQuisel/find-automatable-workflows",
+          "source_path": "skills/eval-creation/references/conversation-guide.md",
+          "mode": "exact"
+        },
+        "skills/eval-creation/references/discovery-examples.md": {
+          "repository": "RachaelQuisel/find-automatable-workflows",
+          "source_path": "skills/eval-creation/references/discovery-examples.md",
+          "mode": "exact"
+        },
+        "skills/eval-creation/references/hamel-husain-evaluation-practices.md": {
+          "repository": "RachaelQuisel/find-automatable-workflows",
+          "source_path": "skills/eval-creation/references/hamel-husain-evaluation-practices.md",
+          "mode": "exact"
+        },
+        "skills/eval-creation/references/handoff-format.md": {
+          "repository": "RachaelQuisel/find-automatable-workflows",
+          "source_path": "skills/eval-creation/references/handoff-format.md",
+          "mode": "exact"
+        },
+        "skills/eval-creation/references/opportunity-format.md": {
+          "repository": "RachaelQuisel/find-automatable-workflows",
+          "source_path": "skills/eval-creation/references/opportunity-format.md",
+          "mode": "exact"
+        },
+        "skills/eval-creation/references/writing-guide.md": {
+          "repository": "RachaelQuisel/find-automatable-workflows",
+          "source_path": "skills/eval-creation/references/writing-guide.md",
+          "mode": "exact"
+        },
+        "skills/grill-me-workflow/README.md": {
+          "repository": "RachaelQuisel/find-automatable-workflows",
+          "source_path": "skills/grill-me-workflow/README.md",
+          "mode": "exact"
+        },
+        "skills/grill-me-workflow/SKILL.md": {
+          "repository": "RachaelQuisel/find-automatable-workflows",
+          "source_path": "skills/grill-me-workflow/SKILL.md",
+          "mode": "exact"
+        },
+        "skills/grill-me-workflow/references/conversation-guide.md": {
+          "repository": "RachaelQuisel/find-automatable-workflows",
+          "source_path": "skills/grill-me-workflow/references/conversation-guide.md",
+          "mode": "exact"
+        },
+        "skills/grill-me-workflow/references/discovery-examples.md": {
+          "repository": "RachaelQuisel/find-automatable-workflows",
+          "source_path": "skills/grill-me-workflow/references/discovery-examples.md",
+          "mode": "exact"
+        },
+        "skills/grill-me-workflow/references/handoff-format.md": {
+          "repository": "RachaelQuisel/find-automatable-workflows",
+          "source_path": "skills/grill-me-workflow/references/handoff-format.md",
+          "mode": "exact"
+        },
+        "skills/grill-me-workflow/references/opportunity-format.md": {
+          "repository": "RachaelQuisel/find-automatable-workflows",
+          "source_path": "skills/grill-me-workflow/references/opportunity-format.md",
+          "mode": "exact"
+        },
+        "skills/grill-me-workflow/references/writing-guide.md": {
+          "repository": "RachaelQuisel/find-automatable-workflows",
+          "source_path": "skills/grill-me-workflow/references/writing-guide.md",
+          "mode": "exact"
+        },
+        "source-manifests/claude.json": {
+          "repository": "RachaelQuisel/find-automatable-workflows",
+          "source_path": ".claude-plugin/plugin.json",
+          "mode": "json"
+        },
+        "source-manifests/codex.json": {
+          "repository": "RachaelQuisel/find-automatable-workflows",
+          "source_path": ".codex-plugin/plugin.json",
+          "mode": "json"
+        }
+      },
+      "generated_files": [
+        "IMPORT-SOURCE.json",
+        "SOURCE-OF-TRUTH.json"
+      ]
+    },
+    {
+      "name": "week-in-rewind",
+      "plugin_id": "plugins_6ae8c6ab53c081918ceb7db1fc3d0820",
+      "repository": "RachaelQuisel/week-in-rewind",
+      "package_root": ".",
+      "catalog_id": "RachaelQuisel/week-in-rewind:.claude-plugin/plugin.json",
+      "files": {
+        ".codex-plugin/plugin.json": {
+          "repository": "RachaelQuisel/week-in-rewind",
+          "source_path": ".codex-plugin/plugin.json",
+          "mode": "compatibility"
+        },
+        "LICENSE": {
+          "repository": "RachaelQuisel/week-in-rewind",
+          "source_path": "LICENSE",
+          "mode": "exact"
+        },
+        "README.md": {
+          "repository": "RachaelQuisel/week-in-rewind",
+          "source_path": "README.md",
+          "mode": "exact"
+        },
+        "Week-In-Rewind-HowItWorks-2026-10-03.md": {
+          "repository": "RachaelQuisel/week-in-rewind",
+          "source_path": "Week-In-Rewind-HowItWorks-2026-10-03.md",
+          "mode": "exact"
+        },
+        "icon.png": {
+          "repository": "RachaelQuisel/week-in-rewind",
+          "source_path": "icon.png",
+          "mode": "exact"
+        },
+        "plugin.json": {
+          "repository": "RachaelQuisel/week-in-rewind",
+          "source_path": "plugin.json",
+          "mode": "json"
+        },
+        "skills/setup-weekly-rewind/README.md": {
+          "repository": "RachaelQuisel/week-in-rewind",
+          "source_path": "skills/setup-weekly-rewind/README.md",
+          "mode": "exact"
+        },
+        "skills/setup-weekly-rewind/SKILL.md": {
+          "repository": "RachaelQuisel/week-in-rewind",
+          "source_path": "skills/setup-weekly-rewind/SKILL.md",
+          "mode": "exact"
+        },
+        "skills/week-in-rewind/README.md": {
+          "repository": "RachaelQuisel/week-in-rewind",
+          "source_path": "skills/week-in-rewind/README.md",
+          "mode": "exact"
+        },
+        "skills/week-in-rewind/SKILL.md": {
+          "repository": "RachaelQuisel/week-in-rewind",
+          "source_path": "skills/week-in-rewind/SKILL.md",
+          "mode": "exact"
+        },
+        "skills/week-in-rewind/references/conversation-and-writing.md": {
+          "repository": "RachaelQuisel/week-in-rewind",
+          "source_path": "skills/week-in-rewind/references/conversation-and-writing.md",
+          "mode": "exact"
+        },
+        "skills/week-in-rewind/references/voice.md": {
+          "repository": "RachaelQuisel/week-in-rewind",
+          "source_path": "skills/week-in-rewind/references/voice.md",
+          "mode": "exact"
+        },
+        "source-manifests/claude.json": {
+          "repository": "RachaelQuisel/week-in-rewind",
+          "source_path": ".claude-plugin/plugin.json",
+          "mode": "json"
+        },
+        "source-manifests/codex.json": {
+          "repository": "RachaelQuisel/week-in-rewind",
+          "source_path": ".codex-plugin/plugin.json",
+          "mode": "json"
+        }
+      },
+      "generated_files": [
+        "IMPORT-SOURCE.json",
+        "SOURCE-OF-TRUTH.json"
+      ]
+    },
+    {
+      "name": "cited-research-assistant",
+      "plugin_id": "plugins_6ae8c6350cb481918d9b4a64fe0447b6",
+      "repository": "RachaelQuisel/cited-research-assistant",
+      "package_root": ".",
+      "catalog_id": "RachaelQuisel/cited-research-assistant:.claude-plugin/plugin.json",
+      "files": {
+        ".codex-plugin/plugin.json": {
+          "repository": "RachaelQuisel/cited-research-assistant",
+          "source_path": ".codex-plugin/plugin.json",
+          "mode": "compatibility"
+        },
+        "LICENSE": {
+          "repository": "RachaelQuisel/cited-research-assistant",
+          "source_path": "LICENSE",
+          "mode": "exact"
+        },
+        "README.md": {
+          "repository": "RachaelQuisel/cited-research-assistant",
+          "source_path": "README.md",
+          "mode": "exact"
+        },
+        "icon.png": {
+          "repository": "RachaelQuisel/cited-research-assistant",
+          "source_path": "icon.png",
+          "mode": "exact"
+        },
+        "plugin.json": {
+          "repository": "RachaelQuisel/cited-research-assistant",
+          "source_path": "plugin.json",
+          "mode": "json"
+        },
+        "scripts/research.py": {
+          "repository": "RachaelQuisel/cited-research-assistant",
+          "source_path": "scripts/research.py",
+          "mode": "exact"
+        },
+        "skills/cited-research-assistant/README.md": {
+          "repository": "RachaelQuisel/cited-research-assistant",
+          "source_path": "skills/cited-research-assistant/README.md",
+          "mode": "exact"
+        },
+        "skills/cited-research-assistant/SKILL.md": {
+          "repository": "RachaelQuisel/cited-research-assistant",
+          "source_path": "skills/cited-research-assistant/SKILL.md",
+          "mode": "exact"
+        },
+        "skills/cited-research-assistant/records.md": {
+          "repository": "RachaelQuisel/cited-research-assistant",
+          "source_path": "skills/cited-research-assistant/records.md",
+          "mode": "exact"
+        },
+        "skills/cited-research-assistant/scripts/research.py": {
+          "repository": "RachaelQuisel/cited-research-assistant",
+          "source_path": "skills/cited-research-assistant/scripts/research.py",
+          "mode": "exact"
+        },
+        "source-manifests/claude.json": {
+          "repository": "RachaelQuisel/cited-research-assistant",
+          "source_path": ".claude-plugin/plugin.json",
+          "mode": "json"
+        },
+        "source-manifests/codex.json": {
+          "repository": "RachaelQuisel/cited-research-assistant",
+          "source_path": ".codex-plugin/plugin.json",
+          "mode": "json"
+        },
+        "tests/test_research.py": {
+          "repository": "RachaelQuisel/cited-research-assistant",
+          "source_path": "tests/test_research.py",
+          "mode": "exact"
+        }
+      },
+      "generated_files": [
+        "IMPORT-SOURCE.json",
+        "SOURCE-OF-TRUTH.json"
+      ]
+    },
+    {
+      "name": "workflow-diagram-builder",
+      "plugin_id": "plugins_6ae8c674c8048191b20abee2bca78e89",
+      "repository": "RachaelQuisel/workflow-diagram-builder",
+      "package_root": ".",
+      "catalog_id": "RachaelQuisel/workflow-diagram-builder:.claude-plugin/plugin.json",
+      "files": {
+        ".codex-plugin/plugin.json": {
+          "repository": "RachaelQuisel/workflow-diagram-builder",
+          "source_path": ".codex-plugin/plugin.json",
+          "mode": "compatibility"
+        },
+        "README.md": {
+          "repository": "RachaelQuisel/workflow-diagram-builder",
+          "source_path": "README.md",
+          "mode": "exact"
+        },
+        "VERIFICATION.md": {
+          "repository": "RachaelQuisel/workflow-diagram-builder",
+          "source_path": "VERIFICATION.md",
+          "mode": "exact"
+        },
+        "Workflow-Diagram-Builder-HowItWorks-2026-10-03.md": {
+          "repository": "RachaelQuisel/workflow-diagram-builder",
+          "source_path": "Workflow-Diagram-Builder-HowItWorks-2026-10-03.md",
+          "mode": "exact"
+        },
+        "plugin.json": {
+          "repository": "RachaelQuisel/workflow-diagram-builder",
+          "source_path": "plugin.json",
+          "mode": "json"
+        },
+        "skills/workflow-diagram/README.md": {
+          "repository": "RachaelQuisel/workflow-diagram-builder",
+          "source_path": "skills/workflow-diagram/README.md",
+          "mode": "exact"
+        },
+        "skills/workflow-diagram/SKILL.md": {
+          "repository": "RachaelQuisel/workflow-diagram-builder",
+          "source_path": "skills/workflow-diagram/SKILL.md",
+          "mode": "exact"
+        },
+        "skills/workflow-diagram/agents/openai.yaml": {
+          "repository": "RachaelQuisel/workflow-diagram-builder",
+          "source_path": "skills/workflow-diagram/agents/openai.yaml",
+          "mode": "exact"
+        },
+        "skills/workflow-diagram/assets/workflow-diagram-builder.png": {
+          "repository": "RachaelQuisel/workflow-diagram-builder",
+          "source_path": "skills/workflow-diagram/assets/workflow-diagram-builder.png",
+          "mode": "exact"
+        },
+        "skills/workflow-diagram/references/diagram-rules.md": {
+          "repository": "RachaelQuisel/workflow-diagram-builder",
+          "source_path": "skills/workflow-diagram/references/diagram-rules.md",
+          "mode": "exact"
+        },
+        "skills/workflow-diagram/references/example-workflow.json": {
+          "repository": "RachaelQuisel/workflow-diagram-builder",
+          "source_path": "skills/workflow-diagram/references/example-workflow.json",
+          "mode": "json"
+        },
+        "skills/workflow-diagram/references/how-it-works-format.md": {
+          "repository": "RachaelQuisel/workflow-diagram-builder",
+          "source_path": "skills/workflow-diagram/references/how-it-works-format.md",
+          "mode": "exact"
+        },
+        "skills/workflow-diagram/scripts/build_mermaid.py": {
+          "repository": "RachaelQuisel/workflow-diagram-builder",
+          "source_path": "skills/workflow-diagram/scripts/build_mermaid.py",
+          "mode": "exact"
+        },
+        "source-manifests/claude.json": {
+          "repository": "RachaelQuisel/workflow-diagram-builder",
+          "source_path": ".claude-plugin/plugin.json",
+          "mode": "json"
+        },
+        "source-manifests/codex.json": {
+          "repository": "RachaelQuisel/workflow-diagram-builder",
+          "source_path": ".codex-plugin/plugin.json",
+          "mode": "json"
+        },
+        "tests/test_build_mermaid.py": {
+          "repository": "RachaelQuisel/workflow-diagram-builder",
+          "source_path": "tests/test_build_mermaid.py",
+          "mode": "exact"
+        }
+      },
+      "generated_files": [
+        "IMPORT-SOURCE.json",
+        "SOURCE-OF-TRUTH.json"
+      ]
+    },
+    {
+      "name": "skill-and-plugin-namer",
+      "plugin_id": "plugins_6ae8c6b0ff3c81919ef488f6cad30ea9",
+      "repository": "RachaelQuisel/skill-and-plugin-namer",
+      "package_root": ".",
+      "catalog_id": "RachaelQuisel/skill-and-plugin-namer:.claude-plugin/plugin.json",
+      "files": {
+        ".codex-plugin/plugin.json": {
+          "repository": "RachaelQuisel/skill-and-plugin-namer",
+          "source_path": ".codex-plugin/plugin.json",
+          "mode": "compatibility"
+        },
+        "LICENSE": {
+          "repository": "RachaelQuisel/skill-and-plugin-namer",
+          "source_path": "LICENSE",
+          "mode": "exact"
+        },
+        "README.md": {
+          "repository": "RachaelQuisel/skill-and-plugin-namer",
+          "source_path": "README.md",
+          "mode": "exact"
+        },
+        "Skill-And-Plugin-Namer-HowItWorks-2026-10-03.md": {
+          "repository": "RachaelQuisel/skill-and-plugin-namer",
+          "source_path": "Skill-And-Plugin-Namer-HowItWorks-2026-10-03.md",
+          "mode": "exact"
+        },
+        "icon.png": {
+          "repository": "RachaelQuisel/skill-and-plugin-namer",
+          "source_path": "icon.png",
+          "mode": "exact"
+        },
+        "plugin.json": {
+          "repository": "RachaelQuisel/skill-and-plugin-namer",
+          "source_path": "plugin.json",
+          "mode": "json"
+        },
+        "skills/skill-and-plugin-namer/README.md": {
+          "repository": "RachaelQuisel/skill-and-plugin-namer",
+          "source_path": "skills/skill-and-plugin-namer/README.md",
+          "mode": "exact"
+        },
+        "skills/skill-and-plugin-namer/SKILL.md": {
+          "repository": "RachaelQuisel/skill-and-plugin-namer",
+          "source_path": "skills/skill-and-plugin-namer/SKILL.md",
+          "mode": "exact"
+        },
+        "skills/skill-and-plugin-namer/agents/openai.yaml": {
+          "repository": "RachaelQuisel/skill-and-plugin-namer",
+          "source_path": "skills/skill-and-plugin-namer/agents/openai.yaml",
+          "mode": "exact"
+        },
+        "skills/skill-and-plugin-namer/assets/skill-and-plugin-namer.png": {
+          "repository": "RachaelQuisel/skill-and-plugin-namer",
+          "source_path": "skills/skill-and-plugin-namer/assets/skill-and-plugin-namer.png",
+          "mode": "exact"
+        },
+        "skills/skill-and-plugin-namer/references/conversation-and-writing.md": {
+          "repository": "RachaelQuisel/skill-and-plugin-namer",
+          "source_path": "skills/skill-and-plugin-namer/references/conversation-and-writing.md",
+          "mode": "exact"
+        },
+        "skills/skill-and-plugin-namer/references/listing-formula.md": {
+          "repository": "RachaelQuisel/skill-and-plugin-namer",
+          "source_path": "skills/skill-and-plugin-namer/references/listing-formula.md",
+          "mode": "exact"
+        },
+        "source-manifests/claude.json": {
+          "repository": "RachaelQuisel/skill-and-plugin-namer",
+          "source_path": ".claude-plugin/plugin.json",
+          "mode": "json"
+        },
+        "source-manifests/codex.json": {
+          "repository": "RachaelQuisel/skill-and-plugin-namer",
+          "source_path": ".codex-plugin/plugin.json",
+          "mode": "json"
+        }
+      },
+      "generated_files": [
+        "IMPORT-SOURCE.json",
+        "SOURCE-OF-TRUTH.json"
+      ]
+    },
+    {
+      "name": "plain-english-editor",
+      "plugin_id": "plugins_6ae8c6b6eb00819191371e52e0acac9c",
+      "repository": "RachaelQuisel/plain-english-editor",
+      "package_root": ".",
+      "catalog_id": "RachaelQuisel/plain-english-editor:.claude-plugin/plugin.json",
+      "files": {
+        ".codex-plugin/plugin.json": {
+          "repository": "RachaelQuisel/plain-english-editor",
+          "source_path": ".codex-plugin/plugin.json",
+          "mode": "compatibility"
+        },
+        "LICENSE": {
+          "repository": "RachaelQuisel/plain-english-editor",
+          "source_path": "LICENSE",
+          "mode": "exact"
+        },
+        "Plain-English-Editor-HowItWorks-2026-10-03.md": {
+          "repository": "RachaelQuisel/plain-english-editor",
+          "source_path": "Plain-English-Editor-HowItWorks-2026-10-03.md",
+          "mode": "exact"
+        },
+        "README.md": {
+          "repository": "RachaelQuisel/plain-english-editor",
+          "source_path": "README.md",
+          "mode": "exact"
+        },
+        "icon.png": {
+          "repository": "RachaelQuisel/plain-english-editor",
+          "source_path": "icon.png",
+          "mode": "exact"
+        },
+        "plugin.json": {
+          "repository": "RachaelQuisel/plain-english-editor",
+          "source_path": "plugin.json",
+          "mode": "json"
+        },
+        "skills/plain-english-editor/README.md": {
+          "repository": "RachaelQuisel/plain-english-editor",
+          "source_path": "skills/plain-english-editor/README.md",
+          "mode": "exact"
+        },
+        "skills/plain-english-editor/SKILL.md": {
+          "repository": "RachaelQuisel/plain-english-editor",
+          "source_path": "skills/plain-english-editor/SKILL.md",
+          "mode": "exact"
+        },
+        "skills/plain-english-editor/examples/automation.md": {
+          "repository": "RachaelQuisel/plain-english-editor",
+          "source_path": "skills/plain-english-editor/examples/automation.md",
+          "mode": "exact"
+        },
+        "skills/plain-english-editor/examples/email.md": {
+          "repository": "RachaelQuisel/plain-english-editor",
+          "source_path": "skills/plain-english-editor/examples/email.md",
+          "mode": "exact"
+        },
+        "skills/plain-english-editor/examples/review.md": {
+          "repository": "RachaelQuisel/plain-english-editor",
+          "source_path": "skills/plain-english-editor/examples/review.md",
+          "mode": "exact"
+        },
+        "skills/plain-english-editor/references/conversation-and-writing.md": {
+          "repository": "RachaelQuisel/plain-english-editor",
+          "source_path": "skills/plain-english-editor/references/conversation-and-writing.md",
+          "mode": "exact"
+        },
+        "source-manifests/claude.json": {
+          "repository": "RachaelQuisel/plain-english-editor",
+          "source_path": ".claude-plugin/plugin.json",
+          "mode": "json"
+        },
+        "source-manifests/codex.json": {
+          "repository": "RachaelQuisel/plain-english-editor",
+          "source_path": ".codex-plugin/plugin.json",
+          "mode": "json"
+        }
+      },
+      "generated_files": [
+        "IMPORT-SOURCE.json",
+        "SOURCE-OF-TRUTH.json"
+      ]
+    },
+    {
+      "name": "github-portfolio-review",
+      "plugin_id": "plugins_6ae8c68028808191a2e1b012cc19164b",
+      "repository": "RachaelQuisel/github-portfolio-review-codex",
+      "package_root": "plugins/github-portfolio-review",
+      "catalog_id": "RachaelQuisel/github-portfolio-review-codex:plugins/github-portfolio-review/.codex-plugin/plugin.json",
+      "files": {
+        ".codex-plugin/plugin.json": {
+          "repository": "RachaelQuisel/github-portfolio-review-codex",
+          "source_path": "plugins/github-portfolio-review/.codex-plugin/plugin.json",
+          "mode": "compatibility"
+        },
+        "assets/github-portfolio-review.png": {
+          "repository": "RachaelQuisel/github-portfolio-review-codex",
+          "source_path": "plugins/github-portfolio-review/assets/github-portfolio-review.png",
+          "mode": "exact"
+        },
+        "plugin.json": {
+          "repository": "RachaelQuisel/github-portfolio-review-codex",
+          "source_path": "plugins/github-portfolio-review/plugin.json",
+          "mode": "json"
+        },
+        "skills/github-portfolio-review/README.md": {
+          "repository": "RachaelQuisel/github-portfolio-review-codex",
+          "source_path": "plugins/github-portfolio-review/skills/github-portfolio-review/README.md",
+          "mode": "exact"
+        },
+        "skills/github-portfolio-review/SKILL.md": {
+          "repository": "RachaelQuisel/github-portfolio-review-codex",
+          "source_path": "plugins/github-portfolio-review/skills/github-portfolio-review/SKILL.md",
+          "mode": "exact"
+        },
+        "skills/github-portfolio-review/agents/openai.yaml": {
+          "repository": "RachaelQuisel/github-portfolio-review-codex",
+          "source_path": "plugins/github-portfolio-review/skills/github-portfolio-review/agents/openai.yaml",
+          "mode": "exact"
+        },
+        "skills/github-portfolio-review/assets/github-portfolio-review.png": {
+          "repository": "RachaelQuisel/github-portfolio-review-codex",
+          "source_path": "plugins/github-portfolio-review/skills/github-portfolio-review/assets/github-portfolio-review.png",
+          "mode": "exact"
+        },
+        "skills/github-portfolio-review/references/review-checks.md": {
+          "repository": "RachaelQuisel/github-portfolio-review-codex",
+          "source_path": "plugins/github-portfolio-review/skills/github-portfolio-review/references/review-checks.md",
+          "mode": "exact"
+        },
+        "source-manifests/codex.json": {
+          "repository": "RachaelQuisel/github-portfolio-review-codex",
+          "source_path": "plugins/github-portfolio-review/.codex-plugin/plugin.json",
+          "mode": "json"
+        }
+      },
+      "generated_files": [
+        "IMPORT-SOURCE.json",
+        "SOURCE-OF-TRUTH.json"
+      ]
+    },
+    {
+      "name": "adhd-task-helper",
+      "plugin_id": "plugins_6acf1fe78fd08191a361b2a74e1fe768",
+      "repository": "RachaelQuisel/adhd-task-helper",
+      "package_root": ".",
+      "catalog_id": "RachaelQuisel/adhd-task-helper:plugin.json",
+      "files": {
+        ".codex-plugin/plugin.json": {
+          "repository": "RachaelQuisel/adhd-task-helper",
+          "source_path": ".codex-plugin/plugin.json",
+          "mode": "compatibility"
+        },
+        "CHANGELOG.md": {
+          "repository": "RachaelQuisel/adhd-task-helper",
+          "source_path": "CHANGELOG.md",
+          "mode": "exact"
+        },
+        "LICENSE": {
+          "repository": "RachaelQuisel/adhd-task-helper",
+          "source_path": "LICENSE",
+          "mode": "exact"
+        },
+        "PRIVACY.md": {
+          "repository": "RachaelQuisel/adhd-task-helper",
+          "source_path": "PRIVACY.md",
+          "mode": "exact"
+        },
+        "README.md": {
+          "repository": "RachaelQuisel/adhd-task-helper",
+          "source_path": "README.md",
+          "mode": "exact"
+        },
+        "assets/adhd-task-helper.png": {
+          "repository": "RachaelQuisel/adhd-task-helper",
+          "source_path": "assets/adhd-task-helper.png",
+          "mode": "exact"
+        },
+        "plugin.json": {
+          "repository": "RachaelQuisel/adhd-task-helper",
+          "source_path": "plugin.json",
+          "mode": "json"
+        },
+        "skills/get-unstuck/README.md": {
+          "repository": "RachaelQuisel/adhd-task-helper",
+          "source_path": "skills/get-unstuck/README.md",
+          "mode": "exact"
+        },
+        "skills/get-unstuck/SKILL.md": {
+          "repository": "RachaelQuisel/adhd-task-helper",
+          "source_path": "skills/get-unstuck/SKILL.md",
+          "mode": "exact"
+        },
+        "skills/get-unstuck/agents/openai.yaml": {
+          "repository": "RachaelQuisel/adhd-task-helper",
+          "source_path": "skills/get-unstuck/agents/openai.yaml",
+          "mode": "exact"
+        },
+        "skills/i-have-adhd/README.md": {
+          "repository": "RachaelQuisel/adhd-task-helper",
+          "source_path": "skills/i-have-adhd/README.md",
+          "mode": "exact"
+        },
+        "skills/i-have-adhd/SKILL.md": {
+          "repository": "RachaelQuisel/adhd-task-helper",
+          "source_path": "skills/i-have-adhd/SKILL.md",
+          "mode": "exact"
+        },
+        "skills/i-have-adhd/agents/openai.yaml": {
+          "repository": "RachaelQuisel/adhd-task-helper",
+          "source_path": "skills/i-have-adhd/agents/openai.yaml",
+          "mode": "exact"
+        },
+        "skills/i-have-adhd/references/design-notes.md": {
+          "repository": "RachaelQuisel/adhd-task-helper",
+          "source_path": "skills/i-have-adhd/references/design-notes.md",
+          "mode": "exact"
+        },
+        "skills/i-have-adhd/references/preferences.md": {
+          "repository": "RachaelQuisel/adhd-task-helper",
+          "source_path": "skills/i-have-adhd/references/preferences.md",
+          "mode": "exact"
+        },
+        "skills/pick-it-back-up/README.md": {
+          "repository": "RachaelQuisel/adhd-task-helper",
+          "source_path": "skills/pick-it-back-up/README.md",
+          "mode": "exact"
+        },
+        "skills/pick-it-back-up/SKILL.md": {
+          "repository": "RachaelQuisel/adhd-task-helper",
+          "source_path": "skills/pick-it-back-up/SKILL.md",
+          "mode": "exact"
+        },
+        "skills/pick-it-back-up/agents/openai.yaml": {
+          "repository": "RachaelQuisel/adhd-task-helper",
+          "source_path": "skills/pick-it-back-up/agents/openai.yaml",
+          "mode": "exact"
+        },
+        "skills/pick-it-back-up/references/checkpoint.md": {
+          "repository": "RachaelQuisel/adhd-task-helper",
+          "source_path": "skills/pick-it-back-up/references/checkpoint.md",
+          "mode": "exact"
+        },
+        "skills/sort-my-brain-dump/README.md": {
+          "repository": "RachaelQuisel/adhd-task-helper",
+          "source_path": "skills/sort-my-brain-dump/README.md",
+          "mode": "exact"
+        },
+        "skills/sort-my-brain-dump/SKILL.md": {
+          "repository": "RachaelQuisel/adhd-task-helper",
+          "source_path": "skills/sort-my-brain-dump/SKILL.md",
+          "mode": "exact"
+        },
+        "skills/sort-my-brain-dump/agents/openai.yaml": {
+          "repository": "RachaelQuisel/adhd-task-helper",
+          "source_path": "skills/sort-my-brain-dump/agents/openai.yaml",
+          "mode": "exact"
+        },
+        "source-manifests/codex.json": {
+          "repository": "RachaelQuisel/adhd-task-helper",
+          "source_path": ".codex-plugin/plugin.json",
+          "mode": "json"
+        }
+      },
+      "generated_files": [
+        "SOURCE-OF-TRUTH.json"
+      ]
+    },
+    {
+      "name": "gpt-8a95fc6209976029c77512aac6043b68",
+      "plugin_id": "plugin_c92d5838e8888191a91d00efe93ef5cd",
+      "repository": "RachaelQuisel/airbnb-hosting-expert",
+      "package_root": ".",
+      "catalog_id": "RachaelQuisel/airbnb-hosting-expert:.codex-plugin/plugin.json",
+      "files": {
+        ".codex-plugin/plugin.json": {
+          "repository": "RachaelQuisel/airbnb-hosting-expert",
+          "source_path": ".codex-plugin/plugin.json",
+          "mode": "compatibility"
+        },
+        "CHANGELOG.md": {
+          "repository": "RachaelQuisel/airbnb-hosting-expert",
+          "source_path": "CHANGELOG.md",
+          "mode": "exact"
+        },
+        "PRIVACY.md": {
+          "repository": "RachaelQuisel/airbnb-hosting-expert",
+          "source_path": "PRIVACY.md",
+          "mode": "exact"
+        },
+        "README.md": {
+          "repository": "RachaelQuisel/airbnb-hosting-expert",
+          "source_path": "README.md",
+          "mode": "markdown-links"
+        },
+        "assets/airbnb-hosting-expert.png": {
+          "repository": "RachaelQuisel/airbnb-hosting-expert",
+          "source_path": "assets/airbnb-hosting-expert.png",
+          "mode": "exact"
+        },
+        "plugin.json": {
+          "repository": "RachaelQuisel/airbnb-hosting-expert",
+          "source_path": "plugin.json",
+          "mode": "json"
+        },
+        "skills/instructions/README.md": {
+          "repository": "RachaelQuisel/airbnb-hosting-expert",
+          "source_path": "skills/instructions/README.md",
+          "mode": "exact"
+        },
+        "skills/instructions/SKILL.md": {
+          "repository": "RachaelQuisel/airbnb-hosting-expert",
+          "source_path": "skills/instructions/SKILL.md",
+          "mode": "exact"
+        },
+        "skills/instructions/agents/openai.yaml": {
+          "repository": "RachaelQuisel/airbnb-hosting-expert",
+          "source_path": "skills/instructions/agents/openai.yaml",
+          "mode": "exact"
+        },
+        "skills/instructions/lookup/knowledge-index.json": {
+          "repository": "RachaelQuisel/airbnb-hosting-expert",
+          "source_path": "skills/instructions/lookup/knowledge-index.json",
+          "mode": "json"
+        },
+        "skills/instructions/references/data-handling.md": {
+          "repository": "RachaelQuisel/airbnb-hosting-expert",
+          "source_path": "skills/instructions/references/data-handling.md",
+          "mode": "exact"
+        },
+        "skills/instructions/references/hosting-boundaries.md": {
+          "repository": "RachaelQuisel/airbnb-hosting-expert",
+          "source_path": "skills/instructions/references/hosting-boundaries.md",
+          "mode": "exact"
+        },
+        "skills/instructions/references/message-examples.md": {
+          "repository": "RachaelQuisel/airbnb-hosting-expert",
+          "source_path": "skills/instructions/references/message-examples.md",
+          "mode": "exact"
+        },
+        "source-manifests/codex.json": {
+          "repository": "RachaelQuisel/airbnb-hosting-expert",
+          "source_path": ".codex-plugin/plugin.json",
+          "mode": "json"
+        }
+      },
+      "generated_files": [
+        "SOURCE-OF-TRUTH.json"
+      ]
+    },
+    {
+      "name": "automate-notification-to-teams",
+      "plugin_id": "plugins_6ae8c67b270881918ae522dc9b747747",
+      "repository": "RachaelQuisel/automate-notification-to-teams",
+      "package_root": ".",
+      "catalog_id": "RachaelQuisel/automate-notification-to-teams:.codex-plugin/plugin.json",
+      "files": {
+        ".codex-plugin/plugin.json": {
+          "repository": "RachaelQuisel/automate-notification-to-teams",
+          "source_path": ".codex-plugin/plugin.json",
+          "mode": "compatibility"
+        },
+        "AutomateNotificationToTeams-HowItWorks-2026-10-03.md": {
+          "repository": "RachaelQuisel/automate-notification-to-teams",
+          "source_path": "AutomateNotificationToTeams-HowItWorks-2026-10-03.md",
+          "mode": "exact"
+        },
+        "LICENSE": {
+          "repository": "RachaelQuisel/automate-notification-to-teams",
+          "source_path": "LICENSE",
+          "mode": "exact"
+        },
+        "README.md": {
+          "repository": "RachaelQuisel/automate-notification-to-teams",
+          "source_path": "README.md",
+          "mode": "markdown-links"
+        },
+        "assets/automate-notification-to-teams.png": {
+          "repository": "RachaelQuisel/automate-notification-to-teams",
+          "source_path": "assets/automate-notification-to-teams.png",
+          "mode": "exact"
+        },
+        "plugin.json": {
+          "repository": "RachaelQuisel/automate-notification-to-teams",
+          "source_path": "plugin.json",
+          "mode": "json"
+        },
+        "skills/automate-notification-to-teams/README.md": {
+          "repository": "RachaelQuisel/automate-notification-to-teams",
+          "source_path": "skills/automate-notification-to-teams/README.md",
+          "mode": "exact"
+        },
+        "skills/automate-notification-to-teams/SKILL.md": {
+          "repository": "RachaelQuisel/automate-notification-to-teams",
+          "source_path": "skills/automate-notification-to-teams/SKILL.md",
+          "mode": "exact"
+        },
+        "skills/automate-notification-to-teams/agents/openai.yaml": {
+          "repository": "RachaelQuisel/automate-notification-to-teams",
+          "source_path": "skills/automate-notification-to-teams/agents/openai.yaml",
+          "mode": "exact"
+        },
+        "skills/automate-notification-to-teams/assets/automate-notification-to-teams.png": {
+          "repository": "RachaelQuisel/automate-notification-to-teams",
+          "source_path": "skills/automate-notification-to-teams/assets/automate-notification-to-teams.png",
+          "mode": "exact"
+        },
+        "skills/automate-notification-to-teams/references/airtable.md": {
+          "repository": "RachaelQuisel/automate-notification-to-teams",
+          "source_path": "skills/automate-notification-to-teams/references/airtable.md",
+          "mode": "exact"
+        },
+        "skills/automate-notification-to-teams/references/conversation-and-writing.md": {
+          "repository": "RachaelQuisel/automate-notification-to-teams",
+          "source_path": "skills/automate-notification-to-teams/references/conversation-and-writing.md",
+          "mode": "exact"
+        },
+        "skills/automate-notification-to-teams/references/plain-english.md": {
+          "repository": "RachaelQuisel/automate-notification-to-teams",
+          "source_path": "skills/automate-notification-to-teams/references/plain-english.md",
+          "mode": "exact"
+        },
+        "source-manifests/codex.json": {
+          "repository": "RachaelQuisel/automate-notification-to-teams",
+          "source_path": ".codex-plugin/plugin.json",
+          "mode": "json"
+        }
+      },
+      "generated_files": [
+        "IMPORT-SOURCE.json",
+        "SOURCE-OF-TRUTH.json"
+      ]
+    },
+    {
+      "name": "automation-catalog-failure-check",
+      "plugin_id": "plugins_6ae8c5cc6d608191ac12f24a604570b2",
+      "repository": "RachaelQuisel/Skills",
+      "package_root": "plugins/automation-catalog-failure-check",
+      "catalog_id": "RachaelQuisel/Skills:plugins/automation-catalog-failure-check/.claude-plugin/plugin.json",
+      "files": {
+        ".codex-plugin/plugin.json": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/automation-catalog-failure-check/.codex-plugin/plugin.json",
+          "mode": "compatibility"
+        },
+        "ICON.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/automation-catalog-failure-check/ICON.md",
+          "mode": "exact"
+        },
+        "LICENSE": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/automation-catalog-failure-check/LICENSE",
+          "mode": "exact"
+        },
+        "PRIVACY.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/automation-catalog-failure-check/PRIVACY.md",
+          "mode": "exact"
+        },
+        "README.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/automation-catalog-failure-check/README.md",
+          "mode": "markdown-links"
+        },
+        "icon.png": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/automation-catalog-failure-check/icon.png",
+          "mode": "exact"
+        },
+        "plugin.json": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/automation-catalog-failure-check/plugin.json",
+          "mode": "json"
+        },
+        "skills/check-catalog-reports/README.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/automation-catalog-failure-check/skills/check-catalog-reports/README.md",
+          "mode": "exact"
+        },
+        "skills/check-catalog-reports/SKILL.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/automation-catalog-failure-check/skills/check-catalog-reports/SKILL.md",
+          "mode": "exact"
+        },
+        "skills/check-catalog-reports/agents/openai.yaml": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/automation-catalog-failure-check/skills/check-catalog-reports/agents/openai.yaml",
+          "mode": "exact"
+        },
+        "skills/check-catalog-reports/references/decisions.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/automation-catalog-failure-check/skills/check-catalog-reports/references/decisions.md",
+          "mode": "exact"
+        },
+        "skills/check-catalog-reports/references/settings.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/automation-catalog-failure-check/skills/check-catalog-reports/references/settings.md",
+          "mode": "exact"
+        },
+        "source-manifests/claude.json": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/automation-catalog-failure-check/.claude-plugin/plugin.json",
+          "mode": "json"
+        },
+        "source-manifests/codex.json": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/automation-catalog-failure-check/.codex-plugin/plugin.json",
+          "mode": "json"
+        }
+      },
+      "generated_files": [
+        "IMPORT-SOURCE.json",
+        "SOURCE-OF-TRUTH.json"
+      ]
+    },
+    {
+      "name": "automation-catalog",
+      "plugin_id": "plugins_6ae8c5d1eaec819195c2a80fa0800848",
+      "repository": "RachaelQuisel/Skills",
+      "package_root": "plugins/automation-catalog",
+      "catalog_id": "RachaelQuisel/Skills:plugins/automation-catalog/.claude-plugin/plugin.json",
+      "files": {
+        ".codex-plugin/plugin.json": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/automation-catalog/.codex-plugin/plugin.json",
+          "mode": "compatibility"
+        },
+        "ICON.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/automation-catalog/ICON.md",
+          "mode": "exact"
+        },
+        "LICENSE": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/automation-catalog/LICENSE",
+          "mode": "exact"
+        },
+        "PRIVACY.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/automation-catalog/PRIVACY.md",
+          "mode": "exact"
+        },
+        "README.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/automation-catalog/README.md",
+          "mode": "markdown-links"
+        },
+        "icon.png": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/automation-catalog/icon.png",
+          "mode": "exact"
+        },
+        "plugin.json": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/automation-catalog/plugin.json",
+          "mode": "json"
+        },
+        "skills/automation-catalog/README.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/automation-catalog/skills/automation-catalog/README.md",
+          "mode": "exact"
+        },
+        "skills/automation-catalog/SKILL.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/automation-catalog/skills/automation-catalog/SKILL.md",
+          "mode": "exact"
+        },
+        "skills/automation-catalog/agents/openai.yaml": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/automation-catalog/skills/automation-catalog/agents/openai.yaml",
+          "mode": "exact"
+        },
+        "skills/automation-catalog/assets/example-inventory.json": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/automation-catalog/skills/automation-catalog/assets/example-inventory.json",
+          "mode": "json"
+        },
+        "skills/automation-catalog/references/classification.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/automation-catalog/skills/automation-catalog/references/classification.md",
+          "mode": "exact"
+        },
+        "skills/automation-catalog/references/data-contract.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/automation-catalog/skills/automation-catalog/references/data-contract.md",
+          "mode": "exact"
+        },
+        "skills/automation-catalog/references/discovery.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/automation-catalog/skills/automation-catalog/references/discovery.md",
+          "mode": "exact"
+        },
+        "skills/automation-catalog/references/publication.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/automation-catalog/skills/automation-catalog/references/publication.md",
+          "mode": "exact"
+        },
+        "skills/automation-catalog/references/scheduled-runs.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/automation-catalog/skills/automation-catalog/references/scheduled-runs.md",
+          "mode": "exact"
+        },
+        "skills/automation-catalog/scripts/catalog.py": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/automation-catalog/skills/automation-catalog/scripts/catalog.py",
+          "mode": "exact"
+        },
+        "source-manifests/claude.json": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/automation-catalog/.claude-plugin/plugin.json",
+          "mode": "json"
+        },
+        "source-manifests/codex.json": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/automation-catalog/.codex-plugin/plugin.json",
+          "mode": "json"
+        },
+        "tests/test_catalog.py": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/automation-catalog/tests/test_catalog.py",
+          "mode": "exact"
+        }
+      },
+      "generated_files": [
+        "IMPORT-SOURCE.json",
+        "SOURCE-OF-TRUTH.json"
+      ]
+    },
+    {
+      "name": "find-fix-mistakes",
+      "plugin_id": "Plugin_f70ed6170f9481918473f311ca68d441",
+      "repository": "RachaelQuisel/Skills",
+      "package_root": "plugins/find-fix-mistakes",
+      "catalog_id": "chatgpt:plugin:find-fix-mistakes",
+      "files": {
+        ".claude-plugin/plugin.json": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/find-fix-mistakes/.claude-plugin/plugin.json",
+          "mode": "json"
+        },
+        ".codex-plugin/plugin.json": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/find-fix-mistakes/.codex-plugin/plugin.json",
+          "mode": "compatibility"
+        },
+        "PRIVACY.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/find-fix-mistakes/PRIVACY.md",
+          "mode": "exact"
+        },
+        "README.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/find-fix-mistakes/README.md",
+          "mode": "exact"
+        },
+        "assets/find-fix-mistakes.png": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/find-fix-mistakes/assets/find-fix-mistakes.png",
+          "mode": "exact"
+        },
+        "plugin.json": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/find-fix-mistakes/plugin.json",
+          "mode": "json"
+        },
+        "skills/fixmistakes/SKILL.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/find-fix-mistakes/skills/fixmistakes/SKILL.md",
+          "mode": "exact"
+        },
+        "skills/fixmistakes/agents/openai.yaml": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/find-fix-mistakes/skills/fixmistakes/agents/openai.yaml",
+          "mode": "exact"
+        },
+        "skills/mistakes/SKILL.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/find-fix-mistakes/skills/mistakes/SKILL.md",
+          "mode": "exact"
+        },
+        "skills/mistakes/agents/openai.yaml": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/find-fix-mistakes/skills/mistakes/agents/openai.yaml",
+          "mode": "exact"
+        }
+      },
+      "generated_files": []
+    },
+    {
+      "name": "client-docs",
+      "plugin_id": "plugins_6ae8c5d8377081919ad89637d37ce040",
+      "repository": "RachaelQuisel/Skills",
+      "package_root": "plugins/client-docs",
+      "catalog_id": "RachaelQuisel/Skills:plugins/client-docs/.claude-plugin/plugin.json",
+      "files": {
+        ".codex-plugin/plugin.json": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/client-docs/.codex-plugin/plugin.json",
+          "mode": "compatibility"
+        },
+        "LICENSE": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/client-docs/LICENSE",
+          "mode": "exact"
+        },
+        "PRIVACY.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/client-docs/PRIVACY.md",
+          "mode": "exact"
+        },
+        "README.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/client-docs/README.md",
+          "mode": "markdown-links"
+        },
+        "plugin.json": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/client-docs/plugin.json",
+          "mode": "json"
+        },
+        "skills/artifact/README.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "artifact/README.md",
+          "mode": "exact"
+        },
+        "skills/artifact/SKILL.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "artifact/SKILL.md",
+          "mode": "exact"
+        },
+        "skills/artifact/TECHNICAL-GUIDE.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "artifact/TECHNICAL-GUIDE.md",
+          "mode": "markdown-links"
+        },
+        "skills/audit-log-plugin/README.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "audit-log-plugin/README.md",
+          "mode": "exact"
+        },
+        "skills/audit-log-plugin/SKILL.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "audit-log-plugin/SKILL.md",
+          "mode": "exact"
+        },
+        "skills/audit-log-plugin/TECHNICAL-GUIDE.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "audit-log-plugin/TECHNICAL-GUIDE.md",
+          "mode": "markdown-links"
+        },
+        "skills/audit-log-plugin/pilot.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "audit-log-plugin/pilot.md",
+          "mode": "exact"
+        },
+        "skills/audit-log-plugin/references/event-contract.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "audit-log-plugin/references/event-contract.md",
+          "mode": "exact"
+        },
+        "skills/audit-log-plugin/schema/001_init.sql": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "audit-log-plugin/schema/001_init.sql",
+          "mode": "exact"
+        },
+        "skills/audit-log-plugin/scripts/automation_run_verifier.py": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "audit-log-plugin/scripts/automation_run_verifier.py",
+          "mode": "exact"
+        },
+        "skills/audit-log-plugin/scripts/plan_status.py": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "audit-log-plugin/scripts/plan_status.py",
+          "mode": "exact"
+        },
+        "skills/audit-log-plugin/scripts/reopen_task.py": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "audit-log-plugin/scripts/reopen_task.py",
+          "mode": "exact"
+        },
+        "skills/audit-log-plugin/scripts/store.py": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "audit-log-plugin/scripts/store.py",
+          "mode": "exact"
+        },
+        "skills/audit-log-plugin/tests/conftest.py": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "audit-log-plugin/tests/conftest.py",
+          "mode": "exact"
+        },
+        "skills/audit-log-plugin/tests/test_automation_run_verifier.py": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "audit-log-plugin/tests/test_automation_run_verifier.py",
+          "mode": "exact"
+        },
+        "skills/audit-log-plugin/tests/test_log_event.py": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "audit-log-plugin/tests/test_log_event.py",
+          "mode": "exact"
+        },
+        "skills/audit-log-plugin/tests/test_reopen_task.py": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "audit-log-plugin/tests/test_reopen_task.py",
+          "mode": "exact"
+        },
+        "skills/audit-log-plugin/tests/test_rule_version_readback.py": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "audit-log-plugin/tests/test_rule_version_readback.py",
+          "mode": "exact"
+        },
+        "skills/auto/README.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "auto/README.md",
+          "mode": "exact"
+        },
+        "skills/auto/SKILL.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "auto/SKILL.md",
+          "mode": "exact"
+        },
+        "skills/auto/TECHNICAL-GUIDE.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "auto/TECHNICAL-GUIDE.md",
+          "mode": "markdown-links"
+        },
+        "skills/auto/agents/openai.yaml": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "auto/agents/openai.yaml",
+          "mode": "exact"
+        },
+        "skills/business-case/README.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "business-case/README.md",
+          "mode": "exact"
+        },
+        "skills/business-case/SKILL.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "business-case/SKILL.md",
+          "mode": "exact"
+        },
+        "skills/business-case/TECHNICAL-GUIDE.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "business-case/TECHNICAL-GUIDE.md",
+          "mode": "markdown-links"
+        },
+        "skills/business-case/references/document-structure.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "business-case/references/document-structure.md",
+          "mode": "exact"
+        },
+        "skills/business-case/references/extraction-guide.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "business-case/references/extraction-guide.md",
+          "mode": "exact"
+        },
+        "skills/business-case/references/tables-and-metrics.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "business-case/references/tables-and-metrics.md",
+          "mode": "exact"
+        },
+        "skills/business-case/references/tone-and-style.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "business-case/references/tone-and-style.md",
+          "mode": "exact"
+        },
+        "skills/client-doc-build-plan/README.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "client-doc-build-plan/README.md",
+          "mode": "exact"
+        },
+        "skills/client-doc-build-plan/SKILL.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "client-doc-build-plan/SKILL.md",
+          "mode": "exact"
+        },
+        "skills/client-doc-build-plan/TECHNICAL-GUIDE.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "client-doc-build-plan/TECHNICAL-GUIDE.md",
+          "mode": "markdown-links"
+        },
+        "skills/client-doc-build-plan/references/example-build-plan.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "client-doc-build-plan/references/example-build-plan.md",
+          "mode": "exact"
+        },
+        "skills/client-doc-changelog/README.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "client-doc-changelog/README.md",
+          "mode": "exact"
+        },
+        "skills/client-doc-changelog/SKILL.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "client-doc-changelog/SKILL.md",
+          "mode": "exact"
+        },
+        "skills/client-doc-changelog/TECHNICAL-GUIDE.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "client-doc-changelog/TECHNICAL-GUIDE.md",
+          "mode": "markdown-links"
+        },
+        "skills/client-doc-changelog/references/example-changelog.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "client-doc-changelog/references/example-changelog.md",
+          "mode": "exact"
+        },
+        "skills/client-doc-decisions/README.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "client-doc-decisions/README.md",
+          "mode": "exact"
+        },
+        "skills/client-doc-decisions/SKILL.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "client-doc-decisions/SKILL.md",
+          "mode": "exact"
+        },
+        "skills/client-doc-decisions/TECHNICAL-GUIDE.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "client-doc-decisions/TECHNICAL-GUIDE.md",
+          "mode": "markdown-links"
+        },
+        "skills/client-doc-decisions/references/example-decisions.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "client-doc-decisions/references/example-decisions.md",
+          "mode": "exact"
+        },
+        "skills/client-doc-interface-prompts/README.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "client-doc-interface-prompts/README.md",
+          "mode": "exact"
+        },
+        "skills/client-doc-interface-prompts/SKILL.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "client-doc-interface-prompts/SKILL.md",
+          "mode": "exact"
+        },
+        "skills/client-doc-interface-prompts/TECHNICAL-GUIDE.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "client-doc-interface-prompts/TECHNICAL-GUIDE.md",
+          "mode": "markdown-links"
+        },
+        "skills/client-doc-interface-prompts/references/example-interface-prompts.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "client-doc-interface-prompts/references/example-interface-prompts.md",
+          "mode": "exact"
+        },
+        "skills/client-doc-push/README.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "client-doc-push/README.md",
+          "mode": "exact"
+        },
+        "skills/client-doc-push/SKILL.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "client-doc-push/SKILL.md",
+          "mode": "exact"
+        },
+        "skills/client-doc-push/TECHNICAL-GUIDE.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "client-doc-push/TECHNICAL-GUIDE.md",
+          "mode": "markdown-links"
+        },
+        "skills/client-doc-user-stories/README.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "client-doc-user-stories/README.md",
+          "mode": "exact"
+        },
+        "skills/client-doc-user-stories/SKILL.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "client-doc-user-stories/SKILL.md",
+          "mode": "exact"
+        },
+        "skills/client-doc-user-stories/TECHNICAL-GUIDE.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "client-doc-user-stories/TECHNICAL-GUIDE.md",
+          "mode": "markdown-links"
+        },
+        "skills/client-doc-user-stories/references/example-user-stories.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "client-doc-user-stories/references/example-user-stories.md",
+          "mode": "exact"
+        },
+        "skills/client-doc-vision-and-scope/README.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "client-doc-vision-and-scope/README.md",
+          "mode": "exact"
+        },
+        "skills/client-doc-vision-and-scope/SKILL.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "client-doc-vision-and-scope/SKILL.md",
+          "mode": "exact"
+        },
+        "skills/client-doc-vision-and-scope/TECHNICAL-GUIDE.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "client-doc-vision-and-scope/TECHNICAL-GUIDE.md",
+          "mode": "markdown-links"
+        },
+        "skills/client-doc-vision-and-scope/references/example-vision-and-scope.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "client-doc-vision-and-scope/references/example-vision-and-scope.md",
+          "mode": "exact"
+        },
+        "skills/client-doc-workflow-diagram/README.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "client-doc-workflow-diagram/README.md",
+          "mode": "exact"
+        },
+        "skills/client-doc-workflow-diagram/SKILL.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "client-doc-workflow-diagram/SKILL.md",
+          "mode": "exact"
+        },
+        "skills/client-doc-workflow-diagram/TECHNICAL-GUIDE.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "client-doc-workflow-diagram/TECHNICAL-GUIDE.md",
+          "mode": "markdown-links"
+        },
+        "skills/client-doc-workflow-diagram/references/example-workflow-diagram.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "client-doc-workflow-diagram/references/example-workflow-diagram.md",
+          "mode": "exact"
+        },
+        "skills/client-doc-workflow-diagram/references/mermaid-dialect.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "client-doc-workflow-diagram/references/mermaid-dialect.md",
+          "mode": "exact"
+        },
+        "skills/client-doc-workflow-diagram/references/page-template.html": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "client-doc-workflow-diagram/references/page-template.html",
+          "mode": "exact"
+        },
+        "skills/client-docs/README.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "client-docs/README.md",
+          "mode": "exact"
+        },
+        "skills/client-docs/SKILL.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "client-docs/SKILL.md",
+          "mode": "exact"
+        },
+        "skills/client-docs/TECHNICAL-GUIDE.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "client-docs/TECHNICAL-GUIDE.md",
+          "mode": "markdown-links"
+        },
+        "skills/education/README.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "education/README.md",
+          "mode": "exact"
+        },
+        "skills/education/SKILL.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "education/SKILL.md",
+          "mode": "exact"
+        },
+        "skills/education/TECHNICAL-GUIDE.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "education/TECHNICAL-GUIDE.md",
+          "mode": "markdown-links"
+        },
+        "skills/execute/scripts/log_event.py": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/client-docs/skills/execute/scripts/log_event.py",
+          "mode": "exact"
+        },
+        "skills/fetch-tasks/README.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "fetch-tasks/README.md",
+          "mode": "exact"
+        },
+        "skills/fetch-tasks/SKILL.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "fetch-tasks/SKILL.md",
+          "mode": "exact"
+        },
+        "skills/fetch-tasks/TECHNICAL-GUIDE.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "fetch-tasks/TECHNICAL-GUIDE.md",
+          "mode": "exact"
+        },
+        "skills/file-naming-convention/README.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "file-naming-convention/README.md",
+          "mode": "exact"
+        },
+        "skills/file-naming-convention/SKILL.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "file-naming-convention/SKILL.md",
+          "mode": "exact"
+        },
+        "skills/file-naming-convention/TECHNICAL-GUIDE.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "file-naming-convention/TECHNICAL-GUIDE.md",
+          "mode": "markdown-links"
+        },
+        "skills/five-signals-prd/README.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "five-signals-prd/README.md",
+          "mode": "exact"
+        },
+        "skills/five-signals-prd/SKILL.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "five-signals-prd/SKILL.md",
+          "mode": "exact"
+        },
+        "skills/five-signals-prd/TECHNICAL-GUIDE.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "five-signals-prd/TECHNICAL-GUIDE.md",
+          "mode": "markdown-links"
+        },
+        "skills/five-signals-prd/references/canon-sharpenings.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "five-signals-prd/references/canon-sharpenings.md",
+          "mode": "exact"
+        },
+        "skills/five-signals-prd/references/example-prd.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "five-signals-prd/references/example-prd.md",
+          "mode": "exact"
+        },
+        "skills/five-signals-prd/references/traps-and-payoff.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "five-signals-prd/references/traps-and-payoff.md",
+          "mode": "exact"
+        },
+        "skills/five-signals-prd/scripts/write_prd.sh": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "five-signals-prd/scripts/write_prd.sh",
+          "mode": "exact"
+        },
+        "skills/how-it-works-doc/README.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "how-it-works-doc/README.md",
+          "mode": "exact"
+        },
+        "skills/how-it-works-doc/SKILL.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "how-it-works-doc/SKILL.md",
+          "mode": "exact"
+        },
+        "skills/how-it-works-doc/TECHNICAL-GUIDE.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "how-it-works-doc/TECHNICAL-GUIDE.md",
+          "mode": "markdown-links"
+        },
+        "skills/how-it-works-doc/references/exemplars.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "how-it-works-doc/references/exemplars.md",
+          "mode": "exact"
+        },
+        "skills/how-it-works-doc/references/template.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "how-it-works-doc/references/template.md",
+          "mode": "exact"
+        },
+        "skills/kpi-report/README.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "kpi-report/README.md",
+          "mode": "exact"
+        },
+        "skills/kpi-report/SKILL.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "kpi-report/SKILL.md",
+          "mode": "exact"
+        },
+        "skills/kpi-report/TECHNICAL-GUIDE.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "kpi-report/TECHNICAL-GUIDE.md",
+          "mode": "markdown-links"
+        },
+        "skills/markdown-to-xr-gdoc/README.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "markdown-to-xr-gdoc/README.md",
+          "mode": "exact"
+        },
+        "skills/markdown-to-xr-gdoc/SKILL.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "markdown-to-xr-gdoc/SKILL.md",
+          "mode": "exact"
+        },
+        "skills/markdown-to-xr-gdoc/TECHNICAL-GUIDE.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "markdown-to-xr-gdoc/TECHNICAL-GUIDE.md",
+          "mode": "markdown-links"
+        },
+        "skills/markdown-to-xr-gdoc/assets/mermaid_styles.css": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "markdown-to-xr-gdoc/assets/mermaid_styles.css",
+          "mode": "exact"
+        },
+        "skills/markdown-to-xr-gdoc/assets/template.html": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "markdown-to-xr-gdoc/assets/template.html",
+          "mode": "exact"
+        },
+        "skills/markdown-to-xr-gdoc/references/branding.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "markdown-to-xr-gdoc/references/branding.md",
+          "mode": "exact"
+        },
+        "skills/markdown-to-xr-gdoc/scripts/convert_to_gdoc.py": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "markdown-to-xr-gdoc/scripts/convert_to_gdoc.py",
+          "mode": "exact"
+        },
+        "skills/markdown-to-xr-gdoc/scripts/requirements.txt": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "markdown-to-xr-gdoc/scripts/requirements.txt",
+          "mode": "exact"
+        },
+        "skills/prd-frame-estimate/README.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "prd-frame-estimate/README.md",
+          "mode": "exact"
+        },
+        "skills/prd-frame-estimate/SKILL.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "prd-frame-estimate/SKILL.md",
+          "mode": "exact"
+        },
+        "skills/prd-frame-estimate/TECHNICAL-GUIDE.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "prd-frame-estimate/TECHNICAL-GUIDE.md",
+          "mode": "markdown-links"
+        },
+        "skills/ship/README.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "ship/README.md",
+          "mode": "exact"
+        },
+        "skills/ship/SKILL.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "ship/SKILL.md",
+          "mode": "exact"
+        },
+        "skills/ship/TECHNICAL-GUIDE.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "ship/TECHNICAL-GUIDE.md",
+          "mode": "markdown-links"
+        },
+        "skills/spec-driven-dev/README.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "spec-driven-dev/README.md",
+          "mode": "exact"
+        },
+        "skills/spec-driven-dev/SKILL.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "spec-driven-dev/SKILL.md",
+          "mode": "exact"
+        },
+        "skills/spec-driven-dev/TECHNICAL-GUIDE.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "spec-driven-dev/TECHNICAL-GUIDE.md",
+          "mode": "markdown-links"
+        },
+        "skills/transcript-review/README.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "transcript-review/README.md",
+          "mode": "exact"
+        },
+        "skills/transcript-review/SKILL.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "transcript-review/SKILL.md",
+          "mode": "exact"
+        },
+        "skills/transcript-review/TECHNICAL-GUIDE.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "transcript-review/TECHNICAL-GUIDE.md",
+          "mode": "exact"
+        },
+        "skills/workflow-eval/README.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "workflow-eval/README.md",
+          "mode": "exact"
+        },
+        "skills/workflow-eval/SKILL.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "workflow-eval/SKILL.md",
+          "mode": "exact"
+        },
+        "skills/workflow-eval/TECHNICAL-GUIDE.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "workflow-eval/TECHNICAL-GUIDE.md",
+          "mode": "markdown-links"
+        },
+        "skills/workflow-eval/evals/evals.json": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "workflow-eval/evals/evals.json",
+          "mode": "json"
+        },
+        "skills/workflow-eval/references/airtable-patterns.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "workflow-eval/references/airtable-patterns.md",
+          "mode": "exact"
+        },
+        "skills/workflow-eval/references/case-schema.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "workflow-eval/references/case-schema.md",
+          "mode": "exact"
+        },
+        "skills/workflow-eval/references/post-run-template.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "workflow-eval/references/post-run-template.md",
+          "mode": "exact"
+        },
+        "skills/workflow-eval/references/safety-and-cleanup.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "workflow-eval/references/safety-and-cleanup.md",
+          "mode": "exact"
+        },
+        "skills/workflow-eval/references/workflow-spec-schema.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "workflow-eval/references/workflow-spec-schema.md",
+          "mode": "exact"
+        },
+        "skills/workflow-eval/scripts/README.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "workflow-eval/scripts/README.md",
+          "mode": "exact"
+        },
+        "skills/workflow-eval/scripts/eval_helper.py": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "workflow-eval/scripts/eval_helper.py",
+          "mode": "exact"
+        },
+        "skills/write-soap-report/README.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "write-soap-report/README.md",
+          "mode": "exact"
+        },
+        "skills/write-soap-report/SKILL.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "write-soap-report/SKILL.md",
+          "mode": "exact"
+        },
+        "skills/write-soap-report/TECHNICAL-GUIDE.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "write-soap-report/TECHNICAL-GUIDE.md",
+          "mode": "markdown-links"
+        },
+        "skills/write-soap-report/references/build_soap.py": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "write-soap-report/references/build_soap.py",
+          "mode": "exact"
+        },
+        "skills/write-soap-report/references/soap-format-and-voice.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "write-soap-report/references/soap-format-and-voice.md",
+          "mode": "exact"
+        },
+        "skills/write-soap-report/soap-creation.md": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "write-soap-report/soap-creation.md",
+          "mode": "exact"
+        },
+        "source-manifests/claude.json": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/client-docs/.claude-plugin/plugin.json",
+          "mode": "json"
+        },
+        "source-manifests/codex.json": {
+          "repository": "RachaelQuisel/Skills",
+          "source_path": "plugins/client-docs/.codex-plugin/plugin.json",
+          "mode": "json"
+        }
+      },
+      "generated_files": [
+        "IMPORT-SOURCE.json",
+        "SOURCE-OF-TRUTH.json"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "automation-briefing",
+  "displayName": "Automation Briefing",
+  "description": "Get a short, plain-English brief on automation tools and leading AI models. See what changed, why it matters, and what to test, change, or watch.",
+  "version": "1.0.5",
+  "author": {
+    "name": "Rachael Quisel"
+  },
+  "homepage": "https://github.com/RachaelQuisel/Skills/tree/main/plugins/automation-briefing",
+  "repository": "https://github.com/RachaelQuisel/Skills",
+  "license": "MIT",
+  "keywords": [
+    "automation",
+    "no-code",
+    "AI",
+    "Airtable",
+    "Zapier",
+    "Make",
+    "n8n",
+    "Pipedream",
+    "Fillout"
+  ],
+  "icon": "./icon.png",
+  "documentationUrl": "https://github.com/RachaelQuisel/Skills/blob/main/plugins/automation-briefing/README.md",
+  "supportUrl": "https://github.com/RachaelQuisel/Skills/issues",
+  "privacyPolicyUrl": "https://github.com/RachaelQuisel/Skills/blob/main/plugins/automation-briefing/PRIVACY.md"
+}

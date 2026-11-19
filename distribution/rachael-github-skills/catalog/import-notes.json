@@ -1,0 +1,899 @@
+{
+  "excluded": [
+    {
+      "repo": "OpenBrain",
+      "path": "skills/_template/SKILL.md",
+      "reason": "Blank skill authoring template, not a working skill."
+    },
+    {
+      "repo": "gstack",
+      "path": "bin/gstack-global-discover",
+      "reason": "Large compiled runtime binary; source and instructions retained."
+    }
+  ],
+  "metadata_repairs": [
+    {
+      "source": "Skills/claude-api/SKILL.md",
+      "change": "Shortened discovery description to the 1024 character limit; workflow body preserved."
+    },
+    {
+      "source": "Skills/plain-english-project-communication/SKILL.md",
+      "change": "Shortened discovery description to the 1024 character limit; workflow body preserved."
+    },
+    {
+      "source": "Skills/plugins/zite-prompt/skills/zite-prompt/SKILL.md",
+      "change": "Quoted description containing a colon to repair YAML."
+    },
+    {
+      "source": "Skills/zite-prompt/SKILL.md",
+      "change": "Quoted description containing a colon to repair YAML."
+    },
+    {
+      "source": "OpenBrain/skills/n-agentic-harnesses/SKILL.md",
+      "change": "Quoted description containing a colon to repair YAML."
+    }
+  ],
+  "inventory": [
+    {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": true,
+      "nameWithOwner": "RachaelQuisel/Automate-Your-Business",
+      "commit": "0280dd1061fab291fdb7eb3ca91eb8705ed6bd9b",
+      "truncated": false,
+      "skills": []
+    },
+    {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "isArchived": false,
+      "isFork": true,
+      "isPrivate": true,
+      "nameWithOwner": "RachaelQuisel/xray-task-inbox",
+      "commit": "2412fe1e64d19b733f291ce4c9bb0a85469ea303",
+      "truncated": false,
+      "skills": []
+    },
+    {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "nameWithOwner": "RachaelQuisel/airbnb-hosting-expert",
+      "commit": "5b76b677771bf9d7d8c9fe5e9c4877a4fbcdd1bc",
+      "truncated": false,
+      "skills": [
+        "skills/instructions/SKILL.md"
+      ]
+    },
+    {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "nameWithOwner": "RachaelQuisel/questions-worth-asking",
+      "commit": "05f794b9b83c6ba5231c405597aa57c625b84cdb",
+      "truncated": false,
+      "skills": [
+        "skills/questions-worth-asking/SKILL.md"
+      ]
+    },
+    {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "nameWithOwner": "RachaelQuisel/github-portfolio-builder",
+      "commit": "a1a65f15ffd71dd3fb1ee6e70dc0138ed932becb",
+      "truncated": false,
+      "skills": [
+        "plugins/github-portfolio-builder/skills/github-portfolio-builder/SKILL.md"
+      ]
+    },
+    {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "nameWithOwner": "RachaelQuisel/publish-a-plugin",
+      "commit": "78864ee7314901e5d6fa963821a4e6ed46636b97",
+      "truncated": false,
+      "skills": [
+        "skills/publish-a-plugin/SKILL.md"
+      ]
+    },
+    {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "nameWithOwner": "RachaelQuisel/turn-off-ai-data-sharing",
+      "commit": "f04c4248f7ad47fa0aa454b495181198695507a9",
+      "truncated": false,
+      "skills": [
+        "skills/turn-off-ai-data-sharing/SKILL.md"
+      ]
+    },
+    {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "nameWithOwner": "RachaelQuisel/ghibli-icon-maker",
+      "commit": "24192cad23a88b2070091509809f80a4c4af99d5",
+      "truncated": false,
+      "skills": [
+        "skills/ghibli-icon-maker/SKILL.md"
+      ]
+    },
+    {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": true,
+      "nameWithOwner": "RachaelQuisel/airtable-interface-builder",
+      "commit": "5298d4e61ce67005ca3c5227027c10fb31e147b5",
+      "truncated": false,
+      "skills": [
+        "skills/airtable-interface-craft/SKILL.md"
+      ]
+    },
+    {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "nameWithOwner": "RachaelQuisel/brooke-lyn-landon-client-work",
+      "commit": "132febae94cca92dd3eb66abca8318158b2efb4f",
+      "truncated": false,
+      "skills": []
+    },
+    {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "nameWithOwner": "RachaelQuisel/skillsforyou",
+      "commit": "a04d1036662207982fd0db76a4d6039786ba0d5b",
+      "truncated": false,
+      "skills": [
+        "airtable-backup-and-migrate/SKILL.md",
+        "applicant-csv-to-airtable-sync/SKILL.md",
+        "auto/SKILL.md",
+        "build-sprint-summary/SKILL.md",
+        "client-doc-changelog/SKILL.md",
+        "client-doc-decisions/SKILL.md",
+        "client-doc-interface-prompts/SKILL.md",
+        "client-doc-push/SKILL.md",
+        "client-doc-user-stories/SKILL.md",
+        "client-doc-vision-and-scope/SKILL.md",
+        "client-docs/SKILL.md",
+        "course-completion-certificate/SKILL.md",
+        "dissonance-radar/SKILL.md",
+        "education/SKILL.md",
+        "eval-creation/SKILL.md",
+        "execute-and-reconcile-pain-points/SKILL.md",
+        "file-naming-convention/SKILL.md",
+        "five-signals-prd/SKILL.md",
+        "friday-sprint-summary/SKILL.md",
+        "gem-miner/SKILL.md",
+        "gmail-triage/SKILL.md",
+        "how-it-works-doc/SKILL.md",
+        "kpi-report/SKILL.md",
+        "meeting-prep/SKILL.md",
+        "micro-case-study/SKILL.md",
+        "mistakes/SKILL.md",
+        "normalize-csvs-for-airtable/SKILL.md",
+        "omni-prompt/SKILL.md",
+        "plain-english-project-communication/SKILL.md",
+        "post-to-huddle/SKILL.md",
+        "postmortem/SKILL.md",
+        "rubric/SKILL.md",
+        "voice-align/SKILL.md",
+        "work-voice/SKILL.md",
+        "write-artifact/SKILL.md"
+      ]
+    },
+    {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": true,
+      "nameWithOwner": "RachaelQuisel/la-maison",
+      "commit": "c82fbaa1e693e70be0fafd3b2f62dfee8cef65cb",
+      "truncated": false,
+      "skills": []
+    },
+    {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": true,
+      "nameWithOwner": "RachaelQuisel/Skills",
+      "commit": "743880136c079c17fadf14953252153ca87a5061",
+      "truncated": false,
+      "skills": [
+        "addtoacuity/SKILL.md",
+        "agent-activity-log/SKILL.md",
+        "airtable-backup-and-migrate/SKILL.md",
+        "airtable-cli/SKILL.md",
+        "airtable-filters/SKILL.md",
+        "airtable-overview/SKILL.md",
+        "airtable-skill/SKILL.md",
+        "algorithmic-art/SKILL.md",
+        "artifact/SKILL.md",
+        "audit-airtable-automations/SKILL.md",
+        "audit-log-plugin/SKILL.md",
+        "auto/SKILL.md",
+        "backfill-debrief-task-links/SKILL.md",
+        "brainstorming/SKILL.md",
+        "brand-guidelines/SKILL.md",
+        "business-case/SKILL.md",
+        "business-requirements/SKILL.md",
+        "canvas-design/SKILL.md",
+        "claude-api/SKILL.md",
+        "client-doc-changelog/SKILL.md",
+        "client-doc-decisions/SKILL.md",
+        "client-doc-interface-prompts/SKILL.md",
+        "client-doc-push/SKILL.md",
+        "client-doc-user-stories/SKILL.md",
+        "client-doc-vision-and-scope/SKILL.md",
+        "client-docs/SKILL.md",
+        "context-awareness/SKILL.md",
+        "continuous-learning-v2/SKILL.md",
+        "create-environments/SKILL.md",
+        "create-issue/SKILL.md",
+        "create-plan/SKILL.md",
+        "create-task/SKILL.md",
+        "dispatching-parallel-agents/SKILL.md",
+        "dissonance-radar/SKILL.md",
+        "doc-coauthoring/SKILL.md",
+        "docx/SKILL.md",
+        "education/SKILL.md",
+        "execute/SKILL.md",
+        "explain-code/SKILL.md",
+        "explore-first/SKILL.md",
+        "file-naming-convention/SKILL.md",
+        "finishing-a-development-branch/SKILL.md",
+        "five-signals-prd/SKILL.md",
+        "format/SKILL.md",
+        "friday-sprint-summary/SKILL.md",
+        "frontend-design/SKILL.md",
+        "gem-miner/SKILL.md",
+        "git-guardrails-claude-code/SKILL.md",
+        "gmail-triage/SKILL.md",
+        "grill-me/SKILL.md",
+        "health-record-assistant/SKILL.md",
+        "how-it-works-doc/SKILL.md",
+        "humanizing/SKILL.md",
+        "insidery/SKILL.md",
+        "internal-comms/SKILL.md",
+        "kpi-report/SKILL.md",
+        "load/SKILL.md",
+        "markdown-to-xr-gdoc/SKILL.md",
+        "mcp-builder/SKILL.md",
+        "mcp-troubleshooting/SKILL.md",
+        "meeting-prep/SKILL.md",
+        "micro-case-study/SKILL.md",
+        "mistakes/SKILL.md",
+        "new-account/SKILL.md",
+        "normalize-csvs-for-airtable/SKILL.md",
+        "notebooklm/SKILL.md",
+        "omni-prompt/SKILL.md",
+        "pdf/SKILL.md",
+        "peer-review/SKILL.md",
+        "plain-english-project-communication/SKILL.md",
+        "plugins/automation-briefing/skills/automation-briefing/SKILL.md",
+        "plugins/skillkeeper/skills/skillkeeper/SKILL.md",
+        "plugins/zite-prompt/skills/zite-prompt/SKILL.md",
+        "post-to-huddle/SKILL.md",
+        "pptx/SKILL.md",
+        "prd-frame-estimate/SKILL.md",
+        "prd-to-issues/SKILL.md",
+        "prd-to-plan/SKILL.md",
+        "product-manager/SKILL.md",
+        "prototype/SKILL.md",
+        "puzzle-prompt-builder/SKILL.md",
+        "qa/SKILL.md",
+        "rachael-work-voice/SKILL.md",
+        "receiving-code-review/SKILL.md",
+        "request-refactor-plan/SKILL.md",
+        "research/SKILL.md",
+        "review/SKILL.md",
+        "rubric/SKILL.md",
+        "ship/SKILL.md",
+        "skill-creator/SKILL.md",
+        "slack-gif-creator/SKILL.md",
+        "spec-driven-dev/SKILL.md",
+        "subagent-driven-development/SKILL.md",
+        "sync-gol-acuity-airtable/SKILL.md",
+        "syncing-skills-to-github/SKILL.md",
+        "systematic-debugging/SKILL.md",
+        "tech-docs-bootstrap/SKILL.md",
+        "test-driven-development/SKILL.md",
+        "theme-factory/SKILL.md",
+        "thermo-nuclear-code-quality-review/SKILL.md",
+        "token-check/SKILL.md",
+        "travel-brief/SKILL.md",
+        "travel-packing-list/SKILL.md",
+        "triage-issue/SKILL.md",
+        "ubiquitous-language/SKILL.md",
+        "update-grades/SKILL.md",
+        "update-projects/SKILL.md",
+        "using-git-worktrees/SKILL.md",
+        "verification-before-completion/SKILL.md",
+        "vibe-safe-auth/SKILL.md",
+        "vibe-safe-errors/SKILL.md",
+        "vibe-safe-upload/SKILL.md",
+        "vibe-safe/SKILL.md",
+        "voice-align/SKILL.md",
+        "web-artifacts-builder/SKILL.md",
+        "webapp-testing/SKILL.md",
+        "what-now/SKILL.md",
+        "workflow-eval/SKILL.md",
+        "workflow-orchestration/SKILL.md",
+        "write-a-prd/SKILL.md",
+        "write-soap-report/SKILL.md",
+        "xlsx/SKILL.md",
+        "xray-brand/SKILL.md",
+        "zite-prompt/SKILL.md"
+      ]
+    },
+    {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": true,
+      "nameWithOwner": "RachaelQuisel/airbnbai",
+      "commit": "6207dfbe4817b734979bf057ec07336a3865c457",
+      "truncated": false,
+      "skills": []
+    },
+    {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": true,
+      "nameWithOwner": "RachaelQuisel/rachael-quisel-claude-work-projects",
+      "commit": "b2c0a18a7d51def74897c8c6d83d8cd1aacf604f",
+      "truncated": false,
+      "skills": []
+    },
+    {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": true,
+      "nameWithOwner": "RachaelQuisel/airbnb-communication",
+      "commit": "d4ad7b0c7b78ca83c4a8054f127f954626e49d52",
+      "truncated": false,
+      "skills": []
+    },
+    {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "nameWithOwner": "RachaelQuisel/vacation-rental-automation-how-tos",
+      "commit": "53a33c9979d317febdf22c2678fdc1c792973005",
+      "truncated": false,
+      "skills": [
+        "automate-your-business/SKILL.md"
+      ]
+    },
+    {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "nameWithOwner": "RachaelQuisel/systems-thinking-for-airtable",
+      "commit": "7761759c27b5f8b79b0dd9d7ff1b80553874e81e",
+      "truncated": false,
+      "skills": []
+    },
+    {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": true,
+      "nameWithOwner": "RachaelQuisel/tot-auto-payment",
+      "commit": "afd1e139b02a546360d9cacb0ec31378a15bf91c",
+      "truncated": false,
+      "skills": []
+    },
+    {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "nameWithOwner": "RachaelQuisel/worth-asking",
+      "commit": "8d87086b1eb4d871c38acb60e484ab5e214e37a6",
+      "truncated": false,
+      "skills": [
+        "skills/worth-asking/SKILL.md"
+      ]
+    },
+    {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": true,
+      "nameWithOwner": "RachaelQuisel/cited-research-assistant",
+      "commit": "b5573a56cde7666b6d2ee9d0ea7b362c46c40033",
+      "truncated": false,
+      "skills": [
+        "skills/cited-research-assistant/SKILL.md"
+      ]
+    },
+    {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "nameWithOwner": "RachaelQuisel/find-automatable-workflows",
+      "commit": "ed43611ade567f3a228b8bcec53b2430c8d22557",
+      "truncated": false,
+      "skills": [
+        "skills/automation-opportunity-scout/SKILL.md",
+        "skills/eval-creation/SKILL.md",
+        "skills/grill-me-workflow/SKILL.md"
+      ]
+    },
+    {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": true,
+      "nameWithOwner": "RachaelQuisel/contact-follow-up-tracker",
+      "commit": "947b1ec4a334b80b595c193f276e8ff73a0f7eb7",
+      "truncated": false,
+      "skills": [
+        "skills/contact-follow-up-tracker/SKILL.md"
+      ]
+    },
+    {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": true,
+      "nameWithOwner": "RachaelQuisel/humanize-output",
+      "commit": "74d18f7e76d295f1b00142fec82f12c04c01f4b7",
+      "truncated": false,
+      "skills": [
+        "skills/humanize-output/SKILL.md"
+      ]
+    },
+    {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "nameWithOwner": "RachaelQuisel/automation-message-writer",
+      "commit": "188ca0e4c738f2dca019ec537b4ba90d097d2487",
+      "truncated": false,
+      "skills": [
+        "skills/automation-message-writer/SKILL.md"
+      ]
+    },
+    {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": true,
+      "nameWithOwner": "RachaelQuisel/workflow-diagram-builder",
+      "commit": "c06c816742a29f859b1ef86fbd594a466e517e68",
+      "truncated": false,
+      "skills": [
+        "skills/workflow-diagram/SKILL.md"
+      ]
+    },
+    {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "nameWithOwner": "RachaelQuisel/automate-notification-to-teams",
+      "commit": "ab3871a1278d6fe0151ab2a75c19680f9f227c8f",
+      "truncated": false,
+      "skills": [
+        "skills/automate-notification-to-teams/SKILL.md"
+      ]
+    },
+    {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "nameWithOwner": "RachaelQuisel/reel-builder",
+      "commit": "da12274cd8f598bc8318af25299cb3d65f8b4f7f",
+      "truncated": false,
+      "skills": []
+    },
+    {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "nameWithOwner": "RachaelQuisel/RachaelQuisel",
+      "commit": "bcacc5c81d230502fadc5d69896c8f8777fb3376",
+      "truncated": false,
+      "skills": []
+    },
+    {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": true,
+      "nameWithOwner": "RachaelQuisel/plug-in-prd",
+      "commit": "b30725536981477bf4d08d65903c69fcdfcf8272",
+      "truncated": false,
+      "skills": []
+    },
+    {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": true,
+      "nameWithOwner": "RachaelQuisel/github-portfolio-review-codex",
+      "commit": "9a3a1aba103e6007b8f4958aff2c2858cc851b78",
+      "truncated": false,
+      "skills": [
+        "plugins/github-portfolio-review/skills/github-portfolio-review/SKILL.md"
+      ]
+    },
+    {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": true,
+      "nameWithOwner": "RachaelQuisel/ansible-companion",
+      "commit": "7764e4de8d14a0070541993acbfde1fdf0f093da",
+      "truncated": false,
+      "skills": []
+    },
+    {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "nameWithOwner": "RachaelQuisel/generate-financial-dummy-data",
+      "commit": "ea6a967ee6e9bdbc9c411b331339c93963716e09",
+      "truncated": false,
+      "skills": [
+        "skills/generate-financial-dummy-data/SKILL.md"
+      ]
+    },
+    {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "nameWithOwner": "RachaelQuisel/week-in-rewind",
+      "commit": "3a418723c307163e26b64387c0963560eb5cee78",
+      "truncated": false,
+      "skills": [
+        "skills/setup-weekly-rewind/SKILL.md",
+        "skills/week-in-rewind/SKILL.md"
+      ]
+    },
+    {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "nameWithOwner": "RachaelQuisel/skill-and-plugin-namer",
+      "commit": "6494a9b9c2e51cd14bb83c79ec0e3a501c5260d9",
+      "truncated": false,
+      "skills": [
+        "skills/skill-and-plugin-namer/SKILL.md"
+      ]
+    },
+    {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "nameWithOwner": "RachaelQuisel/plain-english-editor",
+      "commit": "45a8a471e0a02078943e0555b1e0895b889379d5",
+      "truncated": false,
+      "skills": [
+        "skills/plain-english-editor/SKILL.md"
+      ]
+    },
+    {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": true,
+      "nameWithOwner": "RachaelQuisel/la-maison-turnover",
+      "commit": "11a91830878badd286795e07c24b2449493e55b4",
+      "truncated": false,
+      "skills": []
+    },
+    {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": false,
+      "nameWithOwner": "RachaelQuisel/Airtable-AI-Webinar",
+      "commit": "8a5ccbfb275318ab471e92554c7286b4ecea9c11",
+      "truncated": false,
+      "skills": [
+        "skills/airtable-base-check/SKILL.md",
+        "skills/airtable-capacity-studio/SKILL.md",
+        "skills/airtable-experience-lab/SKILL.md",
+        "skills/airtable-momentum-studio/SKILL.md",
+        "skills/airtable-omni-refiner/SKILL.md",
+        "skills/airtable-workflow-scout/SKILL.md",
+        "skills/omni-prompt/SKILL.md",
+        "skills/voice-align/SKILL.md"
+      ]
+    },
+    {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": true,
+      "nameWithOwner": "RachaelQuisel/dissonance-radar",
+      "commit": "f30fc6dc44d63c6a3596988ce768d6dfc8cbd1e5",
+      "truncated": false,
+      "skills": []
+    },
+    {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": true,
+      "nameWithOwner": "RachaelQuisel/coding-clarified",
+      "commit": "9c7be4bccd7f27cb8d81126043bb2820bb89c65f",
+      "truncated": false,
+      "skills": []
+    },
+    {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": true,
+      "nameWithOwner": "RachaelQuisel/backcast",
+      "commit": "f1e8a7d7339c29f5237ad596a53b17c0b47b32d2",
+      "truncated": false,
+      "skills": [
+        ".agents/skills/supabase-postgres-best-practices/SKILL.md",
+        ".agents/skills/supabase/SKILL.md"
+      ]
+    },
+    {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "isArchived": false,
+      "isFork": true,
+      "isPrivate": false,
+      "nameWithOwner": "RachaelQuisel/gstack",
+      "commit": "846269e3b1f1cccf90cdc7946dec5b9a56e0fd38",
+      "truncated": false,
+      "skills": [
+        "SKILL.md",
+        "autoplan/SKILL.md",
+        "benchmark/SKILL.md",
+        "browse/SKILL.md",
+        "canary/SKILL.md",
+        "careful/SKILL.md",
+        "checkpoint/SKILL.md",
+        "codex/SKILL.md",
+        "connect-chrome/SKILL.md",
+        "cso/SKILL.md",
+        "design-consultation/SKILL.md",
+        "design-html/SKILL.md",
+        "design-review/SKILL.md",
+        "design-shotgun/SKILL.md",
+        "document-release/SKILL.md",
+        "freeze/SKILL.md",
+        "gstack-upgrade/SKILL.md",
+        "guard/SKILL.md",
+        "health/SKILL.md",
+        "investigate/SKILL.md",
+        "land-and-deploy/SKILL.md",
+        "learn/SKILL.md",
+        "office-hours/SKILL.md",
+        "plan-ceo-review/SKILL.md",
+        "plan-design-review/SKILL.md",
+        "plan-eng-review/SKILL.md",
+        "qa-only/SKILL.md",
+        "qa/SKILL.md",
+        "retro/SKILL.md",
+        "review/SKILL.md",
+        "setup-browser-cookies/SKILL.md",
+        "setup-deploy/SKILL.md",
+        "ship/SKILL.md",
+        "unfreeze/SKILL.md"
+      ]
+    },
+    {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": true,
+      "nameWithOwner": "RachaelQuisel/.claude",
+      "commit": "81747b0c03f9f282d7306efa2c3c282ae4a4a4c1",
+      "truncated": false,
+      "skills": []
+    },
+    {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": true,
+      "nameWithOwner": "RachaelQuisel/calendar-sync",
+      "commit": "16b95e364f2bc41bdd67e31958db27ff25775766",
+      "truncated": false,
+      "skills": []
+    },
+    {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": true,
+      "nameWithOwner": "RachaelQuisel/personal-scripts",
+      "commit": "d9c50f3d2c1cb39a47cbbb8306470e21a2dd65b5",
+      "truncated": false,
+      "skills": []
+    },
+    {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "isArchived": false,
+      "isFork": true,
+      "isPrivate": false,
+      "nameWithOwner": "RachaelQuisel/OpenBrain",
+      "commit": "6c673f08eea1b367b9fcb0b3cd012ef31feea5c1",
+      "truncated": false,
+      "skills": [
+        "skills/_template/SKILL.md",
+        "skills/auto-capture/SKILL.md",
+        "skills/autodream-brain-sync/SKILL.md",
+        "skills/claudeception/SKILL.md",
+        "skills/competitive-analysis/SKILL.md",
+        "skills/deal-memo-drafting/SKILL.md",
+        "skills/financial-model-review/SKILL.md",
+        "skills/heavy-file-ingestion/SKILL.md",
+        "skills/heavy-file-ingestion/variants/claude-code/SKILL.md",
+        "skills/heavy-file-ingestion/variants/claude-desktop/SKILL.md",
+        "skills/heavy-file-ingestion/variants/codex/SKILL.md",
+        "skills/meeting-synthesis/SKILL.md",
+        "skills/n-agentic-harnesses/SKILL.md",
+        "skills/n-agentic-harnesses/variants/anthropic/SKILL.md",
+        "skills/n-agentic-harnesses/variants/codex/SKILL.md",
+        "skills/panning-for-gold/SKILL.md",
+        "skills/research-synthesis/SKILL.md",
+        "skills/weekly-signal-diff/SKILL.md",
+        "skills/work-operating-model/SKILL.md"
+      ]
+    },
+    {
+      "defaultBranchRef": {
+        "name": "dev"
+      },
+      "isArchived": false,
+      "isFork": true,
+      "isPrivate": false,
+      "nameWithOwner": "RachaelQuisel/obsidian-autom8",
+      "commit": "69739e041784e514dde2b2da0e0e7eaac89a2021",
+      "truncated": false,
+      "skills": []
+    },
+    {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "isArchived": false,
+      "isFork": false,
+      "isPrivate": true,
+      "nameWithOwner": "RachaelQuisel/linkedin-automation",
+      "commit": "e2fb694e055b6da4b8bef863404aac21380dc64e",
+      "truncated": false,
+      "skills": []
+    },
+    {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "isArchived": false,
+      "isFork": true,
+      "isPrivate": true,
+      "nameWithOwner": "RachaelQuisel/gauge-ai-cost-monitor",
+      "commit": "01e2c86619eb1bee629aa9a59c23ba09eddd97ba",
+      "truncated": false,
+      "skills": []
+    }
+  ]
+}

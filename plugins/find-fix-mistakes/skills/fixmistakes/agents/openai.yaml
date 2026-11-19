@@ -1,0 +1,4 @@
+interface:
+  display_name: "Fix Mistakes"
+  short_description: "Repair audited mistakes and verify the result"
+  default_prompt: "Use $fixmistakes to repair the substantiated mistakes from the latest audit and verify each correction."

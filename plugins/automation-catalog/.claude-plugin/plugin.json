@@ -1,0 +1,23 @@
+{
+  "name": "automation-catalog",
+  "version": "1.0.5",
+  "description": "Creates a name, guide, run location, and tags for each automation.",
+  "displayName": "Automation Metadata Maker",
+  "author": {
+    "name": "Rachael Quisel"
+  },
+  "homepage": "https://github.com/RachaelQuisel/Skills/tree/main/plugins/automation-catalog",
+  "repository": "https://github.com/RachaelQuisel/Skills",
+  "license": "UNLICENSED",
+  "keywords": [
+    "automation",
+    "documentation",
+    "slack",
+    "catalog",
+    "monitoring"
+  ],
+  "icon": "./icon.png",
+  "documentationUrl": "https://github.com/RachaelQuisel/Skills/blob/main/plugins/automation-catalog/README.md",
+  "supportUrl": "https://github.com/RachaelQuisel/Skills/issues",
+  "privacyPolicyUrl": "https://github.com/RachaelQuisel/Skills/blob/main/plugins/automation-catalog/PRIVACY.md"
+}

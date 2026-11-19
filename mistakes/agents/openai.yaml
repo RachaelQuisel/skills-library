@@ -1,0 +1,4 @@
+interface:
+  display_name: "Mistakes"
+  short_description: "Evidence-based self-review and correction"
+  default_prompt: "Use $mistakes to audit your work, identify substantiated mistakes, and explain how to correct and prevent them."

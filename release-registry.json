@@ -1,0 +1,2031 @@
+{
+  "schemaVersion": 1,
+  "repository": "RachaelQuisel/Skills",
+  "packages": [
+    {
+      "name": "automation-briefing",
+      "root": "plugins/automation-briefing",
+      "version": "1.0.5",
+      "manifests": [
+        "plugins/automation-briefing/plugin.json",
+        "plugins/automation-briefing/.claude-plugin/plugin.json",
+        "plugins/automation-briefing/.codex-plugin/plugin.json"
+      ],
+      "skills": [
+        "plugins/automation-briefing/skills/automation-briefing/SKILL.md"
+      ]
+    },
+    {
+      "name": "automation-catalog-failure-check",
+      "root": "plugins/automation-catalog-failure-check",
+      "version": "1.0.5",
+      "manifests": [
+        "plugins/automation-catalog-failure-check/plugin.json",
+        "plugins/automation-catalog-failure-check/.claude-plugin/plugin.json",
+        "plugins/automation-catalog-failure-check/.codex-plugin/plugin.json"
+      ],
+      "skills": [
+        "plugins/automation-catalog-failure-check/skills/check-catalog-reports/SKILL.md"
+      ]
+    },
+    {
+      "name": "automation-catalog",
+      "root": "plugins/automation-catalog",
+      "version": "1.0.5",
+      "manifests": [
+        "plugins/automation-catalog/plugin.json",
+        "plugins/automation-catalog/.claude-plugin/plugin.json",
+        "plugins/automation-catalog/.codex-plugin/plugin.json"
+      ],
+      "skills": [
+        "plugins/automation-catalog/skills/automation-catalog/SKILL.md"
+      ]
+    },
+    {
+      "name": "client-docs",
+      "root": "plugins/client-docs",
+      "version": "1.4.6",
+      "manifests": [
+        "plugins/client-docs/plugin.json",
+        "plugins/client-docs/.claude-plugin/plugin.json",
+        "plugins/client-docs/.codex-plugin/plugin.json"
+      ],
+      "skills": [
+        "build-page-publisher-local/SKILL.md",
+        "audit-log-plugin/SKILL.md",
+        "automation-explainer-local/SKILL.md",
+        "business-case/SKILL.md",
+        "client-doc-build-plan/SKILL.md",
+        "client-doc-changelog/SKILL.md",
+        "client-doc-decisions/SKILL.md",
+        "client-doc-interface-prompts/SKILL.md",
+        "client-doc-push/SKILL.md",
+        "client-doc-user-stories/SKILL.md",
+        "client-doc-vision-and-scope/SKILL.md",
+        "client-doc-workflow-diagram/SKILL.md",
+        "client-docs/SKILL.md",
+        "how-it-works-doc-writer-local/SKILL.md",
+        "fetch-tasks/SKILL.md",
+        "file-naming-convention/SKILL.md",
+        "five-signals-prd/SKILL.md",
+        "how-it-works-doc/SKILL.md",
+        "kpi-report/SKILL.md",
+        "markdown-to-xr-gdoc/SKILL.md",
+        "prd-frame-estimate/SKILL.md",
+        "ship/SKILL.md",
+        "spec-driven-dev/SKILL.md",
+        "transcript-review/SKILL.md",
+        "workflow-eval/SKILL.md",
+        "write-soap-report/SKILL.md"
+      ]
+    },
+    {
+      "name": "skillkeeper",
+      "root": "plugins/skillkeeper",
+      "version": "1.0.6",
+      "manifests": [
+        "plugins/skillkeeper/plugin.json",
+        "plugins/skillkeeper/.claude-plugin/plugin.json",
+        "plugins/skillkeeper/.codex-plugin/plugin.json"
+      ],
+      "skills": [
+        "plugins/skillkeeper/skills/skillkeeper/SKILL.md"
+      ]
+    },
+    {
+      "name": "zite-prompt",
+      "root": "plugins/zite-prompt",
+      "version": "1.0.5",
+      "manifests": [
+        "plugins/zite-prompt/plugin.json",
+        "plugins/zite-prompt/.claude-plugin/plugin.json",
+        "plugins/zite-prompt/.codex-plugin/plugin.json"
+      ],
+      "skills": [
+        "plugins/zite-prompt/skills/zite-prompt/SKILL.md"
+      ]
+    },
+    {
+      "name": "find-fix-mistakes",
+      "root": "plugins/find-fix-mistakes",
+      "version": "1.0.4",
+      "manifests": [
+        "plugins/find-fix-mistakes/plugin.json",
+        "plugins/find-fix-mistakes/.claude-plugin/plugin.json",
+        "plugins/find-fix-mistakes/.codex-plugin/plugin.json"
+      ],
+      "skills": [
+        "plugins/find-fix-mistakes/skills/mistakes/SKILL.md",
+        "plugins/find-fix-mistakes/skills/fixmistakes/SKILL.md"
+      ]
+    },
+    {
+      "name": "humanize-output",
+      "root": "plugins/humanize-output",
+      "version": "1.0.4",
+      "manifests": [
+        "plugins/humanize-output/plugin.json",
+        "plugins/humanize-output/.claude-plugin/plugin.json",
+        "plugins/humanize-output/.codex-plugin/plugin.json"
+      ],
+      "skills": [
+        "plugins/humanize-output/skills/humanize-output/SKILL.md"
+      ]
+    },
+    {
+      "name": "adhd-task-helper",
+      "root": "plugins/adhd-task-helper",
+      "version": "1.0.5",
+      "manifests": [
+        "plugins/adhd-task-helper/plugin.json",
+        "plugins/adhd-task-helper/.codex-plugin/plugin.json"
+      ],
+      "skills": [
+        "plugins/adhd-task-helper/skills/get-unstuck/SKILL.md",
+        "plugins/adhd-task-helper/skills/i-have-adhd/SKILL.md",
+        "plugins/adhd-task-helper/skills/pick-it-back-up/SKILL.md",
+        "plugins/adhd-task-helper/skills/sort-my-brain-dump/SKILL.md"
+      ]
+    },
+    {
+      "name": "airtable-interface-craft",
+      "root": "plugins/airtable-interface-craft",
+      "version": "1.0.6",
+      "manifests": [
+        "plugins/airtable-interface-craft/plugin.json",
+        "plugins/airtable-interface-craft/.claude-plugin/plugin.json",
+        "plugins/airtable-interface-craft/.codex-plugin/plugin.json"
+      ],
+      "skills": [
+        "plugins/airtable-interface-craft/skills/airtable-interface-craft/SKILL.md"
+      ]
+    },
+    {
+      "name": "workflow-diagram-builder",
+      "root": "plugins/workflow-diagram-builder",
+      "version": "1.1.4",
+      "manifests": [
+        "plugins/workflow-diagram-builder/plugin.json",
+        "plugins/workflow-diagram-builder/.claude-plugin/plugin.json",
+        "plugins/workflow-diagram-builder/.codex-plugin/plugin.json"
+      ],
+      "skills": [
+        "plugins/workflow-diagram-builder/skills/workflow-diagram/SKILL.md"
+      ]
+    },
+    {
+      "name": "automate-notification-to-teams",
+      "root": "plugins/automate-notification-to-teams",
+      "version": "2.0.5",
+      "manifests": [
+        "plugins/automate-notification-to-teams/plugin.json",
+        "plugins/automate-notification-to-teams/.codex-plugin/plugin.json"
+      ],
+      "skills": [
+        "plugins/automate-notification-to-teams/skills/automate-notification-to-teams/SKILL.md"
+      ]
+    },
+    {
+      "name": "automation-message-writer",
+      "root": "plugins/automation-message-writer",
+      "version": "1.0.5",
+      "manifests": [
+        "plugins/automation-message-writer/plugin.json",
+        "plugins/automation-message-writer/.claude-plugin/plugin.json",
+        "plugins/automation-message-writer/.codex-plugin/plugin.json"
+      ],
+      "skills": [
+        "plugins/automation-message-writer/skills/automation-message-writer/SKILL.md"
+      ]
+    },
+    {
+      "name": "find-automatable-workflows",
+      "root": "plugins/find-automatable-workflows",
+      "version": "1.0.5",
+      "manifests": [
+        "plugins/find-automatable-workflows/plugin.json",
+        "plugins/find-automatable-workflows/.claude-plugin/plugin.json",
+        "plugins/find-automatable-workflows/.codex-plugin/plugin.json"
+      ],
+      "skills": [
+        "plugins/find-automatable-workflows/skills/automation-opportunity-scout/SKILL.md",
+        "plugins/find-automatable-workflows/skills/eval-creation/SKILL.md",
+        "plugins/find-automatable-workflows/skills/grill-me-workflow/SKILL.md"
+      ]
+    },
+    {
+      "name": "generate-financial-dummy-data",
+      "root": "plugins/generate-financial-dummy-data",
+      "version": "1.1.4",
+      "manifests": [
+        "plugins/generate-financial-dummy-data/plugin.json",
+        "plugins/generate-financial-dummy-data/.claude-plugin/plugin.json",
+        "plugins/generate-financial-dummy-data/.codex-plugin/plugin.json"
+      ],
+      "skills": [
+        "plugins/generate-financial-dummy-data/skills/generate-financial-dummy-data/SKILL.md"
+      ]
+    },
+    {
+      "name": "ghibli-icon-maker",
+      "root": "plugins/ghibli-icon-maker",
+      "version": "1.0.5",
+      "manifests": [
+        "plugins/ghibli-icon-maker/plugin.json",
+        "plugins/ghibli-icon-maker/.claude-plugin/plugin.json",
+        "plugins/ghibli-icon-maker/.codex-plugin/plugin.json"
+      ],
+      "skills": [
+        "plugins/ghibli-icon-maker/skills/ghibli-icon-maker/SKILL.md"
+      ]
+    },
+    {
+      "name": "plain-english-editor",
+      "root": "plugins/plain-english-editor",
+      "version": "4.1.4",
+      "manifests": [
+        "plugins/plain-english-editor/plugin.json",
+        "plugins/plain-english-editor/.claude-plugin/plugin.json",
+        "plugins/plain-english-editor/.codex-plugin/plugin.json"
+      ],
+      "skills": [
+        "plugins/plain-english-editor/skills/plain-english-editor/SKILL.md"
+      ]
+    },
+    {
+      "name": "publish-a-plugin",
+      "root": "plugins/publish-a-plugin",
+      "version": "1.1.4",
+      "manifests": [
+        "plugins/publish-a-plugin/plugin.json",
+        "plugins/publish-a-plugin/.claude-plugin/plugin.json",
+        "plugins/publish-a-plugin/.codex-plugin/plugin.json"
+      ],
+      "skills": [
+        "plugins/publish-a-plugin/skills/publish-a-plugin/SKILL.md"
+      ]
+    },
+    {
+      "name": "questions-worth-asking",
+      "root": "plugins/questions-worth-asking",
+      "version": "1.2.5",
+      "manifests": [
+        "plugins/questions-worth-asking/plugin.json",
+        "plugins/questions-worth-asking/.claude-plugin/plugin.json",
+        "plugins/questions-worth-asking/.codex-plugin/plugin.json"
+      ],
+      "skills": [
+        "plugins/questions-worth-asking/skills/questions-worth-asking/SKILL.md"
+      ]
+    },
+    {
+      "name": "skill-and-plugin-namer",
+      "root": "plugins/skill-and-plugin-namer",
+      "version": "3.1.4",
+      "manifests": [
+        "plugins/skill-and-plugin-namer/plugin.json",
+        "plugins/skill-and-plugin-namer/.claude-plugin/plugin.json",
+        "plugins/skill-and-plugin-namer/.codex-plugin/plugin.json"
+      ],
+      "skills": [
+        "plugins/skill-and-plugin-namer/skills/skill-and-plugin-namer/SKILL.md"
+      ]
+    },
+    {
+      "name": "turn-off-ai-data-sharing",
+      "root": "plugins/turn-off-ai-data-sharing",
+      "version": "1.0.4",
+      "manifests": [
+        "plugins/turn-off-ai-data-sharing/plugin.json",
+        "plugins/turn-off-ai-data-sharing/.claude-plugin/plugin.json",
+        "plugins/turn-off-ai-data-sharing/.codex-plugin/plugin.json"
+      ],
+      "skills": [
+        "plugins/turn-off-ai-data-sharing/skills/turn-off-ai-data-sharing/SKILL.md"
+      ]
+    },
+    {
+      "name": "week-in-rewind",
+      "root": "plugins/week-in-rewind",
+      "version": "3.1.5",
+      "manifests": [
+        "plugins/week-in-rewind/plugin.json",
+        "plugins/week-in-rewind/.claude-plugin/plugin.json",
+        "plugins/week-in-rewind/.codex-plugin/plugin.json"
+      ],
+      "skills": [
+        "plugins/week-in-rewind/skills/setup-weekly-rewind/SKILL.md",
+        "plugins/week-in-rewind/skills/week-in-rewind/SKILL.md"
+      ]
+    },
+    {
+      "name": "worth-asking",
+      "root": "plugins/worth-asking",
+      "version": "1.0.4",
+      "manifests": [
+        "plugins/worth-asking/plugin.json",
+        "plugins/worth-asking/.claude-plugin/plugin.json",
+        "plugins/worth-asking/.codex-plugin/plugin.json"
+      ],
+      "skills": [
+        "plugins/worth-asking/skills/worth-asking/SKILL.md"
+      ]
+    },
+    {
+      "name": "airbnb-hosting-expert",
+      "root": "plugins/airbnb-hosting-expert",
+      "version": "2.3.4",
+      "manifests": [
+        "plugins/airbnb-hosting-expert/plugin.json",
+        "plugins/airbnb-hosting-expert/.codex-plugin/plugin.json"
+      ],
+      "skills": [
+        "plugins/airbnb-hosting-expert/skills/instructions/SKILL.md"
+      ]
+    },
+    {
+      "name": "github-portfolio-builder",
+      "root": "plugins/github-portfolio-builder",
+      "version": "1.1.9",
+      "manifests": [
+        "plugins/github-portfolio-builder/plugin.json",
+        "plugins/github-portfolio-builder/.claude-plugin/plugin.json",
+        "plugins/github-portfolio-builder/.codex-plugin/plugin.json"
+      ],
+      "skills": [
+        "plugins/github-portfolio-builder/skills/github-portfolio-builder/SKILL.md"
+      ]
+    },
+    {
+      "name": "github-portfolio-review",
+      "root": "plugins/github-portfolio-review",
+      "version": "1.0.4",
+      "manifests": [
+        "plugins/github-portfolio-review/plugin.json",
+        "plugins/github-portfolio-review/.codex-plugin/plugin.json"
+      ],
+      "skills": [
+        "plugins/github-portfolio-review/skills/github-portfolio-review/SKILL.md"
+      ]
+    },
+    {
+      "name": "contact-follow-up-tracker",
+      "root": "plugins/contact-follow-up-tracker",
+      "version": "1.0.4",
+      "manifests": [
+        "plugins/contact-follow-up-tracker/plugin.json",
+        "plugins/contact-follow-up-tracker/.claude-plugin/plugin.json",
+        "plugins/contact-follow-up-tracker/.codex-plugin/plugin.json"
+      ],
+      "skills": [
+        "plugins/contact-follow-up-tracker/skills/contact-follow-up-tracker/SKILL.md"
+      ]
+    },
+    {
+      "name": "cited-research-assistant",
+      "root": "plugins/cited-research-assistant",
+      "version": "1.0.4",
+      "manifests": [
+        "plugins/cited-research-assistant/plugin.json",
+        "plugins/cited-research-assistant/.claude-plugin/plugin.json",
+        "plugins/cited-research-assistant/.codex-plugin/plugin.json"
+      ],
+      "skills": [
+        "plugins/cited-research-assistant/skills/cited-research-assistant/SKILL.md"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "path": "acuity-roster-reconciler-local/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "bd5dc3d24927fb9d8e97e5e70e96f04da5f7ce64d34c20c39d1fc5ce12da502d",
+      "source": "acuity-roster-reconciler-local/SKILL.md",
+      "guide": "acuity-roster-reconciler-local/README.md"
+    },
+    {
+      "path": "agent-activity-log/SKILL.md",
+      "version": "1.0.1-rq.1",
+      "sha256": "cdbfd3974b1ba1cc5ae420ca374856ebfa19be826caa10b427c99cc4b4e78e9a",
+      "source": "agent-activity-log/SKILL.md",
+      "guide": "agent-activity-log/README.md"
+    },
+    {
+      "path": "airtable-backup-and-migrate/SKILL.md",
+      "version": "1.1.0-mvp",
+      "sha256": "664306c322ef7b9c39be1a4fbfc0e16a9c5a46690f9bcf6690ad96aa6de32c8a",
+      "source": "airtable-backup-and-migrate/SKILL.md",
+      "guide": "airtable-backup-and-migrate/README.md"
+    },
+    {
+      "path": "airtable-base-check/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "7a70f0806b41d0bc499b635d2d0eb8f680be3e833554e16c887a5863e238c3ac",
+      "source": "airtable-base-check/SKILL.md",
+      "guide": "airtable-base-check/README.md"
+    },
+    {
+      "path": "airtable-capacity-studio/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "160ed5e75591dd7da41900aff9f201368f33fa7571ea60b7abb29609405235af",
+      "source": "airtable-capacity-studio/SKILL.md",
+      "guide": "airtable-capacity-studio/README.md"
+    },
+    {
+      "path": "airtable-cli/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "10b606586414485157bcf9cfb5d602f5c42550ab35cfb42b0ecab8b0c368ffcb",
+      "source": "airtable-cli/SKILL.md",
+      "guide": "airtable-cli/README.md"
+    },
+    {
+      "path": "airtable-experience-lab/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "89740a77a17cf370d5f99ac9145b34b3578d1afbda67796bb7fd794193e28e63",
+      "source": "airtable-experience-lab/SKILL.md",
+      "guide": "airtable-experience-lab/README.md"
+    },
+    {
+      "path": "airtable-filters/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "c26b34414f4b67d942ef5a2ce487346c06be28b960233d0c03991e9b4eab6310",
+      "source": "airtable-filters/SKILL.md",
+      "guide": "airtable-filters/README.md"
+    },
+    {
+      "path": "airtable-momentum-studio/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "628f6580596c15cb666130c335e2f4916888fb3bdf3906a5063cbd875e5d6ae3",
+      "source": "airtable-momentum-studio/SKILL.md",
+      "guide": "airtable-momentum-studio/README.md"
+    },
+    {
+      "path": "airtable-omni-refiner/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "09891f6ae00f8b516c89e89de5efdb36568c0eb689f10a14c3e1b92b9105ff3e",
+      "source": "airtable-omni-refiner/SKILL.md",
+      "guide": "airtable-omni-refiner/README.md"
+    },
+    {
+      "path": "airtable-overview/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "9f6ad7bd191c3d9784b656fd3aa767e911a9737573b35af35ca801a60d18ce1a",
+      "source": "airtable-overview/SKILL.md",
+      "guide": "airtable-overview/README.md"
+    },
+    {
+      "path": "airtable-skill/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "53e6c57c39983c4f8af2a09fd87011ff990d3021b819f4c1f1880f120a291c9e",
+      "source": "airtable-skill/SKILL.md",
+      "guide": "airtable-skill/README.md"
+    },
+    {
+      "path": "airtable-workflow-scout/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "79fa7249eaf18435572d6804ebfb0f80018745a5555403ed267e3fc263557da1",
+      "source": "airtable-workflow-scout/SKILL.md",
+      "guide": "airtable-workflow-scout/README.md"
+    },
+    {
+      "path": "algorithmic-art/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "51c25a6dba7cc7cd11aee1e9f74996b42b18b9de8dff84ae56f8473b8514c0fe",
+      "source": "algorithmic-art/SKILL.md",
+      "guide": "algorithmic-art/README.md"
+    },
+    {
+      "path": "app-content/SKILL.md",
+      "version": "1.0.0",
+      "sha256": "b5b2d30a5233e3018a72fd0099ed5f71f2d6b63ce012a42408249c3761424bf1",
+      "source": "app-content/SKILL.md",
+      "guide": "app-content/README.md"
+    },
+    {
+      "path": "applicant-csv-to-airtable-sync/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "9c33f78c8cf0979210c5496b39b181c0d67b73da9bbc59f24307fdeacfebe962",
+      "source": "applicant-csv-to-airtable-sync/SKILL.md",
+      "guide": "applicant-csv-to-airtable-sync/README.md"
+    },
+    {
+      "path": "audit-airtable-automations-report/SKILL.md",
+      "version": "1.0.0",
+      "sha256": "d3166a9c6c8d3e0e3d31791aba05ef1677056b8c70481bc95522808fb19c076e",
+      "source": "audit-airtable-automations-report/SKILL.md",
+      "guide": "audit-airtable-automations-report/README.md"
+    },
+    {
+      "path": "audit-airtable-automations/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "85960ba21f5777bfdaf5e8eecc542eba7767a5ddf0de64da11fa3264c02d7032",
+      "source": "audit-airtable-automations/SKILL.md",
+      "guide": "audit-airtable-automations/README.md"
+    },
+    {
+      "path": "audit-airtable-interfaces/SKILL.md",
+      "version": "1.0.0",
+      "sha256": "8cefb6f08e1ce7d53b4cc2c71e85b78378f8bafe3287a1e92088b662ef9b3772",
+      "source": "audit-airtable-interfaces/SKILL.md",
+      "guide": "audit-airtable-interfaces/README.md"
+    },
+    {
+      "path": "audit-airtable-schema/SKILL.md",
+      "version": "1.0.0",
+      "sha256": "3b1d80257302274f4c273c1d0a34da61fa94132b412d53a052bca25e0dcaa50c",
+      "source": "audit-airtable-schema/SKILL.md",
+      "guide": "audit-airtable-schema/README.md"
+    },
+    {
+      "path": "audit-log-plugin/SKILL.md",
+      "version": "1.4.6",
+      "sha256": "3cc6f8c2068eedad216bc0cd699727cc53e0af36c71aaa2bca49ccd0288a4154",
+      "source": "audit-log-plugin/SKILL.md",
+      "guide": "audit-log-plugin/README.md"
+    },
+    {
+      "path": "audit-softr-app/SKILL.md",
+      "version": "1.0.0",
+      "sha256": "8f91362ea0e6c3bafad1d401bb5e5c0be23b3fe463c55766e937941ac798f4d9",
+      "source": "audit-softr-app/SKILL.md",
+      "guide": "audit-softr-app/README.md"
+    },
+    {
+      "path": "automate-your-business/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "520105a2ca969a4709a6239ebd96a9b4be820572b8efd64d49ad67b3525ee827",
+      "source": "automate-your-business/SKILL.md",
+      "guide": "automate-your-business/README.md"
+    },
+    {
+      "path": "automation-explainer-local/SKILL.md",
+      "version": "1.4.6",
+      "sha256": "ac50978b55fe18c49d94594e783fd538d7ae0ce1e81baecab00fbda76fc973db",
+      "source": "automation-explainer-local/SKILL.md",
+      "guide": "automation-explainer-local/README.md"
+    },
+    {
+      "path": "backfill-debrief-task-links/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "7784b1628080ded7972d46c9cdfa446cc846cb866b3b672ba892e0355f29e04f",
+      "source": "backfill-debrief-task-links/SKILL.md",
+      "guide": "backfill-debrief-task-links/README.md"
+    },
+    {
+      "path": "brainstorming/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "2977606849ce6f7ae2078489b98b9aef925ab155b9aaaacd0c82ec9d8150db41",
+      "source": "brainstorming/SKILL.md",
+      "guide": "brainstorming/README.md"
+    },
+    {
+      "path": "brand-guidelines/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "8159c0a3be6a4633a4df2a9f945a8a24afb97282d2e3bd3fa632d53bfbeebf3e",
+      "source": "brand-guidelines/SKILL.md",
+      "guide": "brand-guidelines/README.md"
+    },
+    {
+      "path": "build-page-publisher-local/SKILL.md",
+      "version": "1.4.6",
+      "sha256": "177b482cb8ce435681c2ee9088beea0cc9969d6edb35d9ba3362328ce188f300",
+      "source": "build-page-publisher-local/SKILL.md",
+      "guide": "build-page-publisher-local/README.md"
+    },
+    {
+      "path": "build-sprint-summary/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "9ccac0dba8a2baeb2e8f20cca42dfb3708071d0a2bf6f91abb0bced243f95330",
+      "source": "build-sprint-summary/SKILL.md",
+      "guide": "build-sprint-summary/README.md"
+    },
+    {
+      "path": "business-case/SKILL.md",
+      "version": "1.4.6",
+      "sha256": "b60cccffb587714e9d1d1a6c1f4e1b096f649ccccd5e1d7b3caacb394ee53903",
+      "source": "business-case/SKILL.md",
+      "guide": "business-case/README.md"
+    },
+    {
+      "path": "business-requirements/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "bb05fb520e49ad17f19ce3c41d8eaf7771f3ce7f3970345248f9cde602f724b8",
+      "source": "business-requirements/SKILL.md",
+      "guide": "business-requirements/README.md"
+    },
+    {
+      "path": "canvas-design/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "9b7ccd682cda5ea9677fd1ea063dc47e26bf8f8f968f4dab75de80e74f87c1c4",
+      "source": "canvas-design/SKILL.md",
+      "guide": "canvas-design/README.md"
+    },
+    {
+      "path": "claude-api/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "f8b0d3aef9821a576d5217116ecf7ec9dc90b6c5a22f76d2aff392406820de94",
+      "source": "claude-api/SKILL.md",
+      "guide": "claude-api/README.md"
+    },
+    {
+      "path": "client-doc-build-plan/SKILL.md",
+      "version": "1.4.6",
+      "sha256": "48515b808bb5081df8b83781718db952d60a24a78d70f5a181a06b1f86d2e5bc",
+      "source": "client-doc-build-plan/SKILL.md",
+      "guide": "client-doc-build-plan/README.md"
+    },
+    {
+      "path": "client-doc-changelog/SKILL.md",
+      "version": "1.4.6",
+      "sha256": "400d193bab699bef3439b5dcd23d38a4906088a2946048178cc53ec0300a7897",
+      "source": "client-doc-changelog/SKILL.md",
+      "guide": "client-doc-changelog/README.md"
+    },
+    {
+      "path": "client-doc-decisions/SKILL.md",
+      "version": "1.4.6",
+      "sha256": "9595cb8276f045b516110347e19048cccfd67fecdc7904496078f2a68786eec9",
+      "source": "client-doc-decisions/SKILL.md",
+      "guide": "client-doc-decisions/README.md"
+    },
+    {
+      "path": "client-doc-interface-prompts/SKILL.md",
+      "version": "1.4.6",
+      "sha256": "e38cf9d5b65c46c8f4ae7ec1a03ba923fd0815f19bf21942fe5befc5b85fbd5c",
+      "source": "client-doc-interface-prompts/SKILL.md",
+      "guide": "client-doc-interface-prompts/README.md"
+    },
+    {
+      "path": "client-doc-push/SKILL.md",
+      "version": "1.4.6",
+      "sha256": "aa03de2c903970c6b84bda72297da2609b00ee81f586f8aeeb42bef5624b8dc1",
+      "source": "client-doc-push/SKILL.md",
+      "guide": "client-doc-push/README.md"
+    },
+    {
+      "path": "client-doc-user-stories/SKILL.md",
+      "version": "1.4.6",
+      "sha256": "1f0a60f7b176fd16ad2179e29614807d441588c5861535da6944cfe294546fe1",
+      "source": "client-doc-user-stories/SKILL.md",
+      "guide": "client-doc-user-stories/README.md"
+    },
+    {
+      "path": "client-doc-vision-and-scope/SKILL.md",
+      "version": "1.4.6",
+      "sha256": "c46f39b1d037624ccf35c5bf40ae60397466c4bc9990a719e638529d637c4d06",
+      "source": "client-doc-vision-and-scope/SKILL.md",
+      "guide": "client-doc-vision-and-scope/README.md"
+    },
+    {
+      "path": "client-doc-workflow-diagram/SKILL.md",
+      "version": "1.4.6",
+      "sha256": "299b6418c2f5bd5464cf354b1090712f815dfe7a96a95b7efc3f96e9e0839a18",
+      "source": "client-doc-workflow-diagram/SKILL.md",
+      "guide": "client-doc-workflow-diagram/README.md"
+    },
+    {
+      "path": "client-docs/SKILL.md",
+      "version": "1.4.6",
+      "sha256": "7b9e102d94cd45245c5a2c7647a54235d3a1a25c0d163694ec3dc385d18e3b8e",
+      "source": "client-docs/SKILL.md",
+      "guide": "client-docs/README.md"
+    },
+    {
+      "path": "context-awareness/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "35e66199b23af9afdd1f4c6e790ca49b74068bf658658366c19c294921b877ec",
+      "source": "context-awareness/SKILL.md",
+      "guide": "context-awareness/README.md"
+    },
+    {
+      "path": "course-completion-certificate/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "0ec51696465e87c2691ec5f698e095839b816c2f59a4c133fb6fc4d1c74f697e",
+      "source": "course-completion-certificate/SKILL.md",
+      "guide": "course-completion-certificate/README.md"
+    },
+    {
+      "path": "create-environments/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "039090dbd5e17acfa1ca5207f0c0ceea0c46e4787c7a32392ec89ae88f7f0ebb",
+      "source": "create-environments/SKILL.md",
+      "guide": "create-environments/README.md"
+    },
+    {
+      "path": "create-issue/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "75a57c1fa42b0ae0125eddaa62203f51c1683d0daf8c2e05a4fcbe6f7c7f1413",
+      "source": "create-issue/SKILL.md",
+      "guide": "create-issue/README.md"
+    },
+    {
+      "path": "create-plan/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "9041e05ba46bcae56c5a07069135aa5c2f6dee754ad5609d4b98e7fa65c6d70b",
+      "source": "create-plan/SKILL.md",
+      "guide": "create-plan/README.md"
+    },
+    {
+      "path": "create-task/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "0c1f6e976994f3674f7a20eff19e75e876620b61d15c85e5590a12f7c1a79d1f",
+      "source": "create-task/SKILL.md",
+      "guide": "create-task/README.md"
+    },
+    {
+      "path": "create-tweet-image/SKILL.md",
+      "version": "1.0.0",
+      "sha256": "d084df9fc1e7450f7a26cc2b6eb8517e6d52074130555ea874506ac3c4a8d5e9",
+      "source": "create-tweet-image/SKILL.md",
+      "guide": "create-tweet-image/README.md"
+    },
+    {
+      "path": "dispatching-parallel-agents/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "e1c45aa70b03cd0bb1ab5f7afd8cebb365b04caeaa6b4c26bb4c3489d253b7ec",
+      "source": "dispatching-parallel-agents/SKILL.md",
+      "guide": "dispatching-parallel-agents/README.md"
+    },
+    {
+      "path": "dissonance-radar/SKILL.md",
+      "version": "1.0.2",
+      "sha256": "157e17846afdf0ae467856b398c3bcbab622ec51dbef9435b7c40b5ffa6be5ea",
+      "source": "dissonance-radar/SKILL.md",
+      "guide": "dissonance-radar/README.md"
+    },
+    {
+      "path": "doc-coauthoring/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "16955901ac49786b282281810cd541d8b0838acfa2b0b05f2a0910cc3d3919c5",
+      "source": "doc-coauthoring/SKILL.md",
+      "guide": "doc-coauthoring/README.md"
+    },
+    {
+      "path": "docx/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "a4898691822503964e1167f869cdc443d415ed2f7c391bfd6b87c6a22fc5f41c",
+      "source": "docx/SKILL.md",
+      "guide": "docx/README.md"
+    },
+    {
+      "path": "execute-and-reconcile-pain-points/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "6a40eca4920af9a547558cb8344500f74b3046192d89a2a52933ca449295cadf",
+      "source": "execute-and-reconcile-pain-points/SKILL.md",
+      "guide": "execute-and-reconcile-pain-points/README.md"
+    },
+    {
+      "path": "execute/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "59b37a86f0bdb2a91cc48a88757eb6105afe3feb7a2fa96272e6639c3ac55807",
+      "source": "execute/SKILL.md",
+      "guide": "execute/README.md"
+    },
+    {
+      "path": "explain-automation/SKILL.md",
+      "version": "1.0.0",
+      "sha256": "e98bd84d8ee1b05b5f461fdfc7306fdde5dafad1b80adf502423a225b1942188",
+      "source": "explain-automation/SKILL.md",
+      "guide": "explain-automation/README.md"
+    },
+    {
+      "path": "explain-code/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "10117eedb386f289d9b2191c0fa1135901c22abb1c05c814df32d06717ceeab2",
+      "source": "explain-code/SKILL.md",
+      "guide": "explain-code/README.md"
+    },
+    {
+      "path": "explore-first/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "0bddea1c66b8fe34dd9e286cd1870582f6df7c444c38537145066d9ecdd791e6",
+      "source": "explore-first/SKILL.md",
+      "guide": "explore-first/README.md"
+    },
+    {
+      "path": "fetch-tasks/SKILL.md",
+      "version": "1.4.6",
+      "sha256": "c0811031e546348384e33c9cde744d6e42cee555edbbfb2cb27f62afd7d5e11e",
+      "source": "fetch-tasks/SKILL.md",
+      "guide": "fetch-tasks/README.md"
+    },
+    {
+      "path": "file-naming-convention/SKILL.md",
+      "version": "1.4.6",
+      "sha256": "dd3d0b6e80611a88b12c21b169c6a925a5e0e4008ab43018d1b9aae02985e931",
+      "source": "file-naming-convention/SKILL.md",
+      "guide": "file-naming-convention/README.md"
+    },
+    {
+      "path": "finishing-a-development-branch/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "5be6eefa22cb8338b0a43467c247ac0cf8184d9798d8a5643acdefde9ec032da",
+      "source": "finishing-a-development-branch/SKILL.md",
+      "guide": "finishing-a-development-branch/README.md"
+    },
+    {
+      "path": "five-signals-prd/SKILL.md",
+      "version": "1.4.6",
+      "sha256": "2adaba65719af0fe476feff8d7ae5aa6180bcf7fcb9d193fdb92d86230f1fc60",
+      "source": "five-signals-prd/SKILL.md",
+      "guide": "five-signals-prd/README.md"
+    },
+    {
+      "path": "format/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "60fb98e233c49e1ff8b7684f68293470fa83b0fdb7e9675db579dd086528edef",
+      "source": "format/SKILL.md",
+      "guide": "format/README.md"
+    },
+    {
+      "path": "friday-sprint-summary/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "154ea137fcec18ef5d1b650134ddacbc158b983b4259939fd99cd161467fc5fe",
+      "source": "friday-sprint-summary/SKILL.md",
+      "guide": "friday-sprint-summary/README.md"
+    },
+    {
+      "path": "frontend-design/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "1e508c6b51a60100580b146f0cdae1f63a35593904c64a04560376c186bc978a",
+      "source": "frontend-design/SKILL.md",
+      "guide": "frontend-design/README.md"
+    },
+    {
+      "path": "git-guardrails-claude-code/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "f4743286f6d6f3e7c5d4a9ad6720bbafa8d8f294bed307004ec29af8c67cee55",
+      "source": "git-guardrails-claude-code/SKILL.md",
+      "guide": "git-guardrails-claude-code/README.md"
+    },
+    {
+      "path": "github-skill-library/SKILL.md",
+      "version": "1.0.2",
+      "sha256": "d1b5d2914d1cfc8213b6806b79eabc2ee38df7ea93d69dd17aa74978caa1426b",
+      "source": "github-skill-library/SKILL.md",
+      "guide": "github-skill-library/README.md"
+    },
+    {
+      "path": "gmail-triage/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "7eb255c2fd1717e30e94f379170f4eb5fe7be76ce85c13fa403ca04ed538e4d4",
+      "source": "gmail-triage/SKILL.md",
+      "guide": "gmail-triage/README.md"
+    },
+    {
+      "path": "gol-confirm-received-date/SKILL.md",
+      "version": "1.0.0",
+      "sha256": "7bf89ee67cbc1bbd93575c779b2b5780d46df4b793909a3d688689e392a04f19",
+      "source": "gol-confirm-received-date/SKILL.md",
+      "guide": "gol-confirm-received-date/README.md"
+    },
+    {
+      "path": "grill-me/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "f2c94fe28f6162c15b3a26f3664090086b25369d2f8eaec3a3cd08fd37928a5e",
+      "source": "grill-me/SKILL.md",
+      "guide": "grill-me/README.md"
+    },
+    {
+      "path": "health-record-assistant/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "57d10a58813bb4426cbebde432149ea177e2a50198ea5e77b56bbf8fd412a71d",
+      "source": "health-record-assistant/SKILL.md",
+      "guide": "health-record-assistant/README.md"
+    },
+    {
+      "path": "how-it-works-doc-writer-local/SKILL.md",
+      "version": "1.4.6",
+      "sha256": "89c8b7a2d2a7b8ef7d0c31390d1ed170a0238ba4e86ad7c83975f1a87aa335c5",
+      "source": "how-it-works-doc-writer-local/SKILL.md",
+      "guide": "how-it-works-doc-writer-local/README.md"
+    },
+    {
+      "path": "how-it-works-doc/SKILL.md",
+      "version": "1.4.6",
+      "sha256": "098f5e0f5646af00ba7a4f523c719f9f216cc8574d62cdc68ba2859667f3ba4d",
+      "source": "how-it-works-doc/SKILL.md",
+      "guide": "how-it-works-doc/README.md"
+    },
+    {
+      "path": "humanizing/SKILL.md",
+      "version": "1.0.2",
+      "sha256": "2db457ee3838bf957346359999633d104b9812b42f637b27f3dde7e10e7857bf",
+      "source": "humanizing/SKILL.md",
+      "guide": "humanizing/README.md"
+    },
+    {
+      "path": "internal-comms/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "78420268c9709e1b020844dd2e94d1f5819a6e13e87b3eb1211d7cb7d2f52059",
+      "source": "internal-comms/SKILL.md",
+      "guide": "internal-comms/README.md"
+    },
+    {
+      "path": "kpi-report/SKILL.md",
+      "version": "1.4.6",
+      "sha256": "6deaf822b58d619bca4f4dac8d9e04745c28270e2c56ee5a6551e803c237c914",
+      "source": "kpi-report/SKILL.md",
+      "guide": "kpi-report/README.md"
+    },
+    {
+      "path": "load/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "0fbe4f6a5a0c07ed4cfc243864746f78e9cdb7f52e8d9cd86f244a536da6f401",
+      "source": "load/SKILL.md",
+      "guide": "load/README.md"
+    },
+    {
+      "path": "make-it-sound-human/SKILL.md",
+      "version": "1.0.0",
+      "sha256": "793009708495c6878f661feabd7d30b8c337939925fcac77411da9c0b3c08652",
+      "source": "make-it-sound-human/SKILL.md",
+      "guide": "make-it-sound-human/README.md"
+    },
+    {
+      "path": "markdown-to-xr-gdoc/SKILL.md",
+      "version": "1.4.6",
+      "sha256": "60e71a5a414ca502e4a8a6bf0880427cc2cea311313442847324806f4c760806",
+      "source": "markdown-to-xr-gdoc/SKILL.md",
+      "guide": "markdown-to-xr-gdoc/README.md"
+    },
+    {
+      "path": "mcp-builder/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "47060e6e67e5e427c235caaaf2ae6043ed382cf9822c908c5332861500b174e4",
+      "source": "mcp-builder/SKILL.md",
+      "guide": "mcp-builder/README.md"
+    },
+    {
+      "path": "mcp-troubleshooting/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "91490aabc9bde52e5b8c489ad6eb002f5b061540a79e0b7ca4bb91832fab3208",
+      "source": "mcp-troubleshooting/SKILL.md",
+      "guide": "mcp-troubleshooting/README.md"
+    },
+    {
+      "path": "meeting-prep/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "df8e1fc9919981cfeb4ad7de13c94f8b4939d61464e449b8a4e013b78acfccf6",
+      "source": "meeting-prep/SKILL.md",
+      "guide": "meeting-prep/README.md"
+    },
+    {
+      "path": "micro-case-study/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "9607e56751ba7177c59772895e15efbe54f12983f8f6d9dad4e99192d7fe1be0",
+      "source": "micro-case-study/SKILL.md",
+      "guide": "micro-case-study/README.md"
+    },
+    {
+      "path": "mistakes/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "5235be37cf6822945530541764504373b8f906ab4bbe6dca420b0622e2e6cf5a",
+      "source": "mistakes/SKILL.md",
+      "guide": "mistakes/README.md"
+    },
+    {
+      "path": "new-account/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "5c91fa23aed7fb9275ab49a1b76b59676df14c08239dd2f5773a4aacfb7d1937",
+      "source": "new-account/SKILL.md",
+      "guide": "new-account/README.md"
+    },
+    {
+      "path": "next-skill-recommender-local/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "57aef8d3e2a8bb40c7ac8fe31900cc8ecef410c9e2c40e77711ea5549c4660d9",
+      "source": "next-skill-recommender-local/SKILL.md",
+      "guide": "next-skill-recommender-local/README.md"
+    },
+    {
+      "path": "normalize-csvs-for-airtable/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "5fb4b54150e1ec62c56777c05e36b8b75dd1095338177f3795dd42522d3ada1a",
+      "source": "normalize-csvs-for-airtable/SKILL.md",
+      "guide": "normalize-csvs-for-airtable/README.md"
+    },
+    {
+      "path": "notebooklm-api-wrapper-local/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "5db685296afaf63c997ffbdb72ba591f1254bb38bc42852f7428a946e7cbfbbb",
+      "source": "notebooklm-api-wrapper-local/SKILL.md",
+      "guide": "notebooklm-api-wrapper-local/README.md"
+    },
+    {
+      "path": "omni-prompt/SKILL.md",
+      "version": "1.1.0",
+      "sha256": "5fa7fbe1a07f97a46a5964fc85c7701639e79d4218a763266c19d9c2cc7196a3",
+      "source": "omni-prompt/SKILL.md",
+      "guide": "omni-prompt/README.md"
+    },
+    {
+      "path": "pdf/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "44ea279070e041d6963ea1b90760ba235f79131f53d55f020e2bfb2305d04ba3",
+      "source": "pdf/SKILL.md",
+      "guide": "pdf/README.md"
+    },
+    {
+      "path": "peer-review/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "420912b872ceb70f31b66a5c5d3e0fd52d24880941c79a6a52cdee5f2a9b8ed4",
+      "source": "peer-review/SKILL.md",
+      "guide": "peer-review/README.md"
+    },
+    {
+      "path": "plain-english-project-communication/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "8aa6b40fc9222837b7f7dde78f294b0ca0bd2be14c4ab95aec5b80256a5cabef",
+      "source": "plain-english-project-communication/SKILL.md",
+      "guide": "plain-english-project-communication/README.md"
+    },
+    {
+      "path": "plugin-namer/SKILL.md",
+      "version": "1.0.0",
+      "sha256": "c56e9fd1dc3ef95611cf7e47b4b275b18cc60fb98a00152bf16c60cc7bc9bc2e",
+      "source": "plugin-namer/SKILL.md",
+      "guide": "plugin-namer/README.md"
+    },
+    {
+      "path": "plugins/adhd-task-helper/skills/get-unstuck/SKILL.md",
+      "version": "1.0.5",
+      "sha256": "e6a179817a56e30e618210d5b4d52c7e45248b3bdb5c4e978500af71343b3116",
+      "source": "plugins/adhd-task-helper/skills/get-unstuck/SKILL.md",
+      "guide": "plugins/adhd-task-helper/skills/get-unstuck/README.md"
+    },
+    {
+      "path": "plugins/adhd-task-helper/skills/i-have-adhd/SKILL.md",
+      "version": "1.0.5",
+      "sha256": "5bd040fd499295f4193880424589a076a6b028e9f71e8eb66a119d77b4dd9b4d",
+      "source": "plugins/adhd-task-helper/skills/i-have-adhd/SKILL.md",
+      "guide": "plugins/adhd-task-helper/skills/i-have-adhd/README.md"
+    },
+    {
+      "path": "plugins/adhd-task-helper/skills/pick-it-back-up/SKILL.md",
+      "version": "1.0.5",
+      "sha256": "0517c2933133441632243affcaa32f1fe7404886ab52e135462f241616b875a4",
+      "source": "plugins/adhd-task-helper/skills/pick-it-back-up/SKILL.md",
+      "guide": "plugins/adhd-task-helper/skills/pick-it-back-up/README.md"
+    },
+    {
+      "path": "plugins/adhd-task-helper/skills/sort-my-brain-dump/SKILL.md",
+      "version": "1.0.5",
+      "sha256": "a99e2c07b9567bf616d2c8638c475300f057146d108f968f85b89057bf10cbb6",
+      "source": "plugins/adhd-task-helper/skills/sort-my-brain-dump/SKILL.md",
+      "guide": "plugins/adhd-task-helper/skills/sort-my-brain-dump/README.md"
+    },
+    {
+      "path": "plugins/airbnb-hosting-expert/skills/instructions/SKILL.md",
+      "version": "2.3.4",
+      "sha256": "2b3d374065627fb027104b8320e048e8d019031cda603a61e5b68c223abfabff",
+      "source": "plugins/airbnb-hosting-expert/skills/instructions/SKILL.md",
+      "guide": "plugins/airbnb-hosting-expert/skills/instructions/README.md"
+    },
+    {
+      "path": "plugins/airtable-interface-craft/skills/airtable-interface-craft/SKILL.md",
+      "version": "1.0.6",
+      "sha256": "d0f011fa20747fb66e076ab5ddc929e8f19b07fd2c010e6e93bfca8db912d403",
+      "source": "plugins/airtable-interface-craft/skills/airtable-interface-craft/SKILL.md",
+      "guide": "plugins/airtable-interface-craft/skills/airtable-interface-craft/README.md"
+    },
+    {
+      "path": "plugins/automate-notification-to-teams/skills/automate-notification-to-teams/SKILL.md",
+      "version": "2.0.5",
+      "sha256": "2c9706b6daa54add147f38c729ba29547c3562be29249843d3a8215a530912fd",
+      "source": "plugins/automate-notification-to-teams/skills/automate-notification-to-teams/SKILL.md",
+      "guide": "plugins/automate-notification-to-teams/skills/automate-notification-to-teams/README.md"
+    },
+    {
+      "path": "plugins/automation-briefing/skills/automation-briefing/SKILL.md",
+      "version": "1.0.5",
+      "sha256": "42e5f346dfa0d065434b7790e88113c39e9d0bad6c987cda6cfaa6669c585e95",
+      "source": "plugins/automation-briefing/skills/automation-briefing/SKILL.md",
+      "guide": "plugins/automation-briefing/skills/automation-briefing/README.md"
+    },
+    {
+      "path": "plugins/automation-catalog-failure-check/skills/check-catalog-reports/SKILL.md",
+      "version": "1.0.5",
+      "sha256": "bb8b774d00c483ee6968181c9998358f0121edb6fe03f2a6614f68ae82c80e50",
+      "source": "plugins/automation-catalog-failure-check/skills/check-catalog-reports/SKILL.md",
+      "guide": "plugins/automation-catalog-failure-check/skills/check-catalog-reports/README.md"
+    },
+    {
+      "path": "plugins/automation-catalog/skills/automation-catalog/SKILL.md",
+      "version": "1.0.5",
+      "sha256": "a8841f4f69d2bbf133992242e91b2512af092f44bc10eaf33d26ba661da9127c",
+      "source": "plugins/automation-catalog/skills/automation-catalog/SKILL.md",
+      "guide": "plugins/automation-catalog/skills/automation-catalog/README.md"
+    },
+    {
+      "path": "plugins/automation-message-writer/skills/automation-message-writer/SKILL.md",
+      "version": "1.0.5",
+      "sha256": "9e741308856ee5b63eee60f020d7a71e057d3358213737efa3385ac1959e5481",
+      "source": "plugins/automation-message-writer/skills/automation-message-writer/SKILL.md",
+      "guide": "plugins/automation-message-writer/skills/automation-message-writer/README.md"
+    },
+    {
+      "path": "plugins/cited-research-assistant/skills/cited-research-assistant/SKILL.md",
+      "version": "1.0.4",
+      "sha256": "6a6371881c523b2f1a394191d1f02a18200a7297386ae1c0dbdda749e4c9843d",
+      "source": "plugins/cited-research-assistant/skills/cited-research-assistant/SKILL.md",
+      "guide": "plugins/cited-research-assistant/skills/cited-research-assistant/README.md"
+    },
+    {
+      "path": "plugins/contact-follow-up-tracker/skills/contact-follow-up-tracker/SKILL.md",
+      "version": "1.0.4",
+      "sha256": "394ef9519ff483a4ef172687893aae1cc3a6adbfbc95c38e08ed01675c65c2b2",
+      "source": "plugins/contact-follow-up-tracker/skills/contact-follow-up-tracker/SKILL.md",
+      "guide": "plugins/contact-follow-up-tracker/skills/contact-follow-up-tracker/README.md"
+    },
+    {
+      "path": "plugins/find-automatable-workflows/skills/automation-opportunity-scout/SKILL.md",
+      "version": "1.0.5",
+      "sha256": "1f11d7005df37a4a0f7bec4a6cba414e5dd4f4c4a4c6bf42c5b91d538aa5a47a",
+      "source": "plugins/find-automatable-workflows/skills/automation-opportunity-scout/SKILL.md",
+      "guide": "plugins/find-automatable-workflows/skills/automation-opportunity-scout/README.md"
+    },
+    {
+      "path": "plugins/find-automatable-workflows/skills/eval-creation/SKILL.md",
+      "version": "1.0.5",
+      "sha256": "cc3e7c0e576336dc423b5806a845214a2cbda68bf486be2765ee896687fde3ac",
+      "source": "plugins/find-automatable-workflows/skills/eval-creation/SKILL.md",
+      "guide": "plugins/find-automatable-workflows/skills/eval-creation/README.md"
+    },
+    {
+      "path": "plugins/find-automatable-workflows/skills/grill-me-workflow/SKILL.md",
+      "version": "1.0.5",
+      "sha256": "1ea3de1aa73333143b72e44337582265ec33c78041a1bd75992385f353c56865",
+      "source": "plugins/find-automatable-workflows/skills/grill-me-workflow/SKILL.md",
+      "guide": "plugins/find-automatable-workflows/skills/grill-me-workflow/README.md"
+    },
+    {
+      "path": "plugins/find-fix-mistakes/skills/fixmistakes/SKILL.md",
+      "version": "1.0.4",
+      "sha256": "e2211ae9ffb8b4109d0103b0e9599e40eb634c0eb4cf4932b566c5580be25dd8",
+      "source": "plugins/find-fix-mistakes/skills/fixmistakes/SKILL.md",
+      "guide": "plugins/find-fix-mistakes/README.md"
+    },
+    {
+      "path": "plugins/find-fix-mistakes/skills/mistakes/SKILL.md",
+      "version": "1.0.4",
+      "sha256": "8bcb7b46e4e1ef69b458a0c081ff51fe2fe48ec446fc80ed303751bf280cb005",
+      "source": "plugins/find-fix-mistakes/skills/mistakes/SKILL.md",
+      "guide": "plugins/find-fix-mistakes/README.md"
+    },
+    {
+      "path": "plugins/generate-financial-dummy-data/skills/generate-financial-dummy-data/SKILL.md",
+      "version": "1.1.4",
+      "sha256": "b81fc420d351aef9360d5ce72d1eec5d9b675fc9ea70df8a8cdf93269e6c4e62",
+      "source": "plugins/generate-financial-dummy-data/skills/generate-financial-dummy-data/SKILL.md",
+      "guide": "plugins/generate-financial-dummy-data/skills/generate-financial-dummy-data/README.md"
+    },
+    {
+      "path": "plugins/ghibli-icon-maker/skills/ghibli-icon-maker/SKILL.md",
+      "version": "1.0.5",
+      "sha256": "c5f4e36d55d27278c982a9a044103527e53e7143302c42b5ddec49e04acef091",
+      "source": "plugins/ghibli-icon-maker/skills/ghibli-icon-maker/SKILL.md",
+      "guide": "plugins/ghibli-icon-maker/skills/ghibli-icon-maker/README.md"
+    },
+    {
+      "path": "plugins/github-portfolio-builder/skills/github-portfolio-builder/SKILL.md",
+      "version": "1.1.9",
+      "sha256": "57ed065dfe2abbbc30949c2d26815fe77403ff22ba000fdbca8afa74f71b464d",
+      "source": "plugins/github-portfolio-builder/skills/github-portfolio-builder/SKILL.md",
+      "guide": "plugins/github-portfolio-builder/skills/github-portfolio-builder/README.md"
+    },
+    {
+      "path": "plugins/github-portfolio-review/skills/github-portfolio-review/SKILL.md",
+      "version": "1.0.4",
+      "sha256": "a605f342a1e80de1970b7baec77424bf36882634dbe45bad346ba94bc72764d4",
+      "source": "plugins/github-portfolio-review/skills/github-portfolio-review/SKILL.md",
+      "guide": "plugins/github-portfolio-review/skills/github-portfolio-review/README.md"
+    },
+    {
+      "path": "plugins/humanize-output/skills/humanize-output/SKILL.md",
+      "version": "1.0.4",
+      "sha256": "b2689a4659f53832460920d01af67db3103fdd23f5bd9e1ab28a5b4d0f225ba5",
+      "source": "plugins/humanize-output/skills/humanize-output/SKILL.md",
+      "guide": "plugins/humanize-output/skills/humanize-output/README.md"
+    },
+    {
+      "path": "plugins/plain-english-editor/skills/plain-english-editor/SKILL.md",
+      "version": "4.1.4",
+      "sha256": "11f7e993acaf404103acab5b1981c75b2e70f2524b726191b036e41711485f97",
+      "source": "plugins/plain-english-editor/skills/plain-english-editor/SKILL.md",
+      "guide": "plugins/plain-english-editor/skills/plain-english-editor/README.md"
+    },
+    {
+      "path": "plugins/publish-a-plugin/skills/publish-a-plugin/SKILL.md",
+      "version": "1.1.4",
+      "sha256": "6e48fdee0db6a7519785ced8af4ef3074ec97652b639ed0939979912bb91db9c",
+      "source": "plugins/publish-a-plugin/skills/publish-a-plugin/SKILL.md",
+      "guide": "plugins/publish-a-plugin/skills/publish-a-plugin/README.md"
+    },
+    {
+      "path": "plugins/questions-worth-asking/skills/questions-worth-asking/SKILL.md",
+      "version": "1.2.5",
+      "sha256": "1b053682d097a657ef75cbab69c8f6fadbcf48a0783ad0c58f9e30cad1778f2d",
+      "source": "plugins/questions-worth-asking/skills/questions-worth-asking/SKILL.md",
+      "guide": "plugins/questions-worth-asking/skills/questions-worth-asking/README.md"
+    },
+    {
+      "path": "plugins/skill-and-plugin-namer/skills/skill-and-plugin-namer/SKILL.md",
+      "version": "3.1.4",
+      "sha256": "76d03dee207b3edcc5ae29e17bad86a6ad39c148c0b140e0b157216f7ee758ee",
+      "source": "plugins/skill-and-plugin-namer/skills/skill-and-plugin-namer/SKILL.md",
+      "guide": "plugins/skill-and-plugin-namer/skills/skill-and-plugin-namer/README.md"
+    },
+    {
+      "path": "plugins/skillkeeper/skills/skillkeeper/SKILL.md",
+      "version": "1.0.6",
+      "sha256": "3ac56bbf5e070c1efbecbed5a5641723d7ecc70aac75a6b40e7b8e1a84210333",
+      "source": "plugins/skillkeeper/skills/skillkeeper/SKILL.md",
+      "guide": "plugins/skillkeeper/skills/skillkeeper/README.md"
+    },
+    {
+      "path": "plugins/turn-off-ai-data-sharing/skills/turn-off-ai-data-sharing/SKILL.md",
+      "version": "1.0.4",
+      "sha256": "9e146ed6463dcd91cb44c42d8fa4a9868fbc5ffe6adfb32276fdf627bcc0f51d",
+      "source": "plugins/turn-off-ai-data-sharing/skills/turn-off-ai-data-sharing/SKILL.md",
+      "guide": "plugins/turn-off-ai-data-sharing/skills/turn-off-ai-data-sharing/README.md"
+    },
+    {
+      "path": "plugins/week-in-rewind/skills/setup-weekly-rewind/SKILL.md",
+      "version": "3.1.5",
+      "sha256": "f1dfae2dac8112afde2c08dcca71367f5f7eedc23b6e23b1030de72e4fe55c4d",
+      "source": "plugins/week-in-rewind/skills/setup-weekly-rewind/SKILL.md",
+      "guide": "plugins/week-in-rewind/skills/setup-weekly-rewind/README.md"
+    },
+    {
+      "path": "plugins/week-in-rewind/skills/week-in-rewind/SKILL.md",
+      "version": "3.1.5",
+      "sha256": "7e7507d5d75c9bf7bddcc66351eabd0d736023c41bc2ae576ef15db328e32a99",
+      "source": "plugins/week-in-rewind/skills/week-in-rewind/SKILL.md",
+      "guide": "plugins/week-in-rewind/skills/week-in-rewind/README.md"
+    },
+    {
+      "path": "plugins/workflow-diagram-builder/skills/workflow-diagram/SKILL.md",
+      "version": "1.1.4",
+      "sha256": "33a67505b1dac4dbd4f6c08fc7a89e3071e8f8dd59b3c9c0dc0dfa852e1ccf36",
+      "source": "plugins/workflow-diagram-builder/skills/workflow-diagram/SKILL.md",
+      "guide": "plugins/workflow-diagram-builder/skills/workflow-diagram/README.md"
+    },
+    {
+      "path": "plugins/worth-asking/skills/worth-asking/SKILL.md",
+      "version": "1.0.4",
+      "sha256": "5579aee030b04631bab11ebfb401ae0f8aaa2cd6d2b7c382955988508d508756",
+      "source": "plugins/worth-asking/skills/worth-asking/SKILL.md",
+      "guide": "plugins/worth-asking/skills/worth-asking/README.md"
+    },
+    {
+      "path": "plugins/zite-prompt/skills/zite-prompt/SKILL.md",
+      "version": "1.0.5",
+      "sha256": "d4c59558966a163b061a817d98fa56b9a71169e9772b127b3750135e33b48be2",
+      "source": "plugins/zite-prompt/skills/zite-prompt/SKILL.md",
+      "guide": "plugins/zite-prompt/skills/zite-prompt/README.md"
+    },
+    {
+      "path": "post-plugin-reel/SKILL.md",
+      "version": "1.0.0",
+      "sha256": "64a8679df21711865cac29ef6d1c9bd646d60fb720f147dc2bc7a2ff64e69e10",
+      "source": "post-plugin-reel/SKILL.md",
+      "guide": "post-plugin-reel/README.md"
+    },
+    {
+      "path": "post-to-huddle/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "753f8724d7379206fb19f306a9786b5f50de10dad9445a7739ff8e1333216a3e",
+      "source": "post-to-huddle/SKILL.md",
+      "guide": "post-to-huddle/README.md"
+    },
+    {
+      "path": "postmortem/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "91bf3958032804214d4003efb4b4d92b53a0fd1bb1dde2391d5691914e69ca9c",
+      "source": "postmortem/SKILL.md",
+      "guide": "postmortem/README.md"
+    },
+    {
+      "path": "pptx/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "78c39aac00ee235dd5f3aaf961cd932db83be4c67bd57c2ab232f777ffe10796",
+      "source": "pptx/SKILL.md",
+      "guide": "pptx/README.md"
+    },
+    {
+      "path": "prd-frame-estimate/SKILL.md",
+      "version": "1.4.6",
+      "sha256": "3ca0077dd0dfbd162b629994605f3a040077b5db5895bf59b277e12790c64d69",
+      "source": "prd-frame-estimate/SKILL.md",
+      "guide": "prd-frame-estimate/README.md"
+    },
+    {
+      "path": "prd-to-issues/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "998c456d1244adbdf774fdd868279207dc25ab802a49540f04db46bc7dc45959",
+      "source": "prd-to-issues/SKILL.md",
+      "guide": "prd-to-issues/README.md"
+    },
+    {
+      "path": "prd-to-plan/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "907683978afaffffc29857f19dbc6fdcf462aec0fb8185c2e4fd9f73a5aa95ea",
+      "source": "prd-to-plan/SKILL.md",
+      "guide": "prd-to-plan/README.md"
+    },
+    {
+      "path": "product-manager/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "22825ab2d2c6a9b10c3e7cb194c4cb7b62355c225eb9318d757d1a815e4879af",
+      "source": "product-manager/SKILL.md",
+      "guide": "product-manager/README.md"
+    },
+    {
+      "path": "project-instructions-writer/SKILL.md",
+      "version": "1.0.0",
+      "sha256": "98bd15e03af65c1b859fb31a1959bd16bbc9a88344eba9cd6ea12c2ecd0f97d2",
+      "source": "project-instructions-writer/SKILL.md",
+      "guide": "project-instructions-writer/README.md"
+    },
+    {
+      "path": "proper-grammar/SKILL.md",
+      "version": "1.0.0",
+      "sha256": "63299c50238c3c9e7463809ee0161e209fd32e4c59f1de0a565f83595614419b",
+      "source": "proper-grammar/SKILL.md",
+      "guide": "proper-grammar/README.md"
+    },
+    {
+      "path": "prototype/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "97e6e1837130a61fdc6e0ba7fd10c1e6f87679168e9f6e4814f644e20a1ee26e",
+      "source": "prototype/SKILL.md",
+      "guide": "prototype/README.md"
+    },
+    {
+      "path": "puzzle-prompt-builder/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "668fe205aa06bc42670b600dabaa625dcf33df3bcb04f53aa04bd67586da3d3e",
+      "source": "puzzle-prompt-builder/SKILL.md",
+      "guide": "puzzle-prompt-builder/README.md"
+    },
+    {
+      "path": "qa/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "4499952d8853a79aaed9fd732f70c18237c6b2f35597dcf6ea6b503a930179e8",
+      "source": "qa/SKILL.md",
+      "guide": "qa/README.md"
+    },
+    {
+      "path": "rachael-work-voice/SKILL.md",
+      "version": "1.0.2",
+      "sha256": "e1a2c820f0a5dc4475b001647b00263559673b38c8e3387988b1d208758017af",
+      "source": "rachael-work-voice/SKILL.md",
+      "guide": "rachael-work-voice/README.md"
+    },
+    {
+      "path": "receiving-code-review/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "5368a5065bea3cc2ea385665cb6abb74861f5d5072ced003c225fe02ca6794fd",
+      "source": "receiving-code-review/SKILL.md",
+      "guide": "receiving-code-review/README.md"
+    },
+    {
+      "path": "request-refactor-plan/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "61f2a06ef450d574c0e5f28a9bf420f015d2027e827273c8311e30b3822a801f",
+      "source": "request-refactor-plan/SKILL.md",
+      "guide": "request-refactor-plan/README.md"
+    },
+    {
+      "path": "research/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "b349de02047b106a9cd36d85843fb7db630d8d20e4afafc90fd475e9a7fa2abf",
+      "source": "research/SKILL.md",
+      "guide": "research/README.md"
+    },
+    {
+      "path": "review/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "6847acbc2862f6fc14d2c6201d77e764ff7590828cf30145486e5dbcf6489912",
+      "source": "review/SKILL.md",
+      "guide": "review/README.md"
+    },
+    {
+      "path": "rubric/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "53a5c74a4f18d1734107c05e72b0d2b30f991f003df0d0a28668d8f18fee05d4",
+      "source": "rubric/SKILL.md",
+      "guide": "rubric/README.md"
+    },
+    {
+      "path": "session-instincts-learner-local/SKILL.md",
+      "version": "2.1.1",
+      "sha256": "507daea9ae263393ab4ae5157e7e9981ffee9e7bef27552cfe17c7cd3230bc1c",
+      "source": "session-instincts-learner-local/SKILL.md",
+      "guide": "session-instincts-learner-local/README.md"
+    },
+    {
+      "path": "ship/SKILL.md",
+      "version": "1.4.6",
+      "sha256": "2590594ac6349e2ca4fce4bf37ae50a85f5666ba936f08af4ef7ed9bcdcbe6c3",
+      "source": "ship/SKILL.md",
+      "guide": "ship/README.md"
+    },
+    {
+      "path": "skill-creator/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "dc8cb7b38bbd3ec3cc5ae9a2578339e96e10520c0a9a0fd434283db946fd3485",
+      "source": "skill-creator/SKILL.md",
+      "guide": "skill-creator/README.md"
+    },
+    {
+      "path": "slack-gif-creator/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "a41a9869410df5b206d8660d11e897e41c8a74e724af88fa53aab62a1ad9b459",
+      "source": "slack-gif-creator/SKILL.md",
+      "guide": "slack-gif-creator/README.md"
+    },
+    {
+      "path": "spec-driven-dev/SKILL.md",
+      "version": "1.4.6",
+      "sha256": "8c0a348a7a5685028eb60ec353305162c2e9fc452e169e55f8b5502c6d29f5d4",
+      "source": "spec-driven-dev/SKILL.md",
+      "guide": "spec-driven-dev/README.md"
+    },
+    {
+      "path": "subagent-driven-development/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "06883887b5f28de2f63bed799ab0dfc9f1ffa5f353ba1357086ead92b1fb4d88",
+      "source": "subagent-driven-development/SKILL.md",
+      "guide": "subagent-driven-development/README.md"
+    },
+    {
+      "path": "sync-gol-acuity-airtable/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "3c372dc0f7177610e2e6efa827eb75946950c4929137ddc4e800ba3e567fcd04",
+      "source": "sync-gol-acuity-airtable/SKILL.md",
+      "guide": "sync-gol-acuity-airtable/README.md"
+    },
+    {
+      "path": "syncing-skills-to-github/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "525c3bcf7485e29cbba08c6f99c50b4711d4a5f9a13dab4217bd97d09fd50533",
+      "source": "syncing-skills-to-github/SKILL.md",
+      "guide": "syncing-skills-to-github/README.md"
+    },
+    {
+      "path": "systematic-debugging/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "86b5fcd4a30883193ca69dde00772f6cf0445b98c7deabc1cae8e567aadff1bd",
+      "source": "systematic-debugging/SKILL.md",
+      "guide": "systematic-debugging/README.md"
+    },
+    {
+      "path": "task-hygiene/SKILL.md",
+      "version": "1.0.0",
+      "sha256": "530ba28fedbc90f4bb547d8549e5450b7b44460bc68d6c89467098d6236ee320",
+      "source": "task-hygiene/SKILL.md",
+      "guide": "task-hygiene/README.md"
+    },
+    {
+      "path": "tech-docs-bootstrap/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "9b0fe883db7e608e0c6a5edeb7cb89a9e999fbbfb097105f44aaa03a07327db1",
+      "source": "tech-docs-bootstrap/SKILL.md",
+      "guide": "tech-docs-bootstrap/README.md"
+    },
+    {
+      "path": "test-driven-development/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "9b33f109edf2775dcd3e56d60d2be02bed703604ff10be58c2560006ef435479",
+      "source": "test-driven-development/SKILL.md",
+      "guide": "test-driven-development/README.md"
+    },
+    {
+      "path": "theme-factory/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "96cfc3fc617f916bdb0774e41b8854c3cb3855ef986c248667a7e0dd1a8a694a",
+      "source": "theme-factory/SKILL.md",
+      "guide": "theme-factory/README.md"
+    },
+    {
+      "path": "thermo-nuclear-code-quality-review/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "e433f5c0f9655d1edcd77b0afc7eb6be25ef104cd26f7f3fbe2d753fc0f08249",
+      "source": "thermo-nuclear-code-quality-review/SKILL.md",
+      "guide": "thermo-nuclear-code-quality-review/README.md"
+    },
+    {
+      "path": "token-check/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "c6bf9e4c1b827c17d108ffca51817aaa18f826ddddcc7ce5a7a26c616e0389e4",
+      "source": "token-check/SKILL.md",
+      "guide": "token-check/README.md"
+    },
+    {
+      "path": "transcript-quotes-miner-local/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "71586e8f2439443879325195b0bab38827c47545fa1f2dca5004f32256bbe77f",
+      "source": "transcript-quotes-miner-local/SKILL.md",
+      "guide": "transcript-quotes-miner-local/README.md"
+    },
+    {
+      "path": "transcript-review/SKILL.md",
+      "version": "1.4.6",
+      "sha256": "246b11877f27dcfeb9a83c0575d24200f4df5c2be24d1bd23b227c76a2a6f3f8",
+      "source": "transcript-review/SKILL.md",
+      "guide": "transcript-review/README.md"
+    },
+    {
+      "path": "travel-brief/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "ac02b4d2a6626438cbc0b0a0d7e459365ba8a1a32b3dd8298c34f35828b7ba23",
+      "source": "travel-brief/SKILL.md",
+      "guide": "travel-brief/README.md"
+    },
+    {
+      "path": "travel-packing-list/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "6384b600d9e0a8c1f57c3d4a4e7a794f1350d5c9cb612b426b5803c2d243222c",
+      "source": "travel-packing-list/SKILL.md",
+      "guide": "travel-packing-list/README.md"
+    },
+    {
+      "path": "triage-issue/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "5c9f166ff48fcf24a7cbdb02d5edafe209fc5fea2308266ab0ac3b0892bec5b2",
+      "source": "triage-issue/SKILL.md",
+      "guide": "triage-issue/README.md"
+    },
+    {
+      "path": "ubiquitous-language/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "06bfada6eabd30d9a677982e10d46e82bbb65bee79ef8013a84e50eb7c281ae8",
+      "source": "ubiquitous-language/SKILL.md",
+      "guide": "ubiquitous-language/README.md"
+    },
+    {
+      "path": "update-grades/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "5f1ea5691d547f40110144411e1c919837be3e518499408b0a78277ec1eaa960",
+      "source": "update-grades/SKILL.md",
+      "guide": "update-grades/README.md"
+    },
+    {
+      "path": "update-projects/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "ee2aefabd3b6867617b930f6e814b93ef31a65bf7dbf4e8766b380f1c266e41c",
+      "source": "update-projects/SKILL.md",
+      "guide": "update-projects/README.md"
+    },
+    {
+      "path": "using-git-worktrees/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "3fa02e8833f297036993407cb4977ddfcc2bd0841d14c1c2396e3bc0b3b555a6",
+      "source": "using-git-worktrees/SKILL.md",
+      "guide": "using-git-worktrees/README.md"
+    },
+    {
+      "path": "verification-before-completion/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "b77abc833682e0e7474558795d3c9aae39d2645054099e4b0c7616ea5b237016",
+      "source": "verification-before-completion/SKILL.md",
+      "guide": "verification-before-completion/README.md"
+    },
+    {
+      "path": "vibe-safe-auth/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "896ec1dfa8e6f1da70d11f7563059990f881d4a1ee2f6e92606a71a4ca490afe",
+      "source": "vibe-safe-auth/SKILL.md",
+      "guide": "vibe-safe-auth/README.md"
+    },
+    {
+      "path": "vibe-safe-errors/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "10d1b8d90fabff37cf758f415b499c6ab135d3bbe446eca8ba325e418e0221fe",
+      "source": "vibe-safe-errors/SKILL.md",
+      "guide": "vibe-safe-errors/README.md"
+    },
+    {
+      "path": "vibe-safe-upload/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "42e70660641f7f7cd607fc45214dff7de409e3f16d71063dafa2ab7110b62c24",
+      "source": "vibe-safe-upload/SKILL.md",
+      "guide": "vibe-safe-upload/README.md"
+    },
+    {
+      "path": "vibe-safe/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "cf12358778dbad51ca3203c9d117fd0f620573ba41c21cc4c9a09d231b094be8",
+      "source": "vibe-safe/SKILL.md",
+      "guide": "vibe-safe/README.md"
+    },
+    {
+      "path": "voice-align/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "1ca8f6a6e063c5b8785030960a1fe9a882565482b9cda7004e03bdce2fd2f42e",
+      "source": "voice-align/SKILL.md",
+      "guide": "voice-align/README.md"
+    },
+    {
+      "path": "web-artifacts-builder/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "8da192618642bce71f09f1ae4a75905fdd95f4a9df5d657da0e757f135668ab9",
+      "source": "web-artifacts-builder/SKILL.md",
+      "guide": "web-artifacts-builder/README.md"
+    },
+    {
+      "path": "webapp-testing/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "84cef26f315b22db92d9f6d210d73441b4b2824c8e4fa51ec75e7759074f59ee",
+      "source": "webapp-testing/SKILL.md",
+      "guide": "webapp-testing/README.md"
+    },
+    {
+      "path": "workflow-eval/SKILL.md",
+      "version": "1.4.6",
+      "sha256": "4a632036053ca1f2bc7f67cc07db2018c72189433ab8fe441530e22393ed9644",
+      "source": "workflow-eval/SKILL.md",
+      "guide": "workflow-eval/README.md"
+    },
+    {
+      "path": "workflow-orchestration/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "a37fbc9284ecd2adde5f4d8dadb5620740f75428c8722d188e454d49ee79c8d3",
+      "source": "workflow-orchestration/SKILL.md",
+      "guide": "workflow-orchestration/README.md"
+    },
+    {
+      "path": "write-a-prd/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "684806214083b061179f6d28f8b80aa6dd000c56c0e741c929c94b496cb06d92",
+      "source": "write-a-prd/SKILL.md",
+      "guide": "write-a-prd/README.md"
+    },
+    {
+      "path": "write-artifact/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "761cb75b85513f35df9e1215c53037b46ab297e3982b971c9d7f8b0927d8142f",
+      "source": "write-artifact/SKILL.md",
+      "guide": "write-artifact/README.md"
+    },
+    {
+      "path": "write-soap-report/SKILL.md",
+      "version": "1.4.6",
+      "sha256": "9ae700ee5cbb14894b35ab1080f0c262bdeeaf0fc216d573709b6791feeee216",
+      "source": "write-soap-report/SKILL.md",
+      "guide": "write-soap-report/README.md"
+    },
+    {
+      "path": "xlsx/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "960cf01117d1beec58ec662452db6b12703a03973ddd744d095cd49db825b41f",
+      "source": "xlsx/SKILL.md",
+      "guide": "xlsx/README.md"
+    },
+    {
+      "path": "xray-brand/SKILL.md",
+      "version": "1.0.4",
+      "sha256": "68d8873efda1f3174ea726e07f7b54a5f3e3d761cf4eced9401e36bab9e637b3",
+      "source": "xray-brand/SKILL.md",
+      "guide": "xray-brand/README.md"
+    },
+    {
+      "path": "xray-team-voice-shifter-local/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "0b29281e8be34dd07e796eb25933103c8cd99f760736f7160c8d6de3df41a819",
+      "source": "xray-team-voice-shifter-local/SKILL.md",
+      "guide": "xray-team-voice-shifter-local/README.md"
+    }
+  ],
+  "copies": [
+    {
+      "source": "audit-log-plugin/README.md",
+      "target": "plugins/client-docs/skills/audit-log-plugin/README.md"
+    },
+    {
+      "source": "audit-log-plugin/TECHNICAL-GUIDE.md",
+      "target": "plugins/client-docs/skills/audit-log-plugin/TECHNICAL-GUIDE.md"
+    },
+    {
+      "source": "audit-log-plugin/SKILL.md",
+      "target": "plugins/client-docs/skills/audit-log-plugin/SKILL.md"
+    },
+    {
+      "source": "business-case/README.md",
+      "target": "plugins/client-docs/skills/business-case/README.md"
+    },
+    {
+      "source": "business-case/TECHNICAL-GUIDE.md",
+      "target": "plugins/client-docs/skills/business-case/TECHNICAL-GUIDE.md"
+    },
+    {
+      "source": "business-case/SKILL.md",
+      "target": "plugins/client-docs/skills/business-case/SKILL.md"
+    },
+    {
+      "source": "client-doc-build-plan/README.md",
+      "target": "plugins/client-docs/skills/client-doc-build-plan/README.md"
+    },
+    {
+      "source": "client-doc-build-plan/TECHNICAL-GUIDE.md",
+      "target": "plugins/client-docs/skills/client-doc-build-plan/TECHNICAL-GUIDE.md"
+    },
+    {
+      "source": "client-doc-build-plan/SKILL.md",
+      "target": "plugins/client-docs/skills/client-doc-build-plan/SKILL.md"
+    },
+    {
+      "source": "client-doc-changelog/README.md",
+      "target": "plugins/client-docs/skills/client-doc-changelog/README.md"
+    },
+    {
+      "source": "client-doc-changelog/TECHNICAL-GUIDE.md",
+      "target": "plugins/client-docs/skills/client-doc-changelog/TECHNICAL-GUIDE.md"
+    },
+    {
+      "source": "client-doc-changelog/SKILL.md",
+      "target": "plugins/client-docs/skills/client-doc-changelog/SKILL.md"
+    },
+    {
+      "source": "client-doc-decisions/README.md",
+      "target": "plugins/client-docs/skills/client-doc-decisions/README.md"
+    },
+    {
+      "source": "client-doc-decisions/TECHNICAL-GUIDE.md",
+      "target": "plugins/client-docs/skills/client-doc-decisions/TECHNICAL-GUIDE.md"
+    },
+    {
+      "source": "client-doc-decisions/SKILL.md",
+      "target": "plugins/client-docs/skills/client-doc-decisions/SKILL.md"
+    },
+    {
+      "source": "client-doc-interface-prompts/README.md",
+      "target": "plugins/client-docs/skills/client-doc-interface-prompts/README.md"
+    },
+    {
+      "source": "client-doc-interface-prompts/TECHNICAL-GUIDE.md",
+      "target": "plugins/client-docs/skills/client-doc-interface-prompts/TECHNICAL-GUIDE.md"
+    },
+    {
+      "source": "client-doc-interface-prompts/SKILL.md",
+      "target": "plugins/client-docs/skills/client-doc-interface-prompts/SKILL.md"
+    },
+    {
+      "source": "client-doc-push/README.md",
+      "target": "plugins/client-docs/skills/client-doc-push/README.md"
+    },
+    {
+      "source": "client-doc-push/TECHNICAL-GUIDE.md",
+      "target": "plugins/client-docs/skills/client-doc-push/TECHNICAL-GUIDE.md"
+    },
+    {
+      "source": "client-doc-push/SKILL.md",
+      "target": "plugins/client-docs/skills/client-doc-push/SKILL.md"
+    },
+    {
+      "source": "client-doc-user-stories/README.md",
+      "target": "plugins/client-docs/skills/client-doc-user-stories/README.md"
+    },
+    {
+      "source": "client-doc-user-stories/TECHNICAL-GUIDE.md",
+      "target": "plugins/client-docs/skills/client-doc-user-stories/TECHNICAL-GUIDE.md"
+    },
+    {
+      "source": "client-doc-user-stories/SKILL.md",
+      "target": "plugins/client-docs/skills/client-doc-user-stories/SKILL.md"
+    },
+    {
+      "source": "client-doc-vision-and-scope/README.md",
+      "target": "plugins/client-docs/skills/client-doc-vision-and-scope/README.md"
+    },
+    {
+      "source": "client-doc-vision-and-scope/TECHNICAL-GUIDE.md",
+      "target": "plugins/client-docs/skills/client-doc-vision-and-scope/TECHNICAL-GUIDE.md"
+    },
+    {
+      "source": "client-doc-vision-and-scope/SKILL.md",
+      "target": "plugins/client-docs/skills/client-doc-vision-and-scope/SKILL.md"
+    },
+    {
+      "source": "client-doc-workflow-diagram/README.md",
+      "target": "plugins/client-docs/skills/client-doc-workflow-diagram/README.md"
+    },
+    {
+      "source": "client-doc-workflow-diagram/TECHNICAL-GUIDE.md",
+      "target": "plugins/client-docs/skills/client-doc-workflow-diagram/TECHNICAL-GUIDE.md"
+    },
+    {
+      "source": "client-doc-workflow-diagram/SKILL.md",
+      "target": "plugins/client-docs/skills/client-doc-workflow-diagram/SKILL.md"
+    },
+    {
+      "source": "client-docs/README.md",
+      "target": "plugins/client-docs/skills/client-docs/README.md"
+    },
+    {
+      "source": "client-docs/TECHNICAL-GUIDE.md",
+      "target": "plugins/client-docs/skills/client-docs/TECHNICAL-GUIDE.md"
+    },
+    {
+      "source": "client-docs/SKILL.md",
+      "target": "plugins/client-docs/skills/client-docs/SKILL.md"
+    },
+    {
+      "source": "fetch-tasks/README.md",
+      "target": "plugins/client-docs/skills/fetch-tasks/README.md"
+    },
+    {
+      "source": "fetch-tasks/TECHNICAL-GUIDE.md",
+      "target": "plugins/client-docs/skills/fetch-tasks/TECHNICAL-GUIDE.md"
+    },
+    {
+      "source": "fetch-tasks/SKILL.md",
+      "target": "plugins/client-docs/skills/fetch-tasks/SKILL.md"
+    },
+    {
+      "source": "file-naming-convention/README.md",
+      "target": "plugins/client-docs/skills/file-naming-convention/README.md"
+    },
+    {
+      "source": "file-naming-convention/TECHNICAL-GUIDE.md",
+      "target": "plugins/client-docs/skills/file-naming-convention/TECHNICAL-GUIDE.md"
+    },
+    {
+      "source": "file-naming-convention/SKILL.md",
+      "target": "plugins/client-docs/skills/file-naming-convention/SKILL.md"
+    },
+    {
+      "source": "five-signals-prd/README.md",
+      "target": "plugins/client-docs/skills/five-signals-prd/README.md"
+    },
+    {
+      "source": "five-signals-prd/TECHNICAL-GUIDE.md",
+      "target": "plugins/client-docs/skills/five-signals-prd/TECHNICAL-GUIDE.md"
+    },
+    {
+      "source": "five-signals-prd/SKILL.md",
+      "target": "plugins/client-docs/skills/five-signals-prd/SKILL.md"
+    },
+    {
+      "source": "how-it-works-doc/README.md",
+      "target": "plugins/client-docs/skills/how-it-works-doc/README.md"
+    },
+    {
+      "source": "how-it-works-doc/TECHNICAL-GUIDE.md",
+      "target": "plugins/client-docs/skills/how-it-works-doc/TECHNICAL-GUIDE.md"
+    },
+    {
+      "source": "how-it-works-doc/SKILL.md",
+      "target": "plugins/client-docs/skills/how-it-works-doc/SKILL.md"
+    },
+    {
+      "source": "kpi-report/README.md",
+      "target": "plugins/client-docs/skills/kpi-report/README.md"
+    },
+    {
+      "source": "kpi-report/TECHNICAL-GUIDE.md",
+      "target": "plugins/client-docs/skills/kpi-report/TECHNICAL-GUIDE.md"
+    },
+    {
+      "source": "kpi-report/SKILL.md",
+      "target": "plugins/client-docs/skills/kpi-report/SKILL.md"
+    },
+    {
+      "source": "markdown-to-xr-gdoc/README.md",
+      "target": "plugins/client-docs/skills/markdown-to-xr-gdoc/README.md"
+    },
+    {
+      "source": "markdown-to-xr-gdoc/TECHNICAL-GUIDE.md",
+      "target": "plugins/client-docs/skills/markdown-to-xr-gdoc/TECHNICAL-GUIDE.md"
+    },
+    {
+      "source": "markdown-to-xr-gdoc/SKILL.md",
+      "target": "plugins/client-docs/skills/markdown-to-xr-gdoc/SKILL.md"
+    },
+    {
+      "source": "prd-frame-estimate/README.md",
+      "target": "plugins/client-docs/skills/prd-frame-estimate/README.md"
+    },
+    {
+      "source": "prd-frame-estimate/TECHNICAL-GUIDE.md",
+      "target": "plugins/client-docs/skills/prd-frame-estimate/TECHNICAL-GUIDE.md"
+    },
+    {
+      "source": "prd-frame-estimate/SKILL.md",
+      "target": "plugins/client-docs/skills/prd-frame-estimate/SKILL.md"
+    },
+    {
+      "source": "ship/README.md",
+      "target": "plugins/client-docs/skills/ship/README.md"
+    },
+    {
+      "source": "ship/TECHNICAL-GUIDE.md",
+      "target": "plugins/client-docs/skills/ship/TECHNICAL-GUIDE.md"
+    },
+    {
+      "source": "ship/SKILL.md",
+      "target": "plugins/client-docs/skills/ship/SKILL.md"
+    },
+    {
+      "source": "spec-driven-dev/README.md",
+      "target": "plugins/client-docs/skills/spec-driven-dev/README.md"
+    },
+    {
+      "source": "spec-driven-dev/TECHNICAL-GUIDE.md",
+      "target": "plugins/client-docs/skills/spec-driven-dev/TECHNICAL-GUIDE.md"
+    },
+    {
+      "source": "spec-driven-dev/SKILL.md",
+      "target": "plugins/client-docs/skills/spec-driven-dev/SKILL.md"
+    },
+    {
+      "source": "transcript-review/README.md",
+      "target": "plugins/client-docs/skills/transcript-review/README.md"
+    },
+    {
+      "source": "transcript-review/TECHNICAL-GUIDE.md",
+      "target": "plugins/client-docs/skills/transcript-review/TECHNICAL-GUIDE.md"
+    },
+    {
+      "source": "transcript-review/SKILL.md",
+      "target": "plugins/client-docs/skills/transcript-review/SKILL.md"
+    },
+    {
+      "source": "workflow-eval/README.md",
+      "target": "plugins/client-docs/skills/workflow-eval/README.md"
+    },
+    {
+      "source": "workflow-eval/TECHNICAL-GUIDE.md",
+      "target": "plugins/client-docs/skills/workflow-eval/TECHNICAL-GUIDE.md"
+    },
+    {
+      "source": "workflow-eval/SKILL.md",
+      "target": "plugins/client-docs/skills/workflow-eval/SKILL.md"
+    },
+    {
+      "source": "write-soap-report/README.md",
+      "target": "plugins/client-docs/skills/write-soap-report/README.md"
+    },
+    {
+      "source": "write-soap-report/TECHNICAL-GUIDE.md",
+      "target": "plugins/client-docs/skills/write-soap-report/TECHNICAL-GUIDE.md"
+    },
+    {
+      "source": "write-soap-report/SKILL.md",
+      "target": "plugins/client-docs/skills/write-soap-report/SKILL.md"
+    },
+    {
+      "source": "execute/scripts/log_event.py",
+      "target": "plugins/client-docs/skills/execute/scripts/log_event.py"
+    },
+    {
+      "source": "build-page-publisher-local/README.md",
+      "target": "plugins/client-docs/skills/build-page-publisher-local/README.md"
+    },
+    {
+      "source": "build-page-publisher-local/TECHNICAL-GUIDE.md",
+      "target": "plugins/client-docs/skills/build-page-publisher-local/TECHNICAL-GUIDE.md"
+    },
+    {
+      "source": "build-page-publisher-local/SKILL.md",
+      "target": "plugins/client-docs/skills/build-page-publisher-local/SKILL.md"
+    },
+    {
+      "source": "automation-explainer-local/README.md",
+      "target": "plugins/client-docs/skills/automation-explainer-local/README.md"
+    },
+    {
+      "source": "automation-explainer-local/TECHNICAL-GUIDE.md",
+      "target": "plugins/client-docs/skills/automation-explainer-local/TECHNICAL-GUIDE.md"
+    },
+    {
+      "source": "automation-explainer-local/SKILL.md",
+      "target": "plugins/client-docs/skills/automation-explainer-local/SKILL.md"
+    },
+    {
+      "source": "how-it-works-doc-writer-local/README.md",
+      "target": "plugins/client-docs/skills/how-it-works-doc-writer-local/README.md"
+    },
+    {
+      "source": "how-it-works-doc-writer-local/TECHNICAL-GUIDE.md",
+      "target": "plugins/client-docs/skills/how-it-works-doc-writer-local/TECHNICAL-GUIDE.md"
+    },
+    {
+      "source": "how-it-works-doc-writer-local/SKILL.md",
+      "target": "plugins/client-docs/skills/how-it-works-doc-writer-local/SKILL.md"
+    }
+  ],
+  "collections": [
+    {
+      "name": "rachael-github-skills",
+      "version": "1.0.15",
+      "sourceMap": "maintenance/chatgpt-source-map.json",
+      "manifests": [
+        "distribution/rachael-github-skills/plugin.json",
+        "distribution/rachael-github-skills/codex-plugin.json"
+      ]
+    }
+  ]
+}

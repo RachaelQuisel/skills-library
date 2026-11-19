@@ -1,0 +1,24 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "author": {
+    "name": "Rachael Quisel"
+  },
+  "description": "Review GitHub projects as credible professional portfolio evidence.",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "capabilities": [],
+        "category": "Productivity",
+        "composerIcon": "./assets/github-portfolio-review.png",
+        "defaultPrompt": "Use $github-portfolio-review to review my GitHub profile or repository and suggest the strongest professional improvements.",
+        "developerName": "Rachael Quisel",
+        "displayName": "GitHub Portfolio Review",
+        "logo": "./assets/github-portfolio-review.png",
+        "longDescription": "Review a GitHub profile or repository using current evidence, prioritized suggestions, and clear limits on claims and public sharing.",
+        "shortDescription": "Review your GitHub portfolio"
+      }
+    }
+  },
+  "name": "github-portfolio-review",
+  "version": "1.0.4"
+}
