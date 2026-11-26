@@ -5,8 +5,8 @@
 #   ./write_prd.sh <client_key> <feature_slug> <prd_source_file>
 #
 # Example:
-#   ./write_prd.sh AYMG contract-auto-renewal /tmp/prd.md
-#   → copies /tmp/prd.md → ~/Claude-Work/CLIENTS/AY Media_Jay_Danzy/Project Documentation/prd-contract-auto-renewal-YYYY-MM-DD.md
+#   ./write_prd.sh EMG contract-auto-renewal /tmp/prd.md
+#   → copies /tmp/prd.md → ~/Claude-Work/CLIENTS/Example Media_Rowan_Ellis/Project Documentation/prd-contract-auto-renewal-YYYY-MM-DD.md
 #
 # What it does:
 #   - mkdir -p the destination folder if missing (logs but doesn't fail)
@@ -20,7 +20,7 @@
 
 set -euo pipefail
 
-CLIENT="${1:?missing client key (AYMG|CC|EA|other)}"
+CLIENT="${1:?missing client key (EMG|CC|EA|other)}"
 FEATURE="${2:?missing feature slug (kebab-case)}"
 PRD_SOURCE="${3:?missing PRD source file path}"
 
@@ -31,9 +31,9 @@ fi
 
 # Resolve client folder. Add new clients here as needed.
 case "$CLIENT" in
-    AYMG)   FOLDER="$HOME/Claude-Work/CLIENTS/AY Media_Jay_Danzy/Project Documentation" ;;
-    CC)     FOLDER="$HOME/Claude-Work/CLIENTS/Coding_Clarified_Janine_Whitfield/Project Documentation" ;;
-    EA)    FOLDER="$HOME/Claude-Work/CLIENTS/Guardians_of_Love_Jessica_Peoples/Project Documentation" ;;
+    EMG)   FOLDER="$HOME/Claude-Work/CLIENTS/Example Media_Rowan_Ellis/Project Documentation" ;;
+    CC)     FOLDER="$HOME/Claude-Work/CLIENTS/Example_Nonprofit_Dana_Whitfield/Project Documentation" ;;
+    EA)    FOLDER="$HOME/Claude-Work/CLIENTS/Example_Agency_Pat_Okafor/Project Documentation" ;;
     *)      FOLDER="$HOME/Claude-Work/PROJECTS/prds" ;;
 esac
 

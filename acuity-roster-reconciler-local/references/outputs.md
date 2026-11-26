@@ -8,7 +8,7 @@ Save private outputs in a single run folder. Use empty/header-only lists when a 
 | --- | --- |
 | `source-inventory.json` | Requested scope; groups received/pending/out of scope; exact paths/fingerprints; organizations/statuses; CSV row and applicant occurrence counts; export/acquisition dates and timezone; account evidence; completeness and warnings |
 | `comparison.csv` | All scoped source people, organization and application/renewal stage, source file/row/role, Binti/RFA identifiers, Airtable application and Applicant IDs/links, raw Binti status, Active checkbox, recent date/definition, separate Airtable and Acuity outcomes, candidate links, match evidence, review reason |
-| `review-for-jessica.csv` | Potentially missing and uncertain people; source group, active/recent priority, possible matches, the precise question to resolve, and where to open the relevant records |
+| `review-for-pat.csv` | Potentially missing and uncertain people; source group, active/recent priority, possible matches, the precise question to resolve, and where to open the relevant records |
 | `proposed-additions.csv` | Candidate name, verified proposed fields, source and account, current match evidence, approval/review state and provenance; never label this file as already imported |
 | `write-receipt.csv` | Run key; approved source person; before-state; action attempted; timestamp; persisted client ID/URL or search reference; readback evidence; final state; any failure or unknown save outcome |
 | `summary.md` | Dated estimates with exact denominators available in evidence; scoped coverage; verified writes; unresolved questions; missing inputs; links to review/addition/receipt files |
@@ -31,7 +31,7 @@ State the verified Acuity account, export filename/date, and scoped Binti files 
 
 Round appropriately (for example, to the nearest 10, 50, or 100 depending on scale); do not obscure a small named list with a false estimate. Preserve exact counts privately. Avoid implying rounded figures add up exactly or that records are all distinct people.
 
-## Jessica email
+## Pat email
 
 Default to the current user's narrow email scope: recent Binti applicants with a `Not found in the checked source` result in Airtable or Acuity. Exclude people whose only unresolved result is `Needs review`, even when the broader assignment asks for a full comparison and review list. Include uncertain matches in the email only when the user explicitly requests that email scope. Do not copy old names, old dates, account totals, or renewal counts into a new email.
 
@@ -39,7 +39,7 @@ Use this structure, filling only verified facts:
 
 > Subject: Recent [organization] applicants to review in [system]
 >
-> Hi Jessica,
+> Hi Pat,
 >
 > [Describe the specific verified updates already made, naming the source export. Omit this sentence when no business records were changed.]
 >
@@ -52,7 +52,7 @@ Use this structure, filling only verified facts:
 > Thanks,
 > Rachael
 
-Show the actual email text when asked. State “draft saved, not sent” outside the email. Link only artifacts that exist. Do not describe a local file as attached to an email unless it was actually attached. Keep tool failures, Voice Align receipts, and Teams setup details outside Jessica's applicant email.
+Show the actual email text when asked. State “draft saved, not sent” outside the email. Link only artifacts that exist. Do not describe a local file as attached to an email unless it was actually attached. Keep tool failures, Voice Align receipts, and Teams setup details outside Pat's applicant email.
 
 ## Completion and retries
 

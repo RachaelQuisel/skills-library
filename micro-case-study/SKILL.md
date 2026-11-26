@@ -1,6 +1,6 @@
 ---
 name: micro-case-study
-version: 1.0.2
+version: 1.0.3
 description: Mine client transcripts for atomic wins (one automation, form, integration, or consulting insight) and create structured MCS records — Completed or Queued. Triggers on "micro-case study", "MCS", "mine transcripts", "find wins", "queued work", "pipeline", "outreach", "revenue recovery".
 tags:
   - skill
@@ -312,7 +312,7 @@ Bad to Good:
 
 ## Four Columns
 
-Each column: 2-3 sentences max. Never use specific people's names (Janine, Cassandra, Jay, etc.) in Situation, Approach, Analysis, or Value. Use "client" or "staff" instead. Names belong only in the Client Name field.
+Each column: 2-3 sentences max. Never use specific people's names (Dana, Skyler, Rowan, etc.) in Situation, Approach, Analysis, or Value. Use "client" or "staff" instead. Names belong only in the Client Name field.
 
 ### Completed MCS (past tense)
 
@@ -372,7 +372,7 @@ The outreach is not a cold pitch. Every Queued MCS references a specific convers
 ### Completed Example
 
 **Input (transcript excerpt):**
-> Rachael: So the inactivity emails are all live now, 7 day, 14, 21, 30, 45, and 60 days. When a student hasn't logged into Blackboard for that period, they automatically get an email. Before this, Janine's team was manually checking who hadn't logged in and sending individual emails, which was taking about 5 hours a week.
+> Rachael: So the inactivity emails are all live now, 7 day, 14, 21, 30, 45, and 60 days. When a student hasn't logged into Blackboard for that period, they automatically get an email. Before this, Dana's team was manually checking who hadn't logged in and sending individual emails, which was taking about 5 hours a week.
 
 **Output (MCS record):**
 

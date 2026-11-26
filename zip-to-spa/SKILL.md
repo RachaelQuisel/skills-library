@@ -102,6 +102,6 @@ The caller is responsible for writing to the base. This skill never writes to Ai
 
 ## Related
 
-- The one-off backfill that first used this logic: `~/Claude-Work/CLIENTS/Guardians_of_Love_Jessica_Peoples/Automations/zip-spa-backfill-2026-10-26/`
+- The one-off backfill that first used this logic: `~/Claude-Work/CLIENTS/Example_Agency_Pat_Okafor/Automations/zip-spa-backfill-2026-10-26/`
 - The LA County SPA 2022 ArcGIS layer: https://arcgis.gis.lacounty.gov/arcgis/rest/services/LACounty_Dynamic/Administrative_Boundaries/MapServer/23
 - The LA County Zipcodes layer: https://arcgis.gis.lacounty.gov/arcgis/rest/services/LACounty_Dynamic/Administrative_Boundaries/MapServer/5

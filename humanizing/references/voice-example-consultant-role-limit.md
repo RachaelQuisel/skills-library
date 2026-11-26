@@ -31,7 +31,7 @@ Non-technical reader. Warm long-standing client relationship.
 
 ## The email
 
-Hi Jessica,
+Hi Pat,
 
 I hope you're having a good week so far. Here are two issues I found today. Both of them involve adding clients in Acuity without enough information. This led to downstream data problems in Airtable. I caught and corrected it this time, but it will prevent correct training tracking if not caught.
 

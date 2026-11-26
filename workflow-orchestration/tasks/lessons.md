@@ -2,16 +2,16 @@
 
 ## 2026-04-22: Never Abbreviate "Contract Line Item" as CLI
 
-**Problem:** I wrote the AYMG parsing plan using "CLI" as shorthand for Contract Line Item. Rachael reads CLI as "command line interface" and had to stop me mid-plan.
+**Problem:** I wrote the EMG parsing plan using "CLI" as shorthand for Contract Line Item. Rachael reads CLI as "command line interface" and had to stop me mid-plan.
 
-**This is already in auto-memory** (`feedback_aymg_no_cli_abbreviation.md`) — I failed to apply it.
+**This is already in auto-memory** (`feedback_emg_no_cli_abbreviation.md`) — I failed to apply it.
 
 **Prevention:**
-1. At the start of any AYMG work, scan the planned artifact for "CLI" before showing it to the user.
+1. At the start of any EMG work, scan the planned artifact for "CLI" before showing it to the user.
 2. Applies to prose, tables, diagrams, file names, and code comments — not just chat messages.
 3. Write "Contract Line Item" (or "Line Item" if context is obvious) in full. Never acronymize.
 
-**Pair rule:** When working on AYMG, re-read feedback memories before writing any plan or doc.
+**Pair rule:** When working on EMG, re-read feedback memories before writing any plan or doc.
 
 ---
 

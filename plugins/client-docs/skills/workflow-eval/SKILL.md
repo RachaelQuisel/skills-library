@@ -1,6 +1,6 @@
 ---
 name: workflow-eval
-version: 1.4.7
+version: 1.4.8
 description: >
   Evidence-based evaluation of multi-step automation workflow chains. Reads workflow
   scripts + before/after evidence + live Airtable state, produces per-case

@@ -44,7 +44,7 @@
     {
       "name": "client-docs",
       "root": "plugins/client-docs",
-      "version": "1.4.7",
+      "version": "1.4.8",
       "manifests": [
         "plugins/client-docs/plugin.json",
         "plugins/client-docs/.claude-plugin/plugin.json",
@@ -162,15 +162,15 @@
   "skills": [
     {
       "path": "acuity-roster-reconciler-local/SKILL.md",
-      "version": "1.0.2",
-      "sha256": "fff356bb6f2e2a5252926374a321ce5965ab70a57a5cfa7fc8ab9a2c5b484636",
+      "version": "1.0.3",
+      "sha256": "4fbd708c40975628594badfe8084dca0af47298ca609057b4ca5c15dda412a92",
       "source": "acuity-roster-reconciler-local/SKILL.md",
       "guide": "acuity-roster-reconciler-local/README.md"
     },
     {
       "path": "agent-activity-log/SKILL.md",
-      "version": "1.0.2-rq.1",
-      "sha256": "691674f18d76e619ec18080c761dfcfcea889d80de9c2545601799625d63fc62",
+      "version": "1.0.3-rq.1",
+      "sha256": "835327bc3304ad6d54eb3f5b4d6d93c51159f9625ced14144ceae3b4fba6624c",
       "source": "agent-activity-log/SKILL.md",
       "guide": "agent-activity-log/README.md"
     },
@@ -302,8 +302,8 @@
     },
     {
       "path": "audit-log-plugin/SKILL.md",
-      "version": "1.4.7",
-      "sha256": "c839b05f736f9f44e0c55d0735c97dec5e498cda3c00d4696215b1dffd4e2f76",
+      "version": "1.4.8",
+      "sha256": "16edca79a15901f1148400c34e54166dde1fc5adb12808d0fbcb037ea786d9da",
       "source": "audit-log-plugin/SKILL.md",
       "guide": "audit-log-plugin/README.md"
     },
@@ -323,8 +323,8 @@
     },
     {
       "path": "auto/SKILL.md",
-      "version": "1.4.7",
-      "sha256": "9e06cd5f02911abff8e82128df83364ef91a0e750333693992433487c7c78cdb",
+      "version": "1.4.8",
+      "sha256": "5d97648b980359236e608353341430c556b600278ce1c06179bff98d47c76d8a",
       "source": "auto/SKILL.md",
       "guide": "auto/README.md"
     },
@@ -351,8 +351,8 @@
     },
     {
       "path": "build-page-publisher-local/SKILL.md",
-      "version": "1.4.7",
-      "sha256": "3dddf0ad234426a39410f47d9ff67a53ffe239ee57c62583adda62e0302c0b6c",
+      "version": "1.4.8",
+      "sha256": "4142c0ca5a40def8bc7c995e0dde37e0da9b9821488a6a7f3816c31885f1b797",
       "source": "build-page-publisher-local/SKILL.md",
       "guide": "build-page-publisher-local/README.md"
     },
@@ -365,8 +365,8 @@
     },
     {
       "path": "business-case/SKILL.md",
-      "version": "1.4.7",
-      "sha256": "51baea228cd5cfee57b5d3dcb7ecc90e73d7429a2d614e2bd097710c048cc23c",
+      "version": "1.4.8",
+      "sha256": "738ac32b14a9178a43963bfc1272a7455d1d78c01a775bce43e9991567f001e6",
       "source": "business-case/SKILL.md",
       "guide": "business-case/README.md"
     },
@@ -393,64 +393,64 @@
     },
     {
       "path": "client-doc-build-plan/SKILL.md",
-      "version": "1.4.7",
-      "sha256": "e095bfe2ee041885132d520a7ae77ae54f0add06131874fb996e71be1e456237",
+      "version": "1.4.8",
+      "sha256": "3aec1f317042638f172bc50657bff29d08486c709db5ce2a5c828b694d490716",
       "source": "client-doc-build-plan/SKILL.md",
       "guide": "client-doc-build-plan/README.md"
     },
     {
       "path": "client-doc-changelog/SKILL.md",
-      "version": "1.4.7",
-      "sha256": "51a6b5696fc0f3ea7d4ddac6b4cc1cf1c9f7d7ba16b0ca6f0db3a2db4b5fdac7",
+      "version": "1.4.8",
+      "sha256": "ac49e9f306039e8075ce3dab3dcaa467a44d2bdaeb6ec6789d6b8006ddff33b7",
       "source": "client-doc-changelog/SKILL.md",
       "guide": "client-doc-changelog/README.md"
     },
     {
       "path": "client-doc-decisions/SKILL.md",
-      "version": "1.4.7",
-      "sha256": "1274d0c90baa8a7d7336493bffabdc83c97d2a6d151aef31b4e31b6606dfcdf3",
+      "version": "1.4.8",
+      "sha256": "fe548e924d08fd44645d09549ca0305c636db0536e37bb44443c0f0980581c60",
       "source": "client-doc-decisions/SKILL.md",
       "guide": "client-doc-decisions/README.md"
     },
     {
       "path": "client-doc-interface-prompts/SKILL.md",
-      "version": "1.4.7",
-      "sha256": "1a648ec2b24b78e7741229354e42f15a9e11e20a8410eac6965c55bec4af1895",
+      "version": "1.4.8",
+      "sha256": "5f1b14bfb262d4096866b15f269070ad734698b6f0ee20aaf34ade754b2ab294",
       "source": "client-doc-interface-prompts/SKILL.md",
       "guide": "client-doc-interface-prompts/README.md"
     },
     {
       "path": "client-doc-push/SKILL.md",
-      "version": "1.4.7",
-      "sha256": "fd9f0102491eb7a5da2b850065a1dec344ec4753b6fa646a34f4d1ce12964737",
+      "version": "1.4.8",
+      "sha256": "c2f6f7c2573616efe9403b0bd69807f3fb5c3c2c66f8fb03e1d79e2ed8ef4e99",
       "source": "client-doc-push/SKILL.md",
       "guide": "client-doc-push/README.md"
     },
     {
       "path": "client-doc-user-stories/SKILL.md",
-      "version": "1.4.7",
-      "sha256": "fcb1352c34b9b9940d737b7d029974f7f4eae06c6bff0a16214ec2c2f74e8b76",
+      "version": "1.4.8",
+      "sha256": "60bec05f9e268e7c62ab65b6c2ec464f42969d9b1f6f74c051130c17259281ad",
       "source": "client-doc-user-stories/SKILL.md",
       "guide": "client-doc-user-stories/README.md"
     },
     {
       "path": "client-doc-vision-and-scope/SKILL.md",
-      "version": "1.4.7",
-      "sha256": "fd2eff7933b1ba34a13a95a44c6fc2914d81c65e50c1efa945df8b0d6eabf5e8",
+      "version": "1.4.8",
+      "sha256": "b8bd5bf14130b6c3243b39f76a5f2e676c3f708511b6168a9bafcedf9e0701f9",
       "source": "client-doc-vision-and-scope/SKILL.md",
       "guide": "client-doc-vision-and-scope/README.md"
     },
     {
       "path": "client-doc-workflow-diagram/SKILL.md",
-      "version": "1.4.7",
-      "sha256": "c9f9fc960f3f894696cdf18895047800f7804b2ef50304d2a099e8017bbeb8fd",
+      "version": "1.4.8",
+      "sha256": "e60f38a10fe1d3667b3a5a14dbac67cc4b487152dac78f9bf6e6ee2698bbb6db",
       "source": "client-doc-workflow-diagram/SKILL.md",
       "guide": "client-doc-workflow-diagram/README.md"
     },
     {
       "path": "client-docs/SKILL.md",
-      "version": "1.4.7",
-      "sha256": "d10cb70ff33b9b543b1fd15df10f7e0e5b157657bf885b99b09ae510f769bc02",
+      "version": "1.4.8",
+      "sha256": "d6c426703b476353fdccebd00714d6d81204d117ad92053a9f3fb0f3329471d2",
       "source": "client-docs/SKILL.md",
       "guide": "client-docs/README.md"
     },
@@ -491,8 +491,8 @@
     },
     {
       "path": "create-task/SKILL.md",
-      "version": "1.0.2",
-      "sha256": "d6c8174a6bb56e3c8eda01a22ea9641681645918cb011647b588899f057594e3",
+      "version": "1.0.3",
+      "sha256": "79756bdab92bd1482c7205f1466c322abf9791b2336115a1d560465518e4f52f",
       "source": "create-task/SKILL.md",
       "guide": "create-task/README.md"
     },
@@ -512,8 +512,8 @@
     },
     {
       "path": "dissonance-radar/SKILL.md",
-      "version": "1.0.3",
-      "sha256": "f53b393d53339cd37a3f12ac02bc9ac8db627809345075f6edd5d82a6f6019ff",
+      "version": "1.0.4",
+      "sha256": "66d5fbd557b82a18fa1f923c3a901238561fdd6f3cfd2fc5e0639bb254595d30",
       "source": "dissonance-radar/SKILL.md",
       "guide": "dissonance-radar/README.md"
     },
@@ -547,8 +547,8 @@
     },
     {
       "path": "explain-automation/SKILL.md",
-      "version": "1.0.1",
-      "sha256": "68e86b46e65fb4a7ef0073481b30a31c11820a1b37d9c785c5bbe5de76565c19",
+      "version": "1.0.2",
+      "sha256": "cfae012f824478cbbcd2b0255f545fc4455efacee6cc0f0471bb78e76fe7a751",
       "source": "explain-automation/SKILL.md",
       "guide": "explain-automation/README.md"
     },
@@ -568,15 +568,15 @@
     },
     {
       "path": "fetch-tasks/SKILL.md",
-      "version": "1.4.7",
-      "sha256": "9a0c1cc64376bcbf382a0cb8e5add565a32c45fe6cf3f5ea853f055a729f4ffb",
+      "version": "1.4.8",
+      "sha256": "1d4ad7bbdc3245d4c53090c46dd870afe5e6d82f63ccc6be25b746ea07f11640",
       "source": "fetch-tasks/SKILL.md",
       "guide": "fetch-tasks/README.md"
     },
     {
       "path": "file-naming-convention/SKILL.md",
-      "version": "1.4.7",
-      "sha256": "95a3dfaf4f12d74833ae70d2cd7d5e4bdf01cc3ac616879c92adfd7027340ff5",
+      "version": "1.4.8",
+      "sha256": "06616c5690d547e68bea85fbbecffda8ce27d77fb0d18284c14a793221db0939",
       "source": "file-naming-convention/SKILL.md",
       "guide": "file-naming-convention/README.md"
     },
@@ -589,22 +589,22 @@
     },
     {
       "path": "five-signals-prd/SKILL.md",
-      "version": "1.4.7",
-      "sha256": "dece7388e98a52c6559f6f1d385e46b3c26acd848256c14960fc097bf6264d42",
+      "version": "1.4.8",
+      "sha256": "f9d29d32310b52c19fc6bd65b8bc74db2e8c8878b1bb2c575091ef85de144a25",
       "source": "five-signals-prd/SKILL.md",
       "guide": "five-signals-prd/README.md"
     },
     {
       "path": "format/SKILL.md",
-      "version": "1.0.1",
-      "sha256": "60fb98e233c49e1ff8b7684f68293470fa83b0fdb7e9675db579dd086528edef",
+      "version": "1.0.2",
+      "sha256": "646c87f50a8aee545e7f54d7ee0705e7f749a56a5b751a25228c90a7b94cbb52",
       "source": "format/SKILL.md",
       "guide": "format/README.md"
     },
     {
       "path": "friday-sprint-summary/SKILL.md",
-      "version": "1.0.2",
-      "sha256": "c9de6817265a452b9c96b67141db0a747296d8400ba091d4a54496d2f58f6987",
+      "version": "1.0.3",
+      "sha256": "cb98dd58b222d653963f7e4dcb0b5dbff80834d9566d81cb428044a838c13f07",
       "source": "friday-sprint-summary/SKILL.md",
       "guide": "friday-sprint-summary/README.md"
     },
@@ -631,8 +631,8 @@
     },
     {
       "path": "gmail-triage/SKILL.md",
-      "version": "1.0.2",
-      "sha256": "be58728ea13b4ecb853dacccaac50c02ef0628da180c68999a4f4ac1eaa364eb",
+      "version": "1.0.3",
+      "sha256": "c19987d50bc9f37cee2d57f7618119afa43c7c31a9dbd403e308e76e1eef40b7",
       "source": "gmail-triage/SKILL.md",
       "guide": "gmail-triage/README.md"
     },
@@ -659,15 +659,15 @@
     },
     {
       "path": "education/SKILL.md",
-      "version": "1.4.7",
-      "sha256": "d591e8dd5e29a64d0029ea7a40cd66cc7cedf46485db72cd4371719c5d102281",
+      "version": "1.4.8",
+      "sha256": "a66304169de6141f492a343026d6f7efdd150928ac48929711bed3519a0b1287",
       "source": "education/SKILL.md",
       "guide": "education/README.md"
     },
     {
       "path": "how-it-works-doc/SKILL.md",
-      "version": "1.4.7",
-      "sha256": "4ecf978231cdeb2ec01e4118807a148829999aafcec1ac481ed3e5de9722b13b",
+      "version": "1.4.8",
+      "sha256": "06bf91a5ff5032b693fbec624f5cd5da48b5cbf78c25d2c50b5382adf83abfb0",
       "source": "how-it-works-doc/SKILL.md",
       "guide": "how-it-works-doc/README.md"
     },
@@ -687,29 +687,29 @@
     },
     {
       "path": "kpi-report/SKILL.md",
-      "version": "1.4.7",
-      "sha256": "3775c490c25a3e06e6081657f002be7851e2cc981153a4f6454e729ed9ebd9e3",
+      "version": "1.4.8",
+      "sha256": "3fac7cc60428cad6a5990dc4e55c28c1f9894f7493e4137d3f4f2e7dfca34cef",
       "source": "kpi-report/SKILL.md",
       "guide": "kpi-report/README.md"
     },
     {
       "path": "load/SKILL.md",
-      "version": "1.0.2",
-      "sha256": "6adfa39c93f7cf9a1f21dcd113a6a74e7277a367c84d9de19e27ed8c0e46d00b",
+      "version": "1.0.3",
+      "sha256": "f3a74884f77419173427b304987efd808a5918680a999ef6ad1f191fba000b2b",
       "source": "load/SKILL.md",
       "guide": "load/README.md"
     },
     {
       "path": "make-it-sound-human/SKILL.md",
-      "version": "1.0.0",
-      "sha256": "793009708495c6878f661feabd7d30b8c337939925fcac77411da9c0b3c08652",
+      "version": "1.0.1",
+      "sha256": "065f2c206529d83d8f967dd1ff008d785571f7a58c87fe57561d7aab9885744f",
       "source": "make-it-sound-human/SKILL.md",
       "guide": "make-it-sound-human/README.md"
     },
     {
       "path": "markdown-to-xr-gdoc/SKILL.md",
-      "version": "1.4.7",
-      "sha256": "d4ca852d9854567770f40907f84fed2a248626e0eb46e19d779b9a946e503a53",
+      "version": "1.4.8",
+      "sha256": "d12b96ac39b0cdd7c645d7ab292cfa36bd1666077f97930e029154d1968391a8",
       "source": "markdown-to-xr-gdoc/SKILL.md",
       "guide": "markdown-to-xr-gdoc/README.md"
     },
@@ -729,15 +729,15 @@
     },
     {
       "path": "meeting-prep/SKILL.md",
-      "version": "1.0.2",
-      "sha256": "4edc1de94045e4015c95b187e6a387f8c44221ee9947fa85a9eb8baab00d41fd",
+      "version": "1.0.3",
+      "sha256": "763e36695eb19f8c63b9e08fb1d7f63a62a1a415305bd1494acaf805f5719f7e",
       "source": "meeting-prep/SKILL.md",
       "guide": "meeting-prep/README.md"
     },
     {
       "path": "micro-case-study/SKILL.md",
-      "version": "1.0.2",
-      "sha256": "d3d0505acd7350d2476aef70f150e8d55543b64ab2f2229793352789d42a2ffd",
+      "version": "1.0.3",
+      "sha256": "c26c2fdac120385c0ef92ad18b26cbf247280c905aa9a5365b7edb71cbf2afca",
       "source": "micro-case-study/SKILL.md",
       "guide": "micro-case-study/README.md"
     },
@@ -764,8 +764,8 @@
     },
     {
       "path": "normalize-csvs-for-airtable/SKILL.md",
-      "version": "1.0.2",
-      "sha256": "5f8889f7676e9fbd83a39cfa30fac362bf53e005249ac3d8ec338225737986e3",
+      "version": "1.0.3",
+      "sha256": "5b3ef4a16e799aa1503d09a3c9d9c2e4a04df8b06e239c51124b0fe124902b23",
       "source": "normalize-csvs-for-airtable/SKILL.md",
       "guide": "normalize-csvs-for-airtable/README.md"
     },
@@ -883,8 +883,8 @@
     },
     {
       "path": "post-to-huddle/SKILL.md",
-      "version": "1.0.2",
-      "sha256": "6205cbb1c4485e3ac11fb505e36b6efdfc906c8b2d1eeccade6a2ef1505aa827",
+      "version": "1.0.3",
+      "sha256": "2d33d1982de221dc856bd002a3c77021fe6bd9184943d9cb75b7eeed47ec1bdf",
       "source": "post-to-huddle/SKILL.md",
       "guide": "post-to-huddle/README.md"
     },
@@ -904,8 +904,8 @@
     },
     {
       "path": "prd-frame-estimate/SKILL.md",
-      "version": "1.4.7",
-      "sha256": "329e2ad7aaeccec3d1206f85b129a0d6765e3deca9cdf6911922a0cee727279a",
+      "version": "1.4.8",
+      "sha256": "9797c580d5972c0018525c8995a45aae79e8b36fef81b39a1be621ee1d0a825e",
       "source": "prd-frame-estimate/SKILL.md",
       "guide": "prd-frame-estimate/README.md"
     },
@@ -967,8 +967,8 @@
     },
     {
       "path": "rachael-work-voice/SKILL.md",
-      "version": "1.0.3",
-      "sha256": "6cae9ddb40e7371565ca8eb6af7883d7dd6d797ae1d67053aacf1d96b58b3a5e",
+      "version": "1.0.4",
+      "sha256": "babeff164db4d95acc50c2f02b2c59bcbf0ca41a6889ddcc17364be2812b6184",
       "source": "rachael-work-voice/SKILL.md",
       "guide": "rachael-work-voice/README.md"
     },
@@ -1016,8 +1016,8 @@
     },
     {
       "path": "ship/SKILL.md",
-      "version": "1.4.7",
-      "sha256": "1dd1c2673525ac8a7912775e7febd19a1d62476265646de2d52ad209850e44d2",
+      "version": "1.4.8",
+      "sha256": "e20807fedca229539fef0bce91791bff1beb174fdc0250f3ae12bd7bab82641e",
       "source": "ship/SKILL.md",
       "guide": "ship/README.md"
     },
@@ -1037,8 +1037,8 @@
     },
     {
       "path": "spec-driven-dev/SKILL.md",
-      "version": "1.4.7",
-      "sha256": "ec477c5b9f4d0c475bb14130e1019c5cf633d998c82db2ac93433211e2d15365",
+      "version": "1.4.8",
+      "sha256": "dc0b74c0ca06f879d191b39ae038245142dae2fd390494bb15d94d2638ea9b0f",
       "source": "spec-driven-dev/SKILL.md",
       "guide": "spec-driven-dev/README.md"
     },
@@ -1114,8 +1114,8 @@
     },
     {
       "path": "transcript-review/SKILL.md",
-      "version": "1.4.7",
-      "sha256": "e05526728fe42190c729219ff4762cdd1699dc243710dce51caa5f122251c6a8",
+      "version": "1.4.8",
+      "sha256": "6b364bcb12c5a0b288c259b26841a5ff9c024c6e0a580a64822a15e68abc4b6d",
       "source": "transcript-review/SKILL.md",
       "guide": "transcript-review/README.md"
     },
@@ -1156,8 +1156,8 @@
     },
     {
       "path": "update-projects/SKILL.md",
-      "version": "1.0.2",
-      "sha256": "f01834634c0b721d9eb17dda94b42a508dc4775b829119ac16d816fae0df0612",
+      "version": "1.0.3",
+      "sha256": "6ce5ead196766f18acc5bbb39fc1aa875cb574d83fcd627507593a05489a7e5b",
       "source": "update-projects/SKILL.md",
       "guide": "update-projects/README.md"
     },
@@ -1226,8 +1226,8 @@
     },
     {
       "path": "workflow-eval/SKILL.md",
-      "version": "1.4.7",
-      "sha256": "3decc5907833fb4a1221c82979066ab4a0268ae0025a5538e3d684139e703b4c",
+      "version": "1.4.8",
+      "sha256": "797e3e06031e4142af93afb3fb1c4a94c1d52011af07ce3d6e218cd89b3e106b",
       "source": "workflow-eval/SKILL.md",
       "guide": "workflow-eval/README.md"
     },
@@ -1254,8 +1254,8 @@
     },
     {
       "path": "write-soap-report/SKILL.md",
-      "version": "1.4.7",
-      "sha256": "34dc64f665efb136e78631a6dd735a39d792337df9da3a9aeaf0dee3c269a61e",
+      "version": "1.4.8",
+      "sha256": "cc686ad630969e3fe9bbdd5bbc985df40bea698a8ccd938a9d97c8c296eaa048",
       "source": "write-soap-report/SKILL.md",
       "guide": "write-soap-report/README.md"
     },
@@ -1289,8 +1289,8 @@
     },
     {
       "path": "client-mockup/SKILL.md",
-      "version": "1.2.0",
-      "sha256": "be5fd65e069b8e796138027d834593ffc1f83c138edab3e72f52c65e6d094ea0",
+      "version": "1.2.1",
+      "sha256": "18798ac0633dd05c244e4b81b6402618e880452109f8251221d85725d8726a85",
       "source": "client-mockup/SKILL.md",
       "guide": "client-mockup/README.md"
     },

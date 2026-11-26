@@ -22,7 +22,7 @@ Orchestrates a full sprint summary end-to-end. Runs four sub-skills in sequence.
 ## Step 1 — Gather Parameters
 
 Ask for:
-1. Client (Example Nonprofit, AY Media, or both)
+1. Client (Example Nonprofit, Example Media, or both)
 2. Sprint start and end dates — accept natural language ("last week", "Feb 24–Mar 7")
 3. Optional: specific project to scope to
 

@@ -1,7 +1,7 @@
 """
 Build an XRAY-branded SOAP report .docx from a content dict.
 
-Generalizes Rachael's THFH SOAP generators into one reusable, data-driven builder.
+Generalizes Rachael's EH SOAP generators into one reusable, data-driven builder.
 Fill the CONTENT dict (or pass your own to build()) and run:
 
     python3 build_soap.py
@@ -41,9 +41,9 @@ FOOTER_TEXT  = "XRAY  ·  Workflow Automation That Works"
 
 # XRAY wordmark (PNG, for header). Tries known locations; doc still builds without it.
 LOGO_CANDIDATES = [
-    os.path.expanduser("~/Claude-Work/CLIENTS/The_HOPE_for_Health_Teri_Hall/Code/xray-wordmark-dark.png"),
+    os.path.expanduser("~/Claude-Work/CLIENTS/Example_Health_Chris_Nolan/Code/xray-wordmark-dark.png"),
     os.path.expanduser("~/Downloads/xray-wordmark-dark.png"),
-    os.path.expanduser("~/Claude-Work/CLIENTS/Coding_Clarified_Janine_Whitfield/Project Documentation/xray-wordmark.png"),
+    os.path.expanduser("~/Claude-Work/CLIENTS/Example_Nonprofit_Dana_Whitfield/Project Documentation/xray-wordmark.png"),
 ]
 LOGO_PATH = next((p for p in LOGO_CANDIDATES if os.path.exists(p)), None)
 OUT_DIR   = os.path.dirname(os.path.abspath(__file__))

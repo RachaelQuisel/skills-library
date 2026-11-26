@@ -30,10 +30,10 @@ Link verified records as `https://airtable.com/<base-id>/<table-id>/<record-id>`
 
 | Group key | Organization evidence | Stage evidence |
 | --- | --- | --- |
-| `gol-applications` | `CBOs` identifies Example Agency, including FFA variants | Application template and status indicate an application |
-| `gol-renewals` | `CBOs` identifies Example Agency | Renewal template and/or `In Renewal` status |
-| `diup-applications` | `CBOs` identifies Partner Agency Institute | Application template and status indicate an application |
-| `diup-renewals` | `CBOs` identifies Partner Agency Institute | Renewal template and/or `In Renewal` status |
+| `ea-applications` | `CBOs` identifies Example Agency, including FFA variants | Application template and status indicate an application |
+| `ea-renewals` | `CBOs` identifies Example Agency | Renewal template and/or `In Renewal` status |
+| `partner-applications` | `CBOs` identifies Partner Agency Institute | Application template and status indicate an application |
+| `partner-renewals` | `CBOs` identifies Partner Agency Institute | Renewal template and/or `In Renewal` status |
 
 Read every row. Preserve mixed CBO memberships and flag unknown organizations or contradictory stage evidence. A `Renewal due date` column alone does not make a file a renewals export. Multiple organizations on one row may contribute to multiple group views; do not double-count that row in a combined total.
 

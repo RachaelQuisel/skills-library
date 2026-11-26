@@ -1,6 +1,6 @@
 ---
 name: how-it-works-doc
-version: 1.4.7
+version: 1.4.8
 description: Writes a plain-English education document that explains an automation, what triggers it, what inputs it reads, what steps it takes, what outputs it produces, and what it does not do. Use when Rachael says "write a how-it-works doc," "explain this automation in plain English," "education doc for [automation]," "what does this automation do" (in a teaching context, not a debugging one), "write up this automation for the client," or asks for a doc that lets a non-technical reader understand a workflow. Produces a HOW-IT-WORKS-name.md file co-located with the automation's code or under Project Documentation/. Do not use for code-level explanations of a single function (that is the `explain-code` skill) or for inventorying every automation in a base (that is `audit-airtable-automations`).
 ---
 

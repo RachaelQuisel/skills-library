@@ -1,6 +1,6 @@
 ---
 name: spec-driven-dev
-version: 1.4.7
+version: 1.4.8
 description: Enforces Rachael's spec-driven dev loop for every client-base implementation or data change. Applies to new automation (Airtable / Zap / GAS / Python / Node), backfill, bulk data update, schema change (adding, renaming, or deleting fields or tables), trigger change on an existing automation, and any data fix touching more than 10 records. The loop is plain-English README written BEFORE the code, script gated behind --dryrun + /review + --apply, and a post-run doc that closes the loop with counts and a spot-check sample. Use whenever Rachael is building, backfilling, migrating, deploying, updating, running, applying, shipping, or wrapping up work on a client base, even when she does not name the loop explicitly. Also use at end-of-task to verify all seven steps ran before reporting completion. Do NOT use for read-only diagnostics, documentation-only edits, config that does not touch data, or personal projects like La Maison.
 ---
 

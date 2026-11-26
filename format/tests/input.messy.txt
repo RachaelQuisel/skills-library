@@ -1,4 +1,4 @@
-⏺ Spent most of the week deep in AYMG's database cleanup. Here's where it landed:
+⏺ Spent most of the week deep in EMG's database cleanup. Here's where it landed:
 
  - Split line items out from contracts so each one is its own record
  - Stood up two new tables: Agencies and Advertisers, both linked to Contacts

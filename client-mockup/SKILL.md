@@ -1,6 +1,6 @@
 ---
 name: client-mockup
-version: 1.2.0
+version: 1.2.1
 description: Build a client-facing mock-up of a planned system as one scrolling web page, published as an Artifact. The page has a workflow diagram first (redrawn exactly from the client's Lucid chart export if there is one), then every planned screen stacked in process order as a non-clickable picture, with "new on [date]" tags that show which client feedback landed when, "proposed" tags for open questions, hover definitions for key terms, and the client's own brand colors on white. Also builds a short client-facing Next Steps page. Use whenever Rachael asks for a mock-up, mockup, wireframe, screen preview, "show the client what it will look like", "add this to the mock-up", "update the mock-up with...", "add the workflow to the mock-up", or shares a Lucid/Lucidchart export or a list of screens for a client build, even if she does not say "skill" or "artifact".
 ---
 
@@ -94,7 +94,7 @@ For each screen:
 - Realistic example content grounded in the client's world (their towns, schools, programs, real dollar ranges). Use made-up people, and say in the footer that names and figures are examples.
 - Check every example name before you use it. Search for the first name and the last name separately in: the people records in the client's Airtable base (staff, applicants, contacts), the transcripts, and every file in the client folder (exports, notes, handoffs). Schema alone is not enough. Change any name that matches a real person, including a last name shared with a staff member or applicant. In the report, list each example name and where you searched. On an update, check the names already on the page too, not just new ones. For a staff screen, write "signed in as a Example Client reviewer" rather than a real staff member's name. A client who sees a real person's name on an example will think it is real data.
 - Show only what is decided as the plan. If something is undecided, or a weak practice (a shared login, a manual workaround), it stays out of the screens or appears as conditional wording ("Asked only if...") with a "still deciding" tag and a Still open entry. This holds even when an internal document says it was agreed, because internal agreement is not the client's decision, and a weak practice shown as the plan makes XRAY look bad.
-- Every factual claim on a screen ("Only Lesli can change attendance", "No link goes to the student") needs a source you read. If your sources disagree, show it as "still deciding" and report the conflict.
+- Every factual claim on a screen ("Only Casey can change attendance", "No link goes to the student") needs a source you read. If your sources disagree, show it as "still deciding" and report the conflict.
 - Nothing clickable. Disable pointer events on the screens, and say in the banner that nothing is clickable. A page that clicks looks built.
 - Fields carried over from an earlier step are shown dashed, with a label like "pre-filled by your counselor", so the client sees what flows where.
 - A phone-shaped single column for any screen the public fills in on a phone.
@@ -123,7 +123,7 @@ Use the brand colors of the client the mock-up is for. Never use a default palet
 4. Define every color as a token on `:root`, with a dark-mode set, so the page works in both themes.
 
 Known clients:
-- Example Client (ccres.org): blue #40a1d0 (text and buttons #1e6f98), orange #e88a3d (orange text #9a4a12), navy text #1b2b3a.
+- Example Client (exampleclient.org): blue #40a1d0 (text and buttons #1e6f98), orange #e88a3d (orange text #9a4a12), navy text #1b2b3a.
 
 ## Step 6: Wording review
 

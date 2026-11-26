@@ -51,7 +51,7 @@ Ordered list. Each step:
   "kind": "airtable_automation",
   "name": "Push Invoice to QuickBooks via Zapier",
   "ref": "wfl123abc",
-  "script_path": "~/Claude-Work/CLIENTS/AY Media_Jay_Danzy/zapier-qb-webhook/push_invoice_to_qb_via_zapier.js",
+  "script_path": "~/Claude-Work/CLIENTS/Example Media_Rowan_Ellis/zapier-qb-webhook/push_invoice_to_qb_via_zapier.js",
   "notes": "Reads Advertiser link, builds payload, POSTs to Zapier webhook"
 }
 ```
@@ -114,15 +114,15 @@ Zapier doesn't have a stable read API for task history at the consultant tier; v
 }
 ```
 
-## Worked example: AYMG Contract → QuickBooks push v17
+## Worked example: EMG Contract → QuickBooks push v17
 
 ```json
 {
-  "workflow_name": "aymg-qb-push-v17",
+  "workflow_name": "emg-qb-push-v17",
   "production": true,
   "production_base_id": "appExample0000153",
   "sandbox_base_id": "appExample0000154",
-  "inventory_source": "~/Claude-Work/CLIENTS/AY Media_Jay_Danzy/Project Documentation/schema-dependencies.md",
+  "inventory_source": "~/Claude-Work/CLIENTS/Example Media_Rowan_Ellis/Project Documentation/schema-dependencies.md",
   "trigger": {
     "base_id": "appExample0000153",
     "table_id": "tblContracts",
@@ -135,13 +135,13 @@ Zapier doesn't have a stable read API for task history at the consultant tier; v
       "kind": "airtable_automation",
       "name": "Push Invoice to QuickBooks via Zapier",
       "ref": "wfl<id>",
-      "script_path": "~/Claude-Work/CLIENTS/AY Media_Jay_Danzy/zapier-qb-webhook/push_invoice_to_qb_via_zapier.js",
+      "script_path": "~/Claude-Work/CLIENTS/Example Media_Rowan_Ellis/zapier-qb-webhook/push_invoice_to_qb_via_zapier.js",
       "notes": "v17 - reads Advertiser via Contract.Advertiser link, throws 5 friendly errors on missing data"
     },
     {
       "step_id": "2-zapier-zap",
       "kind": "zapier_zap",
-      "name": "AYMG Push → QBO",
+      "name": "EMG Push → QBO",
       "ref": "uefknpv",
       "notes": "Catches webhook, Find Customer, Create Invoice, Attach Tear Sheets"
     }
@@ -167,6 +167,6 @@ Zapier doesn't have a stable read API for task history at the consultant tier; v
       "match_on": "DocNumber"
     }
   ],
-  "notes": "v17 adds 5 data-integrity guards after Advertiser link walk. Test UAMS recExample0000152 (populated) + a Contract with no Advertiser link (red path)."
+  "notes": "v17 adds 5 data-integrity guards after Advertiser link walk. Test Example Advertiser recExample0000152 (populated) + a Contract with no Advertiser link (red path)."
 }
 ```

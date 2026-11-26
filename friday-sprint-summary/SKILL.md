@@ -1,6 +1,6 @@
 ---
 name: friday-sprint-summary
-version: 1.0.2
+version: 1.0.3
 description: >
   Generate and auto-post a weekly Sprint Summary to each active client's Slack huddle channel every Friday afternoon. Covers Example Nonprofit, Example Agency, and Example Client. Uses Rachael's canonical Sprint Summary format from her July 30-31 CC exemplar (Sprint Summary header, Completed / In Progress / Carried buckets, Velocity + Completion rate line). If a fresh working-session transcript from the last 7 days exists locally, also generates a KPI report, attaches it as a Slack Canvas, and links it from the post. Trigger phrases include: "Friday sprint summary", "post the sprint updates", "run the weekly client posts", "/friday-sprint-summary". Also invoked on a schedule (launchd job `com.rachael.friday-sprint-summary`) every Friday at 1:00 PM Pacific.
 tags:
@@ -33,11 +33,11 @@ Rachael explicitly overrode the standing "confirm before sending to external" ru
 
 | Client | Client ID | Channel | Channel ID | Client folder |
 |---|---|---|---|---|
-| Example Nonprofit | `recExample0000043` | `#huddle_coding-clarified` | `C0EXAMPLE02` | `~/Claude-Work/CLIENTS/Coding_Clarified_Janine_Whitfield/` |
-| Example Agency | `recExample0000044` | `#huddle_guardians_of_love` | `C0EXAMPLE04` | `~/Claude-Work/CLIENTS/Guardians_of_Love_Jessica_Peoples/` |
-| Example Client | `recExample0000045` | `#huddle_ccres` | `C0EXAMPLE05` | (no local folder yet; skip transcript + KPI step for Example Client until one exists) |
+| Example Nonprofit | `recExample0000043` | `#huddle_example-nonprofit` | `C0EXAMPLE02` | `~/Claude-Work/CLIENTS/Example_Nonprofit_Dana_Whitfield/` |
+| Example Agency | `recExample0000044` | `#huddle_example_agency` | `C0EXAMPLE04` | `~/Claude-Work/CLIENTS/Example_Agency_Pat_Okafor/` |
+| Example Client | `recExample0000045` | `#huddle_example_client` | `C0EXAMPLE05` | (no local folder yet; skip transcript + KPI step for Example Client until one exists) |
 
-THFH is intentionally not on the list.
+EH is intentionally not on the list.
 
 ---
 
@@ -113,7 +113,7 @@ To add or rename a tag: edit this table. No code change.
 | `Acuity sync` | Booking sync, cancellation path, timezone verification, sign-in flow, Acuity-to-training-tracking bridge |
 | `A-7 reporting` | Monthly PROGRAM Completion Report, entry form, timing distribution, source-flag disagreement handling |
 | `Certificate handling` | Certificate generation, staff review queue, historical SharePoint ingest |
-| `Paraprofessional tools` | Paraprofessional dashboards, Jessica view, task assignment, reassignment tracking |
+| `Paraprofessional tools` | Paraprofessional dashboards, Pat view, task assignment, reassignment tracking |
 | `Procurement` | Procurement, purchase, delivery, set-up, inventory, equipment loans, vendor billing |
 | `Administrative dashboard` | Cross-workstream dashboards, org-wide interface pages, KPI review pages |
 
@@ -170,7 +170,7 @@ Example Client is a new engagement (started 2026-08-02). Expect this table to sh
 Bullets are complete thoughts with concrete numbers. Every Completed and In Progress bullet names the outcome, not the artifact.
 
 - Bad: `Weekly KPI report filed (13 measurements, 7 recommendations, 14 gaps) · Reporting`
-- Good: `Weekly KPI report filed from the July 29 working session; established baseline measurements for the three go-live blockers Janine named (30 approved WIOA regions missing instructions, 40 candidates without zip codes, ~50 students without an enrollment start date) · Build plan`
+- Good: `Weekly KPI report filed from the July 29 working session; established baseline measurements for the three go-live blockers Dana named (30 approved WIOA regions missing instructions, 40 candidates without zip codes, ~50 students without an enrollment start date) · Build plan`
 
 Banned words: ensure, utilize, leverage, streamline, robust, scalable, clean, heal, drift, smoke, amazing, incredible, fantastic, "needs fixing" (say "needs to be fixed").
 

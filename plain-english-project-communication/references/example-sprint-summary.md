@@ -19,9 +19,9 @@ Sprint Summary: 2026-07-30 – 2026-07-31 | Example Nonprofit
 • 1,016 county mismatches and 70 multi-region zips flagged, awaiting fix decisions · WIOA data quality
 
 :clipboard: Carried (3):
-• Wed–Fri rolled-up email to Janine (Fillout preview, HQ blockers, WIOA questions, transcript Qs)
+• Wed–Fri rolled-up email to Dana (Fillout preview, HQ blockers, WIOA questions, transcript Qs)
 • Blackboard exam-file ask for the 139 graduation dates (urgent)
-• 19 zip disagreements and duplicate-region picks awaiting Janine
+• 19 zip disagreements and duplicate-region picks awaiting Dana
 
 :bar_chart: Velocity: 5 tasks | Completion rate: 71%
 ```
@@ -36,7 +36,7 @@ Sprint Summary: 2026-07-30 – 2026-07-31 | Example Agency
 • Two-table compliance MVP live: 1,170 training requirements and 2,013 deadline obligations, internal vs contract clocks · Compliance tracking
 • QPI 5 upload clock corrected to 24 hours internal / 72 hours contract · Compliance tracking
 • Booking sync deep review: 10 defects fixed and deployed; cancellation path fixed (caught a real Aug 5 cancellation) · Acuity sync
-• 12 missed July sign-ups imported and linked; 2 held on Jessica's answer · Acuity sync
+• 12 missed July sign-ups imported and linked; 2 held on Pat's answer · Acuity sync
 ...and 1 more (20 booking rows renamed; timezones verified end to end, all Los Angeles)
 
 :arrows_counterclockwise: In Progress (2):
@@ -44,9 +44,9 @@ Sprint Summary: 2026-07-30 – 2026-07-31 | Example Agency
 • Deadline-window fields: next build after the junction table · Compliance tracking
 
 :clipboard: Carried (3):
-• Email to Jessica: hosting choice and the July 15/16 1:00 PM classes question
-• Training SMS review email to Lesley (confirm routing through Jessica first)
-• LaShawn Bell's 2 held sign-ups: re-run the import after Jessica answers
+• Email to Pat: hosting choice and the July 15/16 1:00 PM classes question
+• Training SMS review email to Casey (confirm routing through Pat first)
+• Shay Benton's 2 held sign-ups: re-run the import after Pat answers
 
 :bar_chart: Velocity: 6 tasks | Completion rate: 75%
 ```
@@ -55,7 +55,7 @@ Note: the originally posted versions used em dashes in several bullets. These re
 
 ## Note on acronyms: spell them out once even in insider posts (updated 2026-08-04)
 
-Both exemplars above use `WIOA` without ever spelling out Workforce Innovation and Opportunity Act. That reflects the posts as-published, when the immediate audience (Janine, Jessica, their teams) already knew the acronym. Rachael's updated preference is to spell any acronym (WIOA, PROGRAM, QPI, CAP, MVP, etc.) out once at first use in the piece — because students and other downstream readers benefit. Follow the updated rule when writing new posts; treat the exemplars as authoritative on shape but not on the acronym choice.
+Both exemplars above use `WIOA` without ever spelling out Workforce Innovation and Opportunity Act. That reflects the posts as-published, when the immediate audience (Dana, Pat, their teams) already knew the acronym. Rachael's updated preference is to spell any acronym (WIOA, PROGRAM, QPI, CAP, MVP, etc.) out once at first use in the piece — because students and other downstream readers benefit. Follow the updated rule when writing new posts; treat the exemplars as authoritative on shape but not on the acronym choice.
 
 ## Extra pattern: `...and N more` overflow
 
@@ -75,7 +75,7 @@ When the `Completed` section runs longer than 5 bullets, cap visible bullets at 
 
 6. **Project tag on the right, separated by " · ".** `· Build plan`, `· WIOA data quality`. This gives project context without forcing a section-per-project structure. Omit when every bullet in the section belongs to the same project.
 
-7. **"Awaiting X" language is descriptive, not prescriptive.** `awaiting fix decisions`, `awaiting Janine`: states what's blocked and on whom, without prescribing what the team should do. That's the plain-English standard's "no unrequested recommendations" rule expressed in one word.
+7. **"Awaiting X" language is descriptive, not prescriptive.** `awaiting fix decisions`, `awaiting Dana`: states what's blocked and on whom, without prescribing what the team should do. That's the plain-English standard's "no unrequested recommendations" rule expressed in one word.
 
 8. **Parens are for sub-lists that don't warrant their own bullet.** `(application form end-to-end, five state proposals, exit form, dashboard, and more)`, `(30)`, `(19)`, `(urgent)`. Short, no verbs, no sentences.
 

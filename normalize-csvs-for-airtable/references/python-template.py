@@ -46,7 +46,7 @@ analytics and linked-record import to Airtable.
 For WIDE format (one row per source row, all sub-events as side-by-side
 columns like `Module 1 Date`, `Module 1 Trainer`, `Module 2 Date`, ...),
 the structure is different — see the EA training tracker as a worked
-example: `~/Claude-Work/CLIENTS/Guardians_of_Love_Jessica_Peoples/
+example: `~/Claude-Work/CLIENTS/Example_Agency_Pat_Okafor/
 Exports/training-tracker-migration/normalize_training_trackers.py`.
 
 Wide format is right when the destination Airtable table should mirror
@@ -213,7 +213,7 @@ def preserve_lookup_value(raw, expected_set=None, non_person_set=None):
 
     DOES NOT modify the value. Returns the trimmed value for case-insensitive
     comparison against `expected_set`, but the raw is preserved as-typed for
-    audit (case variants like 'oswaldo' vs 'Oswaldo' carry signal about
+    audit (case variants like 'emerson' vs 'Emerson' carry signal about
     data-entry inconsistencies).
 
     Optionally flags values not in `expected_set` (case-insensitive).

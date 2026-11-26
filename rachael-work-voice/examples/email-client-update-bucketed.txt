@@ -1,4 +1,4 @@
-Locked 2026-07-18 by Rachael as the canonical shape for a "here's what landed" email to a monthly-retainer client (CC, THFH, EA). Bucketed by project, concrete counts, decision points with verbatim examples, client team to-do.
+Locked 2026-07-18 by Rachael as the canonical shape for a "here's what landed" email to a monthly-retainer client (CC, EH, EA). Bucketed by project, concrete counts, decision points with verbatim examples, client team to-do.
 
 Structure this exemplifies:
 
@@ -29,7 +29,7 @@ The frozen exemplar (verbatim, do not edit):
 
 ---
 
-Hi Janine,
+Hi Dana,
 
 Below are updates for project increase candidate → student conversion, project increase student graduation rate,  & project system maintenance and updating.
 

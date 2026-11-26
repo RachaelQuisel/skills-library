@@ -4,7 +4,7 @@
     {
       "id": 0,
       "name": "single-zip-casual-ask",
-      "prompt": "jessica just forwarded me a referral for a family at an address in 90815 and she's asking which spa team should pick it up. what service planning area is that zip in?",
+      "prompt": "pat just forwarded me a referral for a family at an address in 90815 and she's asking which spa team should pick it up. what service planning area is that zip in?",
       "expected_output": "Answer: SPA 8 (South Bay). The skill should run and return structured output (JSON or similar) showing zip=90815, spa=8, spa_name='South Bay'. Should NOT guess from memory.",
       "files": []
     },

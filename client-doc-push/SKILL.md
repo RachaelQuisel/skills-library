@@ -1,6 +1,6 @@
 ---
 name: client-doc-push
-version: 1.4.7
+version: 1.4.8
 description: Push locally drafted canonical client docs to the client's own XRAY-INC GitHub repo (XRAY-INC/CLIENT-NAME, folder projects/BUILD-NAME/). Reads .md files from the client's local Documents/DOC-TYPE/BUILD-NAME/ folders and PUTs them via the GitHub API (never clones). Use when Rachael says "push client docs", "push to MONTHLY-CLIENTS", "push to the client repo", "publish the canonical docs", "sync the docs to GitHub", or after any of the `client-doc-*` doc-building skills have staged files locally. Handles create-vs-update sha lookup and one-commit-per-file convention.
 ---
 

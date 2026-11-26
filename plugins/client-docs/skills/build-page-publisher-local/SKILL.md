@@ -1,6 +1,6 @@
 ---
 name: build-page-publisher-local
-version: 1.4.7
+version: 1.4.8
 description: Publish a shareable Artifact web page documenting what was built in this session, how it functions, what triggers it, what breaks it, what the gates are, what a client needs to know. PM-quality client education, rendered as a clean shareable link the client can open in a browser. Use when Rachael types "/artifact," when she says "make me an artifact of what we built," "publish an education page," "shareable version of the HOW-IT-WORKS doc," "give the client a link they can read," or right after a substantial build ships and she wants a visual, forwardable web-page version instead of a markdown file.
 ---
 
@@ -35,7 +35,7 @@ Build and publish an Artifact (via the Artifact tool) that documents what was bu
 
 Same 11-section structure as `/education`, rendered as a clean HTML page instead of a markdown file:
 
-1. **Quick Read (for [Operator Name])**: the daily operator's one page. What to check, what to look at, what success and failure look like. Auto-detect the operator name from the client folder (Example Nonprofit → Janine, Example Agency → Jessica, The HOPE for Health → Teri, AY Media → Casandra). Only ask if the client has more than one plausible operator.
+1. **Quick Read (for [Operator Name])**: the daily operator's one page. What to check, what to look at, what success and failure look like. Auto-detect the operator name from the client folder (Example Nonprofit → Dana, Example Agency → Pat, Example Health → Chris, Example Media → Skyler). Only ask if the client has more than one plausible operator.
 2. **What this does**: one paragraph for the owner.
 3. **How it functions**: the end-to-end flow in 3 to 6 numbered steps.
 4. **What triggers things**: every condition that starts the automation.

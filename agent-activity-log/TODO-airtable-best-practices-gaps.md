@@ -18,7 +18,7 @@ Fix by editing `SKILL.md` in this same directory. Each numbered item below names
 
 ## Missing from the "Scaffolding" side (biggest gaps for a Rachael client base)
 
-5. **Seven Deliverables trigger not called out.** Scaffolding this table on a client base IS a schema change. On any client base (CC / EA / THFH / Example Client), the scaffold fires all seven deliverables — design doc, script, /rubric pass, dry-run, apply, diff doc, Automation Inventory row, post-run analysis. Add as a dedicated "Client-base scaffolding" section that references `~/.claude/rules/seven-deliverables.md`.
+5. **Seven Deliverables trigger not called out.** Scaffolding this table on a client base IS a schema change. On any client base (CC / EA / EH / Example Client), the scaffold fires all seven deliverables — design doc, script, /rubric pass, dry-run, apply, diff doc, Automation Inventory row, post-run analysis. Add as a dedicated "Client-base scaffolding" section that references `~/.claude/rules/seven-deliverables.md`.
 
 6. **Script sequence not stated.** Scaffolding must be a script that goes `write → dry-run → /review → --apply → post-run`, not a live MCP call spree. Add to the same "Client-base scaffolding" section.
 

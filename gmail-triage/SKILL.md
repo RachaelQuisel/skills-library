@@ -1,6 +1,6 @@
 ---
 name: gmail-triage
-version: 1.0.2
+version: 1.0.3
 description: Triage Rachael's Gmail inbox — read unread threads, classify each into archive / draft / needs-you / sponsorship, apply the two-tier client-and-status label taxonomy, draft replies in her voice, and log every action to an append-only journal for undo and correction learning. Use when Rachael says "triage my inbox", "process my email", "clean up Gmail", "draft replies to the unread ones", "what needs me today", or invokes /gmail-triage. Runs on top of the loaded mcp__claude_ai_Gmail__* tools.
 ---
 
@@ -41,7 +41,7 @@ The Gmail MCP does not offer send, delete, unsubscribe, block, or report-spam op
 
 `needs-you` is scarce attention. Reserve it for people who pay Rachael or manage her. This ordering overrides every alias-routing default below.
 
-- **HIGH priority (`needs-you`-eligible)**: paying clients (Janine at CC, Teri at THFH, Jessica at EA), her XRAY colleagues (Mark, Dylan, Tom, Myron, person3@example.com), and active sales / prospect conversations. Reply to superiors and clients — people who pay Rachael — before anyone else.
+- **HIGH priority (`needs-you`-eligible)**: paying clients (Dana at CC, Chris at EH, Pat at EA), her XRAY colleagues (Mark, Dylan, Tom, Myron, person3@example.com), and active sales / prospect conversations. Reply to superiors and clients — people who pay Rachael — before anyone else.
 - **LOW priority (never `needs-you`)**: vendors and contractors Rachael pays — food planners (e.g., Hummingbird), cleaners, La Maison service providers, subscription vendors, anyone she is the customer of. If a reply is inferable and non-committal, `draft`. Otherwise `archive`. Rachael can respond or not; she does not need a reminder to reply to someone she pays.
 - **Zero attention (auto-archive)**: mail Rachael sent to herself between her own accounts (person4@example.com ↔ any `@xray.tech` address of hers, and back). She already knows about her own reminders. Do not flag, do not draft, do not report as `needs-you` — archive with the `triaged` marker and move on.
 
@@ -59,9 +59,9 @@ Only these labels. Do not create category labels for newsletters, receipts, prom
 
 **Client labels** (routing, applied alongside status):
 - `client/xray` — XRAY internal, Mark, Dylan, Tom, Myron, person3@example.com, `@xray.tech`
-- `client/thfh` — Chris Nolan Example, `@thehope*`, HOPE for Health
-- `client/cc` — Dana Whitfield, `@examplenonprofit.org`, Reese Calder, Sonia Byers, Courtnee Stone (AAPC)
-- `client/gol` — Pat Okafor, Lesley, Leilani, Oswaldo, `@exampleagency.org`, DCFS
+- `client/eh` — Chris Nolan Example, `@examplehealth*`, Example Health
+- `client/cc` — Dana Whitfield, `@examplenonprofit.org`, Reese Calder, Sasha Boyd, Corey Shaw (AAPC)
+- `client/ea` — Pat Okafor, Casey, Jules, Emerson, `@exampleagency.org`, DCFS
 - `personal/la-maison` — La Maison-related (Turno, guest inquiries, Google Apps Script auto-emails)
 - `personal/family` — family + medical + financial
 
@@ -75,9 +75,9 @@ On sender-domain or address match, apply the client label AND the tier hint. Thi
 |---|---|---|
 | Self-sent: `from:person4@example.com to:*@xray.tech` or reverse (Rachael writing to her own accounts) | (none) | **archive — never `needs-you`, never draft, never flag** |
 | `@xray.tech`, `person3@example.com`, mark/dylan/tom/myron (from someone OTHER than Rachael) | `client/xray` | needs-you if @mentions Rachael or asks a question; else draft-ready |
-| `janine*`, `@examplenonprofit.org`, patrick.paulson@, sonia@, courtnee@ | `client/cc` | needs-you (Janine cadence is Wed–Fri; batch drafts, don't send till window) |
-| `terih@*`, teri@thehope*, hope for health | `client/thfh` | needs-you (Teri is solo, no board) |
-| `person5@example.com`, `lesley*@`, oswaldo@, dcfs@ | `client/gol` | needs-you |
+| `dana*`, `@examplenonprofit.org`, reese.calder@, sasha@, corey@ | `client/cc` | needs-you (Dana cadence is Wed–Fri; batch drafts, don't send till window) |
+| `chrisn@*`, chris@examplehealth*, example health | `client/eh` | needs-you (Chris is solo, no board) |
+| `person5@example.com`, `casey*@`, emerson@, dcfs@ | `client/ea` | needs-you |
 | Vendors Rachael pays: Hummingbird (food planning), cleaners, La Maison service providers, subscription vendors, anyone she is the customer of | (none) | draft if reply inferable and non-committal, else archive — **never `needs-you`** |
 | `turno.com`, la-maison guest platforms, GAS auto-notifications | `personal/la-maison` | archive if auto-notification; needs-you if guest question |
 | known-family, medical, bank/financial (schwab, chase, etc.) | `personal/family` | needs-you |
@@ -157,7 +157,7 @@ Append one line per processed thread to `~/.claude/data/gmail-triage/actions.jso
 For drafts:
 
 ```json
-{"ts":"...","thread_id":"...","sender":"...","subject":"...","disposition":"draft","draft_id":"r-abc123","client_label":"client/thfh","reason":"Teri asked about cohort meeting reschedule"}
+{"ts":"...","thread_id":"...","sender":"...","subject":"...","disposition":"draft","draft_id":"r-abc123","client_label":"client/eh","reason":"Chris asked about cohort meeting reschedule"}
 ```
 
 Never rewrite past entries. Append only. This log is the source of truth for undo, aging escalation, and the correction loop.
@@ -205,7 +205,7 @@ Extra rules:
 - If nothing needs Rachael today: say exactly `Nothing needs you today. I hid N low-value emails.` and stop.
 - Do NOT include: inbox before-and-after counts, label-creation counts, "N corrections applied", "N threads processed". Log-flavor. Skip it.
 - Only mention creating a label if a label was actually created (real run, not dry-run).
-- If a thread involves a paying client, name the client in plain English: "Janine at Example Nonprofit" — not "client/cc" or "CC".
+- If a thread involves a paying client, name the client in plain English: "Dana at Example Nonprofit" — not "client/cc" or "CC".
 - If a thread came from Rachael herself (self-sent between her accounts): do NOT put it in the report at all. She already knows about it.
 - If a vendor Rachael pays wrote her (Hummingbird, cleaners, La Maison): only include if there's an actual draft written. Never in the "Reply today" section.
 

@@ -1,6 +1,6 @@
 ---
 name: normalize-csvs-for-airtable
-version: 1.0.2
+version: 1.0.3
 description: Normalize messy multi-year/multi-file CSVs into one import-ready CSV for Airtable. Use when the user shares historical spreadsheets (training trackers, attendance logs, applicant intake files, etc.) that need to land in an existing Airtable base, and the data has schema drift across years, inconsistent formatting, or unknown lookup values. Triggers on phrases like "normalize these CSVs", "migrate this spreadsheet to Airtable", "import historical data", "build a normalizer", "multi-year files", "CSV to Airtable", "data audit migration", "wide format", "mirror the source spreadsheet".
 tags:
   - skill
@@ -36,7 +36,7 @@ These are over-engineering traps. Skip them unless the user explicitly asks.
 
 - **Don't fuzzy-match in Python** to existing Airtable records. Import as text, then use Airtable's "convert field to linked record" feature, which auto-matches by name.
 - **Don't split outputs into normalized.csv + review.csv.** One CSV with a `Status` column (`ready` / `needs client review`) is simpler for the client to consume.
-- **Don't touch names** (`.strip()`, `.title()`, encoding repair, compound-surname splitting) unless the user explicitly says so. Preserve verbatim. This applies to trainer/lookup values too — case variants (`oswaldo` vs `Oswaldo`) carry signal about data-entry inconsistencies.
+- **Don't touch names** (`.strip()`, `.title()`, encoding repair, compound-surname splitting) unless the user explicitly says so. Preserve verbatim. This applies to trainer/lookup values too — case variants (`emerson` vs `Emerson`) carry signal about data-entry inconsistencies.
 - **Don't add Excel serial date conversion**, fancy regex, or speculative validators unless the data has many such cases.
 - **Don't dedupe automatically.** Flag duplicates; let a human decide.
 - **Don't add tests**, type hints, or argparse for one-off migration scripts. They're write-once.
@@ -61,7 +61,7 @@ These are over-engineering traps. Skip them unless the user explicitly asks.
 - Fill it in with the columns, types, and select options needed.
 - **Decide wide format vs long format — this is a real choice, not a default.**
   - **Wide format** = one row per parent entity (e.g., one row per trainee), with all sub-events as side-by-side columns (`Module 1 Date`, `Module 1 Trainer`, `Module 2 Date`, ...). **Use when:** the client reads the source spreadsheet day-to-day and recognizes its shape; the data is going into Airtable as a flat reference table; relational reporting isn't required.
-  - **Long format** = one row per sub-event (e.g., one row per module completion). **Use when:** the destination is a relational design with linked records to library tables; analytics queries are the primary use case ("how many trainings did Oswaldo run in Q1?"); the source has many sub-events per row that vary widely.
+  - **Long format** = one row per sub-event (e.g., one row per module completion). **Use when:** the destination is a relational design with linked records to library tables; analytics queries are the primary use case ("how many trainings did Emerson run in Q1?"); the source has many sub-events per row that vary widely.
   - **Default:** ask the user which they prefer. Don't assume long. The EA migration started long, then pivoted to wide because the client recognized the source-spreadsheet shape — that pivot is expensive to do mid-script, so confirm upfront.
 
 ### Step 4 — Confirm schema with the user before writing code

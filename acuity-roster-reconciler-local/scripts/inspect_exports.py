@@ -14,7 +14,7 @@ from pathlib import Path
 import re
 import tempfile
 
-GROUPS = ('gol-applications', 'gol-renewals', 'diup-applications', 'diup-renewals')
+GROUPS = ('ea-applications', 'ea-renewals', 'partner-applications', 'partner-renewals')
 BINTI_REQUIRED = {'Binti application id', 'CBOs', 'Status', 'Application template', 'Applicant name'}
 ACUITY_REQUIRED = {'First Name', 'Last Name', 'Phone', 'Email'}
 
@@ -64,10 +64,10 @@ def person_present(row: dict, prefix: str) -> bool:
 def row_groups(row: dict) -> tuple[list[str], list[str]]:
     cbo = row.get('CBOs', '').casefold()
     organizations = []
-    if re.search(r'\bguardians\s+of\s+love\b', cbo):
-        organizations.append('gol')
-    if re.search(r'\bdangerfield\s+institute\b', cbo):
-        organizations.append('diup')
+    if re.search(r'\bexample\s+agency\b', cbo):
+        organizations.append('ea')
+    if re.search(r'\bpartner\s+agency\s+institute\b', cbo):
+        organizations.append('partner')
     warnings = []
     if not organizations:
         warnings.append('No recognized EA or PARTNER organization; clarify the source.')

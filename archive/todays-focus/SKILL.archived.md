@@ -68,7 +68,7 @@ From the gathered data, extract actionable tasks. A task is actionable if it has
 
 For each potential task, capture:
 - **What**: one-sentence description of the deliverable
-- **Project**: which client/project it belongs to (use memory for context — AYMG, Example Nonprofit, XRAY internal, personal, etc.)
+- **Project**: which client/project it belongs to (use memory for context — EMG, Example Nonprofit, XRAY internal, personal, etc.)
 - **Source**: where you found it (Notion page title, calendar event, etc.)
 - **Effort estimate**: in minutes (15, 30, 60, 90, 120, 180)
 - **Deadline signal**: is there an explicit deadline? how soon?
@@ -191,7 +191,7 @@ Keep the chat response concise. The Notion page is the artifact; don't duplicate
 - The user can paste Apple Notes or other context directly into chat — treat that as primary input
 
 **Active project context from memory:**
-- AYMG (AY Media Group): Lee Tran, ad operations migration, Fillout → Airtable → QuickBooks pipeline
+- EMG (Example Media Group): Lee Tran, ad operations migration, Fillout → Airtable → QuickBooks pipeline
 - Example Nonprofit: Dana Whitfield, student lifecycle, Phase 5, Zapier/Airtable debugging
 - XRAY internal: templates, office hours, skills, documentation
 - Personal: La Maison property, fitness goals, community projects

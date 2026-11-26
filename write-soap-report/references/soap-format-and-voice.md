@@ -10,7 +10,7 @@ A post-session recap of XRAY consulting work for a client. Borrowed from the cli
 
 ### Subjective: the client's situation in their framing
 The presenting problem. What the client needed, why, and the state of things going in. Written from the client's perspective but in Rachael's plain voice. One to two tight paragraphs.
-- Example: "Teri's Complete Program Flow document, the comprehensive reference for how the THFH Portal Airtable base works, was out of date. Several fields documented didn't actually exist in the live base... Teri needed the document corrected to reflect reality and professionally branded."
+- Example: "Chris's Complete Program Flow document, the comprehensive reference for how the EH Portal Airtable base works, was out of date. Several fields documented didn't actually exist in the live base... Chris needed the document corrected to reflect reality and professionally branded."
 - Name the real problem. Don't soften it into vague consultant-speak.
 
 ### Objective: what was actually done / covered
@@ -45,7 +45,7 @@ From the SOAP example memory + Rachael's standing feedback memories. Apply all o
 - **Inclusive terminology:** "main" not "master"; "complete" not "clean"; always "needs to be fixed," never "needs fixing."
 - **Client-facing data language:** prefer "normalize/normalization" over "clean/cleaning."
 - **No throat-clearing**, no neutral hedging commentary.
-- **Footer tagline is "Workflow Automation That Works"**: never "actually." (Old THFH scripts wrote "That Actually Works"; that's wrong, do not reproduce it.)
+- **Footer tagline is "Workflow Automation That Works"**: never "actually." (Old EH scripts wrote "That Actually Works"; that's wrong, do not reproduce it.)
 - If the humanizing skill is run over the draft, apply all feedback memories (terminology, grammar) too.
 
 ## Content-dict schema (for build_soap.py)
@@ -54,17 +54,17 @@ The build script renders this dict. Blocks are rendered in order. Block types:
 
 ```python
 CONTENT = {
-    "client": "The HOPE for Health (Chris Nolan Example)",   # subtitle on title page
+    "client": "Example Health (Chris Nolan Example)",   # subtitle on title page
     "date": "March 16, 2026",
     "duration": "3 hours (async)",
     "consultant": "Rachael Quisel, XRAY",
     # Required on every SOAP. Subject order: Client | Rachael Quisel | Company | Date | Project (1-2 words).
     # description <=255 chars (Word Description field cap; builder truncates as a safety net).
-    "subject": "Chris Nolan Example | Rachael Quisel | The HOPE for Health | March 16, 2026 | Partner Portal",
+    "subject": "Chris Nolan Example | Rachael Quisel | Example Health | March 16, 2026 | Partner Portal",
     "description": "Async session: schema audit, program-flow doc correction, and XRAY branding.",
     "sections": [
         {"heading": "Subjective", "blocks": [
-            {"body": "Teri's Complete Program Flow document ..."},
+            {"body": "Chris's Complete Program Flow document ..."},
         ]},
         {"heading": "Objective", "blocks": [
             {"h2": "1. Full Airtable Base Schema Audit"},
@@ -74,7 +74,7 @@ CONTENT = {
             {"bullet": "checkbox on Volunteers table - doesn't exist", "bold": "Welcome Email Sent? "},
             {"h2": "Deliverables Produced"},
             {"table": {"headers": ["File", "Location"],
-                       "rows": [["THFH-Program-Flow.docx", "~/Claude-Work/CLIENTS/.../soap-reports/"]]}},
+                       "rows": [["EH-Program-Flow.docx", "~/Claude-Work/CLIENTS/.../soap-reports/"]]}},
         ]},
         {"heading": "Assessment", "blocks": [
             {"body": "The document is now a single-source-of-truth reference. The key value adds:"},
@@ -82,7 +82,7 @@ CONTENT = {
         ]},
         {"heading": "Plan", "blocks": [
             {"h2": "Immediate Next Steps"},
-            {"numbered": "for review - validate the status indicators.", "bold": "Share updated document with Teri "},
+            {"numbered": "for review - validate the status indicators.", "bold": "Share updated document with Chris "},
             {"h2": "Upcoming Build Items (prioritized)"},
             {"numbered": "- Make.com scenario triggered by the checkbox.", "bold": "Zoom meeting scheduling automation "},
             {"h2": "Document Maintenance"},

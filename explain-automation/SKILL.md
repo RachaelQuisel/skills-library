@@ -1,7 +1,7 @@
 ---
 name: explain-automation
-version: 1.0.1
-description: Turn an Airtable automation into a plain-English explainer and share it with the client. Reads the automation's real configuration, writes a no-jargon education doc in bullet points (trigger, inputs, steps in order, outputs, what happens when it fires), and posts it to the client's Slack huddle channel with a threaded reply carrying the direct automation links and a step-by-step breakdown. Use this whenever the user asks to explain an automation, educate the client on an automation, document what an automation does, write an automation explainer, post an automation explainer to Slack, or announce that an automation went live — even if they only say "tell the team what this does" or "write this up for Janine."
+version: 1.0.2
+description: Turn an Airtable automation into a plain-English explainer and share it with the client. Reads the automation's real configuration, writes a no-jargon education doc in bullet points (trigger, inputs, steps in order, outputs, what happens when it fires), and posts it to the client's Slack huddle channel with a threaded reply carrying the direct automation links and a step-by-step breakdown. Use this whenever the user asks to explain an automation, educate the client on an automation, document what an automation does, write an automation explainer, post an automation explainer to Slack, or announce that an automation went live — even if they only say "tell the team what this does" or "write this up for Dana."
 ---
 
 # Explain Automation
@@ -38,7 +38,7 @@ One section per automation. Give each a plain-English nickname that says what it
 This goes to non-technical client staff, in Rachael's voice:
 
 - No jargon. Banned words: trigger record, webhook, API, field ID, base, workflow, config, deploy, sync, integration. Say checkbox, task, label, record, list instead. "Automation" itself is fine.
-- Plain names for people ("Brittany and Janine"), never Slack @-tags.
+- Plain names for people ("Tatum and Dana"), never Slack @-tags.
 - No em dashes; use commas or semicolons. No all caps. No adverbs ending in -ly. Avoid: ensure, utilize, leverage, streamline, robust, "always"/"never" as absolutes.
 - No emojis unless the user asks.
 - Complete sentences, warm and direct. Assume the reader is smart but has never opened an automation editor.
@@ -51,8 +51,8 @@ Channel reference (the hyphen in the Example Nonprofit channel is intentional):
 
 | Client           | Channel                  | Channel ID  |
 |------------------|--------------------------|-------------|
-| Example Nonprofit | #huddle_coding-clarified | C0EXAMPLE02 |
-| AY Media         | #huddle_aymedia          | C0EXAMPLE03 |
+| Example Nonprofit | #huddle_example-nonprofit | C0EXAMPLE02 |
+| Example Media         | #huddle_examplemedia          | C0EXAMPLE03 |
 
 ## Step 4 — Post the main message
 
