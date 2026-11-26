@@ -26,8 +26,8 @@ import argparse, datetime as dt, hashlib, json, pathlib, re, subprocess, sys
 
 RENAMES = {  # old skill name -> current canonical name
     "artifact": "build-page-publisher-local",
-    "auto": "automation-explainer-local",
-    "education": "how-it-works-doc-writer-local",
+    "automation-explainer-local": "auto",
+    "how-it-works-doc-writer-local": "education",
 }
 BOILERPLATE = ("Purpose in plain English", "How to explain the result", "Following the process")
 SKIP_SOURCES = {"anthropic", "anthropic-example"}

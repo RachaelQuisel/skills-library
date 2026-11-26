@@ -1,6 +1,6 @@
 ---
 name: education
-version: 1.4.6
+version: 1.4.7
 description: Write a full PM-quality education document for a bigger automation using the 11-section HOW-IT-WORKS structure (Quick Read for the daily operator, gates, race guard, pipeline diagram, common errors, design decisions, files, open items). Use when Rachael types "/education," when she says "write a full education doc for [feature]," "PM-quality doc," "HOW-IT-WORKS doc for [automation]," "the deep education doc," "write education for [client] on [feature]," "explain [feature] to Janine/Teri/Jessica," or right after a substantial build ships and the client needs a doc that survives handoff to a new operator or engineer. Distinct from /auto (which is the fast bullet version for smaller automations).
 ---
 
@@ -21,7 +21,7 @@ Use the process below. Preserve its conditions, commands, checks, and approval r
 
 Write a full education document for the automation Rachael names (or the one that just shipped in this session). This is the deep version, the single source of truth a client can hand to a new operator, an engineer, or an owner. Follow the 11-section structure below exactly.
 
-For a fast bullet version (six sections, one-page-ish), use `/automation-explainer-local` instead.
+For a fast bullet version (six sections, one-page-ish), use `/auto` instead.
 
 **Exemplar to match in tone, density, and shape:** `/Users/rachaelquisel/Claude-Work/CLIENTS/AY Media_Jay_Danzy/zapier-qb-webhook/HOW-IT-WORKS-push-to-quickbooks.md` (the AYMG push-to-QuickBooks doc). The Quick Read at the top of that doc is written for Casandra, the daily operator; every other client's doc gets a Quick Read written for that client's daily operator (Janine for Example Nonprofit, Jessica for Example Agency, Teri for The HOPE for Health, whoever it is). The name in the Quick Read section header changes per doc.
 
