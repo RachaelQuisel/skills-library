@@ -4,6 +4,15 @@ A library of **AI agent skills** for Claude Code — modular, self-contained ins
 
 Each skill lives in its own folder and contains a `SKILL.md` plus optional `references/`, `scripts/`, and `assets/`.
 
+## Where things live
+
+- This repo is the one public home for every skill. Each skill has one folder at the top level.
+- Each plugin has its own repo. `.claude-plugin/marketplace.json` installs each of those plugins from its repo.
+- A skill that ships inside a plugin is edited here. The same change is then copied to the plugin's repo. No script makes that copy yet.
+- Ten plugins still have a folder in `plugins/`. Eight of them have no repo of their own yet: `automation-briefing`, `automation-catalog`, `automation-catalog-failure-check`, `client-docs`, `find-fix-mistakes`, `independent-check`, `skillkeeper` and `zite-prompt`. The other two, `github-portfolio-builder` and `github-portfolio-review`, have repos with a different layout.
+- Client names, people's names, email addresses, phone numbers and workspace IDs in this repo are dummy data.
+- A skill that needs real private details has a private version in a private repo.
+
 ## Skillkeeper plugin
 
 [Skillkeeper](plugins/skillkeeper/README.md) packages the maintained-skills routine as a private Claude Code plugin. It inventories skill ownership and versions, preserves sanitized regression cases, separates offline checks from live compatibility evidence, prepares controlled updates and rollbacks, and explains failures without guessing their cause.
