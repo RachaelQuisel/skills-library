@@ -11,7 +11,7 @@ Date: 2026-04-22
 | `SKILL.md` | Skill manifest Claude reads to pick this up when invoked |
 | `format.py` | Pure stdlib Python cleaner |
 | `README.md` | Human-readable doc with rationale and examples |
-| `tests/input.messy.txt` | Real-world messy paste (the AYMG recap from earlier) |
+| `tests/input.messy.txt` | Real-world messy paste (the EMG recap from earlier) |
 | `tests/expected.txt` | Golden output for regression checks |
 | `POST-RUN-ANALYSIS.md` | This file |
 
@@ -20,12 +20,12 @@ XRAY task created, accepted, and linked to Internal Operations:
 
 ## End-to-end result
 
-Input: the AYMG terminal-wrapped paste with ⏺ glyph, 1-space uniform indent,
+Input: the EMG terminal-wrapped paste with ⏺ glyph, 1-space uniform indent,
 em dashes, mid-paragraph line wraps, and a trailing bullet continuation.
 
 Output (after `format.py`):
 ```
-Spent most of the week deep in AYMG's database cleanup. Here's where it landed:
+Spent most of the week deep in EMG's database cleanup. Here's where it landed:
 
 - Split line items out from contracts so each one is its own record
 - Stood up two new tables: Agencies and Advertisers, both linked to Contacts
@@ -76,7 +76,7 @@ but worth noting if anyone re-creates the golden by hand.
   search `CLIENTS/` and `PROJECTS/` first and ask before creating anything
   new. Ties back to Rachael's filing preference.
 - **Tests are real messy input**, not synthetic. The golden was produced
-  from the actual AYMG paste, so regressions will show up against real data.
+  from the actual EMG paste, so regressions will show up against real data.
 
 ## How to regression-test in one line
 

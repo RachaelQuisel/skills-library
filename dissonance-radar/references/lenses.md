@@ -24,7 +24,7 @@ Load this when SKILL.md's brief version isn't enough — when a signal is border
 
 ### R — Roles misalignment
 
-**The shape:** Two people both think a task is theirs, OR neither thinks it's theirs, OR one is making decisions the other thinks are theirs. The transcript example Rachael named: Cassandra has the contract, the PM was brought in as a "liaison" but thought his role was to manage the build. Two different role models, no shared agreement.
+**The shape:** Two people both think a task is theirs, OR neither thinks it's theirs, OR one is making decisions the other thinks are theirs. The transcript example Rachael named: Skyler has the contract, the PM was brought in as a "liaison" but thought his role was to manage the build. Two different role models, no shared agreement.
 
 **Transcript tells:**
 - Two people approve/reject the same artifact differently

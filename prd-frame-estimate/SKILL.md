@@ -1,6 +1,6 @@
 ---
 name: prd-frame-estimate
-version: 1.4.7
+version: 1.4.8
 description: Produces the "Frame + Estimate" artifact that opens every PRD and every system design walkthrough, a single six-row block stating Given (quantified inputs), Non-goal (explicit out-of-scope), State (memory math), Ops (ops/s math), Hop (latency math), and Verdict (one-sentence punch line with the two ceilings). This is beats 1-2 of Rachael's five-signals framework (frame → estimate → design → defend → evolve). Use whenever Rachael starts a PRD, drafts a system design, says "frame and estimate," "put numbers on it," "before I draw," "numbers first," is prepping a design walkthrough or interview, or asks for the opening block of a PRD.
 ---
 

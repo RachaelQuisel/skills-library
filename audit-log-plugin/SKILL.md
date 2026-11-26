@@ -1,6 +1,6 @@
 ---
 name: audit-log-plugin
-version: 1.4.7
+version: 1.4.8
 description: >
   The automation run verifier reads the execute-skill pilot audit diary and
   reports Verified, Not achieved, or Unknown. Use when the user asks whether an

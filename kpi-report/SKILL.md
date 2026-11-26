@@ -1,6 +1,6 @@
 ---
 name: kpi-report
-version: 1.4.7
+version: 1.4.8
 description: >
   Generate an internal XRAY KPI reference document from a client discovery meeting transcript.
   Use this skill whenever a discovery transcript is provided and the goal is to extract or define
@@ -116,7 +116,7 @@ Things missing from the transcript that need answers before building. Use a numb
 Examples of the right level of detail:
 - "Client mentioned 'lead tracking' but didn't specify what qualifies as a lead, web form fill, phone call, referral?"
 - "No baseline metrics exist yet; will need to define what 'good' looks like before setting targets"
-- "Multiple roles mentioned (Jay, Jessica, Mike), unclear who owns KPI review and reporting"
+- "Multiple roles mentioned (Rowan, Pat, Mike), unclear who owns KPI review and reporting"
 
 ---
 
@@ -160,7 +160,7 @@ Save the KPI report to the canonical MONTHLY-CLIENTS location for the client:
 `~/Claude-Work/CLIENTS/<CLIENT_FOLDER>/Documents/kpi-report/<build>/kpi-report.md`
 
 Where:
-- `<CLIENT_FOLDER>` is the existing client folder name (e.g., `Coding_Clarified_Janine_Whitfield`, `Guardians_of_Love_Jessica_Peoples`, `The_HOPE_for_Health_Teri_Hall`)
+- `<CLIENT_FOLDER>` is the existing client folder name (e.g., `Example_Nonprofit_Dana_Whitfield`, `Example_Agency_Pat_Okafor`, `Example_Health_Chris_Nolan`)
 - `<build>` is the kebab-case build identifier (e.g., `2026-07-build`, `enrollment-agreement-flow`)
 
 One KPI report per build. Fixed filename `kpi-report.md` so it matches the canonical MONTHLY-CLIENTS name for the GitHub push.

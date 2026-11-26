@@ -1,6 +1,6 @@
 ---
 name: load
-version: 1.0.2
+version: 1.0.3
 description: Load the five ABOUT-ME files (about-me, my-voice, my-rules, shipping-queue, working-with-claude-best-practices) so every reply that follows is grounded in Rachael's context. Use when Rachael types "/load," when the SessionStart hook did not fire, after "/clear" or context compaction, or any time the about-me-gate hook reports that one of the five files is missing from context.
 ---
 
@@ -49,7 +49,7 @@ After all five Reads land, print exactly this four-line block (no more, no less)
 ```
 Loaded ABOUT-ME (5 files).
 Today: <YYYY-MM-DD from the system prompt's currentDate>.
-Active clients: <comma-separated list from about-me.md's Current Clients section — client short names only, e.g., THFH, CC, EA>.
+Active clients: <comma-separated list from about-me.md's Current Clients section — client short names only, e.g., EH, CC, EA>.
 Next to ship: <title of the top item under "## Open — needs to ship" in shipping-queue.md, verbatim>.
 ```
 

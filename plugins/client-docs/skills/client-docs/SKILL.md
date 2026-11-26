@@ -1,6 +1,6 @@
 ---
 name: client-docs
-version: 1.4.7
+version: 1.4.8
 description: Decide which canonical client docs a session's work belongs in, and which skill writes each one, for the 8 canonical files per build (prd, vision-and-scope, build-plan, kpi-report, interface-prompts, user-stories, decisions, changelog) in each client's XRAY-INC GitHub repo. Use when the user says "update client docs", "document this build", "which docs need updating", "backfill the client docs", when a client build ships something worth documenting across several docs, or when the /deliver checklist reaches its docs step. For a single doc, the matching client-doc-* skill is the better fit.
 ---
 

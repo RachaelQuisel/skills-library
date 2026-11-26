@@ -6,25 +6,25 @@ Real HOW-IT-WORKS documents Rachael has written. Use these as reference for tone
 
 For an automation with one trigger, a small number of steps, and no operator decision-making.
 
-- `~/Claude-Work/CLIENTS/AY Media_Jay_Danzy/Automations/QB Downstream/HOW-IT-WORKS-qb-invoice-number-writeback.md` - writeback step inside a Zap, five sections, no Quick Read needed.
+- `~/Claude-Work/CLIENTS/Example Media_Rowan_Ellis/Automations/QB Downstream/HOW-IT-WORKS-qb-invoice-number-writeback.md` - writeback step inside a Zap, five sections, no Quick Read needed.
 
 ## Medium (8–10 sections, ~100–200 lines)
 
 For an automation with a single trigger but multiple decision points, gates, or downstream effects.
 
-- `~/Claude-Work/CLIENTS/AY Media_Jay_Danzy/Automations/Contract Signing/HOW-IT-WORKS-contract-signing-fetch.md`
-- `~/Claude-Work/CLIENTS/AY Media_Jay_Danzy/Automations/Contract Signing/HOW-IT-WORKS-contract-signing-save-signature.md`
-- `~/Claude-Work/CLIENTS/AY Media_Jay_Danzy/Automations/QB Downstream/HOW-IT-WORKS-link-qb-transactions.md`
-- `~/Claude-Work/CLIENTS/AY Media_Jay_Danzy/Automations/QB Downstream/HOW-IT-WORKS-contract-approved-on-qb-webhook.md`
-- `~/Claude-Work/CLIENTS/AY Media_Jay_Danzy/Automations/Editorial Story/HOW-IT-WORKS-story-timeline-start-from-assignment.md`
-- `~/Claude-Work/CLIENTS/AY Media_Jay_Danzy/Automations/Editorial Story/HOW-IT-WORKS-story-yellow-flag-two-days-out.md`
-- `~/Claude-Work/CLIENTS/Coding_Clarified_Janine_Whitfield/Automations/csv-export-bb-genius-link/HOW-IT-WORKS-csv-bb-link.md`
+- `~/Claude-Work/CLIENTS/Example Media_Rowan_Ellis/Automations/Contract Signing/HOW-IT-WORKS-contract-signing-fetch.md`
+- `~/Claude-Work/CLIENTS/Example Media_Rowan_Ellis/Automations/Contract Signing/HOW-IT-WORKS-contract-signing-save-signature.md`
+- `~/Claude-Work/CLIENTS/Example Media_Rowan_Ellis/Automations/QB Downstream/HOW-IT-WORKS-link-qb-transactions.md`
+- `~/Claude-Work/CLIENTS/Example Media_Rowan_Ellis/Automations/QB Downstream/HOW-IT-WORKS-contract-approved-on-qb-webhook.md`
+- `~/Claude-Work/CLIENTS/Example Media_Rowan_Ellis/Automations/Editorial Story/HOW-IT-WORKS-story-timeline-start-from-assignment.md`
+- `~/Claude-Work/CLIENTS/Example Media_Rowan_Ellis/Automations/Editorial Story/HOW-IT-WORKS-story-yellow-flag-two-days-out.md`
+- `~/Claude-Work/CLIENTS/Example_Nonprofit_Dana_Whitfield/Automations/csv-export-bb-genius-link/HOW-IT-WORKS-csv-bb-link.md`
 
 ## Long and complex (11+ sections, 200+ lines)
 
 For an automation that is actually a system, multiple triggers, multiple scenarios, daily operator-facing decisions, several failure modes.
 
-- `~/Claude-Work/CLIENTS/Guardians_of_Love_Jessica_Peoples/Automations/acuity-training-sync/HOW-IT-WORKS-acuity-training-sync.md` - the canonical long-form example. Includes Quick Read, four trigger scenarios, what-success-looks-like and what-review-needed-looks-like tables, gates, failure modes, architect rationale, open items.
+- `~/Claude-Work/CLIENTS/Example_Agency_Pat_Okafor/Automations/acuity-training-sync/HOW-IT-WORKS-acuity-training-sync.md` - the canonical long-form example. Includes Quick Read, four trigger scenarios, what-success-looks-like and what-review-needed-looks-like tables, gates, failure modes, architect rationale, open items.
 
 ## What to copy from each
 

@@ -1,6 +1,6 @@
 ---
 name: format
-version: 1.0.1
+version: 1.0.2
 description: Cleans up messy pasted text (terminal word-wrap artifacts, trailing spaces, em dashes, collapsed blank lines) or a .md document and saves it as a well-formatted .txt file in the right folder under /Users/rachaelquisel/Claude-work/. Use when the user says "format this", "/format", "clean up this text", "turn this into a txt", "remove terrible spacing", or pastes output with obvious wrap artifacts and asks for a file.
 tags:
   - skill
@@ -40,7 +40,7 @@ Takes pasted messy text or a `.md` file, strips the garbage, and files a clean `
    - Replaces em/en dashes with `:`, `,`, or a sentence break (per Rachael's feedback memory — no em dashes).
    - Collapses runs of 3+ blank lines down to one.
 3. Finds the right destination folder by searching `Claude-work/CLIENTS/` and `Claude-work/PROJECTS/` for a folder matching the subject of the text.
-4. Names the file with a date stamp matching the convention already in use in the target folder (e.g., `aymg-update-2026-04-22.txt`).
+4. Names the file with a date stamp matching the convention already in use in the target folder (e.g., `emg-update-2026-04-22.txt`).
 5. Writes the cleaned `.txt` and reports back the filename and path.
 
 ## Filing rules (important)
@@ -81,18 +81,18 @@ Routing procedure:
 
 ## How to invoke
 
-Worked example: cleaning the AYMG ad-to-editorial-linking teaching doc.
+Worked example: cleaning the EMG ad-to-editorial-linking teaching doc.
 
-Source: `/Users/rachaelquisel/Claude-Work/CLIENTS/AY Media_Jay_Danzy/teaching/ad-to-editorial-linking-aymg-teaching-doc.md`
-Output: `/Users/rachaelquisel/Claude-Work/CLIENTS/AY Media_Jay_Danzy/teaching/ad-to-editorial-linking-aymg-teaching-doc.txt`
+Source: `/Users/rachaelquisel/Claude-Work/CLIENTS/Example Media_Rowan_Ellis/teaching/ad-to-editorial-linking-emg-teaching-doc.md`
+Output: `/Users/rachaelquisel/Claude-Work/CLIENTS/Example Media_Rowan_Ellis/teaching/ad-to-editorial-linking-emg-teaching-doc.txt`
 
-The folder already exists (`teaching/` under the AYMG client folder), the slug is kebab-case, and the doc is a living teaching reference — no date stamp.
+The folder already exists (`teaching/` under the EMG client folder), the slug is kebab-case, and the doc is a living teaching reference — no date stamp.
 
 ```bash
 # From a file (the worked example above)
 python3 /Users/rachaelquisel/.claude/skills/format/format.py \
-    --input "/Users/rachaelquisel/Claude-Work/CLIENTS/AY Media_Jay_Danzy/teaching/ad-to-editorial-linking-aymg-teaching-doc.md" \
-    --output "/Users/rachaelquisel/Claude-Work/CLIENTS/AY Media_Jay_Danzy/teaching/ad-to-editorial-linking-aymg-teaching-doc.txt"
+    --input "/Users/rachaelquisel/Claude-Work/CLIENTS/Example Media_Rowan_Ellis/teaching/ad-to-editorial-linking-emg-teaching-doc.md" \
+    --output "/Users/rachaelquisel/Claude-Work/CLIENTS/Example Media_Rowan_Ellis/teaching/ad-to-editorial-linking-emg-teaching-doc.txt"
 
 # From stdin (paste piped through)
 python3 /Users/rachaelquisel/.claude/skills/format/format.py \

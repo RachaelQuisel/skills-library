@@ -68,7 +68,7 @@ This is what the `--since` flag on `snapshot` is for.
 
 When automation A's output is automation B's input is automation C's input, observers should be defined for each step's output, not just the chain's final output. Otherwise a silent mid-chain failure looks like a timing problem.
 
-Example: AYMG Contract push triggers Airtable Automation → Zapier Zap → QBO. Observers:
+Example: EMG Contract push triggers Airtable Automation → Zapier Zap → QBO. Observers:
 - `airtable` observer on Contract (Airtable Automation should stamp `fldLastQbPush` after webhook POST)
 - `zapier_task` observer on the Zap (manual export, did the Zap fire and succeed?)
 - `quickbooks` observer on Invoice (was the invoice created?)

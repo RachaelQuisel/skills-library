@@ -1,6 +1,6 @@
 ---
 name: update-projects
-version: 1.0.2
+version: 1.0.3
 description: Set up and reconcile Projects, Outcomes (Objectives), and Tasks for a client into XRAY's upstream Projects & Tasks at XRAY base (appExample0000004). Records sync down to per-client planning bases automatically. Use when Rachael says "set up the build plan in my planning base", "push the projects, outcomes, and tasks to Airtable", "the outcomes table is empty", "create the projects, outcomes, and tasks", "push the build doc to the planning base", or whenever she has a Project → Outcome → Task build doc and wants it reflected in her planning Airtable base. Also use to dedupe duplicated task records or reconcile a build doc against existing records.
 tags:
   - skill
@@ -160,7 +160,7 @@ For arbitrary date math (`DATETIME_DIFF`, `WORKDAY`), MCP's `isWithin` with `pas
 
 ## Reference scripts — deleted
 
-The scripts `setup-gol.py`, `push-remaining-tasks.py`, and `dedup-tasks.py` have been deleted from `references/`. They loaded `~/.config/xray/airtable-tasks-pat` (also deleted) and are gone from the filesystem. Do not attempt to restore them from git — restore them and you're re-introducing the PAT dependency this skill removed.
+The scripts `setup-ea.py`, `push-remaining-tasks.py`, and `dedup-tasks.py` have been deleted from `references/`. They loaded `~/.config/xray/airtable-tasks-pat` (also deleted) and are gone from the filesystem. Do not attempt to restore them from git — restore them and you're re-introducing the PAT dependency this skill removed.
 
 Only `field-schemas.md` and `diagnostic-playbook.md` remain under `references/`.
 

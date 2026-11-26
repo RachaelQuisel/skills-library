@@ -1,6 +1,6 @@
 ---
 name: fetch-tasks
-version: 1.4.7
+version: 1.4.8
 description: "Fetch tasks from the XRAY task hub (base appExample0000004), scoped to a client and an optional date window. Use when Rachael asks for her tasks, a client's open tasks, a sprint window, \"what's open for [client]\", or when a downstream skill such as build-sprint-summary or todays-focus needs task data. Client-agnostic: it confirms the client and never assumes a client list."
 ---
 

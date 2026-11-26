@@ -84,8 +84,8 @@ If `expected_outcomes` is empty AND `expected_error` is missing, refuse to save 
 
 ```json
 {
-  "name": "01-uams-happy-path",
-  "description": "UAMS contract has a linked Advertiser with QB Customer ID populated. v17 should walk the Advertiser link, find the customer, push the invoice, and stamp fldLastQbPush with SUCCESS.",
+  "name": "01-advertiser-happy-path",
+  "description": "Example Advertiser contract has a linked Advertiser with QB Customer ID populated. v17 should walk the Advertiser link, find the customer, push the invoice, and stamp fldLastQbPush with SUCCESS.",
   "input": {
     "record_id": "recExample0000152",
     "trigger_action": "check fldPushTrigger checkbox",

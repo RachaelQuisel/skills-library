@@ -9,13 +9,13 @@ The post-run analysis is the deliverable. Two equivalent ways to produce it:
 
 ```json
 {
-  "workflow": "aymg-qb-push-v17",
+  "workflow": "emg-qb-push-v17",
   "run_date": "2026-06-06",
   "inventory_notes": "audit-airtable-automations ran on 2026-06-05; v17 script read from local; Zapier task history exported manually for case 01 only.",
   "cases": [
     {
-      "name": "01-uams-happy-path",
-      "description": "UAMS contract; v17 walks Advertiser link, finds customer, pushes invoice.",
+      "name": "01-advertiser-happy-path",
+      "description": "Example Advertiser contract; v17 walks Advertiser link, finds customer, pushes invoice.",
       "verdict": "PASS",
       "expected_outcomes": [
         "fldLastQbPush contains SUCCESS on recExample0000152",

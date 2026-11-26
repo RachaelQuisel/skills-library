@@ -3,8 +3,8 @@
   "evals": [
     {
       "id": 1,
-      "prompt": "Did the AYMG v17 contract push work for UAMS recExample0000152? I just ran it through. Walk me through what fired and where it might have broken — pull current state, diff against expected outcomes, give me a verdict.",
-      "expected_output": "Triggers workflow-eval. Phase 1 inventory reads the v17 push script + existing audit output for appExample0000153. Phase 2 proposes cases including UAMS happy path, no-Advertiser red path, item-ref-202 error path, and idempotency. Phase 3 instructs user to snapshot via eval_helper.py before/after the trigger. Phase 4 produces POST_RUN_ANALYSIS.md with PASS / FAIL / UNVERIFIED per case + diff per observer.",
+      "prompt": "Did the EMG v17 contract push work for Example Advertiser recExample0000152? I just ran it through. Walk me through what fired and where it might have broken — pull current state, diff against expected outcomes, give me a verdict.",
+      "expected_output": "Triggers workflow-eval. Phase 1 inventory reads the v17 push script + existing audit output for appExample0000153. Phase 2 proposes cases including Example Advertiser happy path, no-Advertiser red path, item-ref-202 error path, and idempotency. Phase 3 instructs user to snapshot via eval_helper.py before/after the trigger. Phase 4 produces POST_RUN_ANALYSIS.md with PASS / FAIL / UNVERIFIED per case + diff per observer.",
       "files": []
     },
     {
@@ -15,7 +15,7 @@
     },
     {
       "id": 3,
-      "prompt": "Validate the CC enrollment automation end-to-end — Janine reports it's flaky. Some students get the welcome email, some don't. Need to figure out which step in the chain is breaking and for which subset of students.",
+      "prompt": "Validate the CC enrollment automation end-to-end — Dana reports it's flaky. Some students get the welcome email, some don't. Need to figure out which step in the chain is breaking and for which subset of students.",
       "expected_output": "Triggers workflow-eval. Phase 1 inventory identifies the chain (Gravity Forms submission → Airtable record create → Caseworker linking automation → Cohort assignment → welcome email). Phase 2 proposes cases that cover the suspected failure paths: missing Caseworker link, missing Cohort link, missing email field, manual-intervention-required records. Phase 3 walks user through pulling pre and post state for the last N enrollments. Phase 4 produces verdict identifying which step or which input shape produces the silent failures.",
       "files": []
     }

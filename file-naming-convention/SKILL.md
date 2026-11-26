@@ -1,6 +1,6 @@
 ---
 name: file-naming-convention
-version: 1.4.7
+version: 1.4.8
 description: >
   Apply this canonical filename pattern any time you save an artifact under
   ~/Claude-Work/CLIENTS/client/, apply it by default, don't wait for the
@@ -63,7 +63,7 @@ If the file's purpose is operational (a script that runs, a config that's read) 
 | CallNotes, MeetingPrep, Summary | `Transcripts/` or root | Use root for one-offs, `Transcripts/` if frequent |
 | Handoff, POST_RUN, Plan | `tasks/` | Alongside `todo.md`, `lessons.md` |
 | Audit, Brief, education docs | `Project Documentation/` | The reference shelf |
-| Client-team role education | `teaching/` | E.g., `aymg-learning-ae.md` |
+| Client-team role education | `teaching/` | E.g., `emg-learning-ae.md` |
 | Superseded prior version | `Archive/<original-subpath>` | Never delete; archive |
 
 One copy per artifact. If a Word export and PDF export of the same source exist, they share the base name with different extensions, they're the same artifact in different formats, not two separate artifacts.
@@ -74,10 +74,10 @@ One copy per artifact. If a Word export and PDF export of the same source exist,
 
 | Client | Code |
 |---|---|
-| AY Media | `AYMG` |
+| Example Media | `EMG` |
 | Example Nonprofit | `CC` |
 | Example Agency | `EA` |
-| The HOPE for Health | `THFH` |
+| Example Health | `EH` |
 | Terra FS | `TerraFS` |
 
 For a new client, define a code in PascalCase or uppercase and add it to the client's `README.md`.
@@ -116,7 +116,7 @@ Style: PascalCase, kebab-case, or mixed. Be specific over generic. Use `+` to se
 
 For Debriefs pulled from the XRAY Debrief Airtable, append `-<rec8>` (last 8 chars of the record ID) instead of a topic, uniqueness comes from the record ID:
 ```
-AYMG-Debrief-2026-05-20-ay-media-&-xray-weekly-check-in-pV8Lz0h6.md
+EMG-Debrief-2026-05-20-example-media-&-xray-weekly-check-in-pV8Lz0h6.md
 ```
 
 ### `-v<n>` (optional)
@@ -125,9 +125,9 @@ Omit by default. Add the moment a `v2` lands, then rename the original to `-v1` 
 
 For in-progress drafts (multiple iterations before publishing), use `-draft<n>` to signal pre-publish state:
 ```
-AYMG-Plan-2026-06-09-EmailAutomationFinalShip-draft1.md
-AYMG-Plan-2026-06-09-EmailAutomationFinalShip-draft2.md
-AYMG-Plan-2026-06-09-EmailAutomationFinalShip-v1.md   ← published
+EMG-Plan-2026-06-09-EmailAutomationFinalShip-draft1.md
+EMG-Plan-2026-06-09-EmailAutomationFinalShip-draft2.md
+EMG-Plan-2026-06-09-EmailAutomationFinalShip-v1.md   ← published
 ```
 
 ### `.ext` (required)
@@ -139,11 +139,11 @@ Match the actual format. Most common: `.md`. Also `.docx`, `.pdf`, `.html`, `.js
 ### Good
 
 ```
-AYMG-Handoff-2026-06-09-EmailAutomationShip+SchemaDocPass-v1.md
-AYMG-Debrief-2026-06-05-ay-media-weekly-ssbxCSaE.md
+EMG-Handoff-2026-06-09-EmailAutomationShip+SchemaDocPass-v1.md
+EMG-Debrief-2026-06-05-example-media-weekly-ssbxCSaE.md
 CC-MeetingPrep-2026-05-22-EnrollmentBlockerWalkthrough.md
 EA-Audit-2026-06-04-TrainingWorkflowSchemaDrift.md
-THFH-Transcript-2026-05-09.md
+EH-Transcript-2026-05-09.md
 TerraFS-POST_RUN-2026-06-02-ClaimResponseApply.md
 ```
 
@@ -151,11 +151,11 @@ TerraFS-POST_RUN-2026-06-02-ClaimResponseApply.md
 
 | Bad | Why it fails | Fix |
 |---|---|---|
-| `session_handoff.md` | No client, generic type, no date, no topic, no version, useless in Finder | `AYMG-Handoff-2026-06-09-<topic>-v1.md` |
-| `notes.md` | Tells nothing about who, what, or when | `AYMG-CallNotes-2026-06-09-<topic>.md` |
-| `transcript-call-notes-2026-04-02.md` | Wrong field order, conflated types, lowercase | `AYMG-Transcript-2026-04-02-<topic>.md` |
-| `aymg-handoff-2026-06-09.md` | Lowercase client code breaks alphabetical sort grouping | `AYMG-Handoff-2026-06-09-<topic>.md` |
-| `2026-06-09-handoff.md` | Date-first prevents grouping by client | `AYMG-Handoff-2026-06-09-<topic>.md` |
+| `session_handoff.md` | No client, generic type, no date, no topic, no version, useless in Finder | `EMG-Handoff-2026-06-09-<topic>-v1.md` |
+| `notes.md` | Tells nothing about who, what, or when | `EMG-CallNotes-2026-06-09-<topic>.md` |
+| `transcript-call-notes-2026-04-02.md` | Wrong field order, conflated types, lowercase | `EMG-Transcript-2026-04-02-<topic>.md` |
+| `emg-handoff-2026-06-09.md` | Lowercase client code breaks alphabetical sort grouping | `EMG-Handoff-2026-06-09-<topic>.md` |
+| `2026-06-09-handoff.md` | Date-first prevents grouping by client | `EMG-Handoff-2026-06-09-<topic>.md` |
 
 ## Renaming an existing badly-named file
 

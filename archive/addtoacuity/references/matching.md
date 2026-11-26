@@ -55,6 +55,6 @@ Keep the confidence of identity separate from the accuracy of contact details. A
 
 ## Review and creation decisions
 
-For each unresolved person, state the exact problem in plain English, list candidate names/links, and ask Jessica to confirm the correct person, current details, and whether a new client is actually needed. Avoid “duplicate” unless duplication is verified.
+For each unresolved person, state the exact problem in plain English, list candidate names/links, and ask Pat to confirm the correct person, current details, and whether a new client is actually needed. Avoid “duplicate” unless duplication is verified.
 
-A no-match becomes an eligible creation only after the source identity, required fields, live duplicate check, user authorization, and any requested Jessica review are satisfied. Do not substitute an application match, an activity flag, or an aggregate number for these checks.
+A no-match becomes an eligible creation only after the source identity, required fields, live duplicate check, user authorization, and any requested Pat review are satisfied. Do not substitute an application match, an activity flag, or an aggregate number for these checks.

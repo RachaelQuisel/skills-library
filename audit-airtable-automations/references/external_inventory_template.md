@@ -7,7 +7,7 @@
 #
 # The audit-airtable-automations skill reads this file and adds one record per
 # entry to the base's `Automation Inventory` table. Field names match the
-# canonical schema (EA / AYMG / CC pattern).
+# canonical schema (EA / EMG / CC pattern).
 
 base_id: appXXXXXXXXX  # the Airtable base these external automations touch
 

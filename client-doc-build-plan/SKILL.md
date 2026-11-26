@@ -1,6 +1,6 @@
 ---
 name: client-doc-build-plan
-version: 1.4.7
+version: 1.4.8
 description: Draft or update the canonical build-plan.md for a client build, structured as Projects, Outcomes, and Tasks. Reads from the tasks.xray.tech API when the project has outcomes and tasks; when it has none yet (a new client), drafts the plan from every meeting debrief and transcript for the client, with each claim verified against the recording. Use when Rachael says "build plan", "draft build-plan.md", "build plan for [client]", "buildplan", "build the plan from the transcripts", "what are the outcomes and tasks for [client]", or when the client-docs flow reaches build-plan.md.
 ---
 

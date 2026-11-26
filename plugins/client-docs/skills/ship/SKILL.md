@@ -1,6 +1,6 @@
 ---
 name: ship
-version: 1.4.7
+version: 1.4.8
 description: Run /education (deep 11-section markdown doc) then /build-page-publisher-local (shareable web page) back-to-back on one automation Rachael just deployed, then move the matching item in shipping-queue.md from Open to Shipped. Use when Rachael types "/ship [automation-name]," when she says "I just shipped X," "I deployed X, do the docs," "wrap up the docs for X," "post-ship docs for [automation]," or any variant that names one specific automation that just went live and needs both a filed doc, a shareable link, and its shipping-queue entry closed. Distinct from /deliver (which is the end-of-task checklist for tests + README + post-run).
 ---
 
@@ -35,7 +35,7 @@ Rachael's post-ship doc chain. When one automation goes live for a client, this 
 
 - **Automation name**: Rachael passes it as the argument to `/ship`. Example: `/ship push-invoice-to-quickbooks`. If she runs bare `/ship` with no argument, ask: "Which automation? Name it as it appears in the client's Automations folder."
 - **Client**: auto-detect from the current session context (which client folder was recently touched, which client the automation belongs to). If ambiguous, ask.
-- **Daily operator**: auto-detect from the client folder using the standard mapping: Example Nonprofit → Janine, The HOPE for Health → Teri, AY Media → Casandra. Example Agency has three plausible operators (Jessica, Leslie G, Oswaldo), ask once at the top of `/ship` which one the Quick Read is for, and the answer flows into both `/education` and `/build-page-publisher-local`. Do not let either downstream skill ask again.
+- **Daily operator**: auto-detect from the client folder using the standard mapping: Example Nonprofit → Dana, Example Health → Chris, Example Media → Skyler. Example Agency has three plausible operators (Pat, Casey M, Emerson), ask once at the top of `/ship` which one the Quick Read is for, and the answer flows into both `/education` and `/build-page-publisher-local`. Do not let either downstream skill ask again.
 
 ## Before starting
 

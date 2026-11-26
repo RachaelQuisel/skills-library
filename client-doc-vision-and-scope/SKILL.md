@@ -1,6 +1,6 @@
 ---
 name: client-doc-vision-and-scope
-version: 1.4.7
+version: 1.4.8
 description: >-
   Draft or update the canonical `vision-and-scope.md` file for a client build in the client's XRAY-INC repo. Four sections, plain English, client-readable: problem, vision, scope, non-goals (lighter than business-requirements or a PRD). Non-goals carry equal weight to goals: the discipline of the doc is naming what's OUT so the build doesn't balloon. Interview-driven, ~5 questions. Use when Rachael says "write vision and scope", "draft vision-and-scope.md", "scope this client build", "what's in and out of scope for this client build", "vision and scope for [client]", "vision-and-scope for [build]", "scope doc for [build]", "problem statement for this client build", or when the /deliver checklist reaches the vision-and-scope doc. Produces a four-section doc a client-side reader can follow.
 ---

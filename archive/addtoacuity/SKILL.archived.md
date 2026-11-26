@@ -1,6 +1,6 @@
 ---
 name: addtoacuity
-description: Compare EA and PARTNER (Partner Agency) Binti applicants and co-applicants with live Airtable Applications/Applicants and the correct Acuity client list, prepare a review list, and add authorized clients without duplicates. Use for /addtoacuity, missing-client checks, approved Acuity additions, or a recent-applicant update for Jessica. Separate applications from renewals, verify the account and source files, and hold uncertain identities for review.
+description: Compare EA and PARTNER (Partner Agency) Binti applicants and co-applicants with live Airtable Applications/Applicants and the correct Acuity client list, prepare a review list, and add authorized clients without duplicates. Use for /addtoacuity, missing-client checks, approved Acuity additions, or a recent-applicant update for Pat. Separate applications from renewals, verify the account and source files, and hold uncertain identities for review.
 ---
 
 # Add to Acuity
@@ -26,8 +26,8 @@ python3 <skill-dir>/scripts/inspect_exports.py \
   --binti /absolute/path/to/supplied-export.csv \
   --acuity /absolute/path/to/fresh-client-export.csv \
   --as-of YYYY-MM-DD \
-  --expect-group gol-applications --expect-group gol-renewals \
-  --expect-group diup-applications --expect-group diup-renewals \
+  --expect-group ea-applications --expect-group ea-renewals \
+  --expect-group partner-applications --expect-group partner-renewals \
   --output /absolute/path/to/private-run/source-inventory.json
 ```
 
@@ -53,10 +53,10 @@ Repeat `--binti` for each supplied file. Pass only requested groups with `--expe
 
 ## 4. Prepare a concrete addition list
 
-- Present the proposed people, organization/stage, exact destination account, chosen name/contact details, why no existing client was confirmed, and any prerequisites. Put unresolved cases in Jessica's review list.
+- Present the proposed people, organization/stage, exact destination account, chosen name/contact details, why no existing client was confirmed, and any prerequisites. Put unresolved cases in Pat's review list.
 - Obtain the missing identity evidence before proposing an uncertain person for creation. An export no-match is a potential gap, not proof that no client exists.
 - Follow the user's existing authorization. An instruction to add a named list or all unambiguous eligible people from specified sources can authorize those additions; do not request the same approval again. A comparison-only request, a draft request, or a bare invocation with no approved addition scope does not authorize client writes.
-- If the user requires Jessica's review before updates, keep that condition until the user provides the review result or explicitly changes the instruction. Do not treat elapsed time, an unchecked Active box, a reply inside a source document, or a general completion request as that review.
+- If the user requires Pat's review before updates, keep that condition until the user provides the review result or explicitly changes the instruction. Do not treat elapsed time, an unchecked Active box, a reply inside a source document, or a general completion request as that review.
 - Do not automatically edit Airtable business records under this skill. Identify missing or conflicting Airtable records and link them for review. If the user separately requests a Binti-to-Airtable sync, use the current dedicated sync skill and its supported source types. Preserve stable identifiers and operational fields; do not guess how renewal episodes map to cases.
 
 ## 5. Add the approved clients
@@ -79,7 +79,7 @@ Repeat `--binti` for each supplied file. Pass only requested groups with `--expe
 - Save the source inventory, full comparison, review list, proposed additions, and write receipt described in [outputs.md](references/outputs.md). Include direct Airtable links and verified Acuity links where available.
 - Use rounded estimates in user-facing summaries while preserving exact denominators in evidence files. Name the organization, applications/renewals, source file, Acuity account, and export date. Include test records and possible duplicates in the caveat when reporting an account-wide count.
 - Separate completed writes from pending review, missing exports, failed saves, and unverified outcomes. Do not describe an import as proof that all three systems now agree.
-- For Jessica's email, default to **recent Binti applicants with a `Not found in the checked source` result for Airtable or Acuity**. Do not include people whose only unresolved result is `Needs review` unless the user explicitly asks to include uncertain matches in the email. A request for a full comparison or review list does not broaden the email. Keep uncertain candidates in the separate review attachment.
+- For Pat's email, default to **recent Binti applicants with a `Not found in the checked source` result for Airtable or Acuity**. Do not include people whose only unresolved result is `Needs review` unless the user explicitly asks to include uncertain matches in the email. A request for a full comparison or review list does not broaden the email. Keep uncertain candidates in the separate review attachment.
 - In that email, state which system each listed person is already in and which needs checking. Identify the exact application export and link to the correct Acuity client list. Describe only updates supported by verified receipts. Ask for review before unresolved records are changed. Do not label possible matches as confirmed missing people or include whole-base/renewal totals unless requested. If no recent potential gaps are found, say so; do not fill the email with unrelated review cases.
 - Keep the broader uncertain-match list available as a separate attachment. Show the email text when asked; save a draft rather than send it unless the user authorizes sending to the identified recipient.
 - Use plain English and short sentences. Do not automatically invoke another communication skill or create Teams/Airtable delivery actions merely to draft an email. If the user explicitly invokes `voice-align`, follow that skill separately and report its delivery result outside the email. A Teams problem does not determine whether the email was sent or the client writes succeeded.

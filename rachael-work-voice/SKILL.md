@@ -1,6 +1,6 @@
 ---
 name: rachael-work-voice
-version: 1.0.3
+version: 1.0.4
 description: Apply Rachael's work voice when drafting client or staff communications - emails, Slack messages, follow-ups, awkward redirects, or any message where she needs to share a preference, limit, or change without naming it as one. Use when the user asks to draft, reply to, or rewrite a work message, or when she says things like "make it about them," "less generic," "share a [limit] without naming it," "make it more of an inquiry," or "own where I haven't been clear." Triggers on email drafting, client communication, internal staff messages, and any "how do I say this nicely" request related to work.
 ---
 
@@ -88,7 +88,7 @@ If she says any of these, this skill is the answer:
 
 ## Bucketed client-update emails ("here's what landed")
 
-For the monthly-retainer "here's what landed" update to Janine / Teri / Jessica, use the structure locked 2026-07-18 (see `examples/email-client-update-bucketed.txt` for the frozen exemplar):
+For the monthly-retainer "here's what landed" update to Dana / Chris / Pat, use the structure locked 2026-07-18 (see `examples/email-client-update-bucketed.txt` for the frozen exemplar):
 
 1. **Project frame** — one line naming which project buckets the updates fall under. Anchors the client to the roadmap, not a task list.
 2. **Per-bucket sections** — one section per work bucket. Section header on its own line. Under it: what landed with concrete counts, attached file references by name, follow-on state, new helper fields as → bullets, "More to follow" when incomplete.
@@ -107,7 +107,7 @@ Voice rules that apply on top of the eight moves for these emails:
 
 - `examples/email-redirect-over-nudging.txt`: redirecting a client's staff member who was over-nudging on items already in progress. Demonstrates ownership ("I don't think I've done a great job dialing this in"), inquiry over announcement, and slipping working style in as information.
 - `examples/email-multi-point-handoff-and-redirect.txt`: a three-point client email that bundles a portal handoff (the win), a point-of-contact inquiry, and a soft access-request redirect. Demonstrates leading with the win, anchoring the contact ask through a concrete option phrased as instinct, and owning the redirect on Rachael's side ("make sure nothing on my side is routing folks to the wrong portal") so the recipient isn't asked to explain herself.
-- `examples/email-client-update-bucketed.txt`: canonical "here's what landed" update to Janine (CC), 2026-07-18. Demonstrates the bucketed structure above: project frame → per-bucket sections with concrete counts + attached-file references + → helper-field bullets → client Team to-do with a decision point → verbatim example. Locked exemplar; do not edit.
+- `examples/email-client-update-bucketed.txt`: canonical "here's what landed" update to Dana (CC), 2026-07-18. Demonstrates the bucketed structure above: project frame → per-bucket sections with concrete counts + attached-file references + → helper-field bullets → client Team to-do with a decision point → verbatim example. Locked exemplar; do not edit.
 - `examples/email-client-starting-a-system-update.md`: update to a non-technical executive director (Example Client, 2026-10-26) when the work is just starting. Shows the rejected first draft, which read as finished and gave no reason or benefit, next to the approved version: what you're starting, why it's needed, what's done (named as a short-term safeguard), what's next, why it takes time, the benefit, and the client-only questions.
 - `examples/email-consultant-role-limit.txt`: email to a non-technical executive director (EA, 2026-10-28) after Rachael had to manually fix two data-entry issues at the Acuity booking stage. Shows that naming the consultant-role limit directly ("I'm going to stop going back to correct these one at a time") is okay when it ties to Rachael's hours and professional value, as long as the reason is specific and the door stays open to pushback. Softens the eight-moves rule "never name the move."
 

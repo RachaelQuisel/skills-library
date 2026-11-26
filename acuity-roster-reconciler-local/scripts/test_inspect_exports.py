@@ -31,28 +31,28 @@ class InventoryTests(unittest.TestCase):
         return path
 
     def test_four_groups_keep_missing_renewals_pending(self):
-        gol = self.source()
-        diup = self.source('diup.csv', **{'CBOs': 'Partner Agency Institute', 'Binti application id': 'case-2'})
+        ea = self.source()
+        partner = self.source('partner.csv', **{'CBOs': 'Partner Agency Institute', 'Binti application id': 'case-2'})
         renewal = self.source('renewal.csv', **{'CBOs': 'Partner Agency Institute', 'Status': 'In Renewal',
                                              'Application template': 'RFA Renewal', 'Binti application id': 'case-3',
                                              'Date of inquiry': '2020-01-01'})
-        result = m.build_inventory([gol, diup, renewal], None, date(2026, 9, 30), 30, list(m.GROUPS))
-        self.assertEqual(result['group_status']['gol-renewals'], 'pending')
-        self.assertEqual(result['group_status']['diup-renewals'], 'received')
-        self.assertIsNone(result['binti_files'][2]['groups']['diup-renewals']['recent_inquiry_occurrences'])
+        result = m.build_inventory([ea, partner, renewal], None, date(2026, 9, 30), 30, list(m.GROUPS))
+        self.assertEqual(result['group_status']['ea-renewals'], 'pending')
+        self.assertEqual(result['group_status']['partner-renewals'], 'received')
+        self.assertIsNone(result['binti_files'][2]['groups']['partner-renewals']['recent_inquiry_occurrences'])
         self.assertFalse(result['writes_authorized'])
 
     def test_recent_window_and_bom(self):
         path = self.source(**{'Co-applicant name': 'Example Coapplicant', 'Number of applicants': '2'})
         result = m.inspect_binti(path, date(2026, 9, 30), 30)
         self.assertEqual(result['applicant_occurrences'], 2)
-        self.assertEqual(result['groups']['gol-applications']['recent_inquiry_occurrences'], 2)
+        self.assertEqual(result['groups']['ea-applications']['recent_inquiry_occurrences'], 2)
         outside = self.source('outside.csv', **{'Date of inquiry': '2026-08-31'})
-        self.assertEqual(m.inspect_binti(outside, date(2026, 9, 30), 30)['groups']['gol-applications']['recent_inquiry_occurrences'], 0)
+        self.assertEqual(m.inspect_binti(outside, date(2026, 9, 30), 30)['groups']['ea-applications']['recent_inquiry_occurrences'], 0)
 
     def test_unknown_date_is_not_classified_as_old(self):
         result = m.inspect_binti(self.source(**{'Date of inquiry': 'unknown'}), date(2026, 9, 30), 30)
-        self.assertEqual(result['groups']['gol-applications']['inquiry_date_unknown_occurrences'], 1)
+        self.assertEqual(result['groups']['ea-applications']['inquiry_date_unknown_occurrences'], 1)
 
     def test_status_template_conflict_does_not_assign_group(self):
         result = m.inspect_binti(self.source(**{'Status': 'In Renewal'}), date(2026, 9, 30), 30)
@@ -69,10 +69,10 @@ class InventoryTests(unittest.TestCase):
         source = self.source()
         copy = self.root / 'same-export.csv'
         copy.write_bytes(source.read_bytes())
-        result = m.build_inventory([source, copy, source], None, date(2026, 9, 30), 30, ['gol-applications'])
+        result = m.build_inventory([source, copy, source], None, date(2026, 9, 30), 30, ['ea-applications'])
         self.assertEqual(len(result['binti_files']), 1)
         self.assertEqual(len(result['errors']), 2)
-        self.assertEqual(result['group_status']['diup-applications'], 'out of scope')
+        self.assertEqual(result['group_status']['partner-applications'], 'out of scope')
 
     def test_phone_decoding_shared_counts_and_blanks(self):
         path = self.root / 'clients.csv'
@@ -95,9 +95,9 @@ class InventoryTests(unittest.TestCase):
     def test_airtable_csv_is_not_mislabeled_binti(self):
         path = self.root / 'wrong.csv'
         path.write_text('Name,Active\nExample,1\n')
-        result = m.build_inventory([path], None, date(2026, 9, 30), 30, ['gol-applications'])
+        result = m.build_inventory([path], None, date(2026, 9, 30), 30, ['ea-applications'])
         self.assertTrue(result['errors'])
-        self.assertEqual(result['group_status']['gol-applications'], 'pending')
+        self.assertEqual(result['group_status']['ea-applications'], 'pending')
 
     def test_duplicate_headers_and_malformed_rows_are_rejected(self):
         for content in ['First Name,Last Name,Email,Phone,Email\na,b,c,d,e\n',

@@ -1,6 +1,6 @@
 ---
 name: make-it-sound-human
-version: 1.0.0
+version: 1.0.1
 description: Turn a technical report, data check, audit, comparison, or assistant-generated summary into a friendly, client-facing XRAY-branded PDF that reads like Rachael wrote it. The reader dislikes technology and reads at about an 8th-grade level. Use this whenever Rachael pastes a report and wants it "for the client," "in plain English," "for someone non-technical," "client-facing," "in my voice," or "to sound human." Examples include an Instinct check, an Airtable or Acuity comparison, a reconciliation, or a status report. Use it even if she does not say PDF or name this skill.
 ---
 
@@ -37,7 +37,7 @@ description: Turn a technical report, data check, audit, comparison, or assistan
     - Use a table with these columns: Name, Where it was, How many, Why I left it off.
     - Write each reason as a short, plain sentence.
     - Example: "These are the Zoom seed sign-ups that set up each class. They aren't people taking the class."
-    - Write about known entries with confidence. Known entries include test sign-ups, Zoom seeds, and staff such as Lesli. Rachael and the client both know what they are.
+    - Write about known entries with confidence. Known entries include test sign-ups, Zoom seeds, and staff such as Casey. Rachael and the client both know what they are.
     - State the new total.
     - State that nothing was changed or deleted in the original systems.
     - Recount every total after the removals.

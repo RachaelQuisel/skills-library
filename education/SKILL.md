@@ -1,7 +1,7 @@
 ---
 name: education
-version: 1.4.7
-description: Write a full PM-quality education document for a bigger automation using the 11-section HOW-IT-WORKS structure (Quick Read for the daily operator, gates, race guard, pipeline diagram, common errors, design decisions, files, open items). Use when Rachael types "/education," when she says "write a full education doc for [feature]," "PM-quality doc," "HOW-IT-WORKS doc for [automation]," "the deep education doc," "write education for [client] on [feature]," "explain [feature] to Janine/Teri/Jessica," or right after a substantial build ships and the client needs a doc that survives handoff to a new operator or engineer. Distinct from /auto (which is the fast bullet version for smaller automations).
+version: 1.4.8
+description: Write a full PM-quality education document for a bigger automation using the 11-section HOW-IT-WORKS structure (Quick Read for the daily operator, gates, race guard, pipeline diagram, common errors, design decisions, files, open items). Use when Rachael types "/education," when she says "write a full education doc for [feature]," "PM-quality doc," "HOW-IT-WORKS doc for [automation]," "the deep education doc," "write education for [client] on [feature]," "explain [feature] to Dana/Chris/Pat," or right after a substantial build ships and the client needs a doc that survives handoff to a new operator or engineer. Distinct from /auto (which is the fast bullet version for smaller automations).
 ---
 
 # education
@@ -23,7 +23,7 @@ Write a full education document for the automation Rachael names (or the one tha
 
 For a fast bullet version (six sections, one-page-ish), use `/auto` instead.
 
-**Exemplar to match in tone, density, and shape:** `/Users/rachaelquisel/Claude-Work/CLIENTS/AY Media_Jay_Danzy/zapier-qb-webhook/HOW-IT-WORKS-push-to-quickbooks.md` (the AYMG push-to-QuickBooks doc). The Quick Read at the top of that doc is written for Casandra, the daily operator; every other client's doc gets a Quick Read written for that client's daily operator (Janine for Example Nonprofit, Jessica for Example Agency, Teri for The HOPE for Health, whoever it is). The name in the Quick Read section header changes per doc.
+**Exemplar to match in tone, density, and shape:** `/Users/rachaelquisel/Claude-Work/CLIENTS/Example Media_Rowan_Ellis/zapier-qb-webhook/HOW-IT-WORKS-push-to-quickbooks.md` (the EMG push-to-QuickBooks doc). The Quick Read at the top of that doc is written for Skyler, the daily operator; every other client's doc gets a Quick Read written for that client's daily operator (Dana for Example Nonprofit, Pat for Example Agency, Chris for Example Health, whoever it is). The name in the Quick Read section header changes per doc.
 
 ## The Rules
 
@@ -32,7 +32,7 @@ For a fast bullet version (six sections, one-page-ish), use `/auto` instead.
 - Tight headings. Scannable tables. Every claim has a concrete example. Numbers where numbers exist.
 - Never "needs fixing." Always "needs to be fixed."
 - Refer to fields, tables, and records by their human-readable name in the doc body. Field IDs go in parens the first time a field is named in a section, or in the Files-and-Locations engineering tables where a developer would need them.
-- The Quick Read section is written for the daily operator by name. Auto-detect who from the client folder name, Example Nonprofit → Janine, Example Agency → Jessica, The HOPE for Health → Teri, AY Media → Casandra. Only ask Rachael if the client has more than one plausible daily operator (Example Agency has Jessica, Leslie G, and Oswaldo, ask which one the doc is for).
+- The Quick Read section is written for the daily operator by name. Auto-detect who from the client folder name, Example Nonprofit → Dana, Example Agency → Pat, Example Health → Chris, Example Media → Skyler. Only ask Rachael if the client has more than one plausible daily operator (Example Agency has Pat, Casey M, and Emerson, ask which one the doc is for).
 - Words that are Rachael's own vocabulary from her exemplar docs and stay: gates, hard guards, bypassable gates, Quick Read, race guard. These are not jargon in this context; she uses them herself.
 - Every doc includes all 11 sections. If a section genuinely does not apply to this automation (for example, section 4 Gates for an automation that has no safety checks), write the section header followed by one line: "Not applicable for this automation, [one plain-English sentence naming why, for example: 'this automation is a scheduled read-only report and has no conditions that would block it from running.']" Do not omit the header. The discipline of forcing the question is what makes the doc trustworthy.
 
@@ -67,7 +67,7 @@ Two possible shapes for this section, depending on what the automation actually 
 - **The Data It Moves**: use this shape if the automation does not assign numbers. Include a table of every field or value the automation reads from one place and writes to another, showing the source (system, table, field, field ID) and the destination (system, table, field, field ID).
 
 ### 6. The Pipeline
-An ASCII diagram showing the flow from the trigger through every step to the writeback. Use the AYMG exemplar's diagram shape, boxes for each system, arrows between them, one line per step inside each box. Name the actual systems in the section title:
+An ASCII diagram showing the flow from the trigger through every step to the writeback. Use the EMG exemplar's diagram shape, boxes for each system, arrows between them, one line per step inside each box. Name the actual systems in the section title:
 - If the flow is Airtable → Zapier → QuickBooks Online → writeback, the section title is "The Pipeline: Airtable → Zapier → QuickBooks Online."
 - If the flow is a form to Airtable to an email, the section title is "The Pipeline: Fillout → Airtable → Gmail."
 - Never write a generic title like "Source → Middleware → Destination." Always name the real systems.
@@ -83,7 +83,7 @@ If the automation is one-shot and there is no risk of two runs overlapping, repl
 The translation guide. Split into subsections:
 - **Gate halts**: the "you can fix this" errors. Table with `Message`, `What's wrong`, `How to fix`.
 - **Hard errors**: the "call an engineer" errors. Table with `Message`, `What's wrong`.
-- **Deep-dive on the top failure mode**: for whichever error has bitten the client most (in the AYMG exemplar, this was the "Invalid Reference Id" QB Item ID bug). Include the heuristic that finds the bad record fast, a table showing valid versus invalid patterns, remediation steps, and a real example from a real incident with dates and record IDs.
+- **Deep-dive on the top failure mode**: for whichever error has bitten the client most (in the EMG exemplar, this was the "Invalid Reference Id" QB Item ID bug). Include the heuristic that finds the bad record fast, a table showing valid versus invalid patterns, remediation steps, and a real example from a real incident with dates and record IDs.
 
 ### 9. For Owners and Architects
 The design-decisions section. Cover:
@@ -101,7 +101,7 @@ Bulleted list of the 4 to 6 things still on the to-do list, what's built and liv
 
 ## Optional Appendix
 
-**Appendix: How to provision a clean test [record type] for verification**: if the automation has a fixture setup that is not obvious (like the AYMG "provision a Test Contract via MCP with a real signed PDF" pattern), document the steps and the known-good fixture record IDs so the next session can re-run the same verification without re-figuring out the setup.
+**Appendix: How to provision a clean test [record type] for verification**: if the automation has a fixture setup that is not obvious (like the EMG "provision a Test Contract via MCP with a real signed PDF" pattern), document the steps and the known-good fixture record IDs so the next session can re-run the same verification without re-figuring out the setup.
 
 ## Header block for every doc
 
@@ -125,7 +125,7 @@ Save co-located with the automation's code:
 
 `~/Claude-Work/CLIENTS/<client>/Automations/<automation-name>/HOW-IT-WORKS-<automation-name>.md`
 
-If the automation lives in a top-level folder like the AYMG `zapier-qb-webhook/` folder, save it there. If there is no clear automation folder, save it under `Project Documentation/` using the same filename pattern.
+If the automation lives in a top-level folder like the EMG `zapier-qb-webhook/` folder, save it there. If there is no clear automation folder, save it under `Project Documentation/` using the same filename pattern.
 
 ## After saving
 

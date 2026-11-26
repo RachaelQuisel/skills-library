@@ -1,6 +1,6 @@
 ---
 name: dissonance-radar
-version: 1.0.3
+version: 1.0.4
 description: Surface high-leverage questions Rachael missed asking in one conversation or across recent client transcripts. Use when Rachael says "dissonance radar," "EOD review," "evening wrap-up," "what am I missing," "what didn't I ask," "what shifted today," "what should I be curious about," "review today's transcripts," or "did anything change today"; when operating or debugging the scheduled cloud Dissonance Radar; or when GitHub Actions reports that the Radar failed.
 ---
 
@@ -23,7 +23,7 @@ Use the process below. Preserve its conditions, commands, checks, and approval r
 
 Rachael's default mode is "radical agency" — she assumes any friction is hers to fix, takes on blame that isn't only hers, and doesn't ask the questions that would surface the actual dynamic. The classic miss: a stakeholder dropped out of meetings for a month and she didn't ask why. Turned out the stakeholder was frustrated with the build. She found out two weeks later via NotebookLM mining the transcripts.
 
-The skill is the pause button that catches what her default misses. **It produces questions, not statements.** Inward questions ("what should I be noticing?") and outward questions ("what should I ask Casandra?") — never drafts of outbound communication. The point is to spark dialogue, not to send messages.
+The skill is the pause button that catches what her default misses. **It produces questions, not statements.** Inward questions ("what should I be noticing?") and outward questions ("what should I ask Skyler?") — never drafts of outbound communication. The point is to spark dialogue, not to send messages.
 
 ## When to run
 
@@ -35,7 +35,7 @@ The skill is the pause button that catches what her default misses. **It produce
 The skill accepts any of:
 
 1. **Pasted transcript text** — Rachael drops a transcript directly in the prompt
-2. **File path(s)** — e.g. `~/Claude-Work/CLIENTS/CCRES_Dylan_Sumser/Transcripts/Example Client-Transcript-2026-08-25-XRAY_CCRES_Weekly.md`
+2. **File path(s)** — e.g. `~/Claude-Work/CLIENTS/Example_Client_Parker_Lane/Transcripts/Example Client-Transcript-2026-08-25-XRAY_Example_Client_Weekly.md`
 3. **Auto-discover recent (manual/local)** — when run with no input locally, run `~/Claude-Work/PROJECTS/dissonance-radar/prepare_sources.py`. It syncs Debrief first and returns files by meeting date for exactly Example Client, Example Nonprofit, and Example Agency.
 4. **Date-specific** — pass the requested date as both `--cutoff` and `--through` to `prepare_sources.py`
 
@@ -43,7 +43,7 @@ If multiple transcripts exist for today, process them as ONE batch so cross-clie
 
 **Scheduled source scope.** Debrief in Airtable is the source of truth for the cloud Radar. `cloud_radar.py` fetches records by meeting date, filters out IDs already saved in `state/processed-records.json`, and creates one report per client. Its allowlist is exactly Example Client, Example Nonprofit, and Example Agency. Do not add other clients, glob local folders, use modified time as the conversation date, or treat Meeting Prep as a transcript source. A failed fetch is a failed run, not an empty radar.
 
-**Meta-conversations are a valid input mode too.** Rachael's coaching sessions, retros, or solo reflection notes can also feed the radar — when the source IS a conversation about other conversations, expect the output to lean toward inward questions ("what should I be noticing?") rather than outward ones ("what should I ask Casandra?"). Both shapes are fine.
+**Meta-conversations are a valid input mode too.** Rachael's coaching sessions, retros, or solo reflection notes can also feed the radar — when the source IS a conversation about other conversations, expect the output to lean toward inward questions ("what should I be noticing?") rather than outward ones ("what should I ask Skyler?"). Both shapes are fine.
 
 ## The lenses (apply each one to the transcript)
 
@@ -58,7 +58,7 @@ Full pattern catalog is in `references/lenses.md`. Load it when needed. Brief ve
 
 ### Rachael-specific dissonance patterns (the things her default mode misses)
 
-- **Disappearance.** Someone who was in the last N meetings isn't in this one. The skill asks: *"Where did [X] go? Are they OK with the current direction?"* — **but only if they were on the invite list to begin with.** Many of Rachael's client meetings are 1:1 by design (e.g. Rachael ↔ Jessica at EA). If an operational stakeholder was never expected to attend, don't apply this lens; surface them as an *ask* instead ("how does [X] hear about this change?").
+- **Disappearance.** Someone who was in the last N meetings isn't in this one. The skill asks: *"Where did [X] go? Are they OK with the current direction?"* — **but only if they were on the invite list to begin with.** Many of Rachael's client meetings are 1:1 by design (e.g. Rachael ↔ Pat at EA). If an operational stakeholder was never expected to attend, don't apply this lens; surface them as an *ask* instead ("how does [X] hear about this change?").
 - **In-meeting disagreement.** Two stakeholders contradict each other in the same transcript — Rachael often doesn't register this in the moment.
 - **Sentiment shift.** Someone who was enthusiastic last week is curt this week, or vice versa. Tone-change is information.
 - **Topic avoided.** Something Rachael raised got deflected or buried. Was that on purpose?
@@ -88,7 +88,7 @@ Full pattern catalog is in `references/lenses.md`. Load it when needed. Brief ve
 **Lens:** <G | R | P | I | disappearance | sentiment-shift | etc.>
 **Trigger:**
 > [<speaker>] "<one-sentence excerpt>"
-> — <source, e.g. "AYMG 2026-06-04 strategy">
+> — <source, e.g. "EMG 2026-06-04 strategy">
 
 <2-3 sentence read on why this is worth asking. What changes if Rachael asks it. What changes if she doesn't.>
 

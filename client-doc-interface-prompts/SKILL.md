@@ -1,6 +1,6 @@
 ---
 name: client-doc-interface-prompts
-version: 1.4.7
+version: 1.4.8
 description: >-
   Draft or append to the canonical `interface-prompts.md` file for a client build, capturing the Airtable Labs Canvas prompts used to build custom Airtable apps for the client. Canvas builds FULL APPS from natural-language prompts: multi-tab, multi-table, can provision a new base or work against an existing one, with per-component feature specs, aesthetic direction, and data-behavior rules. Not for Omni interface pages. Use when Rachael says "capture the canvas prompt", "add canvas prompt to interface-prompts.md", "document the [X] canvas app", "canvas prompt for [app]", "canvas app for [client]", "log the canvas build", or when a build ships a Canvas app worth documenting. Produces one dated section per Canvas app with the exact prompt, intent, aesthetic direction, iteration notes, and any errors that got fed back in.
 ---

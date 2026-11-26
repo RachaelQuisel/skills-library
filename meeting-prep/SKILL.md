@@ -1,6 +1,6 @@
 ---
 name: meeting-prep
-version: 1.0.2
+version: 1.0.3
 description: >
   Build a meeting-prep brief for every client meeting on Rachael's calendar today (or a
   specified date). For each meeting, the skill identifies which client it belongs to,
@@ -74,10 +74,10 @@ For each event, try to map it to a client folder under `~/Claude-Work/CLIENTS/`:
 1. **List client folders** (one-time per run): `ls -d ~/Claude-Work/CLIENTS/*/`
 2. **For each event**, check (in order):
    - Attendee email domains (e.g., `@examplenonprofit.com` → Example Nonprofit)
-   - Attendee names against folder names (e.g., "Dana Whitfield" → `Coding_Clarified_Janine_Whitfield`)
-   - Event title keywords (e.g., "AYMG sync" → `AY Media_Jay_Danzy`)
+   - Attendee names against folder names (e.g., "Dana Whitfield" → `Example_Nonprofit_Dana_Whitfield`)
+   - Event title keywords (e.g., "EMG sync" → `Example Media_Rowan_Ellis`)
 3. **Handle alias folders** — some clients have multiple folders (e.g., `EA/` and
-   `Guardians_of_Love_Jessica_Peoples/` are the same client). Prefer the folder with the
+   `Example_Agency_Pat_Okafor/` are the same client). Prefer the folder with the
    most recent activity (newest file modification times under `Project Documentation/`
    or `Transcripts/`).
 4. **If no match**, mark the event as `prospect` and route to Phase 4.
@@ -287,8 +287,8 @@ written, print a one-line summary like:
 
 ```
 Prepped 3 meetings for 2026-05-31:
-  - 9:00 AM Janine (CC) → ~/Claude-Work/CLIENTS/Coding_Clarified.../Meeting-Prep/2026-05-31-weekly-sync.md
-  - 11:00 AM Jay (AYMG) → ~/Claude-Work/CLIENTS/AY Media_Jay_Danzy/Meeting-Prep/2026-05-31-pricing-discussion.md
+  - 9:00 AM Dana (CC) → ~/Claude-Work/CLIENTS/Example_Nonprofit.../Meeting-Prep/2026-05-31-weekly-sync.md
+  - 11:00 AM Rowan (EMG) → ~/Claude-Work/CLIENTS/Example Media_Rowan_Ellis/Meeting-Prep/2026-05-31-pricing-discussion.md
   - 2:00 PM Sarah (prospect) → ~/Claude-Work/MEETING-PREP-INBOX/2026-05-31-discovery-call.md
 ```
 
