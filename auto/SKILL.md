@@ -1,6 +1,6 @@
 ---
 name: auto
-version: 1.4.6
+version: 1.4.7
 description: Write and save a short, bullet-format education document that explains one automation in plain English through its trigger, inputs, complete steps, and outputs. Use when Rachael invokes "/auto" or asks for a "short little education document," "auto doc," or "quick automation explanation." Also update the existing project documentation and running updates and questions that directly cover the automation. Use `education` for the fixed 11-section handoff document and `explain-code` for a code-level walkthrough.
 ---
 

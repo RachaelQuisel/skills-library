@@ -1,0 +1,11 @@
+{
+  "name": "github-portfolio-review",
+  "displayName": "GitHub Portfolio Review",
+  "version": "1.0.4",
+  "description": "Review GitHub projects as credible professional portfolio evidence.",
+  "author": {
+    "name": "Rachael Quisel"
+  },
+  "repository": "https://github.com/RachaelQuisel/github-portfolio-review-codex",
+  "icon": "./assets/github-portfolio-review.png"
+}

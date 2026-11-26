@@ -138,6 +138,7 @@
       "version": "1.0.4",
       "manifests": [
         "plugins/github-portfolio-review/plugin.json",
+        "plugins/github-portfolio-review/.claude-plugin/plugin.json",
         "plugins/github-portfolio-review/.codex-plugin/plugin.json"
       ],
       "skills": [
@@ -321,11 +322,11 @@
       "guide": "automate-your-business/README.md"
     },
     {
-      "path": "automation-explainer-local/SKILL.md",
-      "version": "1.4.6",
-      "sha256": "ac50978b55fe18c49d94594e783fd538d7ae0ce1e81baecab00fbda76fc973db",
-      "source": "automation-explainer-local/SKILL.md",
-      "guide": "automation-explainer-local/README.md"
+      "path": "auto/SKILL.md",
+      "version": "1.4.7",
+      "sha256": "9e06cd5f02911abff8e82128df83364ef91a0e750333693992433487c7c78cdb",
+      "source": "auto/SKILL.md",
+      "guide": "auto/README.md"
     },
     {
       "path": "backfill-debrief-task-links/SKILL.md",
@@ -657,11 +658,11 @@
       "guide": "health-record-assistant/README.md"
     },
     {
-      "path": "how-it-works-doc-writer-local/SKILL.md",
-      "version": "1.4.6",
-      "sha256": "89c8b7a2d2a7b8ef7d0c31390d1ed170a0238ba4e86ad7c83975f1a87aa335c5",
-      "source": "how-it-works-doc-writer-local/SKILL.md",
-      "guide": "how-it-works-doc-writer-local/README.md"
+      "path": "education/SKILL.md",
+      "version": "1.4.7",
+      "sha256": "d591e8dd5e29a64d0029ea7a40cd66cc7cedf46485db72cd4371719c5d102281",
+      "source": "education/SKILL.md",
+      "guide": "education/README.md"
     },
     {
       "path": "how-it-works-doc/SKILL.md",
