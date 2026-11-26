@@ -7,6 +7,16 @@
   "update_policy": "manual-opt-in",
   "skills": [
     {
+      "id": "acuity-roster-reconciler-local",
+      "path": "acuity-roster-reconciler-local",
+      "baseline_tree_sha": "be0901874f9972aa19b877ee140bf51c3ac1c6c7",
+      "maintainer": "RachaelQuisel",
+      "compatibility_status": "unverified",
+      "supported_environments": [],
+      "last_behavior_verified_at": null,
+      "suites": []
+    },
+    {
       "id": "agent-activity-log",
       "path": "agent-activity-log",
       "baseline_tree_sha": "9512e8747cba84c5129ec07ac1119422a2f91a61",
@@ -27,6 +37,26 @@
       "suites": []
     },
     {
+      "id": "airtable-base-check",
+      "path": "airtable-base-check",
+      "baseline_tree_sha": "6786019a79691a1a87feb09aeb464884499a1234",
+      "maintainer": "RachaelQuisel",
+      "compatibility_status": "unverified",
+      "supported_environments": [],
+      "last_behavior_verified_at": null,
+      "suites": []
+    },
+    {
+      "id": "airtable-capacity-studio",
+      "path": "airtable-capacity-studio",
+      "baseline_tree_sha": "63592ea8e07ba85a3baf01155a309789a20d9d3f",
+      "maintainer": "RachaelQuisel",
+      "compatibility_status": "unverified",
+      "supported_environments": [],
+      "last_behavior_verified_at": null,
+      "suites": []
+    },
+    {
       "id": "airtable-cli",
       "path": "airtable-cli",
       "baseline_tree_sha": "d7b1555996b61c26dfe1f7202e463ff1c7467dd7",
@@ -37,9 +67,50 @@
       "suites": []
     },
     {
+      "id": "airtable-experience-lab",
+      "path": "airtable-experience-lab",
+      "baseline_tree_sha": "3f52f2198654a65571733ab8040959a06fe7d721",
+      "maintainer": "RachaelQuisel",
+      "compatibility_status": "unverified",
+      "supported_environments": [],
+      "last_behavior_verified_at": null,
+      "suites": []
+    },
+    {
       "id": "airtable-filters",
       "path": "airtable-filters",
       "baseline_tree_sha": "0fe9298cd5267739ff71c068a2597ea7458f4b3f",
+      "maintainer": "RachaelQuisel",
+      "compatibility_status": "unverified",
+      "supported_environments": [],
+      "last_behavior_verified_at": null,
+      "suites": []
+    },
+    {
+      "id": "airtable-interface-craft",
+      "path": "airtable-interface-craft",
+      "readme_path": "plugins/airtable-interface-craft/README.md",
+      "baseline_tree_sha": "98d5dd6238345967a5cec09c105d127ce1c12b73",
+      "maintainer": "RachaelQuisel",
+      "compatibility_status": "unverified",
+      "supported_environments": [],
+      "last_behavior_verified_at": null,
+      "suites": []
+    },
+    {
+      "id": "airtable-momentum-studio",
+      "path": "airtable-momentum-studio",
+      "baseline_tree_sha": "e4dea1bed71aa03078ee2d53f25bc6da24291dac",
+      "maintainer": "RachaelQuisel",
+      "compatibility_status": "unverified",
+      "supported_environments": [],
+      "last_behavior_verified_at": null,
+      "suites": []
+    },
+    {
+      "id": "airtable-omni-refiner",
+      "path": "airtable-omni-refiner",
+      "baseline_tree_sha": "e7bd6da29ed23f7418b626f318e5b4c23a10fba8",
       "maintainer": "RachaelQuisel",
       "compatibility_status": "unverified",
       "supported_environments": [],
@@ -67,9 +138,39 @@
       "suites": []
     },
     {
+      "id": "airtable-workflow-scout",
+      "path": "airtable-workflow-scout",
+      "baseline_tree_sha": "1ea77da83ccfd326ed9943f676f773d645ed8f3b",
+      "maintainer": "RachaelQuisel",
+      "compatibility_status": "unverified",
+      "supported_environments": [],
+      "last_behavior_verified_at": null,
+      "suites": []
+    },
+    {
       "id": "algorithmic-art",
       "path": "algorithmic-art",
       "baseline_tree_sha": "278c6a2d8e82a38e237d336ecc931e6c5470b1fe",
+      "maintainer": "RachaelQuisel",
+      "compatibility_status": "unverified",
+      "supported_environments": [],
+      "last_behavior_verified_at": null,
+      "suites": []
+    },
+    {
+      "id": "app-content",
+      "path": "app-content",
+      "baseline_tree_sha": "a03ad9c9151a281dfb9428c76b30881dbccde8df",
+      "maintainer": "RachaelQuisel",
+      "compatibility_status": "unverified",
+      "supported_environments": [],
+      "last_behavior_verified_at": null,
+      "suites": []
+    },
+    {
+      "id": "applicant-csv-to-airtable-sync",
+      "path": "applicant-csv-to-airtable-sync",
+      "baseline_tree_sha": "b807e5006d5fa91f5f88b12e53e2b818b6e61c9c",
       "maintainer": "RachaelQuisel",
       "compatibility_status": "unverified",
       "supported_environments": [],
@@ -87,6 +188,39 @@
       "suites": []
     },
     {
+      "id": "audit-airtable-automations-report",
+      "path": "audit-airtable-automations-report",
+      "readme_path": "audit-airtable-automations-report/README.md",
+      "baseline_tree_sha": "a4cf5f8d43611ba84baa1c53b3fd997ff930a0c4",
+      "maintainer": "RachaelQuisel",
+      "compatibility_status": "unverified",
+      "supported_environments": [],
+      "last_behavior_verified_at": null,
+      "suites": []
+    },
+    {
+      "id": "audit-airtable-interfaces",
+      "path": "audit-airtable-interfaces",
+      "readme_path": "audit-airtable-interfaces/README.md",
+      "baseline_tree_sha": "d20a8a924803fd66d1d057a6d8b88b5d696a40a6",
+      "maintainer": "RachaelQuisel",
+      "compatibility_status": "unverified",
+      "supported_environments": [],
+      "last_behavior_verified_at": null,
+      "suites": []
+    },
+    {
+      "id": "audit-airtable-schema",
+      "path": "audit-airtable-schema",
+      "readme_path": "audit-airtable-schema/README.md",
+      "baseline_tree_sha": "94bd4c133838325aeb0a7d33c57e5bace31418c8",
+      "maintainer": "RachaelQuisel",
+      "compatibility_status": "unverified",
+      "supported_environments": [],
+      "last_behavior_verified_at": null,
+      "suites": []
+    },
+    {
       "id": "audit-log-plugin",
       "path": "audit-log-plugin",
       "baseline_tree_sha": "503173eeacd8d362297ec396ae8e34f20f27d5cb",
@@ -97,6 +231,48 @@
       "suites": [
         "audit-offline"
       ]
+    },
+    {
+      "id": "audit-softr-app",
+      "path": "audit-softr-app",
+      "readme_path": "audit-softr-app/README.md",
+      "baseline_tree_sha": "2c53768d1bd3e028e8bb1052153e2cbe41a1627b",
+      "maintainer": "RachaelQuisel",
+      "compatibility_status": "unverified",
+      "supported_environments": [],
+      "last_behavior_verified_at": null,
+      "suites": []
+    },
+    {
+      "id": "auto",
+      "path": "auto",
+      "baseline_tree_sha": "2867160f56885cd2be5cdf79cd0771c29460615e",
+      "maintainer": "RachaelQuisel",
+      "compatibility_status": "unverified",
+      "supported_environments": [],
+      "last_behavior_verified_at": null,
+      "suites": []
+    },
+    {
+      "id": "automate-notification-to-teams",
+      "path": "automate-notification-to-teams",
+      "readme_path": "plugins/automate-notification-to-teams/README.md",
+      "baseline_tree_sha": "81a597398f59ce53495f82e8e17d4c53edfea5c8",
+      "maintainer": "RachaelQuisel",
+      "compatibility_status": "unverified",
+      "supported_environments": [],
+      "last_behavior_verified_at": null,
+      "suites": []
+    },
+    {
+      "id": "automate-your-business",
+      "path": "automate-your-business",
+      "baseline_tree_sha": "e14d4271e315973983f8340b709f1af17a56d334",
+      "maintainer": "RachaelQuisel",
+      "compatibility_status": "unverified",
+      "supported_environments": [],
+      "last_behavior_verified_at": null,
+      "suites": []
     },
     {
       "id": "automation-briefing",
@@ -132,9 +308,41 @@
       "suites": []
     },
     {
+      "id": "automation-message-writer",
+      "path": "automation-message-writer",
+      "readme_path": "plugins/automation-message-writer/README.md",
+      "baseline_tree_sha": "2b752bbe5cec7de90c31b5b73b802f02fa6e76d6",
+      "maintainer": "RachaelQuisel",
+      "compatibility_status": "unverified",
+      "supported_environments": [],
+      "last_behavior_verified_at": null,
+      "suites": []
+    },
+    {
+      "id": "automation-opportunity-scout",
+      "path": "automation-opportunity-scout",
+      "readme_path": "plugins/find-automatable-workflows/README.md",
+      "baseline_tree_sha": "6a57389fa0602e099f0b50ce55052f9042c39640",
+      "maintainer": "RachaelQuisel",
+      "compatibility_status": "unverified",
+      "supported_environments": [],
+      "last_behavior_verified_at": null,
+      "suites": []
+    },
+    {
       "id": "backfill-debrief-task-links",
       "path": "backfill-debrief-task-links",
       "baseline_tree_sha": "5f4c4e4559958ef9b44268a1c0f6dfe155249250",
+      "maintainer": "RachaelQuisel",
+      "compatibility_status": "unverified",
+      "supported_environments": [],
+      "last_behavior_verified_at": null,
+      "suites": []
+    },
+    {
+      "id": "binti-airtable-date-reconciliation",
+      "path": "binti-airtable-date-reconciliation",
+      "baseline_tree_sha": "646b07d9477364aa7de70a3b2cbd39ead9ca6689",
       "maintainer": "RachaelQuisel",
       "compatibility_status": "unverified",
       "supported_environments": [],
@@ -155,6 +363,26 @@
       "id": "brand-guidelines",
       "path": "brand-guidelines",
       "baseline_tree_sha": "f94e189e1d17285802004b7a71a1de058b6e4961",
+      "maintainer": "RachaelQuisel",
+      "compatibility_status": "unverified",
+      "supported_environments": [],
+      "last_behavior_verified_at": null,
+      "suites": []
+    },
+    {
+      "id": "build-page-publisher-local",
+      "path": "build-page-publisher-local",
+      "baseline_tree_sha": "6fbc4b04ba2ad40202edd1519b7f1e42faa8c5b6",
+      "maintainer": "RachaelQuisel",
+      "compatibility_status": "unverified",
+      "supported_environments": [],
+      "last_behavior_verified_at": null,
+      "suites": []
+    },
+    {
+      "id": "build-sprint-summary",
+      "path": "build-sprint-summary",
+      "baseline_tree_sha": "22137a76a88dcb54d205404c6cb684a8cd779de5",
       "maintainer": "RachaelQuisel",
       "compatibility_status": "unverified",
       "supported_environments": [],
@@ -185,6 +413,17 @@
       "id": "canvas-design",
       "path": "canvas-design",
       "baseline_tree_sha": "634e7c21ebbe7ef0ea22e79c0fb8f48d6af16a27",
+      "maintainer": "RachaelQuisel",
+      "compatibility_status": "unverified",
+      "supported_environments": [],
+      "last_behavior_verified_at": null,
+      "suites": []
+    },
+    {
+      "id": "cited-research-assistant",
+      "path": "cited-research-assistant",
+      "readme_path": "plugins/cited-research-assistant/README.md",
+      "baseline_tree_sha": "c693c9abfc5069db98a7a7d405f078d599d32499",
       "maintainer": "RachaelQuisel",
       "compatibility_status": "unverified",
       "supported_environments": [],
@@ -304,6 +543,26 @@
       ]
     },
     {
+      "id": "client-docs:auto",
+      "path": "plugins/client-docs/skills/auto",
+      "baseline_tree_sha": "2867160f56885cd2be5cdf79cd0771c29460615e",
+      "maintainer": "RachaelQuisel",
+      "compatibility_status": "unverified",
+      "supported_environments": [],
+      "last_behavior_verified_at": null,
+      "suites": []
+    },
+    {
+      "id": "client-docs:build-page-publisher-local",
+      "path": "plugins/client-docs/skills/build-page-publisher-local",
+      "baseline_tree_sha": "6fbc4b04ba2ad40202edd1519b7f1e42faa8c5b6",
+      "maintainer": "RachaelQuisel",
+      "compatibility_status": "unverified",
+      "supported_environments": [],
+      "last_behavior_verified_at": null,
+      "suites": []
+    },
+    {
       "id": "client-docs:business-case",
       "path": "plugins/client-docs/skills/business-case",
       "baseline_tree_sha": "730cb63f2eab636220aff5560b70c6445ad0f35e",
@@ -397,6 +656,16 @@
       "id": "client-docs:client-docs",
       "path": "plugins/client-docs/skills/client-docs",
       "baseline_tree_sha": "0456c7e5ff70881101452f36f21c6e3fe85f96a2",
+      "maintainer": "RachaelQuisel",
+      "compatibility_status": "unverified",
+      "supported_environments": [],
+      "last_behavior_verified_at": null,
+      "suites": []
+    },
+    {
+      "id": "client-docs:education",
+      "path": "plugins/client-docs/skills/education",
+      "baseline_tree_sha": "900b23ece4515f2a10cd481df36427a199364bf9",
       "maintainer": "RachaelQuisel",
       "compatibility_status": "unverified",
       "supported_environments": [],
@@ -524,9 +793,40 @@
       "suites": []
     },
     {
+      "id": "client-mockup",
+      "path": "client-mockup",
+      "baseline_tree_sha": "e400de2f888dabd7dd24c587850da866fdcbc541",
+      "maintainer": "RachaelQuisel",
+      "compatibility_status": "unverified",
+      "supported_environments": [],
+      "last_behavior_verified_at": null,
+      "suites": []
+    },
+    {
+      "id": "contact-follow-up-tracker",
+      "path": "contact-follow-up-tracker",
+      "readme_path": "plugins/contact-follow-up-tracker/README.md",
+      "baseline_tree_sha": "54123b99552fd5de87dc7ff7670aae4d6d64e499",
+      "maintainer": "RachaelQuisel",
+      "compatibility_status": "unverified",
+      "supported_environments": [],
+      "last_behavior_verified_at": null,
+      "suites": []
+    },
+    {
       "id": "context-awareness",
       "path": "context-awareness",
       "baseline_tree_sha": "4845b875a11263f32d7a28ef43da7e430cd388b0",
+      "maintainer": "RachaelQuisel",
+      "compatibility_status": "unverified",
+      "supported_environments": [],
+      "last_behavior_verified_at": null,
+      "suites": []
+    },
+    {
+      "id": "course-completion-certificate",
+      "path": "course-completion-certificate",
+      "baseline_tree_sha": "2c000dde9e9fb32c6d3facbbb9e5f46b752462d6",
       "maintainer": "RachaelQuisel",
       "compatibility_status": "unverified",
       "supported_environments": [],
@@ -574,6 +874,16 @@
       "suites": []
     },
     {
+      "id": "create-tweet-image",
+      "path": "create-tweet-image",
+      "baseline_tree_sha": "da6bdfe74d7bb77c48a5d846eff240794ccd6e3e",
+      "maintainer": "RachaelQuisel",
+      "compatibility_status": "unverified",
+      "supported_environments": [],
+      "last_behavior_verified_at": null,
+      "suites": []
+    },
+    {
       "id": "dispatching-parallel-agents",
       "path": "dispatching-parallel-agents",
       "baseline_tree_sha": "a3a4dcd1c0e6e6ae057324d561b6b3808ef6db6a",
@@ -604,9 +914,20 @@
       "suites": []
     },
     {
-      "id": "docx",
-      "path": "docx",
-      "baseline_tree_sha": "4124cab30853e9a2e1d66cd952a06dffa213752f",
+      "id": "education",
+      "path": "education",
+      "baseline_tree_sha": "900b23ece4515f2a10cd481df36427a199364bf9",
+      "maintainer": "RachaelQuisel",
+      "compatibility_status": "unverified",
+      "supported_environments": [],
+      "last_behavior_verified_at": null,
+      "suites": []
+    },
+    {
+      "id": "eval-creation",
+      "path": "eval-creation",
+      "readme_path": "plugins/find-automatable-workflows/README.md",
+      "baseline_tree_sha": "9fe7c3501961c08a6b26cacb6b2909a55338a032",
       "maintainer": "RachaelQuisel",
       "compatibility_status": "unverified",
       "supported_environments": [],
@@ -624,6 +945,26 @@
       "suites": [
         "audit-offline"
       ]
+    },
+    {
+      "id": "execute-and-reconcile-pain-points",
+      "path": "execute-and-reconcile-pain-points",
+      "baseline_tree_sha": "11adc37086d5a286ee110a6b624e33d39c7aa7a5",
+      "maintainer": "RachaelQuisel",
+      "compatibility_status": "unverified",
+      "supported_environments": [],
+      "last_behavior_verified_at": null,
+      "suites": []
+    },
+    {
+      "id": "explain-automation",
+      "path": "explain-automation",
+      "baseline_tree_sha": "90d101ba32a8d7c761a5ab83aa506325471ce45a",
+      "maintainer": "RachaelQuisel",
+      "compatibility_status": "unverified",
+      "supported_environments": [],
+      "last_behavior_verified_at": null,
+      "suites": []
     },
     {
       "id": "explain-code",
@@ -659,6 +1000,28 @@
       "id": "file-naming-convention",
       "path": "file-naming-convention",
       "baseline_tree_sha": "d5632ba651ef3df3ecaaba4d78e0530cde698a1a",
+      "maintainer": "RachaelQuisel",
+      "compatibility_status": "unverified",
+      "supported_environments": [],
+      "last_behavior_verified_at": null,
+      "suites": []
+    },
+    {
+      "id": "find-fix-mistakes:fixmistakes",
+      "path": "plugins/find-fix-mistakes/skills/fixmistakes",
+      "readme_path": "plugins/find-fix-mistakes/README.md",
+      "baseline_tree_sha": "0a750cdec8b104076638b0c2b45e5dff12cf09b6",
+      "maintainer": "RachaelQuisel",
+      "compatibility_status": "unverified",
+      "supported_environments": [],
+      "last_behavior_verified_at": null,
+      "suites": []
+    },
+    {
+      "id": "find-fix-mistakes:mistakes",
+      "path": "plugins/find-fix-mistakes/skills/mistakes",
+      "readme_path": "plugins/find-fix-mistakes/README.md",
+      "baseline_tree_sha": "02b4ecfb4e65f809c6358e56d345c4463843f7ea",
       "maintainer": "RachaelQuisel",
       "compatibility_status": "unverified",
       "supported_environments": [],
@@ -716,9 +1079,74 @@
       "suites": []
     },
     {
+      "id": "gem-miner",
+      "path": "gem-miner",
+      "baseline_tree_sha": "c4843edf34c18272abb3e282b5dcbc3273235a68",
+      "maintainer": "RachaelQuisel",
+      "compatibility_status": "unverified",
+      "supported_environments": [],
+      "last_behavior_verified_at": null,
+      "suites": []
+    },
+    {
+      "id": "generate-financial-dummy-data",
+      "path": "generate-financial-dummy-data",
+      "readme_path": "plugins/generate-financial-dummy-data/README.md",
+      "baseline_tree_sha": "be32b7ca9f66e80e09b271174e6ed83634467233",
+      "maintainer": "RachaelQuisel",
+      "compatibility_status": "unverified",
+      "supported_environments": [],
+      "last_behavior_verified_at": null,
+      "suites": []
+    },
+    {
+      "id": "get-unstuck",
+      "path": "get-unstuck",
+      "readme_path": "plugins/adhd-task-helper/README.md",
+      "baseline_tree_sha": "c7deaea8534c8e3778ec0f066699f68a8b14e393",
+      "maintainer": "RachaelQuisel",
+      "compatibility_status": "unverified",
+      "supported_environments": [],
+      "last_behavior_verified_at": null,
+      "suites": []
+    },
+    {
+      "id": "ghibli-icon-maker",
+      "path": "ghibli-icon-maker",
+      "readme_path": "plugins/ghibli-icon-maker/README.md",
+      "baseline_tree_sha": "86d8e7a4a1375596912368ed2367dea29de62fc7",
+      "maintainer": "RachaelQuisel",
+      "compatibility_status": "unverified",
+      "supported_environments": [],
+      "last_behavior_verified_at": null,
+      "suites": []
+    },
+    {
       "id": "git-guardrails-claude-code",
       "path": "git-guardrails-claude-code",
       "baseline_tree_sha": "cbd22c64c96bb4d9b2711db4db98d69461cd64e9",
+      "maintainer": "RachaelQuisel",
+      "compatibility_status": "unverified",
+      "supported_environments": [],
+      "last_behavior_verified_at": null,
+      "suites": []
+    },
+    {
+      "id": "github-portfolio-builder:github-portfolio-builder",
+      "path": "plugins/github-portfolio-builder/skills/github-portfolio-builder",
+      "readme_path": "plugins/github-portfolio-builder/README.md",
+      "baseline_tree_sha": "f77babee0b93d06a0c0fe29262d48a9cbbe85ae3",
+      "maintainer": "RachaelQuisel",
+      "compatibility_status": "unverified",
+      "supported_environments": [],
+      "last_behavior_verified_at": null,
+      "suites": []
+    },
+    {
+      "id": "github-portfolio-review:github-portfolio-review",
+      "path": "plugins/github-portfolio-review/skills/github-portfolio-review",
+      "readme_path": "plugins/github-portfolio-review/skills/github-portfolio-review/README.md",
+      "baseline_tree_sha": "596deb042639a7cd6625600e54846a4bb7c94585",
       "maintainer": "RachaelQuisel",
       "compatibility_status": "unverified",
       "supported_environments": [],
@@ -756,6 +1184,17 @@
       "suites": []
     },
     {
+      "id": "grill-me-workflow",
+      "path": "grill-me-workflow",
+      "readme_path": "plugins/find-automatable-workflows/README.md",
+      "baseline_tree_sha": "97d205b5c7843211593dbcbc0903334932b8e0f5",
+      "maintainer": "RachaelQuisel",
+      "compatibility_status": "unverified",
+      "supported_environments": [],
+      "last_behavior_verified_at": null,
+      "suites": []
+    },
+    {
       "id": "health-record-assistant",
       "path": "health-record-assistant",
       "baseline_tree_sha": "14efa31ca0be7949f33cd3392533c266f5125fe5",
@@ -776,9 +1215,52 @@
       "suites": []
     },
     {
+      "id": "humanize-output",
+      "path": "humanize-output",
+      "readme_path": "plugins/humanize-output/README.md",
+      "baseline_tree_sha": "302a010e482cff42f8e1ef8b2fdd8a36214762dd",
+      "maintainer": "RachaelQuisel",
+      "compatibility_status": "unverified",
+      "supported_environments": [],
+      "last_behavior_verified_at": null,
+      "suites": []
+    },
+    {
       "id": "humanizing",
       "path": "humanizing",
       "baseline_tree_sha": "957f7a3311c77a9e41ab3dd6a17ebe1fdd70084f",
+      "maintainer": "RachaelQuisel",
+      "compatibility_status": "unverified",
+      "supported_environments": [],
+      "last_behavior_verified_at": null,
+      "suites": []
+    },
+    {
+      "id": "i-have-adhd",
+      "path": "i-have-adhd",
+      "readme_path": "plugins/adhd-task-helper/README.md",
+      "baseline_tree_sha": "7ac26ff1f04937d9e399961b8ad46dbe7bd3a172",
+      "maintainer": "RachaelQuisel",
+      "compatibility_status": "unverified",
+      "supported_environments": [],
+      "last_behavior_verified_at": null,
+      "suites": []
+    },
+    {
+      "id": "independent-check:independent-check",
+      "path": "plugins/independent-check/skills/independent-check",
+      "baseline_tree_sha": "077a915540dcdc150f4ae5080e6f275c3f6fa003",
+      "maintainer": "RachaelQuisel",
+      "compatibility_status": "unverified",
+      "supported_environments": [],
+      "last_behavior_verified_at": null,
+      "suites": []
+    },
+    {
+      "id": "instructions",
+      "path": "instructions",
+      "readme_path": "plugins/airbnb-hosting-expert/README.md",
+      "baseline_tree_sha": "26650452ab5ed966ab8efa33c2ff19e9c7f23207",
       "maintainer": "RachaelQuisel",
       "compatibility_status": "unverified",
       "supported_environments": [],
@@ -809,6 +1291,16 @@
       "id": "load",
       "path": "load",
       "baseline_tree_sha": "c244d25810029fc86d1b423d653a2e8902ed9dc5",
+      "maintainer": "RachaelQuisel",
+      "compatibility_status": "unverified",
+      "supported_environments": [],
+      "last_behavior_verified_at": null,
+      "suites": []
+    },
+    {
+      "id": "make-it-sound-human",
+      "path": "make-it-sound-human",
+      "baseline_tree_sha": "72053fcbad229a90ed03508700cdbe8a54ae5466",
       "maintainer": "RachaelQuisel",
       "compatibility_status": "unverified",
       "supported_environments": [],
@@ -886,9 +1378,29 @@
       "suites": []
     },
     {
+      "id": "next-skill-recommender-local",
+      "path": "next-skill-recommender-local",
+      "baseline_tree_sha": "ea0385ec66c4adecf53f2a83add037a1b9ba40fe",
+      "maintainer": "RachaelQuisel",
+      "compatibility_status": "unverified",
+      "supported_environments": [],
+      "last_behavior_verified_at": null,
+      "suites": []
+    },
+    {
       "id": "normalize-csvs-for-airtable",
       "path": "normalize-csvs-for-airtable",
       "baseline_tree_sha": "e3838243d4ef8354dbdac0a6ad1b559706802421",
+      "maintainer": "RachaelQuisel",
+      "compatibility_status": "unverified",
+      "supported_environments": [],
+      "last_behavior_verified_at": null,
+      "suites": []
+    },
+    {
+      "id": "notebooklm-api-wrapper-local",
+      "path": "notebooklm-api-wrapper-local",
+      "baseline_tree_sha": "0f37c2d856fce27606f0152a63d17572c42c8b8d",
       "maintainer": "RachaelQuisel",
       "compatibility_status": "unverified",
       "supported_environments": [],
@@ -906,9 +1418,9 @@
       "suites": []
     },
     {
-      "id": "pdf",
-      "path": "pdf",
-      "baseline_tree_sha": "97fcf026d5416baf6588520a0864cfcea0fc872d",
+      "id": "peer-review",
+      "path": "peer-review",
+      "baseline_tree_sha": "4be251c58e697c8ca91f9a021217b0f51c3860e7",
       "maintainer": "RachaelQuisel",
       "compatibility_status": "unverified",
       "supported_environments": [],
@@ -916,9 +1428,21 @@
       "suites": []
     },
     {
-      "id": "peer-review",
-      "path": "peer-review",
-      "baseline_tree_sha": "4be251c58e697c8ca91f9a021217b0f51c3860e7",
+      "id": "pick-it-back-up",
+      "path": "pick-it-back-up",
+      "readme_path": "plugins/adhd-task-helper/README.md",
+      "baseline_tree_sha": "0d354c1b8b20777ce33604d70967090df8a84110",
+      "maintainer": "RachaelQuisel",
+      "compatibility_status": "unverified",
+      "supported_environments": [],
+      "last_behavior_verified_at": null,
+      "suites": []
+    },
+    {
+      "id": "plain-english-editor",
+      "path": "plain-english-editor",
+      "readme_path": "plugins/plain-english-editor/README.md",
+      "baseline_tree_sha": "7293ccb97b0346daa9b906e97f5391743ad76f91",
       "maintainer": "RachaelQuisel",
       "compatibility_status": "unverified",
       "supported_environments": [],
@@ -936,6 +1460,26 @@
       "suites": []
     },
     {
+      "id": "plugin-namer",
+      "path": "plugin-namer",
+      "baseline_tree_sha": "a61c7d0b0b3cf0a5f99606f505ccdf1a1e310ccc",
+      "maintainer": "RachaelQuisel",
+      "compatibility_status": "unverified",
+      "supported_environments": [],
+      "last_behavior_verified_at": null,
+      "suites": []
+    },
+    {
+      "id": "post-plugin-reel",
+      "path": "post-plugin-reel",
+      "baseline_tree_sha": "b9ed09b2ea3dd8e466883999b64ba7a41f96015d",
+      "maintainer": "RachaelQuisel",
+      "compatibility_status": "unverified",
+      "supported_environments": [],
+      "last_behavior_verified_at": null,
+      "suites": []
+    },
+    {
       "id": "post-to-huddle",
       "path": "post-to-huddle",
       "baseline_tree_sha": "db97da42927c4185acec3ca4c0b3aae5ae3a2949",
@@ -946,9 +1490,9 @@
       "suites": []
     },
     {
-      "id": "pptx",
-      "path": "pptx",
-      "baseline_tree_sha": "64529c8b3f35fe632b7256bd2f6d46e4b40160ce",
+      "id": "postmortem",
+      "path": "postmortem",
+      "baseline_tree_sha": "bcb71e75df77825c5b91fea17d903cfccd5b7d70",
       "maintainer": "RachaelQuisel",
       "compatibility_status": "unverified",
       "supported_environments": [],
@@ -996,9 +1540,40 @@
       "suites": []
     },
     {
+      "id": "project-instructions-writer",
+      "path": "project-instructions-writer",
+      "baseline_tree_sha": "19bc1dd143c871c0022cc6a2cdcba4786cd7ab7c",
+      "maintainer": "RachaelQuisel",
+      "compatibility_status": "unverified",
+      "supported_environments": [],
+      "last_behavior_verified_at": null,
+      "suites": []
+    },
+    {
+      "id": "proper-grammar",
+      "path": "proper-grammar",
+      "baseline_tree_sha": "2745c20ca364ad4c7fd456981ce9f3f45d0df633",
+      "maintainer": "RachaelQuisel",
+      "compatibility_status": "unverified",
+      "supported_environments": [],
+      "last_behavior_verified_at": null,
+      "suites": []
+    },
+    {
       "id": "prototype",
       "path": "prototype",
       "baseline_tree_sha": "cfbf683ec0f596297be4e86ce33c78b192e42a08",
+      "maintainer": "RachaelQuisel",
+      "compatibility_status": "unverified",
+      "supported_environments": [],
+      "last_behavior_verified_at": null,
+      "suites": []
+    },
+    {
+      "id": "publish-a-plugin",
+      "path": "publish-a-plugin",
+      "readme_path": "plugins/publish-a-plugin/README.md",
+      "baseline_tree_sha": "5589f16cc9cceeb595c2f7f45c87411af8e284d5",
       "maintainer": "RachaelQuisel",
       "compatibility_status": "unverified",
       "supported_environments": [],
@@ -1019,6 +1594,27 @@
       "id": "qa",
       "path": "qa",
       "baseline_tree_sha": "a9bad865195e83f96748d59a4af7022fce5c4804",
+      "maintainer": "RachaelQuisel",
+      "compatibility_status": "unverified",
+      "supported_environments": [],
+      "last_behavior_verified_at": null,
+      "suites": []
+    },
+    {
+      "id": "questions-worth-asking",
+      "path": "questions-worth-asking",
+      "readme_path": "plugins/questions-worth-asking/README.md",
+      "baseline_tree_sha": "5bcd8e31398d72849ce24e1de0bd9430490ab83b",
+      "maintainer": "RachaelQuisel",
+      "compatibility_status": "unverified",
+      "supported_environments": [],
+      "last_behavior_verified_at": null,
+      "suites": []
+    },
+    {
+      "id": "rachael-artifact-style",
+      "path": "rachael-artifact-style",
+      "baseline_tree_sha": "e32060f9344d66d6b475c8055b7b4647ece14e67",
       "maintainer": "RachaelQuisel",
       "compatibility_status": "unverified",
       "supported_environments": [],
@@ -1086,9 +1682,41 @@
       "suites": []
     },
     {
+      "id": "session-instincts-learner-local",
+      "path": "session-instincts-learner-local",
+      "baseline_tree_sha": "91abab28cc89070e32d227b3c4a4d30e57df202d",
+      "maintainer": "RachaelQuisel",
+      "compatibility_status": "unverified",
+      "supported_environments": [],
+      "last_behavior_verified_at": null,
+      "suites": []
+    },
+    {
+      "id": "setup-weekly-rewind",
+      "path": "setup-weekly-rewind",
+      "readme_path": "plugins/week-in-rewind/README.md",
+      "baseline_tree_sha": "aa8a35f8c4fa3ed66279fb8802a449192f938426",
+      "maintainer": "RachaelQuisel",
+      "compatibility_status": "unverified",
+      "supported_environments": [],
+      "last_behavior_verified_at": null,
+      "suites": []
+    },
+    {
       "id": "ship",
       "path": "ship",
       "baseline_tree_sha": "27366cbfd11cb1e4e32b3508d346d78ef9a9463a",
+      "maintainer": "RachaelQuisel",
+      "compatibility_status": "unverified",
+      "supported_environments": [],
+      "last_behavior_verified_at": null,
+      "suites": []
+    },
+    {
+      "id": "skill-and-plugin-namer",
+      "path": "skill-and-plugin-namer",
+      "readme_path": "plugins/skill-and-plugin-namer/README.md",
+      "baseline_tree_sha": "f02de4e98e68291ed2f93992bfc1bdef6c231f62",
       "maintainer": "RachaelQuisel",
       "compatibility_status": "unverified",
       "supported_environments": [],
@@ -1129,6 +1757,17 @@
       "suites": []
     },
     {
+      "id": "sort-my-brain-dump",
+      "path": "sort-my-brain-dump",
+      "readme_path": "plugins/adhd-task-helper/README.md",
+      "baseline_tree_sha": "c58426568b0c0d71a483b2018fb77cc70a4539cb",
+      "maintainer": "RachaelQuisel",
+      "compatibility_status": "unverified",
+      "supported_environments": [],
+      "last_behavior_verified_at": null,
+      "suites": []
+    },
+    {
       "id": "spec-driven-dev",
       "path": "spec-driven-dev",
       "baseline_tree_sha": "01ad85347dd787b643a69f10856006945c677035",
@@ -1149,16 +1788,6 @@
       "suites": []
     },
     {
-      "id": "sync-gol-acuity-airtable",
-      "path": "sync-gol-acuity-airtable",
-      "baseline_tree_sha": "8278e9a0003279ccf85d52ba4c3bc9fb0d3256d4",
-      "maintainer": "RachaelQuisel",
-      "compatibility_status": "unverified",
-      "supported_environments": [],
-      "last_behavior_verified_at": null,
-      "suites": []
-    },
-    {
       "id": "syncing-skills-to-github",
       "path": "syncing-skills-to-github",
       "baseline_tree_sha": "94d92cf5b6be81aca5f5563deef4c9fb07372d47",
@@ -1172,6 +1801,16 @@
       "id": "systematic-debugging",
       "path": "systematic-debugging",
       "baseline_tree_sha": "b95e87189ebeef6496af50dbcd2ea472fbed210f",
+      "maintainer": "RachaelQuisel",
+      "compatibility_status": "unverified",
+      "supported_environments": [],
+      "last_behavior_verified_at": null,
+      "suites": []
+    },
+    {
+      "id": "task-hygiene",
+      "path": "task-hygiene",
+      "baseline_tree_sha": "cae3fad4fa08b8f578ed477d9dce5e97abc1e0d0",
       "maintainer": "RachaelQuisel",
       "compatibility_status": "unverified",
       "supported_environments": [],
@@ -1239,6 +1878,16 @@
       "suites": []
     },
     {
+      "id": "transcript-quotes-miner-local",
+      "path": "transcript-quotes-miner-local",
+      "baseline_tree_sha": "3ddea70a9a5aa7d8eb985c03c8324a9051b22549",
+      "maintainer": "RachaelQuisel",
+      "compatibility_status": "unverified",
+      "supported_environments": [],
+      "last_behavior_verified_at": null,
+      "suites": []
+    },
+    {
       "id": "transcript-review",
       "path": "transcript-review",
       "baseline_tree_sha": "6147e3fc3434e34ac69bc4928649a5802a4f883f",
@@ -1272,6 +1921,17 @@
       "id": "triage-issue",
       "path": "triage-issue",
       "baseline_tree_sha": "f14ea2d53bdbb311de33b15d406578980dbe84a5",
+      "maintainer": "RachaelQuisel",
+      "compatibility_status": "unverified",
+      "supported_environments": [],
+      "last_behavior_verified_at": null,
+      "suites": []
+    },
+    {
+      "id": "turn-off-ai-data-sharing",
+      "path": "turn-off-ai-data-sharing",
+      "readme_path": "plugins/turn-off-ai-data-sharing/README.md",
+      "baseline_tree_sha": "6c99040110ff86c60dcc3379518a1a772edcd31a",
       "maintainer": "RachaelQuisel",
       "compatibility_status": "unverified",
       "supported_environments": [],
@@ -1399,6 +2059,38 @@
       "suites": []
     },
     {
+      "id": "week-in-rewind",
+      "path": "week-in-rewind",
+      "readme_path": "plugins/week-in-rewind/README.md",
+      "baseline_tree_sha": "4446fda4ad78258204af11846813ee5b7d03f27d",
+      "maintainer": "RachaelQuisel",
+      "compatibility_status": "unverified",
+      "supported_environments": [],
+      "last_behavior_verified_at": null,
+      "suites": []
+    },
+    {
+      "id": "work-voice",
+      "path": "work-voice",
+      "baseline_tree_sha": "25eb96c0d4c2c650ea991c4587967728dd817c79",
+      "maintainer": "RachaelQuisel",
+      "compatibility_status": "unverified",
+      "supported_environments": [],
+      "last_behavior_verified_at": null,
+      "suites": []
+    },
+    {
+      "id": "workflow-diagram",
+      "path": "workflow-diagram",
+      "readme_path": "plugins/workflow-diagram-builder/README.md",
+      "baseline_tree_sha": "eb18bfe57ec81998f2c9a8fb51b3aef3aeb39ba8",
+      "maintainer": "RachaelQuisel",
+      "compatibility_status": "unverified",
+      "supported_environments": [],
+      "last_behavior_verified_at": null,
+      "suites": []
+    },
+    {
       "id": "workflow-eval",
       "path": "workflow-eval",
       "baseline_tree_sha": "7d375ac911f76282b9aa9bc5e28df4844075c80f",
@@ -1419,9 +2111,30 @@
       "suites": []
     },
     {
+      "id": "worth-asking",
+      "path": "worth-asking",
+      "readme_path": "plugins/worth-asking/README.md",
+      "baseline_tree_sha": "0408e07d65cbd1dafb14aa9b65099edc3ee697bb",
+      "maintainer": "RachaelQuisel",
+      "compatibility_status": "unverified",
+      "supported_environments": [],
+      "last_behavior_verified_at": null,
+      "suites": []
+    },
+    {
       "id": "write-a-prd",
       "path": "write-a-prd",
       "baseline_tree_sha": "3b204de138e296f3b0174d430c5677feb72c3b57",
+      "maintainer": "RachaelQuisel",
+      "compatibility_status": "unverified",
+      "supported_environments": [],
+      "last_behavior_verified_at": null,
+      "suites": []
+    },
+    {
+      "id": "write-artifact",
+      "path": "write-artifact",
+      "baseline_tree_sha": "c518fc421b03a25cf82db01923f66c13331b67f4",
       "maintainer": "RachaelQuisel",
       "compatibility_status": "unverified",
       "supported_environments": [],
@@ -1439,9 +2152,9 @@
       "suites": []
     },
     {
-      "id": "xlsx",
-      "path": "xlsx",
-      "baseline_tree_sha": "dea9bce66e825283d6a5574d458b94226f0f11ad",
+      "id": "xray-brand",
+      "path": "xray-brand",
+      "baseline_tree_sha": "6021367a0c5cc4460aa4c0f4cb6d6d9a9214b4a7",
       "maintainer": "RachaelQuisel",
       "compatibility_status": "unverified",
       "supported_environments": [],
@@ -1449,9 +2162,9 @@
       "suites": []
     },
     {
-      "id": "xray-brand",
-      "path": "xray-brand",
-      "baseline_tree_sha": "6021367a0c5cc4460aa4c0f4cb6d6d9a9214b4a7",
+      "id": "xray-team-voice-shifter-local",
+      "path": "xray-team-voice-shifter-local",
+      "baseline_tree_sha": "2c80642199e97a0570568fcc12880f1099895594",
       "maintainer": "RachaelQuisel",
       "compatibility_status": "unverified",
       "supported_environments": [],
@@ -1473,719 +2186,6 @@
       "path": "plugins/zite-prompt/skills/zite-prompt",
       "readme_path": "plugins/zite-prompt/README.md",
       "baseline_tree_sha": "86f35c5035e898429b059ded0a13ffaef14fcebc",
-      "maintainer": "RachaelQuisel",
-      "compatibility_status": "unverified",
-      "supported_environments": [],
-      "last_behavior_verified_at": null,
-      "suites": []
-    },
-    {
-      "id": "find-fix-mistakes:mistakes",
-      "path": "plugins/find-fix-mistakes/skills/mistakes",
-      "readme_path": "plugins/find-fix-mistakes/README.md",
-      "baseline_tree_sha": "02b4ecfb4e65f809c6358e56d345c4463843f7ea",
-      "maintainer": "RachaelQuisel",
-      "compatibility_status": "unverified",
-      "supported_environments": [],
-      "last_behavior_verified_at": null,
-      "suites": []
-    },
-    {
-      "id": "find-fix-mistakes:fixmistakes",
-      "path": "plugins/find-fix-mistakes/skills/fixmistakes",
-      "readme_path": "plugins/find-fix-mistakes/README.md",
-      "baseline_tree_sha": "0a750cdec8b104076638b0c2b45e5dff12cf09b6",
-      "maintainer": "RachaelQuisel",
-      "compatibility_status": "unverified",
-      "supported_environments": [],
-      "last_behavior_verified_at": null,
-      "suites": []
-    },
-    {
-      "id": "airtable-base-check",
-      "path": "airtable-base-check",
-      "baseline_tree_sha": "6786019a79691a1a87feb09aeb464884499a1234",
-      "maintainer": "RachaelQuisel",
-      "compatibility_status": "unverified",
-      "supported_environments": [],
-      "last_behavior_verified_at": null,
-      "suites": []
-    },
-    {
-      "id": "airtable-capacity-studio",
-      "path": "airtable-capacity-studio",
-      "baseline_tree_sha": "63592ea8e07ba85a3baf01155a309789a20d9d3f",
-      "maintainer": "RachaelQuisel",
-      "compatibility_status": "unverified",
-      "supported_environments": [],
-      "last_behavior_verified_at": null,
-      "suites": []
-    },
-    {
-      "id": "airtable-experience-lab",
-      "path": "airtable-experience-lab",
-      "baseline_tree_sha": "3f52f2198654a65571733ab8040959a06fe7d721",
-      "maintainer": "RachaelQuisel",
-      "compatibility_status": "unverified",
-      "supported_environments": [],
-      "last_behavior_verified_at": null,
-      "suites": []
-    },
-    {
-      "id": "airtable-momentum-studio",
-      "path": "airtable-momentum-studio",
-      "baseline_tree_sha": "e4dea1bed71aa03078ee2d53f25bc6da24291dac",
-      "maintainer": "RachaelQuisel",
-      "compatibility_status": "unverified",
-      "supported_environments": [],
-      "last_behavior_verified_at": null,
-      "suites": []
-    },
-    {
-      "id": "airtable-omni-refiner",
-      "path": "airtable-omni-refiner",
-      "baseline_tree_sha": "e7bd6da29ed23f7418b626f318e5b4c23a10fba8",
-      "maintainer": "RachaelQuisel",
-      "compatibility_status": "unverified",
-      "supported_environments": [],
-      "last_behavior_verified_at": null,
-      "suites": []
-    },
-    {
-      "id": "airtable-workflow-scout",
-      "path": "airtable-workflow-scout",
-      "baseline_tree_sha": "1ea77da83ccfd326ed9943f676f773d645ed8f3b",
-      "maintainer": "RachaelQuisel",
-      "compatibility_status": "unverified",
-      "supported_environments": [],
-      "last_behavior_verified_at": null,
-      "suites": []
-    },
-    {
-      "id": "app-content",
-      "path": "app-content",
-      "baseline_tree_sha": "a03ad9c9151a281dfb9428c76b30881dbccde8df",
-      "maintainer": "RachaelQuisel",
-      "compatibility_status": "unverified",
-      "supported_environments": [],
-      "last_behavior_verified_at": null,
-      "suites": []
-    },
-    {
-      "id": "applicant-csv-to-airtable-sync",
-      "path": "applicant-csv-to-airtable-sync",
-      "baseline_tree_sha": "b807e5006d5fa91f5f88b12e53e2b818b6e61c9c",
-      "maintainer": "RachaelQuisel",
-      "compatibility_status": "unverified",
-      "supported_environments": [],
-      "last_behavior_verified_at": null,
-      "suites": []
-    },
-    {
-      "id": "automate-your-business",
-      "path": "automate-your-business",
-      "baseline_tree_sha": "e14d4271e315973983f8340b709f1af17a56d334",
-      "maintainer": "RachaelQuisel",
-      "compatibility_status": "unverified",
-      "supported_environments": [],
-      "last_behavior_verified_at": null,
-      "suites": []
-    },
-    {
-      "id": "build-sprint-summary",
-      "path": "build-sprint-summary",
-      "baseline_tree_sha": "22137a76a88dcb54d205404c6cb684a8cd779de5",
-      "maintainer": "RachaelQuisel",
-      "compatibility_status": "unverified",
-      "supported_environments": [],
-      "last_behavior_verified_at": null,
-      "suites": []
-    },
-    {
-      "id": "course-completion-certificate",
-      "path": "course-completion-certificate",
-      "baseline_tree_sha": "2c000dde9e9fb32c6d3facbbb9e5f46b752462d6",
-      "maintainer": "RachaelQuisel",
-      "compatibility_status": "unverified",
-      "supported_environments": [],
-      "last_behavior_verified_at": null,
-      "suites": []
-    },
-    {
-      "id": "create-tweet-image",
-      "path": "create-tweet-image",
-      "baseline_tree_sha": "da6bdfe74d7bb77c48a5d846eff240794ccd6e3e",
-      "maintainer": "RachaelQuisel",
-      "compatibility_status": "unverified",
-      "supported_environments": [],
-      "last_behavior_verified_at": null,
-      "suites": []
-    },
-    {
-      "id": "execute-and-reconcile-pain-points",
-      "path": "execute-and-reconcile-pain-points",
-      "baseline_tree_sha": "11adc37086d5a286ee110a6b624e33d39c7aa7a5",
-      "maintainer": "RachaelQuisel",
-      "compatibility_status": "unverified",
-      "supported_environments": [],
-      "last_behavior_verified_at": null,
-      "suites": []
-    },
-    {
-      "id": "explain-automation",
-      "path": "explain-automation",
-      "baseline_tree_sha": "90d101ba32a8d7c761a5ab83aa506325471ce45a",
-      "maintainer": "RachaelQuisel",
-      "compatibility_status": "unverified",
-      "supported_environments": [],
-      "last_behavior_verified_at": null,
-      "suites": []
-    },
-    {
-      "id": "gol-confirm-received-date",
-      "path": "gol-confirm-received-date",
-      "baseline_tree_sha": "f76bf14c52b758df0c7cad402c94e482a8f92871",
-      "maintainer": "RachaelQuisel",
-      "compatibility_status": "unverified",
-      "supported_environments": [],
-      "last_behavior_verified_at": null,
-      "suites": []
-    },
-    {
-      "id": "make-it-sound-human",
-      "path": "make-it-sound-human",
-      "baseline_tree_sha": "72053fcbad229a90ed03508700cdbe8a54ae5466",
-      "maintainer": "RachaelQuisel",
-      "compatibility_status": "unverified",
-      "supported_environments": [],
-      "last_behavior_verified_at": null,
-      "suites": []
-    },
-    {
-      "id": "plugin-namer",
-      "path": "plugin-namer",
-      "baseline_tree_sha": "a61c7d0b0b3cf0a5f99606f505ccdf1a1e310ccc",
-      "maintainer": "RachaelQuisel",
-      "compatibility_status": "unverified",
-      "supported_environments": [],
-      "last_behavior_verified_at": null,
-      "suites": []
-    },
-    {
-      "id": "adhd-task-helper:get-unstuck",
-      "path": "get-unstuck",
-      "readme_path": "plugins/adhd-task-helper/README.md",
-      "baseline_tree_sha": "c7deaea8534c8e3778ec0f066699f68a8b14e393",
-      "maintainer": "RachaelQuisel",
-      "compatibility_status": "unverified",
-      "supported_environments": [],
-      "last_behavior_verified_at": null,
-      "suites": []
-    },
-    {
-      "id": "adhd-task-helper:i-have-adhd",
-      "path": "i-have-adhd",
-      "readme_path": "plugins/adhd-task-helper/README.md",
-      "baseline_tree_sha": "7ac26ff1f04937d9e399961b8ad46dbe7bd3a172",
-      "maintainer": "RachaelQuisel",
-      "compatibility_status": "unverified",
-      "supported_environments": [],
-      "last_behavior_verified_at": null,
-      "suites": []
-    },
-    {
-      "id": "adhd-task-helper:pick-it-back-up",
-      "path": "pick-it-back-up",
-      "readme_path": "plugins/adhd-task-helper/README.md",
-      "baseline_tree_sha": "0d354c1b8b20777ce33604d70967090df8a84110",
-      "maintainer": "RachaelQuisel",
-      "compatibility_status": "unverified",
-      "supported_environments": [],
-      "last_behavior_verified_at": null,
-      "suites": []
-    },
-    {
-      "id": "adhd-task-helper:sort-my-brain-dump",
-      "path": "sort-my-brain-dump",
-      "readme_path": "plugins/adhd-task-helper/README.md",
-      "baseline_tree_sha": "c58426568b0c0d71a483b2018fb77cc70a4539cb",
-      "maintainer": "RachaelQuisel",
-      "compatibility_status": "unverified",
-      "supported_environments": [],
-      "last_behavior_verified_at": null,
-      "suites": []
-    },
-    {
-      "id": "airbnb-hosting-expert:instructions",
-      "path": "instructions",
-      "readme_path": "plugins/airbnb-hosting-expert/README.md",
-      "baseline_tree_sha": "26650452ab5ed966ab8efa33c2ff19e9c7f23207",
-      "maintainer": "RachaelQuisel",
-      "compatibility_status": "unverified",
-      "supported_environments": [],
-      "last_behavior_verified_at": null,
-      "suites": []
-    },
-    {
-      "id": "airtable-interface-craft:airtable-interface-craft",
-      "path": "airtable-interface-craft",
-      "readme_path": "plugins/airtable-interface-craft/README.md",
-      "baseline_tree_sha": "98d5dd6238345967a5cec09c105d127ce1c12b73",
-      "maintainer": "RachaelQuisel",
-      "compatibility_status": "unverified",
-      "supported_environments": [],
-      "last_behavior_verified_at": null,
-      "suites": []
-    },
-    {
-      "id": "automate-notification-to-teams:automate-notification-to-teams",
-      "path": "automate-notification-to-teams",
-      "readme_path": "plugins/automate-notification-to-teams/README.md",
-      "baseline_tree_sha": "81a597398f59ce53495f82e8e17d4c53edfea5c8",
-      "maintainer": "RachaelQuisel",
-      "compatibility_status": "unverified",
-      "supported_environments": [],
-      "last_behavior_verified_at": null,
-      "suites": []
-    },
-    {
-      "id": "automation-message-writer:automation-message-writer",
-      "path": "automation-message-writer",
-      "readme_path": "plugins/automation-message-writer/README.md",
-      "baseline_tree_sha": "2b752bbe5cec7de90c31b5b73b802f02fa6e76d6",
-      "maintainer": "RachaelQuisel",
-      "compatibility_status": "unverified",
-      "supported_environments": [],
-      "last_behavior_verified_at": null,
-      "suites": []
-    },
-    {
-      "id": "find-automatable-workflows:automation-opportunity-scout",
-      "path": "automation-opportunity-scout",
-      "readme_path": "plugins/find-automatable-workflows/README.md",
-      "baseline_tree_sha": "6a57389fa0602e099f0b50ce55052f9042c39640",
-      "maintainer": "RachaelQuisel",
-      "compatibility_status": "unverified",
-      "supported_environments": [],
-      "last_behavior_verified_at": null,
-      "suites": []
-    },
-    {
-      "id": "find-automatable-workflows:eval-creation",
-      "path": "eval-creation",
-      "readme_path": "plugins/find-automatable-workflows/README.md",
-      "baseline_tree_sha": "9fe7c3501961c08a6b26cacb6b2909a55338a032",
-      "maintainer": "RachaelQuisel",
-      "compatibility_status": "unverified",
-      "supported_environments": [],
-      "last_behavior_verified_at": null,
-      "suites": []
-    },
-    {
-      "id": "find-automatable-workflows:grill-me-workflow",
-      "path": "grill-me-workflow",
-      "readme_path": "plugins/find-automatable-workflows/README.md",
-      "baseline_tree_sha": "97d205b5c7843211593dbcbc0903334932b8e0f5",
-      "maintainer": "RachaelQuisel",
-      "compatibility_status": "unverified",
-      "supported_environments": [],
-      "last_behavior_verified_at": null,
-      "suites": []
-    },
-    {
-      "id": "generate-financial-dummy-data:generate-financial-dummy-data",
-      "path": "generate-financial-dummy-data",
-      "readme_path": "plugins/generate-financial-dummy-data/README.md",
-      "baseline_tree_sha": "be32b7ca9f66e80e09b271174e6ed83634467233",
-      "maintainer": "RachaelQuisel",
-      "compatibility_status": "unverified",
-      "supported_environments": [],
-      "last_behavior_verified_at": null,
-      "suites": []
-    },
-    {
-      "id": "ghibli-icon-maker:ghibli-icon-maker",
-      "path": "ghibli-icon-maker",
-      "readme_path": "plugins/ghibli-icon-maker/README.md",
-      "baseline_tree_sha": "86d8e7a4a1375596912368ed2367dea29de62fc7",
-      "maintainer": "RachaelQuisel",
-      "compatibility_status": "unverified",
-      "supported_environments": [],
-      "last_behavior_verified_at": null,
-      "suites": []
-    },
-    {
-      "id": "github-portfolio-builder:github-portfolio-builder",
-      "path": "plugins/github-portfolio-builder/skills/github-portfolio-builder",
-      "readme_path": "plugins/github-portfolio-builder/README.md",
-      "baseline_tree_sha": "f77babee0b93d06a0c0fe29262d48a9cbbe85ae3",
-      "maintainer": "RachaelQuisel",
-      "compatibility_status": "unverified",
-      "supported_environments": [],
-      "last_behavior_verified_at": null,
-      "suites": []
-    },
-    {
-      "id": "humanize-output:humanize-output",
-      "path": "humanize-output",
-      "readme_path": "plugins/humanize-output/README.md",
-      "baseline_tree_sha": "302a010e482cff42f8e1ef8b2fdd8a36214762dd",
-      "maintainer": "RachaelQuisel",
-      "compatibility_status": "unverified",
-      "supported_environments": [],
-      "last_behavior_verified_at": null,
-      "suites": []
-    },
-    {
-      "id": "plain-english-editor:plain-english-editor",
-      "path": "plain-english-editor",
-      "readme_path": "plugins/plain-english-editor/README.md",
-      "baseline_tree_sha": "7293ccb97b0346daa9b906e97f5391743ad76f91",
-      "maintainer": "RachaelQuisel",
-      "compatibility_status": "unverified",
-      "supported_environments": [],
-      "last_behavior_verified_at": null,
-      "suites": []
-    },
-    {
-      "id": "publish-a-plugin:publish-a-plugin",
-      "path": "publish-a-plugin",
-      "readme_path": "plugins/publish-a-plugin/README.md",
-      "baseline_tree_sha": "5589f16cc9cceeb595c2f7f45c87411af8e284d5",
-      "maintainer": "RachaelQuisel",
-      "compatibility_status": "unverified",
-      "supported_environments": [],
-      "last_behavior_verified_at": null,
-      "suites": []
-    },
-    {
-      "id": "questions-worth-asking:questions-worth-asking",
-      "path": "questions-worth-asking",
-      "readme_path": "plugins/questions-worth-asking/README.md",
-      "baseline_tree_sha": "5bcd8e31398d72849ce24e1de0bd9430490ab83b",
-      "maintainer": "RachaelQuisel",
-      "compatibility_status": "unverified",
-      "supported_environments": [],
-      "last_behavior_verified_at": null,
-      "suites": []
-    },
-    {
-      "id": "skill-and-plugin-namer:skill-and-plugin-namer",
-      "path": "skill-and-plugin-namer",
-      "readme_path": "plugins/skill-and-plugin-namer/README.md",
-      "baseline_tree_sha": "f02de4e98e68291ed2f93992bfc1bdef6c231f62",
-      "maintainer": "RachaelQuisel",
-      "compatibility_status": "unverified",
-      "supported_environments": [],
-      "last_behavior_verified_at": null,
-      "suites": []
-    },
-    {
-      "id": "turn-off-ai-data-sharing:turn-off-ai-data-sharing",
-      "path": "turn-off-ai-data-sharing",
-      "readme_path": "plugins/turn-off-ai-data-sharing/README.md",
-      "baseline_tree_sha": "6c99040110ff86c60dcc3379518a1a772edcd31a",
-      "maintainer": "RachaelQuisel",
-      "compatibility_status": "unverified",
-      "supported_environments": [],
-      "last_behavior_verified_at": null,
-      "suites": []
-    },
-    {
-      "id": "week-in-rewind:setup-weekly-rewind",
-      "path": "setup-weekly-rewind",
-      "readme_path": "plugins/week-in-rewind/README.md",
-      "baseline_tree_sha": "aa8a35f8c4fa3ed66279fb8802a449192f938426",
-      "maintainer": "RachaelQuisel",
-      "compatibility_status": "unverified",
-      "supported_environments": [],
-      "last_behavior_verified_at": null,
-      "suites": []
-    },
-    {
-      "id": "week-in-rewind:week-in-rewind",
-      "path": "week-in-rewind",
-      "readme_path": "plugins/week-in-rewind/README.md",
-      "baseline_tree_sha": "4446fda4ad78258204af11846813ee5b7d03f27d",
-      "maintainer": "RachaelQuisel",
-      "compatibility_status": "unverified",
-      "supported_environments": [],
-      "last_behavior_verified_at": null,
-      "suites": []
-    },
-    {
-      "id": "workflow-diagram-builder:workflow-diagram",
-      "path": "workflow-diagram",
-      "readme_path": "plugins/workflow-diagram-builder/README.md",
-      "baseline_tree_sha": "eb18bfe57ec81998f2c9a8fb51b3aef3aeb39ba8",
-      "maintainer": "RachaelQuisel",
-      "compatibility_status": "unverified",
-      "supported_environments": [],
-      "last_behavior_verified_at": null,
-      "suites": []
-    },
-    {
-      "id": "worth-asking:worth-asking",
-      "path": "worth-asking",
-      "readme_path": "plugins/worth-asking/README.md",
-      "baseline_tree_sha": "0408e07d65cbd1dafb14aa9b65099edc3ee697bb",
-      "maintainer": "RachaelQuisel",
-      "compatibility_status": "unverified",
-      "supported_environments": [],
-      "last_behavior_verified_at": null,
-      "suites": []
-    },
-    {
-      "id": "post-plugin-reel",
-      "path": "post-plugin-reel",
-      "baseline_tree_sha": "b9ed09b2ea3dd8e466883999b64ba7a41f96015d",
-      "maintainer": "RachaelQuisel",
-      "compatibility_status": "unverified",
-      "supported_environments": [],
-      "last_behavior_verified_at": null,
-      "suites": []
-    },
-    {
-      "id": "postmortem",
-      "path": "postmortem",
-      "baseline_tree_sha": "bcb71e75df77825c5b91fea17d903cfccd5b7d70",
-      "maintainer": "RachaelQuisel",
-      "compatibility_status": "unverified",
-      "supported_environments": [],
-      "last_behavior_verified_at": null,
-      "suites": []
-    },
-    {
-      "id": "project-instructions-writer",
-      "path": "project-instructions-writer",
-      "baseline_tree_sha": "19bc1dd143c871c0022cc6a2cdcba4786cd7ab7c",
-      "maintainer": "RachaelQuisel",
-      "compatibility_status": "unverified",
-      "supported_environments": [],
-      "last_behavior_verified_at": null,
-      "suites": []
-    },
-    {
-      "id": "proper-grammar",
-      "path": "proper-grammar",
-      "baseline_tree_sha": "2745c20ca364ad4c7fd456981ce9f3f45d0df633",
-      "maintainer": "RachaelQuisel",
-      "compatibility_status": "unverified",
-      "supported_environments": [],
-      "last_behavior_verified_at": null,
-      "suites": []
-    },
-    {
-      "id": "task-hygiene",
-      "path": "task-hygiene",
-      "baseline_tree_sha": "cae3fad4fa08b8f578ed477d9dce5e97abc1e0d0",
-      "maintainer": "RachaelQuisel",
-      "compatibility_status": "unverified",
-      "supported_environments": [],
-      "last_behavior_verified_at": null,
-      "suites": []
-    },
-    {
-      "id": "write-artifact",
-      "path": "write-artifact",
-      "baseline_tree_sha": "c518fc421b03a25cf82db01923f66c13331b67f4",
-      "maintainer": "RachaelQuisel",
-      "compatibility_status": "unverified",
-      "supported_environments": [],
-      "last_behavior_verified_at": null,
-      "suites": []
-    },
-    {
-      "id": "github-portfolio-review:github-portfolio-review",
-      "path": "plugins/github-portfolio-review/skills/github-portfolio-review",
-      "readme_path": "plugins/github-portfolio-review/skills/github-portfolio-review/README.md",
-      "baseline_tree_sha": "596deb042639a7cd6625600e54846a4bb7c94585",
-      "maintainer": "RachaelQuisel",
-      "compatibility_status": "unverified",
-      "supported_environments": [],
-      "last_behavior_verified_at": null,
-      "suites": []
-    },
-    {
-      "id": "contact-follow-up-tracker:contact-follow-up-tracker",
-      "path": "contact-follow-up-tracker",
-      "readme_path": "plugins/contact-follow-up-tracker/README.md",
-      "baseline_tree_sha": "54123b99552fd5de87dc7ff7670aae4d6d64e499",
-      "maintainer": "RachaelQuisel",
-      "compatibility_status": "unverified",
-      "supported_environments": [],
-      "last_behavior_verified_at": null,
-      "suites": []
-    },
-    {
-      "id": "cited-research-assistant:cited-research-assistant",
-      "path": "cited-research-assistant",
-      "readme_path": "plugins/cited-research-assistant/README.md",
-      "baseline_tree_sha": "c693c9abfc5069db98a7a7d405f078d599d32499",
-      "maintainer": "RachaelQuisel",
-      "compatibility_status": "unverified",
-      "supported_environments": [],
-      "last_behavior_verified_at": null,
-      "suites": []
-    },
-    {
-      "id": "audit-airtable-schema",
-      "path": "audit-airtable-schema",
-      "readme_path": "audit-airtable-schema/README.md",
-      "baseline_tree_sha": "94bd4c133838325aeb0a7d33c57e5bace31418c8",
-      "maintainer": "RachaelQuisel",
-      "compatibility_status": "unverified",
-      "supported_environments": [],
-      "last_behavior_verified_at": null,
-      "suites": []
-    },
-    {
-      "id": "audit-softr-app",
-      "path": "audit-softr-app",
-      "readme_path": "audit-softr-app/README.md",
-      "baseline_tree_sha": "2c53768d1bd3e028e8bb1052153e2cbe41a1627b",
-      "maintainer": "RachaelQuisel",
-      "compatibility_status": "unverified",
-      "supported_environments": [],
-      "last_behavior_verified_at": null,
-      "suites": []
-    },
-    {
-      "id": "audit-airtable-interfaces",
-      "path": "audit-airtable-interfaces",
-      "readme_path": "audit-airtable-interfaces/README.md",
-      "baseline_tree_sha": "d20a8a924803fd66d1d057a6d8b88b5d696a40a6",
-      "maintainer": "RachaelQuisel",
-      "compatibility_status": "unverified",
-      "supported_environments": [],
-      "last_behavior_verified_at": null,
-      "suites": []
-    },
-    {
-      "id": "audit-airtable-automations-report",
-      "path": "audit-airtable-automations-report",
-      "readme_path": "audit-airtable-automations-report/README.md",
-      "baseline_tree_sha": "a4cf5f8d43611ba84baa1c53b3fd997ff930a0c4",
-      "maintainer": "RachaelQuisel",
-      "compatibility_status": "unverified",
-      "supported_environments": [],
-      "last_behavior_verified_at": null,
-      "suites": []
-    },
-    {
-      "id": "build-page-publisher-local",
-      "path": "build-page-publisher-local",
-      "baseline_tree_sha": "6fbc4b04ba2ad40202edd1519b7f1e42faa8c5b6",
-      "maintainer": "RachaelQuisel",
-      "compatibility_status": "unverified",
-      "supported_environments": [],
-      "last_behavior_verified_at": null,
-      "suites": []
-    },
-    {
-      "id": "automation-explainer-local",
-      "path": "automation-explainer-local",
-      "baseline_tree_sha": "0feca4384804a904e2522b82317d0270c1d80ad7",
-      "maintainer": "RachaelQuisel",
-      "compatibility_status": "unverified",
-      "supported_environments": [],
-      "last_behavior_verified_at": null,
-      "suites": []
-    },
-    {
-      "id": "how-it-works-doc-writer-local",
-      "path": "how-it-works-doc-writer-local",
-      "baseline_tree_sha": "bdd20ad2f84bbf4b3c7dc79a8debd27288e67024",
-      "maintainer": "RachaelQuisel",
-      "compatibility_status": "unverified",
-      "supported_environments": [],
-      "last_behavior_verified_at": null,
-      "suites": []
-    },
-    {
-      "id": "acuity-roster-reconciler-local",
-      "path": "acuity-roster-reconciler-local",
-      "baseline_tree_sha": "be0901874f9972aa19b877ee140bf51c3ac1c6c7",
-      "maintainer": "RachaelQuisel",
-      "compatibility_status": "unverified",
-      "supported_environments": [],
-      "last_behavior_verified_at": null,
-      "suites": []
-    },
-    {
-      "id": "session-instincts-learner-local",
-      "path": "session-instincts-learner-local",
-      "baseline_tree_sha": "91abab28cc89070e32d227b3c4a4d30e57df202d",
-      "maintainer": "RachaelQuisel",
-      "compatibility_status": "unverified",
-      "supported_environments": [],
-      "last_behavior_verified_at": null,
-      "suites": []
-    },
-    {
-      "id": "transcript-quotes-miner-local",
-      "path": "transcript-quotes-miner-local",
-      "baseline_tree_sha": "3ddea70a9a5aa7d8eb985c03c8324a9051b22549",
-      "maintainer": "RachaelQuisel",
-      "compatibility_status": "unverified",
-      "supported_environments": [],
-      "last_behavior_verified_at": null,
-      "suites": []
-    },
-    {
-      "id": "xray-team-voice-shifter-local",
-      "path": "xray-team-voice-shifter-local",
-      "baseline_tree_sha": "2c80642199e97a0570568fcc12880f1099895594",
-      "maintainer": "RachaelQuisel",
-      "compatibility_status": "unverified",
-      "supported_environments": [],
-      "last_behavior_verified_at": null,
-      "suites": []
-    },
-    {
-      "id": "notebooklm-api-wrapper-local",
-      "path": "notebooklm-api-wrapper-local",
-      "baseline_tree_sha": "0f37c2d856fce27606f0152a63d17572c42c8b8d",
-      "maintainer": "RachaelQuisel",
-      "compatibility_status": "unverified",
-      "supported_environments": [],
-      "last_behavior_verified_at": null,
-      "suites": []
-    },
-    {
-      "id": "next-skill-recommender-local",
-      "path": "next-skill-recommender-local",
-      "baseline_tree_sha": "ea0385ec66c4adecf53f2a83add037a1b9ba40fe",
-      "maintainer": "RachaelQuisel",
-      "compatibility_status": "unverified",
-      "supported_environments": [],
-      "last_behavior_verified_at": null,
-      "suites": []
-    },
-    {
-      "id": "client-docs:build-page-publisher-local",
-      "path": "plugins/client-docs/skills/build-page-publisher-local",
-      "baseline_tree_sha": "6fbc4b04ba2ad40202edd1519b7f1e42faa8c5b6",
-      "maintainer": "RachaelQuisel",
-      "compatibility_status": "unverified",
-      "supported_environments": [],
-      "last_behavior_verified_at": null,
-      "suites": []
-    },
-    {
-      "id": "client-docs:automation-explainer-local",
-      "path": "plugins/client-docs/skills/automation-explainer-local",
-      "baseline_tree_sha": "e19adceb2b93141b527c76f39401d3f115c46295",
-      "maintainer": "RachaelQuisel",
-      "compatibility_status": "unverified",
-      "supported_environments": [],
-      "last_behavior_verified_at": null,
-      "suites": []
-    },
-    {
-      "id": "client-docs:how-it-works-doc-writer-local",
-      "path": "plugins/client-docs/skills/how-it-works-doc-writer-local",
-      "baseline_tree_sha": "bdd20ad2f84bbf4b3c7dc79a8debd27288e67024",
       "maintainer": "RachaelQuisel",
       "compatibility_status": "unverified",
       "supported_environments": [],
