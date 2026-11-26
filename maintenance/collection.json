@@ -1673,7 +1673,7 @@
     },
     {
       "id": "adhd-task-helper:get-unstuck",
-      "path": "plugins/adhd-task-helper/skills/get-unstuck",
+      "path": "get-unstuck",
       "readme_path": "plugins/adhd-task-helper/README.md",
       "baseline_tree_sha": "c7deaea8534c8e3778ec0f066699f68a8b14e393",
       "maintainer": "RachaelQuisel",
@@ -1684,7 +1684,7 @@
     },
     {
       "id": "adhd-task-helper:i-have-adhd",
-      "path": "plugins/adhd-task-helper/skills/i-have-adhd",
+      "path": "i-have-adhd",
       "readme_path": "plugins/adhd-task-helper/README.md",
       "baseline_tree_sha": "7ac26ff1f04937d9e399961b8ad46dbe7bd3a172",
       "maintainer": "RachaelQuisel",
@@ -1695,7 +1695,7 @@
     },
     {
       "id": "adhd-task-helper:pick-it-back-up",
-      "path": "plugins/adhd-task-helper/skills/pick-it-back-up",
+      "path": "pick-it-back-up",
       "readme_path": "plugins/adhd-task-helper/README.md",
       "baseline_tree_sha": "0d354c1b8b20777ce33604d70967090df8a84110",
       "maintainer": "RachaelQuisel",
@@ -1706,7 +1706,7 @@
     },
     {
       "id": "adhd-task-helper:sort-my-brain-dump",
-      "path": "plugins/adhd-task-helper/skills/sort-my-brain-dump",
+      "path": "sort-my-brain-dump",
       "readme_path": "plugins/adhd-task-helper/README.md",
       "baseline_tree_sha": "c58426568b0c0d71a483b2018fb77cc70a4539cb",
       "maintainer": "RachaelQuisel",
@@ -1717,7 +1717,7 @@
     },
     {
       "id": "airbnb-hosting-expert:instructions",
-      "path": "plugins/airbnb-hosting-expert/skills/instructions",
+      "path": "instructions",
       "readme_path": "plugins/airbnb-hosting-expert/README.md",
       "baseline_tree_sha": "26650452ab5ed966ab8efa33c2ff19e9c7f23207",
       "maintainer": "RachaelQuisel",
@@ -1728,7 +1728,7 @@
     },
     {
       "id": "airtable-interface-craft:airtable-interface-craft",
-      "path": "plugins/airtable-interface-craft/skills/airtable-interface-craft",
+      "path": "airtable-interface-craft",
       "readme_path": "plugins/airtable-interface-craft/README.md",
       "baseline_tree_sha": "98d5dd6238345967a5cec09c105d127ce1c12b73",
       "maintainer": "RachaelQuisel",
@@ -1739,7 +1739,7 @@
     },
     {
       "id": "automate-notification-to-teams:automate-notification-to-teams",
-      "path": "plugins/automate-notification-to-teams/skills/automate-notification-to-teams",
+      "path": "automate-notification-to-teams",
       "readme_path": "plugins/automate-notification-to-teams/README.md",
       "baseline_tree_sha": "81a597398f59ce53495f82e8e17d4c53edfea5c8",
       "maintainer": "RachaelQuisel",
@@ -1750,7 +1750,7 @@
     },
     {
       "id": "automation-message-writer:automation-message-writer",
-      "path": "plugins/automation-message-writer/skills/automation-message-writer",
+      "path": "automation-message-writer",
       "readme_path": "plugins/automation-message-writer/README.md",
       "baseline_tree_sha": "2b752bbe5cec7de90c31b5b73b802f02fa6e76d6",
       "maintainer": "RachaelQuisel",
@@ -1761,7 +1761,7 @@
     },
     {
       "id": "find-automatable-workflows:automation-opportunity-scout",
-      "path": "plugins/find-automatable-workflows/skills/automation-opportunity-scout",
+      "path": "automation-opportunity-scout",
       "readme_path": "plugins/find-automatable-workflows/README.md",
       "baseline_tree_sha": "6a57389fa0602e099f0b50ce55052f9042c39640",
       "maintainer": "RachaelQuisel",
@@ -1772,7 +1772,7 @@
     },
     {
       "id": "find-automatable-workflows:eval-creation",
-      "path": "plugins/find-automatable-workflows/skills/eval-creation",
+      "path": "eval-creation",
       "readme_path": "plugins/find-automatable-workflows/README.md",
       "baseline_tree_sha": "9fe7c3501961c08a6b26cacb6b2909a55338a032",
       "maintainer": "RachaelQuisel",
@@ -1783,7 +1783,7 @@
     },
     {
       "id": "find-automatable-workflows:grill-me-workflow",
-      "path": "plugins/find-automatable-workflows/skills/grill-me-workflow",
+      "path": "grill-me-workflow",
       "readme_path": "plugins/find-automatable-workflows/README.md",
       "baseline_tree_sha": "97d205b5c7843211593dbcbc0903334932b8e0f5",
       "maintainer": "RachaelQuisel",
@@ -1794,7 +1794,7 @@
     },
     {
       "id": "generate-financial-dummy-data:generate-financial-dummy-data",
-      "path": "plugins/generate-financial-dummy-data/skills/generate-financial-dummy-data",
+      "path": "generate-financial-dummy-data",
       "readme_path": "plugins/generate-financial-dummy-data/README.md",
       "baseline_tree_sha": "be32b7ca9f66e80e09b271174e6ed83634467233",
       "maintainer": "RachaelQuisel",
@@ -1805,7 +1805,7 @@
     },
     {
       "id": "ghibli-icon-maker:ghibli-icon-maker",
-      "path": "plugins/ghibli-icon-maker/skills/ghibli-icon-maker",
+      "path": "ghibli-icon-maker",
       "readme_path": "plugins/ghibli-icon-maker/README.md",
       "baseline_tree_sha": "86d8e7a4a1375596912368ed2367dea29de62fc7",
       "maintainer": "RachaelQuisel",
@@ -1827,7 +1827,7 @@
     },
     {
       "id": "humanize-output:humanize-output",
-      "path": "plugins/humanize-output/skills/humanize-output",
+      "path": "humanize-output",
       "readme_path": "plugins/humanize-output/README.md",
       "baseline_tree_sha": "302a010e482cff42f8e1ef8b2fdd8a36214762dd",
       "maintainer": "RachaelQuisel",
@@ -1838,7 +1838,7 @@
     },
     {
       "id": "plain-english-editor:plain-english-editor",
-      "path": "plugins/plain-english-editor/skills/plain-english-editor",
+      "path": "plain-english-editor",
       "readme_path": "plugins/plain-english-editor/README.md",
       "baseline_tree_sha": "7293ccb97b0346daa9b906e97f5391743ad76f91",
       "maintainer": "RachaelQuisel",
@@ -1849,7 +1849,7 @@
     },
     {
       "id": "publish-a-plugin:publish-a-plugin",
-      "path": "plugins/publish-a-plugin/skills/publish-a-plugin",
+      "path": "publish-a-plugin",
       "readme_path": "plugins/publish-a-plugin/README.md",
       "baseline_tree_sha": "5589f16cc9cceeb595c2f7f45c87411af8e284d5",
       "maintainer": "RachaelQuisel",
@@ -1860,7 +1860,7 @@
     },
     {
       "id": "questions-worth-asking:questions-worth-asking",
-      "path": "plugins/questions-worth-asking/skills/questions-worth-asking",
+      "path": "questions-worth-asking",
       "readme_path": "plugins/questions-worth-asking/README.md",
       "baseline_tree_sha": "5bcd8e31398d72849ce24e1de0bd9430490ab83b",
       "maintainer": "RachaelQuisel",
@@ -1871,7 +1871,7 @@
     },
     {
       "id": "skill-and-plugin-namer:skill-and-plugin-namer",
-      "path": "plugins/skill-and-plugin-namer/skills/skill-and-plugin-namer",
+      "path": "skill-and-plugin-namer",
       "readme_path": "plugins/skill-and-plugin-namer/README.md",
       "baseline_tree_sha": "f02de4e98e68291ed2f93992bfc1bdef6c231f62",
       "maintainer": "RachaelQuisel",
@@ -1882,7 +1882,7 @@
     },
     {
       "id": "turn-off-ai-data-sharing:turn-off-ai-data-sharing",
-      "path": "plugins/turn-off-ai-data-sharing/skills/turn-off-ai-data-sharing",
+      "path": "turn-off-ai-data-sharing",
       "readme_path": "plugins/turn-off-ai-data-sharing/README.md",
       "baseline_tree_sha": "6c99040110ff86c60dcc3379518a1a772edcd31a",
       "maintainer": "RachaelQuisel",
@@ -1893,7 +1893,7 @@
     },
     {
       "id": "week-in-rewind:setup-weekly-rewind",
-      "path": "plugins/week-in-rewind/skills/setup-weekly-rewind",
+      "path": "setup-weekly-rewind",
       "readme_path": "plugins/week-in-rewind/README.md",
       "baseline_tree_sha": "aa8a35f8c4fa3ed66279fb8802a449192f938426",
       "maintainer": "RachaelQuisel",
@@ -1904,7 +1904,7 @@
     },
     {
       "id": "week-in-rewind:week-in-rewind",
-      "path": "plugins/week-in-rewind/skills/week-in-rewind",
+      "path": "week-in-rewind",
       "readme_path": "plugins/week-in-rewind/README.md",
       "baseline_tree_sha": "4446fda4ad78258204af11846813ee5b7d03f27d",
       "maintainer": "RachaelQuisel",
@@ -1915,7 +1915,7 @@
     },
     {
       "id": "workflow-diagram-builder:workflow-diagram",
-      "path": "plugins/workflow-diagram-builder/skills/workflow-diagram",
+      "path": "workflow-diagram",
       "readme_path": "plugins/workflow-diagram-builder/README.md",
       "baseline_tree_sha": "eb18bfe57ec81998f2c9a8fb51b3aef3aeb39ba8",
       "maintainer": "RachaelQuisel",
@@ -1926,7 +1926,7 @@
     },
     {
       "id": "worth-asking:worth-asking",
-      "path": "plugins/worth-asking/skills/worth-asking",
+      "path": "worth-asking",
       "readme_path": "plugins/worth-asking/README.md",
       "baseline_tree_sha": "0408e07d65cbd1dafb14aa9b65099edc3ee697bb",
       "maintainer": "RachaelQuisel",
@@ -2008,7 +2008,7 @@
     },
     {
       "id": "contact-follow-up-tracker:contact-follow-up-tracker",
-      "path": "plugins/contact-follow-up-tracker/skills/contact-follow-up-tracker",
+      "path": "contact-follow-up-tracker",
       "readme_path": "plugins/contact-follow-up-tracker/README.md",
       "baseline_tree_sha": "54123b99552fd5de87dc7ff7670aae4d6d64e499",
       "maintainer": "RachaelQuisel",
@@ -2019,7 +2019,7 @@
     },
     {
       "id": "cited-research-assistant:cited-research-assistant",
-      "path": "plugins/cited-research-assistant/skills/cited-research-assistant",
+      "path": "cited-research-assistant",
       "readme_path": "plugins/cited-research-assistant/README.md",
       "baseline_tree_sha": "c693c9abfc5069db98a7a7d405f078d599d32499",
       "maintainer": "RachaelQuisel",

@@ -55,7 +55,10 @@
     {
       "name": "humanize-output",
       "description": "Improve existing copy through a short conversation. Choose the reader, tone, and editing depth. Review suggestions before applying changes.",
-      "source": "./plugins/humanize-output",
+      "source": {
+        "source": "github",
+        "repo": "RachaelQuisel/humanize-output"
+      },
       "category": "productivity",
       "homepage": "https://github.com/RachaelQuisel/Skills/tree/main/plugins/humanize-output",
       "version": "1.0.4"
@@ -63,7 +66,10 @@
     {
       "name": "adhd-task-helper",
       "description": "ADHD-friendly support for clearer replies, starting a task, sorting a brain dump, and resuming interrupted work.",
-      "source": "./plugins/adhd-task-helper",
+      "source": {
+        "source": "github",
+        "repo": "RachaelQuisel/adhd-task-helper"
+      },
       "category": "productivity",
       "homepage": "https://github.com/RachaelQuisel/Skills/tree/main/plugins/adhd-task-helper",
       "version": "1.0.5"
@@ -71,7 +77,10 @@
     {
       "name": "airtable-interface-craft",
       "description": "Create distinctive Airtable interfaces with verified data, reliable interactions and an exact source return.",
-      "source": "./plugins/airtable-interface-craft",
+      "source": {
+        "source": "github",
+        "repo": "RachaelQuisel/airtable-interface-builder"
+      },
       "category": "productivity",
       "homepage": "https://github.com/RachaelQuisel/Skills/tree/main/plugins/airtable-interface-craft",
       "version": "1.0.7"
@@ -79,7 +88,10 @@
     {
       "name": "workflow-diagram-builder",
       "description": "Explain a workflow with a Mermaid diagram. Answer a few questions, see who does each step, and revise the diagram through conversation.",
-      "source": "./plugins/workflow-diagram-builder",
+      "source": {
+        "source": "github",
+        "repo": "RachaelQuisel/workflow-diagram-builder"
+      },
       "category": "productivity",
       "homepage": "https://github.com/RachaelQuisel/Skills/tree/main/plugins/workflow-diagram-builder",
       "version": "1.1.4"
@@ -87,7 +99,10 @@
     {
       "name": "automate-notification-to-teams",
       "description": "Set up Microsoft Teams notifications through a few questions.",
-      "source": "./plugins/automate-notification-to-teams",
+      "source": {
+        "source": "github",
+        "repo": "RachaelQuisel/automate-notification-to-teams"
+      },
       "category": "productivity",
       "homepage": "https://github.com/RachaelQuisel/Skills/tree/main/plugins/automate-notification-to-teams",
       "version": "2.0.5"
@@ -95,7 +110,10 @@
     {
       "name": "automation-message-writer",
       "description": "Interactively turn automation results into finished interface messages that nontechnical clients understand.",
-      "source": "./plugins/automation-message-writer",
+      "source": {
+        "source": "github",
+        "repo": "RachaelQuisel/automation-message-writer"
+      },
       "category": "productivity",
       "homepage": "https://github.com/RachaelQuisel/Skills/tree/main/plugins/automation-message-writer",
       "version": "1.0.5"
@@ -103,7 +121,10 @@
     {
       "name": "find-automatable-workflows",
       "description": "Ask a few questions to find work worth automating. Review selected sources and turn a chosen recommendation into a specification with outcome checks.",
-      "source": "./plugins/find-automatable-workflows",
+      "source": {
+        "source": "github",
+        "repo": "RachaelQuisel/find-automatable-workflows"
+      },
       "category": "productivity",
       "homepage": "https://github.com/RachaelQuisel/Skills/tree/main/plugins/find-automatable-workflows",
       "version": "1.0.5"
@@ -111,7 +132,10 @@
     {
       "name": "generate-financial-dummy-data",
       "description": "Create test grants through a conversation. Answer a few questions about your destination and test scenario. Receive verified records or an import file.",
-      "source": "./plugins/generate-financial-dummy-data",
+      "source": {
+        "source": "github",
+        "repo": "RachaelQuisel/generate-financial-dummy-data"
+      },
       "category": "productivity",
       "homepage": "https://github.com/RachaelQuisel/Skills/tree/main/plugins/generate-financial-dummy-data",
       "version": "1.1.4"
@@ -119,7 +143,10 @@
     {
       "name": "ghibli-icon-maker",
       "description": "Give your ideas a softer look. Draws hand-made charcoal line icons on washed pastel tiles, so a set of plugins, apps, or brand marks reads as one family instead of a pile of clip art.",
-      "source": "./plugins/ghibli-icon-maker",
+      "source": {
+        "source": "github",
+        "repo": "RachaelQuisel/ghibli-icon-maker"
+      },
       "category": "productivity",
       "homepage": "https://github.com/RachaelQuisel/Skills/tree/main/plugins/ghibli-icon-maker",
       "version": "1.0.5"
@@ -127,7 +154,10 @@
     {
       "name": "plain-english-editor",
       "description": "Rewrite or review content in concise, plain English, including automation and process explanations.",
-      "source": "./plugins/plain-english-editor",
+      "source": {
+        "source": "github",
+        "repo": "RachaelQuisel/plain-english-editor"
+      },
       "category": "productivity",
       "homepage": "https://github.com/RachaelQuisel/Skills/tree/main/plugins/plain-english-editor",
       "version": "4.1.4"
@@ -135,7 +165,10 @@
     {
       "name": "publish-a-plugin",
       "description": "Prepare Claude Code plugins for directory review.",
-      "source": "./plugins/publish-a-plugin",
+      "source": {
+        "source": "github",
+        "repo": "RachaelQuisel/publish-a-plugin"
+      },
       "category": "development",
       "homepage": "https://github.com/RachaelQuisel/Skills/tree/main/plugins/publish-a-plugin",
       "version": "1.1.4"
@@ -143,7 +176,10 @@
     {
       "name": "questions-worth-asking",
       "description": "Turn meeting notes into useful follow-up. Find missed questions, clarify what changed, and get a prioritized checklist with messages ready to use.",
-      "source": "./plugins/questions-worth-asking",
+      "source": {
+        "source": "github",
+        "repo": "RachaelQuisel/questions-worth-asking"
+      },
       "category": "productivity",
       "homepage": "https://github.com/RachaelQuisel/Skills/tree/main/plugins/questions-worth-asking",
       "version": "1.2.5"
@@ -151,7 +187,10 @@
     {
       "name": "skill-and-plugin-namer",
       "description": "Name a skill or plugin through a few questions. Receive a clear name, tagline, description, feature bullets, and usage steps.",
-      "source": "./plugins/skill-and-plugin-namer",
+      "source": {
+        "source": "github",
+        "repo": "RachaelQuisel/skill-and-plugin-namer"
+      },
       "category": "productivity",
       "homepage": "https://github.com/RachaelQuisel/Skills/tree/main/plugins/skill-and-plugin-namer",
       "version": "3.1.4"
@@ -159,7 +198,10 @@
     {
       "name": "turn-off-ai-data-sharing",
       "description": "Find out what your AI accounts are actually sharing, then shut off the parts you never agreed to. Reads the settings pages in your own browser, checks each one against what the vendor documents, and hands you the exact click path to fix it.",
-      "source": "./plugins/turn-off-ai-data-sharing",
+      "source": {
+        "source": "github",
+        "repo": "RachaelQuisel/turn-off-ai-data-sharing"
+      },
       "category": "productivity",
       "homepage": "https://github.com/RachaelQuisel/Skills/tree/main/plugins/turn-off-ai-data-sharing",
       "version": "1.0.4"
@@ -167,7 +209,10 @@
     {
       "name": "week-in-rewind",
       "description": "Create a short recap of opted-in Computer History. Choose the dates, tone, and focus. Optional scheduling supports delivery to your own Slack direct message.",
-      "source": "./plugins/week-in-rewind",
+      "source": {
+        "source": "github",
+        "repo": "RachaelQuisel/week-in-rewind"
+      },
       "category": "productivity",
       "homepage": "https://github.com/RachaelQuisel/Skills/tree/main/plugins/week-in-rewind",
       "version": "3.1.5"
@@ -175,7 +220,10 @@
     {
       "name": "worth-asking",
       "description": "Surface high-leverage questions missed in client conversations.",
-      "source": "./plugins/worth-asking",
+      "source": {
+        "source": "github",
+        "repo": "RachaelQuisel/worth-asking"
+      },
       "category": "productivity",
       "homepage": "https://github.com/RachaelQuisel/Skills/tree/main/plugins/worth-asking",
       "version": "1.0.4"
@@ -183,7 +231,10 @@
     {
       "name": "airbnb-hosting-expert",
       "description": "Practical Airbnb hosting guidance, listing reviews, and guest-message drafts based on the host's confirmed details.",
-      "source": "./plugins/airbnb-hosting-expert",
+      "source": {
+        "source": "github",
+        "repo": "RachaelQuisel/airbnb-hosting-expert"
+      },
       "category": "productivity",
       "homepage": "https://github.com/RachaelQuisel/Skills/tree/main/plugins/airbnb-hosting-expert",
       "version": "2.3.4"
@@ -207,7 +258,10 @@
     {
       "name": "contact-follow-up-tracker",
       "description": "Save contacts, encounters, and confirmed promises in a Google Drive log. Check who owes what to whom and when. Enable Cowork reminders when you choose.",
-      "source": "./plugins/contact-follow-up-tracker",
+      "source": {
+        "source": "github",
+        "repo": "RachaelQuisel/contact-follow-up-tracker"
+      },
       "category": "productivity",
       "homepage": "https://github.com/RachaelQuisel/Skills/tree/main/plugins/contact-follow-up-tracker",
       "version": "1.0.4"
@@ -215,7 +269,10 @@
     {
       "name": "cited-research-assistant",
       "description": "Research questions and check drafts with retrieved evidence. Cite each supported claim. Identify evidence gaps. Check the final reply against the cited brief.",
-      "source": "./plugins/cited-research-assistant",
+      "source": {
+        "source": "github",
+        "repo": "RachaelQuisel/cited-research-assistant"
+      },
       "category": "productivity",
       "homepage": "https://github.com/RachaelQuisel/Skills/tree/main/plugins/cited-research-assistant",
       "version": "1.0.4"

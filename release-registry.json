@@ -120,230 +120,6 @@
       ]
     },
     {
-      "name": "humanize-output",
-      "root": "plugins/humanize-output",
-      "version": "1.0.4",
-      "manifests": [
-        "plugins/humanize-output/plugin.json",
-        "plugins/humanize-output/.claude-plugin/plugin.json",
-        "plugins/humanize-output/.codex-plugin/plugin.json"
-      ],
-      "skills": [
-        "plugins/humanize-output/skills/humanize-output/SKILL.md"
-      ]
-    },
-    {
-      "name": "adhd-task-helper",
-      "root": "plugins/adhd-task-helper",
-      "version": "1.0.5",
-      "manifests": [
-        "plugins/adhd-task-helper/plugin.json",
-        "plugins/adhd-task-helper/.codex-plugin/plugin.json"
-      ],
-      "skills": [
-        "plugins/adhd-task-helper/skills/get-unstuck/SKILL.md",
-        "plugins/adhd-task-helper/skills/i-have-adhd/SKILL.md",
-        "plugins/adhd-task-helper/skills/pick-it-back-up/SKILL.md",
-        "plugins/adhd-task-helper/skills/sort-my-brain-dump/SKILL.md"
-      ]
-    },
-    {
-      "name": "airtable-interface-craft",
-      "root": "plugins/airtable-interface-craft",
-      "version": "1.0.7",
-      "manifests": [
-        "plugins/airtable-interface-craft/plugin.json",
-        "plugins/airtable-interface-craft/.claude-plugin/plugin.json",
-        "plugins/airtable-interface-craft/.codex-plugin/plugin.json"
-      ],
-      "skills": [
-        "plugins/airtable-interface-craft/skills/airtable-interface-craft/SKILL.md"
-      ]
-    },
-    {
-      "name": "workflow-diagram-builder",
-      "root": "plugins/workflow-diagram-builder",
-      "version": "1.1.4",
-      "manifests": [
-        "plugins/workflow-diagram-builder/plugin.json",
-        "plugins/workflow-diagram-builder/.claude-plugin/plugin.json",
-        "plugins/workflow-diagram-builder/.codex-plugin/plugin.json"
-      ],
-      "skills": [
-        "plugins/workflow-diagram-builder/skills/workflow-diagram/SKILL.md"
-      ]
-    },
-    {
-      "name": "automate-notification-to-teams",
-      "root": "plugins/automate-notification-to-teams",
-      "version": "2.0.5",
-      "manifests": [
-        "plugins/automate-notification-to-teams/plugin.json",
-        "plugins/automate-notification-to-teams/.codex-plugin/plugin.json"
-      ],
-      "skills": [
-        "plugins/automate-notification-to-teams/skills/automate-notification-to-teams/SKILL.md"
-      ]
-    },
-    {
-      "name": "automation-message-writer",
-      "root": "plugins/automation-message-writer",
-      "version": "1.0.5",
-      "manifests": [
-        "plugins/automation-message-writer/plugin.json",
-        "plugins/automation-message-writer/.claude-plugin/plugin.json",
-        "plugins/automation-message-writer/.codex-plugin/plugin.json"
-      ],
-      "skills": [
-        "plugins/automation-message-writer/skills/automation-message-writer/SKILL.md"
-      ]
-    },
-    {
-      "name": "find-automatable-workflows",
-      "root": "plugins/find-automatable-workflows",
-      "version": "1.0.5",
-      "manifests": [
-        "plugins/find-automatable-workflows/plugin.json",
-        "plugins/find-automatable-workflows/.claude-plugin/plugin.json",
-        "plugins/find-automatable-workflows/.codex-plugin/plugin.json"
-      ],
-      "skills": [
-        "plugins/find-automatable-workflows/skills/automation-opportunity-scout/SKILL.md",
-        "plugins/find-automatable-workflows/skills/eval-creation/SKILL.md",
-        "plugins/find-automatable-workflows/skills/grill-me-workflow/SKILL.md"
-      ]
-    },
-    {
-      "name": "generate-financial-dummy-data",
-      "root": "plugins/generate-financial-dummy-data",
-      "version": "1.1.4",
-      "manifests": [
-        "plugins/generate-financial-dummy-data/plugin.json",
-        "plugins/generate-financial-dummy-data/.claude-plugin/plugin.json",
-        "plugins/generate-financial-dummy-data/.codex-plugin/plugin.json"
-      ],
-      "skills": [
-        "plugins/generate-financial-dummy-data/skills/generate-financial-dummy-data/SKILL.md"
-      ]
-    },
-    {
-      "name": "ghibli-icon-maker",
-      "root": "plugins/ghibli-icon-maker",
-      "version": "1.0.5",
-      "manifests": [
-        "plugins/ghibli-icon-maker/plugin.json",
-        "plugins/ghibli-icon-maker/.claude-plugin/plugin.json",
-        "plugins/ghibli-icon-maker/.codex-plugin/plugin.json"
-      ],
-      "skills": [
-        "plugins/ghibli-icon-maker/skills/ghibli-icon-maker/SKILL.md"
-      ]
-    },
-    {
-      "name": "plain-english-editor",
-      "root": "plugins/plain-english-editor",
-      "version": "4.1.4",
-      "manifests": [
-        "plugins/plain-english-editor/plugin.json",
-        "plugins/plain-english-editor/.claude-plugin/plugin.json",
-        "plugins/plain-english-editor/.codex-plugin/plugin.json"
-      ],
-      "skills": [
-        "plugins/plain-english-editor/skills/plain-english-editor/SKILL.md"
-      ]
-    },
-    {
-      "name": "publish-a-plugin",
-      "root": "plugins/publish-a-plugin",
-      "version": "1.1.4",
-      "manifests": [
-        "plugins/publish-a-plugin/plugin.json",
-        "plugins/publish-a-plugin/.claude-plugin/plugin.json",
-        "plugins/publish-a-plugin/.codex-plugin/plugin.json"
-      ],
-      "skills": [
-        "plugins/publish-a-plugin/skills/publish-a-plugin/SKILL.md"
-      ]
-    },
-    {
-      "name": "questions-worth-asking",
-      "root": "plugins/questions-worth-asking",
-      "version": "1.2.5",
-      "manifests": [
-        "plugins/questions-worth-asking/plugin.json",
-        "plugins/questions-worth-asking/.claude-plugin/plugin.json",
-        "plugins/questions-worth-asking/.codex-plugin/plugin.json"
-      ],
-      "skills": [
-        "plugins/questions-worth-asking/skills/questions-worth-asking/SKILL.md"
-      ]
-    },
-    {
-      "name": "skill-and-plugin-namer",
-      "root": "plugins/skill-and-plugin-namer",
-      "version": "3.1.4",
-      "manifests": [
-        "plugins/skill-and-plugin-namer/plugin.json",
-        "plugins/skill-and-plugin-namer/.claude-plugin/plugin.json",
-        "plugins/skill-and-plugin-namer/.codex-plugin/plugin.json"
-      ],
-      "skills": [
-        "plugins/skill-and-plugin-namer/skills/skill-and-plugin-namer/SKILL.md"
-      ]
-    },
-    {
-      "name": "turn-off-ai-data-sharing",
-      "root": "plugins/turn-off-ai-data-sharing",
-      "version": "1.0.4",
-      "manifests": [
-        "plugins/turn-off-ai-data-sharing/plugin.json",
-        "plugins/turn-off-ai-data-sharing/.claude-plugin/plugin.json",
-        "plugins/turn-off-ai-data-sharing/.codex-plugin/plugin.json"
-      ],
-      "skills": [
-        "plugins/turn-off-ai-data-sharing/skills/turn-off-ai-data-sharing/SKILL.md"
-      ]
-    },
-    {
-      "name": "week-in-rewind",
-      "root": "plugins/week-in-rewind",
-      "version": "3.1.5",
-      "manifests": [
-        "plugins/week-in-rewind/plugin.json",
-        "plugins/week-in-rewind/.claude-plugin/plugin.json",
-        "plugins/week-in-rewind/.codex-plugin/plugin.json"
-      ],
-      "skills": [
-        "plugins/week-in-rewind/skills/setup-weekly-rewind/SKILL.md",
-        "plugins/week-in-rewind/skills/week-in-rewind/SKILL.md"
-      ]
-    },
-    {
-      "name": "worth-asking",
-      "root": "plugins/worth-asking",
-      "version": "1.0.4",
-      "manifests": [
-        "plugins/worth-asking/plugin.json",
-        "plugins/worth-asking/.claude-plugin/plugin.json",
-        "plugins/worth-asking/.codex-plugin/plugin.json"
-      ],
-      "skills": [
-        "plugins/worth-asking/skills/worth-asking/SKILL.md"
-      ]
-    },
-    {
-      "name": "airbnb-hosting-expert",
-      "root": "plugins/airbnb-hosting-expert",
-      "version": "2.3.4",
-      "manifests": [
-        "plugins/airbnb-hosting-expert/plugin.json",
-        "plugins/airbnb-hosting-expert/.codex-plugin/plugin.json"
-      ],
-      "skills": [
-        "plugins/airbnb-hosting-expert/skills/instructions/SKILL.md"
-      ]
-    },
-    {
       "name": "github-portfolio-builder",
       "root": "plugins/github-portfolio-builder",
       "version": "1.1.9",
@@ -366,32 +142,6 @@
       ],
       "skills": [
         "plugins/github-portfolio-review/skills/github-portfolio-review/SKILL.md"
-      ]
-    },
-    {
-      "name": "contact-follow-up-tracker",
-      "root": "plugins/contact-follow-up-tracker",
-      "version": "1.0.4",
-      "manifests": [
-        "plugins/contact-follow-up-tracker/plugin.json",
-        "plugins/contact-follow-up-tracker/.claude-plugin/plugin.json",
-        "plugins/contact-follow-up-tracker/.codex-plugin/plugin.json"
-      ],
-      "skills": [
-        "plugins/contact-follow-up-tracker/skills/contact-follow-up-tracker/SKILL.md"
-      ]
-    },
-    {
-      "name": "cited-research-assistant",
-      "root": "plugins/cited-research-assistant",
-      "version": "1.0.4",
-      "manifests": [
-        "plugins/cited-research-assistant/plugin.json",
-        "plugins/cited-research-assistant/.claude-plugin/plugin.json",
-        "plugins/cited-research-assistant/.codex-plugin/plugin.json"
-      ],
-      "skills": [
-        "plugins/cited-research-assistant/skills/cited-research-assistant/SKILL.md"
       ]
     },
     {
@@ -1061,55 +811,6 @@
       "guide": "plugin-namer/README.md"
     },
     {
-      "path": "plugins/adhd-task-helper/skills/get-unstuck/SKILL.md",
-      "version": "1.0.5",
-      "sha256": "e6a179817a56e30e618210d5b4d52c7e45248b3bdb5c4e978500af71343b3116",
-      "source": "plugins/adhd-task-helper/skills/get-unstuck/SKILL.md",
-      "guide": "plugins/adhd-task-helper/skills/get-unstuck/README.md"
-    },
-    {
-      "path": "plugins/adhd-task-helper/skills/i-have-adhd/SKILL.md",
-      "version": "1.0.5",
-      "sha256": "5bd040fd499295f4193880424589a076a6b028e9f71e8eb66a119d77b4dd9b4d",
-      "source": "plugins/adhd-task-helper/skills/i-have-adhd/SKILL.md",
-      "guide": "plugins/adhd-task-helper/skills/i-have-adhd/README.md"
-    },
-    {
-      "path": "plugins/adhd-task-helper/skills/pick-it-back-up/SKILL.md",
-      "version": "1.0.5",
-      "sha256": "0517c2933133441632243affcaa32f1fe7404886ab52e135462f241616b875a4",
-      "source": "plugins/adhd-task-helper/skills/pick-it-back-up/SKILL.md",
-      "guide": "plugins/adhd-task-helper/skills/pick-it-back-up/README.md"
-    },
-    {
-      "path": "plugins/adhd-task-helper/skills/sort-my-brain-dump/SKILL.md",
-      "version": "1.0.5",
-      "sha256": "a99e2c07b9567bf616d2c8638c475300f057146d108f968f85b89057bf10cbb6",
-      "source": "plugins/adhd-task-helper/skills/sort-my-brain-dump/SKILL.md",
-      "guide": "plugins/adhd-task-helper/skills/sort-my-brain-dump/README.md"
-    },
-    {
-      "path": "plugins/airbnb-hosting-expert/skills/instructions/SKILL.md",
-      "version": "2.3.4",
-      "sha256": "2b3d374065627fb027104b8320e048e8d019031cda603a61e5b68c223abfabff",
-      "source": "plugins/airbnb-hosting-expert/skills/instructions/SKILL.md",
-      "guide": "plugins/airbnb-hosting-expert/skills/instructions/README.md"
-    },
-    {
-      "path": "plugins/airtable-interface-craft/skills/airtable-interface-craft/SKILL.md",
-      "version": "1.0.7",
-      "sha256": "135b3b161cc565c64dd8da9fdfeb586116826e35b594ca8c14b8fb33202fd884",
-      "source": "plugins/airtable-interface-craft/skills/airtable-interface-craft/SKILL.md",
-      "guide": "plugins/airtable-interface-craft/skills/airtable-interface-craft/README.md"
-    },
-    {
-      "path": "plugins/automate-notification-to-teams/skills/automate-notification-to-teams/SKILL.md",
-      "version": "2.0.5",
-      "sha256": "2c9706b6daa54add147f38c729ba29547c3562be29249843d3a8215a530912fd",
-      "source": "plugins/automate-notification-to-teams/skills/automate-notification-to-teams/SKILL.md",
-      "guide": "plugins/automate-notification-to-teams/skills/automate-notification-to-teams/README.md"
-    },
-    {
       "path": "plugins/automation-briefing/skills/automation-briefing/SKILL.md",
       "version": "1.0.5",
       "sha256": "42e5f346dfa0d065434b7790e88113c39e9d0bad6c987cda6cfaa6669c585e95",
@@ -1131,48 +832,6 @@
       "guide": "plugins/automation-catalog/skills/automation-catalog/README.md"
     },
     {
-      "path": "plugins/automation-message-writer/skills/automation-message-writer/SKILL.md",
-      "version": "1.0.5",
-      "sha256": "9e741308856ee5b63eee60f020d7a71e057d3358213737efa3385ac1959e5481",
-      "source": "plugins/automation-message-writer/skills/automation-message-writer/SKILL.md",
-      "guide": "plugins/automation-message-writer/skills/automation-message-writer/README.md"
-    },
-    {
-      "path": "plugins/cited-research-assistant/skills/cited-research-assistant/SKILL.md",
-      "version": "1.0.4",
-      "sha256": "6a6371881c523b2f1a394191d1f02a18200a7297386ae1c0dbdda749e4c9843d",
-      "source": "plugins/cited-research-assistant/skills/cited-research-assistant/SKILL.md",
-      "guide": "plugins/cited-research-assistant/skills/cited-research-assistant/README.md"
-    },
-    {
-      "path": "plugins/contact-follow-up-tracker/skills/contact-follow-up-tracker/SKILL.md",
-      "version": "1.0.4",
-      "sha256": "394ef9519ff483a4ef172687893aae1cc3a6adbfbc95c38e08ed01675c65c2b2",
-      "source": "plugins/contact-follow-up-tracker/skills/contact-follow-up-tracker/SKILL.md",
-      "guide": "plugins/contact-follow-up-tracker/skills/contact-follow-up-tracker/README.md"
-    },
-    {
-      "path": "plugins/find-automatable-workflows/skills/automation-opportunity-scout/SKILL.md",
-      "version": "1.0.5",
-      "sha256": "1f11d7005df37a4a0f7bec4a6cba414e5dd4f4c4a4c6bf42c5b91d538aa5a47a",
-      "source": "plugins/find-automatable-workflows/skills/automation-opportunity-scout/SKILL.md",
-      "guide": "plugins/find-automatable-workflows/skills/automation-opportunity-scout/README.md"
-    },
-    {
-      "path": "plugins/find-automatable-workflows/skills/eval-creation/SKILL.md",
-      "version": "1.0.5",
-      "sha256": "cc3e7c0e576336dc423b5806a845214a2cbda68bf486be2765ee896687fde3ac",
-      "source": "plugins/find-automatable-workflows/skills/eval-creation/SKILL.md",
-      "guide": "plugins/find-automatable-workflows/skills/eval-creation/README.md"
-    },
-    {
-      "path": "plugins/find-automatable-workflows/skills/grill-me-workflow/SKILL.md",
-      "version": "1.0.5",
-      "sha256": "1ea3de1aa73333143b72e44337582265ec33c78041a1bd75992385f353c56865",
-      "source": "plugins/find-automatable-workflows/skills/grill-me-workflow/SKILL.md",
-      "guide": "plugins/find-automatable-workflows/skills/grill-me-workflow/README.md"
-    },
-    {
       "path": "plugins/find-fix-mistakes/skills/fixmistakes/SKILL.md",
       "version": "1.0.4",
       "sha256": "e2211ae9ffb8b4109d0103b0e9599e40eb634c0eb4cf4932b566c5580be25dd8",
@@ -1185,20 +844,6 @@
       "sha256": "8bcb7b46e4e1ef69b458a0c081ff51fe2fe48ec446fc80ed303751bf280cb005",
       "source": "plugins/find-fix-mistakes/skills/mistakes/SKILL.md",
       "guide": "plugins/find-fix-mistakes/README.md"
-    },
-    {
-      "path": "plugins/generate-financial-dummy-data/skills/generate-financial-dummy-data/SKILL.md",
-      "version": "1.1.4",
-      "sha256": "b81fc420d351aef9360d5ce72d1eec5d9b675fc9ea70df8a8cdf93269e6c4e62",
-      "source": "plugins/generate-financial-dummy-data/skills/generate-financial-dummy-data/SKILL.md",
-      "guide": "plugins/generate-financial-dummy-data/skills/generate-financial-dummy-data/README.md"
-    },
-    {
-      "path": "plugins/ghibli-icon-maker/skills/ghibli-icon-maker/SKILL.md",
-      "version": "1.0.5",
-      "sha256": "c5f4e36d55d27278c982a9a044103527e53e7143302c42b5ddec49e04acef091",
-      "source": "plugins/ghibli-icon-maker/skills/ghibli-icon-maker/SKILL.md",
-      "guide": "plugins/ghibli-icon-maker/skills/ghibli-icon-maker/README.md"
     },
     {
       "path": "plugins/github-portfolio-builder/skills/github-portfolio-builder/SKILL.md",
@@ -1215,81 +860,11 @@
       "guide": "plugins/github-portfolio-review/skills/github-portfolio-review/README.md"
     },
     {
-      "path": "plugins/humanize-output/skills/humanize-output/SKILL.md",
-      "version": "1.0.4",
-      "sha256": "b2689a4659f53832460920d01af67db3103fdd23f5bd9e1ab28a5b4d0f225ba5",
-      "source": "plugins/humanize-output/skills/humanize-output/SKILL.md",
-      "guide": "plugins/humanize-output/skills/humanize-output/README.md"
-    },
-    {
-      "path": "plugins/plain-english-editor/skills/plain-english-editor/SKILL.md",
-      "version": "4.1.4",
-      "sha256": "11f7e993acaf404103acab5b1981c75b2e70f2524b726191b036e41711485f97",
-      "source": "plugins/plain-english-editor/skills/plain-english-editor/SKILL.md",
-      "guide": "plugins/plain-english-editor/skills/plain-english-editor/README.md"
-    },
-    {
-      "path": "plugins/publish-a-plugin/skills/publish-a-plugin/SKILL.md",
-      "version": "1.1.4",
-      "sha256": "6e48fdee0db6a7519785ced8af4ef3074ec97652b639ed0939979912bb91db9c",
-      "source": "plugins/publish-a-plugin/skills/publish-a-plugin/SKILL.md",
-      "guide": "plugins/publish-a-plugin/skills/publish-a-plugin/README.md"
-    },
-    {
-      "path": "plugins/questions-worth-asking/skills/questions-worth-asking/SKILL.md",
-      "version": "1.2.5",
-      "sha256": "1b053682d097a657ef75cbab69c8f6fadbcf48a0783ad0c58f9e30cad1778f2d",
-      "source": "plugins/questions-worth-asking/skills/questions-worth-asking/SKILL.md",
-      "guide": "plugins/questions-worth-asking/skills/questions-worth-asking/README.md"
-    },
-    {
-      "path": "plugins/skill-and-plugin-namer/skills/skill-and-plugin-namer/SKILL.md",
-      "version": "3.1.4",
-      "sha256": "76d03dee207b3edcc5ae29e17bad86a6ad39c148c0b140e0b157216f7ee758ee",
-      "source": "plugins/skill-and-plugin-namer/skills/skill-and-plugin-namer/SKILL.md",
-      "guide": "plugins/skill-and-plugin-namer/skills/skill-and-plugin-namer/README.md"
-    },
-    {
       "path": "plugins/skillkeeper/skills/skillkeeper/SKILL.md",
       "version": "1.0.6",
       "sha256": "3ac56bbf5e070c1efbecbed5a5641723d7ecc70aac75a6b40e7b8e1a84210333",
       "source": "plugins/skillkeeper/skills/skillkeeper/SKILL.md",
       "guide": "plugins/skillkeeper/skills/skillkeeper/README.md"
-    },
-    {
-      "path": "plugins/turn-off-ai-data-sharing/skills/turn-off-ai-data-sharing/SKILL.md",
-      "version": "1.0.4",
-      "sha256": "9e146ed6463dcd91cb44c42d8fa4a9868fbc5ffe6adfb32276fdf627bcc0f51d",
-      "source": "plugins/turn-off-ai-data-sharing/skills/turn-off-ai-data-sharing/SKILL.md",
-      "guide": "plugins/turn-off-ai-data-sharing/skills/turn-off-ai-data-sharing/README.md"
-    },
-    {
-      "path": "plugins/week-in-rewind/skills/setup-weekly-rewind/SKILL.md",
-      "version": "3.1.5",
-      "sha256": "f1dfae2dac8112afde2c08dcca71367f5f7eedc23b6e23b1030de72e4fe55c4d",
-      "source": "plugins/week-in-rewind/skills/setup-weekly-rewind/SKILL.md",
-      "guide": "plugins/week-in-rewind/skills/setup-weekly-rewind/README.md"
-    },
-    {
-      "path": "plugins/week-in-rewind/skills/week-in-rewind/SKILL.md",
-      "version": "3.1.5",
-      "sha256": "7e7507d5d75c9bf7bddcc66351eabd0d736023c41bc2ae576ef15db328e32a99",
-      "source": "plugins/week-in-rewind/skills/week-in-rewind/SKILL.md",
-      "guide": "plugins/week-in-rewind/skills/week-in-rewind/README.md"
-    },
-    {
-      "path": "plugins/workflow-diagram-builder/skills/workflow-diagram/SKILL.md",
-      "version": "1.1.4",
-      "sha256": "33a67505b1dac4dbd4f6c08fc7a89e3071e8f8dd59b3c9c0dc0dfa852e1ccf36",
-      "source": "plugins/workflow-diagram-builder/skills/workflow-diagram/SKILL.md",
-      "guide": "plugins/workflow-diagram-builder/skills/workflow-diagram/README.md"
-    },
-    {
-      "path": "plugins/worth-asking/skills/worth-asking/SKILL.md",
-      "version": "1.0.4",
-      "sha256": "5579aee030b04631bab11ebfb401ae0f8aaa2cd6d2b7c382955988508d508756",
-      "source": "plugins/worth-asking/skills/worth-asking/SKILL.md",
-      "guide": "plugins/worth-asking/skills/worth-asking/README.md"
     },
     {
       "path": "plugins/zite-prompt/skills/zite-prompt/SKILL.md",
@@ -1738,6 +1313,181 @@
       "sha256": "b4f761b228c7984335ff3c224dd7af770703182113abdc5fbf2d765336e65e04",
       "source": "work-voice/SKILL.md",
       "guide": "work-voice/README.md"
+    },
+    {
+      "path": "get-unstuck/SKILL.md",
+      "version": "1.0.5",
+      "sha256": "e6a179817a56e30e618210d5b4d52c7e45248b3bdb5c4e978500af71343b3116",
+      "source": "get-unstuck/SKILL.md",
+      "guide": "get-unstuck/README.md"
+    },
+    {
+      "path": "i-have-adhd/SKILL.md",
+      "version": "1.0.5",
+      "sha256": "5bd040fd499295f4193880424589a076a6b028e9f71e8eb66a119d77b4dd9b4d",
+      "source": "i-have-adhd/SKILL.md",
+      "guide": "i-have-adhd/README.md"
+    },
+    {
+      "path": "pick-it-back-up/SKILL.md",
+      "version": "1.0.5",
+      "sha256": "0517c2933133441632243affcaa32f1fe7404886ab52e135462f241616b875a4",
+      "source": "pick-it-back-up/SKILL.md",
+      "guide": "pick-it-back-up/README.md"
+    },
+    {
+      "path": "sort-my-brain-dump/SKILL.md",
+      "version": "1.0.5",
+      "sha256": "a99e2c07b9567bf616d2c8638c475300f057146d108f968f85b89057bf10cbb6",
+      "source": "sort-my-brain-dump/SKILL.md",
+      "guide": "sort-my-brain-dump/README.md"
+    },
+    {
+      "path": "instructions/SKILL.md",
+      "version": "2.3.4",
+      "sha256": "2b3d374065627fb027104b8320e048e8d019031cda603a61e5b68c223abfabff",
+      "source": "instructions/SKILL.md",
+      "guide": "instructions/README.md"
+    },
+    {
+      "path": "airtable-interface-craft/SKILL.md",
+      "version": "1.0.7",
+      "sha256": "135b3b161cc565c64dd8da9fdfeb586116826e35b594ca8c14b8fb33202fd884",
+      "source": "airtable-interface-craft/SKILL.md",
+      "guide": "airtable-interface-craft/README.md"
+    },
+    {
+      "path": "automate-notification-to-teams/SKILL.md",
+      "version": "2.0.5",
+      "sha256": "2c9706b6daa54add147f38c729ba29547c3562be29249843d3a8215a530912fd",
+      "source": "automate-notification-to-teams/SKILL.md",
+      "guide": "automate-notification-to-teams/README.md"
+    },
+    {
+      "path": "automation-message-writer/SKILL.md",
+      "version": "1.0.5",
+      "sha256": "9e741308856ee5b63eee60f020d7a71e057d3358213737efa3385ac1959e5481",
+      "source": "automation-message-writer/SKILL.md",
+      "guide": "automation-message-writer/README.md"
+    },
+    {
+      "path": "cited-research-assistant/SKILL.md",
+      "version": "1.0.4",
+      "sha256": "6a6371881c523b2f1a394191d1f02a18200a7297386ae1c0dbdda749e4c9843d",
+      "source": "cited-research-assistant/SKILL.md",
+      "guide": "cited-research-assistant/README.md"
+    },
+    {
+      "path": "contact-follow-up-tracker/SKILL.md",
+      "version": "1.0.4",
+      "sha256": "394ef9519ff483a4ef172687893aae1cc3a6adbfbc95c38e08ed01675c65c2b2",
+      "source": "contact-follow-up-tracker/SKILL.md",
+      "guide": "contact-follow-up-tracker/README.md"
+    },
+    {
+      "path": "automation-opportunity-scout/SKILL.md",
+      "version": "1.0.5",
+      "sha256": "1f11d7005df37a4a0f7bec4a6cba414e5dd4f4c4a4c6bf42c5b91d538aa5a47a",
+      "source": "automation-opportunity-scout/SKILL.md",
+      "guide": "automation-opportunity-scout/README.md"
+    },
+    {
+      "path": "eval-creation/SKILL.md",
+      "version": "1.0.5",
+      "sha256": "cc3e7c0e576336dc423b5806a845214a2cbda68bf486be2765ee896687fde3ac",
+      "source": "eval-creation/SKILL.md",
+      "guide": "eval-creation/README.md"
+    },
+    {
+      "path": "grill-me-workflow/SKILL.md",
+      "version": "1.0.5",
+      "sha256": "1ea3de1aa73333143b72e44337582265ec33c78041a1bd75992385f353c56865",
+      "source": "grill-me-workflow/SKILL.md",
+      "guide": "grill-me-workflow/README.md"
+    },
+    {
+      "path": "generate-financial-dummy-data/SKILL.md",
+      "version": "1.1.4",
+      "sha256": "b81fc420d351aef9360d5ce72d1eec5d9b675fc9ea70df8a8cdf93269e6c4e62",
+      "source": "generate-financial-dummy-data/SKILL.md",
+      "guide": "generate-financial-dummy-data/README.md"
+    },
+    {
+      "path": "ghibli-icon-maker/SKILL.md",
+      "version": "1.0.5",
+      "sha256": "c5f4e36d55d27278c982a9a044103527e53e7143302c42b5ddec49e04acef091",
+      "source": "ghibli-icon-maker/SKILL.md",
+      "guide": "ghibli-icon-maker/README.md"
+    },
+    {
+      "path": "humanize-output/SKILL.md",
+      "version": "1.0.4",
+      "sha256": "b2689a4659f53832460920d01af67db3103fdd23f5bd9e1ab28a5b4d0f225ba5",
+      "source": "humanize-output/SKILL.md",
+      "guide": "humanize-output/README.md"
+    },
+    {
+      "path": "plain-english-editor/SKILL.md",
+      "version": "4.1.4",
+      "sha256": "11f7e993acaf404103acab5b1981c75b2e70f2524b726191b036e41711485f97",
+      "source": "plain-english-editor/SKILL.md",
+      "guide": "plain-english-editor/README.md"
+    },
+    {
+      "path": "publish-a-plugin/SKILL.md",
+      "version": "1.1.4",
+      "sha256": "6e48fdee0db6a7519785ced8af4ef3074ec97652b639ed0939979912bb91db9c",
+      "source": "publish-a-plugin/SKILL.md",
+      "guide": "publish-a-plugin/README.md"
+    },
+    {
+      "path": "questions-worth-asking/SKILL.md",
+      "version": "1.2.5",
+      "sha256": "1b053682d097a657ef75cbab69c8f6fadbcf48a0783ad0c58f9e30cad1778f2d",
+      "source": "questions-worth-asking/SKILL.md",
+      "guide": "questions-worth-asking/README.md"
+    },
+    {
+      "path": "skill-and-plugin-namer/SKILL.md",
+      "version": "3.1.4",
+      "sha256": "76d03dee207b3edcc5ae29e17bad86a6ad39c148c0b140e0b157216f7ee758ee",
+      "source": "skill-and-plugin-namer/SKILL.md",
+      "guide": "skill-and-plugin-namer/README.md"
+    },
+    {
+      "path": "turn-off-ai-data-sharing/SKILL.md",
+      "version": "1.0.4",
+      "sha256": "9e146ed6463dcd91cb44c42d8fa4a9868fbc5ffe6adfb32276fdf627bcc0f51d",
+      "source": "turn-off-ai-data-sharing/SKILL.md",
+      "guide": "turn-off-ai-data-sharing/README.md"
+    },
+    {
+      "path": "setup-weekly-rewind/SKILL.md",
+      "version": "3.1.5",
+      "sha256": "f1dfae2dac8112afde2c08dcca71367f5f7eedc23b6e23b1030de72e4fe55c4d",
+      "source": "setup-weekly-rewind/SKILL.md",
+      "guide": "setup-weekly-rewind/README.md"
+    },
+    {
+      "path": "week-in-rewind/SKILL.md",
+      "version": "3.1.5",
+      "sha256": "7e7507d5d75c9bf7bddcc66351eabd0d736023c41bc2ae576ef15db328e32a99",
+      "source": "week-in-rewind/SKILL.md",
+      "guide": "week-in-rewind/README.md"
+    },
+    {
+      "path": "workflow-diagram/SKILL.md",
+      "version": "1.1.4",
+      "sha256": "33a67505b1dac4dbd4f6c08fc7a89e3071e8f8dd59b3c9c0dc0dfa852e1ccf36",
+      "source": "workflow-diagram/SKILL.md",
+      "guide": "workflow-diagram/README.md"
+    },
+    {
+      "path": "worth-asking/SKILL.md",
+      "version": "1.0.4",
+      "sha256": "5579aee030b04631bab11ebfb401ae0f8aaa2cd6d2b7c382955988508d508756",
+      "source": "worth-asking/SKILL.md",
+      "guide": "worth-asking/README.md"
     }
   ],
   "copies": [
