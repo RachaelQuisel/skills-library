@@ -35,6 +35,6 @@ The icons are declared in the Claude plugin manifests. The ChatGPT scheduler doe
 
 - Added separate plain-English guides for [Automation Metadata Maker](UpdateCatalog-HowItWorks-2026-10-12.md) and [Check Catalog Reports](CheckReports-HowItWorks-2026-10-12.md). Each guide has category, workflow type, tool and run tags.
 - Both task definitions were read and their enabled status was verified. This does not establish successful catalog completion or alert delivery.
-- Today's catalog status and attempt history are recorded in the [approved status thread](https://lamaisonsanta-8tm8179.slack.com/archives/C0C7XQK3TTR/p1791806593148719).
+- Today's catalog status and attempt history are recorded in the [approved status thread](https://example.slack.com/archives/C0EXAMPLE01/p1791806593148719).
 - Search coverage remains incomplete after Airtable request timeouts and an unexpected tool-session closure. The cause of the closure is unknown. No discovered workflow was run or changed.
 - No existing running-updates-and-questions.md was found in this deployment folder. This dated note preserves the documentation update here.

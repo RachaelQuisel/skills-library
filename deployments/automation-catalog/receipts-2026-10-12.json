@@ -43,5 +43,5 @@
     "The first Drive query returned INVALID_ARGUMENT. A corrected query succeeded on attempt 2."
   ],
   "held": "Remaining definitions need source review and matching to existing guides. Other businesses' document homes and Slack audiences have not been verified. No private cross-client workflow details are included.",
-  "status_thread": "https://lamaisonsanta-8tm8179.slack.com/archives/C0C7XQK3TTR/p1791806593148719"
+  "status_thread": "https://example.slack.com/archives/C0EXAMPLE01/p1791806593148719"
 }

@@ -1,11 +1,11 @@
 # Accounts and source evidence
 
-Use these as navigation hints for this private GoL workflow. Verify current account identity, tables, fields, and permissions before use. Never reuse historical counts, dates, names, source filenames, or approvals as current facts.
+Use these as navigation hints for this private EA workflow. Verify current account identity, tables, fields, and permissions before use. Never reuse historical counts, dates, names, source filenames, or approvals as current facts.
 
 ## Acuity
 
-- Expected account: **Guardians of Love - RHAS Training Team**.
-- Expected public scheduling page: `https://guardiansofloverfatraining.as.me/`.
+- Expected account: **Example Agency - PROGRAM Training Team**.
+- Expected public scheduling page: `https://exampleagencyrfatraining.as.me/`.
 - Admin client list: `https://secure.acuityscheduling.com/admin/clients`.
 - Import/export page: `https://secure.acuityscheduling.com/clients.php?action=importexport`.
 - Verify the business name and scheduling-page URL in the signed-in browser. These admin URLs open whichever account is signed in; they are not account-specific links.
@@ -15,12 +15,12 @@ Use these as navigation hints for this private GoL workflow. Verify current acco
 
 ## Airtable
 
-Discover and verify the GoL Base (`appcxLcvRF7dWQOHH`) through the installed Airtable CLI skill. The base contains both GoL and DIUP records.
+Discover and verify the EA Base (`appExample0000001`) through the installed Airtable CLI skill. The base contains both EA and PARTNER records.
 
 | Table | Known ID | Read for this workflow |
 | --- | --- | --- |
-| `<Rachael>Applicant` | `tblZsYxi9G7MVI7p5` | Record ID, name components, email, phone, Active, household role, Applications links, current person identifiers if present |
-| `<Review>Application` | `tblle86w7gTHmBsDS` | Record ID, Binti application ID, RFA ID, Applicants links, Client Type, Phase, Case Status, relevant source dates |
+| `<Rachael>Applicant` | `tblExample0000002` | Record ID, name components, email, phone, Active, household role, Applications links, current person identifiers if present |
+| `<Review>Application` | `tblExample0000003` | Record ID, Binti application ID, RFA ID, Applicants links, Client Type, Phase, Case Status, relevant source dates |
 
 Resolve field IDs from the live schema. Retain raw field values and normalized comparison values. If live reads are unavailable, identify the supplied snapshot and date, and limit claims accordingly. Do not silently fall back to an old Applicants export.
 
@@ -30,10 +30,10 @@ Link verified records as `https://airtable.com/<base-id>/<table-id>/<record-id>`
 
 | Group key | Organization evidence | Stage evidence |
 | --- | --- | --- |
-| `gol-applications` | `CBOs` identifies Guardians Of Love, including FFA variants | Application template and status indicate an application |
-| `gol-renewals` | `CBOs` identifies Guardians Of Love | Renewal template and/or `In Renewal` status |
-| `diup-applications` | `CBOs` identifies Dangerfield Institute | Application template and status indicate an application |
-| `diup-renewals` | `CBOs` identifies Dangerfield Institute | Renewal template and/or `In Renewal` status |
+| `gol-applications` | `CBOs` identifies Example Agency, including FFA variants | Application template and status indicate an application |
+| `gol-renewals` | `CBOs` identifies Example Agency | Renewal template and/or `In Renewal` status |
+| `diup-applications` | `CBOs` identifies Partner Agency Institute | Application template and status indicate an application |
+| `diup-renewals` | `CBOs` identifies Partner Agency Institute | Renewal template and/or `In Renewal` status |
 
 Read every row. Preserve mixed CBO memberships and flag unknown organizations or contradictory stage evidence. A `Renewal due date` column alone does not make a file a renewals export. Multiple organizations on one row may contribute to multiple group views; do not double-count that row in a combined total.
 

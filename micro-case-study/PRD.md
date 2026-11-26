@@ -5,7 +5,7 @@
 The MCS system mines XRAY client call transcripts for the smallest atomic wins (one automation, one form, one integration, one consulting insight) and produces structured, visual case study records. Completed wins feed into automated slide generation and marketing. Queued wins, work that was discussed but not delivered yet, become revenue recovery candidates: when a client has remaining hours and hasn't reached out in 30+ days, the system generates a personalized outreach email showing what they could still get done and the projected value.
 
 Product owner: Rachael Quisel
-Content/design lead: Tom Nassr
+Content/design lead: Blair Ito
 Status: Active, iterating
 
 ## Problem Statement
@@ -55,10 +55,10 @@ Operational health:
 | P0 | F5: Duplicate Prevention | Completed (in skill) | F1 | Shipped |
 | P1 | F2: Queued Work Detection | Skill ready, no records yet | F1 | Next mining run |
 | P1 | F3: Visual Asset Assignment | Completed (backfilled) | none | Shipped |
-| P1 | F4: AI Content Compression | Live (Tom Nassr) | F1 | Shipped |
+| P1 | F4: AI Content Compression | Live (Blair Ito) | F1 | Shipped |
 | P2 | F6: Engineer Review | Not started | F2 | After first Queued batch |
 | P2 | F7: Revenue Recovery Outreach | Not started | F2, F6 | After F6 validated |
-| P3 | F8: Slide Generation Pipeline | In progress (Tom Nassr) | F3, F4 | Tom's timeline |
+| P3 | F8: Slide Generation Pipeline | In progress (Blair Ito) | F3, F4 | Tom's timeline |
 
 Why this order: you can't do outreach (F7) without engineer review (F6), and you can't review without Queued records (F2). F2 is the gate; the first Tuesday mining run that produces Queued records unblocks everything downstream.
 
@@ -104,76 +104,76 @@ MCS table (XRAY Content base)
 
 ### Airtable Schema
 
-Base: XRAY Content (`app8V74T72TT2SB0h`)
+Base: XRAY Content (`appExample0000047`)
 
-MCS Table (`tbl4fNYChMVv8pyda`)
+MCS Table (`tblExample0000061`)
 
 | Field | Type | Field ID | Notes |
 |---|---|---|---|
-| MCS ID | singleLineText | `fldF0MOaiyEFLTAxz` | Format: MCS-YYYY-### |
-| Headline | singleLineText | `fldoqgQNjGI45I37V` | Client pain stated plainly, <80 chars |
-| Problem | multilineText | `fld1RBmjZUzGNifdR` | Skill calls this "Situation" |
-| Approach | multilineText | `flddUNLOO62CCy79Y` | Past tense (Completed) or future tense (Queued) |
-| Analysis | multilineText | `fldKS4hw4scuocsyV` | Metric-backed confirmation or "Pending completion." |
-| Result 1 | multilineText | `fld0bp8xzpAUrjsG7` | Skill calls this "Value"; quantified outcome |
-| Client Name | singleLineText | `fldImm40HGVZ2HGay` | Person's name |
-| Client Role | singleLineText | `fldHCAkp8xh5kf0bb` | e.g. CEO, CFO |
-| Company Name | singleLineText | `fld3AZm8ZfdNrh9wS` | |
-| Project Name | singleLineText | `fldfGsRLU1ENqTXAm` | |
-| Industry | singleLineText | `fldoOn2odwxB0PEfG` | Comma-separated |
-| Tech Stack | singleLineText | `fldgwsnYXrwbyV66V` | Comma-separated tools |
-| Status | singleSelect | `fldH66dHGIK2kmfPp` | Queued (yellow) / Completed (green) |
-| Do Not Contact | checkbox | `fldyoQYs9ZNFiZUM0` | Prevents outreach for this project |
+| MCS ID | singleLineText | `fldExample0000062` | Format: MCS-YYYY-### |
+| Headline | singleLineText | `fldExample0000063` | Client pain stated plainly, <80 chars |
+| Problem | multilineText | `fldExample0000053` | Skill calls this "Situation" |
+| Approach | multilineText | `fldExample0000054` | Past tense (Completed) or future tense (Queued) |
+| Analysis | multilineText | `fldExample0000055` | Metric-backed confirmation or "Pending completion." |
+| Result 1 | multilineText | `fldExample0000056` | Skill calls this "Value"; quantified outcome |
+| Client Name | singleLineText | `fldExample0000064` | Person's name |
+| Client Role | singleLineText | `fldExample0000065` | e.g. CEO, CFO |
+| Company Name | singleLineText | `fldExample0000066` | |
+| Project Name | singleLineText | `fldExample0000052` | |
+| Industry | singleLineText | `fldExample0000050` | Comma-separated |
+| Tech Stack | singleLineText | `fldExample0000067` | Comma-separated tools |
+| Status | singleSelect | `fldExample0000068` | Queued (yellow) / Completed (green) |
+| Do Not Contact | checkbox | `fldExample0000069` | Prevents outreach for this project |
 | Approved Date | singleLineText | (TBD, needs to be created) | Set when engineer approves Queued record; 30-day outreach clock starts here |
 | Last Outreach Date | singleLineText | (TBD, needs to be created) | Set when record is included in an outreach email; used for dedup |
-| Primary Tag | singleSelect | `fldVPWOnp1BCmIinL` | What you built |
-| Secondary Tag | singleSelect | `fldL421iu7xfnIFTh` | What they got |
-| Date Completed | singleLineText | `fldb3nmqVhKarB0PS` | Blank for Queued. singleLineText (not date) because values are approximate, e.g. "March 2026" or "Q1 2026" |
-| Data Confidence | singleSelect | `fldsTTy19IdaF3lgd` | High / Medium / Estimated |
-| Est. Hours Recovered/Week | number | `fld4qZOrUyIDZRW8u` | |
-| Hourly Rate Assumption | currency | `fldzZ06rEoLrQbMaw` | |
-| Est. Annual Dollar Value | currency | `fldo7oTt8lH4d6ed7` | |
-| Result 1 Icon | multipleRecordLinks | `fldFccMBzWxY1u0C7` | Links to MCS Assets |
-| Result 2 Icon | multipleRecordLinks | `flddeJvoeH4XcSfez` | Links to MCS Assets |
-| Highlight (Human) | multipleRecordLinks | `fldijTkoO3K2bSHpk` | Links to MCS Assets |
-| Accents (Patterns) | multipleRecordLinks | `fldcDwADWdlL63AXv` | Links to MCS Assets |
-| Industry Tag | singleSelect | `fldNS8nQIbNLsu619` | |
-| Project Tags | multipleSelects | `fld3uE4knvl6LDwo9` | |
+| Primary Tag | singleSelect | `fldExample0000070` | What you built |
+| Secondary Tag | singleSelect | `fldExample0000071` | What they got |
+| Date Completed | singleLineText | `fldExample0000057` | Blank for Queued. singleLineText (not date) because values are approximate, e.g. "March 2026" or "Q1 2026" |
+| Data Confidence | singleSelect | `fldExample0000072` | High / Medium / Estimated |
+| Est. Hours Recovered/Week | number | `fldExample0000073` | |
+| Hourly Rate Assumption | currency | `fldExample0000074` | |
+| Est. Annual Dollar Value | currency | `fldExample0000075` | |
+| Result 1 Icon | multipleRecordLinks | `fldExample0000058` | Links to MCS Assets |
+| Result 2 Icon | multipleRecordLinks | `fldExample0000059` | Links to MCS Assets |
+| Highlight (Human) | multipleRecordLinks | `fldExample0000060` | Links to MCS Assets |
+| Accents (Patterns) | multipleRecordLinks | `fldExample0000076` | Links to MCS Assets |
+| Industry Tag | singleSelect | `fldExample0000077` | |
+| Project Tags | multipleSelects | `fldExample0000078` | |
 
 AI Agent Fields (auto-generated, do not write):
 | Field | Type | Field ID | Purpose |
 |---|---|---|---|
-| Headline - AI Revised | aiText | `fldNlrtUT6OE3vChX` | Compressed headline, ~50 chars |
-| Problem - AI Revised | aiText | `fldqt82z6ZPNiRHxG` | Compressed situation blurb |
-| Approach - AI Revised | aiText | `fld8CPcEa5JTErREW` | Compressed approach |
-| Result 1 - AI Revised | aiText | `fldLKAR8KPH9tVH4E` | Compressed result |
-| Result 2 | multilineText | `fldHpvofpyDNf8sb4` | Auto-mirrors Result 1; exists for the slide template which has two result columns. The skill does not write to this field. |
+| Headline - AI Revised | aiText | `fldExample0000079` | Compressed headline, ~50 chars |
+| Problem - AI Revised | aiText | `fldExample0000080` | Compressed situation blurb |
+| Approach - AI Revised | aiText | `fldExample0000081` | Compressed approach |
+| Result 1 - AI Revised | aiText | `fldExample0000082` | Compressed result |
+| Result 2 | multilineText | `fldExample0000051` | Auto-mirrors Result 1; exists for the slide template which has two result columns. The skill does not write to this field. |
 | Character count fields | formula | (multiple) | Track length per column |
 
-MCS Assets Table (`tblF3r40XrSfirC38`)
+MCS Assets Table (`tblExample0000083`)
 
 | Field | Type | Field ID |
 |---|---|---|
-| Name | formula | `fldwbFpRm2Tfd0XCj` |
-| Target Location | singleSelect | `fldygJZc6yEqBOrlR` |
-| Asset | multipleAttachments | `fldjWVRnzojOON8sy` |
-| Accent Location (Pattern) | singleSelect | `fldyFtVIHSpFCTOHx` |
+| Name | formula | `fldExample0000084` |
+| Target Location | singleSelect | `fldExample0000085` |
+| Asset | multipleAttachments | `fldExample0000086` |
+| Accent Location (Pattern) | singleSelect | `fldExample0000087` |
 
 Current assets:
 | Record ID | Name | Type | Description |
 |---|---|---|---|
-| `recYWlwjZmUqhvj47` | Target | Results | Target/bullseye doodle |
-| `recluDuWe0Cco8T8D` | Money | Results | Money/dollar doodle |
-| `rec9EAml1NvaXzQPO` | Woman Pointing | Highlight | Woman character |
-| `recXYJVpGuM9yxiZh` | Man Pointing | Highlight | Man character |
-| `recI4Zwklqr37aNHH` | Red Circle | Accent | Position 1 |
-| `recidnRUBWLU5C5w0` | Blue Circle | Accent | Position 2 |
-| `rec2gSbYGKoYvKdiX` | Blue Triangle | Accent | Position 3 |
+| `recExample0000088` | Target | Results | Target/bullseye doodle |
+| `recExample0000089` | Money | Results | Money/dollar doodle |
+| `recExample0000090` | Woman Pointing | Highlight | Woman character |
+| `recExample0000091` | Man Pointing | Highlight | Man character |
+| `recExample0000092` | Red Circle | Accent | Position 1 |
+| `recExample0000093` | Blue Circle | Accent | Position 2 |
+| `recExample0000094` | Blue Triangle | Accent | Position 3 |
 
 Transcript Source:
-- Base: XR - LCE / XRAY Hourly (`appMjlaeg7cFYivss`)
-- Table: CRM Enriched Debriefs (`tblVlruQcm3Z0cBeM`)
-- Transcript field: Zoom Transcript 1 (`flduLY0o5WsNiX1eL`)
+- Base: XR - LCE / XRAY Hourly (`appExample0000049`)
+- Table: CRM Enriched Debriefs (`tblExample0000095`)
+- Transcript field: Zoom Transcript 1 (`fldExample0000048`)
 
 ## Features
 
@@ -208,7 +208,7 @@ Acceptance criteria:
 - Highlight characters alternate; accents rotate
 - All 34 existing records backfilled as of 2026-04-06
 
-### F4: AI Content Compression (Tom Nassr)
+### F4: AI Content Compression (Blair Ito)
 - Airtable AI agents auto-compress headlines, problem, approach, results
 - Character count formulas enforce length limits
 - Conditional AI fields fire when content exceeds thresholds (e.g., headline > 50 chars)
@@ -262,7 +262,7 @@ Trigger conditions (all must be true):
 Workflow:
 1. Monthly scan (or on-demand): query MCS table for records matching all trigger conditions
 2. Group qualifying records by client/company; one email per client, even if they have multiple Queued MCS records
-3. Pull remaining hours from Projects & Tasks base (`appQAdxI2hDNJj1g5`)
+3. Pull remaining hours from Projects & Tasks base (`appExample0000004`)
 4. Generate email draft from `references/outreach-template.md` with:
    - Client name and company
    - Remaining hours available
@@ -270,7 +270,7 @@ Workflow:
    - Combined projected value across all Queued items
 5. Language uses future tense throughout: "you could recover," "expected to save," "here's what we discussed building with your remaining time"
 6. Tone: helpful, not salesy; a reminder, not a pitch
-7. Sender: generic XRAY address (projects@xray.tech or similar)
+7. Sender: generic XRAY address (person15@example.com or similar)
 8. Email is generated as a draft for Rachael to review before sending (no auto-send in v1)
 
 After outreach:
@@ -287,7 +287,7 @@ Acceptance criteria:
 - [ ] Remaining hours pulled from Projects & Tasks base accurately
 - [ ] Last Outreach Date set on each record included in an outreach email; outreach query skips records emailed in the current month
 
-### F8: Slide Generation Pipeline (Tom Nassr)
+### F8: Slide Generation Pipeline (Blair Ito)
 - MCS records feed into Google Sheets template
 - AI-compressed fields + visual assets = slide-ready data
 - Automated slide generation (in progress)
@@ -327,10 +327,10 @@ The tense shift is the outreach engine. A Completed MCS says "we recovered 3 hou
 - 34 MCS records in Airtable (all Completed, no Queued yet)
 - All 34 records have visual assets assigned (backfilled today)
 - AI agent fields active for headline, problem, approach, result compression
-- Character count + conditional AI logic live (Tom Nassr)
+- Character count + conditional AI logic live (Blair Ito)
 - Skill updated with queued detection, asset assignment, engineer review, outreach sections
 - Outreach template created
-- Slide generation pipeline in progress (Tom Nassr + Google Sheets)
+- Slide generation pipeline in progress (Blair Ito + Google Sheets)
 
 ## Open Items
 
@@ -345,7 +345,7 @@ Blocking outreach (F7):
 - [ ] Create Approved Date field in Airtable (blocks F6/F7), Rachael
 - [ ] Create Last Outreach Date field in Airtable (blocks F7), Rachael
 
-Content/design (Tom Nassr):
+Content/design (Blair Ito):
 - [ ] More accent placeholder images needed for positions 4-6
 - [ ] Google Sheets slide template tweaks
 - [ ] Run AI rephrasing on all existing records

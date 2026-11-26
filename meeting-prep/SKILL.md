@@ -1,6 +1,6 @@
 ---
 name: meeting-prep
-version: 1.0.1
+version: 1.0.2
 description: >
   Build a meeting-prep brief for every client meeting on Rachael's calendar today (or a
   specified date). For each meeting, the skill identifies which client it belongs to,
@@ -73,10 +73,10 @@ For each event, try to map it to a client folder under `~/Claude-Work/CLIENTS/`:
 
 1. **List client folders** (one-time per run): `ls -d ~/Claude-Work/CLIENTS/*/`
 2. **For each event**, check (in order):
-   - Attendee email domains (e.g., `@codingclarified.com` → Coding Clarified)
-   - Attendee names against folder names (e.g., "Janine Mothershed" → `Coding_Clarified_Janine_Mothershed`)
+   - Attendee email domains (e.g., `@examplenonprofit.com` → Example Nonprofit)
+   - Attendee names against folder names (e.g., "Dana Whitfield" → `Coding_Clarified_Janine_Whitfield`)
    - Event title keywords (e.g., "AYMG sync" → `AY Media_Jay_Danzy`)
-3. **Handle alias folders** — some clients have multiple folders (e.g., `GOL/` and
+3. **Handle alias folders** — some clients have multiple folders (e.g., `EA/` and
    `Guardians_of_Love_Jessica_Peoples/` are the same client). Prefer the folder with the
    most recent activity (newest file modification times under `Project Documentation/`
    or `Transcripts/`).
@@ -157,7 +157,7 @@ Extract from the transcripts:
 ### 3c. XRAY planning base — recent task activity
 
 Recent tasks and outcomes for this client live in the XRAY upstream base
-(`appQAdxI2hDNJj1g5`). Use the PAT at `~/.config/xray/airtable-tasks-pat`.
+(`appExample0000004`). Use the PAT at `~/.config/xray/airtable-tasks-pat`.
 
 For each client:
 - Find their Project record(s) in the Projects table (a client can have multiple — at
@@ -170,7 +170,7 @@ This is the "task updates" section of the brief.
 
 ### 3d. Recent debrief
 
-XRAY debriefs live in `appQAdxI2hDNJj1g5` table `tblYLGhD3Ii7EkGZY`, filtered by
+XRAY debriefs live in `appExample0000004` table `tblExample0000011`, filtered by
 `XRay's Client` linked record. Use the Debrief PAT at the path noted in memory
 (`reference_debrief_airtable.md`).
 

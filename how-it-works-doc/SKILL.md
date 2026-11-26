@@ -1,6 +1,6 @@
 ---
 name: how-it-works-doc
-version: 1.4.6
+version: 1.4.7
 description: Writes a plain-English education document that explains an automation, what triggers it, what inputs it reads, what steps it takes, what outputs it produces, and what it does not do. Use when Rachael says "write a how-it-works doc," "explain this automation in plain English," "education doc for [automation]," "what does this automation do" (in a teaching context, not a debugging one), "write up this automation for the client," or asks for a doc that lets a non-technical reader understand a workflow. Produces a HOW-IT-WORKS-name.md file co-located with the automation's code or under Project Documentation/. Do not use for code-level explanations of a single function (that is the `explain-code` skill) or for inventorying every automation in a base (that is `audit-airtable-automations`).
 ---
 
@@ -60,7 +60,7 @@ This skill exists because Rachael's clients need to read these documents and und
 - **Complete sentences only.** No truncated phrases. "Fires the certificate flow" is a fragment; "When the participant completes the module, the system sends them their certificate" is a sentence.
 - **No jargon stacks.** "PATCH the FK on the linked record via the upstream PAT" reads as noise. Say "the system updates the link between the two records, using the credentials stored at the project level."
 - **No abbreviations the reader has to decode.** Spell out Contract Line Item, do not write CLI. Spell out Caseworker, do not write CW. The only acceptable abbreviations are ones the client already uses in their own meetings.
-- **No record IDs in the body.** A reader does not care that the table is `tbl5tWwK2VdnoFgXq`. Use the human-readable name and put any IDs in a footnote or appendix if they are needed at all.
+- **No record IDs in the body.** A reader does not care that the table is `tblExample0000046`. Use the human-readable name and put any IDs in a footnote or appendix if they are needed at all.
 - **No "needs fixing." Use "needs to be fixed."** Same rule for every other gerund. See `~/Claude-Work/ABOUT-ME/my-voice.md`.
 - **"Main" not "master." "Complete" not "clean."**
 - **No throat-clearing.** Skip "this document explains," "the purpose of this is," "in summary." Lead with the answer.

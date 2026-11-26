@@ -20,7 +20,7 @@
 
 set -euo pipefail
 
-CLIENT="${1:?missing client key (AYMG|CC|GoL|other)}"
+CLIENT="${1:?missing client key (AYMG|CC|EA|other)}"
 FEATURE="${2:?missing feature slug (kebab-case)}"
 PRD_SOURCE="${3:?missing PRD source file path}"
 
@@ -32,8 +32,8 @@ fi
 # Resolve client folder. Add new clients here as needed.
 case "$CLIENT" in
     AYMG)   FOLDER="$HOME/Claude-Work/CLIENTS/AY Media_Jay_Danzy/Project Documentation" ;;
-    CC)     FOLDER="$HOME/Claude-Work/CLIENTS/Coding_Clarified_Janine_Mothershed/Project Documentation" ;;
-    GoL)    FOLDER="$HOME/Claude-Work/CLIENTS/Guardians_of_Love_Jessica_Peoples/Project Documentation" ;;
+    CC)     FOLDER="$HOME/Claude-Work/CLIENTS/Coding_Clarified_Janine_Whitfield/Project Documentation" ;;
+    EA)    FOLDER="$HOME/Claude-Work/CLIENTS/Guardians_of_Love_Jessica_Peoples/Project Documentation" ;;
     *)      FOLDER="$HOME/Claude-Work/PROJECTS/prds" ;;
 esac
 

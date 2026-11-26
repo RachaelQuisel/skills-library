@@ -1,7 +1,7 @@
 ---
 name: update-projects
-version: 1.0.1
-description: Set up and reconcile Projects, Outcomes (Objectives), and Tasks for a client into XRAY's upstream Projects & Tasks at XRAY base (appQAdxI2hDNJj1g5). Records sync down to per-client planning bases automatically. Use when Rachael says "set up the build plan in my planning base", "push the projects, outcomes, and tasks to Airtable", "the outcomes table is empty", "create the projects, outcomes, and tasks", "push the build doc to the planning base", or whenever she has a Project → Outcome → Task build doc and wants it reflected in her planning Airtable base. Also use to dedupe duplicated task records or reconcile a build doc against existing records.
+version: 1.0.2
+description: Set up and reconcile Projects, Outcomes (Objectives), and Tasks for a client into XRAY's upstream Projects & Tasks at XRAY base (appExample0000004). Records sync down to per-client planning bases automatically. Use when Rachael says "set up the build plan in my planning base", "push the projects, outcomes, and tasks to Airtable", "the outcomes table is empty", "create the projects, outcomes, and tasks", "push the build doc to the planning base", or whenever she has a Project → Outcome → Task build doc and wants it reflected in her planning Airtable base. Also use to dedupe duplicated task records or reconcile a build doc against existing records.
 tags:
   - skill
 ---
@@ -21,22 +21,22 @@ For a client-facing explanation, use ordinary words and the requested format. Ex
 Use the process below. Preserve its conditions, commands, checks, and approval rules. Use information the user already supplied. Follow the existing questions or stopping rules when required information is missing.
 
 
-Set up and maintain the standard XRAY build-plan hierarchy (Projects → Outcomes → Tasks) for a client. All writes land in the upstream **`appQAdxI2hDNJj1g5` ("Projects & Tasks at XRAY")** base. Records sync down to the per-client planning base within ~30-60 seconds.
+Set up and maintain the standard XRAY build-plan hierarchy (Projects → Outcomes → Tasks) for a client. All writes land in the upstream **`appExample0000004` ("Projects & Tasks at XRAY")** base. Records sync down to the per-client planning base within ~30-60 seconds.
 
 ## Constants
 
 Pulled to the top so they aren't repeated inline throughout the skill.
 
-- **Source base:** `appQAdxI2hDNJj1g5` — "Projects & Tasks at XRAY"
-- **Projects table:** `tblOaFlYpPXlHrT2c`
-- **Objectives table:** `tblyZxi1nYrGICXrf` (synced to client bases as `Outcomes`)
-- **Tasks table:** `tblvlJq7I2GvIQEyP`
-- **Clients table:** `tblVS1aUCNeqtVq5U`
-- **Rachael's user ID** (Owner, Project/Account Manager, Assigned To): `usr5vnH7D87XIP57C`. Always use object form `{"id": "usr5vnH7D87XIP57C"}` for collaborator fields — bare string returns HTTP 422 `INVALID_VALUE_FOR_COLUMN` (verified 2026-05-27).
+- **Source base:** `appExample0000004` — "Projects & Tasks at XRAY"
+- **Projects table:** `tblExample0000023`
+- **Objectives table:** `tblExample0000162` (synced to client bases as `Outcomes`)
+- **Tasks table:** `tblExample0000010`
+- **Clients table:** `tblExample0000012`
+- **Rachael's user ID** (Owner, Project/Account Manager, Assigned To): `usrExample0000179`. Always use object form `{"id": "usrExample0000179"}` for collaborator fields — bare string returns HTTP 422 `INVALID_VALUE_FOR_COLUMN` (verified 2026-05-27).
 
 ## Routing rule (read first — REWRITTEN 2026-07-30, supersedes everything below)
 
-**ONE route: `tasks.xray.tech/api`. Rachael, 2026-07-30: "you cannot touch projects and tasks base, only tasks.xray.tech." No Airtable MCP writes to `appQAdxI2hDNJj1g5`. No REST. No exceptions, no interim caveat.** See memory `tasks-only-via-xray-tasks-api`.
+**ONE route: `tasks.xray.tech/api`. Rachael, 2026-07-30: "you cannot touch projects and tasks base, only tasks.xray.tech." No Airtable MCP writes to `appExample0000004`. No REST. No exceptions, no interim caveat.** See memory `tasks-only-via-xray-tasks-api`.
 
 - **Tasks** → `tasks.xray.tech/api` with `X-Api-Key: $(cat ~/.config/xray/tasks-api-key)`. Create, accept, patch, reject. Follow the `create-task` skill's Hard Rules on every create: project resolved, outcome named in the description (v1 can't write the link), canonical priority (`"Medium"`/`"High"` write values only), mandatory same-title-same-project dedupe first.
 - **Projects — create/update is BLOCKED.** The v1 API only exposes `GET /api/projects?q=<name>` (search, min 2 chars, max 10 results). Report the block to Rachael; she edits in the Task Inbox UI or it waits for tasks.xray.tech v2. Do NOT use MCP.
@@ -49,20 +49,20 @@ The `~/.config/xray/airtable-tasks-pat` file has been deleted from the local fil
 
 ## Why the per-client base isn't the write target
 
-A per-client planning base (e.g., `Guardians of Love and XRAY` at `appQ2DVUVGLq7mFg9`) **looks like** Rachael's project-management environment, but its key tables are externally synced and **read-only**. Direct writes to those synced tables fail with:
+A per-client planning base (e.g., `Example Agency and XRAY` at `appExample0000217`) **looks like** Rachael's project-management environment, but its key tables are externally synced and **read-only**. Direct writes to those synced tables fail with:
 
 ```
 403 INVALID_PERMISSIONS: Your record could not be created because the underlying table is externally synced
 ```
 
-Always write upstream to `appQAdxI2hDNJj1g5`. The client base is a viewing layer.
+Always write upstream to `appExample0000004`. The client base is a viewing layer.
 
-| Source table (writable, at `appQAdxI2hDNJj1g5`) | Source ID | Synced to client base as | Write route |
+| Source table (writable, at `appExample0000004`) | Source ID | Synced to client base as | Write route |
 |---|---|---|---|
-| Projects | `tblOaFlYpPXlHrT2c` | `⚡️ Projects` | Airtable MCP |
-| Objectives | `tblyZxi1nYrGICXrf` | `Outcomes` (renamed on sync) | Airtable MCP |
-| Tasks | `tblvlJq7I2GvIQEyP` | `Tasks at XRay` | `tasks.xray.tech/api` |
-| XRay's Clients | `tblVS1aUCNeqtVq5U` | `XRay's Clients` | `GET /api/clients` (read); MCP (create, rare) |
+| Projects | `tblExample0000023` | `⚡️ Projects` | Airtable MCP |
+| Objectives | `tblExample0000162` | `Outcomes` (renamed on sync) | Airtable MCP |
+| Tasks | `tblExample0000010` | `Tasks at XRay` | `tasks.xray.tech/api` |
+| XRay's Clients | `tblExample0000012` | `XRay's Clients` | `GET /api/clients` (read); MCP (create, rare) |
 
 ## Credentials and "remove" semantics
 
@@ -76,11 +76,11 @@ If Rachael pastes a token in chat, flag the exposure once, then proceed if she o
 
 | Table | To "remove" | Which route |
 |---|---|---|
-| **Projects** | `Status: Cancelled` | MCP `update_records_for_table` on `tblOaFlYpPXlHrT2c`. `Cancelled` is a valid option. |
-| **Objectives** | `Archived: true` (there is no `Cancelled` option — valid Status values are `Backlog`, `Blocked`, `Ready to Start`, `In Progress`, `In Testing` only) | MCP `update_records_for_table` on `tblyZxi1nYrGICXrf`. |
+| **Projects** | `Status: Cancelled` | MCP `update_records_for_table` on `tblExample0000023`. `Cancelled` is a valid option. |
+| **Objectives** | `Archived: true` (there is no `Cancelled` option — valid Status values are `Backlog`, `Blocked`, `Ready to Start`, `In Progress`, `In Testing` only) | MCP `update_records_for_table` on `tblExample0000162`. |
 | **Tasks** | Two-part write: `Triage Status: Rejected` (via `tasks.xray.tech PATCH`) **AND** `Archived: true` (via MCP). No `Cancelled` in Task Status. `tasks.xray.tech PATCH` does not accept `Archived`, and MCP is needed for that side of the write. Verified 2026-06-13. | See both routes above. |
 
-**Collaborator fields** (Owner, Project/Account Manager, Assigned To) are single-collaborator fields. Always use object form `{"id": "usr5vnH7D87XIP57C"}` — never a bare string, never a name. Using the object form is what:
+**Collaborator fields** (Owner, Project/Account Manager, Assigned To) are single-collaborator fields. Always use object form `{"id": "usrExample0000179"}` — never a bare string, never a name. Using the object form is what:
 
 - Makes the records show up in `/tasks/mine` and any "Assigned to Rachael" filtered views
 - Triggers owner-based notifications (Slack DMs, daily task digests, etc.)
@@ -95,7 +95,7 @@ See `references/field-schemas.md` for the full field list per table.
 3. **Check existing projects** for the client via `GET /api/projects?q=<client name>`. Decision rule:
    - If a project's `Project name` **exact-matches** one in the build doc → PATCH it (via MCP) to update fields; don't create a duplicate.
    - If the build doc names a **new workstream** the client doesn't have yet → create it alongside the existing ones.
-   - If ambiguous (partial name overlap, e.g., "GoL Compliance" vs. "GoL Compliance Automation"), ask Rachael before creating.
+   - If ambiguous (partial name overlap, e.g., "EA Compliance" vs. "EA Compliance Automation"), ask Rachael before creating.
 4. **Create projects** via `mcp__airtable__create_records_for_table` on the Projects table. Batch up to 50 in one call. Include `Origin Detail: "Claude Code — [Client] build batch [YYYY-MM-DD]"` on every record for later idempotency checks.
 5. **Create objectives** via `mcp__airtable__create_records_for_table` on the Objectives table, each linked to its project and to the client. Batch up to 50. Same `Origin Detail` batch tag.
 6. **Identify any existing tasks to re-link.** Query `GET /api/tasks/mine` or `mcp__airtable__list_records_for_table` on the Tasks table filtered by `contains` on `Origin Detail` (looking for prior batch tags for this client, or for tasks pushed earlier in this build). These are the tasks that already exist in the source and need their `Outcomes` link pointed at the new objectives.
@@ -107,7 +107,7 @@ See `references/field-schemas.md` for the full field list per table.
 
 For full field-level details, see `references/field-schemas.md`.
 
-For a step-by-step rerun of the GOL playbook (with the actual HTTP failures and root causes), see `references/diagnostic-playbook.md`.
+For a step-by-step rerun of the EA playbook (with the actual HTTP failures and root causes), see `references/diagnostic-playbook.md`.
 
 ## Critical select-option strings
 
@@ -167,7 +167,7 @@ Only `field-schemas.md` and `diagnostic-playbook.md` remain under `references/`.
 Equivalents in the current routing:
 - **Bulk create tasks** → loop `POST https://tasks.xray.tech/api/tasks` with 0.4s spacing. See the `create-task` skill for the exact call pattern.
 - **Bulk create Projects / Objectives** → `mcp__airtable__create_records_for_table` with a `records` array of up to 50.
-- **Bulk update / re-link Tasks' Outcomes** → `mcp__airtable__update_records_for_table` on `tblvlJq7I2GvIQEyP`, up to 50 per batch.
+- **Bulk update / re-link Tasks' Outcomes** → `mcp__airtable__update_records_for_table` on `tblExample0000010`, up to 50 per batch.
 - **Dedup** → `GET /api/tasks/mine`, then filter client-side on `projectName` (the `?project=<id>` query param does not actually filter — verified against the app). Match against the canonical Markdown build doc. For each duplicate: split write per the "Credentials and remove semantics" section — `PATCH tasks.xray.tech/api/tasks/:id` with `Triage Status: Rejected`, then MCP `update_records_for_table` with `Archived: true`. The tasks.xray.tech PATCH does not accept `Archived`.
 
 ## Idempotency
@@ -206,8 +206,8 @@ If the `Outcomes` link needs to change too (the tasks.xray.tech PATCH does not c
 
 ```
 mcp__airtable__update_records_for_table
-  baseId: appQAdxI2hDNJj1g5
-  tableId: tblvlJq7I2GvIQEyP
+  baseId: appExample0000004
+  tableId: tblExample0000010
   records: [{id: "recXXX", fields: {Outcomes: ["recNEWOUTCOMEID"]}}]
 ```
 

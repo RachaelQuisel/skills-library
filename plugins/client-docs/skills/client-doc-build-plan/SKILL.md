@@ -1,6 +1,6 @@
 ---
 name: client-doc-build-plan
-version: 1.4.6
+version: 1.4.7
 description: Draft or update the canonical build-plan.md for a client build, structured as Projects, Outcomes, and Tasks. Reads from the tasks.xray.tech API when the project has outcomes and tasks; when it has none yet (a new client), drafts the plan from every meeting debrief and transcript for the client, with each claim verified against the recording. Use when Rachael says "build plan", "draft build-plan.md", "build plan for [client]", "buildplan", "build the plan from the transcripts", "what are the outcomes and tasks for [client]", or when the client-docs flow reaches build-plan.md.
 ---
 
@@ -35,7 +35,7 @@ Read `references/example-build-plan.md` before drafting. It shows a finished `bu
 
 Projects, Outcomes, and Tasks come from `tasks.xray.tech/api` only. Authenticate with the `X-Api-Key` header; on Rachael's setup the key lives at `~/.config/xray/xray-tasks-api-key`. Never read or write the underlying Airtable base for tasks, and never route through the `update-projects` skill.
 
-1. Resolve the project: `GET /api/projects?q=<client name>`. Try the company name and the people's names; a new client's project is often named after a person (for example "LCE: Alexis Tannehill King Consulting").
+1. Resolve the project: `GET /api/projects?q=<client name>`. Try the company name and the people's names; a new client's project is often named after a person (for example "LCE: Quinn Adler King Consulting").
 2. Read its outcomes (`GET /api/outcomes?projectId=<recXXX>`) and tasks.
 3. If outcomes and tasks exist, write them out as the plan: one section per outcome, one task table per section with Owner, Status, and due date.
 4. Test whether an API filter actually filtered. If a projectId query returns tasks from other clients, the filter was ignored; filter client-side or fall back to Source 2 for structure. Never paste another client's tasks into the plan.

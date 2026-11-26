@@ -18,7 +18,7 @@ class InventoryTests(unittest.TestCase):
         self.addCleanup(self.temp.cleanup)
 
     def source(self, name='source.csv', **overrides):
-        row = {'Binti application id': 'case-1', 'CBOs': 'Guardians Of Love, FFA',
+        row = {'Binti application id': 'case-1', 'CBOs': 'Example Agency, FFA',
                'Status': 'Applying', 'Application template': 'LA County RFA Application',
                'Applicant name': 'Example Applicant', 'Co-applicant name': '',
                'Date of inquiry': '2026-09-01', 'Number of applicants': '1'}
@@ -32,8 +32,8 @@ class InventoryTests(unittest.TestCase):
 
     def test_four_groups_keep_missing_renewals_pending(self):
         gol = self.source()
-        diup = self.source('diup.csv', **{'CBOs': 'Dangerfield Institute', 'Binti application id': 'case-2'})
-        renewal = self.source('renewal.csv', **{'CBOs': 'Dangerfield Institute', 'Status': 'In Renewal',
+        diup = self.source('diup.csv', **{'CBOs': 'Partner Agency Institute', 'Binti application id': 'case-2'})
+        renewal = self.source('renewal.csv', **{'CBOs': 'Partner Agency Institute', 'Status': 'In Renewal',
                                              'Application template': 'RFA Renewal', 'Binti application id': 'case-3',
                                              'Date of inquiry': '2020-01-01'})
         result = m.build_inventory([gol, diup, renewal], None, date(2026, 9, 30), 30, list(m.GROUPS))
@@ -60,7 +60,7 @@ class InventoryTests(unittest.TestCase):
         self.assertTrue(result['warnings'])
 
     def test_mixed_organizations_do_not_double_total(self):
-        source = self.source(**{'CBOs': 'Guardians Of Love, FFA, Dangerfield Institute'})
+        source = self.source(**{'CBOs': 'Example Agency, FFA, Partner Agency Institute'})
         result = m.inspect_binti(source, date(2026, 9, 30), 30)
         self.assertEqual(result['applicant_occurrences'], 1)
         self.assertEqual(len(result['groups']), 2)

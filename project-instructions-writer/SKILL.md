@@ -1,6 +1,6 @@
 ---
 name: "project-instructions-writer"
-version: 1.0.0
+version: 1.0.1
 description: "Write or fix the project instructions for a Project in Claude (coordinator plus threads at claude.ai/code, the desktop Code tab or the mobile app). Use when someone sets up a Claude Project, asks what to put in project instructions, or says their project threads keep guessing or going off track."
 ---
 
@@ -119,7 +119,7 @@ Return:
 
 Checked against Anthropic's documentation on October 4, 2026: https://code.claude.com/docs/en/claude-projects. Projects are in public beta, so recheck that page before quoting a setting or limit to a user.
 
-The instructions template is adapted from "Claude Projects: The Complete Setup Guide" by Joshua Stevenson (@nocode.joshua) and from the example in Anthropic's documentation.
+The instructions template is adapted from "Claude Projects: The Complete Setup Guide" by Kai Mendoza (@nocode.joshua) and from the example in Anthropic's documentation.
 
 Access:
 

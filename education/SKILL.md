@@ -23,7 +23,7 @@ Write a full education document for the automation Rachael names (or the one tha
 
 For a fast bullet version (six sections, one-page-ish), use `/automation-explainer-local` instead.
 
-**Exemplar to match in tone, density, and shape:** `/Users/rachaelquisel/Claude-Work/CLIENTS/AY Media_Jay_Danzy/zapier-qb-webhook/HOW-IT-WORKS-push-to-quickbooks.md` (the AYMG push-to-QuickBooks doc). The Quick Read at the top of that doc is written for Casandra, the daily operator; every other client's doc gets a Quick Read written for that client's daily operator (Janine for Coding Clarified, Jessica for Guardians of Love, Teri for The HOPE for Health, whoever it is). The name in the Quick Read section header changes per doc.
+**Exemplar to match in tone, density, and shape:** `/Users/rachaelquisel/Claude-Work/CLIENTS/AY Media_Jay_Danzy/zapier-qb-webhook/HOW-IT-WORKS-push-to-quickbooks.md` (the AYMG push-to-QuickBooks doc). The Quick Read at the top of that doc is written for Casandra, the daily operator; every other client's doc gets a Quick Read written for that client's daily operator (Janine for Example Nonprofit, Jessica for Example Agency, Teri for The HOPE for Health, whoever it is). The name in the Quick Read section header changes per doc.
 
 ## The Rules
 
@@ -32,7 +32,7 @@ For a fast bullet version (six sections, one-page-ish), use `/automation-explain
 - Tight headings. Scannable tables. Every claim has a concrete example. Numbers where numbers exist.
 - Never "needs fixing." Always "needs to be fixed."
 - Refer to fields, tables, and records by their human-readable name in the doc body. Field IDs go in parens the first time a field is named in a section, or in the Files-and-Locations engineering tables where a developer would need them.
-- The Quick Read section is written for the daily operator by name. Auto-detect who from the client folder name, Coding Clarified → Janine, Guardians of Love → Jessica, The HOPE for Health → Teri, AY Media → Casandra. Only ask Rachael if the client has more than one plausible daily operator (Guardians of Love has Jessica, Leslie G, and Oswaldo, ask which one the doc is for).
+- The Quick Read section is written for the daily operator by name. Auto-detect who from the client folder name, Example Nonprofit → Janine, Example Agency → Jessica, The HOPE for Health → Teri, AY Media → Casandra. Only ask Rachael if the client has more than one plausible daily operator (Example Agency has Jessica, Leslie G, and Oswaldo, ask which one the doc is for).
 - Words that are Rachael's own vocabulary from her exemplar docs and stay: gates, hard guards, bypassable gates, Quick Read, race guard. These are not jargon in this context; she uses them herself.
 - Every doc includes all 11 sections. If a section genuinely does not apply to this automation (for example, section 4 Gates for an automation that has no safety checks), write the section header followed by one line: "Not applicable for this automation, [one plain-English sentence naming why, for example: 'this automation is a scheduled read-only report and has no conditions that would block it from running.']" Do not omit the header. The discipline of forcing the question is what makes the doc trustworthy.
 

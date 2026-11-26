@@ -4,7 +4,7 @@
   "workflow_path": ".github/workflows/release-consistency.yml",
   "branch": "main",
   "test_schedule_utc": "30 15 * * 1",
-  "notification_destination": "La Maison Santa Barbara Slack #automations (C0C7XQK3TTR); ChatGPT fallback if Slack delivery fails",
+  "notification_destination": "La Maison Santa Barbara Slack #automations (C0EXAMPLE01); ChatGPT fallback if Slack delivery fails",
   "alert_task_id": "6acb8fa863208191a83b74bb78b40133",
   "alert_check_frequency": "hourly",
   "successful_run_max_age_days": 8,
@@ -34,9 +34,9 @@
   },
   "slack_delivery": {
     "workspace_id": "T0AT819U2UQ",
-    "channel_id": "C0C7XQK3TTR",
+    "channel_id": "C0EXAMPLE01",
     "channel_name": "automations",
-    "setup_message": "https://lamaisonsanta-8tm8179.slack.com/archives/C0C7XQK3TTR/p1791738615563109",
+    "setup_message": "https://example.slack.com/archives/C0EXAMPLE01/p1791738615563109",
     "max_failed_attempts_per_event": 3,
     "content": "Short status and GitHub evidence links; no client records or raw logs.",
     "deduplication": "Use SKILL-CHECK:<event_id> from the durable event record. Reconcile a prior claim or uncertain send; never resend solely because a new run exists."

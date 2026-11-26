@@ -1,14 +1,14 @@
 # Completed MCS Examples
 
-## Coding Clarified (Education / Workforce Development)
+## Example Nonprofit (Education / Workforce Development)
 
 ### MCS 1: Self-Service Caseworker Portal
 
 | Field | Value |
 |---|---|
-| Client Name | Janine Mothershed |
+| Client Name | Dana Whitfield |
 | Client Role | CEO |
-| Company Name | Coding Clarified |
+| Company Name | Example Nonprofit |
 | Industry | Education, Workforce Development, Nonprofit |
 | MCS Headline | Hundreds of caseworkers are emailing staff for status updates because they can't access student data themselves. |
 | Situation | Hundreds of caseworkers checking on student progress, but data trapped in DocuSign PDFs. Staff spent 20+ hrs/week (80+ hrs/month on caseworker emails alone) responding to status inquiries. |
@@ -23,9 +23,9 @@
 
 | Field | Value |
 |---|---|
-| Client Name | Janine Mothershed |
+| Client Name | Dana Whitfield |
 | Client Role | CEO |
-| Company Name | Coding Clarified |
+| Company Name | Example Nonprofit |
 | Industry | Education, Workforce Development, Nonprofit, Government Compliance |
 | MCS Headline | All student data is trapped in PDFs that can't be searched or linked to student records. |
 | Situation | All student data trapped in DocuSign PDFs, not parseable, not linked to student records, not accessible without manual requests. State audit data (employment, accommodations) scattered across emails. |
@@ -40,9 +40,9 @@
 
 | Field | Value |
 |---|---|
-| Client Name | Janine Mothershed |
+| Client Name | Dana Whitfield |
 | Client Role | CEO |
-| Company Name | Coding Clarified |
+| Company Name | Example Nonprofit |
 | Industry | Education, Workforce Development, Nonprofit, Government Compliance |
 | MCS Headline | The certification rate that determines state funding isn't trackable or auditable. |
 | Situation | CPC certification rate, the critical metric for continued state funding, was not trackable. No auditable record of student certification progress. |
@@ -57,9 +57,9 @@
 
 | Field | Value |
 |---|---|
-| Client Name | Janine Mothershed |
+| Client Name | Dana Whitfield |
 | Client Role | CEO |
-| Company Name | Coding Clarified |
+| Company Name | Example Nonprofit |
 | Industry | Education, Workforce Development, Nonprofit |
 | MCS Headline | Staff have to manually track which student gets which exam and when to send it. |
 | Situation | Midterm Quiz (Ch 10) and Practice Exam (Ch 20) delivery was manual; staff had to track progress and send exams at the right time. |

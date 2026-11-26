@@ -1,14 +1,14 @@
-# Vision and Scope: CCRES Grant Distribution System (GrantPoint)
+# Vision and Scope: Example Client Grant Distribution System (GrantPoint)
 
 ---
 
 ## 1. Business Requirements
 
 ### 1.1 Background
-CCRES allocates approximately $1 million annually in grants to roughly 125 community partners, non-profits, and school districts. The current process is highly manual, involving downloadable PDFs, email/physical mail submissions, and dual entry into Excel and FileMaker. This creates a severe administrative bottleneck in April, as Sharon (Office Manager) must compile data for board approval within a two-week window. The lack of structured data also makes post-grant reporting and impact storytelling difficult.
+Example Client allocates approximately $1 million annually in grants to roughly 125 community partners, non-profits, and school districts. The current process is highly manual, involving downloadable PDFs, email/physical mail submissions, and dual entry into Excel and FileMaker. This creates a severe administrative bottleneck in April, as Sharon (Office Manager) must compile data for board approval within a two-week window. The lack of structured data also makes post-grant reporting and impact storytelling difficult.
 
 ### 1.2 Business Opportunity
-By implementing "GrantPoint," a digital grant management portal, CCRES can eliminate paper-based workflows and manual data entry. This system will centralize applications, automate internal scoring rubrics, and provide real-time status updates to applicants. It also provides a structured repository for "impact stories" (photos, testimonials) that can be leveraged for marketing and future fundraising, while ensuring financial reconciliation with QuickBooks remains seamless.
+By implementing "GrantPoint," a digital grant management portal, Example Client can eliminate paper-based workflows and manual data entry. This system will centralize applications, automate internal scoring rubrics, and provide real-time status updates to applicants. It also provides a structured repository for "impact stories" (photos, testimonials) that can be leveraged for marketing and future fundraising, while ensuring financial reconciliation with QuickBooks remains seamless.
 
 ### 1.3 Business Objectives
 - **BO-1:** Reduce the time required to compile the annual board report from 2 weeks to 2 days within the first grant cycle.
@@ -22,7 +22,7 @@ By implementing "GrantPoint," a digital grant management portal, CCRES can elimi
 - **SM-3:** zero physical grant applications accepted after the Phase 1 launch.
 
 ### 1.5 Vision Statement
-**For** CCRES administrators and community grant applicants, **who** are burdened by manual, paper-intensive funding processes, **the** GrantPoint System **is a** digital grant management platform **that** automates the entire lifecycle from application to impact reporting. **Unlike** the current mix of PDFs and filing cabinets, **our product** provides real-time transparency, objective scoring tools, and automated compliance tracking to maximize community impact.
+**For** Example Client administrators and community grant applicants, **who** are burdened by manual, paper-intensive funding processes, **the** GrantPoint System **is a** digital grant management platform **that** automates the entire lifecycle from application to impact reporting. **Unlike** the current mix of PDFs and filing cabinets, **our product** provides real-time transparency, objective scoring tools, and automated compliance tracking to maximize community impact.
 
 ![GrantPoint Context Diagram](../diagrams/context.png)
 
@@ -34,7 +34,7 @@ By implementing "GrantPoint," a digital grant management portal, CCRES can elimi
 ### 1.7 Business Assumptions and Dependencies
 - **AS-1:** Applicants have access to basic digital tools (browser, PDF scanner).
 - **DE-1:** The system depends on Airtable for data storage and Softr for the front-end user interface.
-- **DE-2:** Site visit scheduling depends on internal CCRES staff availability and manual coordination in Phase 1.
+- **DE-2:** Site visit scheduling depends on internal Example Client staff availability and manual coordination in Phase 1.
 
 ![GrantPoint Ecosystem Map](../diagrams/ecosystem.png)
 
@@ -75,7 +75,7 @@ By implementing "GrantPoint," a digital grant management portal, CCRES can elimi
 - **Phase 4:** Social media "Story Queue" for automated marketing of grant outcomes.
 
 ### 2.4 Limitations and Exclusions
-- The system will NOT process external grant applications *from* CCRES to other foundations (grant seeking).
+- The system will NOT process external grant applications *from* Example Client to other foundations (grant seeking).
 - Direct ACH/Wire transfers will not be initiated from the portal (remains in banking/QuickBooks).
 
 ---
@@ -85,8 +85,8 @@ By implementing "GrantPoint," a digital grant management portal, CCRES can elimi
 ### 3.1 Stakeholder Profiles
 - **Sharon (Office Manager):** Values data integrity and report speed. Primary user of the administrative backend.
 - **Grant Applicants:** Value clarity, ease of submission, and status transparency.
-- **CCRES Board Members:** Value high-level summaries, outcome data, and community impact stories.
-- **Matt Przywara (Executive Director):** Values organizational visibility and branding.
+- **Example Client Board Members:** Value high-level summaries, outcome data, and community impact stories.
+- **Noel Harper (Executive Director):** Values organizational visibility and branding.
 
 ### 3.2 Project Priorities
 - **Quality:** **Constraint.** The system must accurately track financial liabilities and meet legal reporting standards.

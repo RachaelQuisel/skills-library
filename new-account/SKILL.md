@@ -1,6 +1,6 @@
 ---
 name: new-account
-version: 1.0.1
+version: 1.0.2
 description: Log new account signups, subscriptions, and recurring donations to Airtable. Scans bank statements (PDF/CSV) to discover, update, and reconcile subscriptions. Triggers on "signed up", "new account", "subscribed", "started using", "registered", "donation", "recurring", "bank statement", "credit card statement", "transactions".
 tags:
   - skill
@@ -25,25 +25,25 @@ Log new account signups and subscriptions to the Subscriptions table in Airtable
 
 ## Airtable Details
 
-- **Base ID**: `appGewwTb13cOr5C3`
-- **Table ID**: `tblIgswbuR2NQupOA`
+- **Base ID**: `appExample0000107`
+- **Table ID**: `tblExample0000108`
 - **Table Name**: Subscriptions
 
 ### Field IDs
 
 | Field | ID | Type |
 |-------|-----|------|
-| Name (service) | `fldgsH6ntFbCq7pSa` | singleLineText |
-| Email Used | `fldYsQNWAjxjeD9lm` | singleLineText |
-| Date Signed Up | `fldTH4Ib2vho4h5Kw` | date |
-| Plan/Tier | `fld0xaF4QIZWO7O8e` | singleLineText |
-| Monthly Cost | `fldKOvy1KIGC1T9yz` | currency |
-| Renewal Date | `fldKrxSzSEu5gsOYF` | date |
-| Category | `fld2q9e2B7R61jGlj` | singleSelect |
-| Notes | `fldsi1JFXVdLSdKzL` | multilineText |
-| Benefits | `fldXOmXE0j7cGltJ9` | multilineText |
-| Subscription Status | `fld7wbwsK5EiIPqxC` | singleSelect |
-| Payment Card | `fldtVCsCKmy3b1imZ` | singleLineText |
+| Name (service) | `fldExample0000109` | singleLineText |
+| Email Used | `fldExample0000110` | singleLineText |
+| Date Signed Up | `fldExample0000111` | date |
+| Plan/Tier | `fldExample0000112` | singleLineText |
+| Monthly Cost | `fldExample0000113` | currency |
+| Renewal Date | `fldExample0000114` | date |
+| Category | `fldExample0000115` | singleSelect |
+| Notes | `fldExample0000116` | multilineText |
+| Benefits | `fldExample0000117` | multilineText |
+| Subscription Status | `fldExample0000118` | singleSelect |
+| Payment Card | `fldExample0000119` | singleLineText |
 
 ### Category Choices
 
@@ -75,10 +75,10 @@ Default new signups to `Active`. Use `Free Trial` when the user mentions a trial
    - Figma, Canva, Adobe, Sketch, Framer → Design
    - If unsure, ask or use Other
 
-6. **Create the record** using `mcp__airtable__create_record` with base ID `appGewwTb13cOr5C3` and table ID `tblIgswbuR2NQupOA`. Use field IDs (not names) in the fields object. For the Category field, pass the choice **name** as a string (e.g., `"Dev Tools"`), not an ID object.
+6. **Create the record** using `mcp__airtable__create_record` with base ID `appExample0000107` and table ID `tblExample0000108`. Use field IDs (not names) in the fields object. For the Category field, pass the choice **name** as a string (e.g., `"Dev Tools"`), not an ID object.
 
-7. **Set cancellation reminder for free trials / promos** — whenever the subscription status is `Free Trial` or the plan involves a free period that auto-renews to paid, create a Google Calendar event on `rachael.quisel@gmail.com` using `mcp__claude_ai_Google_Calendar__gcal_create_event`:
-   - **Calendar**: `rachael.quisel@gmail.com`
+7. **Set cancellation reminder for free trials / promos** — whenever the subscription status is `Free Trial` or the plan involves a free period that auto-renews to paid, create a Google Calendar event on `person4@example.com` using `mcp__claude_ai_Google_Calendar__gcal_create_event`:
+   - **Calendar**: `person4@example.com`
    - **Date**: 1 week before the free period ends
    - **Title**: `Cancel or renew [Service Name] (free trial/promo expires)`
    - **Description**: Include what the trial is, when it was redeemed, any codes used, and where to manage/cancel

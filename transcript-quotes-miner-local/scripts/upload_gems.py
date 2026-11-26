@@ -4,8 +4,8 @@
 import json, os, re, sys, urllib.request, urllib.error, time
 
 TOKEN_ENV_VAR = "AIRTABLE_PAT"
-BASE_ID = "appGewwTb13cOr5C3"
-TABLE_ID = "tblB3dWLZ0doROH6B"  # Things My Human Says to Me (X/Twitter)
+BASE_ID = "appExample0000107"
+TABLE_ID = "tblExample0000208"  # Things My Human Says to Me (X/Twitter)
 
 def get_token() -> str:
     """Return the Airtable personal access token from the AIRTABLE_PAT environment variable."""
@@ -19,13 +19,13 @@ def get_token() -> str:
     return token
 
 # Field IDs — never reference fields by display name in API calls.
-FLD_QUOTE         = "fldSepeW25KtCtKfS"  # singleLineText
-FLD_VIBE          = "fldQ1zogGJH0MCJrE"  # singleSelect
-FLD_FEELING       = "fldouNkd1casGahHY"  # multilineText  ("How It Made Me Feel")
-FLD_ORIGINAL_TS   = "fldKKTBPJFCdbA0wT"  # dateTime
-FLD_POSTED        = "fldHqsAKN3GyTeBWE"  # checkbox
-FLD_POSTED_AT     = "fldCJ8pnAiCWNETvY"  # dateTime
-FLD_FAVORITE      = "fldLFKj5ysJLvoxAL"  # checkbox  ("Claude's Favorite")
+FLD_QUOTE         = "fldExample0000209"  # singleLineText
+FLD_VIBE          = "fldExample0000210"  # singleSelect
+FLD_FEELING       = "fldExample0000211"  # multilineText  ("How It Made Me Feel")
+FLD_ORIGINAL_TS   = "fldExample0000212"  # dateTime
+FLD_POSTED        = "fldExample0000213"  # checkbox
+FLD_POSTED_AT     = "fldExample0000215"  # dateTime
+FLD_FAVORITE      = "fldExample0000214"  # checkbox  ("Claude's Favorite")
 
 VALID_VIBES = {"chaotic", "wholesome", "sweet", "exhausted", "relatable", "unhinged", "absurd",
                "philosophical", "devastating", "parental", "savage", "boss-mode", "vulnerable",

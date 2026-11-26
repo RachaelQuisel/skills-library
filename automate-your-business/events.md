@@ -13,7 +13,7 @@ Emails with the Kiva Cowork events contact about the in-person sessions are in [
 | | In person (live) | Virtual |
 |---|---|---|
 | Name | Automate Your Business at Kiva Cowork | Automate Your Business, XRAY Office Hours |
-| Where | Kiva Cowork, 1117 State St, Santa Barbara, upstairs conference room | Online, join from anywhere |
+| Where | Kiva Cowork, 123 Main St, Santa Barbara, upstairs conference room | Online, join from anywhere |
 | When | Last Friday of the month, 2:30 to 3:30 PM PT. In 2026 the November and December sessions move a week early for the holidays (Nov 20 and Dec 18). | 2nd Friday of the month, 9 to 10 AM PT |
 | Length | 60 minutes | 60 minutes |
 | Cost | Free, drop in | Free, drop in |
@@ -30,11 +30,11 @@ Agenda at every session, as printed on the flyers:
 | Date | Series | Format | Time (PT) | Location | Topic | Take-home | Flyer |
 |---|---|---|---|---|---|---|---|
 | Fri, Oct 9 | XRAY Office Hours | Virtual | 9:00 to 10:00 AM | Online, join link `[JOIN LINK NEEDED]` | The Loop Audit | Your Loop Audit worksheet | [flyer](flyers/flyer-2026-10-09-xray.png), [Instagram](previews/ig-flyer-2026-10-09-xray.png) |
-| Fri, Oct 30 | Kiva Cowork | In person | 2:30 to 3:30 PM | Kiva Cowork, 1117 State St, Santa Barbara, upstairs conference room | The Loop Audit | Your Loop Audit worksheet | [flyer](flyers/flyer-2026-10-30-kiva.png), [Instagram](previews/ig-flyer-2026-10-30-kiva.png) |
+| Fri, Oct 30 | Kiva Cowork | In person | 2:30 to 3:30 PM | Kiva Cowork, 123 Main St, Santa Barbara, upstairs conference room | The Loop Audit | Your Loop Audit worksheet | [flyer](flyers/flyer-2026-10-30-kiva.png), [Instagram](previews/ig-flyer-2026-10-30-kiva.png) |
 | Fri, Nov 13 | XRAY Office Hours | Virtual | 9:00 to 10:00 AM | Online, join link `[JOIN LINK NEEDED]` | The Colleague Audit | Your Colleague Audit worksheet | [flyer](flyers/flyer-2026-11-13-xray.png), [Instagram](previews/ig-flyer-2026-11-13-xray.png) |
-| Fri, Nov 20 | Kiva Cowork | In person | 2:30 to 3:30 PM | Kiva Cowork, 1117 State St, Santa Barbara, upstairs conference room | The Colleague Audit | Your Colleague Audit worksheet | [flyer](flyers/flyer-2026-11-20-kiva.png), [Instagram](previews/ig-flyer-2026-11-20-kiva.png) |
+| Fri, Nov 20 | Kiva Cowork | In person | 2:30 to 3:30 PM | Kiva Cowork, 123 Main St, Santa Barbara, upstairs conference room | The Colleague Audit | Your Colleague Audit worksheet | [flyer](flyers/flyer-2026-11-20-kiva.png), [Instagram](previews/ig-flyer-2026-11-20-kiva.png) |
 | Fri, Dec 11 | XRAY Office Hours | Virtual | 9:00 to 10:00 AM | Online, join link `[JOIN LINK NEEDED]` | The Proof Audit | Your one-page Rulebook | [flyer](flyers/flyer-2026-12-11-xray.png), [Instagram](previews/ig-flyer-2026-12-11-xray.png) |
-| Fri, Dec 18 | Kiva Cowork | In person | 2:30 to 3:30 PM | Kiva Cowork, 1117 State St, Santa Barbara, upstairs conference room | The Proof Audit | Your one-page Rulebook | [flyer](flyers/flyer-2026-12-18-kiva.png), [Instagram](previews/ig-flyer-2026-12-18-kiva.png) |
+| Fri, Dec 18 | Kiva Cowork | In person | 2:30 to 3:30 PM | Kiva Cowork, 123 Main St, Santa Barbara, upstairs conference room | The Proof Audit | Your one-page Rulebook | [flyer](flyers/flyer-2026-12-18-kiva.png), [Instagram](previews/ig-flyer-2026-12-18-kiva.png) |
 
 The first Kiva session was on Fri, Sep 25, 2026, at 2:30 PM. That flyer is the template in `src/template-correct.png`.
 

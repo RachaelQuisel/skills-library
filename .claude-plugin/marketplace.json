@@ -50,7 +50,7 @@
       "source": "./plugins/client-docs",
       "category": "productivity",
       "homepage": "https://github.com/RachaelQuisel/Skills/tree/main/plugins/client-docs",
-      "version": "1.4.6"
+      "version": "1.4.7"
     },
     {
       "name": "humanize-output",
@@ -74,7 +74,7 @@
       "source": "./plugins/airtable-interface-craft",
       "category": "productivity",
       "homepage": "https://github.com/RachaelQuisel/Skills/tree/main/plugins/airtable-interface-craft",
-      "version": "1.0.6"
+      "version": "1.0.7"
     },
     {
       "name": "workflow-diagram-builder",

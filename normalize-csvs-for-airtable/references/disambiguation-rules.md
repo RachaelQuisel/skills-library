@@ -24,7 +24,7 @@ These are patterns where the script *cannot* infer the right answer.
 |---|---|---|---|
 | Out-of-range date | `4/30/2036` | `date out of expected range (2036-04-30)` | Could be 2026, 2036, or any other year — direction ambiguous |
 | Unparseable date | `'i\nd\ne\nr\nr\n'`, `'florinda'`, `'inhome'`, `'44403'` | `date unparseable: ...` | Either gibberish or a non-date value typed in a date column |
-| Lookup value not in expected set | Agency = `'PENNYLANE'` when expected set is `{GOL, DIUP}` | `lookup value not in expected set: 'PENNYLANE'` | Could be a real new value or a typo of an existing one — let the client decide |
+| Lookup value not in expected set | Agency = `'PENNYLANE'` when expected set is `{EA, PARTNER}` | `lookup value not in expected set: 'PENNYLANE'` | Could be a real new value or a typo of an existing one — let the client decide |
 | Lookup value is a delivery mode, not a person | Trainer = `'Outside'` or `'Online'` | `lookup is delivery mode, not a person` | Schema decision (add Delivery Mode field? leave blank?) belongs to the client |
 | Calendar-invalid date | `5/59/2021` (day = 59) | `date invalid calendar value` | Could be `5/9` or `5/19` or `5/29` — no way to tell |
 | Stray multi-line content | A cell containing a newline | `cell contains newline; needs cleanup` | Likely a paste error; preserve so a human can recover original intent |
@@ -36,7 +36,7 @@ These should never be modified by the script unless the user explicitly says oth
 
 | Field type | Why |
 |---|---|
-| Name fields (Last, First, Full Name) | Trimming, encoding-repair, or compound-surname splitting destroys information. `Maga�a` stays `Maga�a`; `Bryant ` keeps its trailing space; `(Co-App to Cynthia Romero)` stays in First Name. A human can decide later. |
+| Name fields (Last, First, Full Name) | Trimming, encoding-repair, or compound-surname splitting destroys information. `Maga�a` stays `Maga�a`; `Bryant ` keeps its trailing space; `(Co-App to Shawn Varga)` stays in First Name. A human can decide later. |
 | Free-text notes | Same logic |
 | Raw lookup values | Always emit a `(raw)` column alongside the `(normalized)` one — never just replace the raw |
 

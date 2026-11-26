@@ -1,7 +1,7 @@
 ---
 name: fetch-tasks
-version: 1.4.6
-description: "Fetch tasks from the XRAY task hub (base appQAdxI2hDNJj1g5), scoped to a client and an optional date window. Use when Rachael asks for her tasks, a client's open tasks, a sprint window, \"what's open for [client]\", or when a downstream skill such as build-sprint-summary or todays-focus needs task data. Client-agnostic: it confirms the client and never assumes a client list."
+version: 1.4.7
+description: "Fetch tasks from the XRAY task hub (base appExample0000004), scoped to a client and an optional date window. Use when Rachael asks for her tasks, a client's open tasks, a sprint window, \"what's open for [client]\", or when a downstream skill such as build-sprint-summary or todays-focus needs task data. Client-agnostic: it confirms the client and never assumes a client list."
 ---
 
 # Fetch Tasks
@@ -27,41 +27,41 @@ Fetch tasks from the XRAY task hub, scoped to a client and an optional date wind
 
 All client work tracks in one base, the XRAY Daily hub:
 
-- Base: `appQAdxI2hDNJj1g5`
-- Tasks table: `tblvlJq7I2GvIQEyP`
-- Projects table: `tblOaFlYpPXlHrT2c`
-- Clients table: `tblVS1aUCNeqtVq5U`
+- Base: `appExample0000004`
+- Tasks table: `tblExample0000010`
+- Projects table: `tblExample0000023`
+- Clients table: `tblExample0000012`
 
 **Task fields:**
 
 | Field ID | Name |
 |---|---|
-| fld1AkoHwZc1n9ynS | Task (name) |
-| fldxcjBLLGOur6XIy | Status |
-| fldyqG9AcucrbXGPX | Priority |
-| fld5LMZiISyZTKL0T | Due date |
-| fldOEY1wIsL75C79u | Actually Completed Date |
-| fldkE6egQcmDBTiiV | Done (checkbox) |
-| fldCD9gdIan9M8wmV | Archived (checkbox) |
-| fldcBv034WdlpqPrC | Client (lookup from Project) |
-| fldSBK8vvP15UMCyi | Project name (lookup) |
-| fldA8WINLYYeMcJV2 | Project (link) |
+| fldExample0000024 | Task (name) |
+| fldExample0000025 | Status |
+| fldExample0000026 | Priority |
+| fldExample0000027 | Due date |
+| fldExample0000028 | Actually Completed Date |
+| fldExample0000029 | Done (checkbox) |
+| fldExample0000030 | Archived (checkbox) |
+| fldExample0000031 | Client (lookup from Project) |
+| fldExample0000032 | Project name (lookup) |
+| fldExample0000033 | Project (link) |
 
-**Status choice IDs.** The hub shares these across tables: Done `sel0PYWt8CwW33uDS`, Cancelled `selmjxxV4n4rLJCow`, Backlog `selAVcMgmMQklSZCa`, Ready to Start `selr8dlfSeLEqYpE3`, In Progress `sele5WlQHUv2YWmkB`, Blocked `selqRQEolk8KKxFgy`.
+**Status choice IDs.** The hub shares these across tables: Done `selExample0000034`, Cancelled `selExample0000035`, Backlog `selExample0000036`, Ready to Start `selExample0000037`, In Progress `selExample0000038`, Blocked `selExample0000039`.
 
 ---
 
 ## Step 1: Confirm the client
 
-Never assume a client list. If Rachael named the client, use that name. Otherwise ask her, or list the active client names from the Clients table. The Clients table is `tblVS1aUCNeqtVq5U` and its Status field is `fldkwxVVW7PxsEdQM`. If a named client does not appear in the hub, say so and stop. Do not fall back to a base from memory.
+Never assume a client list. If Rachael named the client, use that name. Otherwise ask her, or list the active client names from the Clients table. The Clients table is `tblExample0000012` and its Status field is `fldExample0000040`. If a named client does not appear in the hub, say so and stop. Do not fall back to a base from memory.
 
 ## Step 2: Fetch open tasks
 
 Run one query on the Tasks table with these filters:
-- Done (`fldkE6egQcmDBTiiV`) is false.
-- Archived (`fldCD9gdIan9M8wmV`) is false.
+- Done (`fldExample0000029`) is false.
+- Archived (`fldExample0000030`) is false.
 - Status is none of Done and Cancelled.
-- The Client lookup (`fldcBv034WdlpqPrC`) contains the client name.
+- The Client lookup (`fldExample0000031`) contains the client name.
 
 For a date window, filter on Due date or Actually Completed Date within the range. The Airtable MCP does not support nested OR inside AND. Run two queries and deduplicate by record ID.
 

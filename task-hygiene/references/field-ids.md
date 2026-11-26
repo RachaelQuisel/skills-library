@@ -6,58 +6,58 @@ Verified against the live schema 2026-08-22. If a write fails or a name looks of
 
 | Thing | ID |
 |---|---|
-| Base: Projects & Tasks at XRAY | `appQAdxI2hDNJj1g5` |
-| Tasks table | `tblvlJq7I2GvIQEyP` |
-| Projects table | `tblOaFlYpPXlHrT2c` |
-| Objectives table (= "Outcomes" links) | `tblyZxi1nYrGICXrf` |
-| Quarters table | `tblxO7vrTZq2gUtgq` |
+| Base: Projects & Tasks at XRAY | `appExample0000004` |
+| Tasks table | `tblExample0000010` |
+| Projects table | `tblExample0000023` |
+| Objectives table (= "Outcomes" links) | `tblExample0000162` |
+| Quarters table | `tblExample0000163` |
 
 ## Tasks table — fields this workflow touches
 
 | Field | ID | Type / notes |
 |---|---|---|
-| Task (name) | `fld1AkoHwZc1n9ynS` | singleLineText |
-| Project | `fldA8WINLYYeMcJV2` | link → Projects |
-| Outcomes | `fldxDjgnu1i9jp4jl` | link → Objectives |
-| Parent Task | `fldBH3Rfbgsk17Py2` | link → Tasks (single-preferred) |
-| Subtask (inverse of Parent) | `fldyEGvMRUqe2OgtI` | link → Tasks |
-| Description | `fldvvDWMcV9g5gzPE` | richText |
-| Status | `fldxcjBLLGOur6XIy` | singleSelect: Backlog, Blocked, Ready to Start, In Progress, Done, Cancelled, Someday/Maybe |
-| Hours Estimated | `fld88Zg1liE6QHLNj` | number — the enrichment target |
-| Hours Used | `fldouI8QvQhkjrpnx` | number — do NOT write during enrichment |
-| Triage Notes | `flddo6Tc1mJoAt0qA` | multilineText — where cancel/dedupe explanations go |
-| Triage Status | `fldMzsKOwaaGNEtBX` | singleSelect |
-| Created time | `fldbh690V32q6BEDK` | createdTime |
-| Archived | `fldCD9gdIan9M8wmV` | checkbox |
-| Start date / Due date | `fldfHSCwqt7aB5va9` / `fld5LMZiISyZTKL0T` | date |
-| Priority | `fldyqG9AcucrbXGPX` | singleSelect (P0–P4) |
+| Task (name) | `fldExample0000024` | singleLineText |
+| Project | `fldExample0000033` | link → Projects |
+| Outcomes | `fldExample0000164` | link → Objectives |
+| Parent Task | `fldExample0000165` | link → Tasks (single-preferred) |
+| Subtask (inverse of Parent) | `fldExample0000166` | link → Tasks |
+| Description | `fldExample0000167` | richText |
+| Status | `fldExample0000025` | singleSelect: Backlog, Blocked, Ready to Start, In Progress, Done, Cancelled, Someday/Maybe |
+| Hours Estimated | `fldExample0000168` | number — the enrichment target |
+| Hours Used | `fldExample0000169` | number — do NOT write during enrichment |
+| Triage Notes | `fldExample0000170` | multilineText — where cancel/dedupe explanations go |
+| Triage Status | `fldExample0000171` | singleSelect |
+| Created time | `fldExample0000172` | createdTime |
+| Archived | `fldExample0000030` | checkbox |
+| Start date / Due date | `fldExample0000173` / `fldExample0000027` | date |
+| Priority | `fldExample0000026` | singleSelect (P0–P4) |
 
 ## Objectives (Outcomes) table — fields for creating outcomes
 
 | Field | ID | Notes |
 |---|---|---|
-| Title | `fldDDVTmTVQJIWK6w` | Prefix client work "CC: " etc., matching base style |
-| Description | `fld7ngkZfcNCf6R0x` | Trace to source debrief + date |
-| Status | `fldGtFG7NT82xMmY3` | Backlog / Ready to Start / In Progress / In Testing / Blocked / Done |
-| Projects | `fldkd7ckyeFMwCuKs` | link → Projects |
-| Owner | `fldOTG0XJsfgURuze` | singleCollaborator — Rachael = `{"id": "usr5vnH7D87XIP57C"}` |
-| XRay's Clients | `fldGxQoN3SgbpQBG2` | link; (200) Coding Clarified = `recqM967hUDP0JohY` |
-| Quarter | `fldI0uGigTNdgecG7` | link → Quarters. **Gap: no 2026 quarter records exist as of 2026-08-22** — do not invent them without approval |
-| Start Date | `fldQfOtJSRrsBqZaf` | date |
+| Title | `fldExample0000174` | Prefix client work "CC: " etc., matching base style |
+| Description | `fldExample0000175` | Trace to source debrief + date |
+| Status | `fldExample0000176` | Backlog / Ready to Start / In Progress / In Testing / Blocked / Done |
+| Projects | `fldExample0000177` | link → Projects |
+| Owner | `fldExample0000178` | singleCollaborator — Rachael = `{"id": "usrExample0000179"}` |
+| XRay's Clients | `fldExample0000180` | link; (200) Example Nonprofit = `recExample0000043` |
+| Quarter | `fldExample0000181` | link → Quarters. **Gap: no 2026 quarter records exist as of 2026-08-22** — do not invent them without approval |
+| Start Date | `fldExample0000182` | date |
 
 ## Known records (as of 2026-08-22)
 
 | Record | ID |
 |---|---|
-| Project: Maintenance of current systems (CC) | `recOIaph0UwFYxlsB` |
-| Outcome: Our Hourly Work | `recSy05yToaBpEfbt` |
-| Outcome: CC: Transcript & Enrollment Document Overhaul | `recLn3QUK13yVfor7` |
-| Outcome: CC: Contract Wrap-up & Transition | `rec0ukDR8n2u9j5Zf` |
-| Outcome: Audit Tool: Deliverable Positioning & Beta | `recQ8SnMhBjh6zbfX` |
-| Outcome: Monitor Student Status Automations → LOA & Graduated | `rec2RRAKmofRAx1u0` |
-| Outcome: CC: Proposal follow-up automation health check | `recLU2u8YnZYKgcZw` |
-| Collaborator: Rachael Quisel | `usr5vnH7D87XIP57C` (rachael@xray.tech) |
-| Collaborator: Mark Campos | `usrN3p91dYDrHIz93` (mark@xray.tech) |
+| Project: Maintenance of current systems (CC) | `recExample0000183` |
+| Outcome: Our Hourly Work | `recExample0000184` |
+| Outcome: CC: Transcript & Enrollment Document Overhaul | `recExample0000185` |
+| Outcome: CC: Contract Wrap-up & Transition | `recExample0000186` |
+| Outcome: Audit Tool: Deliverable Positioning & Beta | `recExample0000187` |
+| Outcome: Monitor Student Status Automations → LOA & Graduated | `recExample0000188` |
+| Outcome: CC: Proposal follow-up automation health check | `recExample0000189` |
+| Collaborator: Rachael Quisel | `usrExample0000179` (person2@example.com) |
+| Collaborator: Sky Bennett | `usrExample0000190` (person1@example.com) |
 
 ## Gotchas learned the hard way
 

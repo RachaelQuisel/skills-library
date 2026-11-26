@@ -45,7 +45,7 @@ analytics and linked-record import to Airtable.
 
 For WIDE format (one row per source row, all sub-events as side-by-side
 columns like `Module 1 Date`, `Module 1 Trainer`, `Module 2 Date`, ...),
-the structure is different — see the GoL training tracker as a worked
+the structure is different — see the EA training tracker as a worked
 example: `~/Claude-Work/CLIENTS/Guardians_of_Love_Jessica_Peoples/
 Exports/training-tracker-migration/normalize_training_trackers.py`.
 
@@ -114,7 +114,7 @@ FILES = [
 # Anything not in these sets gets flagged for review WITH the raw value
 # preserved. Edit per client.
 
-EXPECTED_AGENCIES = {"GOL", "DIUP"}     # example - edit per client
+EXPECTED_AGENCIES = {"EA", "PARTNER"}     # example - edit per client
 
 # Lookup values that are not people / not lookups at all - special handling
 NON_PERSON_TRAINERS = {"outside", "online"}
@@ -124,7 +124,7 @@ NON_PERSON_TRAINERS = {"outside", "online"}
 # removals within the program's valid year range). Anything ambiguous stays
 # flagged. Each repair is logged to changes.csv with before/after.
 #
-# Examples from the GoL training tracker migration:
+# Examples from the EA training tracker migration:
 #   "12/20/219": "12/20/2019",   # 3-digit year, only valid expansion
 #   "4/30/2036": "4/30/2026",    # off by one decade
 #   "3/31/3023": "3/31/2023",    # off by 1000

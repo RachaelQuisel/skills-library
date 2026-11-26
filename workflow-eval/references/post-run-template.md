@@ -18,13 +18,13 @@ The post-run analysis is the deliverable. Two equivalent ways to produce it:
       "description": "UAMS contract; v17 walks Advertiser link, finds customer, pushes invoice.",
       "verdict": "PASS",
       "expected_outcomes": [
-        "fldLastQbPush contains SUCCESS on recQWdfjq9ILIY5XO",
-        "fldQbTransactionId present on recQWdfjq9ILIY5XO",
+        "fldLastQbPush contains SUCCESS on recExample0000152",
+        "fldQbTransactionId present on recExample0000152",
         "New Invoice in QBO sandbox matching contract amount"
       ],
       "actual_outcomes": [
-        "fldLastQbPush = 'SUCCESS - pushed at 2026-06-06T14:32Z' on recQWdfjq9ILIY5XO",
-        "fldQbTransactionId = '1042' on recQWdfjq9ILIY5XO",
+        "fldLastQbPush = 'SUCCESS - pushed at 2026-06-06T14:32Z' on recExample0000152",
+        "fldQbTransactionId = '1042' on recExample0000152",
         "Invoice 1042 created in QBO sandbox, total $4,500.00"
       ],
       "diff": { "<paste the relevant diff.json content here, or omit>" },

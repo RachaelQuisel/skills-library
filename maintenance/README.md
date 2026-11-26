@@ -17,12 +17,12 @@ The assigned owner coordinates fixes. The hourly Skill Check Alerts task is auth
 
 ## Where to see updates
 
-- **Slack:** [La Maison #automations](https://lamaisonsanta-8tm8179.slack.com/archives/C0C7XQK3TTR) receives one opening message per unresolved problem and one verified recovery notice. Repeated failed runs, repair progress, and healthy unchanged checks stay quiet.
+- **Slack:** [La Maison #automations](https://example.slack.com/archives/C0EXAMPLE01) receives one opening message per unresolved problem and one verified recovery notice. Repeated failed runs, repair progress, and healthy unchanged checks stay quiet.
 - **Reports:** [Skill checks in GitHub Actions](https://github.com/RachaelQuisel/Skills/actions/workflows/release-consistency.yml) holds combined release, inventory, and regression results. Downloads are retained for 30 days.
 - **Proposed fixes:** [Pull requests](https://github.com/RachaelQuisel/Skills/pulls) hold changes for Rachael to review. Repair attempt records stay on the candidate branch and are linked from the pull request.
 - **Fallback:** If Slack delivery fails, the task reports the problem in ChatGPT.
 
-The [manual Slack delivery test](https://lamaisonsanta-8tm8179.slack.com/archives/C0C7XQK3TTR/p1791738615563109) was sent and read back on October 11, 2026. This verifies that message, not future scheduled delivery or the full automatic repair process.
+The [manual Slack delivery test](https://example.slack.com/archives/C0EXAMPLE01/p1791738615563109) was sent and read back on October 11, 2026. This verifies that message, not future scheduled delivery or the full automatic repair process.
 
 ## How to check the collection
 

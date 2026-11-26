@@ -1,11 +1,11 @@
 ---
 name: zip-to-spa
-description: Look up the Los Angeles County Service Planning Area for one zip or a list of zips, using the LA County public GIS layers. Use when the user asks "what SPA is zip X in", needs to backfill or verify a SPA field on Applications or caregivers, is mapping GoL or DCFS case locations, or needs the Service Planning Area for any LA County address. Returns the Service Planning Area number 1 through 8 and the SPA name, with provenance set to `dcfs-gis`.
+description: Look up the Los Angeles County Service Planning Area for one zip or a list of zips, using the LA County public GIS layers. Use when the user asks "what SPA is zip X in", needs to backfill or verify a SPA field on Applications or caregivers, is mapping EA or DCFS case locations, or needs the Service Planning Area for any LA County address. Returns the Service Planning Area number 1 through 8 and the SPA name, with provenance set to `dcfs-gis`.
 ---
 
 # Zip to SPA
 
-Resolves a US zip code to its Los Angeles County Service Planning Area (1 through 8), using LA County's public GIS services. No API key needed. For GoL in particular this covers every case location in Service Planning Areas 1 through 8.
+Resolves a US zip code to its Los Angeles County Service Planning Area (1 through 8), using LA County's public GIS services. No API key needed. For EA in particular this covers every case location in Service Planning Areas 1 through 8.
 
 ## When to invoke
 

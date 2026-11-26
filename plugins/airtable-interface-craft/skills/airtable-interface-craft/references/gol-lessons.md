@@ -1,4 +1,4 @@
-# What made the GoL refinement work
+# What made the EA refinement work
 
 This case study captures specific successes the first six-bullet recap omitted. Apply the mechanisms where they fit; keep the client's business rules configurable.
 
@@ -46,7 +46,7 @@ This case study captures specific successes the first six-bullet recap omitted. 
 
 ## Project-specific choices
 
-GoL used green for no open assigned tasks, yellow for open tasks, red for overdue work and purple for explicitly closed cases. Closure took priority and was based on actual exit statuses, not a guessed meaning of phase/Hold/Active.
+EA used green for no open assigned tasks, yellow for open tasks, red for overdue work and purple for explicitly closed cases. Closure took priority and was based on actual exit statuses, not a guessed meaning of phase/Hold/Active.
 
 The approved running total awarded 5 points per completed task and 1 per subtask, derived from saved eligible rows before filtering. This was not a permanent lifetime ledger. Reopening was manual. Linked quality performance indicators were visible labels; obligation propagation was unnecessary. Signing/referral/visit/class/approval anchors and holiday rules were project decisions, not plugin defaults.
 

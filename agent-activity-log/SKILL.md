@@ -3,7 +3,7 @@ name: agent-activity-log
 description: Scaffold and operate an opt-in Agent activity log table that records what the agent did, decided, and got blocked on across a long-running or multi-session Airtable workflow. Use whenever a workflow skill is being set up for an agent-driven motion (recurring triage, multi-step plan, automated monitoring, agentic workflow), or when the user asks for "agent activity tracking," "audit log of agent decisions," "agent memory," "track what the agent did," or similar. Opt-in — disclose before scaffolding.
 license: MIT
 metadata:
-    version: 1.0.1-rq.1
+    version: 1.0.2-rq.1
     upstream_author: airtable
     upstream_version: '1.0.0'
     local_fork: rachael-quisel
@@ -63,7 +63,7 @@ Suggested language (adapt to the user's actual base and vocabulary):
 
 > "This adds a table called `Agent activity log` to your base. Every meaningful decision or blocker gets one row, with a plain-English summary of what happened and why, plus links to the records that were touched. You can open it any time to see what got changed and where I got stuck. It's opt-in — say no and we skip it. Want it in?"
 
-For Rachael's non-technical clients (Janine, Teri, Jessica), use their actual base name and skip the word "agent." Example: "adds a table called `System Activity Log` to your Coding Clarified base."
+For Rachael's non-technical clients (Janine, Teri, Jessica), use their actual base name and skip the word "agent." Example: "adds a table called `System Activity Log` to your Example Nonprofit base."
 
 Frame as auditability for the user's benefit. Not surveillance.
 
@@ -159,7 +159,7 @@ Log meaningful decisions and changes. Not every tool call. Reads in particular u
 
 ## Composition with Rachael's existing `Automation Inventory` / `Change Log`
 
-Rachael's client bases (CC, GoL, THFH) already carry an `🤖 Automation Inventory` or per-client `Change Log` table as part of the Seven Deliverables (`~/.claude/rules/seven-deliverables.md`, item 6). Before scaffolding a new `Agent activity log`, check whether that table already exists. Two patterns:
+Rachael's client bases (CC, EA, THFH) already carry an `🤖 Automation Inventory` or per-client `Change Log` table as part of the Seven Deliverables (`~/.claude/rules/seven-deliverables.md`, item 6). Before scaffolding a new `Agent activity log`, check whether that table already exists. Two patterns:
 
 **Pattern A — Parallel tables (recommended default).** Keep both. Different jobs:
 - `Automation Inventory` / `Change Log` = human-authored, per-script-run summary written as part of the Seven Deliverables. Coarse-grained. One row per apply-run.

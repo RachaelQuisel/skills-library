@@ -1,6 +1,6 @@
 ---
 name: plain-english-project-communication
-version: 1.0.1
+version: 1.0.2
 description: Use when Rachael asks Claude to explain project information (dashboard copy, status updates, KPI reports, base overviews, sprint summary bullets, running-updates entries, "what does this mean") or to write an Airtable Canvas prompt. Enforces plain English matched to the format (paragraphs for DMs and captions, tight bullets for sprint summaries and status posts), preserved terminology, fully labeled numbers with context, no jargon, no invented internal names ("engine", "status engine"), no exposed field/table/automation names or IDs, no arrows, no em dashes, no unrequested tasks or recommendations. Applies to any Canvas prompt build, KPI report or section, base overview, running-updates entry, or explanation destined for a client or a non-technical reader. Triggers on "write a Canvas prompt", "Airtable Canvas prompt", "explain this project", "explain the numbers", "dashboard copy", "make this readable", "no jargon", "plain English for the client", "KPI report", "base overview", "sprint summary bullets".
 ---
 
@@ -45,7 +45,7 @@ Do NOT inflate a sprint summary into paragraphs. Do NOT compress a dashboard til
 - Do not invent names for parts of the project. Do not use words such as "engine," "status engine," or similar internal-sounding terminology unless Rachael supplied that exact name.
 - Do not include tasks, project boards, work queues, blockers, or prescriptive recommendations about what the team should do unless Rachael explicitly requests them. `Awaiting X` phrasing IS allowed; it describes what's blocked and on whom without prescribing action.
 - Do not expose Airtable field names, table IDs, automation names, formulas, technical implementation details, or version numbers in the presentation.
-- Do not use unexplained abbreviations. Spell out any acronym (WIOA, RHAS, QPI, CAP, MVP, etc.) at least once at first use in the piece, even when the immediate audience knows it, because students, external partners, and other downstream readers benefit. WIOA = Workforce Innovation and Opportunity Act. Skip the definition only when the piece is a strictly internal technical exchange between people who share the vocabulary (e.g., a code comment, a note to an engineer).
+- Do not use unexplained abbreviations. Spell out any acronym (WIOA, PROGRAM, QPI, CAP, MVP, etc.) at least once at first use in the piece, even when the immediate audience knows it, because students, external partners, and other downstream readers benefit. WIOA = Workforce Innovation and Opportunity Act. Skip the definition only when the piece is a strictly internal technical exchange between people who share the vocabulary (e.g., a code comment, a note to an engineer).
 - No arrows (`→` or `->`). Use colons, semicolons, parens, "and", or a second line instead. This applies in every format, including compact bullets.
 - No em dashes per `[[no-em-dashes]]`. Use colons, semicolons, parens, or two sentences.
 - Do not assume the reader knows what a record, relationship, percentage, or comparison refers to.
@@ -91,4 +91,4 @@ Also confirm: is the density right for the format? A sprint summary written as p
 ## Related
 
 - `references/example-sprint-summary.md` — Rachael's canonical Friday-huddle Sprint Summary post + ten rules for scannable status posts (bullets, ` · Project` tags, verb-driven status, per-number units, section-header emoji shortcodes).
-- `references/example-client-update-starting-work.md` — client email to a non-technical reader when work is just starting (CCRES, 2026-10-26). Before and after: the first draft sounded finished and gave no why or benefit; the approved version separates done from next and has its own bullets for why it takes time and the benefit.
+- `references/example-client-update-starting-work.md` — client email to a non-technical reader when work is just starting (Example Client, 2026-10-26). Before and after: the first draft sounded finished and gave no why or benefit; the approved version separates done from next and has its own bullets for why it takes time and the benefit.

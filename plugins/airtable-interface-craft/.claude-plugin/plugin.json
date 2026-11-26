@@ -1,7 +1,7 @@
 {
   "name": "airtable-interface-craft",
   "displayName": "Airtable Interface Builder",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Make everyday work feel good. Build clear, playful Airtable interfaces with verified data, reliable saves and exact source return.",
   "author": {
     "name": "Rachael Quisel"

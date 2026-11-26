@@ -1,6 +1,6 @@
 # Example: client update when the work is just starting
 
-**Context:** CCRES (GrantPoint), 2026-10-26. Email from Rachael to Matt, the executive director, who is not technical. The work was only beginning: a short-term safeguard was done, and the real update hadn't started.
+**Context:** Example Client (GrantPoint), 2026-10-26. Email from Rachael to Matt, the executive director, who is not technical. The work was only beginning: a short-term safeguard was done, and the real update hadn't started.
 
 **The lesson:** Rachael rejected the first draft because "it doesn't explain why it takes time or what the benefit is. It sounds like everything is done, but we are just getting started on the update."
 

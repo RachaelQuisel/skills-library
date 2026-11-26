@@ -1,0 +1,194 @@
+<title>[Build] Mock-Up</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap">
+<style>
+/* Starting template for a client mock-up. Copy it, then:
+   1. Replace the brand tokens below with the client's colors (see SKILL.md Step 5).
+      --brand   = the client's main color, as is (borders, large fills).
+      --accent  = the main color darkened until white text on it reaches 4.5:1 (text, buttons, banner).
+      --orange  = the client's highlight color, as is (newest tag, next step). Rename freely.
+      --warn    = the highlight color darkened for text on --warn-soft.
+   2. Replace the example content. Keep the structure: banner, header with tag key, workflow, screens, open list, footer.
+   Example values below are Example Client (ccres.org). */
+:root{
+  --bg:#ffffff; --surface:#ffffff; --tint:#f2f8fc; --fg:#1b2b3a; --muted:#4e5d6c; --line:#d3e3ee;
+  --accent:#1e6f98; --accent-soft:#e5f2f9; --brand:#40a1d0;
+  --orange:#e88a3d; --on-orange:#1b2b3a; --warn:#9a4a12; --warn-soft:#fdf0e3;
+  --locked:#eef5fa;
+  --display:"Space Grotesk",system-ui,sans-serif; --body:"Inter",system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0f1b26; --surface:#15232f; --tint:#1b2c3a; --fg:#e8f0f6; --muted:#a3b4c3; --line:#2b3f50;
+  --accent:#6cc0e6; --accent-soft:#163a4e; --warn:#f2a868; --warn-soft:#3a2614;
+  --locked:#1e3040; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f1b26; --surface:#15232f; --tint:#1b2c3a; --fg:#e8f0f6; --muted:#a3b4c3; --line:#2b3f50;
+  --accent:#6cc0e6; --accent-soft:#163a4e; --warn:#f2a868; --warn-soft:#3a2614;
+  --locked:#1e3040; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);line-height:1.5;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 48px}
+/* minmax(0,1fr) stops long one-line content (like the address bars) from widening the page on phones. */
+.wrap{max-width:1040px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1fr);gap:40px}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0}
+h1{font-size:1.9rem;font-weight:600} h2{font-size:1.35rem;font-weight:600} h3{font-size:1rem;font-weight:600}
+p{margin:0} a{color:var(--accent)}
+.eyebrow{font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:600}
+.banner{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--accent);color:var(--surface);border-bottom:3px solid var(--orange);
+  margin:0 calc(-1*max(16px,env(safe-area-inset-left,0px))) 0 calc(-1*max(16px,env(safe-area-inset-right,0px)));
+  padding-block:10px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));font-size:.9rem;font-weight:500}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--accent)}
+header.top{padding-top:28px;display:grid;gap:10px}
+header.top p{color:var(--muted);max-width:62ch}
+.note{font-size:.85rem;color:var(--muted);max-width:70ch}
+.help{font-size:.78rem;color:var(--muted)}
+
+/* Tags: dated "new on" tags (newest = highlight color), proposed tags for open items, neutral statuses. */
+.tag{display:inline-block;font-size:.72rem;font-weight:600;padding:2px 8px;border-radius:999px;letter-spacing:.02em}
+.tag.newest{background:var(--orange);color:var(--on-orange)}
+.tag.older{background:var(--accent-soft);color:var(--accent)}
+.tag.proposed{background:var(--warn-soft);color:var(--warn)}
+/* A person's status (On hold, Waiting on student, Submitted) is one neutral style: square corners, grey outline.
+   Statuses never use orange or blue, so a status can't be mistaken for a "new on" date or a "still deciding" tag.
+   The word carries the meaning, not the color. */
+.tag.ok,.tag.wait,.tag.hold{border-radius:4px;background:var(--surface);color:var(--fg);box-shadow:inset 0 0 0 1px var(--muted)}
+
+/* Workflow diagram: redrawn in SVG, scrolls sideways inside its own box on phones. */
+.flowsec{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:24px 22px;display:grid;gap:18px}
+.lcwrap{overflow-x:auto;border:1px solid var(--line);border-radius:8px;background:var(--tint)}
+.lcwrap svg{display:block;width:100%;min-width:820px;height:auto}
+.lc-box{fill:var(--surface);stroke:var(--accent);stroke-width:1.5}
+.lc-dec{fill:var(--warn-soft);stroke:var(--orange);stroke-width:1.5}
+.lc-line{fill:none;stroke:var(--muted);stroke-width:1.5}
+.lc-head{fill:var(--muted)}
+.lc-label{fill:var(--fg);font:600 13px var(--body)}
+.lc-t{height:100%;box-sizing:border-box;display:flex;align-items:center;justify-content:center;text-align:center;padding:8px 10px;font:13px/1.35 var(--body);color:var(--fg)}
+.stickies{display:flex;flex-wrap:wrap;gap:10px}
+.sticky{background:var(--accent-soft);color:var(--fg);border:1px solid var(--brand);border-radius:4px;padding:10px 14px;font-size:.88rem}
+
+/* Screens: a fake browser bar, then non-clickable content. */
+.screen{background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.screen .bar{display:flex;gap:10px;align-items:center;padding:12px 18px;border-bottom:1px solid var(--line);background:var(--tint);border-radius:10px 10px 0 0}
+.dots{display:flex;gap:5px}.dots span{width:9px;height:9px;border-radius:50%;background:var(--line);display:block}
+.screen .bar .url{flex:1;min-width:0;font-size:.8rem;color:var(--muted);background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:4px 10px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.screen .inner{padding:24px 22px;display:grid;gap:22px;pointer-events:none;user-select:text}
+.phoneframe{max-width:420px;margin:0 auto;border-radius:22px;padding:14px}
+.phoneframe .inner{padding:16px 14px}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media (max-width:720px){.split{grid-template-columns:1fr}}
+.pane{border:1px solid var(--line);border-radius:8px;padding:16px;display:grid;gap:12px;min-width:0;align-content:start}
+.pane.locked{background:var(--tint)}
+.pane.flag{background:var(--warn-soft);border-color:var(--orange)}
+.pane.flag .eyebrow,.pane.flag .help{color:var(--warn)}
+.field{display:grid;gap:5px;min-width:0}
+.field label{font-size:.82rem;font-weight:500}
+.field .in{border:1px solid var(--line);border-radius:6px;padding:8px 10px;font-size:.9rem;background:var(--bg);color:var(--fg);min-height:38px}
+.field .in.ta{min-height:92px;color:var(--muted)}
+.field .in.filled{background:var(--locked);border-style:dashed}
+.prefill{font-size:.75rem;color:var(--accent);font-weight:500}
+.prefill::before{content:"\2713  "}
+.btn{display:inline-block;background:var(--accent);color:var(--surface);font-weight:600;padding:10px 18px;border-radius:7px;font-size:.9rem}
+.btn.ghost{background:transparent;color:var(--accent);border:1px solid var(--accent)}
+.tablewrap{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.88rem;font-variant-numeric:tabular-nums}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:.75rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:600}
+
+/* Hover or tap a dotted term to see its definition. Terms opt back into pointer events inside the non-clickable screens. */
+.term{position:relative;border-bottom:1px dotted var(--accent);cursor:help;pointer-events:auto}
+.term:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:2px}
+.term .def{display:none;position:absolute;left:0;top:calc(100% + 6px);z-index:20;width:min(250px,calc(100vw - 72px));background:var(--fg);color:var(--bg);padding:8px 10px;border-radius:6px;font:400 .78rem/1.45 var(--body)}
+.term:hover .def,.term:focus .def{display:block}
+
+.open{display:grid;gap:10px}
+footer{color:var(--muted);font-size:.82rem;max-width:70ch}
+</style>
+
+<div class="banner">Work in progress. Nothing on this mock-up is final or clickable. Updated [Month D].</div>
+
+<div class="wrap">
+<header class="top">
+  <span class="eyebrow">[Client program name], [cycle or year]</span>
+  <h1>[Build] Mock-Up</h1>
+  <p>These are some of the screens, in the order [the process] moves. They are drafts for your team to react to, and they will change.</p>
+  <p><span class="tag newest">new on [Mon D]</span> [source of this round's changes]. <span class="tag older">new on [Mon D]</span> [source of the earlier round]. <span class="tag proposed">proposed</span> still being decided.</p>
+</header>
+
+<!-- WORKFLOW. With a Lucid export: same boxes, words and arrows, laid out from scripts/lucid_outline.py.
+     With no chart: change the note to "Our draft of the workflow, for you to confirm." -->
+<section class="flowsec" id="workflow">
+  <div style="display:grid;gap:6px">
+    <span class="eyebrow">Workflow <span class="tag newest">new on [Mon D]</span></span>
+    <h2>[Build] workflow</h2>
+    <p class="note">The Lucidchart diagram, redrawn to fit this page.</p>
+  </div>
+  <div class="lcwrap">
+    <svg viewBox="0 0 900 400" role="img" aria-labelledby="lc-title">
+      <title id="lc-title">[Build] workflow</title>
+      <defs><marker id="lc-arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="lc-head"/></marker></defs>
+      <!-- Arrows first, so boxes sit on top. -->
+      <path class="lc-line" d="M240,70 H310" marker-end="url(#lc-arrow)"/>
+      <path class="lc-line" d="M430,110 V180" marker-end="url(#lc-arrow)"/>
+      <path class="lc-line" d="M560,270 H640" marker-end="url(#lc-arrow)"/>
+      <text class="lc-label" x="580" y="260">No</text>
+      <!-- Step box: rect + foreignObject of the same size, so text wraps. -->
+      <rect class="lc-box" x="20" y="30" width="220" height="80" rx="6"/>
+      <foreignObject x="20" y="30" width="220" height="80"><div xmlns="http://www.w3.org/1999/xhtml" class="lc-t">[Step 1 text, exactly as in the chart]</div></foreignObject>
+      <rect class="lc-box" x="310" y="30" width="240" height="80" rx="6"/>
+      <foreignObject x="310" y="30" width="240" height="80"><div xmlns="http://www.w3.org/1999/xhtml" class="lc-t">[Step 2 text]</div></foreignObject>
+      <!-- Decision diamond: polygon + a smaller foreignObject inside it. -->
+      <polygon class="lc-dec" points="430,180 560,270 430,360 300,270"/>
+      <foreignObject x="345" y="230" width="170" height="80"><div xmlns="http://www.w3.org/1999/xhtml" class="lc-t">[Decision question?]</div></foreignObject>
+      <rect class="lc-box" x="640" y="230" width="240" height="80" rx="6"/>
+      <foreignObject x="640" y="230" width="240" height="80"><div xmlns="http://www.w3.org/1999/xhtml" class="lc-t">[Step 3 text]</div></foreignObject>
+    </svg>
+  </div>
+  <div style="display:grid;gap:8px">
+    <span class="eyebrow">Sticky notes on the chart</span>
+    <div class="stickies"><span class="sticky">[Sticky note text]</span></div>
+  </div>
+</section>
+
+<!-- SCREEN: desktop example -->
+<section class="screen" id="screen-one">
+  <div class="bar"><div class="dots"><span></span><span></span><span></span></div><div class="url">[app.client.org/path]  ([who sees this screen])</div></div>
+  <div class="inner">
+    <div>
+      <span class="eyebrow">Screen 1 of [N] <span class="tag newest">new on [Mon D]</span></span>
+      <h2>[Screen name]</h2>
+      <p class="note">[One or two sentences: what happens on this screen.]</p>
+    </div>
+    <div class="split">
+      <div class="pane">
+        <span class="eyebrow">[Panel name]</span>
+        <div class="field"><label>[Field label]</label><div class="in">[Example value]</div></div>
+        <div class="field"><label>[Carried-over field] <span class="prefill">from the last step</span></label><div class="in filled">[Value]</div></div>
+        <div><span class="btn">[Main action]</span></div>
+      </div>
+      <div class="pane">
+        <div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap"><span class="eyebrow">[Result]</span><span class="tag hold">On hold</span></div>
+        <p class="help">[What the person sees next.] <span class="tag proposed">wording to confirm</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SCREEN: phone example, for anything the public fills in on a phone -->
+<section class="screen phoneframe" id="screen-two">
+  <div class="bar"><div class="dots"><span></span><span></span><span></span></div><div class="url">[apply.client.org/...]</div></div>
+  <div class="inner">
+    <div>
+      <span class="eyebrow">Screen 2 of [N]</span>
+      <h2>[Form name]</h2>
+      <p class="note">Sized for a phone screen. Words with a dotted line show a short explanation when you hover over or tap them.</p>
+    </div>
+    <div class="field"><label><span class="term" tabindex="0">[Key term]<span class="def" role="tooltip">[Plain definition, one or two sentences.]</span></span></label><div class="in">[Example answer]</div></div>
+  </div>
+</section>
+
+<section class="open" id="open">
+  <h2>Still open</h2>
+  <p><strong>[Topic]:</strong> [open question in plain words]</p>
+</section>
+
+<footer>Prepared by XRAY for [Client]. Updated [Month D, YYYY]. Names and figures on these screens are examples, not real people.</footer>
+</div>

@@ -14,7 +14,7 @@ API_KEY=$(cat ~/.config/xray/tasks-api-key)
 | Field | Type | Required | Valid Values | Gotchas |
 |-------|------|----------|-------------|---------|
 | title | string | yes | Max 120 chars | Short and actionable |
-| assignedTo | string | no | Email (e.g. `rachael@xray.tech`) | Defaults to API key owner |
+| assignedTo | string | no | Email (e.g. `person2@example.com`) | Defaults to API key owner |
 | origin | enum | no | `"Human"`, `"AI Agent"`, `"Automation"` | Default: `"Human"` |
 | originDetail | string | no | Free text | Use `"Claude Code"` when Claude creates |
 | description | string | no | Max 500 chars | **Keep under ~200 chars or risk 502** |
@@ -45,7 +45,7 @@ API_KEY=$(cat ~/.config/xray/tasks-api-key)
 
 | Project | ID |
 |---------|----|
-| Coding Clarified | `recVNlH6aniiNNmi9` |
+| Example Nonprofit | `recExample0000021` |
 
 Search for others: `GET /api/projects?q=search_term`
 

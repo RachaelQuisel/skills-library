@@ -120,11 +120,11 @@ Zapier doesn't have a stable read API for task history at the consultant tier; v
 {
   "workflow_name": "aymg-qb-push-v17",
   "production": true,
-  "production_base_id": "appSwNAISgS1IuLat",
-  "sandbox_base_id": "appSkqiGPDjHJpjdt",
+  "production_base_id": "appExample0000153",
+  "sandbox_base_id": "appExample0000154",
   "inventory_source": "~/Claude-Work/CLIENTS/AY Media_Jay_Danzy/Project Documentation/schema-dependencies.md",
   "trigger": {
-    "base_id": "appSwNAISgS1IuLat",
+    "base_id": "appExample0000153",
     "table_id": "tblContracts",
     "field_id": "fldPushTrigger",
     "type": "airtable_record_updated"
@@ -150,7 +150,7 @@ Zapier doesn't have a stable read API for task history at the consultant tier; v
     {
       "observer_id": "contract-last-push",
       "type": "airtable",
-      "base_id": "appSwNAISgS1IuLat",
+      "base_id": "appExample0000153",
       "table_id": "tblContracts",
       "field_ids": ["fldLastQbPush", "fldQbTransactionId"]
     },
@@ -167,6 +167,6 @@ Zapier doesn't have a stable read API for task history at the consultant tier; v
       "match_on": "DocNumber"
     }
   ],
-  "notes": "v17 adds 5 data-integrity guards after Advertiser link walk. Test UAMS recQWdfjq9ILIY5XO (populated) + a Contract with no Advertiser link (red path)."
+  "notes": "v17 adds 5 data-integrity guards after Advertiser link walk. Test UAMS recExample0000152 (populated) + a Contract with no Advertiser link (red path)."
 }
 ```

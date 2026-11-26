@@ -1,6 +1,6 @@
 ---
 name: normalize-csvs-for-airtable
-version: 1.0.1
+version: 1.0.2
 description: Normalize messy multi-year/multi-file CSVs into one import-ready CSV for Airtable. Use when the user shares historical spreadsheets (training trackers, attendance logs, applicant intake files, etc.) that need to land in an existing Airtable base, and the data has schema drift across years, inconsistent formatting, or unknown lookup values. Triggers on phrases like "normalize these CSVs", "migrate this spreadsheet to Airtable", "import historical data", "build a normalizer", "multi-year files", "CSV to Airtable", "data audit migration", "wide format", "mirror the source spreadsheet".
 tags:
   - skill
@@ -62,7 +62,7 @@ These are over-engineering traps. Skip them unless the user explicitly asks.
 - **Decide wide format vs long format — this is a real choice, not a default.**
   - **Wide format** = one row per parent entity (e.g., one row per trainee), with all sub-events as side-by-side columns (`Module 1 Date`, `Module 1 Trainer`, `Module 2 Date`, ...). **Use when:** the client reads the source spreadsheet day-to-day and recognizes its shape; the data is going into Airtable as a flat reference table; relational reporting isn't required.
   - **Long format** = one row per sub-event (e.g., one row per module completion). **Use when:** the destination is a relational design with linked records to library tables; analytics queries are the primary use case ("how many trainings did Oswaldo run in Q1?"); the source has many sub-events per row that vary widely.
-  - **Default:** ask the user which they prefer. Don't assume long. The GoL migration started long, then pivoted to wide because the client recognized the source-spreadsheet shape — that pivot is expensive to do mid-script, so confirm upfront.
+  - **Default:** ask the user which they prefer. Don't assume long. The EA migration started long, then pivoted to wide because the client recognized the source-spreadsheet shape — that pivot is expensive to do mid-script, so confirm upfront.
 
 ### Step 4 — Confirm schema with the user before writing code
 - Show the filled-in schema + disambiguation rules.
@@ -143,7 +143,7 @@ This contract means the client can import the all_events.csv into Airtable, filt
 ## Related memories to check
 
 - `feedback_inventory_live_schema_first.md` — always read the live base before designing schema
-- `project_gol_libraries_and_links.md` — for GoL specifically, default to linked records to existing library tables
+- `project_gol_libraries_and_links.md` — for EA specifically, default to linked records to existing library tables
 - `feedback_no_cross_table_links.md` — general rule: don't create cross-table links unless asked
 - `feedback_normalize_not_clean.md` — client-facing vocabulary
 - `feedback_readme_per_script.md` — README is co-located with the script, not an index

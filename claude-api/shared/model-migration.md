@@ -13,7 +13,7 @@ For the latest, authoritative version (with code samples in every supported lang
 | Step 0: Confirm the migration scope | Always - before any edits |
 | Step 1: Classify each file | Always - decides whether to swap, add-alongside, or skip |
 | Per-SDK Syntax Reference | Translate the Python examples in this guide to TypeScript / Go / Ruby / Java / C# / PHP |
-| Destination Models / Retired Model Replacements | Picking a target model |
+| Destination Models / Deprecated and Retired Models | Picking a target model and checking retirement dates |
 | Breaking Changes by Source Model | Migrating to Opus 4.6 / Sonnet 4.6 |
 | Migrating to Opus 4.7 | Migrating to Opus 4.7 (breaking changes, silent defaults, behavioral shifts) |
 | Opus 4.7 Migration Checklist | The required vs optional items for 4.7, tagged `[BLOCKS]` / `[TUNE]` |
@@ -29,7 +29,9 @@ For the latest, authoritative version (with code samples in every supported lang
 | Claude Fable 5.1 from Claude Fable 5 Migration Checklist | The required vs optional items for the Claude Fable 5 -> Claude Fable 5.1 move, tagged `[BLOCKS]` / `[TUNE]` |
 | Verify the Migration | After edits - runtime spot-check |
 
-**TL;DR:** Change the model ID string. If you were using `budget_tokens`, switch to `thinking: {type: "adaptive"}`. If you were using assistant prefills, they 400 on both Opus 4.6 and Sonnet 4.6 - switch to one of the prefill replacements (most often `output_config.format`; see the table in Breaking Changes by Source Model). If you're moving from Sonnet 4.5 to Sonnet 4.6, set `effort` explicitly - 4.6 defaults to `high`. Remove the `effort-2025-11-24` and `fine-grained-tool-streaming-2025-05-14` beta headers (GA on 4.6); remove `interleaved-thinking-2025-05-14` once you're on adaptive thinking (keep it only while using the transitional `budget_tokens` escape hatch). Then drop back from `client.beta.messages.create` to `client.messages.create`. Dial back any aggressive "CRITICAL: YOU MUST" tool instructions; 4.6 follows the system prompt much more closely.
+**Replacing a deprecated 4.5 model?** Start with the [retirement table](#deprecated-models-retiring-soon) and follow the official 5.5 guide for your source model. The older migration paths below are kept for version-specific work.
+
+**For a migration targeting Opus 4.6 or Sonnet 4.6:** Change the model ID string. If you were using `budget_tokens`, switch to `thinking: {type: "adaptive"}`. If you were using assistant prefills, they 400 on both Opus 4.6 and Sonnet 4.6 - switch to one of the prefill replacements (most often `output_config.format`; see the table in Breaking Changes by Source Model). If you're moving from Sonnet 4.5 to Sonnet 4.6, set `effort` explicitly - 4.6 defaults to `high`. Remove the `effort-2025-11-24` and `fine-grained-tool-streaming-2025-05-14` beta headers (GA on 4.6); remove `interleaved-thinking-2025-05-14` once you're on adaptive thinking (keep it only while using the transitional `budget_tokens` escape hatch). Then drop back from `client.beta.messages.create` to `client.messages.create`. Dial back any aggressive "CRITICAL: YOU MUST" tool instructions; 4.6 follows the system prompt much more closely.
 
 ---
 
@@ -191,36 +193,47 @@ If you're applying several prompt-tuning edits at once, offer them as a short li
 | Opus 4.8                              | `claude-opus-5` | The current Opus. Two breaking changes (thinking on by default; disabling thinking capped at `high` effort) plus prompt re-tuning - see Migrating to Claude Opus 5 |
 | Opus 4.7                              | `claude-opus-5` | Apply the Opus 4.8 section (prompt re-tuning, no new breaking changes), then the Claude Opus 5 section |
 | Opus 4.6                              | `claude-opus-5` | Apply the Opus 4.7 breaking changes, then 4.8 re-tuning, then the Claude Opus 5 section |
-| Opus 4.0 / 4.1 / 4.5 / Opus 3         | `claude-opus-5` | Apply 4.6 -> 4.7 -> 4.8 -> Claude Opus 5 in order (adaptive thinking, drop sampling params, then re-tune) |
+| Opus 4.5 | `claude-opus-5-5` | Official replacement; follow [Anthropic’s Opus 5.5 migration guide](https://platform.claude.com/docs/en/models/opus-5-5/migration-guide). |
+| Opus 4.0 / 4.1 / Opus 3 | `claude-opus-4-8` | Official replacement; use the older migration sections below for this target. |
 | Sonnet 4.6                            | `claude-sonnet-5` | Near-Opus quality on agentic and coding work at Sonnet cost; adaptive thinking on by default; see Migrating to Claude Sonnet 5 |
-| Sonnet 4.0 / 4.5 / 3.7 / 3.5          | `claude-sonnet-5` | Apply the Sonnet 4.6 changes first, then the Claude Sonnet 5 section |
+| Sonnet 4.5 | `claude-sonnet-5-5` | Official replacement; follow [Anthropic’s Sonnet 5.5 migration guide](https://platform.claude.com/docs/en/models/sonnet-5-5/migration-guide). |
+| Sonnet 4.0 / 3.7 / 3.5 | `claude-sonnet-5-5` | Official replacement; use the same Sonnet 5.5 guide for your starting model. |
 | Haiku 3 / 3.5                         | `claude-haiku-4-5` | Fastest and most cost-effective                   |
 
-Default to the latest Opus for the caller's tier unless they explicitly chose otherwise. The Opus migrations layer: if you're on Opus 4.6 or older, apply each version's section in order up to your target (e.g. 4.5 -> 4.8 means the 4.6, 4.7, and 4.8 sections in sequence). A 4.7 -> 4.8 move has no new breaking changes - see Migrating to Opus 4.8 below.
+For migrations to Opus 5 and earlier, apply the version-specific sections in order up to your target (for example, 4.5 to 4.8 uses the 4.6, 4.7, and 4.8 sections). For either 5.5 target, follow its official guide above rather than treating the older example as a drop-in swap.
 
 ---
 
 ## Retired Model Replacements
 
-These models return 404 - update immediately:
+These models are no longer served on the Claude API. Check the target model’s migration guide before changing the ID.
 
-| Retired model                 | Retired       | Drop-in replacement  |
-| ----------------------------- | ------------- | -------------------- |
-| `claude-3-7-sonnet-20250219`  | Feb 19, 2026  | `claude-sonnet-5` |
-| `claude-3-5-haiku-20241022`   | Feb 19, 2026  | `claude-haiku-4-5`   |
-| `claude-3-opus-20240229`      | Jan 5, 2026   | `claude-opus-4-8`    |
-| `claude-3-5-sonnet-20241022`  | Oct 28, 2025  | `claude-sonnet-5` |
-| `claude-3-5-sonnet-20240620`  | Oct 28, 2025  | `claude-sonnet-5` |
-| `claude-3-sonnet-20240229`    | Jul 21, 2025  | `claude-sonnet-5` |
-| `claude-2.1`, `claude-2.0`    | Jul 21, 2025  | `claude-sonnet-5` |
+The replacements below follow [Anthropic’s Claude API deprecation history](https://platform.claude.com/docs/en/about-claude/model-deprecations), including its recommendation of Opus 4.8 for Claude 2.0 and 2.1. These are migration targets, not guarantees of equivalent cost or behavior.
+
+| Retired model | Retired | Recommended replacement |
+|---|---|---|
+| `claude-opus-4-1-20250805` | Aug 5, 2026 | `claude-opus-4-8` |
+| `claude-opus-4-20250514` | Jun 15, 2026 | `claude-opus-4-8` |
+| `claude-sonnet-4-20250514` | Jun 15, 2026 | `claude-sonnet-5-5` |
+| `claude-3-haiku-20240307` | Apr 20, 2026 | `claude-haiku-4-5-20251001` |
+| `claude-3-7-sonnet-20250219` | Feb 19, 2026 | `claude-sonnet-5-5` |
+| `claude-3-5-haiku-20241022` | Feb 19, 2026 | `claude-haiku-4-5-20251001` |
+| `claude-3-opus-20240229` | Jan 5, 2026 | `claude-opus-4-8` |
+| `claude-3-5-sonnet-20241022` | Oct 28, 2025 | `claude-sonnet-5-5` |
+| `claude-3-5-sonnet-20240620` | Oct 28, 2025 | `claude-sonnet-5-5` |
+| `claude-3-sonnet-20240229` | Jul 21, 2025 | `claude-sonnet-5-5` |
+| `claude-2.1`, `claude-2.0` | Jul 21, 2025 | `claude-opus-4-8` |
 
 ## Deprecated Models (retiring soon)
 
-| Model                         | Retires       | Replacement          |
-| ----------------------------- | ------------- | -------------------- |
-| `claude-3-haiku-20240307`     | Apr 19, 2026  | `claude-haiku-4-5`   |
-| `claude-opus-4-20250514`      | June 15, 2026 | `claude-opus-4-8`    |
-| `claude-sonnet-4-20250514`    | June 15, 2026 | `claude-sonnet-5` |
+Both IDs for each model are deprecated and share the same retirement date on the Claude API. They can still work until then, but are not recommended for new use. Dates and replacements were checked on 2026-11-24 against [Anthropic’s Claude API lifecycle table](https://platform.claude.com/docs/en/about-claude/model-deprecations). Partner-operated endpoints can have different retirement dates.
+
+| Model | Undated ID | Dated ID | Retires | Recommended replacement |
+|---|---|---|---|---|
+| Claude Opus 4.5 | `claude-opus-4-5` | `claude-opus-4-5-20251101` | 2027-01-22 | `claude-opus-5-5` |
+| Claude Sonnet 4.5 | `claude-sonnet-4-5` | `claude-sonnet-4-5-20250929` | 2026-11-30 | `claude-sonnet-5-5` |
+
+Follow the [Opus 5.5 guide](https://platform.claude.com/docs/en/models/opus-5-5/migration-guide) or [Sonnet 5.5 guide](https://platform.claude.com/docs/en/models/sonnet-5-5/migration-guide) before changing the model ID. The older 4.5 snippets below illustrate prior behavior; do not use them as new deployment defaults.
 
 ---
 
@@ -491,17 +504,17 @@ If the model is now overtriggering a tool or skill, the fix is almost always to 
 | `claude-opus-4-8`              | `claude-opus-5`     |
 | `claude-opus-4-7`              | `claude-opus-5`     |
 | `claude-opus-4-6`              | `claude-opus-5`     |
-| `claude-opus-4-5`              | `claude-opus-5`     |
-| `claude-opus-4-1`              | `claude-opus-5`     |
-| `claude-opus-4-0`              | `claude-opus-5`     |
+| `claude-opus-4-5`              | `claude-opus-5-5`     |
+| `claude-opus-4-1`              | `claude-opus-4-8`     |
+| `claude-opus-4-0`              | `claude-opus-4-8`     |
 | `claude-mythos-preview`        | `claude-mythos-5-1` (Project Glasswing) or `claude-fable-5-1` |
 | `claude-fable-5`            | `claude-fable-5-1`     |
 | `claude-mythos-5`           | `claude-mythos-5-1`    |
 | `claude-sonnet-4-6`            | `claude-sonnet-5`|
-| `claude-sonnet-4-5`            | `claude-sonnet-5`|
-| `claude-sonnet-4-0`            | `claude-sonnet-5`|
+| `claude-sonnet-4-5`            | `claude-sonnet-5-5`|
+| `claude-sonnet-4-0`            | `claude-sonnet-5-5`|
 
-Older aliases (`claude-opus-4-7`, `claude-opus-4-6`, `claude-opus-4-5`, `claude-sonnet-4-6`, `claude-sonnet-4-5`, etc.) are still active and can be pinned if you need time before upgrading - see `shared/models.md` for the full legacy list.
+Opus 4.7, Opus 4.6, and Sonnet 4.6 are still active. The Opus and Sonnet 4.5 aliases are [deprecated](#deprecated-models-retiring-soon), not active defaults. These replacements are for the Claude API; check your provider’s lifecycle and model IDs before migrating on a partner-operated platform.
 
 ### Amazon Bedrock model IDs
 
@@ -518,7 +531,7 @@ If the code uses the `AnthropicBedrockMantle` client (Python `anthropic[bedrock]
 | `claude-sonnet-5` | `anthropic.claude-sonnet-5` |
 | `claude-haiku-4-5` | `anthropic.claude-haiku-4-5` |
 
-When migrating a Bedrock file, apply the same rename-table row as first-party, then keep/add the `anthropic.` prefix. Do **not** generate a first-party `claude-*` ID for a Bedrock client - it will 400.
+When migrating a Bedrock file, use the model ID listed for your Bedrock endpoint and region. Do not infer it from the first-party rename table. The first-party retirement dates do not determine when a model retires on Bedrock.
 
 **Skip for Bedrock:** the `code_execution_*` tool-version checklist item and the **Task Budgets** section - neither is available on Bedrock (see `shared/platform-availability.md` for the per-feature table). Everything else in this guide - `effort`, adaptive/extended thinking, `output_config.format`, `thinking.display`, fine-grained tool streaming, token counting - is available on Bedrock.
 
@@ -526,7 +539,7 @@ When migrating a Bedrock file, apply the same rename-table row as first-party, t
 
 ### Claude Platform on AWS
 
-If the code uses `AnthropicAWS` / `AnthropicAws` / `anthropicaws.NewClient` / `AnthropicAwsClient` (or targets `https://aws-external-anthropic.{region}.api.aws`), it is running on **Claude Platform on AWS** - Anthropic-operated, same-day API parity. Model IDs are **bare first-party** strings; apply the rename table above **verbatim** and every breaking-change section in this guide unchanged. There is nothing to skip. Do **not** add an `anthropic.` prefix (that's Amazon Bedrock, a separate offering). See `shared/claude-platform-on-aws.md` for client/auth details.
+If the code uses `AnthropicAWS` / `AnthropicAws` / `anthropicaws.NewClient` / `AnthropicAwsClient` (or targets `https://aws-external-anthropic.{region}.api.aws`), it is running on **Claude Platform on AWS** - Anthropic-operated, same-day API parity. Model IDs are **bare first-party** strings; use the same IDs for the 5.5 replacements and follow the official, version-specific migration guide. There is nothing to skip. Do **not** add an `anthropic.` prefix (that's Amazon Bedrock, a separate offering). See `shared/claude-platform-on-aws.md` for client/auth details.
 
 ---
 

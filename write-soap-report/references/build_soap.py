@@ -43,7 +43,7 @@ FOOTER_TEXT  = "XRAY  ·  Workflow Automation That Works"
 LOGO_CANDIDATES = [
     os.path.expanduser("~/Claude-Work/CLIENTS/The_HOPE_for_Health_Teri_Hall/Code/xray-wordmark-dark.png"),
     os.path.expanduser("~/Downloads/xray-wordmark-dark.png"),
-    os.path.expanduser("~/Claude-Work/CLIENTS/Coding_Clarified_Janine_Mothershed/Project Documentation/xray-wordmark.png"),
+    os.path.expanduser("~/Claude-Work/CLIENTS/Coding_Clarified_Janine_Whitfield/Project Documentation/xray-wordmark.png"),
 ]
 LOGO_PATH = next((p for p in LOGO_CANDIDATES if os.path.exists(p)), None)
 OUT_DIR   = os.path.dirname(os.path.abspath(__file__))

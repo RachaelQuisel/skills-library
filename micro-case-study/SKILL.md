@@ -1,6 +1,6 @@
 ---
 name: micro-case-study
-version: 1.0.1
+version: 1.0.2
 description: Mine client transcripts for atomic wins (one automation, form, integration, or consulting insight) and create structured MCS records — Completed or Queued. Triggers on "micro-case study", "MCS", "mine transcripts", "find wins", "queued work", "pipeline", "outreach", "revenue recovery".
 tags:
   - skill
@@ -53,18 +53,18 @@ The format is designed to begin a conversation, not end one. If someone's intrig
 
 Use `mcp__airtable__list_records` with:
 
-- **Base:** XR - LCE / XRAY Hourly (`appMjlaeg7cFYivss`)
-- **Table:** CRM Enriched Debriefs (`tblVlruQcm3Z0cBeM`)
+- **Base:** XR - LCE / XRAY Hourly (`appExample0000049`)
+- **Table:** CRM Enriched Debriefs (`tblExample0000095`)
 - **No view restriction** — pull all records from all engineers' calls
-- **Transcript field:** Zoom Transcript 1 (`flduLY0o5WsNiX1eL`)
+- **Transcript field:** Zoom Transcript 1 (`fldExample0000048`)
 - **Supplemental fields:**
-  - AI Summary (`fldO6Vw6rIQJdkLq7`)
-  - XRay's Clients (`fldn8giwRKZA4Lp8B`)
-  - Editable Title for Softr (`fldJt5Xt7ddPQUnES`)
+  - AI Summary (`fldExample0000096`)
+  - XRay's Clients (`fldExample0000097`)
+  - Editable Title for Softr (`fldExample0000098`)
   - Start Time (`fldePtWlpNtfggJti`)
-  - Duration (`fld2hc6S52zkl0rBv`)
-  - View in Debrief (`fldFnxbo7QkGsEEpq`)
-  - Editable Summary for Softr (`fldYMr0SxgHYMlWcb`)
+  - Duration (`fldExample0000099`)
+  - View in Debrief (`fldExample0000100`)
+  - Editable Summary for Softr (`fldExample0000101`)
 
 To search for specific meetings, use `mcp__airtable__search_records` with the same base and table IDs.
 
@@ -131,43 +131,43 @@ Scan transcripts for these signals:
 
 Write MCS records to the MCS table in Airtable. Use `mcp__airtable__create_record` with:
 
-- **Base:** `app8V74T72TT2SB0h`
-- **Table:** MCS (`tbl4fNYChMVv8pyda`)
+- **Base:** `appExample0000047`
+- **Table:** MCS (`tblExample0000061`)
 
 **Field name mapping:** The skill uses conceptual column names (Situation, Value) but the Airtable fields have different labels. Use this mapping:
 
 | Skill concept | Airtable field name | Field ID |
 |---|---|---|
-| MCS ID | MCS ID | `fldF0MOaiyEFLTAxz` |
-| MCS Headline | Headline | `fldoqgQNjGI45I37V` |
-| Client Name | Client Name | `fldImm40HGVZ2HGay` |
-| Client Role | Client Role | `fldHCAkp8xh5kf0bb` |
-| Company Name | Company Name | `fld3AZm8ZfdNrh9wS` |
-| Project Name | Project Name | `fldfGsRLU1ENqTXAm` |
-| Industry | Industry (single-select) | `fldPENDING_Industry_(single-select)` (new; legacy free-text `fldoOn2odwxB0PEfG` kept intact) |
-| Situation | **Problem** | `fld1RBmjZUzGNifdR` |
-| Approach | Approach | `flddUNLOO62CCy79Y` |
-| Analysis | Analysis | `fldKS4hw4scuocsyV` |
-| Value | **Result 1** | `fld0bp8xzpAUrjsG7` |
-| Result 2 | Result 2 (independent) | `fldPENDING_Result_2_(independent)` (new; legacy auto-mirror `fldHpvofpyDNf8sb4` kept intact) |
-| Date Completed | Date Completed | `fldb3nmqVhKarB0PS` |
-| Data Confidence | Data Confidence | `fldsTTy19IdaF3lgd` |
-| Primary Tag | Primary Tag | `fldVPWOnp1BCmIinL` |
-| Secondary Tag | Secondary Tag | `fldL421iu7xfnIFTh` |
-| Est. Hours Recovered/Week | Est. Hours Recovered/Week | `fld4qZOrUyIDZRW8u` |
-| Hourly Rate Assumption | Hourly Rate Assumption | `fldzZ06rEoLrQbMaw` |
-| Est. Annual Dollar Value | Est. Annual Dollar Value | `fldo7oTt8lH4d6ed7` |
-| Tech Stack | Tech Stack | `fldgwsnYXrwbyV66V` |
-| Status | Status | `fldH66dHGIK2kmfPp` |
-| Do Not Contact | Do Not Contact | `fldyoQYs9ZNFiZUM0` |
+| MCS ID | MCS ID | `fldExample0000062` |
+| MCS Headline | Headline | `fldExample0000063` |
+| Client Name | Client Name | `fldExample0000064` |
+| Client Role | Client Role | `fldExample0000065` |
+| Company Name | Company Name | `fldExample0000066` |
+| Project Name | Project Name | `fldExample0000052` |
+| Industry | Industry (single-select) | `fldPENDING_Industry_(single-select)` (new; legacy free-text `fldExample0000050` kept intact) |
+| Situation | **Problem** | `fldExample0000053` |
+| Approach | Approach | `fldExample0000054` |
+| Analysis | Analysis | `fldExample0000055` |
+| Value | **Result 1** | `fldExample0000056` |
+| Result 2 | Result 2 (independent) | `fldPENDING_Result_2_(independent)` (new; legacy auto-mirror `fldExample0000051` kept intact) |
+| Date Completed | Date Completed | `fldExample0000057` |
+| Data Confidence | Data Confidence | `fldExample0000072` |
+| Primary Tag | Primary Tag | `fldExample0000070` |
+| Secondary Tag | Secondary Tag | `fldExample0000071` |
+| Est. Hours Recovered/Week | Est. Hours Recovered/Week | `fldExample0000073` |
+| Hourly Rate Assumption | Hourly Rate Assumption | `fldExample0000074` |
+| Est. Annual Dollar Value | Est. Annual Dollar Value | `fldExample0000075` |
+| Tech Stack | Tech Stack | `fldExample0000067` |
+| Status | Status | `fldExample0000068` |
+| Do Not Contact | Do Not Contact | `fldExample0000069` |
 | Approved Date | Approved Date | (TBD, needs to be created) |
 | Last Outreach Date | Last Outreach Date | (TBD, needs to be created) |
-| Result 1 Icon | Result 1 Icon | `fldFccMBzWxY1u0C7` |
-| Result 2 Icon | Result 2 Icon | `flddeJvoeH4XcSfez` |
+| Result 1 Icon | Result 1 Icon | `fldExample0000058` |
+| Result 2 Icon | Result 2 Icon | `fldExample0000059` |
 | Engineer | Engineer | `fldPENDING_Engineer` |
 | Build Time | Build Time | `fldPENDING_Build_Time` |
-| Highlight (Human) | Highlight (Human) | `fldijTkoO3K2bSHpk` |
-| Accents (Patterns) | Accents (Patterns) | `fldcDwADWdlL63AXv` |
+| Highlight (Human) | Highlight (Human) | `fldExample0000060` |
+| Accents (Patterns) | Accents (Patterns) | `fldExample0000076` |
 
 Always set Client Name, Client Role, Company Name, Status, and visual assets when creating a record.
 
@@ -175,55 +175,55 @@ Always set Client Name, Client Role, Company Name, Status, and visual assets whe
 - `"Completed"` — work is done and confirmed
 - `"Queued"` — work is planned/in-progress, not yet finished
 
-**Do Not Contact** (`fldyoQYs9ZNFiZUM0`): checkbox. Set to true to prevent a project's queued MCS from being used in outreach. Default: false (unchecked).
+**Do Not Contact** (`fldExample0000069`): checkbox. Set to true to prevent a project's queued MCS from being used in outreach. Default: false (unchecked).
 
 **AI agent fields — do NOT write to these.** The MCS table has Airtable AI agents that auto-generate compressed versions of content after record creation:
-- Headline - AI Revised (`fldNlrtUT6OE3vChX`)
-- Problem - AI Revised (`fldqt82z6ZPNiRHxG`)
-- Approach - AI Revised (`fld8CPcEa5JTErREW`)
-- Result 1 - AI Revised (`fldLKAR8KPH9tVH4E`)
-- Result 2 (`fldHpvofpyDNf8sb4`) — auto-mirrors Result 1
+- Headline - AI Revised (`fldExample0000079`)
+- Problem - AI Revised (`fldExample0000080`)
+- Approach - AI Revised (`fldExample0000081`)
+- Result 1 - AI Revised (`fldExample0000082`)
+- Result 2 (`fldExample0000051`) — auto-mirrors Result 1
 - Character count formula fields (multiple)
 
 These agents compress content to fit slide layouts. Write concise headlines and blurbs that work well when further shortened.
 
 ## Visual Assets
 
-Each MCS record links to visual assets from the **MCS Assets** table (`tblF3r40XrSfirC38`, same base `app8V74T72TT2SB0h`). These assets display on Softr cards and are used for automated slide generation.
+Each MCS record links to visual assets from the **MCS Assets** table (`tblExample0000083`, same base `appExample0000047`). These assets display on Softr cards and are used for automated slide generation.
 
 **Four asset slots per MCS record:**
 
 | Slot | Field ID | Purpose |
 |---|---|---|
-| Result 1 Icon | `fldFccMBzWxY1u0C7` | Doodle icon for the primary outcome |
-| Result 2 Icon | `flddeJvoeH4XcSfez` | Doodle icon for the secondary outcome |
-| Highlight (Human) | `fldijTkoO3K2bSHpk` | Character illustration |
-| Accents (Patterns) | `fldcDwADWdlL63AXv` | Decorative geometric shape |
+| Result 1 Icon | `fldExample0000058` | Doodle icon for the primary outcome |
+| Result 2 Icon | `fldExample0000059` | Doodle icon for the secondary outcome |
+| Highlight (Human) | `fldExample0000060` | Character illustration |
+| Accents (Patterns) | `fldExample0000076` | Decorative geometric shape |
 
 **Available assets:**
 
 | Record ID | Name | Type | Use for |
 |---|---|---|---|
-| `recYWlwjZmUqhvj47` | Target | Results | Process/visibility/strategic wins |
-| `recluDuWe0Cco8T8D` | Money | Results | Cost/time recovery wins |
-| `rec9EAml1NvaXzQPO` | Woman Pointing | Highlight | Alternate with Man Pointing |
-| `recXYJVpGuM9yxiZh` | Man Pointing | Highlight | Alternate with Woman Pointing |
-| `recI4Zwklqr37aNHH` | Red Circle | Accent | Position 1 |
-| `recidnRUBWLU5C5w0` | Blue Circle | Accent | Position 2 |
-| `rec2gSbYGKoYvKdiX` | Blue Triangle | Accent | Position 3 |
+| `recExample0000088` | Target | Results | Process/visibility/strategic wins |
+| `recExample0000089` | Money | Results | Cost/time recovery wins |
+| `recExample0000090` | Woman Pointing | Highlight | Alternate with Man Pointing |
+| `recExample0000091` | Man Pointing | Highlight | Alternate with Woman Pointing |
+| `recExample0000092` | Red Circle | Accent | Position 1 |
+| `recExample0000093` | Blue Circle | Accent | Position 2 |
+| `recExample0000094` | Blue Triangle | Accent | Position 3 |
 
 **Assignment rules:**
-- **Result 1 Icon:** If the secondary tag is Time Recovery, Cost Avoidance, or Cost Elimination, use Money (`recluDuWe0Cco8T8D`). Otherwise use Target (`recYWlwjZmUqhvj47`).
+- **Result 1 Icon:** If the secondary tag is Time Recovery, Cost Avoidance, or Cost Elimination, use Money (`recExample0000089`). Otherwise use Target (`recExample0000088`).
 - **Result 2 Icon:** Use whichever Results asset was NOT used for Result 1.
 - **Highlight (Human):** Alternate between Woman Pointing and Man Pointing across records.
 - **Accents (Patterns):** Rotate through the 3 accent assets.
-- **Link format:** Pass as a record ID array, e.g. `"fldFccMBzWxY1u0C7": ["recYWlwjZmUqhvj47"]`
+- **Link format:** Pass as a record ID array, e.g. `"fldExample0000058": ["recExample0000088"]`
 
-**Do NOT write to** lookup fields (`fldNOHFEYlLbwxQqB`, `fldzW9jiec6j2D3se`, `fldzlWDs97yH59PIW`, `fldyJ66wlvEHLn0ul`, `fldpUITTi9QS95Cml`) — these auto-populate from the linked records.
+**Do NOT write to** lookup fields (`fldExample0000102`, `fldExample0000103`, `fldExample0000104`, `fldExample0000105`, `fldExample0000106`) — these auto-populate from the linked records.
 
 ## Duplicate Prevention
 
-Before creating any new MCS record, check the existing MCS table for duplicates. Use `mcp__airtable__search_records` or `mcp__airtable__list_records` on base `app8V74T72TT2SB0h`, table `tbl4fNYChMVv8pyda` to pull existing records and compare:
+Before creating any new MCS record, check the existing MCS table for duplicates. Use `mcp__airtable__search_records` or `mcp__airtable__list_records` on base `appExample0000047`, table `tblExample0000061` to pull existing records and compare:
 
 1. **Match on Project Name + Company Name.** If the same project name and company already exist, do not create a new record. Instead, flag it to the user as a potential duplicate.
 2. **Headline similarity is a secondary human check.** When a Project Name + Company Name match is found, present both headlines to the user and ask whether to skip, merge, or create as new. Do not auto-match on headline text alone.
@@ -248,9 +248,9 @@ For each MCS candidate identified, fill out every field:
 
 | Field | Description |
 |---|---|
-| Client Name | Contact person's name (e.g. "Janine Mothershed") |
+| Client Name | Contact person's name (e.g. "Dana Whitfield") |
 | Client Role | Contact person's role (e.g. "CEO") |
-| Company Name | Client company name (e.g. "Coding Clarified") |
+| Company Name | Client company name (e.g. "Example Nonprofit") |
 | Project Name | Internal name for the deliverable |
 | Industry | Comma-separated list of industries the MCS could apply to. Be generous — include the client's primary industry plus any adjacent industries where the same win would resonate (e.g. "Education, Workforce Development, Nonprofit") |
 | MCS Headline | A plain, descriptive statement of the client's pain point. No names, no metrics, no action verbs — just what the client was worried about. Keep under 80 characters when possible — the AI agent will compress further. |
@@ -357,12 +357,12 @@ After MCS candidates are created, engineers review their queued records:
 
 1. Query MCS table for **Queued** records where Do Not Contact is false
 2. Filter for records created 30+ days ago that are still Queued
-3. Cross-reference remaining hours on the project (from Projects & Tasks base, `appQAdxI2hDNJj1g5`)
+3. Cross-reference remaining hours on the project (from Projects & Tasks base, `appExample0000004`)
 4. Skip clients with zero remaining hours
 5. Group qualifying records by client/company
 6. Generate personalized outreach email — short (~3-5 sentences), references the specific conversation by name, future-tense throughout, no sales pitch. Pattern: opener referencing the past conversation → the queued win in plain language → "you could recover ~N hrs/week" with the actual number → soft close ("want me to set this up?")
 7. Language pulls directly from the Queued MCS fields — future tense throughout: "You could recover ~3 hrs/week," "expected to save," "here's what we discussed building with your remaining time"
-8. Sender: generic XRAY address (projects@xray.tech or similar)
+8. Sender: generic XRAY address (person15@example.com or similar)
 9. Route responses: TBD (downstream automation)
 
 The outreach is not a cold pitch. Every Queued MCS references a specific conversation the client already had with their engineer — work they already agreed to. The email just reminds them it's still available.
@@ -378,9 +378,9 @@ The outreach is not a cold pitch. Every Queued MCS references a specific convers
 
 | Field | Value |
 |---|---|
-| Client Name | Janine Mothershed |
+| Client Name | Dana Whitfield |
 | Client Role | CEO |
-| Company Name | Coding Clarified |
+| Company Name | Example Nonprofit |
 | Project Name | Student Inactivity Email Automation |
 | Industry | Education, Workforce Development, Nonprofit |
 | MCS Headline | Students are going inactive and nobody is following up consistently. |
@@ -398,10 +398,10 @@ The outreach is not a cold pitch. Every Queued MCS references a specific convers
 | Est. hours recovered/week | 5 |
 | Hourly rate assumption | $35/hr |
 | Est. annual dollar value | ~$9,100 |
-| Result 1 Icon | Money (`recluDuWe0Cco8T8D`) |
-| Result 2 Icon | Target (`recYWlwjZmUqhvj47`) |
-| Highlight (Human) | Woman Pointing (`rec9EAml1NvaXzQPO`) |
-| Accents (Patterns) | Red Circle (`recI4Zwklqr37aNHH`) |
+| Result 1 Icon | Money (`recExample0000089`) |
+| Result 2 Icon | Target (`recExample0000088`) |
+| Highlight (Human) | Woman Pointing (`recExample0000090`) |
+| Accents (Patterns) | Red Circle (`recExample0000092`) |
 
 ### Queued Example
 
@@ -432,7 +432,7 @@ The outreach is not a cold pitch. Every Queued MCS references a specific convers
 | Est. hours recovered/week | 3 |
 | Hourly rate assumption | $40/hr |
 | Est. annual dollar value | ~$6,240 |
-| Result 1 Icon | Money (`recluDuWe0Cco8T8D`) |
-| Result 2 Icon | Target (`recYWlwjZmUqhvj47`) |
-| Highlight (Human) | Man Pointing (`recXYJVpGuM9yxiZh`) |
-| Accents (Patterns) | Blue Circle (`recidnRUBWLU5C5w0`) |
+| Result 1 Icon | Money (`recExample0000089`) |
+| Result 2 Icon | Target (`recExample0000088`) |
+| Highlight (Human) | Man Pointing (`recExample0000091`) |
+| Accents (Patterns) | Blue Circle (`recExample0000093`) |

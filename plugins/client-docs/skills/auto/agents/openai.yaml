@@ -1,0 +1,4 @@
+interface:
+  display_name: "Auto"
+  short_description: "Explain one automation in plain English"
+  default_prompt: "Use $auto to explain this automation in four plain-English sections and update its related project documentation."

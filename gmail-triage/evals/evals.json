@@ -11,7 +11,7 @@
     {
       "id": 1,
       "eval_name": "client-focused-drafts",
-      "prompt": "dry-run: what's sitting in my inbox from Janine (Coding Clarified) — anything from the last 5 days? show me the drafts you'd write for the ones that are safely draftable, and flag the ones that would commit me to something (a call, a deadline, a decision) so I handle those myself. no writes.",
+      "prompt": "dry-run: what's sitting in my inbox from Janine (Example Nonprofit) — anything from the last 5 days? show me the drafts you'd write for the ones that are safely draftable, and flag the ones that would commit me to something (a call, a deadline, a decision) so I handle those myself. no writes.",
       "expected_output": "Client-scoped triage: uses client/cc alias routing, produces safe drafts in Rachael's voice (first person, no em-dashes, sign-off All best Rachael), refuses to draft any commitment-bearing reply and lists those under needs-you with a reason.",
       "files": []
     },

@@ -20,4 +20,4 @@ The instructions do not authorize sending messages, creating external task recor
 
 Outputs normally appear in the current conversation. A checkpoint can be provided in chat or saved to a supported destination when requested. The plugin does not automatically store a separate task list, transfer preferences between chats, create reminders, or monitor future events. Such actions require an available mechanism and evidence of completion.
 
-Questions: [rachael.quisel@gmail.com](mailto:rachael.quisel@gmail.com).
+Questions: [person4@example.com](mailto:person4@example.com).

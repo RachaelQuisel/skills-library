@@ -1,6 +1,6 @@
 ---
 name: client-doc-user-stories
-version: 1.4.6
+version: 1.4.7
 description: >-
   Draft or update the canonical `user-stories.md` file for a client build in the client's XRAY-INC repo. Persona-first, jobs-to-be-done anchored: every story ties a named persona to what they need the system to do FOR THEM. Interview-driven, ~4 questions. Use this, rather than `client-docs`, when drafting the user-stories file itself. Use when Rachael says "write user stories", "draft user-stories.md", "user stories for [client]", "personas for [client]", "who uses this client's system", "who does what on this client build", "map the personas", "capture the personas", or when the /deliver checklist reaches the user-stories doc. Produces a persona-organized doc that a client-side reader can follow.
 ---

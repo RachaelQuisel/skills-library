@@ -1,6 +1,6 @@
 ---
 name: client-doc-push
-version: 1.4.6
+version: 1.4.7
 description: Push locally drafted canonical client docs to the client's own XRAY-INC GitHub repo (XRAY-INC/CLIENT-NAME, folder projects/BUILD-NAME/). Reads .md files from the client's local Documents/DOC-TYPE/BUILD-NAME/ folders and PUTs them via the GitHub API (never clones). Use when Rachael says "push client docs", "push to MONTHLY-CLIENTS", "push to the client repo", "publish the canonical docs", "sync the docs to GitHub", or after any of the `client-doc-*` doc-building skills have staged files locally. Handles create-vs-update sha lookup and one-commit-per-file convention.
 ---
 
@@ -28,7 +28,7 @@ Each monthly client has its own repo, `XRAY-INC/<CLIENT>`. `XRAY-INC/MONTHLY-CLI
 - **Local drafts exist:** `~/Claude-Work/CLIENTS/<CLIENT_FOLDER>/Documents/<doc-type>/<build>/<doc-type>.md` (the folder the writing skills save to)
 - **`gh` CLI authenticated** OR the `mcp__github-remote__*` tools are attached
 - **You have write access to the client's repository.** Ask whoever administers the XRAY-INC organization if you don't. Without it every push returns a permission error, which reads like a broken skill but is not.
-- **The client repo exists:** `gh api repos/XRAY-INC/<CLIENT>` returns the repo. If it returns 404, stop and tell Rachael. Mark (mark@xray.tech) creates client repos; never create one yourself.
+- **The client repo exists:** `gh api repos/XRAY-INC/<CLIENT>` returns the repo. If it returns 404, stop and tell Rachael. Mark (person1@example.com) creates client repos; never create one yourself.
 
 ## Local client folder → GitHub client repo
 
@@ -143,4 +143,4 @@ Direct summary. File · action · URL. No throat-clearing, no trailing explanato
 
 - Building/editing the doc itself → the matching `client-doc-<name>` skill
 - Pushing something OTHER than a canonical doc → generic `gh api` or the `mcp__github-remote__*` tools
-- New client repo, or a repo restructure → Mark (mark@xray.tech); see `project_client_docs_infrastructure.md`
+- New client repo, or a repo restructure → Mark (person1@example.com); see `project_client_docs_infrastructure.md`

@@ -18,7 +18,7 @@ Source: The current task definition, read October 12, 2026. The saved definition
 ## Inputs
 
 - Read task 6acb928d16bc8191ae1716cfe40da199. Read whether it is enabled and when it last ran, when available.
-- Read La Maison #automations, channel C0C7XQK3TTR in workspace T0AT819U2UQ.
+- Read La Maison #automations, channel C0EXAMPLE01 in workspace T0AT819U2UQ.
 - Read every relevant page and all replies for ACATALOG:YYYY-MM-DD. Read earlier alerts and delivery counts for ACATALOG-WATCH:YYYY-MM-DD.
 
 ## What happens

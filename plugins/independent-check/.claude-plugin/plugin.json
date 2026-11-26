@@ -1,0 +1,24 @@
+{
+  "name": "independent-check",
+  "displayName": "Independent Check: A Gate That Can Fail",
+  "description": "Guard an automated job with an acceptance sentence, a never sentence, an external standard, and a rehearsed bad example your checker must catch in front of you. Reads the product, not the maker's summary.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Rachael Quisel"
+  },
+  "homepage": "https://github.com/RachaelQuisel/Skills/tree/main/plugins/independent-check",
+  "repository": "https://github.com/RachaelQuisel/Skills",
+  "license": "UNLICENSED",
+  "keywords": [
+    "verification",
+    "gate",
+    "acceptance-criteria",
+    "evaluation",
+    "rehearsal",
+    "automation-check"
+  ],
+  "icon": "./icon.png",
+  "documentationUrl": "https://github.com/RachaelQuisel/Skills/tree/main/plugins/independent-check#readme",
+  "supportUrl": "https://github.com/RachaelQuisel/Skills/issues/new",
+  "privacyPolicyUrl": "https://github.com/RachaelQuisel/Skills/blob/main/plugins/independent-check/PRIVACY.md"
+}

@@ -1,6 +1,6 @@
 ---
 name: client-doc-workflow-diagram
-version: 1.4.6
+version: 1.4.7
 description: Build a styled Mermaid workflow diagram of a client build, showing how each client product and deliverable gets made (trigger, steps, systems, who receives it), from the client's discovery material and canonical docs, then publish it as a shareable web page. The same Mermaid source pastes into XR Workspace Blueprint with workload annotations. Use when Rachael says "workflow diagram for [client]", "diagram the build", "map the deliverables", "mermaid diagram", "the mermaid web flow", "show the client how it all fits together", "process map for [client]", "blueprint for [client]", or when the client-docs set for a build is drafted and needs one visual overview.
 ---
 
@@ -178,5 +178,5 @@ If Rachael wants the workflow priced in XR Workspace, tell her: Blueprint, then 
 ## When this skill is the wrong answer
 
 - Mapping a client's internal business process that isn't part of a build → `blueprint-process-author` in XR Workspace
-- A step-by-step explainer of one automation → `how-it-works-doc` or `automation-explainer-local`
+- A step-by-step explainer of one automation → `how-it-works-doc` or `auto`
 - A full shareable write-up of what was built in a session → `build-page-publisher-local`

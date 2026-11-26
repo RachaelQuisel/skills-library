@@ -1,6 +1,0 @@
-interface:
-  display_name: "Airtable Interface Builder"
-  short_description: "Build warm, reliable Airtable interfaces"
-  icon_small: "./assets/airtable-interface-builder.png"
-  icon_large: "./assets/airtable-interface-builder.png"
-  default_prompt: "Use $airtable-interface-craft to refine this Airtable interface and verify its real behavior."

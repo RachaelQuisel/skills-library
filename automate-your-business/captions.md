@@ -65,7 +65,7 @@ Take-home: your Loop Audit worksheet.
 
 🗓 Friday, Oct 30
 ⏰ 2:30–3:30 PM
-📍 Kiva Cowork, 1117 State St, Santa Barbara (upstairs conference room)
+📍 Kiva Cowork, 123 Main St, Santa Barbara (upstairs conference room)
 
 Free, and drop-in.
 
@@ -78,7 +78,7 @@ See you tomorrow at Kiva! 💛
 Automate Your Business: The Loop Audit. Take your workflow from messy idea to a system that works. Bring one recurring task and we'll map it together. Snacks will be there too.
 
 🗓 Friday, Oct 30 · 2:30–3:30 PM
-📍 Kiva Cowork, 1117 State St (upstairs conference room)
+📍 Kiva Cowork, 123 Main St (upstairs conference room)
 
 #AutomateYourBusiness #SantaBarbara #KivaCowork
 
@@ -131,7 +131,7 @@ Take-home: your Colleague Audit worksheet.
 
 🗓 Friday, Nov 20
 ⏰ 2:30–3:30 PM
-📍 Kiva Cowork, 1117 State St, Santa Barbara (upstairs conference room)
+📍 Kiva Cowork, 123 Main St, Santa Barbara (upstairs conference room)
 
 Free, and drop-in.
 
@@ -144,7 +144,7 @@ See you tomorrow at Kiva! 💛
 Automate Your Business: The Colleague Audit. Take your workflow from messy idea to a system that works. Bring a real task and we'll work out what "done" looks like. Snacks will be there too.
 
 🗓 Friday, Nov 20 · 2:30–3:30 PM
-📍 Kiva Cowork, 1117 State St (upstairs conference room)
+📍 Kiva Cowork, 123 Main St (upstairs conference room)
 
 #AutomateYourBusiness #SantaBarbara #KivaCowork
 
@@ -197,7 +197,7 @@ Take-home: your one-page Rulebook.
 
 🗓 Friday, Dec 18
 ⏰ 2:30–3:30 PM
-📍 Kiva Cowork, 1117 State St, Santa Barbara (upstairs conference room)
+📍 Kiva Cowork, 123 Main St, Santa Barbara (upstairs conference room)
 
 Free, and drop-in.
 
@@ -210,6 +210,6 @@ See you tomorrow at Kiva! 💛
 Automate Your Business: The Proof Audit, our last session of 2026. Take your workflow from messy idea to a system that works. Come sketch your one-page Rulebook with us. Snacks will be there too.
 
 🗓 Friday, Dec 18 · 2:30–3:30 PM
-📍 Kiva Cowork, 1117 State St (upstairs conference room)
+📍 Kiva Cowork, 123 Main St (upstairs conference room)
 
 #AutomateYourBusiness #SantaBarbara #KivaCowork

@@ -19,7 +19,7 @@ Source: The current task definition, read October 12, 2026. The saved definition
 
 - Read accessible workflow definitions, scheduled tasks, GitHub code, Airtable automations, Google Drive project documents and Slack references.
 - Read the installed Automation Catalog, /auto and /voice-align instructions. Use the pinned fallback when the catalog skill is unavailable.
-- Read the occurrence's messages and all replies in La Maison #automations, channel C0C7XQK3TTR in workspace T0AT819U2UQ.
+- Read the occurrence's messages and all replies in La Maison #automations, channel C0EXAMPLE01 in workspace T0AT819U2UQ.
 - Read existing guides, document homes, source identifiers, publication receipts and each business's approved Slack destination.
 
 ## What happens

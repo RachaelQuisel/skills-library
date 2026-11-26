@@ -1,6 +1,6 @@
 ---
 name: dissonance-radar
-version: 1.0.2
+version: 1.0.3
 description: Surface high-leverage questions Rachael missed asking in one conversation or across recent client transcripts. Use when Rachael says "dissonance radar," "EOD review," "evening wrap-up," "what am I missing," "what didn't I ask," "what shifted today," "what should I be curious about," "review today's transcripts," or "did anything change today"; when operating or debugging the scheduled cloud Dissonance Radar; or when GitHub Actions reports that the Radar failed.
 ---
 
@@ -35,13 +35,13 @@ The skill is the pause button that catches what her default misses. **It produce
 The skill accepts any of:
 
 1. **Pasted transcript text** — Rachael drops a transcript directly in the prompt
-2. **File path(s)** — e.g. `~/Claude-Work/CLIENTS/CCRES_Dylan_Sumser/Transcripts/CCRES-Transcript-2026-08-25-XRAY_CCRES_Weekly.md`
-3. **Auto-discover recent (manual/local)** — when run with no input locally, run `~/Claude-Work/PROJECTS/dissonance-radar/prepare_sources.py`. It syncs Debrief first and returns files by meeting date for exactly CCRES, Coding Clarified, and Guardians of Love.
+2. **File path(s)** — e.g. `~/Claude-Work/CLIENTS/CCRES_Dylan_Sumser/Transcripts/Example Client-Transcript-2026-08-25-XRAY_CCRES_Weekly.md`
+3. **Auto-discover recent (manual/local)** — when run with no input locally, run `~/Claude-Work/PROJECTS/dissonance-radar/prepare_sources.py`. It syncs Debrief first and returns files by meeting date for exactly Example Client, Example Nonprofit, and Example Agency.
 4. **Date-specific** — pass the requested date as both `--cutoff` and `--through` to `prepare_sources.py`
 
 If multiple transcripts exist for today, process them as ONE batch so cross-client patterns can surface (the same stakeholder vocabulary showing up across two clients, for example).
 
-**Scheduled source scope.** Debrief in Airtable is the source of truth for the cloud Radar. `cloud_radar.py` fetches records by meeting date, filters out IDs already saved in `state/processed-records.json`, and creates one report per client. Its allowlist is exactly CCRES, Coding Clarified, and Guardians of Love. Do not add other clients, glob local folders, use modified time as the conversation date, or treat Meeting Prep as a transcript source. A failed fetch is a failed run, not an empty radar.
+**Scheduled source scope.** Debrief in Airtable is the source of truth for the cloud Radar. `cloud_radar.py` fetches records by meeting date, filters out IDs already saved in `state/processed-records.json`, and creates one report per client. Its allowlist is exactly Example Client, Example Nonprofit, and Example Agency. Do not add other clients, glob local folders, use modified time as the conversation date, or treat Meeting Prep as a transcript source. A failed fetch is a failed run, not an empty radar.
 
 **Meta-conversations are a valid input mode too.** Rachael's coaching sessions, retros, or solo reflection notes can also feed the radar — when the source IS a conversation about other conversations, expect the output to lean toward inward questions ("what should I be noticing?") rather than outward ones ("what should I ask Casandra?"). Both shapes are fine.
 
@@ -58,7 +58,7 @@ Full pattern catalog is in `references/lenses.md`. Load it when needed. Brief ve
 
 ### Rachael-specific dissonance patterns (the things her default mode misses)
 
-- **Disappearance.** Someone who was in the last N meetings isn't in this one. The skill asks: *"Where did [X] go? Are they OK with the current direction?"* — **but only if they were on the invite list to begin with.** Many of Rachael's client meetings are 1:1 by design (e.g. Rachael ↔ Jessica at GoL). If an operational stakeholder was never expected to attend, don't apply this lens; surface them as an *ask* instead ("how does [X] hear about this change?").
+- **Disappearance.** Someone who was in the last N meetings isn't in this one. The skill asks: *"Where did [X] go? Are they OK with the current direction?"* — **but only if they were on the invite list to begin with.** Many of Rachael's client meetings are 1:1 by design (e.g. Rachael ↔ Jessica at EA). If an operational stakeholder was never expected to attend, don't apply this lens; surface them as an *ask* instead ("how does [X] hear about this change?").
 - **In-meeting disagreement.** Two stakeholders contradict each other in the same transcript — Rachael often doesn't register this in the moment.
 - **Sentiment shift.** Someone who was enthusiastic last week is curt this week, or vice versa. Tone-change is information.
 - **Topic avoided.** Something Rachael raised got deflected or buried. Was that on purpose?

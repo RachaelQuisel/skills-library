@@ -1,0 +1,53 @@
+{
+  "job": "weekly customer update (GOOD fixture)",
+  "acceptance": "The update names only this customer's job, every number matches the customer record, and nothing is promised that we have not agreed to.",
+  "never": "Send pricing, dates, or scope that is not in the customer's own record.",
+  "standard": {
+    "type": "json",
+    "path": "customer-record.json"
+  },
+  "product": {
+    "type": "markdown",
+    "path": "draft.md"
+  },
+  "assertions": [
+    {
+      "id": "numbers-have-receipts",
+      "kind": "all-currency-in-standard"
+    },
+    {
+      "id": "dates-have-receipts",
+      "kind": "all-dates-in-standard",
+      "gate": true
+    },
+    {
+      "id": "names-only-this-customers-job",
+      "kind": "mentions-only-named-job",
+      "standard_field": "job_name",
+      "forbid_other_jobs": [
+        "Globex onboarding system",
+        "Hooli invoicing rebuild"
+      ],
+      "gate": true
+    },
+    {
+      "id": "no-unpromised-scope",
+      "kind": "required-phrases",
+      "phrases": [
+        "two long-form pages",
+        "three feature tiles",
+        "one lead-capture form"
+      ]
+    },
+    {
+      "id": "no-unilateral-discount-language",
+      "kind": "forbidden-phrases",
+      "phrases": [
+        "free upgrade",
+        "no charge",
+        "comped"
+      ],
+      "gate": true
+    }
+  ]
+}

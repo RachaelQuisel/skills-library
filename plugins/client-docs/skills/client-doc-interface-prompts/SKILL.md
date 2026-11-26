@@ -1,6 +1,6 @@
 ---
 name: client-doc-interface-prompts
-version: 1.4.6
+version: 1.4.7
 description: >-
   Draft or append to the canonical `interface-prompts.md` file for a client build, capturing the Airtable Labs Canvas prompts used to build custom Airtable apps for the client. Canvas builds FULL APPS from natural-language prompts: multi-tab, multi-table, can provision a new base or work against an existing one, with per-component feature specs, aesthetic direction, and data-behavior rules. Not for Omni interface pages. Use when Rachael says "capture the canvas prompt", "add canvas prompt to interface-prompts.md", "document the [X] canvas app", "canvas prompt for [app]", "canvas app for [client]", "log the canvas build", or when a build ships a Canvas app worth documenting. Produces one dated section per Canvas app with the exact prompt, intent, aesthetic direction, iteration notes, and any errors that got fed back in.
 ---
@@ -47,7 +47,7 @@ Canvas is Airtable Labs' AI-generated app builder. A single Canvas prompt produc
 | Generation time | Seconds | ~5 minutes; can error |
 | Iteration | Rewrite the prompt | Adjust one section, copy errors back |
 
-Canvas is the default interface builder, but not every client uses it (CCRES staff screens are built in Zite, for example). Check which tool the client uses before drafting. For a Zite build, record the Zite prompts in the same file format, with the tool named in the entry header, and use the `zite-prompt` skill to write them. The Canvas-vs-Omni comparison above is orientation only, it explains what Canvas is by contrast to Airtable's other interface builder.
+Canvas is the default interface builder, but not every client uses it (Example Client staff screens are built in Zite, for example). Check which tool the client uses before drafting. For a Zite build, record the Zite prompts in the same file format, with the tool named in the entry header, and use the `zite-prompt` skill to write them. The Canvas-vs-Omni comparison above is orientation only, it explains what Canvas is by contrast to Airtable's other interface builder.
 
 Note: Canvas is a live Airtable Labs product; its conventions are still evolving. If a prompt structure below stops matching what Canvas expects, check current Airtable Labs Canvas docs and update this skill.
 

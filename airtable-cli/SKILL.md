@@ -1,6 +1,6 @@
 ---
 name: airtable-cli
-version: 1.0.1
+version: 1.0.2
 description: >-
     Lists bases, reads and writes records, manages tables and fields, filters and
     searches data in Airtable via the `airtable-mcp` CLI. Use when the task
@@ -106,14 +106,14 @@ Tool names use hyphens on the CLI (`list-records`) but underscores in MCP (`list
 
 ```sh
 airtable-mcp search-bases --searchQuery "Project Tracker" -q
-airtable-mcp list-tables-for-base --baseId appK9MtBqFw3o5jGN -q
+airtable-mcp list-tables-for-base --baseId appExample0000005 -q
 ```
 
 **List records with specific fields:**
 
 ```sh
 airtable-mcp list-records-for-table \
-  --baseId appK9MtBqFw3o5jGN --tableId tblL4GpTfEz8byRsW \
+  --baseId appExample0000005 --tableId tblExample0000006 \
   --fieldIds '["Name","Status"]' --pageSize 10 -q
 ```
 
@@ -121,7 +121,7 @@ airtable-mcp list-records-for-table \
 
 ```sh
 airtable-mcp list-records-for-table \
-  --baseId appK9MtBqFw3o5jGN --tableId tblL4GpTfEz8byRsW \
+  --baseId appExample0000005 --tableId tblExample0000006 \
   --filters '{"operator":"and","operands":[{"operator":"=","operands":["Status","Done"]}]}' -q
 ```
 
@@ -131,7 +131,7 @@ For select fields, filter by choice ID (from `get-table-schema`), not the displa
 
 ```sh
 airtable-mcp search-records \
-  --baseId appK9MtBqFw3o5jGN --table tblL4GpTfEz8byRsW \
+  --baseId appExample0000005 --table tblExample0000006 \
   --query "acme" --fields '["Name","Notes"]' -q
 ```
 
@@ -140,7 +140,7 @@ Pass `--fields ALL_SEARCHABLE_FIELDS` to search across every indexed field. Date
 **Update records** — complex args are easier via `--input -`:
 
 ```sh
-echo '{"baseId":"appK9MtBqFw3o5jGN","tableId":"tblL4GpTfEz8byRsW","records":[{"id":"recVnR3xPq8sD2yLk","fields":{"fld8WsrpLHHevsnW8":"Done"}}]}' \
+echo '{"baseId":"appExample0000005","tableId":"tblExample0000006","records":[{"id":"recExample0000007","fields":{"fld8WsrpLHHevsnW8":"Done"}}]}' \
   | airtable-mcp update-records-for-table --input - -q
 ```
 

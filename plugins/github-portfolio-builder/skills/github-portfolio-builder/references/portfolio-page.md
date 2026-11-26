@@ -48,7 +48,7 @@ Researched Nov 2, 2026. Apply these on every page:
 - **Match LinkedIn.** Keep the opening line and the stats the same as her LinkedIn headline and About section. They follow the same "I help [who] [get what result]" pattern ([Resumeily](https://www.resumeily.com/learning/how-to-write-a-linkedin-profile)).
 - **Easy to skim.** Use short lines and no badge walls.
 
-Call to action for Rachael: `https://airbnbai.rent/#contact` and `rachael@xray.tech`.
+Call to action for Rachael: `https://airbnbai.rent/#contact` and `person2@example.com`.
 
 ## Rules
 

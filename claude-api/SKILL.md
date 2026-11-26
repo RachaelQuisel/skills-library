@@ -1,6 +1,6 @@
 ---
 name: claude-api
-version: 1.0.1
+version: 1.0.2
 description: |-
   Reference for the Claude API / Anthropic SDK — model ids, pricing, params, streaming, tool use, MCP, agents, caching, token counting, model migration.
   TRIGGER — read BEFORE opening the target file; don't skip because it "looks like a one-liner" — whenever: the prompt names Claude/Anthropic in any form (Claude, Anthropic, Fable, Opus, Sonnet, Haiku, `anthropic`, `@anthropic-ai`, `claude-*`, `us.anthropic.*`, `[1m]`); the user asks about an LLM (pricing/model choice/limits/caching) — never answer from memory; OR the task is LLM-shaped with provider unstated (agent/MCP/tool-definition/multi-agent/RAG/LLM-judge/computer-use; generate/summarize/extract/classify/rewrite/converse over NL; debugging refusals/cutoffs/streaming/tool-calls/tokens).
@@ -48,7 +48,7 @@ Never mix the two - don't reach for `requests`/`fetch` in a Python or TypeScript
 
 Unless the user requests otherwise:
 
-For the Claude model version, please use Claude Opus 5, which you can access via the exact model string `claude-opus-5`. Please default to using adaptive thinking (`thinking: {type: "adaptive"}`) for anything remotely complicated. And finally, please default to streaming for any request that may involve long input, long output, or high `max_tokens` - it prevents hitting request timeouts. Use the SDK's `.get_final_message()` / `.finalMessage()` helper to get the complete response if you don't need to handle individual stream events
+For the examples in this skill, use Claude Opus 5 (`claude-opus-5`) unless the user selects another model. For a retirement-driven migration, use the replacement in [the model lifecycle table](shared/model-migration.md#deprecated-models-retiring-soon). Please default to using adaptive thinking (`thinking: {type: "adaptive"}`) for anything remotely complicated. And finally, please default to streaming for any request that may involve long input, long output, or high `max_tokens` - it prevents hitting request timeouts. Use the SDK's `.get_final_message()` / `.finalMessage()` helper to get the complete response if you don't need to handle individual stream events
 
 ## Warning: API Drift - Your Training Prior May Be Stale
 
@@ -188,24 +188,28 @@ Everything goes through `POST /v1/messages`. Tools and output constraints are fe
 
 ---
 
-## Current Models (cached: 2026-06-24)
+## Selected Active Models (cached)
+
+The Opus and Sonnet 5.5 entries were verified on 2026-11-24. Other rows are retained for version-specific examples. For the latest lineup, see [Anthropic’s models overview](https://platform.claude.com/docs/en/models/overview).
 
 | Model             | Model ID            | Context        | Input $/1M | Output $/1M |
 | ----------------- | ------------------- | -------------- | ---------- | ----------- |
 | Claude Fable 5.1    | `claude-fable-5-1`      | 1M             | $10.00     | $50.00      |
 | Claude Mythos 5.1 (Project Glasswing only) | `claude-mythos-5-1` | 1M | $10.00     | $50.00      |
 | Claude Fable 5 | `claude-fable-5` | 1M             | $10.00     | $50.00      |
+| Claude Opus 5.5   | `claude-opus-5-5`   | 1M             | $4.00      | $20.00      |
 | Claude Opus 5     | `claude-opus-5`       | 1M             | $5.00      | $25.00      |
 | Claude Opus 4.8 | `claude-opus-4-8`  | 1M             | $5.00      | $25.00      |
 | Claude Opus 4.7   | `claude-opus-4-7`   | 1M             | $5.00      | $25.00      |
 | Claude Opus 4.6   | `claude-opus-4-6`   | 1M             | $5.00      | $25.00      |
+| Claude Sonnet 5.5 | `claude-sonnet-5-5` | 1M             | $2.00      | $10.00      |
 | Claude Sonnet 5   | `claude-sonnet-5`   | 1M             | $2.00      | $10.00      |
 | Claude Sonnet 4.6 | `claude-sonnet-4-6` | 1M             | $3.00      | $15.00      |
 | Claude Haiku 4.5  | `claude-haiku-4-5`  | 200K           | $1.00      | $5.00       |
 
 **Partner pricing:** The prices above are Anthropic first-party API rates - they also apply to Claude on Microsoft Foundry, which is billed through the Microsoft Marketplace at standard API rates. Claude on Amazon Bedrock and Vertex AI is partner-operated with separate pricing - see [Bedrock](https://aws.amazon.com/bedrock/pricing/) or [Vertex AI](https://cloud.google.com/vertex-ai/generative-ai/pricing#claude-models). For WebFetch, use the Pricing row in `shared/live-sources.md`.
 
-**ALWAYS use `claude-opus-5` unless the user explicitly names a different model.** This is non-negotiable. Do not use `claude-sonnet-5`, `claude-sonnet-4-6`, or any other model unless the user literally says "use sonnet" or "use haiku". Never downgrade for cost - that's the user's decision, not yours. Use `claude-fable-5-1` only when the user explicitly asks for Claude Fable 5.1, "fable", or Anthropic's most capable model - it has different API behavior than the Opus family (see below) and pricing that exceeds Opus-tier. **Use only the exact model ID strings from the table - they are complete as-is; never append date suffixes** (`claude-sonnet-4-6`, never `claude-sonnet-4-6-20251114` or any other date-suffixed variant you might recall from training data). If the user requests an older model not in the table (e.g., "opus 4.5", "sonnet 3.7"), read `shared/models.md` for the exact ID - do not construct one yourself.
+**Use `claude-opus-5` as this skill’s example default unless the user explicitly selects another model.** Do not downgrade for cost without asking. When replacing a deprecated model, use the recommended ID and version-specific instructions in [the migration guide](shared/model-migration.md#deprecated-models-retiring-soon) instead of the example default. Use exact IDs from the catalog; never invent a suffix. If the user names a model not in this table, check [the model catalog](shared/models.md) for its exact ID and lifecycle status.
 
 ### Claude Fable 5.1 (`claude-fable-5-1`) - most capable widely released model
 
@@ -243,7 +247,7 @@ Full auth details (named profiles, scopes, the API-key-shadows-profile trap, ref
 
 ## Thinking & Effort (Quick Reference)
 
-Use adaptive thinking (`thinking: {type: "adaptive"}`) on every current model - Claude dynamically decides when and how much to think. Per-model rules:
+Use adaptive thinking (`thinking: {type: "adaptive"}`) where supported - Claude dynamically decides when and how much to think. Per-model rules:
 
 | Model | Thinking config | Omitting `thinking` | `budget_tokens` | Sampling (`temperature`/`top_p`/`top_k`) | Effort levels |
 |---|---|---|---|---|---|
@@ -252,7 +256,7 @@ Use adaptive thinking (`thinking: {type: "adaptive"}`) on every current model - 
 | Opus 4.8 / 4.7 | `{type: "adaptive"}` is the only on-mode; `{type: "disabled"}` accepted | Runs **without** thinking - set `{type: "adaptive"}` explicitly | Removed - 400 | Removed - 400 | `low`/`medium`/`high`/`xhigh`/`max` |
 | Sonnet 5 | `{type: "adaptive"}` is the only on-mode; `{type: "disabled"}` accepted | Runs adaptive | Removed - 400 | Removed - 400 | `low`/`medium`/`high`/`xhigh`/`max` |
 | Opus 4.6 / Sonnet 4.6 | `{type: "adaptive"}` (recommended; auto-enables interleaved thinking, no beta header) | Set `{type: "adaptive"}` explicitly | Deprecated - do not use in new code; transitional escape hatch only (see below) | Allowed | `low`/`medium`/`high`/`max` (`xhigh` arrived with Opus 4.7) |
-| Older (Sonnet 4.5, Haiku 4.5, ...) - only if explicitly requested | `{type: "enabled", budget_tokens: N}` | No thinking | Required for thinking; must be less than `max_tokens`, minimum 1024 - errors otherwise | Allowed | `effort` works on Opus 4.5 (`low`/`medium`/`high` only - no `xhigh`/`max`); errors on Sonnet 4.5 / Haiku 4.5 |
+| Older API behavior (Sonnet/Opus 4.5 are deprecated; Haiku 4.5 is active) | `{type: "enabled", budget_tokens: N}` | No thinking | Required for thinking; must be less than `max_tokens`, minimum 1024 - errors otherwise | Allowed | `effort` works on Opus 4.5 (`low`/`medium`/`high` only - no `xhigh`/`max`); errors on Sonnet 4.5 / Haiku 4.5 |
 
 Opus 4.8 keeps the same request surface as 4.7 (no new breaking changes) - see `shared/model-migration.md` -> Migrating to Opus 4.8 for the behavioral re-tuning, and -> Migrating to Opus 4.7 for the full breaking-change list when coming from 4.6 or earlier. With `thinking` disabled, Opus 4.8 may write longer reasoning into the visible response - leave adaptive thinking on, or add a final-answer-only instruction (see the migration guide).
 
@@ -502,7 +506,7 @@ The Quick Task Reference below uses the `{lang}/claude-api/FILE.md` path notatio
 
 **Long-running conversations (may exceed context window):**
 -> Read `{lang}/claude-api/README.md` - see Compaction section
-**Migrating to a newer model (Fable 5.1 / Fable 5 / Opus 5 / Opus 4.8 / Opus 4.7 / Opus 4.6 / Sonnet 5 / Sonnet 4.6), replacing a retired model, or translating `budget_tokens` / prefill patterns to the current API:**
+**Migrating to a newer model (Opus 5.5 / Sonnet 5.5 / Fable 5.1 / Fable 5 / Opus 5 / Opus 4.8 / Opus 4.7 / Opus 4.6 / Sonnet 5 / Sonnet 4.6), replacing a retired model, or translating `budget_tokens` / prefill patterns to the current API:**
 -> Read `shared/model-migration.md`
 **Upgrading the Anthropic SDK package itself across a major version (`anthropic` 0.x -> 1.x: `httpx2`, awaited async `.with_raw_response`, removed deprecated parameters / aliases / Text Completions, Python >= 3.10) - or writing new code against a project already on 1.x:**
 -> Read `{lang}/claude-api/sdk-upgrade.md` (currently Python only; other SDKs have no bundled major-version guide yet - use that SDK's CHANGELOG via `shared/live-sources.md`)

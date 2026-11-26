@@ -1,0 +1,34 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "author": {
+    "name": "Rachael Quisel"
+  },
+  "description": "Guard an automated job with an acceptance sentence, a never sentence, an external standard, and a rehearsed bad example your checker must catch in front of you. Reads the product, not the maker's summary.",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "capabilities": [],
+        "category": "Developer Tools",
+        "composerIcon": "./icon.png",
+        "developerName": "Rachael Quisel",
+        "displayName": "Independent Check: A Gate That Can Fail",
+        "logo": "./icon.png",
+        "longDescription": "Guard an automated job with an acceptance sentence, a never sentence, an external standard, and a rehearsed bad example your checker must catch in front of you. The checker reads the product itself, measures against a standard outside the maker, and ships with planted bad and good fixtures so you have seen it fail before you trust its green lights.",
+        "shortDescription": "A gate that can fail your automated job"
+      }
+    }
+  },
+  "homepage": "https://github.com/RachaelQuisel/Skills/tree/main/plugins/independent-check",
+  "keywords": [
+    "verification",
+    "gate",
+    "acceptance-criteria",
+    "evaluation",
+    "rehearsal",
+    "automation-check"
+  ],
+  "license": "UNLICENSED",
+  "name": "independent-check",
+  "repository": "https://github.com/RachaelQuisel/Skills",
+  "version": "1.0.0"
+}

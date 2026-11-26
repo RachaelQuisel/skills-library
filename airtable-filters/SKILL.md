@@ -3,7 +3,7 @@ name: airtable-filters
 description: Use this skill when the user wants to find, filter, or narrow down Airtable records by field values, even when they don't explicitly say "filter."
 license: MIT
 metadata:
-    version: 1.0.1
+    version: 1.0.2
     author: airtable
 tags:
   - skill
@@ -76,7 +76,7 @@ For select fields, operand values must be **choice IDs** (e.g., `"selABCDEFGHIJK
 
 When filtering by a collaborator group ID, use `operatorOptions` to match individual members of the group instead of the literal group ID. See the tool's `operatorOptions` parameter for details.
 
-Example operand: `{"operator": "hasAnyOf", "operands": ["fldCRi9oz2vRLcIWr", "ugpDUVUnftA7H9bG8"], "operatorOptions": {"matchGroupsByMembership": true}}`
+Example operand: `{"operator": "hasAnyOf", "operands": ["fldExample0000008", "ugpDUVUnftA7H9bG8"], "operatorOptions": {"matchGroupsByMembership": true}}`
 
 ### Attachment fields
 
@@ -115,7 +115,7 @@ Filter where a text field equals "orange" OR a number field is greater than 5:
     "operator": "or",
     "operands": [
         {"operator": "=", "operands": ["fld8WsrpLHHevsnW8", "orange"]},
-        {"operator": ">", "operands": ["fldulcCPDVz87Bmnw", 5]}
+        {"operator": ">", "operands": ["fldExample0000009", 5]}
     ]
 }
 ```

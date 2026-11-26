@@ -1,6 +1,6 @@
 ---
 name: business-case
-version: 1.4.6
+version: 1.4.7
 description: Transforms discovery call transcripts into XRAY-branded business case documents (.docx). Use when the user provides a transcript and asks for a business case, discovery brief, proposal, or client document. Triggers on "business case", "discovery brief", "proposal from transcript", "turn this transcript into a document", or similar requests.
 ---
 

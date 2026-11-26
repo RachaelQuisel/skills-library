@@ -16,15 +16,15 @@ User wants the first La Maison cleaner scheduling screen built.
 > - `src/v1.html`
 > - `docs/design-schema.md`
 >
-> Use Airtable base `appHGrlcFtobZhuRz`.
+> Use Airtable base `appExample0000155`.
 >
 > Relevant fields:
-> - Cleaning table: `tblCBDcALpBjdz0qB`
-> - Date: `fldiX2VGCV2O3S6CM`
-> - Cleaner: `fldcbczu1xMOgfbFW`
-> - Inspector: `fldayjr9mcT8RcTur`
-> - Start time: `fldMYE5OEwgmRNLrs`
-> - End time: `fldhhWXmxOnn8o9z0`
+> - Cleaning table: `tblExample0000156`
+> - Date: `fldExample0000157`
+> - Cleaner: `fldExample0000158`
+> - Inspector: `fldExample0000159`
+> - Start time: `fldExample0000160`
+> - End time: `fldExample0000161`
 >
 > Build a mobile screen with one or multiple assignment cards. Each card should show the date and time and have clear **Accept** and **Reject** controls.
 >

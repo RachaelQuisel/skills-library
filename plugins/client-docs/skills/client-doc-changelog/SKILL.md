@@ -1,6 +1,6 @@
 ---
 name: client-doc-changelog
-version: 1.4.6
+version: 1.4.7
 description: Append a dated entry to the canonical `changelog.md` for a client build in the client's XRAY-INC repo. Newest entries at the top. Interview-driven, ~2 questions per entry. Use when Rachael says "add to changelog", "log what shipped", "record today's ship", "changelog entry for [X]", "we shipped X", "log the [X] ship", "add [X] to changelog", "note the [X] ship", when a build ships something worth documenting, or when the /deliver checklist reaches the changelog step. Produces a client-readable "what changed and when" log.
 ---
 
