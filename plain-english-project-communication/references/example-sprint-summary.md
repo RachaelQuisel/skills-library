@@ -2,10 +2,10 @@
 
 This is the exact format Rachael posts to a client Slack huddle every Friday. Match this shape when writing a sprint summary, weekly status post, or any scannable multi-item update. It shows how brevity and plain English coexist: every number stands on its own, every bullet is understandable to a non-technical reader, and no jargon or invented internal terms appear.
 
-## Example 1: Coding Clarified (2026-07-30 to 2026-07-31)
+## Example 1: Example Nonprofit (2026-07-30 to 2026-07-31)
 
 ```
-Sprint Summary: 2026-07-30 – 2026-07-31 | Coding Clarified
+Sprint Summary: 2026-07-30 – 2026-07-31 | Example Nonprofit
 
 :white_check_mark: Completed (5):
 • Plan reorganized into four goal-named projects; scope locked to eight goals, new application form (Zite) first · Build plan
@@ -26,10 +26,10 @@ Sprint Summary: 2026-07-30 – 2026-07-31 | Coding Clarified
 :bar_chart: Velocity: 5 tasks | Completion rate: 71%
 ```
 
-## Example 2: Guardians of Love (same week)
+## Example 2: Example Agency (same week)
 
 ```
-Sprint Summary: 2026-07-30 – 2026-07-31 | Guardians of Love
+Sprint Summary: 2026-07-30 – 2026-07-31 | Example Agency
 
 :white_check_mark: Completed (6):
 • Status vocabulary migration applied: 12 controlled fields, 57 definitions, 1,055 record values updated · Status architecture
@@ -55,7 +55,7 @@ Note: the originally posted versions used em dashes in several bullets. These re
 
 ## Note on acronyms: spell them out once even in insider posts (updated 2026-08-04)
 
-Both exemplars above use `WIOA` without ever spelling out Workforce Innovation and Opportunity Act. That reflects the posts as-published, when the immediate audience (Janine, Jessica, their teams) already knew the acronym. Rachael's updated preference is to spell any acronym (WIOA, RHAS, QPI, CAP, MVP, etc.) out once at first use in the piece — because students and other downstream readers benefit. Follow the updated rule when writing new posts; treat the exemplars as authoritative on shape but not on the acronym choice.
+Both exemplars above use `WIOA` without ever spelling out Workforce Innovation and Opportunity Act. That reflects the posts as-published, when the immediate audience (Janine, Jessica, their teams) already knew the acronym. Rachael's updated preference is to spell any acronym (WIOA, PROGRAM, QPI, CAP, MVP, etc.) out once at first use in the piece — because students and other downstream readers benefit. Follow the updated rule when writing new posts; treat the exemplars as authoritative on shape but not on the acronym choice.
 
 ## Extra pattern: `...and N more` overflow
 

@@ -1,6 +1,6 @@
 ---
 name: file-naming-convention
-version: 1.4.6
+version: 1.4.7
 description: >
   Apply this canonical filename pattern any time you save an artifact under
   ~/Claude-Work/CLIENTS/client/, apply it by default, don't wait for the
@@ -75,8 +75,8 @@ One copy per artifact. If a Word export and PDF export of the same source exist,
 | Client | Code |
 |---|---|
 | AY Media | `AYMG` |
-| Coding Clarified | `CC` |
-| Guardians of Love | `GOL` |
+| Example Nonprofit | `CC` |
+| Example Agency | `EA` |
 | The HOPE for Health | `THFH` |
 | Terra FS | `TerraFS` |
 
@@ -142,7 +142,7 @@ Match the actual format. Most common: `.md`. Also `.docx`, `.pdf`, `.html`, `.js
 AYMG-Handoff-2026-06-09-EmailAutomationShip+SchemaDocPass-v1.md
 AYMG-Debrief-2026-06-05-ay-media-weekly-ssbxCSaE.md
 CC-MeetingPrep-2026-05-22-EnrollmentBlockerWalkthrough.md
-GOL-Audit-2026-06-04-TrainingWorkflowSchemaDrift.md
+EA-Audit-2026-06-04-TrainingWorkflowSchemaDrift.md
 THFH-Transcript-2026-05-09.md
 TerraFS-POST_RUN-2026-06-02-ClaimResponseApply.md
 ```

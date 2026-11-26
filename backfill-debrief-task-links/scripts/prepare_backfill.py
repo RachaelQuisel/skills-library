@@ -9,10 +9,10 @@ import sys
 from typing import Any
 
 
-BASE_ID = "appQAdxI2hDNJj1g5"
-TASKS_TABLE_ID = "tblvlJq7I2GvIQEyP"
-SOURCE_FIELD_ID = "fldmzmZy2D1yh5B7p"
-TARGET_FIELD_ID = "fldXbCPMQBosF9Vre"
+BASE_ID = "appExample0000004"
+TASKS_TABLE_ID = "tblExample0000010"
+SOURCE_FIELD_ID = "fldExample0000013"
+TARGET_FIELD_ID = "fldExample0000015"
 
 _RECORD_ID = re.compile(r"^rec[A-Za-z0-9]{14}$")
 

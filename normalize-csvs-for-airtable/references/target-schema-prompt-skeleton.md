@@ -61,13 +61,13 @@ PROCESS:
   5. Hand off the all_events.csv for Airtable import.
 ```
 
-## Filled-in example (GoL Training Tracker, 2026-05-22)
+## Filled-in example (EA Training Tracker, 2026-05-22)
 
 For reference, this is what the skeleton looked like when filled in for the
-Guardians of Love training tracker migration:
+Example Agency training tracker migration:
 
 ```
-TARGET TABLE: Training Completion (in appp6pbBbaxuOLu2v)
+TARGET TABLE: Training Completion (in appExample0000151)
 
 ONE ROW PER: one training event (a specific module completed by one trainee
              on one date with one trainer)
@@ -107,7 +107,7 @@ DISAMBIGUATION RULES:
   Flag for review:
     - Out-of-range dates (< 2010 or > today+5)
     - Unparseable dates (gibberish, names typed in date cells, Excel serials)
-    - Agency values not in {GOL, DIUP}
+    - Agency values not in {EA, PARTNER}
     - Trainer = 'Outside' or 'Online' (these are delivery modes, not people)
 
   Preserve verbatim:

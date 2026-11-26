@@ -1,6 +1,6 @@
 ---
 name: five-signals-prd
-version: 1.4.6
+version: 1.4.7
 description: Produces a PRD in Rachael's opinionated 5-signals / 5-beat format (frame → estimate → design → defend → evolve). Used for client-facing PRDs Rachael walks clients through AND for interview / design-review narration where the loop IS the rubric a reviewer grades against in real time. Every PRD opens with the six-row Frame+Estimate block, then Design (punchline + why + diagram), then Defend (matrix with commit), then Failure (risk+mitigation cards). The format IS the discipline. Use whenever Rachael says "five signals PRD," "5-signals PRD," "write a PRD," "write me a PRD," "PRD for [client/feature]," "frame and estimate this," "draft a PRD," is prepping for a system-design interview, is formalizing a discovery transcript or rough draft into a PRD, or needs to walk a client through a build decision. This skill outcompetes the generic write-a-prd skill for Rachael's work, write-a-prd produces the Anthropic template (Problem/Solution/User Stories/Out of Scope); this skill produces the 5-signals loop.
 ---
 

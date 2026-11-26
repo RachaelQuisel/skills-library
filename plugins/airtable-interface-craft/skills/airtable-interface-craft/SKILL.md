@@ -1,6 +1,6 @@
 ---
 name: airtable-interface-craft
-version: 1.0.6
+version: 1.0.7
 description: Refine or build Airtable custom interfaces that combine a distinctive visual style with reliable staff workflows. Use for connected task, document, training or calendar experiences, and for returning revised source to Airtable. Preserve an existing design where requested; ordinary record cleanup and automation-only changes are outside this workflow.
 ---
 
@@ -34,7 +34,7 @@ Turn feedback into observable acceptance checks. Keep project decisions explicit
 - Read [Design and data](references/design-and-data.md) when changing visual design, navigation, readability, relationships or data selection.
 - Read [Reliable interactions](references/reliable-interactions.md) for completion, rewards, uploads or another record mutation.
 - Read [Verification and return](references/verification-and-return.md) when testing, delivering source, installing or publishing.
-- Read [GoL lessons](references/gol-lessons.md) when working on GoL or when the user asks to reuse this project's successful approach. Its business rules and style are examples, not universal defaults.
+- Read [EA lessons](references/gol-lessons.md) when working on EA or when the user asks to reuse this project's successful approach. Its business rules and style are examples, not universal defaults.
 
 These references are self-contained. If an installed Airtable refiner or connector has relevant SDK/API documentation, use it when it materially helps; do not require a separate plugin just to follow this workflow.
 

@@ -22,7 +22,7 @@ Right panel (changes per flyer):
 |---|---|---|
 | Logo or icon left of the heading | The gold hex icon means Kiva Cowork. The "XRAY" wordmark means XRAY Office Hours. | `preset` for the series in `workshops.json`. The Kiva icon is cut from the template, and the XRAY wordmark is `src/logos/xray-logo-b-6c8bc69c.svg`. |
 | Venue heading: "Kiva Cowork" or "Office Hours" | Where or how the session happens | Kiva: from the template. XRAY: the `xray` preset in the script. |
-| Venue lines: "1117 State St, Santa Barbara" and "Upstairs Conference Room", or "Virtual, join from anywhere" | The address for the in-person sessions, or a note that the virtual sessions are online | Kiva: from the template. XRAY: the `xray` preset in the script. |
+| Venue lines: "123 Main St, Santa Barbara" and "Upstairs Conference Room", or "Virtual, join from anywhere" | The address for the in-person sessions, or a note that the virtual sessions are online | Kiva: from the template. XRAY: the `xray` preset in the script. |
 | DATE AND TIME | Header for the date and time | Printed in the template |
 | Date, for example "FRI, OCT 30" | The session day | `flyer_date` for the session in `workshops.json`. The selftest checks that it matches the ISO `date`. |
 | Time, for example "2:30 PM" or "9 AM PT" | The start time | `flyer_time` for the session in `workshops.json`. The full start and end times are in `start` and `end`. |

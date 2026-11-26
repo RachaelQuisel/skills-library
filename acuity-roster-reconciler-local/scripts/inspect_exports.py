@@ -70,7 +70,7 @@ def row_groups(row: dict) -> tuple[list[str], list[str]]:
         organizations.append('diup')
     warnings = []
     if not organizations:
-        warnings.append('No recognized GoL or DIUP organization; clarify the source.')
+        warnings.append('No recognized EA or PARTNER organization; clarify the source.')
     template = row.get('Application template', '').casefold()
     status = row.get('Status', '').strip().casefold()
     template_stage = ('renewals' if 'renewal' in template else

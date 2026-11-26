@@ -5,7 +5,7 @@ and patches the `SKILL.md` mapping table to point at them.
 
 ## What it changes
 
-**Airtable — base `app8V74T72TT2SB0h`, table `tbl4fNYChMVv8pyda` (MCS):**
+**Airtable — base `appExample0000047`, table `tblExample0000061` (MCS):**
 
 | Field | Type | Options |
 |---|---|---|
@@ -15,8 +15,8 @@ and patches the `SKILL.md` mapping table to point at them.
 | `Result 2 (independent)` | Single-line text | — |
 
 **Not touched** (per `feedback_no_break_automations.md`):
-- Existing `Industry` (`fldoOn2odwxB0PEfG`) free-text field
-- Existing `Result 2` (`fldHpvofpyDNf8sb4`) AI auto-mirror field
+- Existing `Industry` (`fldExample0000050`) free-text field
+- Existing `Result 2` (`fldExample0000051`) AI auto-mirror field
 
 **File system:**
 - `SKILL.md` is restored from `SKILL.md.bak`, then the mapping table rows for Engineer,
@@ -35,7 +35,7 @@ and patches the `SKILL.md` mapping table to point at them.
 
 - Python 3.9+ (stdlib only, no `pip` deps)
 - `AIRTABLE_PAT` env var — an Airtable Personal Access Token scoped to:
-  - `schema.bases:read` and `schema.bases:write` on base `app8V74T72TT2SB0h`
+  - `schema.bases:read` and `schema.bases:write` on base `appExample0000047`
   - (data scopes not required for this script)
 
 ## Usage
@@ -59,9 +59,9 @@ python update_mcs_fields.py --skip-api
 1. `describe_table` on the MCS table → 4 new fields present with expected types/options.
 2. `diff SKILL.md SKILL.md.bak` → only the mapping-table region changed.
 3. Re-run the script → every step reports `no-op`.
-4. Grep `SKILL.md` for `flduLY0o5WsNiX1eL` (Zoom Transcript 1) and `appMjlaeg7cFYivss`
+4. Grep `SKILL.md` for `fldExample0000048` (Zoom Transcript 1) and `appExample0000049`
    (CRM Enriched Debriefs base) → still present, transcript-mining workflow intact.
-5. Existing `Industry` (`fldoOn2odwxB0PEfG`) and `Result 2` (`fldHpvofpyDNf8sb4`)
+5. Existing `Industry` (`fldExample0000050`) and `Result 2` (`fldExample0000051`)
    still exist with original types.
 
 ## Exit codes

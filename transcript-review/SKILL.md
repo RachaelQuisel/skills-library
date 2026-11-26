@@ -1,6 +1,6 @@
 ---
 name: transcript-review
-version: 1.4.6
+version: 1.4.7
 description: Review a meeting transcript and extract decisions and action items into Rachael's working systems — a dated debrief file plus Airtable tasks in the right client base. Use whenever Rachael says "review this transcript", "transcript landed", "extract decisions and action items", "debrief this meeting", "what did we decide", pastes transcript text, or references a Granola or Wispr Flow meeting that needs processing — even if she doesn't say the word "transcript". Works for any client; it discovers the client's base rather than assuming one.
 ---
 

@@ -40,7 +40,7 @@ After reading back the delivered message, use `acknowledge` and save its verifie
 
 ## Deliver only to the existing destination
 
-Use La Maison Santa Barbara workspace `T0AT819U2UQ`, connection `link_6acb11be38d48191845021d2cc6cd53b`, and channel `C0C7XQK3TTR` (#automations) for Slack reads and sends. Never substitute XRAY or a direct message. Keep each opening or recovery message short: the observed issue or fix, its impact, a direct GitHub run or source link, and one next step if action is needed. Keep client records, credentials, and raw logs out of Slack.
+Use La Maison Santa Barbara workspace `T0AT819U2UQ`, connection `link_6acb11be38d48191845021d2cc6cd53b`, and channel `C0EXAMPLE01` (#automations) for Slack reads and sends. Never substitute XRAY or a direct message. Keep each opening or recovery message short: the observed issue or fix, its impact, a direct GitHub run or source link, and one next step if action is needed. Keep client records, credentials, and raw logs out of Slack.
 
 Use the existing task chat as fallback only after a definite Slack delivery failure and no matching Slack message. Claim and record that fallback against the same event. Do not also notify in ChatGPT after verified Slack delivery. If delivery is uncertain, record the uncertainty without claiming that the alert was delivered. Never return a routine completion message for a healthy, unchanged run.
 

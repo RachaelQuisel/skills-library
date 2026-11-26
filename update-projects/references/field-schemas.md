@@ -1,8 +1,8 @@
 # Field schemas (writable fields only)
 
-Source base: `appQAdxI2hDNJj1g5` ("Projects & Tasks at XRAY"). Read this when constructing record bodies for create or PATCH.
+Source base: `appExample0000004` ("Projects & Tasks at XRAY"). Read this when constructing record bodies for create or PATCH.
 
-## Projects (`tblOaFlYpPXlHrT2c`)
+## Projects (`tblExample0000023`)
 
 | Field | Type | Notes |
 |---|---|---|
@@ -11,7 +11,7 @@ Source base: `appQAdxI2hDNJj1g5` ("Projects & Tasks at XRAY"). Read this when co
 | `Status` | singleSelect | `Backlog`, `Active`, `On Hold`, `Done`, `Cancelled`. Use `Active` on creation. |
 | `Priority` | singleSelect | `Low`, `Standard`, `High`. |
 | `XRay's Client` | linked records | One client record ID. |
-| `Project/Account Manager` | singleCollaborator | `{"id": "usrXXX"}`. Set to Rachael (`usr5vnH7D87XIP57C`) by default. |
+| `Project/Account Manager` | singleCollaborator | `{"id": "usrXXX"}`. Set to Rachael (`usrExample0000179`) by default. |
 | `Project Type` | singleSelect | Use `Consulting Solution Sprints` for typical client work. |
 | `Start date`, `End date` | date | Optional. ISO `YYYY-MM-DD`. |
 
@@ -24,14 +24,14 @@ body = {"fields": {
     "Priority": "High",
     "XRay's Client": [client_id],
     "Project Description": "Brief.",
-    "Project/Account Manager": {"id": "usr5vnH7D87XIP57C"},
+    "Project/Account Manager": {"id": "usrExample0000179"},
     "Project Type": "Consulting Solution Sprints",
 }}
 # Send as records[0] via mcp__airtable__create_records_for_table
-# baseId=appQAdxI2hDNJj1g5, tableId=tblOaFlYpPXlHrT2c
+# baseId=appExample0000004, tableId=tblExample0000023
 ```
 
-## Objectives (`tblyZxi1nYrGICXrf`)
+## Objectives (`tblExample0000162`)
 
 This table appears in client planning bases as `Outcomes`.
 
@@ -44,7 +44,7 @@ This table appears in client planning bases as `Outcomes`.
 | `Visibility` | singleSelect | `Internal (XRay) Only` or `Visible to public`. Default to internal. |
 | `Projects` | linked records | One or more project record IDs. |
 | `XRay's Clients` | linked records | One client record ID. |
-| `Owner` | singleCollaborator | `{"id": "usrXXX"}`. Rachael: `usr5vnH7D87XIP57C`. |
+| `Owner` | singleCollaborator | `{"id": "usrXXX"}`. Rachael: `usrExample0000179`. |
 | `Parent Objective` | linked records | Self-link for hierarchy if needed. |
 
 ### Minimum-viable objective body
@@ -58,13 +58,13 @@ body = {"fields": {
     "Projects": [project_id],
     "XRay's Clients": [client_id],
     "Visibility": "Internal (XRay) Only",
-    "Owner": {"id": "usr5vnH7D87XIP57C"},
+    "Owner": {"id": "usrExample0000179"},
 }}
 # Send as records[0] via mcp__airtable__create_records_for_table
-# baseId=appQAdxI2hDNJj1g5, tableId=tblyZxi1nYrGICXrf
+# baseId=appExample0000004, tableId=tblExample0000162
 ```
 
-## Tasks (`tblvlJq7I2GvIQEyP`)
+## Tasks (`tblExample0000010`)
 
 141 fields total; many are formulas/rollups and not writable. Use only the fields below.
 
@@ -107,7 +107,7 @@ body = {"fields": {
 # POST https://tasks.xray.tech/api/tasks with X-Api-Key header,
 # passing the "fields" object's keys as top-level body params (title, priority, project, etc.).
 # See references/api-field-guide.md in the create-task skill for the exact translation.
-# The MCP path (mcp__airtable__create_records_for_table with tableId=tblvlJq7I2GvIQEyP)
+# The MCP path (mcp__airtable__create_records_for_table with tableId=tblExample0000010)
 # also works but bypasses tasks.xray.tech's server-side validation.
 ```
 
@@ -123,12 +123,12 @@ PATCH https://tasks.xray.tech/api/tasks/{task_id}
 
 # 2. Outcomes link via MCP (only route that accepts it)
 mcp__airtable__update_records_for_table
-  baseId: appQAdxI2hDNJj1g5
-  tableId: tblvlJq7I2GvIQEyP
+  baseId: appExample0000004
+  tableId: tblExample0000010
   records: [{id: "<task_id>", fields: {Outcomes: ["<objective_id>"]}}]
 ```
 
-## XRay's Clients (`tblVS1aUCNeqtVq5U`)
+## XRay's Clients (`tblExample0000012`)
 
 Only the fields needed during set-up:
 
@@ -143,9 +143,9 @@ Only the fields needed during set-up:
 
 ```
 mcp__airtable__list_records_for_table
-  baseId: appQAdxI2hDNJj1g5
-  tableId: tblVS1aUCNeqtVq5U
-  filters: {operator: "=", operands: ["Name", "Guardians of Love"]}
+  baseId: appExample0000004
+  tableId: tblExample0000012
+  filters: {operator: "=", operands: ["Name", "Example Agency"]}
   fieldIds: ["Name", "Status", "Phase"]
 ```
 
@@ -153,8 +153,8 @@ If empty:
 
 ```
 mcp__airtable__create_records_for_table
-  baseId: appQAdxI2hDNJj1g5
-  tableId: tblVS1aUCNeqtVq5U
+  baseId: appExample0000004
+  tableId: tblExample0000012
   records: [{fields: {Name: "[Client]", Status: "Active", Phase: "Discovery"}}]
 ```
 
@@ -164,8 +164,8 @@ Or read via `GET https://tasks.xray.tech/api/clients` and match client-side by `
 
 ```
 mcp__airtable__get_table_schema
-  baseId: appQAdxI2hDNJj1g5
-  tables: [{tableId: "tblOaFlYpPXlHrT2c"}, {tableId: "tblyZxi1nYrGICXrf"}, {tableId: "tblvlJq7I2GvIQEyP"}]
+  baseId: appExample0000004
+  tables: [{tableId: "tblExample0000023"}, {tableId: "tblExample0000162"}, {tableId: "tblExample0000010"}]
 ```
 
 Cache this response. Field options can change; re-pull before setting up a new client to confirm the select-option strings haven't shifted. Do **not** try to read the schema via curl — the PAT that used to power that call has been deleted; MCP is the route.

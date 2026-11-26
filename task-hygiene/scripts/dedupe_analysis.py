@@ -22,16 +22,16 @@ Cancelled with a triage note naming the keeper).
 import json, re
 from collections import defaultdict
 
-STATUS_F = "fldxcjBLLGOur6XIy"
-NAME_F = "fld1AkoHwZc1n9ynS"
-DESC_F = "fldvvDWMcV9g5gzPE"
-CREATED_F = "fldbh690V32q6BEDK"
-ARCHIVED_F = "fldCD9gdIan9M8wmV"
-HOURS_USED_F = "fldouI8QvQhkjrpnx"
-HOURS_EST_F = "fld88Zg1liE6QHLNj"
-OUTCOMES_F = "fldxDjgnu1i9jp4jl"
-PARENT_F = "fldBH3Rfbgsk17Py2"
-TRIAGE_NOTES_F = "flddo6Tc1mJoAt0qA"
+STATUS_F = "fldExample0000025"
+NAME_F = "fldExample0000024"
+DESC_F = "fldExample0000167"
+CREATED_F = "fldExample0000172"
+ARCHIVED_F = "fldExample0000030"
+HOURS_USED_F = "fldExample0000169"
+HOURS_EST_F = "fldExample0000168"
+OUTCOMES_F = "fldExample0000164"
+PARENT_F = "fldExample0000165"
+TRIAGE_NOTES_F = "fldExample0000170"
 
 DONE_LIKE = {"Done", "Cancelled"}
 

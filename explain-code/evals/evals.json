@@ -1,0 +1,70 @@
+{
+  "skill_name": "explain-code",
+  "evals": [
+    {
+      "id": 1,
+      "name": "debounce-function-plain-ask",
+      "prompt": "how does this work?\n\nfunction debounce(fn, delay) {\n  let timer;\n  return function(...args) {\n    clearTimeout(timer);\n    timer = setTimeout(() => fn.apply(this, args), delay);\n  };\n}",
+      "expected_output": "Four-part explanation: mental model (analogy from physical life, not from code), diagram, walkthrough with concrete values, one specific gotcha with named cause. Ends with 'now you can read the rest'.",
+      "files": [],
+      "assertions": [
+        "Explanation opens with the reader's question or confusion, not a signature restatement",
+        "Mental model uses a physical analogy (not 'it's like a stream' or other code jargon)",
+        "Walkthrough uses real values (e.g. 'debounce(apiCall, 300)' with real ms timings), not foo/bar",
+        "Gotcha is specific (names debounce vs throttle or this-binding), not a generic 'watch out for async'",
+        "Ends with what the reader can now do or predict on their own"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "onboarding-unfamiliar-codebase",
+      "prompt": "I just joined this team and I'm looking at a Next.js middleware.ts file that does rate limiting with Redis. I've written React but never touched Next.js middleware or Redis. Walk me through it.\n\n```ts\nimport { Ratelimit } from '@upstash/ratelimit';\nimport { Redis } from '@upstash/redis';\n\nconst ratelimit = new Ratelimit({\n  redis: Redis.fromEnv(),\n  limiter: Ratelimit.slidingWindow(10, '10 s'),\n});\n\nexport async function middleware(request: Request) {\n  const ip = request.headers.get('x-forwarded-for') ?? '127.0.0.1';\n  const { success } = await ratelimit.limit(ip);\n  if (!success) return new Response('Too many requests', { status: 429 });\n}\n```",
+      "expected_output": "Starts with what middleware IS (where it runs in the request lifecycle), then mental model of sliding-window rate limiting as a physical object, then walkthrough with a real IP making real requests, then a gotcha specific to this code (e.g. x-forwarded-for spoofability or Redis cold start).",
+      "files": [],
+      "assertions": [
+        "Explains WHERE middleware runs in the lifecycle before explaining WHAT it does",
+        "Uses a physical analogy for sliding window (not 'like a queue' which is code jargon)",
+        "Walkthrough traces one real IP hitting the endpoint 11 times",
+        "Gotcha is specific to this code (x-forwarded-for trust, Redis failure mode, or window semantics)",
+        "Does not restate every TypeScript type as prose"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "i-dont-get-this-one-line",
+      "prompt": "I don't get this line. What is the `?? '127.0.0.1'` doing?\n\n```ts\nconst ip = request.headers.get('x-forwarded-for') ?? '127.0.0.1';\n```",
+      "expected_output": "Focused answer per the diagnostic matrix: mental model + walkthrough of the one line, nothing more. No four-part structure, no diagram.",
+      "files": [],
+      "assertions": [
+        "Answer is scoped to the one line asked about",
+        "Does not deliver the full four-part structure (would be overkill)",
+        "Explains nullish coalescing with a concrete 'what if the header is missing' case",
+        "Mentions the trade-off or implication (local dev vs production spoofing) only if space"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "explain-a-sql-query",
+      "prompt": "Teach me what this query is doing. I'm a data analyst, I know basic SQL but window functions still confuse me.\n\n```sql\nSELECT\n  user_id,\n  event_time,\n  event_name,\n  ROW_NUMBER() OVER (PARTITION BY user_id ORDER BY event_time) as event_num,\n  LAG(event_time) OVER (PARTITION BY user_id ORDER BY event_time) as prev_event_time\nFROM events\nWHERE event_time > CURRENT_DATE - INTERVAL '7 days'\n```",
+      "expected_output": "Mental model for window functions as a physical thing (e.g. a librarian sorting cards by name then numbering each person's stack), walkthrough with a real two-user example and concrete event rows, gotcha about PARTITION BY vs GROUP BY confusion or NULL-handling for the first row's LAG.",
+      "files": [],
+      "assertions": [
+        "Mental model treats window functions as a physical sorting/numbering operation, not 'like a loop'",
+        "Walkthrough shows actual rows before and after with real user IDs and timestamps",
+        "Gotcha names a real confusion (PARTITION BY ≠ GROUP BY, or NULL from LAG on the first row)",
+        "Does not define 'window function' from Wikipedia-style definition"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "non-triggering-near-miss",
+      "prompt": "Can you add a comment explaining each line of this function?\n\n```js\nfunction fizzbuzz(n) {\n  for (let i = 1; i <= n; i++) {\n    if (i % 15 === 0) console.log('fizzbuzz');\n    else if (i % 3 === 0) console.log('fizz');\n    else if (i % 5 === 0) console.log('buzz');\n    else console.log(i);\n  }\n}\n```",
+      "expected_output": "This SHOULD NOT trigger explain-code; the user wants inline comments, not an explanation of how it works. The skill should recognize this and either not activate, or if it does, produce inline comments rather than the four-part structure.",
+      "files": [],
+      "assertions": [
+        "Does not produce the four-part structure (mental model + diagram + walkthrough + gotcha) for a simple commenting task",
+        "If anything, delivers inline comments as requested"
+      ]
+    }
+  ]
+}

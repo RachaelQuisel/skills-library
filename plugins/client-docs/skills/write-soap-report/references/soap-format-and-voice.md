@@ -54,13 +54,13 @@ The build script renders this dict. Blocks are rendered in order. Block types:
 
 ```python
 CONTENT = {
-    "client": "The HOPE for Health (Teri Hall)",   # subtitle on title page
+    "client": "The HOPE for Health (Chris Nolan Example)",   # subtitle on title page
     "date": "March 16, 2026",
     "duration": "3 hours (async)",
     "consultant": "Rachael Quisel, XRAY",
     # Required on every SOAP. Subject order: Client | Rachael Quisel | Company | Date | Project (1-2 words).
     # description <=255 chars (Word Description field cap; builder truncates as a safety net).
-    "subject": "Teri Hall | Rachael Quisel | The HOPE for Health | March 16, 2026 | Partner Portal",
+    "subject": "Chris Nolan Example | Rachael Quisel | The HOPE for Health | March 16, 2026 | Partner Portal",
     "description": "Async session: schema audit, program-flow doc correction, and XRAY branding.",
     "sections": [
         {"heading": "Subjective", "blocks": [

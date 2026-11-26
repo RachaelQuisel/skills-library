@@ -4,7 +4,7 @@
     "xray": {"name": "XRAY Office Hours", "format": "virtual", "when": "2nd Friday, 9-10 AM PT",
              "location": "Virtual, join from anywhere", "join_link": null, "preset": "xray"},
     "kiva": {"name": "Kiva Cowork", "format": "in person", "when": "last Friday, 2:30-3:30 PM PT (Nov/Dec 2026 moved a week early for the holidays)",
-             "location": "Kiva Cowork, 1117 State St, Santa Barbara, upstairs conference room", "preset": "kiva"}
+             "location": "Kiva Cowork, 123 Main St, Santa Barbara, upstairs conference room", "preset": "kiva"}
   },
   "topics": {
     "loop-audit": {

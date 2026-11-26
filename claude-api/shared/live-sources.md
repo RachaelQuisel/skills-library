@@ -17,6 +17,9 @@ This file contains WebFetch URLs for fetching current information from platform.
 | --------------- | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
 | Models Overview | `https://platform.claude.com/docs/en/about-claude/models/overview.md`        | "Extract current model IDs, context windows, and pricing for all Claude models" |
 | Migration Guide | `https://platform.claude.com/docs/en/about-claude/models/migration-guide.md` | "Extract breaking changes, deprecated parameters, and per-model migration steps when moving to a newer Claude model" |
+| Model deprecations | `https://platform.claude.com/docs/en/about-claude/model-deprecations` | Verify lifecycle status, retirement dates, and exact recommended replacement IDs |
+| Claude Opus 5.5 migration | `https://platform.claude.com/docs/en/models/opus-5-5/migration-guide` | Check request changes for the source model, including Claude Opus 4.5 |
+| Claude Sonnet 5.5 migration | `https://platform.claude.com/docs/en/models/sonnet-5-5/migration-guide` | Check request changes for the source model, including Claude Sonnet 4.5 |
 | Introducing Claude Fable 5 | `https://platform.claude.com/docs/en/about-claude/models/introducing-claude-fable-5.md` | "Extract capabilities, API changes, and availability stages for Claude Fable 5 and Claude Mythos 5" |
 | Pricing         | `https://platform.claude.com/docs/en/pricing.md`                             | "Extract current pricing per million tokens for input and output"               |
 | Cost Optimization | `https://platform.claude.com/docs/en/about-claude/models/optimizing-for-cost-and-intelligence.md` | "Extract measured cost levers, cache and batch savings, effort and model cost-per-task comparisons, budget controls, and multi-model guidance" |

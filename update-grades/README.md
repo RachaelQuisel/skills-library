@@ -1,6 +1,6 @@
-# Refresh Coding Clarified grades from Blackboard into Airtable when the operator requests the update
+# Refresh Example Nonprofit grades from Blackboard into Airtable when the operator requests the update
 
-This skill helps you refresh Coding Clarified grades from Blackboard into Airtable when the operator requests the update.
+This skill helps you refresh Example Nonprofit grades from Blackboard into Airtable when the operator requests the update.
 
 ## What to share
 

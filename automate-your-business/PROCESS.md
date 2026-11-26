@@ -140,7 +140,7 @@ What it does to the template:
 | Series | When | Time | Where | Flyer time text |
 |---|---|---|---|---|
 | XRAY Office Hours (virtual) | 2nd Friday | 9–10 AM PT | Virtual, join from anywhere | "9 AM PT" |
-| Kiva Cowork (in person) | Last Friday. **Nov and Dec 2026 moved earlier, to Nov 20 and Dec 18** (holidays) | **2:30–3:30 PM PT** (1 hour; changed from 2:30–4:30 on Oct 7) | 1117 State St, Santa Barbara, upstairs conference room | "2:30 PM" |
+| Kiva Cowork (in person) | Last Friday. **Nov and Dec 2026 moved earlier, to Nov 20 and Dec 18** (holidays) | **2:30–3:30 PM PT** (1 hour; changed from 2:30–4:30 on Oct 7) | 123 Main St, Santa Barbara, upstairs conference room | "2:30 PM" |
 
 2026 topics are the same order for both series: Loop Audit (Oct), Colleague Audit (Nov), Proof Audit (Dec).
 Calendar: the Kiva series is `[calendar id]`; it was shortened to 2:30–3:30 on Oct 7.

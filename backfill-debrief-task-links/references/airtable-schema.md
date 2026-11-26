@@ -44,7 +44,7 @@ Never omit `--profile` during discovery, retries, or verification.
 ### Upstream repair base
 
 - Name: `Projects & Tasks at XRAY`
-- ID: `appQAdxI2hDNJj1g5`
+- ID: `appExample0000004`
 - Credential: `tasks-xray-tech`
 - Purpose: find mismatches, prove client ownership, update `Debrief Tasks`, and
   verify every update
@@ -56,7 +56,7 @@ Never omit `--profile` during discovery, retries, or verification.
   client's meeting page
 - Resolution: search accessible bases for exactly one name containing XRAY and
   the canonical client name or approved abbreviation, in either order
-- Known client terms: `Coding Clarified`; `Guardians of Love` or `GOL`; `CCRES`
+- Known client terms: `Example Nonprofit`; `Example Agency` or `EA`; `Example Client`
 - Do not hard-code the client base ID. Report the exact live name and ID when one
   base resolves.
 - Do not update a client project-management base; its task data is a viewing layer.
@@ -67,15 +67,15 @@ Never omit `--profile` during discovery, retries, or verification.
 
 | Object | Expected name | ID | Required type or target |
 | --- | --- | --- | --- |
-| Base | Projects & Tasks at XRAY | `appQAdxI2hDNJj1g5` | Exact name/ID pair |
-| Table | Tasks | `tblvlJq7I2GvIQEyP` | n/a |
-| Table | Debrief Recordings | `tblYLGhD3Ii7EkGZY` | n/a |
-| Table | XRay's Clients | `tblVS1aUCNeqtVq5U` | n/a |
-| Tasks field | Debrief Recordings | `fldmzmZy2D1yh5B7p` | `multipleRecordLinks` to `tblYLGhD3Ii7EkGZY`; inverse `fld7GZxz1qvjcm8vq` |
-| Tasks field | Debrief Tasks | `fldXbCPMQBosF9Vre` | `multipleRecordLinks` to `tblYLGhD3Ii7EkGZY`; inverse `fld323h3XdO5zI941` |
-| Debrief reciprocal | Source-task backlink | `fld7GZxz1qvjcm8vq` | `multipleRecordLinks` to `tblvlJq7I2GvIQEyP`; inverse `fldmzmZy2D1yh5B7p` |
-| Debrief reciprocal | Meeting-page task backlink | `fld323h3XdO5zI941` | `multipleRecordLinks` to `tblvlJq7I2GvIQEyP`; inverse `fldXbCPMQBosF9Vre` |
-| Debrief field | XRay's Client | `fld9YZme9QfpVSYgm` | `multipleRecordLinks` to `tblVS1aUCNeqtVq5U`; require one value at runtime |
+| Base | Projects & Tasks at XRAY | `appExample0000004` | Exact name/ID pair |
+| Table | Tasks | `tblExample0000010` | n/a |
+| Table | Debrief Recordings | `tblExample0000011` | n/a |
+| Table | XRay's Clients | `tblExample0000012` | n/a |
+| Tasks field | Debrief Recordings | `fldExample0000013` | `multipleRecordLinks` to `tblExample0000011`; inverse `fldExample0000014` |
+| Tasks field | Debrief Tasks | `fldExample0000015` | `multipleRecordLinks` to `tblExample0000011`; inverse `fldExample0000016` |
+| Debrief reciprocal | Source-task backlink | `fldExample0000014` | `multipleRecordLinks` to `tblExample0000010`; inverse `fldExample0000013` |
+| Debrief reciprocal | Meeting-page task backlink | `fldExample0000016` | `multipleRecordLinks` to `tblExample0000010`; inverse `fldExample0000015` |
+| Debrief field | XRay's Client | `fldExample0000017` | `multipleRecordLinks` to `tblExample0000012`; require one value at runtime |
 
 ## Mismatch query
 
@@ -85,8 +85,8 @@ Request both Tasks link fields and page through all results:
 {
   "operator": "and",
   "operands": [
-    {"operator": "isNotEmpty", "operands": ["fldmzmZy2D1yh5B7p"]},
-    {"operator": "isEmpty", "operands": ["fldXbCPMQBosF9Vre"]}
+    {"operator": "isNotEmpty", "operands": ["fldExample0000013"]},
+    {"operator": "isEmpty", "operands": ["fldExample0000015"]}
   ]
 }
 ```
@@ -96,12 +96,12 @@ evidence for people and must not determine scope.
 
 ## Allowed mutation boundary
 
-- Base: `appQAdxI2hDNJj1g5`
-- Table: `tblvlJq7I2GvIQEyP`
-- Field: `fldXbCPMQBosF9Vre`
+- Base: `appExample0000004`
+- Table: `tblExample0000010`
+- Field: `fldExample0000015`
 - Records: only task IDs in the revalidated, client-scoped manifest
 - Value: exactly the unchanged source meeting ID set from
-  `fldmzmZy2D1yh5B7p`
+  `fldExample0000013`
 
 Discover current tool names and access classifications before use. Treat
 `update-records-for-table` as destructive. Airtable replaces the linked-record

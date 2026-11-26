@@ -9,7 +9,7 @@
     "defaultPrompt": null
   },
   "name": "client-docs",
-  "version": "1.4.6",
+  "version": "1.4.7",
   "description": "Write the five-signals PRD, diagram, and publish the canonical documents for an XRAY client build (vision and scope, user stories, interface prompts, decisions, changelog, a workflow diagram web page, and the push to the client's GitHub repo), plus the documentation around the build: how-it-works and education docs, shareable artifacts, KPI reports, business cases, SOAP reports, branded Google Docs, the file naming convention, the spec-driven build sequence, workflow evaluation, and the execute audit log check, task fetching from the XRAY task hub, and meeting transcript review.",
   "author": {
     "name": "Rachael Quisel"

@@ -139,6 +139,8 @@ Fix by moving the dynamic piece after the last breakpoint, making it determinist
 
 **The minimum is not monotonic across generations** - 512 on the newest models, but 4096 on Opus 4.6/4.5 and Haiku 4.5. A 3K-token prompt caches on Claude Opus 5, Opus 4.8, and Sonnet 4.5, and silently won't on Opus 4.6 or Haiku 4.5. Claude Opus 5 halves the Opus 4.8 minimum (1024 -> 512), so prompts previously too short to cache now create entries with no code change.
 
+The 4.5 and older rows document model-specific behavior, not model availability. See the [model catalog](models.md) for deprecated and retired Claude API IDs.
+
 These minimums apply on **every** platform where the model is available - the old Amazon Bedrock override for Claude Fable 5.1 was removed, and no per-platform exception remains.
 
 **Economics:** Cache reads cost ~0.1× base input price - **0.025× on Claude Fable 5.1** ($0.25/MTok; whether Claude Mythos 5.1 shares that rate is open at launch), which moves every break-even below proportionally. Cache writes cost **1.25× for 5-minute TTL, 2× for 1-hour TTL**. Break-even depends on TTL: with 5-minute TTL, two requests break even (1.25× + 0.1× = 1.35× vs 2× uncached); with 1-hour TTL, you need at least three requests (2× + 0.2× = 2.2× vs 3× uncached). The 1-hour TTL keeps entries alive across gaps in bursty traffic, but the doubled write cost means it needs more reads to pay off.

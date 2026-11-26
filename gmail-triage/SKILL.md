@@ -1,6 +1,6 @@
 ---
 name: gmail-triage
-version: 1.0.1
+version: 1.0.2
 description: Triage Rachael's Gmail inbox — read unread threads, classify each into archive / draft / needs-you / sponsorship, apply the two-tier client-and-status label taxonomy, draft replies in her voice, and log every action to an append-only journal for undo and correction learning. Use when Rachael says "triage my inbox", "process my email", "clean up Gmail", "draft replies to the unread ones", "what needs me today", or invokes /gmail-triage. Runs on top of the loaded mcp__claude_ai_Gmail__* tools.
 ---
 
@@ -41,9 +41,9 @@ The Gmail MCP does not offer send, delete, unsubscribe, block, or report-spam op
 
 `needs-you` is scarce attention. Reserve it for people who pay Rachael or manage her. This ordering overrides every alias-routing default below.
 
-- **HIGH priority (`needs-you`-eligible)**: paying clients (Janine at CC, Teri at THFH, Jessica at GoL), her XRAY colleagues (Mark, Dylan, Tom, Myron, contact@xray.tech), and active sales / prospect conversations. Reply to superiors and clients — people who pay Rachael — before anyone else.
+- **HIGH priority (`needs-you`-eligible)**: paying clients (Janine at CC, Teri at THFH, Jessica at EA), her XRAY colleagues (Mark, Dylan, Tom, Myron, person3@example.com), and active sales / prospect conversations. Reply to superiors and clients — people who pay Rachael — before anyone else.
 - **LOW priority (never `needs-you`)**: vendors and contractors Rachael pays — food planners (e.g., Hummingbird), cleaners, La Maison service providers, subscription vendors, anyone she is the customer of. If a reply is inferable and non-committal, `draft`. Otherwise `archive`. Rachael can respond or not; she does not need a reminder to reply to someone she pays.
-- **Zero attention (auto-archive)**: mail Rachael sent to herself between her own accounts (rachael.quisel@gmail.com ↔ any `@xray.tech` address of hers, and back). She already knows about her own reminders. Do not flag, do not draft, do not report as `needs-you` — archive with the `triaged` marker and move on.
+- **Zero attention (auto-archive)**: mail Rachael sent to herself between her own accounts (person4@example.com ↔ any `@xray.tech` address of hers, and back). She already knows about her own reminders. Do not flag, do not draft, do not report as `needs-you` — archive with the `triaged` marker and move on.
 
 Phase 8 report ordering follows this: clients and superiors lead the `Needs you today` list. Never lead the report with a vendor Rachael pays or a self-sent thread.
 
@@ -58,10 +58,10 @@ Only these labels. Do not create category labels for newsletters, receipts, prom
 - `triaged` (marker) — stamped on every processed message so re-runs skip it. **This is what makes the pipeline idempotent.**
 
 **Client labels** (routing, applied alongside status):
-- `client/xray` — XRAY internal, Mark, Dylan, Tom, Myron, contact@xray.tech, `@xray.tech`
-- `client/thfh` — Teri Hall, `@thehope*`, HOPE for Health
-- `client/cc` — Janine Mothershed, `@codingclarified.org`, Patrick Paulson, Sonia Byers, Courtnee Stone (AAPC)
-- `client/gol` — Jessica Peoples, Lesley, Leilani, Oswaldo, `@guardiansoflove.org`, DCFS
+- `client/xray` — XRAY internal, Mark, Dylan, Tom, Myron, person3@example.com, `@xray.tech`
+- `client/thfh` — Chris Nolan Example, `@thehope*`, HOPE for Health
+- `client/cc` — Dana Whitfield, `@examplenonprofit.org`, Reese Calder, Sonia Byers, Courtnee Stone (AAPC)
+- `client/gol` — Pat Okafor, Lesley, Leilani, Oswaldo, `@exampleagency.org`, DCFS
 - `personal/la-maison` — La Maison-related (Turno, guest inquiries, Google Apps Script auto-emails)
 - `personal/family` — family + medical + financial
 
@@ -73,11 +73,11 @@ On sender-domain or address match, apply the client label AND the tier hint. Thi
 
 | Sender pattern | Client label | Default tier |
 |---|---|---|
-| Self-sent: `from:rachael.quisel@gmail.com to:*@xray.tech` or reverse (Rachael writing to her own accounts) | (none) | **archive — never `needs-you`, never draft, never flag** |
-| `@xray.tech`, `contact@xray.tech`, mark/dylan/tom/myron (from someone OTHER than Rachael) | `client/xray` | needs-you if @mentions Rachael or asks a question; else draft-ready |
-| `janine*`, `@codingclarified.org`, patrick.paulson@, sonia@, courtnee@ | `client/cc` | needs-you (Janine cadence is Wed–Fri; batch drafts, don't send till window) |
+| Self-sent: `from:person4@example.com to:*@xray.tech` or reverse (Rachael writing to her own accounts) | (none) | **archive — never `needs-you`, never draft, never flag** |
+| `@xray.tech`, `person3@example.com`, mark/dylan/tom/myron (from someone OTHER than Rachael) | `client/xray` | needs-you if @mentions Rachael or asks a question; else draft-ready |
+| `janine*`, `@examplenonprofit.org`, patrick.paulson@, sonia@, courtnee@ | `client/cc` | needs-you (Janine cadence is Wed–Fri; batch drafts, don't send till window) |
 | `terih@*`, teri@thehope*, hope for health | `client/thfh` | needs-you (Teri is solo, no board) |
-| `jessica@guardiansoflove.org`, `lesley*@`, oswaldo@, dcfs@ | `client/gol` | needs-you |
+| `person5@example.com`, `lesley*@`, oswaldo@, dcfs@ | `client/gol` | needs-you |
 | Vendors Rachael pays: Hummingbird (food planning), cleaners, La Maison service providers, subscription vendors, anyone she is the customer of | (none) | draft if reply inferable and non-committal, else archive — **never `needs-you`** |
 | `turno.com`, la-maison guest platforms, GAS auto-notifications | `personal/la-maison` | archive if auto-notification; needs-you if guest question |
 | known-family, medical, bank/financial (schwab, chase, etc.) | `personal/family` | needs-you |
@@ -112,7 +112,7 @@ Record starting inbox count.
 
 Before spending tokens on a body read, apply the alias-routing table above. Two short-circuits run first:
 
-1. **Self-sent short-circuit**: if `from:` is one of Rachael's own addresses (rachael.quisel@gmail.com or any `@xray.tech` address of hers) AND `to:` is another of her own addresses, mark for archive-with-triaged-label immediately. She already knows about her own reminders. Never draft, never `needs-you`, never include in the report as an action item.
+1. **Self-sent short-circuit**: if `from:` is one of Rachael's own addresses (person4@example.com or any `@xray.tech` address of hers) AND `to:` is another of her own addresses, mark for archive-with-triaged-label immediately. She already knows about her own reminders. Never draft, never `needs-you`, never include in the report as an action item.
 2. **Vendor-she-pays short-circuit**: if the sender matches the "Vendors Rachael pays" row (Hummingbird, cleaners, La Maison service providers, subscription vendors), tag and continue to Phase 3, but Phase 3's disposition for this sender is restricted to `draft` or `archive` — never `needs-you`.
 
 Then, for remaining threads: if the sender pattern deterministically maps to `archive`, mark for archive-with-triaged-label and move on. If it maps to a client label + tier, tag and continue to Phase 3 for body classification.
@@ -151,7 +151,7 @@ For archive-disposition threads, remove `INBOX` via `unlabel_thread` (label ID `
 Append one line per processed thread to `~/.claude/data/gmail-triage/actions.jsonl`:
 
 ```json
-{"ts":"2026-07-30T14:22:11Z","thread_id":"18f...","sender":"janine@codingclarified.org","subject":"Wed check-in","disposition":"needs-you","client_label":"client/cc","reason":"Blocked on Rachael's WIOA-regions Q reply"}
+{"ts":"2026-07-30T14:22:11Z","thread_id":"18f...","sender":"person6@example.com","subject":"Wed check-in","disposition":"needs-you","client_label":"client/cc","reason":"Blocked on Rachael's WIOA-regions Q reply"}
 ```
 
 For drafts:
@@ -205,7 +205,7 @@ Extra rules:
 - If nothing needs Rachael today: say exactly `Nothing needs you today. I hid N low-value emails.` and stop.
 - Do NOT include: inbox before-and-after counts, label-creation counts, "N corrections applied", "N threads processed". Log-flavor. Skip it.
 - Only mention creating a label if a label was actually created (real run, not dry-run).
-- If a thread involves a paying client, name the client in plain English: "Janine at Coding Clarified" — not "client/cc" or "CC".
+- If a thread involves a paying client, name the client in plain English: "Janine at Example Nonprofit" — not "client/cc" or "CC".
 - If a thread came from Rachael herself (self-sent between her accounts): do NOT put it in the report at all. She already knows about it.
 - If a vendor Rachael pays wrote her (Hummingbird, cleaners, La Maison): only include if there's an actual draft written. Never in the "Reply today" section.
 
@@ -238,7 +238,7 @@ If the taxonomy stops fitting (e.g., too many `triage/needs-you` items to scan),
 - Does not create Gmail filters (no MCP endpoint yet). If a pattern is repeat-worthy, propose the filter in the report and let Rachael create it manually.
 - Does not read attachments deeply — flags their presence and includes them in the summary, but does not download or parse.
 - Does not follow links in emails.
-- Does not batch across accounts. This is Rachael's personal Gmail (rachael.quisel@gmail.com); XRAY / client work Gmail is separate scope.
+- Does not batch across accounts. This is Rachael's personal Gmail (person4@example.com); XRAY / client work Gmail is separate scope.
 
 ## Provenance
 

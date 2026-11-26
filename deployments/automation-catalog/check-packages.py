@@ -55,7 +55,7 @@ for entry in entries:
         if not file.is_file() or file.suffix not in ('.md', '.json', '.yaml', '.py'):
             continue
         body = file.read_text()
-        for private_id in ('C0C7XQK3TTR', 'T0AT819U2UQ', 'link_6acb11', '6acb928d16bc'):
+        for private_id in ('C0EXAMPLE01', 'T0AT819U2UQ', 'link_6acb11', '6acb928d16bc'):
             assert private_id not in body, f'Private deployment setting in {file}'
     print(f"{manifest['displayName']}: package paths, metadata, icon and private-settings boundary passed")
 print('Claude strict validation and installation remain unverified.')

@@ -18,7 +18,7 @@ For an automation with a single trigger but multiple decision points, gates, or 
 - `~/Claude-Work/CLIENTS/AY Media_Jay_Danzy/Automations/QB Downstream/HOW-IT-WORKS-contract-approved-on-qb-webhook.md`
 - `~/Claude-Work/CLIENTS/AY Media_Jay_Danzy/Automations/Editorial Story/HOW-IT-WORKS-story-timeline-start-from-assignment.md`
 - `~/Claude-Work/CLIENTS/AY Media_Jay_Danzy/Automations/Editorial Story/HOW-IT-WORKS-story-yellow-flag-two-days-out.md`
-- `~/Claude-Work/CLIENTS/Coding_Clarified_Janine_Mothershed/Automations/csv-export-bb-genius-link/HOW-IT-WORKS-csv-bb-link.md`
+- `~/Claude-Work/CLIENTS/Coding_Clarified_Janine_Whitfield/Automations/csv-export-bb-genius-link/HOW-IT-WORKS-csv-bb-link.md`
 
 ## Long and complex (11+ sections, 200+ lines)
 

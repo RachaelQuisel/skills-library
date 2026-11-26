@@ -16,7 +16,7 @@ Date: 2026-04-22
 | `POST-RUN-ANALYSIS.md` | This file |
 
 XRAY task created, accepted, and linked to Internal Operations:
-[rec8uk0HsB8o7A0fm](https://airtable.com/appQAdxI2hDNJj1g5/pag9JHVBBRBOfi8lS/rec8uk0HsB8o7A0fm)
+[recExample0000041](https://airtable.com/appExample0000004/pagExample0000042/recExample0000041)
 
 ## End-to-end result
 

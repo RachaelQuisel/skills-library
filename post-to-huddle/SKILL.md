@@ -1,6 +1,6 @@
 ---
 name: post-to-huddle
-version: 1.0.1
+version: 1.0.2
 description: >
   Post a message to the correct XRAY client huddle channel in Slack. Use this skill any time a summary, report, or update needs to be shared in a client's Slack huddle channel. Trigger on: "post to Slack", "send to the huddle", "share this in Slack", "post the summary", "send to huddle channel", or any request to deliver content to a client's Slack channel. Always show the message and confirm before posting. No tags.
 tags:
@@ -30,12 +30,12 @@ Post a message to the correct client huddle channel in Slack. Always confirm bef
 
 | Client            | Channel                    | Channel ID   |
 |-------------------|----------------------------|--------------|
-| Coding Clarified  | #huddle_coding-clarified   | C0AGHQ4E7D5  |
-| AY Media          | #huddle_aymedia            | C09S4B9ANR2  |
-| Guardians of Love | #huddle_guardians_of_love  | C0B0BPCRVL0  |
-| CCRES             | #huddle_ccres              | C09CZ718GFJ  |
+| Example Nonprofit  | #huddle_coding-clarified   | C0EXAMPLE02  |
+| AY Media          | #huddle_aymedia            | C0EXAMPLE03  |
+| Example Agency | #huddle_guardians_of_love  | C0EXAMPLE04  |
+| Example Client             | #huddle_ccres              | C0EXAMPLE05  |
 
-⚠️ The hyphen in `huddle_coding-clarified` is intentional — do not change it to an underscore. Note also that GoL's channel uses underscores throughout (`huddle_guardians_of_love`) — not hyphens.
+⚠️ The hyphen in `huddle_coding-clarified` is intentional — do not change it to an underscore. Note also that EA's channel uses underscores throughout (`huddle_guardians_of_love`) — not hyphens.
 
 ---
 

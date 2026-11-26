@@ -65,7 +65,7 @@ The requested interface/source, focused verification evidence and a short handof
 
 - One discoverable skill, with guidance loaded only for the current part of the work.
 - Design/data, reliable-interaction and verification/return references.
-- A GoL case study separating transferable methods from client-specific rules.
+- A EA case study separating transferable methods from client-specific rules.
 - A read-only Python helper for exact source/readback comparison.
 - [Naming and listing copy](LISTING.md), with the recommended name and alternatives.
 

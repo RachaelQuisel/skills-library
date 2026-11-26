@@ -3,13 +3,13 @@
   "evals": [
     {
       "id": 1,
-      "prompt": "Did the AYMG v17 contract push work for UAMS recQWdfjq9ILIY5XO? I just ran it through. Walk me through what fired and where it might have broken — pull current state, diff against expected outcomes, give me a verdict.",
-      "expected_output": "Triggers workflow-eval. Phase 1 inventory reads the v17 push script + existing audit output for appSwNAISgS1IuLat. Phase 2 proposes cases including UAMS happy path, no-Advertiser red path, item-ref-202 error path, and idempotency. Phase 3 instructs user to snapshot via eval_helper.py before/after the trigger. Phase 4 produces POST_RUN_ANALYSIS.md with PASS / FAIL / UNVERIFIED per case + diff per observer.",
+      "prompt": "Did the AYMG v17 contract push work for UAMS recExample0000152? I just ran it through. Walk me through what fired and where it might have broken — pull current state, diff against expected outcomes, give me a verdict.",
+      "expected_output": "Triggers workflow-eval. Phase 1 inventory reads the v17 push script + existing audit output for appExample0000153. Phase 2 proposes cases including UAMS happy path, no-Advertiser red path, item-ref-202 error path, and idempotency. Phase 3 instructs user to snapshot via eval_helper.py before/after the trigger. Phase 4 produces POST_RUN_ANALYSIS.md with PASS / FAIL / UNVERIFIED per case + diff per observer.",
       "files": []
     },
     {
       "id": 2,
-      "prompt": "Regression-test the GoL applicant-to-training FK match script before I --apply. 27 staged links from today's dry-run, I want to know they all land correctly without breaking the existing applicant records that already have training history.",
+      "prompt": "Regression-test the EA applicant-to-training FK match script before I --apply. 27 staged links from today's dry-run, I want to know they all land correctly without breaking the existing applicant records that already have training history.",
       "expected_output": "Triggers workflow-eval. Phase 1 reads link_clean_matches_2026_06_05.py. Phase 2 proposes happy-path case (27 matches link to correct Applicants), idempotency case (re-running --apply is a no-op), reverse case (applicants outside the 27 are untouched), and edge case (any applicant with empty (first, last) is not matched). Phase 3 directs snapshot of Applicants and Training Tracker tables. Phase 4 produces verdict.",
       "files": []
     },

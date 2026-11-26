@@ -1,6 +1,6 @@
 ---
 name: markdown-to-xr-gdoc
-version: 1.4.6
+version: 1.4.7
 description: Converts Markdown files into branded HTML documents for XRay.Tech and sends them to a Google Doc conversion endpoint. Use this skill when the user wants to transform a project document (e.g., vision and scope, project plan) into a professional, branded HTML format aligned with XRay.Tech's 2026 design system. It handles Markdown-to-HTML conversion, rendering Mermaid diagrams with local branding, Base64 image embedding, and automated delivery to a Pipedream-hosted conversion service.
 ---
 

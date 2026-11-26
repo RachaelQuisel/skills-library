@@ -1,6 +1,6 @@
 ---
 name: client-doc-decisions
-version: 1.4.6
+version: 1.4.7
 description: Append a lightweight ADR entry (or seed the file) to the canonical `decisions.md` for a client build in the client's XRAY-INC repo. Append-only; never rewrites history. Interview-driven, ~3 questions per entry. Use when Rachael says "log this decision", "add to decisions.md", "we decided X", "we picked X over Y", "settled on X", "just decided", "record this ADR", "capture the [X] choice", "log the [X] call", or when a session lands a design/scope/tech decision worth preserving. Produces a dated ADR entry a client-side reader can follow.
 ---
 

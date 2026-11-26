@@ -10,4 +10,4 @@ Airtable Interface Builder is an independent plugin. It is not affiliated with, 
 
 The documentation refers to Claude Code, Codex, GitHub and Airtable capabilities. Those references do not imply endorsement or include those products' software. Their services, SDKs and connected tools are governed by their own terms and licenses.
 
-The GoL case study describes a reusable interface-refinement approach and project-specific choices. It does not distribute the client's source code, live record identifiers, private family screenshots, attachment URLs or credentials.
+The EA case study describes a reusable interface-refinement approach and project-specific choices. It does not distribute the client's source code, live record identifiers, private family screenshots, attachment URLs or credentials.

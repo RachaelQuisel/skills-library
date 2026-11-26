@@ -42,7 +42,7 @@ Light, quiet, and easy to read on a school laptop: one sans-serif font, white ca
 
 ### Prompt (as pasted into Canvas)
 ```
-Build an app called "Weekly Tutor Hours" with two tabs: This Week and Sites. Use the existing base appEXAMPLE00000001 with tables Tutors (tblEXAMPLETUTORS1), Sessions (tblEXAMPLESESSN01), and Sites (tblEXAMPLESITES01).
+Build an app called "Weekly Tutor Hours" with two tabs: This Week and Sites. Use the existing base appEXAMPLE00000001 with tables Tutors (tblExample0000018), Sessions (tblExample0000019), and Sites (tblExample0000020).
 
 This Week shows one card per active tutor with name, school site, hours logged since Monday, and the "Reminder sent on" date; group cards into "Has hours" and "No hours yet"; sort "No hours yet" by site; add a filter by site; show tutors with no site linked in a separate "Needs a site" group with an "Assign site" button that opens a site picker.
 
@@ -55,7 +55,7 @@ Keep the app read-only except the "Assign site" action. Show a loading state whi
 
 ### Iteration notes
 - 2026-09-18: First run grouped by session instead of tutor. Changed the This Week line to "one card per active tutor."
-- 2026-09-19: Canvas error "Field 'Reminder sent on' not found in tblEXAMPLETUTORS1" pasted back in after adding the field; the second run built the board.
+- 2026-09-19: Canvas error "Field 'Reminder sent on' not found in tblExample0000018" pasted back in after adding the field; the second run built the board.
 
 ### Known limits and scope calls
 Canvas couldn't limit principals to their own site inside the app, so principals open the Sites tab through a separate interface page filtered by the logged-in user's site.

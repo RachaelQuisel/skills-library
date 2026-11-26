@@ -87,20 +87,20 @@ If `expected_outcomes` is empty AND `expected_error` is missing, refuse to save 
   "name": "01-uams-happy-path",
   "description": "UAMS contract has a linked Advertiser with QB Customer ID populated. v17 should walk the Advertiser link, find the customer, push the invoice, and stamp fldLastQbPush with SUCCESS.",
   "input": {
-    "record_id": "recQWdfjq9ILIY5XO",
+    "record_id": "recExample0000152",
     "trigger_action": "check fldPushTrigger checkbox",
     "notes": "User PATCHes fldPushTrigger=true via Airtable UI or API"
   },
   "expected_outcomes": [
     {
       "observer_id": "contract-last-push",
-      "what_to_check": "field fldLastQbPush on recQWdfjq9ILIY5XO",
+      "what_to_check": "field fldLastQbPush on recExample0000152",
       "match_rule": "contains",
       "match_value": "SUCCESS"
     },
     {
       "observer_id": "contract-last-push",
-      "what_to_check": "field fldQbTransactionId on recQWdfjq9ILIY5XO",
+      "what_to_check": "field fldQbTransactionId on recExample0000152",
       "match_rule": "present"
     },
     {
@@ -147,7 +147,7 @@ If `expected_outcomes` is empty AND `expected_error` is missing, refuse to save 
   "name": "03-idempotency",
   "description": "Run the same happy-path trigger twice. Second run should be a no-op (fldLastQbPush already SUCCESS, fldQbTransactionId already populated).",
   "input": {
-    "record_id": "recQWdfjq9ILIY5XO",
+    "record_id": "recExample0000152",
     "trigger_action": "check fldPushTrigger checkbox; uncheck; check again"
   },
   "expected_outcomes": [

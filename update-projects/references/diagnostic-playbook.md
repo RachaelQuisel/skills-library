@@ -12,13 +12,13 @@ The symptom is always one of:
 - "I see no outcomes / projects / tasks in `[client base URL]`"
 - "Just create the records"
 
-The user thinks her planning base is the system of record. It is not. It is a synced replica of `appQAdxI2hDNJj1g5`.
+The user thinks her planning base is the system of record. It is not. It is a synced replica of `appExample0000004`.
 
 ## Step 1: Identify which base she's looking at vs. which base writes go to
 
-Rachael will send a URL like `https://airtable.com/appQ2DVUVGLq7mFg9/...`. That `appXXX` segment is the per-client planning base. Tables prefixed with `⚡️` in that base are externally synced and read-only.
+Rachael will send a URL like `https://airtable.com/appExample0000217/...`. That `appXXX` segment is the per-client planning base. Tables prefixed with `⚡️` in that base are externally synced and read-only.
 
-The actual write target is `appQAdxI2hDNJj1g5` ("Projects & Tasks at XRAY"). Always.
+The actual write target is `appExample0000004` ("Projects & Tasks at XRAY"). Always.
 
 ## Step 2: Confirm the routes are attached
 
@@ -31,11 +31,11 @@ If either is missing, stop and surface — don't fall back to the deleted PAT.
 
 ```
 mcp__airtable__get_table_schema
-  baseId: appQAdxI2hDNJj1g5
+  baseId: appExample0000004
   tables: [
-    {tableId: "tblOaFlYpPXlHrT2c"},  # Projects
-    {tableId: "tblyZxi1nYrGICXrf"},  # Objectives
-    {tableId: "tblvlJq7I2GvIQEyP"}   # Tasks
+    {tableId: "tblExample0000023"},  # Projects
+    {tableId: "tblExample0000162"},  # Objectives
+    {tableId: "tblExample0000010"}   # Tasks
   ]
 ```
 
@@ -54,8 +54,8 @@ Filter the response client-side by exact name. If not present:
 
 ```
 mcp__airtable__create_records_for_table
-  baseId: appQAdxI2hDNJj1g5
-  tableId: tblVS1aUCNeqtVq5U
+  baseId: appExample0000004
+  tableId: tblExample0000012
   records: [{fields: {Name: "[Client]", Status: "Active", Phase: "Discovery"}}]
 ```
 
@@ -74,8 +74,8 @@ Returns up to 10 matches. Apply the SKILL.md workflow step 3 decision rule: exac
 
 ```
 mcp__airtable__create_records_for_table
-  baseId: appQAdxI2hDNJj1g5
-  tableId: tblOaFlYpPXlHrT2c
+  baseId: appExample0000004
+  tableId: tblExample0000023
   records: [ ... up to 50 project records ... ]
 ```
 
@@ -85,12 +85,12 @@ Use `Project Type: "Consulting Solution Sprints"`. Include `Origin Detail: "Clau
 
 ```
 mcp__airtable__create_records_for_table
-  baseId: appQAdxI2hDNJj1g5
-  tableId: tblyZxi1nYrGICXrf
+  baseId: appExample0000004
+  tableId: tblExample0000162
   records: [ ... up to 50 objective records, each linked to its project + client ... ]
 ```
 
-Set `Owner: {"id": "usr5vnH7D87XIP57C"}`. Same `Origin Detail` batch tag.
+Set `Owner: {"id": "usrExample0000179"}`. Same `Origin Detail` batch tag.
 
 ## Step 8: Link existing tasks (if any are already in the source)
 
@@ -104,8 +104,8 @@ PATCH https://tasks.xray.tech/api/tasks/<task_id>
 
 # 2. Outcomes link via MCP (tasks.xray.tech PATCH does not accept Outcomes)
 mcp__airtable__update_records_for_table
-  baseId: appQAdxI2hDNJj1g5
-  tableId: tblvlJq7I2GvIQEyP
+  baseId: appExample0000004
+  tableId: tblExample0000010
   records: [{id: "<task_id>", fields: {Outcomes: ["<objective_id>"]}}]
 ```
 
@@ -129,7 +129,7 @@ Wait 30-60 seconds. Then read the per-client planning base via MCP:
 
 ```
 mcp__airtable__list_records_for_table
-  baseId: <per-client base ID, e.g., appQ2DVUVGLq7mFg9 for GoL>
+  baseId: <per-client base ID, e.g., appExample0000217 for EA>
   tableId: <Outcomes table ID in that base>
   filters: {operator: "contains", operands: ["Origin Detail", "<batch tag>"]}
 ```
@@ -142,7 +142,7 @@ Confirm new records appear. Sync usually completes in under a minute but can tak
 
 | Attempt | Error | Root cause |
 |---|---|---|
-| `POST` to a `⚡️`-prefixed table in the client base | `403 externally synced` | The `⚡️` prefix means synced, read-only. Write to source `appQAdxI2hDNJj1g5`. |
+| `POST` to a `⚡️`-prefixed table in the client base | `403 externally synced` | The `⚡️` prefix means synced, read-only. Write to source `appExample0000004`. |
 | `POST` to `Outcomes` in the client base | `403 externally synced` | Same: synced from source. The lack of `⚡️` prefix on Outcomes is misleading; it's still synced. |
 | `POST tasks.xray.tech/api/projects` | `404 Cannot POST` | tasks.xray.tech wraps Tasks (full lifecycle), Projects (search only), Outcomes (read only). Use Airtable MCP to create Projects and Objectives. |
 | `POST tasks.xray.tech/api/outcomes` | `404 Cannot POST` | Same as above — reads only. Verified 2026-07-01. |
@@ -158,7 +158,7 @@ Confirm new records appear. Sync usually completes in under a minute but can tak
 
 If a build doc is the canonical task list, dedup by:
 
-1. Fetch source tasks: `mcp__airtable__list_records_for_table` on `tblvlJq7I2GvIQEyP` with `filters: {operator: "contains", operands: ["Origin Detail", "<batch tag>"]}`.
+1. Fetch source tasks: `mcp__airtable__list_records_for_table` on `tblExample0000010` with `filters: {operator: "contains", operands: ["Origin Detail", "<batch tag>"]}`.
 2. Group tasks by `(Outcomes[0] recId, normalized Task title)`.
 3. For each group with multiple records, keep the most recently created (highest `Created` timestamp) and mark the rest for removal.
 4. For source tasks not present in the canonical doc, mark them for removal.
@@ -174,8 +174,8 @@ PATCH https://tasks.xray.tech/api/tasks/<task_id>
 
 # 2. Archived via MCP
 mcp__airtable__update_records_for_table
-  baseId: appQAdxI2hDNJj1g5
-  tableId: tblvlJq7I2GvIQEyP
+  baseId: appExample0000004
+  tableId: tblExample0000010
   records: [{id: "<task_id>", fields: {Archived: true}}]
 ```
 

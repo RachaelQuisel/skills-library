@@ -1,8 +1,8 @@
 ---
 name: friday-sprint-summary
-version: 1.0.1
+version: 1.0.2
 description: >
-  Generate and auto-post a weekly Sprint Summary to each active client's Slack huddle channel every Friday afternoon. Covers Coding Clarified, Guardians of Love, and CCRES. Uses Rachael's canonical Sprint Summary format from her July 30-31 CC exemplar (Sprint Summary header, Completed / In Progress / Carried buckets, Velocity + Completion rate line). If a fresh working-session transcript from the last 7 days exists locally, also generates a KPI report, attaches it as a Slack Canvas, and links it from the post. Trigger phrases include: "Friday sprint summary", "post the sprint updates", "run the weekly client posts", "/friday-sprint-summary". Also invoked on a schedule (launchd job `com.rachael.friday-sprint-summary`) every Friday at 1:00 PM Pacific.
+  Generate and auto-post a weekly Sprint Summary to each active client's Slack huddle channel every Friday afternoon. Covers Example Nonprofit, Example Agency, and Example Client. Uses Rachael's canonical Sprint Summary format from her July 30-31 CC exemplar (Sprint Summary header, Completed / In Progress / Carried buckets, Velocity + Completion rate line). If a fresh working-session transcript from the last 7 days exists locally, also generates a KPI report, attaches it as a Slack Canvas, and links it from the post. Trigger phrases include: "Friday sprint summary", "post the sprint updates", "run the weekly client posts", "/friday-sprint-summary". Also invoked on a schedule (launchd job `com.rachael.friday-sprint-summary`) every Friday at 1:00 PM Pacific.
 tags:
   - skill
   - scheduled
@@ -33,9 +33,9 @@ Rachael explicitly overrode the standing "confirm before sending to external" ru
 
 | Client | Client ID | Channel | Channel ID | Client folder |
 |---|---|---|---|---|
-| Coding Clarified | `recqM967hUDP0JohY` | `#huddle_coding-clarified` | `C0AGHQ4E7D5` | `~/Claude-Work/CLIENTS/Coding_Clarified_Janine_Mothershed/` |
-| Guardians of Love | `recvBGhUXAIcYBaNa` | `#huddle_guardians_of_love` | `C0B0BPCRVL0` | `~/Claude-Work/CLIENTS/Guardians_of_Love_Jessica_Peoples/` |
-| CCRES | `reccKW1RROpUVx5qt` | `#huddle_ccres` | `C09CZ718GFJ` | (no local folder yet; skip transcript + KPI step for CCRES until one exists) |
+| Example Nonprofit | `recExample0000043` | `#huddle_coding-clarified` | `C0EXAMPLE02` | `~/Claude-Work/CLIENTS/Coding_Clarified_Janine_Whitfield/` |
+| Example Agency | `recExample0000044` | `#huddle_guardians_of_love` | `C0EXAMPLE04` | `~/Claude-Work/CLIENTS/Guardians_of_Love_Jessica_Peoples/` |
+| Example Client | `recExample0000045` | `#huddle_ccres` | `C0EXAMPLE05` | (no local folder yet; skip transcript + KPI step for Example Client until one exists) |
 
 THFH is intentionally not on the list.
 
@@ -81,7 +81,7 @@ Carried does not enter the math. If `completed + in_progress` is zero, the whole
 
 ### Sprint window
 
-Sunday of this week through Saturday of this week (the seven days ending the day after the post). Header format: `Sprint Summary: 2026-08-03 – 2026-08-09 | Coding Clarified`.
+Sunday of this week through Saturday of this week (the seven days ending the day after the post). Header format: `Sprint Summary: 2026-08-03 – 2026-08-09 | Example Nonprofit`.
 
 If the exemplar's dates suggest a different window (e.g. the 2026-07-30–07-31 CC post was mid-sprint), match this rule; do not literally replicate the exemplar's 2-day range.
 
@@ -93,7 +93,7 @@ Tags are Rachael's short-form workstream labels — NOT the tasks.xray.tech proj
 
 To add or rename a tag: edit this table. No code change.
 
-### Coding Clarified
+### Example Nonprofit
 
 | Tag | Covers |
 |---|---|
@@ -104,29 +104,29 @@ To add or rename a tag: edit this table. No code change.
 | `Grade sync` | Blackboard grade pull (browser scrape and manual CSV), grade attempts migration, transcript layer |
 | `Caseworker linking` | Find-or-create caseworker at proposal, retroactive daily caseworker sweep, caseworker email delivery log |
 
-### Guardians of Love
+### Example Agency
 
 | Tag | Covers |
 |---|---|
 | `Status architecture` | Controlled vocabulary, status field definitions, record status value migration |
 | `Compliance tracking` | QPI 1 through 20, training requirements, deadline obligations, contractual vs internal clocks, junction tables |
 | `Acuity sync` | Booking sync, cancellation path, timezone verification, sign-in flow, Acuity-to-training-tracking bridge |
-| `A-7 reporting` | Monthly RHAS Completion Report, entry form, timing distribution, source-flag disagreement handling |
+| `A-7 reporting` | Monthly PROGRAM Completion Report, entry form, timing distribution, source-flag disagreement handling |
 | `Certificate handling` | Certificate generation, staff review queue, historical SharePoint ingest |
 | `Paraprofessional tools` | Paraprofessional dashboards, Jessica view, task assignment, reassignment tracking |
 | `Procurement` | Procurement, purchase, delivery, set-up, inventory, equipment loans, vendor billing |
 | `Administrative dashboard` | Cross-workstream dashboards, org-wide interface pages, KPI review pages |
 
-### CCRES
+### Example Client
 
-CCRES is a new engagement (started 2026-08-02). Expect this table to shift as the scope firms up.
+Example Client is a new engagement (started 2026-08-02). Expect this table to shift as the scope firms up.
 
 | Tag | Covers |
 |---|---|
 | `Hiring & onboarding` | Hiring & Onboarding System project — applicant intake, onboarding workflow, new-hire task generation |
 | `Grants & funding` | Grantpoint Phase 2 and Grants and Funding System projects — grant application tracking, funding pipeline |
 | `Consultant matching` | Consultant matching system — matching logic, MVP follow-on work |
-| `Systems integrations` | Cross-tool plumbing between CCRES's existing SaaS stack |
+| `Systems integrations` | Cross-tool plumbing between Example Client's existing SaaS stack |
 | `Discovery` | Anything still in scoping / Phase 1 / requirements-gathering mode |
 | `Quickbooks` | Quickbooks-side automation, invoicing, expense tracking, journal entries |
 
@@ -215,7 +215,7 @@ Use this before enabling the launchd plist and any time the format or data sourc
 | Projects endpoint 404 for a specific projectId | Use `(project not found)` as the tag. Log the ID. |
 | Canvas creation fails | Post the sprint summary without the `Full KPI report:` line. Log the Canvas error. |
 | Slack post fails on one client | Continue with the other clients. Log which client failed and the error. |
-| Missing local client folder (e.g. CCRES) | Skip transcript + KPI step for that client; post the sprint summary from tasks activity only. |
+| Missing local client folder (e.g. Example Client) | Skip transcript + KPI step for that client; post the sprint summary from tasks activity only. |
 | All three posts fail | Write the run log with the errors. Do NOT swallow silently. |
 
 ---

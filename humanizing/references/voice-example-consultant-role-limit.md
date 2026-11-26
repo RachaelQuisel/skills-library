@@ -1,6 +1,6 @@
 # Voice example: Consultant role limit email
 
-Sent 2026-10-28 to Jessica Peoples (GoL ED). Two data-entry issues at the
+Sent 2026-10-28 to Pat Okafor (EA ED). Two data-entry issues at the
 Acuity booking stage caused mis-attached training records in Airtable.
 Non-technical reader. Warm long-standing client relationship.
 
@@ -40,7 +40,7 @@ For example, Alonso was added in Acuity with these issues:
 . His email was empty
 . His "Tipo de cliente" (Client Type) was empty
 . He got booked into Modules 5 and 6, which are the post-approval classes, even though he is still on the pre-approval track
-→ Both of Alonso's bookings were made from lsalinas@guardiansoflove.org. One was on October 23. The other was on October 26.
+→ Both of Alonso's bookings were made from person7@example.com. One was on October 23. The other was on October 26.
 
 For a record like Alonso's to come in correctly, the booking in Acuity needs these four things:
 . Phone in the +1XXXXXXXXXX shape, with no "1+" at the front
@@ -62,7 +62,7 @@ When a household has two applicants who share one phone number, the applicant an
 
 Would you want me to build a report that shows any new records with these kinds of issues as they come in? Your team would see them in one place.
 
-The second part is a dashboard where GoL staff would be able to add or correct phone number, client type, and other information.
+The second part is a dashboard where EA staff would be able to add or correct phone number, client type, and other information.
 
 Would it help if I built the report and the page for you? Either way works for me. I just want to make sure your team feels good about it.
 

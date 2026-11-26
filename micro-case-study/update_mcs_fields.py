@@ -2,13 +2,13 @@
 """
 update_mcs_fields.py — Create new MCS table fields and patch SKILL.md mapping table.
 
-Adds four fields to the MCS table (base app8V74T72TT2SB0h, table tbl4fNYChMVv8pyda):
+Adds four fields to the MCS table (base appExample0000047, table tblExample0000061):
   - Engineer                      (collaborator / single user)
   - Build Time                    (single select: 2-4, 5-10, 11-20, 21+ hours)
   - Industry (single-select)      (single select, 18 options)
   - Result 2 (independent)        (single-line text)
 
-Does NOT touch existing fields (Industry fldoOn2odwxB0PEfG, Result 2 fldHpvofpyDNf8sb4).
+Does NOT touch existing fields (Industry fldExample0000050, Result 2 fldExample0000051).
 Restores SKILL.md from SKILL.md.bak, then patches ONLY the mapping table region.
 Deletes update_skill.py (obsolete from prior run).
 
@@ -34,8 +34,8 @@ import urllib.request
 from pathlib import Path
 from typing import Any
 
-BASE_ID = "app8V74T72TT2SB0h"
-TABLE_ID = "tbl4fNYChMVv8pyda"
+BASE_ID = "appExample0000047"
+TABLE_ID = "tblExample0000061"
 META_URL = f"https://api.airtable.com/v0/meta/bases/{BASE_ID}/tables"
 
 SKILL_DIR = Path(__file__).parent
@@ -81,7 +81,7 @@ NEW_FIELDS = [
             "description": (
                 "Primary industry. New canonical single-select. "
                 "Replaces free-text Industry field for new records. "
-                "Existing Industry (fldoOn2odwxB0PEfG) kept intact for legacy data."
+                "Existing Industry (fldExample0000050) kept intact for legacy data."
             ),
             "options": {"choices": [{"name": n} for n in INDUSTRY_OPTIONS]},
         },
@@ -94,7 +94,7 @@ NEW_FIELDS = [
             "type": "singleLineText",
             "description": (
                 "Second quantifiable outcome, entered independently. "
-                "Replaces auto-mirrored Result 2 (fldHpvofpyDNf8sb4) for new records."
+                "Replaces auto-mirrored Result 2 (fldExample0000051) for new records."
             ),
         },
     },
@@ -158,11 +158,11 @@ def _build_mapping_rows(created_ids: dict[str, str]) -> dict[str, str]:
         "Build Time": f"| Build Time | Build Time | {fid('Build Time')} |",
         "Industry": (
             f"| Industry | Industry (single-select) | {fid('Industry (single-select)')} "
-            f"(new; legacy free-text `fldoOn2odwxB0PEfG` kept intact) |"
+            f"(new; legacy free-text `fldExample0000050` kept intact) |"
         ),
         "Result 2": (
             f"| Result 2 | Result 2 (independent) | {fid('Result 2 (independent)')} "
-            f"(new; legacy auto-mirror `fldHpvofpyDNf8sb4` kept intact) |"
+            f"(new; legacy auto-mirror `fldExample0000051` kept intact) |"
         ),
     }
 
@@ -185,7 +185,7 @@ def _patch_mapping_table(content: str, new_rows: dict[str, str]) -> str:
     # Idempotent: skip insert if already present.
     if re.search(r"^\| Engineer \| Engineer \|", region, flags=re.MULTILINE) is None:
         region = re.sub(
-            r"(^\| Result 2 Icon \| Result 2 Icon \| `flddeJvoeH4XcSfez` \|\s*$)",
+            r"(^\| Result 2 Icon \| Result 2 Icon \| `fldExample0000059` \|\s*$)",
             r"\1\n" + new_rows["Engineer"],
             region,
             count=1,
@@ -216,9 +216,9 @@ def _patch_mapping_table(content: str, new_rows: dict[str, str]) -> str:
             count=1,
             flags=re.MULTILINE,
         )
-    # Industry row — replace the existing Industry line that points at fldoOn2odwxB0PEfG.
+    # Industry row — replace the existing Industry line that points at fldExample0000050.
     region = re.sub(
-        r"^\| Industry \| Industry \| `fldoOn2odwxB0PEfG` \|\s*$",
+        r"^\| Industry \| Industry \| `fldExample0000050` \|\s*$",
         new_rows["Industry"],
         region,
         count=1,
@@ -229,7 +229,7 @@ def _patch_mapping_table(content: str, new_rows: dict[str, str]) -> str:
     # (idempotent: skip insert if row already present).
     if "| Result 2 | Result 2 (independent) |" not in region:
         region = re.sub(
-            r"(^\| Value \| \*\*Result 1\*\* \| `fld0bp8xzpAUrjsG7` \|\s*$)",
+            r"(^\| Value \| \*\*Result 1\*\* \| `fldExample0000056` \|\s*$)",
             r"\1\n" + new_rows["Result 2"],
             region,
             count=1,
@@ -380,10 +380,10 @@ def main() -> int:
     print("[ ] 1. describe_table on MCS — confirm 4 new fields with expected types/options")
     print("[ ] 2. diff SKILL.md SKILL.md.bak — only mapping table region changed")
     print("[ ] 3. Re-run script — every step reports no-op (idempotency)")
-    print("[ ] 4. Grep SKILL.md for flduLY0o5WsNiX1eL (Zoom Transcript 1) "
-          "and appMjlaeg7cFYivss (CRM Enriched Debriefs) — still present")
-    print("[ ] 5. Existing Industry (fldoOn2odwxB0PEfG) and "
-          "Result 2 (fldHpvofpyDNf8sb4) unchanged")
+    print("[ ] 4. Grep SKILL.md for fldExample0000048 (Zoom Transcript 1) "
+          "and appExample0000049 (CRM Enriched Debriefs) — still present")
+    print("[ ] 5. Existing Industry (fldExample0000050) and "
+          "Result 2 (fldExample0000051) unchanged")
 
     return 0
 

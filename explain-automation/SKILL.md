@@ -1,6 +1,6 @@
 ---
 name: explain-automation
-version: 1.0.0
+version: 1.0.1
 description: Turn an Airtable automation into a plain-English explainer and share it with the client. Reads the automation's real configuration, writes a no-jargon education doc in bullet points (trigger, inputs, steps in order, outputs, what happens when it fires), and posts it to the client's Slack huddle channel with a threaded reply carrying the direct automation links and a step-by-step breakdown. Use this whenever the user asks to explain an automation, educate the client on an automation, document what an automation does, write an automation explainer, post an automation explainer to Slack, or announce that an automation went live — even if they only say "tell the team what this does" or "write this up for Janine."
 ---
 
@@ -18,7 +18,7 @@ Figure out which automation(s) to explain, in this order:
 2. Ones the user names — look them up with `list_automations` on the relevant base and match by name.
 3. If it is still ambiguous, ask which automation before writing anything.
 
-Default base: Coding Clarified (`appo7ppmZsn2ejonS`). Other clients: find the base with `search_bases`.
+Default base: Example Nonprofit (`appExample0000022`). Other clients: find the base with `search_bases`.
 
 Then pull the real configuration with `get_automation`. Read the actual trigger, actions, condition logic, and which fields get written. Never write the explainer from memory or from the automation's name alone — the explainer's whole value is that it matches what the automation truly does, and configs drift.
 
@@ -47,12 +47,12 @@ This goes to non-technical client staff, in Rachael's voice:
 
 Show the user the full formatted message and name the target channel. Wait for explicit confirmation before sending anything. Even when the user said "post it" up front, show the draft first; a wrong detail in a client channel is expensive to walk back.
 
-Channel reference (the hyphen in the Coding Clarified channel is intentional):
+Channel reference (the hyphen in the Example Nonprofit channel is intentional):
 
 | Client           | Channel                  | Channel ID  |
 |------------------|--------------------------|-------------|
-| Coding Clarified | #huddle_coding-clarified | C0AGHQ4E7D5 |
-| AY Media         | #huddle_aymedia          | C09S4B9ANR2 |
+| Example Nonprofit | #huddle_coding-clarified | C0EXAMPLE02 |
+| AY Media         | #huddle_aymedia          | C0EXAMPLE03 |
 
 ## Step 4 — Post the main message
 

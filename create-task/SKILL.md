@@ -1,6 +1,6 @@
 ---
 name: create-task
-version: 1.0.1
+version: 1.0.2
 description: Create tasks in the XRAY Task Inbox at tasks.xray.tech via API. Covers the full lifecycle from creation through acceptance and configuration. Use when the user asks to create a task, log work items, file action items from meetings, or push tasks to the task inbox. Triggers on "create task", "add task", "file a task", "push to tasks", "log this as a task", "add the things we did", or any request to send work to tasks.xray.tech.
 tags:
   - skill
@@ -30,7 +30,7 @@ Full lifecycle for creating tasks in the XRAY Task Inbox: create → accept → 
 - tasks.xray.tech is an API layer on top of the Projects & Tasks @ XRAY base. The API handles writing to Airtable for you.
 - If the user provides an Airtable URL, record ID, or asks to write tasks directly to a client base — redirect through tasks.xray.tech instead.
 - If the tasks.xray.tech API fails, **report the error**. Do NOT fall back to writing directly to Airtable via MCP tools or REST API.
-- **Absolute (Rachael, 2026-07-30): do not touch `appQAdxI2hDNJj1g5` by any route — no MCP, no REST, no exceptions.** If the API can't do something (assign a different owner, link an Outcome), that operation is blocked until tasks.xray.tech v2 — report the block; never route around it. See memory `tasks-only-via-xray-tasks-api`.
+- **Absolute (Rachael, 2026-07-30): do not touch `appExample0000004` by any route — no MCP, no REST, no exceptions.** If the API can't do something (assign a different owner, link an Outcome), that operation is blocked until tasks.xray.tech v2 — report the block; never route around it. See memory `tasks-only-via-xray-tasks-api`.
 
 ## Hard Rules Before ANY Create (locked 2026-07-30)
 
@@ -47,7 +47,7 @@ These block the create. No exceptions, no "just this once."
 **Skip the interview when context is already available.** Before asking questions, check:
 
 1. **Did the user provide inline context?** (e.g., "add the things we did to AYMG tasks", "log today's work as tasks") → Scan the current conversation for completed work items and create tasks from them. Do NOT ask "what tasks?" — extract them.
-2. **Did the user specify a project?** (e.g., mentioned "AY Media", "Coding Clarified", a URL) → Use that. Don't ask again.
+2. **Did the user specify a project?** (e.g., mentioned "AY Media", "Example Nonprofit", a URL) → Use that. Don't ask again.
 3. **Did the user specify priority?** → Use it. Otherwise default to `"Medium"` for completed work, and only ask for priority on forward-looking tasks.
 
 **Only ask questions when genuinely missing information** — e.g., the user says "/create-task" with zero context and no recent conversation to mine.

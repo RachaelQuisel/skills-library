@@ -1,6 +1,6 @@
 {
   "name": "airtable-interface-craft",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Create distinctive Airtable interfaces with verified data, reliable interactions and an exact source return.",
   "skills": "./skills/",
   "author": {

@@ -9,7 +9,7 @@ tags:
 
 Convert a consulting-session transcript or notes into a polished, XRAY-branded **SOAP report** `.docx`. SOAP is the chart-note format adapted for client work: **S**ubjective, **O**bjective, **A**ssessment, **P**lan.
 
-These are internal/client session recaps written by Rachael (XRAY) after a working session with a client. The gold-standard examples are the four THFH (Teri Hall) reports; match their structure, specificity, and voice.
+These are internal/client session recaps written by Rachael (XRAY) after a working session with a client. The gold-standard examples are the four THFH (Chris Nolan Example) reports; match their structure, specificity, and voice.
 
 ## Inputs you need
 
@@ -17,7 +17,7 @@ Each client folder under `~/Claude-Work/CLIENTS/<Client_Folder>/` holds a `Trans
 
 Before writing, make sure you have:
 - **The transcript or session notes** (required).
-- **Client name** (e.g., "The HOPE for Health (Teri Hall)").
+- **Client name** (e.g., "The HOPE for Health (Chris Nolan Example)").
 - **Session date** and **duration** (e.g., "March 16, 2026" / "3 hours (async)"). Check the transcript **filename** first, it usually carries the date (`GMT20260527…`, `…5_9_2026`). For duration, read the first and last timestamps; note when the consultant actually joined vs. when the recording started. Ask only if you can't derive it.
 - **Session type**: live meeting vs. async work, affects framing (a meeting captures discussion + decisions; async captures work performed).
 
@@ -36,7 +36,7 @@ If date/duration/client aren't in the transcript, ask once, then proceed.
 
 Every SOAP report carries two extra fields. They render in a small block under the title meta AND in the .docx's native Word Subject/Description properties.
 
-- **Subject line**: a single pipe-delimited line in this exact order: `Client's name | Rachael Quisel | Client's company | Date | Project`. The last field is the **project** the meeting was about, in one or two words (not the meeting topic). Every client has at least one project; reference it. Example: `Teri Hall | Rachael Quisel | The HOPE for Health | May 9, 2026 | Partner Portal`. (THFH's project is the **Partner Portal**: the Airtable/Fillout/Teachery partner-cohort enrollment system.)
+- **Subject line**: a single pipe-delimited line in this exact order: `Client's name | Rachael Quisel | Client's company | Date | Project`. The last field is the **project** the meeting was about, in one or two words (not the meeting topic). Every client has at least one project; reference it. Example: `Chris Nolan Example | Rachael Quisel | The HOPE for Health | May 9, 2026 | Partner Portal`. (THFH's project is the **Partner Portal**: the Airtable/Fillout/Teachery partner-cohort enrollment system.)
 - **Description**: one or two plain sentences on what the session covered. Keep it under 255 characters (Word's Description field caps there; the builder truncates as a safety net).
 
 In the content dict, pass `subject` and `description` keys alongside `client`/`date`/`duration`/`consultant`. Mirror both at the top of the markdown draft.

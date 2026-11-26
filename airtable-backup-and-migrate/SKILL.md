@@ -3,7 +3,7 @@ name: airtable-backup-and-migrate
 description: Back up an Airtable base (schema + records + attachment bytes) to a local directory. Use whenever the user asks to back up, snapshot, dump, export, or archive an Airtable base, or wants a rollback point before a risky change. Trigger on casual phrasing too ("save a copy of the CC base", "dump appXXX to disk", "I need a snapshot before this migration"). This is the canonical XRAY backup tool; do not hand-roll a one-off dump script when this exists.
 license: MIT
 metadata:
-    version: 1.1.0-mvp
+    version: 1.1.1-mvp
     author: rachael-quisel (for XRAY CTO)
     created: 2026-08-11
 ---
@@ -69,7 +69,7 @@ These are the traps from `~/.claude/rules/airtable-best-practices.md`. Named her
 
 4. **Rate limit: 5 req/sec per base.** Airtable's documented cap. Script sleeps 0.2s between requests. On HTTP 429, backs off per `Retry-After` (default 30s) once, then aborts if still throttled.
 
-5. **`appQAdxI2hDNJj1g5` is read-only from the outside.** Backing it up is fine (reads are allowed for verification). Restoring TO it is banned per `~/.claude/CLAUDE.md` — writes to that base must go through `tasks.xray.tech/api`. This MVP is read-only so the ban is theoretical here, but any future restore script must enforce it.
+5. **`appExample0000004` is read-only from the outside.** Backing it up is fine (reads are allowed for verification). Restoring TO it is banned per `~/.claude/CLAUDE.md` — writes to that base must go through `tasks.xray.tech/api`. This MVP is read-only so the ban is theoretical here, but any future restore script must enforce it.
 
 ## What's NOT backed up (out of MVP scope)
 

@@ -1,6 +1,6 @@
 ---
 name: client-docs
-version: 1.4.6
+version: 1.4.7
 description: Decide which canonical client docs a session's work belongs in, and which skill writes each one, for the 8 canonical files per build (prd, vision-and-scope, build-plan, kpi-report, interface-prompts, user-stories, decisions, changelog) in each client's XRAY-INC GitHub repo. Use when the user says "update client docs", "document this build", "which docs need updating", "backfill the client docs", when a client build ships something worth documenting across several docs, or when the /deliver checklist reaches its docs step. For a single doc, the matching client-doc-* skill is the better fit.
 ---
 
@@ -37,7 +37,7 @@ Client repo names are uppercase, hyphen-joined organization names with no
 contact person in them (`Acme_Widgets_Dana_Lee` → `ACME-WIDGETS`). Derive the name
 that way, then confirm the repo exists: list the repos in
 `XRAY-INC/MONTHLY-CLIENTS/.gitmodules`, or run `gh api repos/XRAY-INC/<CLIENT>`.
-If no repo matches, stop and tell the consultant. Mark (mark@xray.tech) creates
+If no repo matches, stop and tell the consultant. Mark (person1@example.com) creates
 client repos; never create one yourself.
 
 Build-name convention: lowercase words joined by hyphens, dated when it's a monthly build (e.g., `2026-05-build`) or named for the system (e.g., `exec-dashboard`).

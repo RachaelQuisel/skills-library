@@ -44,7 +44,7 @@
     {
       "name": "client-docs",
       "root": "plugins/client-docs",
-      "version": "1.4.6",
+      "version": "1.4.7",
       "manifests": [
         "plugins/client-docs/plugin.json",
         "plugins/client-docs/.claude-plugin/plugin.json",
@@ -53,7 +53,7 @@
       "skills": [
         "build-page-publisher-local/SKILL.md",
         "audit-log-plugin/SKILL.md",
-        "automation-explainer-local/SKILL.md",
+        "auto/SKILL.md",
         "business-case/SKILL.md",
         "client-doc-build-plan/SKILL.md",
         "client-doc-changelog/SKILL.md",
@@ -64,7 +64,7 @@
         "client-doc-vision-and-scope/SKILL.md",
         "client-doc-workflow-diagram/SKILL.md",
         "client-docs/SKILL.md",
-        "how-it-works-doc-writer-local/SKILL.md",
+        "education/SKILL.md",
         "fetch-tasks/SKILL.md",
         "file-naming-convention/SKILL.md",
         "five-signals-prd/SKILL.md",
@@ -150,7 +150,7 @@
     {
       "name": "airtable-interface-craft",
       "root": "plugins/airtable-interface-craft",
-      "version": "1.0.6",
+      "version": "1.0.7",
       "manifests": [
         "plugins/airtable-interface-craft/plugin.json",
         "plugins/airtable-interface-craft/.claude-plugin/plugin.json",
@@ -393,27 +393,40 @@
       "skills": [
         "plugins/cited-research-assistant/skills/cited-research-assistant/SKILL.md"
       ]
+    },
+    {
+      "name": "independent-check",
+      "root": "plugins/independent-check",
+      "version": "1.0.0",
+      "manifests": [
+        "plugins/independent-check/plugin.json",
+        "plugins/independent-check/.claude-plugin/plugin.json",
+        "plugins/independent-check/.codex-plugin/plugin.json"
+      ],
+      "skills": [
+        "plugins/independent-check/skills/independent-check/SKILL.md"
+      ]
     }
   ],
   "skills": [
     {
       "path": "acuity-roster-reconciler-local/SKILL.md",
-      "version": "1.0.1",
-      "sha256": "bd5dc3d24927fb9d8e97e5e70e96f04da5f7ce64d34c20c39d1fc5ce12da502d",
+      "version": "1.0.2",
+      "sha256": "fff356bb6f2e2a5252926374a321ce5965ab70a57a5cfa7fc8ab9a2c5b484636",
       "source": "acuity-roster-reconciler-local/SKILL.md",
       "guide": "acuity-roster-reconciler-local/README.md"
     },
     {
       "path": "agent-activity-log/SKILL.md",
-      "version": "1.0.1-rq.1",
-      "sha256": "cdbfd3974b1ba1cc5ae420ca374856ebfa19be826caa10b427c99cc4b4e78e9a",
+      "version": "1.0.2-rq.1",
+      "sha256": "691674f18d76e619ec18080c761dfcfcea889d80de9c2545601799625d63fc62",
       "source": "agent-activity-log/SKILL.md",
       "guide": "agent-activity-log/README.md"
     },
     {
       "path": "airtable-backup-and-migrate/SKILL.md",
-      "version": "1.1.0-mvp",
-      "sha256": "664306c322ef7b9c39be1a4fbfc0e16a9c5a46690f9bcf6690ad96aa6de32c8a",
+      "version": "1.1.1-mvp",
+      "sha256": "a14ea4c2b517a89d30b2aa3abaef87edd3344a8656fbff0304f391e2fdf48d1b",
       "source": "airtable-backup-and-migrate/SKILL.md",
       "guide": "airtable-backup-and-migrate/README.md"
     },
@@ -433,8 +446,8 @@
     },
     {
       "path": "airtable-cli/SKILL.md",
-      "version": "1.0.1",
-      "sha256": "10b606586414485157bcf9cfb5d602f5c42550ab35cfb42b0ecab8b0c368ffcb",
+      "version": "1.0.2",
+      "sha256": "9e08a6ffc9035961ce8111e0f7d0c3e0fe43c7e11bd912a1ade6951bb4ee47d0",
       "source": "airtable-cli/SKILL.md",
       "guide": "airtable-cli/README.md"
     },
@@ -447,8 +460,8 @@
     },
     {
       "path": "airtable-filters/SKILL.md",
-      "version": "1.0.1",
-      "sha256": "c26b34414f4b67d942ef5a2ce487346c06be28b960233d0c03991e9b4eab6310",
+      "version": "1.0.2",
+      "sha256": "9d9fdcde3391d0d782c5e18a3c47c7be5da05121d80c11259fa5f1e27af2075c",
       "source": "airtable-filters/SKILL.md",
       "guide": "airtable-filters/README.md"
     },
@@ -538,8 +551,8 @@
     },
     {
       "path": "audit-log-plugin/SKILL.md",
-      "version": "1.4.6",
-      "sha256": "3cc6f8c2068eedad216bc0cd699727cc53e0af36c71aaa2bca49ccd0288a4154",
+      "version": "1.4.7",
+      "sha256": "c839b05f736f9f44e0c55d0735c97dec5e498cda3c00d4696215b1dffd4e2f76",
       "source": "audit-log-plugin/SKILL.md",
       "guide": "audit-log-plugin/README.md"
     },
@@ -587,8 +600,8 @@
     },
     {
       "path": "build-page-publisher-local/SKILL.md",
-      "version": "1.4.6",
-      "sha256": "177b482cb8ce435681c2ee9088beea0cc9969d6edb35d9ba3362328ce188f300",
+      "version": "1.4.7",
+      "sha256": "3dddf0ad234426a39410f47d9ff67a53ffe239ee57c62583adda62e0302c0b6c",
       "source": "build-page-publisher-local/SKILL.md",
       "guide": "build-page-publisher-local/README.md"
     },
@@ -601,8 +614,8 @@
     },
     {
       "path": "business-case/SKILL.md",
-      "version": "1.4.6",
-      "sha256": "b60cccffb587714e9d1d1a6c1f4e1b096f649ccccd5e1d7b3caacb394ee53903",
+      "version": "1.4.7",
+      "sha256": "51baea228cd5cfee57b5d3dcb7ecc90e73d7429a2d614e2bd097710c048cc23c",
       "source": "business-case/SKILL.md",
       "guide": "business-case/README.md"
     },
@@ -622,71 +635,71 @@
     },
     {
       "path": "claude-api/SKILL.md",
-      "version": "1.0.1",
-      "sha256": "f8b0d3aef9821a576d5217116ecf7ec9dc90b6c5a22f76d2aff392406820de94",
+      "version": "1.0.2",
+      "sha256": "2a8f4d4498c76fc34cc74abc1b778f947fb60d9dce1b311ac5685997c13632b1",
       "source": "claude-api/SKILL.md",
       "guide": "claude-api/README.md"
     },
     {
       "path": "client-doc-build-plan/SKILL.md",
-      "version": "1.4.6",
-      "sha256": "48515b808bb5081df8b83781718db952d60a24a78d70f5a181a06b1f86d2e5bc",
+      "version": "1.4.7",
+      "sha256": "e095bfe2ee041885132d520a7ae77ae54f0add06131874fb996e71be1e456237",
       "source": "client-doc-build-plan/SKILL.md",
       "guide": "client-doc-build-plan/README.md"
     },
     {
       "path": "client-doc-changelog/SKILL.md",
-      "version": "1.4.6",
-      "sha256": "400d193bab699bef3439b5dcd23d38a4906088a2946048178cc53ec0300a7897",
+      "version": "1.4.7",
+      "sha256": "51a6b5696fc0f3ea7d4ddac6b4cc1cf1c9f7d7ba16b0ca6f0db3a2db4b5fdac7",
       "source": "client-doc-changelog/SKILL.md",
       "guide": "client-doc-changelog/README.md"
     },
     {
       "path": "client-doc-decisions/SKILL.md",
-      "version": "1.4.6",
-      "sha256": "9595cb8276f045b516110347e19048cccfd67fecdc7904496078f2a68786eec9",
+      "version": "1.4.7",
+      "sha256": "1274d0c90baa8a7d7336493bffabdc83c97d2a6d151aef31b4e31b6606dfcdf3",
       "source": "client-doc-decisions/SKILL.md",
       "guide": "client-doc-decisions/README.md"
     },
     {
       "path": "client-doc-interface-prompts/SKILL.md",
-      "version": "1.4.6",
-      "sha256": "e38cf9d5b65c46c8f4ae7ec1a03ba923fd0815f19bf21942fe5befc5b85fbd5c",
+      "version": "1.4.7",
+      "sha256": "1a648ec2b24b78e7741229354e42f15a9e11e20a8410eac6965c55bec4af1895",
       "source": "client-doc-interface-prompts/SKILL.md",
       "guide": "client-doc-interface-prompts/README.md"
     },
     {
       "path": "client-doc-push/SKILL.md",
-      "version": "1.4.6",
-      "sha256": "aa03de2c903970c6b84bda72297da2609b00ee81f586f8aeeb42bef5624b8dc1",
+      "version": "1.4.7",
+      "sha256": "fd9f0102491eb7a5da2b850065a1dec344ec4753b6fa646a34f4d1ce12964737",
       "source": "client-doc-push/SKILL.md",
       "guide": "client-doc-push/README.md"
     },
     {
       "path": "client-doc-user-stories/SKILL.md",
-      "version": "1.4.6",
-      "sha256": "1f0a60f7b176fd16ad2179e29614807d441588c5861535da6944cfe294546fe1",
+      "version": "1.4.7",
+      "sha256": "fcb1352c34b9b9940d737b7d029974f7f4eae06c6bff0a16214ec2c2f74e8b76",
       "source": "client-doc-user-stories/SKILL.md",
       "guide": "client-doc-user-stories/README.md"
     },
     {
       "path": "client-doc-vision-and-scope/SKILL.md",
-      "version": "1.4.6",
-      "sha256": "c46f39b1d037624ccf35c5bf40ae60397466c4bc9990a719e638529d637c4d06",
+      "version": "1.4.7",
+      "sha256": "fd2eff7933b1ba34a13a95a44c6fc2914d81c65e50c1efa945df8b0d6eabf5e8",
       "source": "client-doc-vision-and-scope/SKILL.md",
       "guide": "client-doc-vision-and-scope/README.md"
     },
     {
       "path": "client-doc-workflow-diagram/SKILL.md",
-      "version": "1.4.6",
-      "sha256": "299b6418c2f5bd5464cf354b1090712f815dfe7a96a95b7efc3f96e9e0839a18",
+      "version": "1.4.7",
+      "sha256": "c9f9fc960f3f894696cdf18895047800f7804b2ef50304d2a099e8017bbeb8fd",
       "source": "client-doc-workflow-diagram/SKILL.md",
       "guide": "client-doc-workflow-diagram/README.md"
     },
     {
       "path": "client-docs/SKILL.md",
-      "version": "1.4.6",
-      "sha256": "7b9e102d94cd45245c5a2c7647a54235d3a1a25c0d163694ec3dc385d18e3b8e",
+      "version": "1.4.7",
+      "sha256": "d10cb70ff33b9b543b1fd15df10f7e0e5b157657bf885b99b09ae510f769bc02",
       "source": "client-docs/SKILL.md",
       "guide": "client-docs/README.md"
     },
@@ -727,8 +740,8 @@
     },
     {
       "path": "create-task/SKILL.md",
-      "version": "1.0.1",
-      "sha256": "0c1f6e976994f3674f7a20eff19e75e876620b61d15c85e5590a12f7c1a79d1f",
+      "version": "1.0.2",
+      "sha256": "d6c8174a6bb56e3c8eda01a22ea9641681645918cb011647b588899f057594e3",
       "source": "create-task/SKILL.md",
       "guide": "create-task/README.md"
     },
@@ -748,8 +761,8 @@
     },
     {
       "path": "dissonance-radar/SKILL.md",
-      "version": "1.0.2",
-      "sha256": "157e17846afdf0ae467856b398c3bcbab622ec51dbef9435b7c40b5ffa6be5ea",
+      "version": "1.0.3",
+      "sha256": "f53b393d53339cd37a3f12ac02bc9ac8db627809345075f6edd5d82a6f6019ff",
       "source": "dissonance-radar/SKILL.md",
       "guide": "dissonance-radar/README.md"
     },
@@ -783,15 +796,15 @@
     },
     {
       "path": "explain-automation/SKILL.md",
-      "version": "1.0.0",
-      "sha256": "e98bd84d8ee1b05b5f461fdfc7306fdde5dafad1b80adf502423a225b1942188",
+      "version": "1.0.1",
+      "sha256": "68e86b46e65fb4a7ef0073481b30a31c11820a1b37d9c785c5bbe5de76565c19",
       "source": "explain-automation/SKILL.md",
       "guide": "explain-automation/README.md"
     },
     {
       "path": "explain-code/SKILL.md",
-      "version": "1.0.1",
-      "sha256": "10117eedb386f289d9b2191c0fa1135901c22abb1c05c814df32d06717ceeab2",
+      "version": "1.1.1",
+      "sha256": "401f07eea80acceef12a6e77aef8e1a44beaa0a8514d6b3af188ebab167dd33b",
       "source": "explain-code/SKILL.md",
       "guide": "explain-code/README.md"
     },
@@ -804,15 +817,15 @@
     },
     {
       "path": "fetch-tasks/SKILL.md",
-      "version": "1.4.6",
-      "sha256": "c0811031e546348384e33c9cde744d6e42cee555edbbfb2cb27f62afd7d5e11e",
+      "version": "1.4.7",
+      "sha256": "9a0c1cc64376bcbf382a0cb8e5add565a32c45fe6cf3f5ea853f055a729f4ffb",
       "source": "fetch-tasks/SKILL.md",
       "guide": "fetch-tasks/README.md"
     },
     {
       "path": "file-naming-convention/SKILL.md",
-      "version": "1.4.6",
-      "sha256": "dd3d0b6e80611a88b12c21b169c6a925a5e0e4008ab43018d1b9aae02985e931",
+      "version": "1.4.7",
+      "sha256": "95a3dfaf4f12d74833ae70d2cd7d5e4bdf01cc3ac616879c92adfd7027340ff5",
       "source": "file-naming-convention/SKILL.md",
       "guide": "file-naming-convention/README.md"
     },
@@ -825,8 +838,8 @@
     },
     {
       "path": "five-signals-prd/SKILL.md",
-      "version": "1.4.6",
-      "sha256": "2adaba65719af0fe476feff8d7ae5aa6180bcf7fcb9d193fdb92d86230f1fc60",
+      "version": "1.4.7",
+      "sha256": "dece7388e98a52c6559f6f1d385e46b3c26acd848256c14960fc097bf6264d42",
       "source": "five-signals-prd/SKILL.md",
       "guide": "five-signals-prd/README.md"
     },
@@ -839,8 +852,8 @@
     },
     {
       "path": "friday-sprint-summary/SKILL.md",
-      "version": "1.0.1",
-      "sha256": "154ea137fcec18ef5d1b650134ddacbc158b983b4259939fd99cd161467fc5fe",
+      "version": "1.0.2",
+      "sha256": "c9de6817265a452b9c96b67141db0a747296d8400ba091d4a54496d2f58f6987",
       "source": "friday-sprint-summary/SKILL.md",
       "guide": "friday-sprint-summary/README.md"
     },
@@ -867,8 +880,8 @@
     },
     {
       "path": "gmail-triage/SKILL.md",
-      "version": "1.0.1",
-      "sha256": "7eb255c2fd1717e30e94f379170f4eb5fe7be76ce85c13fa403ca04ed538e4d4",
+      "version": "1.0.2",
+      "sha256": "be58728ea13b4ecb853dacccaac50c02ef0628da180c68999a4f4ac1eaa364eb",
       "source": "gmail-triage/SKILL.md",
       "guide": "gmail-triage/README.md"
     },
@@ -902,8 +915,8 @@
     },
     {
       "path": "how-it-works-doc/SKILL.md",
-      "version": "1.4.6",
-      "sha256": "098f5e0f5646af00ba7a4f523c719f9f216cc8574d62cdc68ba2859667f3ba4d",
+      "version": "1.4.7",
+      "sha256": "4ecf978231cdeb2ec01e4118807a148829999aafcec1ac481ed3e5de9722b13b",
       "source": "how-it-works-doc/SKILL.md",
       "guide": "how-it-works-doc/README.md"
     },
@@ -923,15 +936,15 @@
     },
     {
       "path": "kpi-report/SKILL.md",
-      "version": "1.4.6",
-      "sha256": "6deaf822b58d619bca4f4dac8d9e04745c28270e2c56ee5a6551e803c237c914",
+      "version": "1.4.7",
+      "sha256": "3775c490c25a3e06e6081657f002be7851e2cc981153a4f6454e729ed9ebd9e3",
       "source": "kpi-report/SKILL.md",
       "guide": "kpi-report/README.md"
     },
     {
       "path": "load/SKILL.md",
-      "version": "1.0.1",
-      "sha256": "0fbe4f6a5a0c07ed4cfc243864746f78e9cdb7f52e8d9cd86f244a536da6f401",
+      "version": "1.0.2",
+      "sha256": "6adfa39c93f7cf9a1f21dcd113a6a74e7277a367c84d9de19e27ed8c0e46d00b",
       "source": "load/SKILL.md",
       "guide": "load/README.md"
     },
@@ -944,8 +957,8 @@
     },
     {
       "path": "markdown-to-xr-gdoc/SKILL.md",
-      "version": "1.4.6",
-      "sha256": "60e71a5a414ca502e4a8a6bf0880427cc2cea311313442847324806f4c760806",
+      "version": "1.4.7",
+      "sha256": "d4ca852d9854567770f40907f84fed2a248626e0eb46e19d779b9a946e503a53",
       "source": "markdown-to-xr-gdoc/SKILL.md",
       "guide": "markdown-to-xr-gdoc/README.md"
     },
@@ -965,15 +978,15 @@
     },
     {
       "path": "meeting-prep/SKILL.md",
-      "version": "1.0.1",
-      "sha256": "df8e1fc9919981cfeb4ad7de13c94f8b4939d61464e449b8a4e013b78acfccf6",
+      "version": "1.0.2",
+      "sha256": "4edc1de94045e4015c95b187e6a387f8c44221ee9947fa85a9eb8baab00d41fd",
       "source": "meeting-prep/SKILL.md",
       "guide": "meeting-prep/README.md"
     },
     {
       "path": "micro-case-study/SKILL.md",
-      "version": "1.0.1",
-      "sha256": "9607e56751ba7177c59772895e15efbe54f12983f8f6d9dad4e99192d7fe1be0",
+      "version": "1.0.2",
+      "sha256": "d3d0505acd7350d2476aef70f150e8d55543b64ab2f2229793352789d42a2ffd",
       "source": "micro-case-study/SKILL.md",
       "guide": "micro-case-study/README.md"
     },
@@ -986,8 +999,8 @@
     },
     {
       "path": "new-account/SKILL.md",
-      "version": "1.0.1",
-      "sha256": "5c91fa23aed7fb9275ab49a1b76b59676df14c08239dd2f5773a4aacfb7d1937",
+      "version": "1.0.2",
+      "sha256": "24adbbeacbd74d8544c96bee5ee848541679e7e21e1442d01e65a9713d8d9859",
       "source": "new-account/SKILL.md",
       "guide": "new-account/README.md"
     },
@@ -1000,8 +1013,8 @@
     },
     {
       "path": "normalize-csvs-for-airtable/SKILL.md",
-      "version": "1.0.1",
-      "sha256": "5fb4b54150e1ec62c56777c05e36b8b75dd1095338177f3795dd42522d3ada1a",
+      "version": "1.0.2",
+      "sha256": "5f8889f7676e9fbd83a39cfa30fac362bf53e005249ac3d8ec338225737986e3",
       "source": "normalize-csvs-for-airtable/SKILL.md",
       "guide": "normalize-csvs-for-airtable/README.md"
     },
@@ -1035,8 +1048,8 @@
     },
     {
       "path": "plain-english-project-communication/SKILL.md",
-      "version": "1.0.1",
-      "sha256": "8aa6b40fc9222837b7f7dde78f294b0ca0bd2be14c4ab95aec5b80256a5cabef",
+      "version": "1.0.2",
+      "sha256": "9bda7267134a4f3e32912ffed35456369788ae01dec350d8289615dc288a6a79",
       "source": "plain-english-project-communication/SKILL.md",
       "guide": "plain-english-project-communication/README.md"
     },
@@ -1084,8 +1097,8 @@
     },
     {
       "path": "plugins/airtable-interface-craft/skills/airtable-interface-craft/SKILL.md",
-      "version": "1.0.6",
-      "sha256": "d0f011fa20747fb66e076ab5ddc929e8f19b07fd2c010e6e93bfca8db912d403",
+      "version": "1.0.7",
+      "sha256": "135b3b161cc565c64dd8da9fdfeb586116826e35b594ca8c14b8fb33202fd884",
       "source": "plugins/airtable-interface-craft/skills/airtable-interface-craft/SKILL.md",
       "guide": "plugins/airtable-interface-craft/skills/airtable-interface-craft/README.md"
     },
@@ -1294,8 +1307,8 @@
     },
     {
       "path": "post-to-huddle/SKILL.md",
-      "version": "1.0.1",
-      "sha256": "753f8724d7379206fb19f306a9786b5f50de10dad9445a7739ff8e1333216a3e",
+      "version": "1.0.2",
+      "sha256": "6205cbb1c4485e3ac11fb505e36b6efdfc906c8b2d1eeccade6a2ef1505aa827",
       "source": "post-to-huddle/SKILL.md",
       "guide": "post-to-huddle/README.md"
     },
@@ -1315,8 +1328,8 @@
     },
     {
       "path": "prd-frame-estimate/SKILL.md",
-      "version": "1.4.6",
-      "sha256": "3ca0077dd0dfbd162b629994605f3a040077b5db5895bf59b277e12790c64d69",
+      "version": "1.4.7",
+      "sha256": "329e2ad7aaeccec3d1206f85b129a0d6765e3deca9cdf6911922a0cee727279a",
       "source": "prd-frame-estimate/SKILL.md",
       "guide": "prd-frame-estimate/README.md"
     },
@@ -1343,8 +1356,8 @@
     },
     {
       "path": "project-instructions-writer/SKILL.md",
-      "version": "1.0.0",
-      "sha256": "98bd15e03af65c1b859fb31a1959bd16bbc9a88344eba9cd6ea12c2ecd0f97d2",
+      "version": "1.0.1",
+      "sha256": "7d52398da8443271a61776f47edc7f5f20556753a49fb6d7c3d31a0ed6b166f1",
       "source": "project-instructions-writer/SKILL.md",
       "guide": "project-instructions-writer/README.md"
     },
@@ -1378,8 +1391,8 @@
     },
     {
       "path": "rachael-work-voice/SKILL.md",
-      "version": "1.0.2",
-      "sha256": "e1a2c820f0a5dc4475b001647b00263559673b38c8e3387988b1d208758017af",
+      "version": "1.0.3",
+      "sha256": "6cae9ddb40e7371565ca8eb6af7883d7dd6d797ae1d67053aacf1d96b58b3a5e",
       "source": "rachael-work-voice/SKILL.md",
       "guide": "rachael-work-voice/README.md"
     },
@@ -1427,8 +1440,8 @@
     },
     {
       "path": "ship/SKILL.md",
-      "version": "1.4.6",
-      "sha256": "2590594ac6349e2ca4fce4bf37ae50a85f5666ba936f08af4ef7ed9bcdcbe6c3",
+      "version": "1.4.7",
+      "sha256": "1dd1c2673525ac8a7912775e7febd19a1d62476265646de2d52ad209850e44d2",
       "source": "ship/SKILL.md",
       "guide": "ship/README.md"
     },
@@ -1448,8 +1461,8 @@
     },
     {
       "path": "spec-driven-dev/SKILL.md",
-      "version": "1.4.6",
-      "sha256": "8c0a348a7a5685028eb60ec353305162c2e9fc452e169e55f8b5502c6d29f5d4",
+      "version": "1.4.7",
+      "sha256": "ec477c5b9f4d0c475bb14130e1019c5cf633d998c82db2ac93433211e2d15365",
       "source": "spec-driven-dev/SKILL.md",
       "guide": "spec-driven-dev/README.md"
     },
@@ -1459,13 +1472,6 @@
       "sha256": "06883887b5f28de2f63bed799ab0dfc9f1ffa5f353ba1357086ead92b1fb4d88",
       "source": "subagent-driven-development/SKILL.md",
       "guide": "subagent-driven-development/README.md"
-    },
-    {
-      "path": "sync-gol-acuity-airtable/SKILL.md",
-      "version": "1.0.1",
-      "sha256": "3c372dc0f7177610e2e6efa827eb75946950c4929137ddc4e800ba3e567fcd04",
-      "source": "sync-gol-acuity-airtable/SKILL.md",
-      "guide": "sync-gol-acuity-airtable/README.md"
     },
     {
       "path": "syncing-skills-to-github/SKILL.md",
@@ -1532,8 +1538,8 @@
     },
     {
       "path": "transcript-review/SKILL.md",
-      "version": "1.4.6",
-      "sha256": "246b11877f27dcfeb9a83c0575d24200f4df5c2be24d1bd23b227c76a2a6f3f8",
+      "version": "1.4.7",
+      "sha256": "e05526728fe42190c729219ff4762cdd1699dc243710dce51caa5f122251c6a8",
       "source": "transcript-review/SKILL.md",
       "guide": "transcript-review/README.md"
     },
@@ -1567,15 +1573,15 @@
     },
     {
       "path": "update-grades/SKILL.md",
-      "version": "1.0.1",
-      "sha256": "5f1ea5691d547f40110144411e1c919837be3e518499408b0a78277ec1eaa960",
+      "version": "1.0.2",
+      "sha256": "889ccf14f7ba85de91fffd131e2a65a5543c2f9469f13f00a931f1b21b8788e4",
       "source": "update-grades/SKILL.md",
       "guide": "update-grades/README.md"
     },
     {
       "path": "update-projects/SKILL.md",
-      "version": "1.0.1",
-      "sha256": "ee2aefabd3b6867617b930f6e814b93ef31a65bf7dbf4e8766b380f1c266e41c",
+      "version": "1.0.2",
+      "sha256": "f01834634c0b721d9eb17dda94b42a508dc4775b829119ac16d816fae0df0612",
       "source": "update-projects/SKILL.md",
       "guide": "update-projects/README.md"
     },
@@ -1644,8 +1650,8 @@
     },
     {
       "path": "workflow-eval/SKILL.md",
-      "version": "1.4.6",
-      "sha256": "4a632036053ca1f2bc7f67cc07db2018c72189433ab8fe441530e22393ed9644",
+      "version": "1.4.7",
+      "sha256": "3decc5907833fb4a1221c82979066ab4a0268ae0025a5538e3d684139e703b4c",
       "source": "workflow-eval/SKILL.md",
       "guide": "workflow-eval/README.md"
     },
@@ -1672,8 +1678,8 @@
     },
     {
       "path": "write-soap-report/SKILL.md",
-      "version": "1.4.6",
-      "sha256": "9ae700ee5cbb14894b35ab1080f0c262bdeeaf0fc216d573709b6791feeee216",
+      "version": "1.4.7",
+      "sha256": "34dc64f665efb136e78631a6dd735a39d792337df9da3a9aeaf0dee3c269a61e",
       "source": "write-soap-report/SKILL.md",
       "guide": "write-soap-report/README.md"
     },
@@ -1697,6 +1703,41 @@
       "sha256": "0b29281e8be34dd07e796eb25933103c8cd99f760736f7160c8d6de3df41a819",
       "source": "xray-team-voice-shifter-local/SKILL.md",
       "guide": "xray-team-voice-shifter-local/README.md"
+    },
+    {
+      "path": "plugins/independent-check/skills/independent-check/SKILL.md",
+      "version": "1.0.0",
+      "sha256": "9fc76bf5cf9d2d6ff9771420be0ca9644fa2d9bd549c404f4418ed49469b81e4",
+      "source": "plugins/independent-check/skills/independent-check/SKILL.md",
+      "guide": "plugins/independent-check/skills/independent-check/README.md"
+    },
+    {
+      "path": "client-mockup/SKILL.md",
+      "version": "1.2.0",
+      "sha256": "be5fd65e069b8e796138027d834593ffc1f83c138edab3e72f52c65e6d094ea0",
+      "source": "client-mockup/SKILL.md",
+      "guide": "client-mockup/README.md"
+    },
+    {
+      "path": "binti-airtable-date-reconciliation/SKILL.md",
+      "version": "1.0.0",
+      "sha256": "04cd97f041f0fd3e97f0d10e5680bc42a7368bd261d17613118cd531464b0429",
+      "source": "binti-airtable-date-reconciliation/SKILL.md",
+      "guide": "binti-airtable-date-reconciliation/README.md"
+    },
+    {
+      "path": "gem-miner/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "f95e5d829ec0077ca28b24a7819ba46d7dcfb6018f0088a8854f87ea674fd9e8",
+      "source": "gem-miner/SKILL.md",
+      "guide": "gem-miner/README.md"
+    },
+    {
+      "path": "work-voice/SKILL.md",
+      "version": "1.0.1",
+      "sha256": "b4f761b228c7984335ff3c224dd7af770703182113abdc5fbf2d765336e65e04",
+      "source": "work-voice/SKILL.md",
+      "guide": "work-voice/README.md"
     }
   ],
   "copies": [
@@ -1993,28 +2034,32 @@
       "target": "plugins/client-docs/skills/build-page-publisher-local/SKILL.md"
     },
     {
-      "source": "automation-explainer-local/README.md",
-      "target": "plugins/client-docs/skills/automation-explainer-local/README.md"
+      "source": "auto/README.md",
+      "target": "plugins/client-docs/skills/auto/README.md"
     },
     {
-      "source": "automation-explainer-local/TECHNICAL-GUIDE.md",
-      "target": "plugins/client-docs/skills/automation-explainer-local/TECHNICAL-GUIDE.md"
+      "source": "auto/TECHNICAL-GUIDE.md",
+      "target": "plugins/client-docs/skills/auto/TECHNICAL-GUIDE.md"
     },
     {
-      "source": "automation-explainer-local/SKILL.md",
-      "target": "plugins/client-docs/skills/automation-explainer-local/SKILL.md"
+      "source": "auto/SKILL.md",
+      "target": "plugins/client-docs/skills/auto/SKILL.md"
     },
     {
-      "source": "how-it-works-doc-writer-local/README.md",
-      "target": "plugins/client-docs/skills/how-it-works-doc-writer-local/README.md"
+      "source": "education/README.md",
+      "target": "plugins/client-docs/skills/education/README.md"
     },
     {
-      "source": "how-it-works-doc-writer-local/TECHNICAL-GUIDE.md",
-      "target": "plugins/client-docs/skills/how-it-works-doc-writer-local/TECHNICAL-GUIDE.md"
+      "source": "education/TECHNICAL-GUIDE.md",
+      "target": "plugins/client-docs/skills/education/TECHNICAL-GUIDE.md"
     },
     {
-      "source": "how-it-works-doc-writer-local/SKILL.md",
-      "target": "plugins/client-docs/skills/how-it-works-doc-writer-local/SKILL.md"
+      "source": "education/SKILL.md",
+      "target": "plugins/client-docs/skills/education/SKILL.md"
+    },
+    {
+      "source": "auto/agents/openai.yaml",
+      "target": "plugins/client-docs/skills/auto/agents/openai.yaml"
     }
   ],
   "collections": [

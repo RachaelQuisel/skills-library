@@ -21,7 +21,7 @@ Keep contact details only in private working outputs needed for matching/review.
 - Ensure all source occurrences remain represented, including people who could not be linked to Airtable.
 - Verify both primary and co-applicant roles. Flag mismatches against `Number of applicants`.
 - Disclose cross-group overlaps before presenting a combined unique-person total.
-- Show applications and renewals separately for GoL and DIUP. Clearly distinguish a whole-base comparison from a Binti-export subset.
+- Show applications and renewals separately for EA and PARTNER. Clearly distinguish a whole-base comparison from a Binti-export subset.
 - Describe unchecked Active records as “not marked Active,” not proven inactive. Do not drop current Binti applications from follow-up because the Airtable flag disagrees.
 - Keep uncertain matches out of the no-match count. Keep unverified saves out of the confirmed-created count.
 

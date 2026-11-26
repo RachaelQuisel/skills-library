@@ -29,7 +29,7 @@ Known bank statement merchant names → subscription record names. Use when scan
 | COURSERA.ORG | Coursera |
 | SBHARVARDCLUB.ORG | Harvard Club of Santa Barbara |
 | CTR WOMENS HEALTH | Center for Women's Health Care |
-| DEBORAH MOORE REGISTERED | Deborah Moore (Practitioner) |
+| DEBORAH MOORE REGISTERED | Devon Marsh (Practitioner) |
 | Garmin 800-5112459 | Garmin SAR 50 |
 | NYTIMES* | NYTimes |
 | SP AWESOME-COFFEE | Awesome Coffee |

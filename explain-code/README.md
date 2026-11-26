@@ -1,6 +1,6 @@
-# Explain how a piece of code works through an example, a walkthrough, and a practical caution
+# Explain how a piece of code works
 
-This skill helps you explain how a piece of code works through an example, a walkthrough, and a practical caution.
+Start with the reader’s question. Explain the mental model, show a diagram, walk through what happens, and point out one gotcha.
 
 ## What to share
 
