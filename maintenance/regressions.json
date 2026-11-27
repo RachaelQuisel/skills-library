@@ -99,6 +99,7 @@
     "maintenance/tests/test_plugin_sync.py::test_hosted_capture_requires_both_fresh_immutable_identities[None]",
     "maintenance/tests/test_plugin_sync.py::test_hosted_capture_requires_both_fresh_immutable_identities[source]",
     "maintenance/tests/test_plugin_sync.py::test_hosted_capture_requires_both_fresh_immutable_identities[release]",
-    "maintenance/tests/test_plugin_sync.py::test_hosted_capture_requires_both_fresh_immutable_identities[rules]"
+    "maintenance/tests/test_plugin_sync.py::test_hosted_capture_requires_both_fresh_immutable_identities[rules]",
+    "maintenance/tests/test_claude_model_lifecycle.py::ClaudeModelLifecycleTests::test_45_retirements_and_recommendations_agree"
   ]
 }
