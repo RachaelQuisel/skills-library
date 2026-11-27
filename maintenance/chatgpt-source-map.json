@@ -296,7 +296,7 @@
       "repository": "RachaelQuisel/airbnb-hosting-expert",
       "source_path": "skills/instructions/SKILL.md",
       "export_path": "skills/instructions/SKILL.md",
-      "version": "2.3.4",
+      "version": "2.3.5",
       "export": true
     },
     {
@@ -350,7 +350,7 @@
       "repository": "RachaelQuisel/adhd-task-helper",
       "source_path": "skills/get-unstuck/SKILL.md",
       "export_path": "skills/get-unstuck/SKILL.md",
-      "version": "1.0.5",
+      "version": "1.0.6",
       "export": true
     },
     {
@@ -359,7 +359,7 @@
       "repository": "RachaelQuisel/adhd-task-helper",
       "source_path": "skills/i-have-adhd/SKILL.md",
       "export_path": "skills/i-have-adhd/SKILL.md",
-      "version": "1.0.5",
+      "version": "1.0.6",
       "export": true
     },
     {
@@ -368,7 +368,7 @@
       "repository": "RachaelQuisel/adhd-task-helper",
       "source_path": "skills/pick-it-back-up/SKILL.md",
       "export_path": "skills/pick-it-back-up/SKILL.md",
-      "version": "1.0.5",
+      "version": "1.0.6",
       "export": true
     },
     {
@@ -377,7 +377,7 @@
       "repository": "RachaelQuisel/adhd-task-helper",
       "source_path": "skills/sort-my-brain-dump/SKILL.md",
       "export_path": "skills/sort-my-brain-dump/SKILL.md",
-      "version": "1.0.5",
+      "version": "1.0.6",
       "export": true
     },
     {
@@ -467,7 +467,7 @@
       "repository": "RachaelQuisel/automate-notification-to-teams",
       "source_path": "skills/automate-notification-to-teams/SKILL.md",
       "export_path": "skills/automate-notification-to-teams/SKILL.md",
-      "version": "2.0.5",
+      "version": "2.0.6",
       "export": true
     },
     {
@@ -4283,7 +4283,7 @@
       "repository": "RachaelQuisel/airbnb-hosting-expert",
       "source_path": "skills/instructions/SKILL.md",
       "export_path": "skills/instructions/SKILL.md",
-      "version": "2.3.4",
+      "version": "2.3.5",
       "available_in_plugin": "gpt-8a95fc6209976029c77512aac6043b68",
       "export": false
     },
@@ -4303,7 +4303,7 @@
       "repository": "RachaelQuisel/automate-notification-to-teams",
       "source_path": "skills/automate-notification-to-teams/SKILL.md",
       "export_path": "skills/automate-notification-to-teams/SKILL.md",
-      "version": "2.0.5",
+      "version": "2.0.6",
       "available_in_plugin": "automate-notification-to-teams",
       "export": false
     },
