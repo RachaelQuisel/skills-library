@@ -72,7 +72,7 @@
       },
       "category": "productivity",
       "homepage": "https://github.com/RachaelQuisel/Skills/tree/main/plugins/adhd-task-helper",
-      "version": "1.0.5"
+      "version": "1.0.6"
     },
     {
       "name": "airtable-interface-craft",
@@ -105,7 +105,7 @@
       },
       "category": "productivity",
       "homepage": "https://github.com/RachaelQuisel/Skills/tree/main/plugins/automate-notification-to-teams",
-      "version": "2.0.5"
+      "version": "2.0.6"
     },
     {
       "name": "automation-message-writer",
@@ -237,7 +237,7 @@
       },
       "category": "productivity",
       "homepage": "https://github.com/RachaelQuisel/Skills/tree/main/plugins/airbnb-hosting-expert",
-      "version": "2.3.4"
+      "version": "2.3.5"
     },
     {
       "name": "github-portfolio-builder",

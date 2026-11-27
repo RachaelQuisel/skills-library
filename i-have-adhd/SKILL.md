@@ -1,6 +1,6 @@
 ---
 name: i-have-adhd
-version: 1.0.5
+version: 1.0.6
 description: "Make replies easier to scan and act on when the user requests ADHD-friendly communication or turns on ADHD mode."
 ---
 

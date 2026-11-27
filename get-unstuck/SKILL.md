@@ -1,6 +1,6 @@
 ---
 name: get-unstuck
-version: 1.0.5
+version: 1.0.6
 description: "Help a user begin a task when they say they are stuck, overwhelmed by starting, or unsure how to begin. Use for task initiation rather than ordinary requests the assistant can directly complete."
 ---
 

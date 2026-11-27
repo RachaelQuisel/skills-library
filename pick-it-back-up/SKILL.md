@@ -1,6 +1,6 @@
 ---
 name: pick-it-back-up
-version: 1.0.5
+version: 1.0.6
 description: "Help a user resume interrupted work or prepare a restart checkpoint using available conversation history or notes they provide. Use when they ask where they left off, how to resume, or to pause with a handoff note."
 ---
 
